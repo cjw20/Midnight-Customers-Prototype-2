@@ -9,12 +9,12 @@ public class GameControl : MonoBehaviour
     {
         if (control == null)
         {
-            DontDestroyOnLoad(gameObject);
+            DontDestroyOnLoad(gameObject);  //makes sure there is only one game control in scene. 
             control = this;
         }
         else if (control != this)
         {
-            Destroy(gameObject);
+            Destroy(gameObject);  
         }
     }
 }
