@@ -25,4 +25,14 @@ public class PlayerMovement : MonoBehaviour
     {
         body.MovePosition(body.position + movementDirection * moveSpeed * Time.fixedDeltaTime);
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        
+    }
 }
