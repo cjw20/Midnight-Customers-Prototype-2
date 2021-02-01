@@ -7,7 +7,7 @@ public class CheckoutTrigger : MonoBehaviour
     public bool playerReady; //true when player is standing behind register
     public bool customerReady; //true when customer is standing in front of register, ready to check out
 
-    
+    bool inCheckout; //true while checkout game going on
     void Start()
     {
         
@@ -16,7 +16,15 @@ public class CheckoutTrigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            if (playerReady && !inCheckout)//and customer ready too later once implemented
+            {
+                inCheckout = true;
+                Debug.Log("Triggered Checkout");
+                //do rest of checkout trigger ehre
+            }
+        } 
     }
 
     public void SetPlayerReady()
