@@ -9,10 +9,12 @@ public class CheckoutItem : MonoBehaviour
     //bool delicate? for if needs to be at top of bag
     //rules like alchoholic?
     public bool isScanned = false;
+
+    public CheckoutManager checkoutManager;
     // Start is called before the first frame update
     void Start()
     {
-        
+        checkoutManager = FindObjectOfType<CheckoutManager>();
     }
 
     // Update is called once per frame
@@ -27,7 +29,7 @@ public class CheckoutItem : MonoBehaviour
         {
             if (isScanned)
             {
-                //mgControl.UpdateItemCount();
+                checkoutManager.UpdateCount();
                 Destroy(this.gameObject);
 
             }
