@@ -6,6 +6,7 @@ public class CheckoutTrigger : MonoBehaviour
 {
     public bool playerReady; //true when player is standing behind register
     public bool customerReady; //true when customer is standing in front of register, ready to check out
+    public GameObject checkoutGame; 
 
     bool inCheckout; //true while checkout game going on
     void Start()
@@ -21,7 +22,7 @@ public class CheckoutTrigger : MonoBehaviour
             if (playerReady && !inCheckout)//and customer ready too later once implemented
             {
                 inCheckout = true;
-                Debug.Log("Triggered Checkout");
+                checkoutGame.SetActive(true);
                 //do rest of checkout trigger ehre
             }
         } 
