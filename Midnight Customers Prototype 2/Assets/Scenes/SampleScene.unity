@@ -179,7 +179,6 @@ MonoBehaviour:
   items:
   - {fileID: 110226939929179959, guid: 297c24aaef0b66a49abea392275c3243, type: 3}
   - {fileID: 110226939929179959, guid: 297c24aaef0b66a49abea392275c3243, type: 3}
-  checkoutTrigger: {fileID: 0}
 --- !u!1 &395785383
 GameObject:
   m_ObjectHideFlags: 0

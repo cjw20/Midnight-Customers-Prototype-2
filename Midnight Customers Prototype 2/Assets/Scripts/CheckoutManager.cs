@@ -11,11 +11,16 @@ public class CheckoutManager : MonoBehaviour
 
     bool finishedScan; //true when all items have been scanned
 
-    public CheckoutTrigger checkoutTrigger;
+    CheckoutTrigger checkoutTrigger;
     // Start is called before the first frame update
-    void OnEnable()
+
+    private void Start()
     {
         checkoutTrigger = FindObjectOfType<CheckoutTrigger>();
+    }
+    void OnEnable()
+    {
+        
 
         //get items from customer
         itemNumber = items.Length;
