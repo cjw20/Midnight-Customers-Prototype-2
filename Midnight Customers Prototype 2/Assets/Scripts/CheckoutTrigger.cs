@@ -8,7 +8,7 @@ public class CheckoutTrigger : MonoBehaviour
     public bool customerReady; //true when customer is standing in front of register, ready to check out
     public GameObject checkoutGame; 
 
-    bool inCheckout; //true while checkout game going on
+    public bool inCheckout; //true while checkout game going on
     void Start()
     {
         

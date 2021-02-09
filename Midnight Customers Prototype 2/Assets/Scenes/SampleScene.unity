@@ -139,7 +139,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &10691446
 Transform:
   m_ObjectHideFlags: 0
@@ -179,6 +179,7 @@ MonoBehaviour:
   items:
   - {fileID: 110226939929179959, guid: 297c24aaef0b66a49abea392275c3243, type: 3}
   - {fileID: 110226939929179959, guid: 297c24aaef0b66a49abea392275c3243, type: 3}
+  checkoutTrigger: {fileID: 0}
 --- !u!1 &395785383
 GameObject:
   m_ObjectHideFlags: 0
@@ -1568,7 +1569,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -2135585597343286014, guid: 4b2a04fdbe0ef4d8da8f90eaca817cd1, type: 3}
   m_Color: {r: 0.1273585, g: 0.3368686, b: 1, a: 1}
   m_FlipX: 0
@@ -1595,6 +1596,7 @@ MonoBehaviour:
   playerReady: 0
   customerReady: 0
   checkoutGame: {fileID: 10691445}
+  inCheckout: 0
 --- !u!61 &1907573571
 BoxCollider2D:
   m_ObjectHideFlags: 0

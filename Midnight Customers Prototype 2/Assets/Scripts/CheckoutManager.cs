@@ -8,9 +8,15 @@ public class CheckoutManager : MonoBehaviour
     public GameObject[] items; //items brought to checkout
     int itemNumber; //number of items brought to checkout
     int remainingItems; //items left unbagged
+
+    bool finishedScan; //true when all items have been scanned
+
+    public CheckoutTrigger checkoutTrigger;
     // Start is called before the first frame update
-    void Start()
+    void OnEnable()
     {
+        checkoutTrigger = FindObjectOfType<CheckoutTrigger>();
+
         //get items from customer
         itemNumber = items.Length;
         remainingItems = itemNumber;
@@ -36,13 +42,19 @@ public class CheckoutManager : MonoBehaviour
         remainingItems--;
         if(remainingItems < 1)
         {
+            finishedScan = true;
             EndCheckout();
         }
     }
 
     void EndCheckout()
     {
-        this.gameObject.SetActive(false);
-        //will need to clear other stuff for future checkouts OR reinstantiate whole object?
+        if (finishedScan) //add finished convo too later once implemented
+        {
+            checkoutTrigger.inCheckout = false;
+            this.gameObject.SetActive(false);
+            //will need to clear other stuff for future checkouts OR reinstantiate whole object?
+        }
+
     }
 }
