@@ -77,11 +77,16 @@ public class CheckoutManager : MonoBehaviour
         if (finishedBag) //add finished convo too later once implemented
         {
             checkoutTrigger.inCheckout = false;
-            this.gameObject.SetActive(false);
+            
             lastWeight = 3; //resets for next bagging
             totalPrice = 0;
+            if (needsIDCheck)
+            {
+                //bad! deduct points or something
+            }
             needsIDCheck = false;
             //will need to clear other stuff for future checkouts OR reinstantiate whole object?
+            this.gameObject.SetActive(false);
         }
 
     }
