@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class CheckoutItem : MonoBehaviour
 {
-    public int price; //price of item to show up on register 
-    public int itemName; //name of item
+    public float price; //price of item to show up on register 
+    public string itemName; //name of item
+    public int weight; //1 light 2 medium 3 heavy
+    public bool requiresID;
     //bool delicate? for if needs to be at top of bag
     //rules like alchoholic?
     public bool isScanned = false;
@@ -29,7 +31,7 @@ public class CheckoutItem : MonoBehaviour
         {
             if (isScanned)
             {
-                checkoutManager.UpdateCount();
+                checkoutManager.Bagged(weight, price);
                 Destroy(this.gameObject);
 
             }
