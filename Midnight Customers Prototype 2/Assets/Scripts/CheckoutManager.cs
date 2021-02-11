@@ -9,7 +9,7 @@ public class CheckoutManager : MonoBehaviour
     int itemNumber; //number of items brought to checkout
     int remainingItems; //items left unbagged
 
-    bool finishedScan; //true when all items have been scanned
+    bool finishedBag; //true when all items have been scanned
     public int lastWeight = 1;
     float totalPrice;
 
@@ -60,14 +60,14 @@ public class CheckoutManager : MonoBehaviour
         totalPrice += price;
         if(remainingItems < 1)
         {
-            finishedScan = true;
+            finishedBag = true;
             EndCheckout();
         }
     }
 
     void EndCheckout()
     {
-        if (finishedScan) //add finished convo too later once implemented
+        if (finishedBag) //add finished convo too later once implemented
         {
             checkoutTrigger.inCheckout = false;
             this.gameObject.SetActive(false);
