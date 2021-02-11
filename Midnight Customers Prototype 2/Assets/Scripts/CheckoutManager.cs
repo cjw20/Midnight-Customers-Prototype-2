@@ -10,12 +10,15 @@ public class CheckoutManager : MonoBehaviour
     int remainingItems; //items left unbagged
 
     bool finishedBag; //true when all items have been scanned
+    bool needsIDCheck;
+    bool checkedID;
     int lastWeight = 3;
     float totalPrice;
 
     CheckoutTrigger checkoutTrigger;
 
     public GameObject misbagMessage; //may replace in later versions
+    public GameObject idButton; //probably don't need this reference later
 
     // Start is called before the first frame update
 
@@ -35,18 +38,22 @@ public class CheckoutManager : MonoBehaviour
         foreach(GameObject item in items)
         {
             Instantiate(item, itemSpawns[i].transform);
+
+            if(needsIDCheck == false) //skips over to be more efficent
+            {
+                if (item.GetComponent<CheckoutItem>().requiresID == true)
+                {
+                    needsIDCheck = true;
+                }
+            }
+           
             i++;
         }
 
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    
     public void Bagged(int weight, float price)
     {
         if(weight > lastWeight)
@@ -73,6 +80,7 @@ public class CheckoutManager : MonoBehaviour
             this.gameObject.SetActive(false);
             lastWeight = 3; //resets for next bagging
             totalPrice = 0;
+            needsIDCheck = false;
             //will need to clear other stuff for future checkouts OR reinstantiate whole object?
         }
 
@@ -84,5 +92,10 @@ public class CheckoutManager : MonoBehaviour
         yield return new WaitForSeconds(1f);
         misbagMessage.SetActive(false);
         yield break;
+    }
+
+    public void CheckID()
+    {
+        needsIDCheck = false;
     }
 }
