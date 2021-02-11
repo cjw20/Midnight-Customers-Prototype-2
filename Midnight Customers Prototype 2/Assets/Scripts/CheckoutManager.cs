@@ -10,7 +10,7 @@ public class CheckoutManager : MonoBehaviour
     int remainingItems; //items left unbagged
 
     bool finishedBag; //true when all items have been scanned
-    public int lastWeight = 1;
+    int lastWeight = 3;
     float totalPrice;
 
     CheckoutTrigger checkoutTrigger;
@@ -71,7 +71,7 @@ public class CheckoutManager : MonoBehaviour
         {
             checkoutTrigger.inCheckout = false;
             this.gameObject.SetActive(false);
-            lastWeight = 1; //resets for next bagging
+            lastWeight = 3; //resets for next bagging
             totalPrice = 0;
             //will need to clear other stuff for future checkouts OR reinstantiate whole object?
         }
