@@ -35,9 +35,17 @@ public class DialogueGraphView : GraphView
         generatedPort.portName = "Next";
         node.outputContainer.Add(generatedPort);
 
+        node.RefreshExpandedState();
+        node.RefreshPorts(); //fixes appearance of node after adding ports
+
 
         node.SetPosition(new Rect(100, 200, 100, 150));
 
         return node;
+    }
+
+    public void CreateDialogueNode()
+    {
+        throw new NotImplementedException(); //left off here
     }
 }
