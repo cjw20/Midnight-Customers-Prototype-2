@@ -16,6 +16,11 @@ public class DialogueGraphView : GraphView
         AddElement(GenerateEntryPointNode());
     }
 
+    Port GeneratePort(DialogueNode node, Direction portDirection, Port.Capacity capacity = Port.Capacity.Single)
+    {
+        return node.InstantiatePort(Orientation.Horizontal, portDirection, capacity, typeof(float));
+    }
+
     DialogueNode GenerateEntryPointNode()
     {
         var node = new DialogueNode
@@ -25,6 +30,11 @@ public class DialogueGraphView : GraphView
             dialogueText = "ENTRYPOINT",
             entryPoint = true,
         };
+
+        var generatedPort = GeneratePort(node, Direction.Output);
+        generatedPort.portName = "Next";
+        node.outputContainer.Add(generatedPort);
+
 
         node.SetPosition(new Rect(100, 200, 100, 150));
 
