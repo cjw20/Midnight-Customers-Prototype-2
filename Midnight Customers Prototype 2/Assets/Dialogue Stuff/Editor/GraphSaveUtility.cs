@@ -5,6 +5,7 @@ using System.Linq;
 using UnityEditor;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class GraphSaveUtility
 {
@@ -75,7 +76,35 @@ public class GraphSaveUtility
 
     private void ConnectNodes()
     {
-        throw new NotImplementedException();
+        for(var i = 0; i < Nodes.Count; i++)
+        {
+            var connections = _containerCache.NodeLinks.Where(x => x.BaseNodeGuid == Nodes[i].GUID).ToList();
+            for(var j = 0; j < connections.Count; j++)
+            {
+                var targetNodeGuid = connections[j].TargetNodeGuid;
+                var targetNode = Nodes.First(x => x.GUID == targetNodeGuid);
+                LinkNodes(Nodes[i].outputContainer[j].Q<Port>(), (Port)targetNode.inputContainer[0]);
+
+                targetNode.SetPosition(new Rect(_containerCache.DialogueNodeData.First(x => x.Guid == targetNodeGuid).Position,
+                    _targetGraphView.defaultNodeSize
+
+                    
+                ));
+            }
+        }
+    }
+
+    private void LinkNodes(Port output, Port input)
+    {
+        var tempEdge = new Edge
+        {
+            output = output,
+            input = input
+        };
+
+        tempEdge.input.Connect(tempEdge);
+        tempEdge.output.Connect(tempEdge);
+        _targetGraphView.Add(tempEdge);
     }
 
     private void CreateNodes()
