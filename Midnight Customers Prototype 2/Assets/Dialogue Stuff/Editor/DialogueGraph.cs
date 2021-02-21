@@ -5,6 +5,7 @@ using UnityEditor.Experimental.GraphView;
 using UnityEditor;
 using UnityEngine.UIElements;
 using UnityEditor.UIElements;
+using System;
 
 public class DialogueGraph : GraphViewEditorWindow
 {
@@ -45,14 +46,34 @@ public class DialogueGraph : GraphViewEditorWindow
         fileNameTextField.RegisterCallback((EventCallback<ChangeEvent<string>>)(evt => _fileName = evt.newValue));
         toolbar.Add(fileNameTextField);
 
-        toolbar.Add(new Button(clickEvent: () => SaveData()) { text = "Save Data" });
-        toolbar.Add(new Button(clickEvent: () => LoadData()) { text = "Save Data" });
+        toolbar.Add(new Button(clickEvent: () => RequestDataOperation(true)) { text = "Save Data" });
+        toolbar.Add(new Button(clickEvent: () => RequestDataOperation(false)) { text = "Load Data" });
 
         var nodeCreateButton = new Button(clickEvent: () => { _graphView.CreateNode("Dialogue Node"); });
         nodeCreateButton.text = "Create Node";
         toolbar.Add(nodeCreateButton);
 
         rootVisualElement.Add(toolbar);
+    }
+
+    private void RequestDataOperation(bool save)
+    {
+        if (string.IsNullOrEmpty(_fileName))
+        {
+            EditorUtility.DisplayDialog("Invalid file name!", "Enter a valid file name you asshat!", "Fine...");
+            return;
+        }
+
+        var saveUtility = GraphSaveUtility.GetInstance(_graphView);
+        if (save)
+        {
+            saveUtility.SaveGraph(_fileName);
+        }
+        else
+        {
+            saveUtility.LoadGraph(_fileName);
+
+        }
     }
 
     private void OnDisable()
