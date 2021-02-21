@@ -9,6 +9,7 @@ using UnityEditor.UIElements;
 public class DialogueGraph : GraphViewEditorWindow
 {
     DialogueGraphView _graphView;
+    private string _fileName = "New Conversation";
 
     [MenuItem("Graph/ DialogueGraph")]
     public static void OpenDialogueGraphWindow()
@@ -20,6 +21,7 @@ public class DialogueGraph : GraphViewEditorWindow
     private void OnEnable()
     {
         ConstructGraphView();
+        GenerateToolbar();
     }
 
     void ConstructGraphView()
@@ -37,7 +39,16 @@ public class DialogueGraph : GraphViewEditorWindow
     {
         var toolbar = new Toolbar();
 
-        var nodeCreateButton = new Button(clickEvent: () => { _graphView.CreateDialogueNode(); });
+        var fileNameTextField = new TextField("File Name:");
+        fileNameTextField.SetValueWithoutNotify(_fileName);
+        fileNameTextField.MarkDirtyRepaint();
+        fileNameTextField.RegisterCallback((EventCallback<ChangeEvent<string>>)(evt => _fileName = evt.newValue));
+        toolbar.Add(fileNameTextField);
+
+        toolbar.Add(new Button(clickEvent: () => SaveData()) { text = "Save Data" });
+        toolbar.Add(new Button(clickEvent: () => LoadData()) { text = "Save Data" });
+
+        var nodeCreateButton = new Button(clickEvent: () => { _graphView.CreateNode("Dialogue Node"); });
         nodeCreateButton.text = "Create Node";
         toolbar.Add(nodeCreateButton);
 

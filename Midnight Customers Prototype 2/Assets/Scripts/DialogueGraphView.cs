@@ -6,14 +6,32 @@ using UnityEngine.UIElements;
 using System;
 
 public class DialogueGraphView : GraphView
-{ 
+{
+
+    private readonly Vector2 defaultNodeSize = new Vector2(150, 200);
     public DialogueGraphView()
     {
+        SetupZoom(ContentZoomer.DefaultMinScale, ContentZoomer.DefaultMaxScale);
+
         this.AddManipulator(new ContentDragger());
         this.AddManipulator(new SelectionDragger());
         this.AddManipulator(new RectangleSelector());
 
         AddElement(GenerateEntryPointNode());
+    }
+
+    public override List<Port> GetCompatiblePorts(Port startPort, NodeAdapter nodeAdapter)
+    {
+        var compatiblePorts = new List<Port>();
+        ports.ForEach(port =>
+        {
+            if(startPort != port && startPort.node != port.node)
+            {
+                compatiblePorts.Add(port);
+            }
+        });
+
+        return compatiblePorts;
     }
 
     Port GeneratePort(DialogueNode node, Direction portDirection, Port.Capacity capacity = Port.Capacity.Single)
@@ -44,8 +62,46 @@ public class DialogueGraphView : GraphView
         return node;
     }
 
-    public void CreateDialogueNode()
+    public void CreateNode(string nodeName)
     {
-        throw new NotImplementedException(); //left off here
+        AddElement(CreateDialogueNode(nodeName));
+    }
+
+    public DialogueNode CreateDialogueNode(string nodeName)
+    {
+        var dialogueNode = new DialogueNode
+        {
+            title = nodeName,
+            dialogueText = nodeName,
+            GUID = Guid.NewGuid().ToString()
+
+        };
+
+        var inputPort = GeneratePort(dialogueNode, Direction.Input, Port.Capacity.Multi);
+        inputPort.portName = "Input";
+        dialogueNode.inputContainer.Add(inputPort);
+
+        var button = new Button(clickEvent: () => { AddChoicePort(dialogueNode); });
+        button.text = "New Choice";
+        dialogueNode.titleContainer.Add(button);
+
+        dialogueNode.RefreshExpandedState();
+        dialogueNode.RefreshPorts();
+        dialogueNode.SetPosition(new Rect(Vector2.zero, defaultNodeSize));
+
+        return dialogueNode;
+    }
+
+    private void AddChoicePort(DialogueNode dialogueNode)
+    {
+        var generatedPort = GeneratePort(dialogueNode, Direction.Output);
+
+        var outputPortCount = dialogueNode.outputContainer.Query("connector").ToList().Count;
+        generatedPort.portName = $"Choice {outputPortCount}";
+
+        dialogueNode.outputContainer.Add(generatedPort);
+        dialogueNode.RefreshPorts();
+        dialogueNode.RefreshExpandedState();
+
     }
 }
