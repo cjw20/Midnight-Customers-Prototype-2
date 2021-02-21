@@ -98,7 +98,7 @@ public class GraphSaveUtility
         foreach(var node in Nodes)
         {
             if (node.entryPoint)
-                return;
+                continue;
 
             Edges.Where(x => x.input.node == node).ToList().ForEach(edge => _targetGraphView.RemoveElement(edge));
             _targetGraphView.RemoveElement(node);

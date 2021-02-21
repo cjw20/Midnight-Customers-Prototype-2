@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine.UIElements;
 using System;
+using System.Linq;
 
 public class DialogueGraphView : GraphView
 {
@@ -96,6 +97,9 @@ public class DialogueGraphView : GraphView
     {
         var generatedPort = GeneratePort(dialogueNode, Direction.Output);
 
+        var oldLabel = generatedPort.contentContainer.Q<Label>("type");
+        generatedPort.contentContainer.Remove(oldLabel);
+
         var outputPortCount = dialogueNode.outputContainer.Query("connector").ToList().Count;
         
 
@@ -125,6 +129,19 @@ public class DialogueGraphView : GraphView
 
     private void RemovePort(DialogueNode dialogueNode, Port generatedPort)
     {
-        throw new NotImplementedException();
+        var targetEdge = edges.ToList().Where(x => x.output.portName == generatedPort.portName && x.output.node == generatedPort.node);
+
+        if (targetEdge.Any())
+        {
+            var edge = targetEdge.First();
+            edge.input.Disconnect(edge);
+            RemoveElement(targetEdge.First());
+        }
+
+        
+
+        dialogueNode.outputContainer.Remove(generatedPort);
+        dialogueNode.RefreshPorts();
+        dialogueNode.RefreshExpandedState();
     }
 }
