@@ -92,16 +92,39 @@ public class DialogueGraphView : GraphView
         return dialogueNode;
     }
 
-    private void AddChoicePort(DialogueNode dialogueNode)
+    public void AddChoicePort(DialogueNode dialogueNode, string overridenPortName = "")
     {
         var generatedPort = GeneratePort(dialogueNode, Direction.Output);
 
         var outputPortCount = dialogueNode.outputContainer.Query("connector").ToList().Count;
-        generatedPort.portName = $"Choice {outputPortCount}";
+        
 
+        var choicePortname = string.IsNullOrEmpty(overridenPortName) ? $"Choice {outputPortCount}" : overridenPortName;
+
+        var textField = new TextField
+        {
+            name = string.Empty,
+            value = choicePortname
+
+        };
+        textField.RegisterValueChangedCallback(evt => generatedPort.portName = evt.newValue);
+        generatedPort.contentContainer.Add(new Label(" "));
+        generatedPort.contentContainer.Add(textField);
+        var deleteButton = new Button(clickEvent: () => RemovePort(dialogueNode, generatedPort))
+        {
+            text = "X"
+        };
+        generatedPort.contentContainer.Add(deleteButton);
+
+        generatedPort.portName = choicePortname; 
         dialogueNode.outputContainer.Add(generatedPort);
         dialogueNode.RefreshPorts();
         dialogueNode.RefreshExpandedState();
 
+    }
+
+    private void RemovePort(DialogueNode dialogueNode, Port generatedPort)
+    {
+        throw new NotImplementedException();
     }
 }
