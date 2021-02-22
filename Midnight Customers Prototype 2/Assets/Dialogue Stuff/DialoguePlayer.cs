@@ -51,5 +51,7 @@ public class DialoguePlayer : MonoBehaviour
             text = text.Replace($"[{exposedProperty.PropertyName}]", exposedProperty.PropertyValue);
         }
         return text;
+
+        //this is where sanity changes will go
     }
 }
