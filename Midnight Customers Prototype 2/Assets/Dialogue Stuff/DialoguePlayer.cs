@@ -10,7 +10,7 @@ using UnityEngine.UI;
 public class DialoguePlayer : MonoBehaviour
 {
     [SerializeField] private DialogueContainer dialogue;
-    [SerializeField] private TextMeshProUGUI dialogueText;
+    [SerializeField] private Text dialogueText;
     [SerializeField] private Button choicePrefab;
     [SerializeField] private Transform buttonContainer;
     

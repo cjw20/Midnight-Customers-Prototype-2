@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
+  m_Name: Test!
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: f1b86302-81d1-41cb-9511-92c1c0baf52e
+    PortName: Next
+    TargetNodeGuid: 37d44987-802c-4935-a9bb-afb73652925b
+  - BaseNodeGuid: 37d44987-802c-4935-a9bb-afb73652925b
+    PortName: How's It going
+    TargetNodeGuid: dfa3686f-c120-4b02-ab92-f389fcdfc62e
+  - BaseNodeGuid: 37d44987-802c-4935-a9bb-afb73652925b
+    PortName: SUP!
+    TargetNodeGuid: f7d4d245-0d0e-4caf-b81e-c1ff4774a42d
+  - BaseNodeGuid: f7d4d245-0d0e-4caf-b81e-c1ff4774a42d
+    PortName: See ya
+    TargetNodeGuid: 85948778-db0a-411f-a410-91eac04364aa
+  - BaseNodeGuid: dfa3686f-c120-4b02-ab92-f389fcdfc62e
+    PortName: Goodbye
+    TargetNodeGuid: 85948778-db0a-411f-a410-91eac04364aa
+  - BaseNodeGuid: 37d44987-802c-4935-a9bb-afb73652925b
+    PortName: Howdy
+    TargetNodeGuid: f7d4d245-0d0e-4caf-b81e-c1ff4774a42d
+  DialogueNodeData:
+  - Guid: 37d44987-802c-4935-a9bb-afb73652925b
+    DialogueText: Howdy!
+    Position: {x: 320, y: 194}
+  - Guid: f7d4d245-0d0e-4caf-b81e-c1ff4774a42d
+    DialogueText: Not much
+    Position: {x: 682, y: 291}
+  - Guid: dfa3686f-c120-4b02-ab92-f389fcdfc62e
+    DialogueText: Good
+    Position: {x: 688, y: 143}
+  - Guid: 85948778-db0a-411f-a410-91eac04364aa
+    DialogueText: Bye
+    Position: {x: 1058, y: 236}
+  ExposedProperties: []
+  CommentBlockData: []
