@@ -13,6 +13,9 @@ public class DialoguePlayer : MonoBehaviour
     [SerializeField] private Text dialogueText;
     [SerializeField] private Button choicePrefab;
     [SerializeField] private Transform buttonContainer;
+
+    public float buttonOffset; //how much space between option buttons
+    int buttonNumber; //number of buttons currently instantiated
     
     void Start()
     {
@@ -36,11 +39,15 @@ public class DialoguePlayer : MonoBehaviour
             Destroy(buttons[i].gameObject);
         }
 
+        buttonNumber = 0;
+
         foreach (var choice in choices)
         {
             var button = Instantiate(choicePrefab, buttonContainer);
+            button.transform.position = buttonContainer.position + new Vector3(0, buttonOffset * buttonNumber, 0);
             button.GetComponentInChildren<Text>().text = ProcessProperties(choice.PortName);
             button.onClick.AddListener(() => ProceedToNarrative(choice.TargetNodeGuid));
+            buttonNumber++;
         }
     }
 
@@ -52,6 +59,6 @@ public class DialoguePlayer : MonoBehaviour
         }
         return text;
 
-        //this is where sanity changes will go
+        
     }
 }
