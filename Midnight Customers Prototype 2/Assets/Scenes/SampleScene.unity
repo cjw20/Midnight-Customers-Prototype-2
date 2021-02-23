@@ -1478,7 +1478,7 @@ MonoBehaviour:
   dialogueText: {fileID: 211056937}
   choicePrefab: {fileID: 2179707956389947301, guid: 611cc085f76f95647ba2846b11682128, type: 3}
   buttonContainer: {fileID: 1976128151}
-  buttonOffset: 50
+  buttonOffset: 60
 --- !u!1 &1377659258
 GameObject:
   m_ObjectHideFlags: 0
