@@ -11,7 +11,7 @@ public class CheckoutManager : MonoBehaviour
 
     bool finishedBag; //true when all items have been scanned
     bool needsIDCheck;
-    bool checkedID;
+    
     int lastWeight = 3;
     float totalPrice;
 

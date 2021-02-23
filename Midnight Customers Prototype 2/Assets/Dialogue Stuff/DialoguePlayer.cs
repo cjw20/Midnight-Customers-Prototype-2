@@ -19,14 +19,17 @@ public class DialoguePlayer : MonoBehaviour
 
     public CheckoutManager checkoutManager;
     
-    void Start()
+    void OnEnable()
     {
+
+        //do this after loading the convo?
         var narrativeData = dialogue.NodeLinks.First(); //Entrypoint node
         ProceedToNarrative(narrativeData.TargetNodeGuid);
     }
 
     public void SetConversation(DialogueContainer convo)
     {
+        //call this from checkout trigger to set up right conversation
         dialogue = convo;
     }
     private void ProceedToNarrative(string narrativeDataGUID)
@@ -53,6 +56,7 @@ public class DialoguePlayer : MonoBehaviour
 
         if(buttonNumber == 0)
         {
+            //hide dialogue window?
             checkoutManager.EndDialogue();
         }
     }
