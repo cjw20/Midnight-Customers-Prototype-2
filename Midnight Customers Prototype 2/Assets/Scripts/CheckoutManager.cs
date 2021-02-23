@@ -15,6 +15,8 @@ public class CheckoutManager : MonoBehaviour
     int lastWeight = 3;
     float totalPrice;
 
+    bool dialogueFinished; //set true by dialogue player when finished
+
     CheckoutTrigger checkoutTrigger;
 
     public GameObject misbagMessage; //may replace in later versions
@@ -53,6 +55,11 @@ public class CheckoutManager : MonoBehaviour
         
     }
 
+    public void EndDialogue()
+    {
+        dialogueFinished = true;
+        EndCheckout();
+    }
     
     public void Bagged(int weight, float price)
     {
@@ -74,9 +81,10 @@ public class CheckoutManager : MonoBehaviour
 
     void EndCheckout()
     {
-        if (finishedBag) //add finished convo too later once implemented
+        if (finishedBag && dialogueFinished) //add finished convo too later once implemented
         {
             checkoutTrigger.inCheckout = false;
+            dialogueFinished = false;
             
             lastWeight = 3; //resets for next bagging
             totalPrice = 0;

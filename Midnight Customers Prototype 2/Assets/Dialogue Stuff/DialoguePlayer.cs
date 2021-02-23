@@ -16,6 +16,8 @@ public class DialoguePlayer : MonoBehaviour
 
     public float buttonOffset; //how much space between option buttons
     int buttonNumber; //number of buttons currently instantiated
+
+    public CheckoutManager checkoutManager;
     
     void Start()
     {
@@ -23,10 +25,9 @@ public class DialoguePlayer : MonoBehaviour
         ProceedToNarrative(narrativeData.TargetNodeGuid);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SetConversation(DialogueContainer convo)
     {
-        
+        dialogue = convo;
     }
     private void ProceedToNarrative(string narrativeDataGUID)
     {
@@ -48,6 +49,11 @@ public class DialoguePlayer : MonoBehaviour
             button.GetComponentInChildren<Text>().text = ProcessProperties(choice.PortName);
             button.onClick.AddListener(() => ProceedToNarrative(choice.TargetNodeGuid));
             buttonNumber++;
+        }
+
+        if(buttonNumber == 0)
+        {
+            checkoutManager.EndDialogue();
         }
     }
 
