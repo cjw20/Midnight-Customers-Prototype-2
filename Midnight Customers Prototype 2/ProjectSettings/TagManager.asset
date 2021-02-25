@@ -9,6 +9,7 @@ TagManager:
   - Scanner
   - Bag
   - Checkout Item
+  - Customer
   layers:
   - Default
   - TransparentFX
