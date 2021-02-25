@@ -178,11 +178,7 @@ MonoBehaviour:
   - {fileID: 1852031209}
   - {fileID: 718300844}
   - {fileID: 1311951098}
-  items:
-  - {fileID: 5121236344858949196, guid: dec3ee974bf27f244aacc6ec80ae7ea3, type: 3}
-  - {fileID: 30552192466129110, guid: 6143ebc1358f3df48be354c4cd963dab, type: 3}
-  - {fileID: 3894859540201036956, guid: 8cd4683967b21154092911994e2e08b8, type: 3}
-  - {fileID: 3780908588764048216, guid: a8e72861f571ac84d849f1274aa3d5ba, type: 3}
+  dialoguePlayer: {fileID: 1335715032}
   misbagMessage: {fileID: 775693610}
   idButton: {fileID: 1699710756}
 --- !u!1 &55179765
@@ -1219,7 +1215,7 @@ GameObject:
   - component: {fileID: 1258878924}
   m_Layer: 0
   m_Name: Customer Template
-  m_TagString: Untagged
+  m_TagString: Customer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2873,6 +2869,8 @@ MonoBehaviour:
   playerReady: 0
   customerReady: 0
   checkoutGame: {fileID: 10691445}
+  customer: {fileID: 0}
+  customerInfo: {fileID: 0}
   inCheckout: 0
 --- !u!61 &1907573571
 BoxCollider2D:

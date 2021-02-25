@@ -5,7 +5,7 @@ using UnityEngine;
 public class CheckoutManager : MonoBehaviour
 {
     public GameObject[] itemSpawns;
-    public GameObject[] items; //items brought to checkout
+    GameObject[] items; //items brought to checkout
     int itemNumber; //number of items brought to checkout
     int remainingItems; //items left unbagged
 
@@ -16,23 +16,30 @@ public class CheckoutManager : MonoBehaviour
     float totalPrice;
 
     bool dialogueFinished; //set true by dialogue player when finished
+    public DialoguePlayer dialoguePlayer; 
 
     CheckoutTrigger checkoutTrigger;
 
     public GameObject misbagMessage; //may replace in later versions
     public GameObject idButton; //probably don't need this reference later
 
+    CustomerInfo customerInfo;
+
     // Start is called before the first frame update
 
     private void Start()
     {
         checkoutTrigger = FindObjectOfType<CheckoutTrigger>();
+
     }
     void OnEnable()
     {
-        
+        customerInfo = checkoutTrigger.customerInfo;
 
-        //get items from customer
+        items = customerInfo.checkoutItems;
+
+        dialoguePlayer.StartConvo(customerInfo.nextConversation);
+        
         itemNumber = items.Length;
         remainingItems = itemNumber;
 

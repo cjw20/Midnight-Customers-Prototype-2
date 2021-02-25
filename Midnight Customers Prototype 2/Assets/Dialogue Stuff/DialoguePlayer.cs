@@ -19,9 +19,9 @@ public class DialoguePlayer : MonoBehaviour
 
     public CheckoutManager checkoutManager;
     
-    void OnEnable()
+    public void StartConvo(DialogueContainer convo)
     {
-
+        dialogue = convo;
         //do this after loading the convo?
         var narrativeData = dialogue.NodeLinks.First(); //Entrypoint node
         ProceedToNarrative(narrativeData.TargetNodeGuid);
