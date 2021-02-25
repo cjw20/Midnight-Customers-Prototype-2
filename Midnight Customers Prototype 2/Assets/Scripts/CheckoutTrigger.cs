@@ -7,6 +7,7 @@ public class CheckoutTrigger : MonoBehaviour
     public bool playerReady; //true when player is standing behind register
     public bool customerReady; //true when customer is standing in front of register, ready to check out
     public GameObject checkoutGame;
+    CheckoutManager checkoutManager;
 
     public GameObject customer; //customer standing in front of checkout
     public CustomerInfo customerInfo;
@@ -14,7 +15,7 @@ public class CheckoutTrigger : MonoBehaviour
     public bool inCheckout; //true while checkout game going on
     void Start()
     {
-        
+        checkoutManager = checkoutGame.GetComponent<CheckoutManager>(); //may not need this part later
     }
 
     // Update is called once per frame
@@ -26,6 +27,7 @@ public class CheckoutTrigger : MonoBehaviour
             {
                 inCheckout = true;
                 checkoutGame.SetActive(true);
+                checkoutManager.StartCheckout(customerInfo);
                 //do rest of checkout trigger ehre
             }
         } 

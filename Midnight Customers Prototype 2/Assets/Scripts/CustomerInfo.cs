@@ -24,6 +24,7 @@ public class CustomerInfo : MonoBehaviour
     public void LoadNextConvo()
     {
         conversationProgress++;
-        nextConversation = conversations[conversationProgress];
+        
+        nextConversation = conversations[conversationProgress]; //may need check for if past array length
     }
 }

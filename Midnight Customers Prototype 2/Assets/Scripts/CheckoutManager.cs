@@ -32,9 +32,9 @@ public class CheckoutManager : MonoBehaviour
         checkoutTrigger = FindObjectOfType<CheckoutTrigger>();
 
     }
-    void OnEnable()
+    public void StartCheckout(CustomerInfo customerInfo)
     {
-        customerInfo = checkoutTrigger.customerInfo;
+        
 
         items = customerInfo.checkoutItems;
 

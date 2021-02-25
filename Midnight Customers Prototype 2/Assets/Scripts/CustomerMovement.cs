@@ -23,6 +23,7 @@ public class CustomerMovement : MonoBehaviour
     void Start()
     {
         agent = GetComponent<NavMeshAgent2D>();
+        GoToNextPoint();
     }
 
     // Update is called once per frame
