@@ -44,6 +44,11 @@ public class CheckoutTrigger : MonoBehaviour
         {
             playerReady = true;
         }
+
+        if (collision.CompareTag("Customer"))
+        {
+            customerReady = true;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -51,6 +56,11 @@ public class CheckoutTrigger : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             playerReady = false;
+        }
+
+        if (collision.CompareTag("Customer"))
+        {
+            customerReady = false;
         }
     }
 }
