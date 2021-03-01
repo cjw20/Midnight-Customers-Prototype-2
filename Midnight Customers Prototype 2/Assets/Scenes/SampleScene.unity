@@ -1502,7 +1502,7 @@ MonoBehaviour:
   - {fileID: 3894859540201036956, guid: 8cd4683967b21154092911994e2e08b8, type: 3}
   nextConversation: {fileID: 0}
   conversations:
-  - {fileID: 11400000, guid: 333de47e1bd93664da311b74d39f3d86, type: 2}
+  - {fileID: 11400000, guid: e47733f3fb46e234b803f7212df6fc6e, type: 2}
   - {fileID: 11400000, guid: 4e5a3e4aa6af39e4ea6308392fadec28, type: 2}
   conversationProgress: 0
 --- !u!70 &1258878929
@@ -3087,7 +3087,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: -5177388603050735206, guid: cc35afd292fc349128b36a291fb3a165, type: 3}
   m_Color: {r: 0.97478515, g: 0.3537736, b: 1, a: 1}
   m_FlipX: 0
