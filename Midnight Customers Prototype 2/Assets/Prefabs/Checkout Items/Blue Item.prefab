@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 30552192466129112}
   - component: {fileID: 30552192466129113}
   m_Layer: 0
-  m_Name: Light Item
+  m_Name: Blue Item
   m_TagString: Checkout Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 7482667652216324306, guid: db750325989564987a34393247d883b4, type: 3}
   m_Color: {r: 0.40970984, g: 0.4352276, b: 0.9339623, a: 1}
   m_FlipX: 0
