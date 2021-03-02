@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
+  m_Name: A_Test
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: e979cfa3-e696-4d23-a2fc-88146d8696f2
+    PortName: Next
+    TargetNodeGuid: 8ec7aa21-494e-4cef-a98e-e13646a590ef
+  - BaseNodeGuid: 56fcba0d-0b30-4570-9d32-39ae7e389eab
+    PortName: 'Do you have a garden? This rainy weather must be helping some, huh. '
+    TargetNodeGuid: f088c1a4-2737-4cec-b48f-637b4d0375af
+  - BaseNodeGuid: 56fcba0d-0b30-4570-9d32-39ae7e389eab
+    PortName: " I\u2019m not a fan of all this rain. It must have been a pain driving
+      out here in the dark. "
+    TargetNodeGuid: f088c1a4-2737-4cec-b48f-637b4d0375af
+  - BaseNodeGuid: 8ec7aa21-494e-4cef-a98e-e13646a590ef
+    PortName: Is this all for you today?
+    TargetNodeGuid: 56fcba0d-0b30-4570-9d32-39ae7e389eab
+  - BaseNodeGuid: 8ec7aa21-494e-4cef-a98e-e13646a590ef
+    PortName: Did you find everything okay?
+    TargetNodeGuid: 56fcba0d-0b30-4570-9d32-39ae7e389eab
+  - BaseNodeGuid: f088c1a4-2737-4cec-b48f-637b4d0375af
+    PortName: "I\u2019m sorry?"
+    TargetNodeGuid: 7efd867f-793f-4ca5-b2fb-d3e67c8fe6b6
+  - BaseNodeGuid: f088c1a4-2737-4cec-b48f-637b4d0375af
+    PortName: 'Did you say something? '
+    TargetNodeGuid: 7efd867f-793f-4ca5-b2fb-d3e67c8fe6b6
+  - BaseNodeGuid: 7efd867f-793f-4ca5-b2fb-d3e67c8fe6b6
+    PortName: "Oh\u2026 yeah me too to be honest. I prefer warm weather instead of
+      this gloomy mess."
+    TargetNodeGuid: ada3d634-0642-4605-9762-3dc8bc07f34f
+  - BaseNodeGuid: 7efd867f-793f-4ca5-b2fb-d3e67c8fe6b6
+    PortName: 'I think the rain can be relaxing, but I see what you mean. I miss
+      the sun a bit too. '
+    TargetNodeGuid: ada3d634-0642-4605-9762-3dc8bc07f34f
+  - BaseNodeGuid: ada3d634-0642-4605-9762-3dc8bc07f34f
+    PortName: "Right\u2026well here you go ma\u2019am. Drive safe!"
+    TargetNodeGuid: 03e47b3c-401e-44a9-be2c-8078fae3a87d
+  - BaseNodeGuid: ada3d634-0642-4605-9762-3dc8bc07f34f
+    PortName: "Okay\u2026uh\u2026have a good night Miss. "
+    TargetNodeGuid: 03e47b3c-401e-44a9-be2c-8078fae3a87d
+  DialogueNodeData:
+  - Guid: 56fcba0d-0b30-4570-9d32-39ae7e389eab
+    DialogueText: '*grunt*'
+    Position: {x: 636, y: 380}
+  - Guid: 8ec7aa21-494e-4cef-a98e-e13646a590ef
+    DialogueText: ...
+    Position: {x: 240, y: 270}
+  - Guid: f088c1a4-2737-4cec-b48f-637b4d0375af
+    DialogueText: "\u2026sun\u2026"
+    Position: {x: 1329, y: 452}
+  - Guid: 7efd867f-793f-4ca5-b2fb-d3e67c8fe6b6
+    DialogueText: "\u2026I prefer the sun\u2026"
+    Position: {x: 1705, y: 524}
+  - Guid: ada3d634-0642-4605-9762-3dc8bc07f34f
+    DialogueText: '*grunts*'
+    Position: {x: 2539, y: 538}
+  - Guid: 03e47b3c-401e-44a9-be2c-8078fae3a87d
+    DialogueText: Mhm
+    Position: {x: 3037, y: 561}
+  ExposedProperties: []
+  CommentBlockData: []
