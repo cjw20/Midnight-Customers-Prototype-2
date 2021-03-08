@@ -13,47 +13,50 @@ MonoBehaviour:
   m_Name: Human 2 (normal)
   m_EditorClassIdentifier: 
   NodeLinks:
-  - BaseNodeGuid: a8b770f9-9bf6-441d-9449-0975611b4c00
+  - BaseNodeGuid: 4b343446-fbdf-42e3-9f68-161254a91aab
     PortName: Next
-    TargetNodeGuid: c41c9de9-5cd0-45a7-a4b3-62a80c83b3cb
-  - BaseNodeGuid: c41c9de9-5cd0-45a7-a4b3-62a80c83b3cb
-    PortName: Not to bad you?
-    TargetNodeGuid: 62ebdeef-be85-4676-9958-2e3a9e080f8c
-  - BaseNodeGuid: c41c9de9-5cd0-45a7-a4b3-62a80c83b3cb
-    PortName: Great, did you find everything alright?
-    TargetNodeGuid: c7850ec2-856a-4d09-80e9-55f06d53d72b
-  - BaseNodeGuid: c41c9de9-5cd0-45a7-a4b3-62a80c83b3cb
-    PortName: It's my first day, nervous is an understatement.
-    TargetNodeGuid: 3c2e1ce1-ba30-41d9-85a3-494218f1b890
-  - BaseNodeGuid: 62ebdeef-be85-4676-9958-2e3a9e080f8c
-    PortName: I agree but, people buy them.
-    TargetNodeGuid: d744744f-5875-4d63-b791-6a3f3f74c3da
-  - BaseNodeGuid: 3c2e1ce1-ba30-41d9-85a3-494218f1b890
-    PortName: I guess your right, I have heard that we stay pretty busy though.
-    TargetNodeGuid: d744744f-5875-4d63-b791-6a3f3f74c3da
-  - BaseNodeGuid: c7850ec2-856a-4d09-80e9-55f06d53d72b
-    PortName: Yea, the items are pretty unique, its hard to keep track of them all
-    TargetNodeGuid: d744744f-5875-4d63-b791-6a3f3f74c3da
+    TargetNodeGuid: 38df490e-9909-48fc-8d83-edbf84e7a32c
+  - BaseNodeGuid: 38df490e-9909-48fc-8d83-edbf84e7a32c
+    PortName: Can I help you find something?
+    TargetNodeGuid: 16ae2f27-90d1-4913-b9a0-8bc9ce5be0c4
+  - BaseNodeGuid: 16ae2f27-90d1-4913-b9a0-8bc9ce5be0c4
+    PortName: We should have some on the shelf in the left aisle.
+    TargetNodeGuid: afc0d636-b5e3-4ef9-ab82-a9269b2e508b
+  - BaseNodeGuid: 16ae2f27-90d1-4913-b9a0-8bc9ce5be0c4
+    PortName: What's your cats name?
+    TargetNodeGuid: b0779f69-a1b5-4f71-84db-2cf51f09bb39
+  - BaseNodeGuid: b0779f69-a1b5-4f71-84db-2cf51f09bb39
+    PortName: Sorry ma'am, it is in the left aisle.
+    TargetNodeGuid: b2d3ffb7-1f5f-4f38-acdd-84ccca6379f0
+  - BaseNodeGuid: b0779f69-a1b5-4f71-84db-2cf51f09bb39
+    PortName: It was only a simple question
+    TargetNodeGuid: b2d3ffb7-1f5f-4f38-acdd-84ccca6379f0
+  - BaseNodeGuid: afc0d636-b5e3-4ef9-ab82-a9269b2e508b
+    PortName: Never heard of that flavor, is it new?
+    TargetNodeGuid: 669490f4-d9f0-4829-b224-b8b4916154b9
+  - BaseNodeGuid: afc0d636-b5e3-4ef9-ab82-a9269b2e508b
+    PortName: Deep one sorbet? Is it like deep sea fish?
+    TargetNodeGuid: 669490f4-d9f0-4829-b224-b8b4916154b9
   DialogueNodeData:
-  - Guid: 62ebdeef-be85-4676-9958-2e3a9e080f8c
-    DialogueText: Not to bad myself, you have some unique items in here for a gas
-      station
-    Position: {x: 717, y: 126}
-  - Guid: 3c2e1ce1-ba30-41d9-85a3-494218f1b890
-    DialogueText: I'm sure your doing fine, it is the night shift after all.
-    Position: {x: 763, y: 454}
-  - Guid: c7850ec2-856a-4d09-80e9-55f06d53d72b
-    DialogueText: Yes. it is pretty easy to find normal items, in the sea of unique
-      items in here.
-    Position: {x: 746, y: 266}
-  - Guid: d744744f-5875-4d63-b791-6a3f3f74c3da
-    DialogueText: Good Luck
-    Position: {x: 1458, y: 276}
-  - Guid: c41c9de9-5cd0-45a7-a4b3-62a80c83b3cb
-    DialogueText: How are you today?
-    Position: {x: 274, y: 191}
-  - Guid: 9e9b6a70-1f1c-4cc6-84db-3155cc2a9c56
-    DialogueText: Dialogue Node
-    Position: {x: 190, y: 628}
+  - Guid: 38df490e-9909-48fc-8d83-edbf84e7a32c
+    DialogueText: Hello.
+    Position: {x: 296, y: 215}
+  - Guid: 16ae2f27-90d1-4913-b9a0-8bc9ce5be0c4
+    DialogueText: Do you have any cat food? I can't seem to find any.
+    Position: {x: 716, y: 213}
+  - Guid: afc0d636-b5e3-4ef9-ab82-a9269b2e508b
+    DialogueText: You even have his favorite flavor, Deep One Sorbet. I can only
+      find it here.
+    Position: {x: 1249, y: 151}
+  - Guid: b0779f69-a1b5-4f71-84db-2cf51f09bb39
+    DialogueText: I didn't ask for you to get to know my cat, I asked where the cat
+      food was.
+    Position: {x: 1158, y: 489}
+  - Guid: b2d3ffb7-1f5f-4f38-acdd-84ccca6379f0
+    DialogueText: It's like it's your first day or something.
+    Position: {x: 2029, y: 417}
+  - Guid: 669490f4-d9f0-4829-b224-b8b4916154b9
+    DialogueText: Thank you for your help, have a goodnight.
+    Position: {x: 1965, y: 155}
   ExposedProperties: []
   CommentBlockData: []
