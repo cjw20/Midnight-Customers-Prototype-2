@@ -6,9 +6,9 @@ using UnityEngine.Experimental.Rendering.Universal;
 public class LightFlicker : MonoBehaviour
 {
 
-    public Light2D thisLight; //light this script is referencing
-    public float frequency; //how frequently the light should flicker
-    public float offDuration; //how long the light should stay off when flickering
+    Light2D thisLight; //light this script is referencing
+    public double frequency; //how frequently the light should flicker
+    public double offDuration; //how long the light should stay off when flickering
     public float offIntensity;
     public float onIntensity;
 
@@ -18,7 +18,7 @@ public class LightFlicker : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        thisLight = this.GetComponent<Light2D>();
     }
 
     // Update is called once per frame
