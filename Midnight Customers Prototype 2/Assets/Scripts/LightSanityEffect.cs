@@ -5,9 +5,12 @@ using UnityEngine.Experimental.Rendering.Universal;
 
 public class LightSanityEffect : MonoBehaviour
 {
+    [SerializeField] SoundManager soundManager;
     public Light2D[] targetLights; //light that effect will be played on. May need to make array if multiple targets for some effects
     public float effectDuration; //separate later when more effects/ Public for testing purposes
     public Light2D globalLight;
+
+    public AudioSource creepySound; 
 
     float normalGlobalIntensity;
     Color normalColor;
@@ -36,9 +39,10 @@ public class LightSanityEffect : MonoBehaviour
             i++;
         }
         i = 0;
-        
 
-        //play scary sound effect?
+
+        PlaySound(creepySound);
+        soundManager.PauseBGM();
         
         yield return new WaitForSeconds(effectDuration);
 
@@ -51,8 +55,15 @@ public class LightSanityEffect : MonoBehaviour
         }
         
         globalLight.intensity = 1;
+        creepySound.Stop();
+        soundManager.UnpauseBGM();
 
         yield break;
+    }
+
+    void PlaySound(AudioSource sound)
+    {
+
     }
 
     Color ChangeColor(Light2D target, Color newColor)

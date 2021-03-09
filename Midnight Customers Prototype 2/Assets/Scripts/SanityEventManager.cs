@@ -18,7 +18,7 @@ public class SanityEventManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        
+        LightEffect();
     }
     
 
