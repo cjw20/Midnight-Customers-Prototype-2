@@ -40,8 +40,8 @@ public class LightSanityEffect : MonoBehaviour
         }
         i = 0;
 
-
-        PlaySound(creepySound);
+        creepySound.Play();
+        
         soundManager.PauseBGM();
         
         yield return new WaitForSeconds(effectDuration);
