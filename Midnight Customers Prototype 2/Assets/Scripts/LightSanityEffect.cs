@@ -46,7 +46,7 @@ public class LightSanityEffect : MonoBehaviour
         {
             Strobe(light, strobeRate, false);
 
-            ResetLight(light, i);
+            ResetLight(light);
             i++;
         }
         
@@ -90,7 +90,7 @@ public class LightSanityEffect : MonoBehaviour
         }
     }
 
-    void ResetLight(Light2D target, int arrayNumber)
+    void ResetLight(Light2D target)
     {
         target.color = normalColor;
         target.intensity = 1;
