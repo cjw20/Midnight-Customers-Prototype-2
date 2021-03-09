@@ -7,7 +7,7 @@ public class SanityEventManager : MonoBehaviour
 {
     public static SanityEventManager sanityEvents;
     public LightSanityEffect lightEffects;
-    public Light2D targetLight;
+    public Light2D[] targetLights;
     void Awake()
     {
         if (sanityEvents == null)
@@ -26,6 +26,6 @@ public class SanityEventManager : MonoBehaviour
     {
         //logic for choosing effect here
 
-        StartCoroutine(lightEffects.RedLightScare(targetLight));
+        StartCoroutine(lightEffects.RedLightScare(targetLights));
     }
 }

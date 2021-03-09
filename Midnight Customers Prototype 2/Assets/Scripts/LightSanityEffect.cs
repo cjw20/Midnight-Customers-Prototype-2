@@ -5,35 +5,52 @@ using UnityEngine.Experimental.Rendering.Universal;
 
 public class LightSanityEffect : MonoBehaviour
 {
-    public Light2D targetLight; //light that effect will be played on. May need to make array if multiple targets for some effects
+    public Light2D[] targetLights; //light that effect will be played on. May need to make array if multiple targets for some effects
     public float effectDuration; //separate later when more effects/ Public for testing purposes
+    public Light2D globalLight;
 
-    float normalIntensity;
+    float normalGlobalIntensity;
     Color normalColor;
     
-   
+    void Start()
+    {
+        normalGlobalIntensity = globalLight.intensity;
+    }
    
 
-    public IEnumerator RedLightScare(Light2D target)
+    public IEnumerator RedLightScare(Light2D[] targets)
     {
         //makes a light flash red rapidly
 
         
         double strobeRate = 0.1;
         Color scaryRed = Color.red; //make new one later?
-        normalColor = ChangeColor(target, scaryRed);
-        Strobe(target, strobeRate, true);
+
+        globalLight.intensity = 0;
+
+        int i = 0;
+        foreach(Light2D light in targets)
+        {
+            normalColor = ChangeColor(light, scaryRed); 
+            Strobe(light, strobeRate, true);
+            i++;
+        }
+        i = 0;
+        
 
         //play scary sound effect?
-        //turn off other lights?
+        
         yield return new WaitForSeconds(effectDuration);
 
+        foreach (Light2D light in targets)
+        {
+            Strobe(light, strobeRate, false);
+
+            ResetLight(light, i);
+            i++;
+        }
         
-        Strobe(target, strobeRate, false);
-
-        ResetLight(target);
-
-       
+        globalLight.intensity = 1;
 
         yield break;
     }
@@ -51,7 +68,7 @@ public class LightSanityEffect : MonoBehaviour
     void Strobe(Light2D target, double strobeRate, bool starting)
     {
         GameObject lightObject = target.gameObject;
-        normalIntensity = target.intensity;
+        
         if (starting)
         {
             if(lightObject.GetComponent<LightFlicker>() == null)
@@ -73,7 +90,7 @@ public class LightSanityEffect : MonoBehaviour
         }
     }
 
-    void ResetLight(Light2D target)
+    void ResetLight(Light2D target, int arrayNumber)
     {
         target.color = normalColor;
         target.intensity = 1;
