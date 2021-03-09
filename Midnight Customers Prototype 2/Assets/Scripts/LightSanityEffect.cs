@@ -11,24 +11,10 @@ public class LightSanityEffect : MonoBehaviour
     float normalIntensity;
     Color normalColor;
     
-   // Start is called before the first frame update
-    void Start()
-    {
-        StartCoroutine(RedLightScare(targetLight, effectDuration));
-    }
+   
+   
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public void SetTarget(Light2D light)
-    {
-        targetLight = light;
-    }
-
-    IEnumerator RedLightScare(Light2D target, float duration)
+    public IEnumerator RedLightScare(Light2D target)
     {
         //makes a light flash red rapidly
 

@@ -6,6 +6,8 @@ using UnityEngine.Experimental.Rendering.Universal;
 public class SanityEventManager : MonoBehaviour
 {
     public static SanityEventManager sanityEvents;
+    public LightSanityEffect lightEffects;
+    public Light2D targetLight;
     void Awake()
     {
         if (sanityEvents == null)
@@ -16,5 +18,14 @@ public class SanityEventManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        LightEffect();
+    }
+    
+
+    public void LightEffect()
+    {
+        //logic for choosing effect here
+
+        StartCoroutine(lightEffects.RedLightScare(targetLight));
     }
 }
