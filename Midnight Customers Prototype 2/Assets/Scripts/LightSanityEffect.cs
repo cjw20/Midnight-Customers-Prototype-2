@@ -24,6 +24,8 @@ public class LightSanityEffect : MonoBehaviour
         normalColor = ChangeColor(target, scaryRed);
         Strobe(target, strobeRate, true);
 
+        //play scary sound effect?
+        //turn off other lights?
         yield return new WaitForSeconds(effectDuration);
 
         
@@ -58,7 +60,7 @@ public class LightSanityEffect : MonoBehaviour
                 strobeEffect.offDuration = strobeRate;
                 strobeEffect.frequency = strobeRate;
                 strobeEffect.offIntensity = 0;
-                strobeEffect.onIntensity = 1;
+                strobeEffect.onIntensity = 2;
                 
             }
             
