@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Experimental.Rendering.Universal;
 
+
 public class LightSanityEffect : MonoBehaviour
 {
     [SerializeField] SoundManager soundManager;
@@ -34,6 +35,7 @@ public class LightSanityEffect : MonoBehaviour
         int i = 0;
         foreach(Light2D light in targets)
         {
+            strobeRate += Random.Range(-0.05f, 0.05f);
             normalColor = ChangeColor(light, scaryRed); 
             Strobe(light, strobeRate, true);
             i++;
@@ -61,10 +63,7 @@ public class LightSanityEffect : MonoBehaviour
         yield break;
     }
 
-    void PlaySound(AudioSource sound)
-    {
-
-    }
+   
 
     Color ChangeColor(Light2D target, Color newColor)
     {
@@ -84,9 +83,11 @@ public class LightSanityEffect : MonoBehaviour
         {
             if(lightObject.GetComponent<LightFlicker>() == null)
             {
+                
+
                 LightFlicker strobeEffect = lightObject.AddComponent<LightFlicker>();
                 strobeEffect.offDuration = strobeRate;
-                strobeEffect.frequency = strobeRate;
+                strobeEffect.frequency = strobeRate; 
                 strobeEffect.offIntensity = 0;
                 strobeEffect.onIntensity = 2;
                 
