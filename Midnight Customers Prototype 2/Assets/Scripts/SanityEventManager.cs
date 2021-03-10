@@ -18,7 +18,6 @@ public class SanityEventManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        LightEffect();
     }
     
 
@@ -27,5 +26,11 @@ public class SanityEventManager : MonoBehaviour
         //logic for choosing effect here
 
         StartCoroutine(lightEffects.RedLightScare(targetLights));
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        LightEffect();
+        //this is placeholder for testing
     }
 }

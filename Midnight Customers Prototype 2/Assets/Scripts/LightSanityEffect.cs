@@ -35,7 +35,7 @@ public class LightSanityEffect : MonoBehaviour
         int i = 0;
         foreach(Light2D light in targets)
         {
-            strobeRate += Random.Range(-0.05f, 0.05f);
+            strobeRate += Random.Range(0.0f, 0.01f);
             normalColor = ChangeColor(light, scaryRed); 
             Strobe(light, strobeRate, true);
             i++;
