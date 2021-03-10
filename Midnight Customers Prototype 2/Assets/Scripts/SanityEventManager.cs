@@ -8,6 +8,7 @@ public class SanityEventManager : MonoBehaviour
     public static SanityEventManager sanityEvents;
     public LightSanityEffect lightEffects;
     public Light2D[] targetLights;
+    bool alreadyTriggered;
     void Awake()
     {
         if (sanityEvents == null)
@@ -30,7 +31,12 @@ public class SanityEventManager : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        LightEffect();
-        //this is placeholder for testing
+        if (!alreadyTriggered)
+        {
+            LightEffect();
+            //this is placeholder for testing
+            alreadyTriggered = true;
+        }
+
     }
 }
