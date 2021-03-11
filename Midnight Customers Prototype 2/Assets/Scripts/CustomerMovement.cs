@@ -67,7 +67,7 @@ public class CustomerMovement : MonoBehaviour
         if (this.transform.position == new Vector3(exit.position.x, exit.position.y, 0))
         {
             this.gameObject.SetActive(false);
-
+            yield break;
             //save properties like convo progress, get ready for next load 
         }
 
