@@ -81,16 +81,22 @@ public class DialoguePlayer : MonoBehaviour
 
         foreach (var choice in choices)
         {
-            var button = Instantiate(choicePrefab, buttonContainer);
-            button.transform.position = buttonContainer.position + new Vector3(0, buttonOffset * buttonNumber, 0);
-            button.GetComponentInChildren<Text>().text = ProcessProperties(choice.PortName);
-            button.onClick.AddListener(() => ProceedToNarrative(choice.TargetNodeGuid));
+            
+            if(ProcessProperties(choice.PortName) != "...")
+            {
+                var button = Instantiate(choicePrefab, buttonContainer);
+                button.transform.position = buttonContainer.position + new Vector3(0, buttonOffset * buttonNumber, 0);
+                button.GetComponentInChildren<Text>().text = ProcessProperties(choice.PortName);
+                button.onClick.AddListener(() => ProceedToNarrative(choice.TargetNodeGuid));
+            }
+            
             buttonNumber++;
 
             if(ProcessProperties(choice.PortName) == "...")
             {
+                
                 StartCoroutine(WaitForSelection(choice.TargetNodeGuid));
-                Destroy(button);
+                //Destroy(button);
                 //hide button, start wait coroutine for selecting "no option"
                 //pass choice as a parameter
             }
