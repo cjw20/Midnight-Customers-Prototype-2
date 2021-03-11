@@ -42,23 +42,8 @@ public class DialoguePlayer : MonoBehaviour
         {
             Destroy(buttons[i].gameObject);
         }
-
-        buttonNumber = 0;
-
-        foreach (var choice in choices)
-        {
-            var button = Instantiate(choicePrefab, buttonContainer);
-            button.transform.position = buttonContainer.position + new Vector3(0, buttonOffset * buttonNumber, 0);
-            button.GetComponentInChildren<Text>().text = ProcessProperties(choice.PortName);
-            button.onClick.AddListener(() => ProceedToNarrative(choice.TargetNodeGuid));
-            buttonNumber++;
-        }
-
-        if(buttonNumber == 0)
-        {
-            //hide dialogue window?
-            checkoutManager.EndDialogue();
-        }
+        //check if ending?
+        StartCoroutine(WaitForNewChoices(narrativeDataGUID));
     }
 
     private string ProcessProperties(string text)
@@ -72,8 +57,39 @@ public class DialoguePlayer : MonoBehaviour
         
     }
 
-    IEnumerator WaitForNewChoices()
+    IEnumerator WaitForNewChoices(string narrativeDataGUID)
     {
+        DisplayNewOptions(narrativeDataGUID);
         yield break;
+    }
+
+
+    void DisplayNewOptions(string narrativeDataGUID)
+    {
+
+        var text = dialogue.DialogueNodeData.Find(x => x.Guid == narrativeDataGUID).DialogueText;
+        var choices = dialogue.NodeLinks.Where(x => x.BaseNodeGuid == narrativeDataGUID);
+        dialogueText.text = ProcessProperties(text);
+        var buttons = buttonContainer.GetComponentsInChildren<Button>();
+        for (int i = 0; i < buttons.Length; i++)
+        {
+            Destroy(buttons[i].gameObject);
+        }
+        buttonNumber = 0;
+
+        foreach (var choice in choices)
+        {
+            var button = Instantiate(choicePrefab, buttonContainer);
+            button.transform.position = buttonContainer.position + new Vector3(0, buttonOffset * buttonNumber, 0);
+            button.GetComponentInChildren<Text>().text = ProcessProperties(choice.PortName);
+            button.onClick.AddListener(() => ProceedToNarrative(choice.TargetNodeGuid));
+            buttonNumber++;
+        }
+
+        if (buttonNumber == 0)
+        {
+            //hide dialogue window?
+            checkoutManager.EndDialogue();
+        }
     }
 }

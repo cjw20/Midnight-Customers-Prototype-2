@@ -31,12 +31,16 @@ public class SanityEventManager : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!alreadyTriggered)
+        if (collision.CompareTag("Customer"))
         {
-            LightEffect();
-            //this is placeholder for testing
-            alreadyTriggered = true;
+            if (!alreadyTriggered)
+            {
+                LightEffect();
+                //this is placeholder for testing
+                alreadyTriggered = true;
+            }
         }
+        
 
     }
 }

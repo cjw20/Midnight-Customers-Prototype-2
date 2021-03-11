@@ -91,6 +91,7 @@ public class CheckoutManager : MonoBehaviour
         if (finishedBag && dialogueFinished) //add finished convo too later once implemented
         {
             checkoutTrigger.inCheckout = false;
+            checkoutTrigger.customerInfo.GetComponent<CustomerMovement>().FinishedCheckout();
             dialogueFinished = false;
             
             lastWeight = 3; //resets for next bagging
