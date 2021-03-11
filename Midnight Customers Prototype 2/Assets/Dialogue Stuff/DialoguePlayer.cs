@@ -86,6 +86,14 @@ public class DialoguePlayer : MonoBehaviour
             button.GetComponentInChildren<Text>().text = ProcessProperties(choice.PortName);
             button.onClick.AddListener(() => ProceedToNarrative(choice.TargetNodeGuid));
             buttonNumber++;
+
+            if(ProcessProperties(choice.PortName) == "...")
+            {
+                StartCoroutine(WaitForSelection(choice.TargetNodeGuid));
+                Destroy(button);
+                //hide button, start wait coroutine for selecting "no option"
+                //pass choice as a parameter
+            }
         }
 
         if (buttonNumber == 0)
@@ -93,6 +101,13 @@ public class DialoguePlayer : MonoBehaviour
             //hide dialogue window?
             checkoutManager.EndDialogue();
         }
+    }
+
+    IEnumerator WaitForSelection(string targetNodeGuid)
+    {
+        yield return new WaitForSeconds(10); //waits 10 seconds may want to make shorter?
+        ProceedToNarrative(targetNodeGuid);
+        yield break;
     }
 
     IEnumerator TypeSentence(string sentence, string narrativeDataGUID) 

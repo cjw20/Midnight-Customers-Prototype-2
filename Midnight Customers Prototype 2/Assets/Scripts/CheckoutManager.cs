@@ -25,7 +25,7 @@ public class CheckoutManager : MonoBehaviour
 
     CustomerInfo customerInfo;
 
-    // Start is called before the first frame update
+    public AudioSource scanSound;
 
     private void Start()
     {
@@ -84,6 +84,11 @@ public class CheckoutManager : MonoBehaviour
             finishedBag = true;
             EndCheckout();
         }
+    }
+
+    public void ScanItem()
+    {
+        scanSound.Play();
     }
 
     void EndCheckout()
