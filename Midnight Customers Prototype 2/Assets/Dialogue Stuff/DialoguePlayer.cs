@@ -59,6 +59,7 @@ public class DialoguePlayer : MonoBehaviour
 
     IEnumerator WaitForNewChoices(string narrativeDataGUID)
     {
+        yield return new WaitForSeconds(2);
         DisplayNewOptions(narrativeDataGUID);
         yield break;
     }
