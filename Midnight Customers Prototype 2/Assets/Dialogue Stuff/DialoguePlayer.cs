@@ -71,4 +71,9 @@ public class DialoguePlayer : MonoBehaviour
 
         
     }
+
+    IEnumerator WaitForNewChoices()
+    {
+        yield break;
+    }
 }
