@@ -36,14 +36,14 @@ public class DialoguePlayer : MonoBehaviour
     {
         var text = dialogue.DialogueNodeData.Find(x => x.Guid == narrativeDataGUID).DialogueText;
         var choices = dialogue.NodeLinks.Where(x => x.BaseNodeGuid == narrativeDataGUID);
-        StartCoroutine(TypeSentence(ProcessProperties(text), narrativeDataGUID));
+        
         var buttons = buttonContainer.GetComponentsInChildren<Button>();
         for (int i = 0; i < buttons.Length; i++)
         {
             Destroy(buttons[i].gameObject);
         }
         //check if ending?
-        
+        StartCoroutine(TypeSentence(ProcessProperties(text), narrativeDataGUID));
     }
 
     private string ProcessProperties(string text)
@@ -71,7 +71,7 @@ public class DialoguePlayer : MonoBehaviour
         var text = dialogue.DialogueNodeData.Find(x => x.Guid == narrativeDataGUID).DialogueText;
         var choices = dialogue.NodeLinks.Where(x => x.BaseNodeGuid == narrativeDataGUID);
         
-        //dialogueText.text = ProcessProperties(text);
+        
         var buttons = buttonContainer.GetComponentsInChildren<Button>();
         for (int i = 0; i < buttons.Length; i++)
         {
@@ -81,6 +81,7 @@ public class DialoguePlayer : MonoBehaviour
 
         foreach (var choice in choices)
         {
+            
             
             if(ProcessProperties(choice.PortName) != "...")
             {
@@ -93,12 +94,9 @@ public class DialoguePlayer : MonoBehaviour
             buttonNumber++;
 
             if(ProcessProperties(choice.PortName) == "...")
-            {
-                
+            {                
                 StartCoroutine(WaitForSelection(choice.TargetNodeGuid));
-                //Destroy(button);
-                //hide button, start wait coroutine for selecting "no option"
-                //pass choice as a parameter
+                
             }
         }
 
@@ -112,19 +110,31 @@ public class DialoguePlayer : MonoBehaviour
     IEnumerator WaitForSelection(string targetNodeGuid)
     {
         yield return new WaitForSeconds(10); //waits 10 seconds may want to make shorter?
+        //have a bar that fills
         ProceedToNarrative(targetNodeGuid);
         yield break;
     }
 
     IEnumerator TypeSentence(string sentence, string narrativeDataGUID) 
     {
-        dialogueText.text = "";
-        foreach(char letter in sentence.ToCharArray())
+        if(sentence.Substring(0,1) == "+" || sentence.Substring(0, 1) == "-")
         {
-            dialogueText.text += letter;
-            yield return new WaitForSeconds(0.05f); //delay goes here
+            int relationshipChange = int.Parse(sentence); //gets change value from string. May need + / - extra
+            checkoutManager.EndDialogue();
+            //add or subtract characters relationship score
+            yield break;
         }
-        StartCoroutine(WaitForNewChoices(narrativeDataGUID));
-        yield break;
+        else
+        {
+            dialogueText.text = "";
+            foreach (char letter in sentence.ToCharArray())
+            {
+                dialogueText.text += letter;
+                yield return new WaitForSeconds(0.05f); //delay goes here
+            }
+            StartCoroutine(WaitForNewChoices(narrativeDataGUID));
+            yield break;
+        }
+        
     }
 }
