@@ -36,14 +36,14 @@ public class DialoguePlayer : MonoBehaviour
     {
         var text = dialogue.DialogueNodeData.Find(x => x.Guid == narrativeDataGUID).DialogueText;
         var choices = dialogue.NodeLinks.Where(x => x.BaseNodeGuid == narrativeDataGUID);
-        dialogueText.text = ProcessProperties(text);
+        StartCoroutine(TypeSentence(ProcessProperties(text), narrativeDataGUID));
         var buttons = buttonContainer.GetComponentsInChildren<Button>();
         for (int i = 0; i < buttons.Length; i++)
         {
             Destroy(buttons[i].gameObject);
         }
         //check if ending?
-        StartCoroutine(WaitForNewChoices(narrativeDataGUID));
+        
     }
 
     private string ProcessProperties(string text)
@@ -59,7 +59,7 @@ public class DialoguePlayer : MonoBehaviour
 
     IEnumerator WaitForNewChoices(string narrativeDataGUID)
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
         DisplayNewOptions(narrativeDataGUID);
         yield break;
     }
@@ -70,7 +70,8 @@ public class DialoguePlayer : MonoBehaviour
 
         var text = dialogue.DialogueNodeData.Find(x => x.Guid == narrativeDataGUID).DialogueText;
         var choices = dialogue.NodeLinks.Where(x => x.BaseNodeGuid == narrativeDataGUID);
-        dialogueText.text = ProcessProperties(text);
+        
+        //dialogueText.text = ProcessProperties(text);
         var buttons = buttonContainer.GetComponentsInChildren<Button>();
         for (int i = 0; i < buttons.Length; i++)
         {
@@ -92,5 +93,17 @@ public class DialoguePlayer : MonoBehaviour
             //hide dialogue window?
             checkoutManager.EndDialogue();
         }
+    }
+
+    IEnumerator TypeSentence(string sentence, string narrativeDataGUID) 
+    {
+        dialogueText.text = "";
+        foreach(char letter in sentence.ToCharArray())
+        {
+            dialogueText.text += letter;
+            yield return new WaitForSeconds(0.05f); //delay goes here
+        }
+        StartCoroutine(WaitForNewChoices(narrativeDataGUID));
+        yield break;
     }
 }
