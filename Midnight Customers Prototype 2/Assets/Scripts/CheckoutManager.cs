@@ -25,7 +25,7 @@ public class CheckoutManager : MonoBehaviour
 
     CustomerInfo customerInfo;
 
-    // Start is called before the first frame update
+    public AudioSource scanSound;
 
     private void Start()
     {
@@ -86,11 +86,17 @@ public class CheckoutManager : MonoBehaviour
         }
     }
 
+    public void ScanItem()
+    {
+        scanSound.Play();
+    }
+
     void EndCheckout()
     {
         if (finishedBag && dialogueFinished) //add finished convo too later once implemented
         {
             checkoutTrigger.inCheckout = false;
+            checkoutTrigger.customerInfo.GetComponent<CustomerMovement>().FinishedCheckout();
             dialogueFinished = false;
             
             lastWeight = 3; //resets for next bagging

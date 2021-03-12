@@ -12,6 +12,8 @@ public class CheckoutItem : MonoBehaviour
     //rules like alchoholic?
     public bool isScanned = false;
 
+    
+
     public CheckoutManager checkoutManager;
     // Start is called before the first frame update
     void Start()
@@ -32,6 +34,7 @@ public class CheckoutItem : MonoBehaviour
             if (isScanned)
             {
                 checkoutManager.Bagged(weight, price);
+
                 Destroy(this.gameObject);
 
             }
@@ -41,6 +44,7 @@ public class CheckoutItem : MonoBehaviour
             if (!isScanned)
             {
                 isScanned = true;
+                checkoutManager.ScanItem();
                 //mgControl.UpdatePrice(price);
                 //scanSound.Play();
             }

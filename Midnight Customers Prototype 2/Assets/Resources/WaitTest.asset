@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
+  m_Name: WaitTest
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: 7f90c7b6-4492-484c-82d5-7573ef5df41e
+    PortName: Next
+    TargetNodeGuid: e41c48d9-7271-4ade-83fc-3d8916da40b6
+  - BaseNodeGuid: e41c48d9-7271-4ade-83fc-3d8916da40b6
+    PortName: ...
+    TargetNodeGuid: 878fc225-4a30-4a11-b633-fa3eab45ab98
+  - BaseNodeGuid: e41c48d9-7271-4ade-83fc-3d8916da40b6
+    PortName: Hey
+    TargetNodeGuid: e90cfba6-bcc0-434d-9040-7b5efcad74a3
+  DialogueNodeData:
+  - Guid: e41c48d9-7271-4ade-83fc-3d8916da40b6
+    DialogueText: Hello
+    Position: {x: 271, y: 183}
+  - Guid: 878fc225-4a30-4a11-b633-fa3eab45ab98
+    DialogueText: ...Worked
+    Position: {x: 584, y: 280}
+  - Guid: e90cfba6-bcc0-434d-9040-7b5efcad74a3
+    DialogueText: Why?
+    Position: {x: 641, y: 110}
+  ExposedProperties: []
+  CommentBlockData: []

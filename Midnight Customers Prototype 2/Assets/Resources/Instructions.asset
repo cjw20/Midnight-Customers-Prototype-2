@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
+  m_Name: Instructions
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: 24f0c0f6-ff6c-47b3-9f09-c36852900cc3
+    PortName: Next
+    TargetNodeGuid: 82c683a1-7655-48e8-8fe7-69c965079369
+  - BaseNodeGuid: 82c683a1-7655-48e8-8fe7-69c965079369
+    PortName: BS 2
+    TargetNodeGuid: 42efe6bd-c71f-4f5f-990b-4e9424a0e90c
+  - BaseNodeGuid: 82c683a1-7655-48e8-8fe7-69c965079369
+    PortName: bs 1
+    TargetNodeGuid: 42efe6bd-c71f-4f5f-990b-4e9424a0e90c
+  - BaseNodeGuid: 82c683a1-7655-48e8-8fe7-69c965079369
+    PortName: ...
+    TargetNodeGuid: cfc6277a-3180-438c-a114-8458f19f7410
+  DialogueNodeData:
+  - Guid: 82c683a1-7655-48e8-8fe7-69c965079369
+    DialogueText: '"..." means no option selected in time NEED THIS IN EACH DIALOGUE
+      NODE EVEN IF LEADS TO SAME OPTION AS ANOTHER'
+    Position: {x: 238, y: 254}
+  - Guid: cfc6277a-3180-438c-a114-8458f19f7410
+    DialogueText: -1
+    Position: {x: 1146, y: 409}
+  - Guid: 42efe6bd-c71f-4f5f-990b-4e9424a0e90c
+    DialogueText: +1
+    Position: {x: 1192, y: 196}
+  - Guid: 97e1827b-ed6f-44f8-92c6-6edca71b68ef
+    DialogueText: Last node with + or - followed by value relationship has changed
+      on that path
+    Position: {x: 178, y: 12}
+  ExposedProperties: []
+  CommentBlockData: []
