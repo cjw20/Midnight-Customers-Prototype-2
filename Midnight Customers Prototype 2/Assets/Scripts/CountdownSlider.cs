@@ -6,7 +6,8 @@ using UnityEngine.UI;
 public class CountdownSlider : MonoBehaviour
 {
     public Slider slider;
-    bool isCountingDown;
+    public bool isCountingDown;
+    public float timePassed;
 
     public void SetValue(float change)
     {
@@ -21,10 +22,17 @@ public class CountdownSlider : MonoBehaviour
 
     private void Update()
     {
-        if (isCountingDown && slider.value > 0)
+        
+        if (isCountingDown)
         {
-            SetValue(-Time.deltaTime);
-            //if value = 0, tell dialogue player?
+            timePassed += Time.deltaTime;
+            if(timePassed >= 0.01f)
+            {
+                SetValue(-timePassed);
+                timePassed = 0;
+                //if value = 0, tell dialogue player?
+            }
+
         }
     }
 
