@@ -14,11 +14,18 @@ public class DialoguePlayer : MonoBehaviour
     [SerializeField] private Button choicePrefab;
     [SerializeField] private Transform buttonContainer;
 
+    public CountdownSlider countdownSlider;
+
     public float buttonOffset; //how much space between option buttons
     int buttonNumber; //number of buttons currently instantiated
 
     public CheckoutManager checkoutManager;
-    
+
+    private void OnEnable()
+    {
+        countdownSlider.SetMinMax(0, 10, 10);
+    }
+
     public void StartConvo(DialogueContainer convo)
     {
         dialogue = convo;
@@ -110,8 +117,9 @@ public class DialoguePlayer : MonoBehaviour
     IEnumerator WaitForSelection(string targetNodeGuid)
     {
         yield return new WaitForSeconds(10); //waits 10 seconds may want to make shorter?
-        //have a bar that fills
+        countdownSlider.StartCount();
         ProceedToNarrative(targetNodeGuid);
+        countdownSlider.Reset();
         yield break;
     }
 
