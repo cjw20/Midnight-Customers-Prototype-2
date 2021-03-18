@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CheckoutManager : MonoBehaviour
 {
@@ -23,6 +24,8 @@ public class CheckoutManager : MonoBehaviour
     public GameObject misbagMessage; //may replace in later versions
     public GameObject idButton; //probably don't need this reference later
 
+    public Text priceText;
+
     CustomerInfo customerInfo;
 
     public AudioSource scanSound;
@@ -34,7 +37,7 @@ public class CheckoutManager : MonoBehaviour
     }
     public void StartCheckout(CustomerInfo customerInfo)
     {
-        
+        priceText.text = "$0.00";
 
         items = customerInfo.checkoutItems;
 
@@ -68,7 +71,7 @@ public class CheckoutManager : MonoBehaviour
         EndCheckout();
     }
     
-    public void Bagged(int weight, float price)
+    public void Bagged(int weight)
     {
         if(weight > lastWeight)
         {
@@ -78,7 +81,7 @@ public class CheckoutManager : MonoBehaviour
         lastWeight = weight;
 
         remainingItems--;
-        totalPrice += price;
+        
         if(remainingItems < 1)
         {
             finishedBag = true;
@@ -86,8 +89,10 @@ public class CheckoutManager : MonoBehaviour
         }
     }
 
-    public void ScanItem()
+    public void ScanItem(float price)
     {
+        totalPrice += price;
+        priceText.text = "$" + totalPrice.ToString();
         scanSound.Play();
     }
 

@@ -33,7 +33,7 @@ public class CheckoutItem : MonoBehaviour
         {
             if (isScanned)
             {
-                checkoutManager.Bagged(weight, price);
+                checkoutManager.Bagged(weight);
 
                 Destroy(this.gameObject);
 
@@ -44,9 +44,8 @@ public class CheckoutItem : MonoBehaviour
             if (!isScanned)
             {
                 isScanned = true;
-                checkoutManager.ScanItem();
-                //mgControl.UpdatePrice(price);
-                //scanSound.Play();
+                checkoutManager.ScanItem(price);
+                
             }
 
         }

@@ -12,7 +12,7 @@ public class DialoguePlayer : MonoBehaviour
     [SerializeField] private DialogueContainer dialogue;
     [SerializeField] private Text dialogueText;
     [SerializeField] private Button choicePrefab;
-    [SerializeField] private Transform buttonContainer;
+    [SerializeField] private RectTransform buttonContainer;
 
     public CountdownSlider countdownSlider;
 
@@ -94,7 +94,7 @@ public class DialoguePlayer : MonoBehaviour
             if(ProcessProperties(choice.PortName) != "...")
             {
                 var button = Instantiate(choicePrefab, buttonContainer);
-                button.transform.position = buttonContainer.position + new Vector3(0, buttonOffset * buttonNumber - 75, 0); //add offset that switches between above and below?
+                button.transform.position = buttonContainer.position + new Vector3(0, (buttonOffset * buttonNumber - buttonOffset), 0); //add offset that switches between above and below?
                 button.GetComponentInChildren<Text>().text = ProcessProperties(choice.PortName);
                 button.onClick.AddListener(() => ProceedToNarrative(choice.TargetNodeGuid));
             }
