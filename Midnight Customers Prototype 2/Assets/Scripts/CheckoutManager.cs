@@ -102,7 +102,7 @@ public class CheckoutManager : MonoBehaviour
     public void TakeMoney()
     {
         customerPayed = true;
-        priceText.text = "Paid";
+        priceText.text = "PAID";
         EndCheckout();
     }
     public void ScanItem(float price)
