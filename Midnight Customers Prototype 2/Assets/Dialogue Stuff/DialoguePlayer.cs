@@ -111,7 +111,7 @@ public class DialoguePlayer : MonoBehaviour
         if (buttonNumber == 0)
         {
             //hide dialogue window?
-            checkoutManager.EndDialogue();
+            checkoutManager.EndDialogue(0);
         }
     }
 
@@ -130,7 +130,12 @@ public class DialoguePlayer : MonoBehaviour
         if(sentence.Substring(0,1) == "+" || sentence.Substring(0, 1) == "-")
         {
             int relationshipChange = int.Parse(sentence); //gets change value from string. May need + / - extra
-            checkoutManager.EndDialogue();
+            
+            if(sentence.Substring(0,1) == "-")
+            {
+                relationshipChange *= -1; //may not need this if parse recognizes negative
+            }
+            checkoutManager.EndDialogue(relationshipChange);
             //add or subtract characters relationship score
             yield break;
         }

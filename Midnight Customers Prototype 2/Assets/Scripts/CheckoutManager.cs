@@ -71,8 +71,9 @@ public class CheckoutManager : MonoBehaviour
         
     }
 
-    public void EndDialogue()
+    public void EndDialogue(int relationshipChange)
     {
+        customerInfo.relationshipScore += relationshipChange;
         dialogueFinished = true;
         EndCheckout();
     }

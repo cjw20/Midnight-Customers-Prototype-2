@@ -6,6 +6,7 @@ public class CustomerInfo : MonoBehaviour
 {
     public string customerName;
     public Sprite portrait;
+    public int relationshipScore; //will need to save and load this for each customer 
     public GameObject[] checkoutItems; //items brought to checkout. May make script to choose this later
 
     public GameObject[] carriedMoney;
