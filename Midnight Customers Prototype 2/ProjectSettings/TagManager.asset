@@ -10,6 +10,7 @@ TagManager:
   - Bag
   - Checkout Item
   - Customer
+  - CashReg
   layers:
   - Default
   - TransparentFX

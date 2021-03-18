@@ -12,6 +12,7 @@ public class CheckoutManager : MonoBehaviour
 
     bool finishedBag; //true when all items have been scanned
     bool needsIDCheck;
+    bool customerPayed;
     
     int lastWeight = 3;
     float totalPrice;
@@ -24,7 +25,10 @@ public class CheckoutManager : MonoBehaviour
     public GameObject misbagMessage; //may replace in later versions
     public GameObject idButton; //probably don't need this reference later
 
+    public SpriteRenderer portraitLocation;
+
     public Text priceText;
+    public Transform moneySpawn; //where money gets placed
 
     CustomerInfo customerInfo;
 
@@ -35,11 +39,13 @@ public class CheckoutManager : MonoBehaviour
         checkoutTrigger = FindObjectOfType<CheckoutTrigger>();
 
     }
-    public void StartCheckout(CustomerInfo customerInfo)
+    public void StartCheckout(CustomerInfo info)
     {
+        customerInfo = info;
         priceText.text = "$0.00";
 
         items = customerInfo.checkoutItems;
+        portraitLocation.sprite = customerInfo.portrait;
 
         dialoguePlayer.StartConvo(customerInfo.nextConversation);
         
@@ -85,10 +91,20 @@ public class CheckoutManager : MonoBehaviour
         if(remainingItems < 1)
         {
             finishedBag = true;
-            EndCheckout();
+            GiveMoney();
         }
     }
 
+    void GiveMoney()
+    {
+        Instantiate(customerInfo.carriedMoney[0], moneySpawn);
+    }
+    public void TakeMoney()
+    {
+        customerPayed = true;
+        priceText.text = "Paid";
+        EndCheckout();
+    }
     public void ScanItem(float price)
     {
         totalPrice += price;
@@ -98,11 +114,12 @@ public class CheckoutManager : MonoBehaviour
 
     void EndCheckout()
     {
-        if (finishedBag && dialogueFinished) //add finished convo too later once implemented
+        if (finishedBag && dialogueFinished && customerPayed) //add finished convo too later once implemented
         {
             checkoutTrigger.inCheckout = false;
             checkoutTrigger.customerInfo.GetComponent<CustomerMovement>().FinishedCheckout();
             dialogueFinished = false;
+            customerPayed = false;
             
             lastWeight = 3; //resets for next bagging
             totalPrice = 0;
