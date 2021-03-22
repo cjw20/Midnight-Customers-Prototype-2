@@ -20,6 +20,7 @@ public class DialoguePlayer : MonoBehaviour
     int buttonNumber; //number of buttons currently instantiated
 
     public CheckoutManager checkoutManager;
+    Coroutine lastCourutine;
 
     private void OnEnable()
     {
@@ -41,8 +42,12 @@ public class DialoguePlayer : MonoBehaviour
     }
     private void ProceedToNarrative(string narrativeDataGUID)
     {
-        StopCoroutine("WaitForSelection");
-        countdownSlider.Reset();
+        if(lastCourutine != null)
+        {
+            StopCoroutine(lastCourutine);
+            countdownSlider.Reset();
+        }
+        
         var text = dialogue.DialogueNodeData.Find(x => x.Guid == narrativeDataGUID).DialogueText;
         var choices = dialogue.NodeLinks.Where(x => x.BaseNodeGuid == narrativeDataGUID);
         
@@ -105,7 +110,7 @@ public class DialoguePlayer : MonoBehaviour
 
             if(ProcessProperties(choice.PortName) == "...")
             {                
-                StartCoroutine(WaitForSelection(choice.TargetNodeGuid));
+                lastCourutine = StartCoroutine(WaitForSelection(choice.TargetNodeGuid));
                 
             }
         }

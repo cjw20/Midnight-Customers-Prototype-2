@@ -5571,6 +5571,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3901377536207474691, guid: 40d59a08db55660459c041ead8468cbe, type: 3}
+      propertyPath: conversations.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: ca8b130a5e1cdec4895f7ff80e0c675c, type: 2}
     - target: {fileID: 3901377536207474712, guid: 40d59a08db55660459c041ead8468cbe, type: 3}
       propertyPath: m_Name
       value: Customer Template
