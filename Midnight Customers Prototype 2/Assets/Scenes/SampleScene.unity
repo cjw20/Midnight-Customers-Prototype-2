@@ -2919,7 +2919,7 @@ MonoBehaviour:
   choicePrefab: {fileID: 2179707956389947301, guid: 611cc085f76f95647ba2846b11682128, type: 3}
   buttonContainer: {fileID: 1976128151}
   countdownSlider: {fileID: 505964449}
-  buttonOffset: 50
+  buttonOffset: 100
   checkoutManager: {fileID: 10691447}
 --- !u!1 &1377659258
 GameObject:
