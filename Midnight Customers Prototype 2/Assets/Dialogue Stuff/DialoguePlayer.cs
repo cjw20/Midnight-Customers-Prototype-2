@@ -41,6 +41,8 @@ public class DialoguePlayer : MonoBehaviour
     }
     private void ProceedToNarrative(string narrativeDataGUID)
     {
+        StopCoroutine("WaitForSelection");
+        countdownSlider.Reset();
         var text = dialogue.DialogueNodeData.Find(x => x.Guid == narrativeDataGUID).DialogueText;
         var choices = dialogue.NodeLinks.Where(x => x.BaseNodeGuid == narrativeDataGUID);
         
