@@ -28,11 +28,7 @@ public class CustomerManager : MonoBehaviour
         LoadCustomer(human1);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 
     public void LoadCustomer(GameObject customer)
     {

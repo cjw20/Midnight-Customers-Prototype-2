@@ -11,6 +11,7 @@ public class CheckoutTrigger : MonoBehaviour
 
     public GameObject customer; //customer standing in front of checkout
     public CustomerInfo customerInfo;
+    PlayerMovement playerMove;
 
     public bool inCheckout; //true while checkout game going on
     void Start()
@@ -21,10 +22,11 @@ public class CheckoutTrigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.E))
         {
             if (playerReady && customerReady && !inCheckout)//and customer ready too later once implemented
             {
+                playerMove.moveable = false;
                 inCheckout = true;
                 checkoutGame.SetActive(true);
                 checkoutManager.StartCheckout(customerInfo);
@@ -33,6 +35,12 @@ public class CheckoutTrigger : MonoBehaviour
         } 
     }
 
+    public void EndCheckout()
+    {
+        playerMove.moveable = true;
+        inCheckout = false;
+
+    }
    
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -40,6 +48,7 @@ public class CheckoutTrigger : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             playerReady = true;
+            playerMove = collision.gameObject.GetComponent<PlayerMovement>();
         }
 
         if (collision.CompareTag("Customer"))
