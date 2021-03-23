@@ -33,7 +33,7 @@ public class CustomerInfo : MonoBehaviour
 
         if(conversationProgress <= conversations.Length)
         {
-            nextConversation = conversations[conversationProgress]; //may need check for if past array length
+            nextConversation = conversations[conversationProgress]; 
         }
         
         
