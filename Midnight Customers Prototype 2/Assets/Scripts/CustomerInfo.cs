@@ -15,7 +15,7 @@ public class CustomerInfo : MonoBehaviour
     public DialogueContainer[] conversations; //list of conversations that customer will progress through
     //may need to split up once conversation variants are added (happy/unhappy)
 
-    public int conversationProgress = 0; //how far into conversations player is. Will want to save this variable somewhere
+    public int conversationProgress; //how far into conversations player is. Will want to save this variable somewhere
 
 
 
@@ -30,8 +30,18 @@ public class CustomerInfo : MonoBehaviour
     public void LoadNextConvo()
     {
         conversationProgress++;
+
+        if(conversationProgress <= conversations.Length)
+        {
+            nextConversation = conversations[conversationProgress]; //may need check for if past array length
+        }
         
-        nextConversation = conversations[conversationProgress]; //may need check for if past array length
+        
+    }
+
+    public void UpdateRelationship(int change)
+    {
+        relationshipScore += change;
     }
 
 

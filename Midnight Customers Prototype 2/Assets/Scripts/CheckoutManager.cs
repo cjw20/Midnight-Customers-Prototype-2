@@ -73,7 +73,8 @@ public class CheckoutManager : MonoBehaviour
 
     public void EndDialogue(int relationshipChange)
     {
-        customerInfo.relationshipScore += relationshipChange;
+        customerInfo.UpdateRelationship(relationshipChange);
+        customerInfo.LoadNextConvo();
         dialogueFinished = true;
         EndCheckout();
     }
@@ -119,6 +120,7 @@ public class CheckoutManager : MonoBehaviour
         {
             checkoutTrigger.inCheckout = false;
             checkoutTrigger.customerInfo.GetComponent<CustomerMovement>().FinishedCheckout();
+            
             dialogueFinished = false;
             customerPayed = false;
             

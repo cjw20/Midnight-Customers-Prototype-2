@@ -40,7 +40,7 @@ public class CustomerMovement : MonoBehaviour
         if (!agent.pathPending && agent.remainingDistance < minDistance)
         {
             
-            StartCoroutine("Wait");
+            StartCoroutine(Wait());
 
         }
 
