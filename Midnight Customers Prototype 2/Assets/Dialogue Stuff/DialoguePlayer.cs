@@ -46,6 +46,7 @@ public class DialoguePlayer : MonoBehaviour
         {
             StopCoroutine(lastCourutine);
             countdownSlider.Reset();
+            lastCourutine = null;
         }
         
         var text = dialogue.DialogueNodeData.Find(x => x.Guid == narrativeDataGUID).DialogueText;
