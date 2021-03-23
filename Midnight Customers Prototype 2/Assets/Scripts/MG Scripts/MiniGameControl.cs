@@ -8,17 +8,7 @@ public class MiniGameControl : MonoBehaviour
     MiniGameTrigger currentTrigger;
 
     GameObject currentGame;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   
 
     public void LoadMiniGame(GameObject miniGame, MiniGameTrigger trigger)
     {
