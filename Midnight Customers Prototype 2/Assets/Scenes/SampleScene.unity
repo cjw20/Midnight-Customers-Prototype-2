@@ -4404,7 +4404,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f37964e4ccfb7b94a8f5e0444177b0fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 10
+  moveSpeed: 5
   moveable: 1
 --- !u!212 &1675290338
 SpriteRenderer:
@@ -5843,6 +5843,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 668096973}
     m_Modifications:
+    - target: {fileID: 5642382787059048440, guid: 0c385362111dbf04cbbe979bb5f2d605, type: 3}
+      propertyPath: _speed
+      value: 1.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5642382787059048440, guid: 0c385362111dbf04cbbe979bb5f2d605, type: 3}
+      propertyPath: _acceleration
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5642382787059048440, guid: 0c385362111dbf04cbbe979bb5f2d605, type: 3}
+      propertyPath: _angularSpeed
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 5642382787059048441, guid: 0c385362111dbf04cbbe979bb5f2d605, type: 3}
       propertyPath: exit
       value: 
@@ -5948,6 +5960,18 @@ PrefabInstance:
       propertyPath: plannedPath.Array.data[2]
       value: 
       objectReference: {fileID: 719393441}
+    - target: {fileID: 2086022073797734997, guid: d52477f69afa3d04ba8c39de28ca629d, type: 3}
+      propertyPath: _speed
+      value: 1.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2086022073797734997, guid: d52477f69afa3d04ba8c39de28ca629d, type: 3}
+      propertyPath: _acceleration
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2086022073797734997, guid: d52477f69afa3d04ba8c39de28ca629d, type: 3}
+      propertyPath: _angularSpeed
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 2086022073797734999, guid: d52477f69afa3d04ba8c39de28ca629d, type: 3}
       propertyPath: m_RootOrder
       value: 0
