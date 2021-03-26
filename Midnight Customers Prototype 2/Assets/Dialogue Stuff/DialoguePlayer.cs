@@ -12,13 +12,21 @@ public class DialoguePlayer : MonoBehaviour
     [SerializeField] private DialogueContainer dialogue;
     [SerializeField] private Text dialogueText;
     [SerializeField] private Button choicePrefab;
-    [SerializeField] private Transform buttonContainer;
+    [SerializeField] private RectTransform buttonContainer;
+
+    public CountdownSlider countdownSlider;
 
     public float buttonOffset; //how much space between option buttons
     int buttonNumber; //number of buttons currently instantiated
 
     public CheckoutManager checkoutManager;
-    
+    Coroutine lastCourutine;
+
+    private void OnEnable()
+    {
+        countdownSlider.SetMinMax(0, 10, 10);
+    }
+
     public void StartConvo(DialogueContainer convo)
     {
         dialogue = convo;
@@ -34,6 +42,13 @@ public class DialoguePlayer : MonoBehaviour
     }
     private void ProceedToNarrative(string narrativeDataGUID)
     {
+        if(lastCourutine != null)
+        {
+            StopCoroutine(lastCourutine);
+            countdownSlider.Reset();
+            lastCourutine = null;
+        }
+        
         var text = dialogue.DialogueNodeData.Find(x => x.Guid == narrativeDataGUID).DialogueText;
         var choices = dialogue.NodeLinks.Where(x => x.BaseNodeGuid == narrativeDataGUID);
         
@@ -43,6 +58,7 @@ public class DialoguePlayer : MonoBehaviour
             Destroy(buttons[i].gameObject);
         }
         //check if ending?
+        //if ... end wait couroutine?
         StartCoroutine(TypeSentence(ProcessProperties(text), narrativeDataGUID));
     }
 
@@ -86,7 +102,7 @@ public class DialoguePlayer : MonoBehaviour
             if(ProcessProperties(choice.PortName) != "...")
             {
                 var button = Instantiate(choicePrefab, buttonContainer);
-                button.transform.position = buttonContainer.position + new Vector3(0, buttonOffset * buttonNumber, 0);
+                button.transform.position = buttonContainer.position + new Vector3(0, (buttonOffset * buttonNumber - buttonOffset), 0); //add offset that switches between above and below?
                 button.GetComponentInChildren<Text>().text = ProcessProperties(choice.PortName);
                 button.onClick.AddListener(() => ProceedToNarrative(choice.TargetNodeGuid));
             }
@@ -95,7 +111,7 @@ public class DialoguePlayer : MonoBehaviour
 
             if(ProcessProperties(choice.PortName) == "...")
             {                
-                StartCoroutine(WaitForSelection(choice.TargetNodeGuid));
+                lastCourutine = StartCoroutine(WaitForSelection(choice.TargetNodeGuid));
                 
             }
         }
@@ -103,15 +119,17 @@ public class DialoguePlayer : MonoBehaviour
         if (buttonNumber == 0)
         {
             //hide dialogue window?
-            checkoutManager.EndDialogue();
+            checkoutManager.EndDialogue(0);
         }
     }
 
     IEnumerator WaitForSelection(string targetNodeGuid)
     {
+        countdownSlider.StartCount();
         yield return new WaitForSeconds(10); //waits 10 seconds may want to make shorter?
-        //have a bar that fills
+        
         ProceedToNarrative(targetNodeGuid);
+        countdownSlider.Reset();
         yield break;
     }
 
@@ -120,7 +138,12 @@ public class DialoguePlayer : MonoBehaviour
         if(sentence.Substring(0,1) == "+" || sentence.Substring(0, 1) == "-")
         {
             int relationshipChange = int.Parse(sentence); //gets change value from string. May need + / - extra
-            checkoutManager.EndDialogue();
+            
+            if(sentence.Substring(0,1) == "-")
+            {
+                relationshipChange *= -1; //may not need this if parse recognizes negative
+            }
+            checkoutManager.EndDialogue(relationshipChange);
             //add or subtract characters relationship score
             yield break;
         }

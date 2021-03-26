@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
     Vector2 movementDirection;
     Rigidbody2D body;
     public float moveSpeed;
+    public bool moveable = true;
 
     // Start is called before the first frame update
     void Start()
@@ -24,7 +25,11 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        body.MovePosition(body.position + movementDirection * moveSpeed * Time.fixedDeltaTime);
+        if (moveable)
+        {
+            body.MovePosition(body.position + movementDirection * moveSpeed * Time.fixedDeltaTime);
+        }
+        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

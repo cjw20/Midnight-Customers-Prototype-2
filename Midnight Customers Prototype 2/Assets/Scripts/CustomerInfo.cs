@@ -5,13 +5,19 @@ using UnityEngine;
 public class CustomerInfo : MonoBehaviour
 {
     public string customerName;
+    public Sprite portrait;
+    public int relationshipScore; //will need to save and load this for each customer 
     public GameObject[] checkoutItems; //items brought to checkout. May make script to choose this later
+
+    public GameObject[] carriedMoney;
 
     public DialogueContainer nextConversation;
     public DialogueContainer[] conversations; //list of conversations that customer will progress through
     //may need to split up once conversation variants are added (happy/unhappy)
 
-    public int conversationProgress = 0; //how far into conversations player is. Will want to save this variable somewhere
+    public int conversationProgress; //how far into conversations player is. Will want to save this variable somewhere
+
+
 
 
     // Start is called before the first frame update
@@ -24,7 +30,21 @@ public class CustomerInfo : MonoBehaviour
     public void LoadNextConvo()
     {
         conversationProgress++;
+
+        if(conversationProgress <= conversations.Length)
+        {
+            nextConversation = conversations[conversationProgress]; 
+        }
         
-        nextConversation = conversations[conversationProgress]; //may need check for if past array length
+        
     }
+
+    public void UpdateRelationship(int change)
+    {
+        relationshipScore += change;
+    }
+
+
+
+    //function that determines what money the customer will pay with later
 }

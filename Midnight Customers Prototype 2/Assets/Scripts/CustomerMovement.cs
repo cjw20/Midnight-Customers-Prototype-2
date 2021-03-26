@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CustomerMovement : MonoBehaviour
 {
+    CustomerManager customerManager;
 
     NavMeshAgent2D agent;
 
@@ -23,6 +24,7 @@ public class CustomerMovement : MonoBehaviour
 
     void Start()
     {
+        customerManager = FindObjectOfType<CustomerManager>();
         agent = GetComponent<NavMeshAgent2D>();
         GoToNextPoint();
     }
@@ -38,7 +40,7 @@ public class CustomerMovement : MonoBehaviour
         if (!agent.pathPending && agent.remainingDistance < minDistance)
         {
             
-            StartCoroutine("Wait");
+            StartCoroutine(Wait());
 
         }
 
@@ -48,7 +50,7 @@ public class CustomerMovement : MonoBehaviour
     {
         if (destination >= plannedPath.Length)
         {
-            Destroy(this.gameObject); //customer leaves store when path is done
+            //Destroy(this.gameObject); //customer leaves store when path is done
             return;
         }
 
@@ -64,9 +66,9 @@ public class CustomerMovement : MonoBehaviour
 
         isWaiting = true;
 
-        if (this.transform.position == new Vector3(exit.position.x, exit.position.y, 0))
+        if (agent.destination == new Vector2(exit.position.x, exit.position.y))
         {
-            this.gameObject.SetActive(false);
+            customerManager.CustomerExit(this.gameObject);
             yield break;
             //save properties like convo progress, get ready for next load 
         }
