@@ -10,47 +10,54 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
-  m_Name: Human 1 (normal)
+  m_Name: H-normal 1
   m_EditorClassIdentifier: 
   NodeLinks:
-  - BaseNodeGuid: a8b770f9-9bf6-441d-9449-0975611b4c00
+  - BaseNodeGuid: 62ebdeef-be85-4676-9958-2e3a9e080f8c
     PortName: Next
+    TargetNodeGuid: 953b2ae5-be31-4b8a-b81b-4f33ae65050a
+  - BaseNodeGuid: 953b2ae5-be31-4b8a-b81b-4f33ae65050a
+    PortName: Hello
     TargetNodeGuid: c41c9de9-5cd0-45a7-a4b3-62a80c83b3cb
   - BaseNodeGuid: c41c9de9-5cd0-45a7-a4b3-62a80c83b3cb
-    PortName: Not to bad you?
-    TargetNodeGuid: 62ebdeef-be85-4676-9958-2e3a9e080f8c
+    PortName: It's my first day, nervous is and understatement
+    TargetNodeGuid: 3c2e1ce1-ba30-41d9-85a3-494218f1b890
   - BaseNodeGuid: c41c9de9-5cd0-45a7-a4b3-62a80c83b3cb
     PortName: Great, did you find everything alright?
     TargetNodeGuid: c7850ec2-856a-4d09-80e9-55f06d53d72b
   - BaseNodeGuid: c41c9de9-5cd0-45a7-a4b3-62a80c83b3cb
-    PortName: It's my first day, nervous is an understatement.
-    TargetNodeGuid: 3c2e1ce1-ba30-41d9-85a3-494218f1b890
+    PortName: Not to bad and you?
+    TargetNodeGuid: 62ebdeef-be85-4676-9958-2e3a9e080f8c
   - BaseNodeGuid: 62ebdeef-be85-4676-9958-2e3a9e080f8c
-    PortName: I agree but, people buy them.
-    TargetNodeGuid: d744744f-5875-4d63-b791-6a3f3f74c3da
-  - BaseNodeGuid: 3c2e1ce1-ba30-41d9-85a3-494218f1b890
-    PortName: I guess your right, I have heard that we stay pretty busy though.
+    PortName: The items are different, however people buy them.
     TargetNodeGuid: d744744f-5875-4d63-b791-6a3f3f74c3da
   - BaseNodeGuid: c7850ec2-856a-4d09-80e9-55f06d53d72b
-    PortName: Yea, the items are pretty unique, its hard to keep track of them all
+    PortName: The items are different, but they sell.
+    TargetNodeGuid: d744744f-5875-4d63-b791-6a3f3f74c3da
+  - BaseNodeGuid: 3c2e1ce1-ba30-41d9-85a3-494218f1b890
+    PortName: 'Ill be sure to do that thanks. '
     TargetNodeGuid: d744744f-5875-4d63-b791-6a3f3f74c3da
   DialogueNodeData:
+  - Guid: 953b2ae5-be31-4b8a-b81b-4f33ae65050a
+    DialogueText: 
+    Position: {x: 245, y: 414}
   - Guid: c41c9de9-5cd0-45a7-a4b3-62a80c83b3cb
     DialogueText: How are you today?
-    Position: {x: 274, y: 191}
+    Position: {x: 443, y: 413}
+  - Guid: 3c2e1ce1-ba30-41d9-85a3-494218f1b890
+    DialogueText: '1ca: I am sure your doing fine, just make sure you know all the
+      items and where they are'
+    Position: {x: 963, y: 640}
   - Guid: 62ebdeef-be85-4676-9958-2e3a9e080f8c
     DialogueText: Not to bad myself, you have some unique items in here for a gas
-      station
-    Position: {x: 717, y: 126}
-  - Guid: 3c2e1ce1-ba30-41d9-85a3-494218f1b890
-    DialogueText: I'm sure your doing fine, it is the night shift after all.
-    Position: {x: 763, y: 454}
+      station.
+    Position: {x: 886, y: 274}
   - Guid: c7850ec2-856a-4d09-80e9-55f06d53d72b
     DialogueText: Yes. it is pretty easy to find normal items, in the sea of unique
       items in here.
-    Position: {x: 746, y: 266}
+    Position: {x: 905, y: 463}
   - Guid: d744744f-5875-4d63-b791-6a3f3f74c3da
-    DialogueText: Good Luck
-    Position: {x: 1458, y: 276}
+    DialogueText: Have a goodnight
+    Position: {x: 1628, y: 405}
   ExposedProperties: []
   CommentBlockData: []

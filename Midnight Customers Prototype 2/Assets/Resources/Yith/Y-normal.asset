@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
+  m_Name: Y-normal
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: 86bc011a-7f60-4aa1-8079-3af481e88fb5
+    PortName: I am a human after.
+    TargetNodeGuid: 6299fbde-d363-4973-baa4-3207c33cf8c2
+  - BaseNodeGuid: 81bd6279-4c23-4b7f-991c-49b9148b443b
+    PortName: Okay, Anything else?
+    TargetNodeGuid: 873ffa4c-d334-40c1-82ab-f64f1b2ab65f
+  - BaseNodeGuid: 2e62c0cd-79fa-40c2-8284-c065620fe68f
+    PortName: Are you alright?
+    TargetNodeGuid: 14a10bcd-117e-492e-975f-2befe493a6d4
+  - BaseNodeGuid: ae4da1e4-beed-4272-8cee-67b782293c6c
+    PortName: Next
+    TargetNodeGuid: 2e62c0cd-79fa-40c2-8284-c065620fe68f
+  - BaseNodeGuid: 14a10bcd-117e-492e-975f-2befe493a6d4
+    PortName: You seem a little spacey.
+    TargetNodeGuid: 81bd6279-4c23-4b7f-991c-49b9148b443b
+  - BaseNodeGuid: 14a10bcd-117e-492e-975f-2befe493a6d4
+    PortName: No reason, just making sure.
+    TargetNodeGuid: 86bc011a-7f60-4aa1-8079-3af481e88fb5
+  DialogueNodeData:
+  - Guid: 2e62c0cd-79fa-40c2-8284-c065620fe68f
+    DialogueText: ...
+    Position: {x: 207, y: 197}
+  - Guid: 81bd6279-4c23-4b7f-991c-49b9148b443b
+    DialogueText: I am fine, thankssss
+    Position: {x: 656, y: 96}
+  - Guid: 6299fbde-d363-4973-baa4-3207c33cf8c2
+    DialogueText: Yesssss, we humanssss are unique.
+    Position: {x: 1079, y: 218}
+  - Guid: 873ffa4c-d334-40c1-82ab-f64f1b2ab65f
+    DialogueText: No, Thissss issss all.
+    Position: {x: 1132, y: 110}
+  - Guid: 86bc011a-7f60-4aa1-8079-3af481e88fb5
+    DialogueText: Thank you, your kindnesss issss very humane
+    Position: {x: 661, y: 219}
+  - Guid: 14a10bcd-117e-492e-975f-2befe493a6d4
+    DialogueText: Yes I am fine, why do you asssk
+    Position: {x: 380, y: 403}
+  ExposedProperties: []
+  CommentBlockData: []

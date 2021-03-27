@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
+  m_Name: D-normal
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: 7839901e-da6c-4eb6-b0b3-03d6da2232ae
+    PortName: Next
+    TargetNodeGuid: 80659683-ae0b-4a67-b9ee-cbc3b9bf5d2f
+  - BaseNodeGuid: 80659683-ae0b-4a67-b9ee-cbc3b9bf5d2f
+    PortName: Hello, How are you.
+    TargetNodeGuid: f29935bb-d6da-4af7-9b64-e043fbe52b25
+  - BaseNodeGuid: f29935bb-d6da-4af7-9b64-e043fbe52b25
+    PortName: Great, what can I get you.
+    TargetNodeGuid: 5b20e797-50bb-4eb5-8696-1c1867ab31b9
+  - BaseNodeGuid: f29935bb-d6da-4af7-9b64-e043fbe52b25
+    PortName: I am fine, thanks.
+    TargetNodeGuid: 47ca2e44-f1d1-472e-8d95-06d7943413d9
+  - BaseNodeGuid: 5b20e797-50bb-4eb5-8696-1c1867ab31b9
+    PortName: A bundle of what?
+    TargetNodeGuid: 644f84d9-5b02-4213-b544-e211952e789e
+  - BaseNodeGuid: 47ca2e44-f1d1-472e-8d95-06d7943413d9
+    PortName: A bundle of what?
+    TargetNodeGuid: 644f84d9-5b02-4213-b544-e211952e789e
+  - BaseNodeGuid: 47ca2e44-f1d1-472e-8d95-06d7943413d9
+    PortName: Like a 24 pack?
+    TargetNodeGuid: 558160bb-326e-4a9c-bb5b-60e6ec913ca8
+  - BaseNodeGuid: 5b20e797-50bb-4eb5-8696-1c1867ab31b9
+    PortName: Like a 24 pack?
+    TargetNodeGuid: 558160bb-326e-4a9c-bb5b-60e6ec913ca8
+  - BaseNodeGuid: 558160bb-326e-4a9c-bb5b-60e6ec913ca8
+    PortName: Sure be right back.
+    TargetNodeGuid: 5bc71662-846b-4691-b4ab-006b14245681
+  - BaseNodeGuid: 644f84d9-5b02-4213-b544-e211952e789e
+    PortName: Sure be right back.
+    TargetNodeGuid: 5bc71662-846b-4691-b4ab-006b14245681
+  DialogueNodeData:
+  - Guid: 80659683-ae0b-4a67-b9ee-cbc3b9bf5d2f
+    DialogueText: ...
+    Position: {x: 198, y: 195}
+  - Guid: f29935bb-d6da-4af7-9b64-e043fbe52b25
+    DialogueText: Great I am. How you?
+    Position: {x: 472, y: 179}
+  - Guid: 5b20e797-50bb-4eb5-8696-1c1867ab31b9
+    DialogueText: Bundle of water, no singles.
+    Position: {x: 854, y: 268}
+  - Guid: 47ca2e44-f1d1-472e-8d95-06d7943413d9
+    DialogueText: Bundle of water have you?
+    Position: {x: 835, y: 120}
+  - Guid: 644f84d9-5b02-4213-b544-e211952e789e
+    DialogueText: Water
+    Position: {x: 1183, y: 270}
+  - Guid: 558160bb-326e-4a9c-bb5b-60e6ec913ca8
+    DialogueText: Yes
+    Position: {x: 1176, y: 149}
+  - Guid: 5bc71662-846b-4691-b4ab-006b14245681
+    DialogueText: Thanks.
+    Position: {x: 1494, y: 211}
+  ExposedProperties: []
+  CommentBlockData: []

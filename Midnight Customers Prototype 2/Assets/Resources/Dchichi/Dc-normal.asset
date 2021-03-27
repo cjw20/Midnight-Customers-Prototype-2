@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
+  m_Name: Dc-normal
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: 6ea8046b-19f6-4158-be90-20f2115118bd
+    PortName: Next
+    TargetNodeGuid: 3d8815b3-713c-4d6d-b50c-2e062f7691bb
+  - BaseNodeGuid: 3d8815b3-713c-4d6d-b50c-2e062f7691bb
+    PortName: Hey, how can I help you?
+    TargetNodeGuid: 5b74d1ba-fe95-4e2e-af79-0dc97a324827
+  - BaseNodeGuid: 5b74d1ba-fe95-4e2e-af79-0dc97a324827
+    PortName: Okay, just the seeds.
+    TargetNodeGuid: b20e7d9e-c4a1-4690-a6ff-c2a92c2555ff
+  - BaseNodeGuid: 5b74d1ba-fe95-4e2e-af79-0dc97a324827
+    PortName: Slow down, what was that.
+    TargetNodeGuid: 0c3f2980-4547-4e5d-bab5-96b706b9ecd8
+  DialogueNodeData:
+  - Guid: 0c3f2980-4547-4e5d-bab5-96b706b9ecd8
+    DialogueText: I just want thebirdseed.
+    Position: {x: 645, y: 127}
+  - Guid: b20e7d9e-c4a1-4690-a6ff-c2a92c2555ff
+    DialogueText: Yesjustheseeds.
+    Position: {x: 641, y: 235}
+  - Guid: 3d8815b3-713c-4d6d-b50c-2e062f7691bb
+    DialogueText: ...
+    Position: {x: 200, y: 194}
+  - Guid: 5b74d1ba-fe95-4e2e-af79-0dc97a324827
+    DialogueText: Ijustwantthisbirdseed.
+    Position: {x: 406, y: 398}
+  ExposedProperties: []
+  CommentBlockData: []

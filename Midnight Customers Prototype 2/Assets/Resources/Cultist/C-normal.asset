@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
+  m_Name: C-normal
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: ea6194c7-82a6-47bc-abe3-322c57b72b76
+    PortName: Next
+    TargetNodeGuid: e9a5f3ed-33c4-466d-b15a-4db4e8d60079
+  - BaseNodeGuid: 7336917a-395c-4827-b02e-9c9697ac928a
+    PortName: Ah, Seven Realms of Chocolate. That is a personal favorite of mine.
+    TargetNodeGuid: 0ebd921b-aced-4479-9826-4fb34aacca55
+  - BaseNodeGuid: 7336917a-395c-4827-b02e-9c9697ac928a
+    PortName: Alright then, nice and simple
+    TargetNodeGuid: 486f540c-13a3-4354-99c2-ea1a80052dea
+  - BaseNodeGuid: 486f540c-13a3-4354-99c2-ea1a80052dea
+    PortName: That is the truth, enjoy your night
+    TargetNodeGuid: 48469f8d-e70c-464f-bf28-66948d9b968a
+  - BaseNodeGuid: 0ebd921b-aced-4479-9826-4fb34aacca55
+    PortName: I am sure it does, have a nice night.
+    TargetNodeGuid: 48469f8d-e70c-464f-bf28-66948d9b968a
+  DialogueNodeData:
+  - Guid: e9a5f3ed-33c4-466d-b15a-4db4e8d60079
+    DialogueText: ...
+    Position: {x: 194, y: 199}
+  - Guid: 7336917a-395c-4827-b02e-9c9697ac928a
+    DialogueText: No thanks, just the candy bar for me
+    Position: {x: 569, y: 198}
+  - Guid: 0ebd921b-aced-4479-9826-4fb34aacca55
+    DialogueText: Seems to appease even the angriest creation, perhaps even the gods
+    Position: {x: 1146, y: 164}
+  - Guid: 486f540c-13a3-4354-99c2-ea1a80052dea
+    DialogueText: Can not be to Chaotic, that is when things start to go wrong.
+    Position: {x: 1149, y: 286}
+  - Guid: 48469f8d-e70c-464f-bf28-66948d9b968a
+    DialogueText: Praise be to the elder gods.
+    Position: {x: 1714, y: 227}
+  ExposedProperties: []
+  CommentBlockData: []

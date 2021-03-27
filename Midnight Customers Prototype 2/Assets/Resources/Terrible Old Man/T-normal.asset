@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
+  m_Name: T-normal
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: f5ac1e92-0579-40e0-814c-c2536852f320
+    PortName: Next
+    TargetNodeGuid: 385ee3fd-8b40-4221-89d4-076742a2615d
+  - BaseNodeGuid: 385ee3fd-8b40-4221-89d4-076742a2615d
+    PortName: Hello sir, how are you tonight?
+    TargetNodeGuid: e25cfe22-1f1f-4a7e-ae79-51a45b4dbfe8
+  - BaseNodeGuid: e25cfe22-1f1f-4a7e-ae79-51a45b4dbfe8
+    PortName: I am just asking, no need to get grumpy
+    TargetNodeGuid: 14621fa6-ecbe-4ae2-9041-5283f222c5a1
+  - BaseNodeGuid: e25cfe22-1f1f-4a7e-ae79-51a45b4dbfe8
+    PortName: It is just a question sir, I personally do not.
+    TargetNodeGuid: da938379-159d-423e-bac8-e2de8d99383f
+  - BaseNodeGuid: e25cfe22-1f1f-4a7e-ae79-51a45b4dbfe8
+    PortName: 'Here at Nyarcorp we care for all of our customers. '
+    TargetNodeGuid: d58aef3d-c96f-4ac7-8fdb-e1120a01dbd9
+  - BaseNodeGuid: d58aef3d-c96f-4ac7-8fdb-e1120a01dbd9
+    PortName: 'I do not make the prices, Have a good night sir. '
+    TargetNodeGuid: a29a2a33-bfb3-4331-a1e2-e127cfaafd61
+  - BaseNodeGuid: da938379-159d-423e-bac8-e2de8d99383f
+    PortName: Is that a threat? Sir please leave.
+    TargetNodeGuid: a29a2a33-bfb3-4331-a1e2-e127cfaafd61
+  - BaseNodeGuid: 14621fa6-ecbe-4ae2-9041-5283f222c5a1
+    PortName: Will do sir, have a good night.
+    TargetNodeGuid: a29a2a33-bfb3-4331-a1e2-e127cfaafd61
+  DialogueNodeData:
+  - Guid: 385ee3fd-8b40-4221-89d4-076742a2615d
+    DialogueText: ...
+    Position: {x: 189, y: 200}
+  - Guid: e25cfe22-1f1f-4a7e-ae79-51a45b4dbfe8
+    DialogueText: What do you care?
+    Position: {x: 501, y: 201}
+  - Guid: da938379-159d-423e-bac8-e2de8d99383f
+    DialogueText: 'I have dealt with worse than you in worse ways. '
+    Position: {x: 961, y: 240}
+  - Guid: 14621fa6-ecbe-4ae2-9041-5283f222c5a1
+    DialogueText: Well don't unless you mean it.
+    Position: {x: 957, y: 137}
+  - Guid: a29a2a33-bfb3-4331-a1e2-e127cfaafd61
+    DialogueText: Whatever. Stop calling me sir.
+    Position: {x: 1403, y: 245}
+  - Guid: d58aef3d-c96f-4ac7-8fdb-e1120a01dbd9
+    DialogueText: Sure you do, as you rob them with these high prices.
+    Position: {x: 960, y: 351}
+  ExposedProperties: []
+  CommentBlockData: []
