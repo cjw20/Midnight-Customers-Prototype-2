@@ -20,22 +20,25 @@ MonoBehaviour:
     PortName: Hello
     TargetNodeGuid: c41c9de9-5cd0-45a7-a4b3-62a80c83b3cb
   - BaseNodeGuid: c41c9de9-5cd0-45a7-a4b3-62a80c83b3cb
-    PortName: It's my first day, nervous is and understatement
-    TargetNodeGuid: 3c2e1ce1-ba30-41d9-85a3-494218f1b890
+    PortName: Not to bad and you?
+    TargetNodeGuid: 62ebdeef-be85-4676-9958-2e3a9e080f8c
   - BaseNodeGuid: c41c9de9-5cd0-45a7-a4b3-62a80c83b3cb
     PortName: Great, did you find everything alright?
     TargetNodeGuid: c7850ec2-856a-4d09-80e9-55f06d53d72b
   - BaseNodeGuid: c41c9de9-5cd0-45a7-a4b3-62a80c83b3cb
-    PortName: Not to bad and you?
-    TargetNodeGuid: 62ebdeef-be85-4676-9958-2e3a9e080f8c
-  - BaseNodeGuid: 62ebdeef-be85-4676-9958-2e3a9e080f8c
-    PortName: The items are different, however people buy them.
+    PortName: It's my first day, nervous is and understatement
+    TargetNodeGuid: 3c2e1ce1-ba30-41d9-85a3-494218f1b890
+  - BaseNodeGuid: 3c2e1ce1-ba30-41d9-85a3-494218f1b890
+    PortName: 'Ill be sure to do that thanks. '
     TargetNodeGuid: d744744f-5875-4d63-b791-6a3f3f74c3da
   - BaseNodeGuid: c7850ec2-856a-4d09-80e9-55f06d53d72b
     PortName: The items are different, but they sell.
     TargetNodeGuid: d744744f-5875-4d63-b791-6a3f3f74c3da
-  - BaseNodeGuid: 3c2e1ce1-ba30-41d9-85a3-494218f1b890
-    PortName: 'Ill be sure to do that thanks. '
+  - BaseNodeGuid: 62ebdeef-be85-4676-9958-2e3a9e080f8c
+    PortName: The items are different, however people buy them.
+    TargetNodeGuid: d744744f-5875-4d63-b791-6a3f3f74c3da
+  - BaseNodeGuid: 62ebdeef-be85-4676-9958-2e3a9e080f8c
+    PortName: Next
     TargetNodeGuid: d744744f-5875-4d63-b791-6a3f3f74c3da
   DialogueNodeData:
   - Guid: 953b2ae5-be31-4b8a-b81b-4f33ae65050a
@@ -43,21 +46,21 @@ MonoBehaviour:
     Position: {x: 245, y: 414}
   - Guid: c41c9de9-5cd0-45a7-a4b3-62a80c83b3cb
     DialogueText: How are you today?
-    Position: {x: 443, y: 413}
-  - Guid: 3c2e1ce1-ba30-41d9-85a3-494218f1b890
-    DialogueText: '1ca: I am sure your doing fine, just make sure you know all the
-      items and where they are'
-    Position: {x: 963, y: 640}
+    Position: {x: 494, y: 419}
   - Guid: 62ebdeef-be85-4676-9958-2e3a9e080f8c
     DialogueText: Not to bad myself, you have some unique items in here for a gas
       station.
-    Position: {x: 886, y: 274}
+    Position: {x: 1022, y: 508}
   - Guid: c7850ec2-856a-4d09-80e9-55f06d53d72b
     DialogueText: Yes. it is pretty easy to find normal items, in the sea of unique
       items in here.
-    Position: {x: 905, y: 463}
+    Position: {x: 995, y: 382}
+  - Guid: 3c2e1ce1-ba30-41d9-85a3-494218f1b890
+    DialogueText: '1ca: I am sure your doing fine, just make sure you know all the
+      items and where they are'
+    Position: {x: 1043, y: 234}
   - Guid: d744744f-5875-4d63-b791-6a3f3f74c3da
     DialogueText: Have a goodnight
-    Position: {x: 1628, y: 405}
+    Position: {x: 1736, y: 376}
   ExposedProperties: []
   CommentBlockData: []

@@ -12,11 +12,14 @@ public class CleanableObject : MonoBehaviour
     public float currentAlpha;
     Color startingColor;
     public Color newColor;
+
+    MopGame mopGame;
     
     void Start()
     {
         mess = this.gameObject.GetComponent<SpriteRenderer>();
         startingColor = mess.color;
+        mopGame = FindObjectOfType<MopGame>();
     }
 
     // Update is called once per frame
@@ -30,6 +33,7 @@ public class CleanableObject : MonoBehaviour
             mess.color = newColor;
             if (currentAlpha <= 0)
             {
+                mopGame.CleanedObject();
                 Destroy(this.gameObject);
             }
         }
