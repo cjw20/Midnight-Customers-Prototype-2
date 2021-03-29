@@ -11,6 +11,8 @@ TagManager:
   - Checkout Item
   - Customer
   - CashReg
+  - Cleanable
+  - Cleaner
   layers:
   - Default
   - TransparentFX

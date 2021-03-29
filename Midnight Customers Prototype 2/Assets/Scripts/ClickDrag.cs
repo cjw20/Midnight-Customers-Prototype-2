@@ -7,10 +7,11 @@ public class ClickDrag : MonoBehaviour
     bool isHeld = false;
     float startPosX;
     float startPosY;
+    float startPosZ;
     // Start is called before the first frame update
     void Start()
     {
-        
+        startPosZ = this.gameObject.transform.position.z;
     }
 
     // Update is called once per frame
@@ -22,7 +23,7 @@ public class ClickDrag : MonoBehaviour
             mousePos = Input.mousePosition;
             mousePos = Camera.main.ScreenToWorldPoint(mousePos);
 
-            this.gameObject.transform.localPosition = new Vector3(mousePos.x - startPosX, mousePos.y - startPosY, -1);
+            this.gameObject.transform.localPosition = new Vector3(mousePos.x - startPosX, mousePos.y - startPosY, startPosZ);
         }
     }
 
