@@ -9,12 +9,14 @@ public class CleanableObject : MonoBehaviour
     SpriteRenderer mess;
     public float cleanTime;
     float passedTime;
-    Vector4 startingColor;
-    // Start is called before the first frame update
+    public float currentAlpha;
+    Color startingColor;
+    public Color newColor;
+    
     void Start()
     {
         mess = this.gameObject.GetComponent<SpriteRenderer>();
-        startingColor = mess.material.color;
+        startingColor = mess.color;
     }
 
     // Update is called once per frame
@@ -23,9 +25,10 @@ public class CleanableObject : MonoBehaviour
         if (isBeingCleaned && tool.isCleaning)
         {
             passedTime += Time.deltaTime;
-            mess.material.color = new Vector4(startingColor.w, startingColor.x, startingColor.y, Mathf.Lerp(255, 0, (passedTime / cleanTime)));
-
-            if(mess.material.color.a <= 0)
+            currentAlpha = Mathf.Lerp(1, 0, (passedTime / cleanTime));
+            newColor = new Color(startingColor.r, startingColor.g, startingColor.b, currentAlpha);
+            mess.color = newColor;
+            if (currentAlpha <= 0)
             {
                 Destroy(this.gameObject);
             }
