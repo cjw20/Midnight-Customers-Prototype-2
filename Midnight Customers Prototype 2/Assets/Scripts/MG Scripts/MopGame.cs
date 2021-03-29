@@ -7,6 +7,7 @@ public class MopGame : MonoBehaviour
     public GameObject[] cleanableObjects;
     int remainingObjects;
     MiniGameControl mgControl;
+
     // Start is called before the first frame update
     void Start()
     {

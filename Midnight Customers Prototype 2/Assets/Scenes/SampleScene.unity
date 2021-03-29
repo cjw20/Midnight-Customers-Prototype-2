@@ -5978,6 +5978,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 668096973}
     m_Modifications:
     - target: {fileID: 2086022073797734984, guid: d52477f69afa3d04ba8c39de28ca629d, type: 3}
+      propertyPath: conversations.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: bd830370a056bf847a1a3f5469348b8a, type: 2}
+    - target: {fileID: 2086022073797734984, guid: d52477f69afa3d04ba8c39de28ca629d, type: 3}
       propertyPath: conversations.Array.data[1]
       value: 
       objectReference: {fileID: 11400000, guid: ca8b130a5e1cdec4895f7ff80e0c675c, type: 2}
