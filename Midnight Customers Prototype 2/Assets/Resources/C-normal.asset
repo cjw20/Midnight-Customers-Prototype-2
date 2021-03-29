@@ -22,19 +22,16 @@ MonoBehaviour:
   - BaseNodeGuid: 7336917a-395c-4827-b02e-9c9697ac928a
     PortName: Alright then, nice and simple
     TargetNodeGuid: 486f540c-13a3-4354-99c2-ea1a80052dea
-  - BaseNodeGuid: 486f540c-13a3-4354-99c2-ea1a80052dea
-    PortName: That is the truth, enjoy your night
-    TargetNodeGuid: 48469f8d-e70c-464f-bf28-66948d9b968a
   - BaseNodeGuid: 0ebd921b-aced-4479-9826-4fb34aacca55
     PortName: I am sure it does, have a nice night.
     TargetNodeGuid: 48469f8d-e70c-464f-bf28-66948d9b968a
+  - BaseNodeGuid: 486f540c-13a3-4354-99c2-ea1a80052dea
+    PortName: That is the truth, enjoy your night
+    TargetNodeGuid: 48469f8d-e70c-464f-bf28-66948d9b968a
+  - BaseNodeGuid: e9a5f3ed-33c4-466d-b15a-4db4e8d60079
+    PortName: Hello, Anything else
+    TargetNodeGuid: 7336917a-395c-4827-b02e-9c9697ac928a
   DialogueNodeData:
-  - Guid: e9a5f3ed-33c4-466d-b15a-4db4e8d60079
-    DialogueText: ...
-    Position: {x: 194, y: 199}
-  - Guid: 7336917a-395c-4827-b02e-9c9697ac928a
-    DialogueText: No thanks, just the candy bar for me
-    Position: {x: 569, y: 198}
   - Guid: 0ebd921b-aced-4479-9826-4fb34aacca55
     DialogueText: Seems to appease even the angriest creation, perhaps even the gods
     Position: {x: 1146, y: 164}
@@ -44,5 +41,11 @@ MonoBehaviour:
   - Guid: 48469f8d-e70c-464f-bf28-66948d9b968a
     DialogueText: Praise be to the elder gods.
     Position: {x: 1714, y: 227}
+  - Guid: e9a5f3ed-33c4-466d-b15a-4db4e8d60079
+    DialogueText: ...
+    Position: {x: 194, y: 199}
+  - Guid: 7336917a-395c-4827-b02e-9c9697ac928a
+    DialogueText: No thanks, just the candy bar for me
+    Position: {x: 301, y: -112}
   ExposedProperties: []
   CommentBlockData: []
