@@ -13,42 +13,51 @@ MonoBehaviour:
   m_Name: Y-normal
   m_EditorClassIdentifier: 
   NodeLinks:
-  - BaseNodeGuid: 86bc011a-7f60-4aa1-8079-3af481e88fb5
+  - BaseNodeGuid: 6deb90f8-d5eb-472d-886a-257022672e5c
     PortName: Next
-    TargetNodeGuid: 2e62c0cd-79fa-40c2-8284-c065620fe68f
-  - BaseNodeGuid: 2e62c0cd-79fa-40c2-8284-c065620fe68f
+    TargetNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
+  - BaseNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
     PortName: Are you alright?
-    TargetNodeGuid: 14a10bcd-117e-492e-975f-2befe493a6d4
-  - BaseNodeGuid: 14a10bcd-117e-492e-975f-2befe493a6d4
-    PortName: You seem a little spacey.
-    TargetNodeGuid: 81bd6279-4c23-4b7f-991c-49b9148b443b
-  - BaseNodeGuid: 81bd6279-4c23-4b7f-991c-49b9148b443b
-    PortName: Okay, Anything else?
-    TargetNodeGuid: 873ffa4c-d334-40c1-82ab-f64f1b2ab65f
-  - BaseNodeGuid: 86bc011a-7f60-4aa1-8079-3af481e88fb5
-    PortName: I am a human after.
-    TargetNodeGuid: 6299fbde-d363-4973-baa4-3207c33cf8c2
-  - BaseNodeGuid: 14a10bcd-117e-492e-975f-2befe493a6d4
+    TargetNodeGuid: ee572ba1-c251-4376-83be-9057196bfa70
+  - BaseNodeGuid: ee572ba1-c251-4376-83be-9057196bfa70
     PortName: No reason, just making sure.
-    TargetNodeGuid: 86bc011a-7f60-4aa1-8079-3af481e88fb5
+    TargetNodeGuid: 22f7809a-dd32-4885-8ddd-3f244c8237b5
+  - BaseNodeGuid: ee572ba1-c251-4376-83be-9057196bfa70
+    PortName: You seem to be a bit spacey.
+    TargetNodeGuid: 56d5fd71-ca61-4edb-aee3-bd0cc452268b
+  - BaseNodeGuid: 56d5fd71-ca61-4edb-aee3-bd0cc452268b
+    PortName: Okay, Anything else for you?
+    TargetNodeGuid: f2563943-48cb-480b-9d13-99efba105076
+  - BaseNodeGuid: 22f7809a-dd32-4885-8ddd-3f244c8237b5
+    PortName: I am a human after all.
+    TargetNodeGuid: be7b202d-8e27-4db5-b1e8-c6b550065e0a
+  - BaseNodeGuid: f2563943-48cb-480b-9d13-99efba105076
+    PortName: Alright, Have a good night.
+    TargetNodeGuid: 06612b58-e352-4832-af46-a8a403cc7281
+  - BaseNodeGuid: be7b202d-8e27-4db5-b1e8-c6b550065e0a
+    PortName: I guess we are, have a good night.
+    TargetNodeGuid: 06612b58-e352-4832-af46-a8a403cc7281
   DialogueNodeData:
-  - Guid: 2e62c0cd-79fa-40c2-8284-c065620fe68f
+  - Guid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
     DialogueText: ...
-    Position: {x: 188, y: 200}
-  - Guid: 14a10bcd-117e-492e-975f-2befe493a6d4
-    DialogueText: Yes I am fine, why do you asssk
-    Position: {x: 429, y: 194}
-  - Guid: 81bd6279-4c23-4b7f-991c-49b9148b443b
-    DialogueText: I am fine, thankssss
-    Position: {x: 760, y: 164}
-  - Guid: 86bc011a-7f60-4aa1-8079-3af481e88fb5
-    DialogueText: Thank you, your kindnesss issss very humane
-    Position: {x: 757, y: 359}
-  - Guid: 6299fbde-d363-4973-baa4-3207c33cf8c2
-    DialogueText: Yesssss, we humanssss are unique.
-    Position: {x: 1166, y: 381}
-  - Guid: 873ffa4c-d334-40c1-82ab-f64f1b2ab65f
-    DialogueText: No, Thissss issss all.
-    Position: {x: 1176, y: 141}
+    Position: {x: 219, y: 199}
+  - Guid: ee572ba1-c251-4376-83be-9057196bfa70
+    DialogueText: Yesssss I am fine, Why do you assssk?
+    Position: {x: 483, y: 195}
+  - Guid: 56d5fd71-ca61-4edb-aee3-bd0cc452268b
+    DialogueText: I am fine, thanksssss
+    Position: {x: 887, y: 137}
+  - Guid: 22f7809a-dd32-4885-8ddd-3f244c8237b5
+    DialogueText: Thank you, your kindnessss issss very humane.
+    Position: {x: 892, y: 274}
+  - Guid: f2563943-48cb-480b-9d13-99efba105076
+    DialogueText: No, thisssss is it.
+    Position: {x: 1225, y: 130}
+  - Guid: be7b202d-8e27-4db5-b1e8-c6b550065e0a
+    DialogueText: Yessss, we humansssss are unique.
+    Position: {x: 1340, y: 276}
+  - Guid: 06612b58-e352-4832-af46-a8a403cc7281
+    DialogueText: +0
+    Position: {x: 1755, y: 191}
   ExposedProperties: []
   CommentBlockData: []

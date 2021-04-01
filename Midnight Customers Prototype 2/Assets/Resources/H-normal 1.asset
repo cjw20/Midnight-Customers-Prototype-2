@@ -13,51 +13,49 @@ MonoBehaviour:
   m_Name: H-normal 1
   m_EditorClassIdentifier: 
   NodeLinks:
-  - BaseNodeGuid: 62ebdeef-be85-4676-9958-2e3a9e080f8c
+  - BaseNodeGuid: 476a32d3-c803-4836-b7fb-33e0999b4eec
     PortName: Next
-    TargetNodeGuid: 953b2ae5-be31-4b8a-b81b-4f33ae65050a
-  - BaseNodeGuid: 953b2ae5-be31-4b8a-b81b-4f33ae65050a
+    TargetNodeGuid: fb511715-596b-487e-9485-9b7e9d99d093
+  - BaseNodeGuid: fb511715-596b-487e-9485-9b7e9d99d093
     PortName: Hello
-    TargetNodeGuid: c41c9de9-5cd0-45a7-a4b3-62a80c83b3cb
-  - BaseNodeGuid: c41c9de9-5cd0-45a7-a4b3-62a80c83b3cb
-    PortName: It's my first day, nervous is and understatement
-    TargetNodeGuid: 3c2e1ce1-ba30-41d9-85a3-494218f1b890
-  - BaseNodeGuid: c41c9de9-5cd0-45a7-a4b3-62a80c83b3cb
-    PortName: Not to bad and you?
-    TargetNodeGuid: 62ebdeef-be85-4676-9958-2e3a9e080f8c
-  - BaseNodeGuid: c41c9de9-5cd0-45a7-a4b3-62a80c83b3cb
-    PortName: Great, did you find everything alright?
-    TargetNodeGuid: c7850ec2-856a-4d09-80e9-55f06d53d72b
-  - BaseNodeGuid: c7850ec2-856a-4d09-80e9-55f06d53d72b
-    PortName: The items are different, but they sell.
-    TargetNodeGuid: d744744f-5875-4d63-b791-6a3f3f74c3da
-  - BaseNodeGuid: 62ebdeef-be85-4676-9958-2e3a9e080f8c
-    PortName: The items are different, however people buy them.
-    TargetNodeGuid: d744744f-5875-4d63-b791-6a3f3f74c3da
-  - BaseNodeGuid: 3c2e1ce1-ba30-41d9-85a3-494218f1b890
-    PortName: 'Ill be sure to do that thanks. '
-    TargetNodeGuid: d744744f-5875-4d63-b791-6a3f3f74c3da
+    TargetNodeGuid: 8929bed1-a36c-4e65-809c-77ffcab4dca6
+  - BaseNodeGuid: 8929bed1-a36c-4e65-809c-77ffcab4dca6
+    PortName: It is my first day, nervous is an understatement.
+    TargetNodeGuid: dcf0dcc9-8687-4b71-b773-583df73afee7
+  - BaseNodeGuid: 8929bed1-a36c-4e65-809c-77ffcab4dca6
+    PortName: Great, did you find everything?
+    TargetNodeGuid: 85ebc9b7-17e5-4aba-88f8-42f161784f76
+  - BaseNodeGuid: 8929bed1-a36c-4e65-809c-77ffcab4dca6
+    PortName: ' Not to bad, how are you?'
+    TargetNodeGuid: 7b51d8de-c143-49e8-8398-7d32eb82cc2b
+  - BaseNodeGuid: 85ebc9b7-17e5-4aba-88f8-42f161784f76
+    PortName: The items sure are different, but they sell.
+    TargetNodeGuid: acf6c578-6d4c-4901-9a91-a4d2c2e4c27e
+  - BaseNodeGuid: 7b51d8de-c143-49e8-8398-7d32eb82cc2b
+    PortName: The items are different  but people seem to like them.
+    TargetNodeGuid: acf6c578-6d4c-4901-9a91-a4d2c2e4c27e
+  - BaseNodeGuid: dcf0dcc9-8687-4b71-b773-583df73afee7
+    PortName: I will be sure to do that, thank you.
+    TargetNodeGuid: acf6c578-6d4c-4901-9a91-a4d2c2e4c27e
   DialogueNodeData:
-  - Guid: 953b2ae5-be31-4b8a-b81b-4f33ae65050a
-    DialogueText: 
-    Position: {x: 83, y: 341}
-  - Guid: c41c9de9-5cd0-45a7-a4b3-62a80c83b3cb
-    DialogueText: How are you today?
-    Position: {x: 29, y: -53}
-  - Guid: 3c2e1ce1-ba30-41d9-85a3-494218f1b890
-    DialogueText: '1ca: I am sure your doing fine, just make sure you know all the
-      items and where they are'
-    Position: {x: 222, y: -265}
-  - Guid: c7850ec2-856a-4d09-80e9-55f06d53d72b
-    DialogueText: Yes. it is pretty easy to find normal items, in the sea of unique
-      items in here.
-    Position: {x: 667, y: -47}
-  - Guid: 62ebdeef-be85-4676-9958-2e3a9e080f8c
-    DialogueText: Not to bad myself, you have some unique items in here for a gas
-      station.
-    Position: {x: 490, y: 291}
-  - Guid: d744744f-5875-4d63-b791-6a3f3f74c3da
-    DialogueText: Have a goodnight
-    Position: {x: 1060, y: 139}
+  - Guid: fb511715-596b-487e-9485-9b7e9d99d093
+    DialogueText: ...
+    Position: {x: 226, y: 186}
+  - Guid: 8929bed1-a36c-4e65-809c-77ffcab4dca6
+    DialogueText: How are you doing?
+    Position: {x: 429, y: 189}
+  - Guid: 7b51d8de-c143-49e8-8398-7d32eb82cc2b
+    DialogueText: Not to bad myself, you have some unique items in here.
+    Position: {x: 857, y: 125}
+  - Guid: 85ebc9b7-17e5-4aba-88f8-42f161784f76
+    DialogueText: Yes, it was pretty easy to find in the unique items around here.
+    Position: {x: 858, y: 234}
+  - Guid: dcf0dcc9-8687-4b71-b773-583df73afee7
+    DialogueText: I am sure  you are doing fine, just make sure you know where everything
+      is.
+    Position: {x: 857, y: 360}
+  - Guid: acf6c578-6d4c-4901-9a91-a4d2c2e4c27e
+    DialogueText: Have a good night.
+    Position: {x: 1527, y: 217}
   ExposedProperties: []
   CommentBlockData: []

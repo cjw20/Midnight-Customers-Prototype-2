@@ -28,21 +28,21 @@ MonoBehaviour:
   - BaseNodeGuid: 7482d2e5-7016-42d1-9d9c-2163bc09204e
     PortName: You do not look that old
     TargetNodeGuid: 867d20a0-a1a9-4f6b-b1c0-339231dcf244
-  - BaseNodeGuid: 867d20a0-a1a9-4f6b-b1c0-339231dcf244
-    PortName: ...
-    TargetNodeGuid: b3496565-c4d4-4f37-bee3-fdfbe06f3a33
-  - BaseNodeGuid: a264948c-2dbe-4bf4-a361-e0dc374731e2
-    PortName: ...
-    TargetNodeGuid: 05c3cf3d-6616-4b31-b03a-5990149e0fab
-  - BaseNodeGuid: 14841b77-a571-42a1-a0e8-9605c1392b6b
-    PortName: ....
-    TargetNodeGuid: db26d582-af5f-417f-91cc-c3545c84b423
-  - BaseNodeGuid: 8a0b33b5-cbaa-47d4-bd4d-f2f43bc5c39d
-    PortName: I have no idea, but I am sure it is.
-    TargetNodeGuid: 14841b77-a571-42a1-a0e8-9605c1392b6b
   - BaseNodeGuid: 7482d2e5-7016-42d1-9d9c-2163bc09204e
     PortName: How old are you?
     TargetNodeGuid: a264948c-2dbe-4bf4-a361-e0dc374731e2
+  - BaseNodeGuid: 8a0b33b5-cbaa-47d4-bd4d-f2f43bc5c39d
+    PortName: I have no idea, but I am sure it is.
+    TargetNodeGuid: 14841b77-a571-42a1-a0e8-9605c1392b6b
+  - BaseNodeGuid: 14841b77-a571-42a1-a0e8-9605c1392b6b
+    PortName: ....
+    TargetNodeGuid: db26d582-af5f-417f-91cc-c3545c84b423
+  - BaseNodeGuid: a264948c-2dbe-4bf4-a361-e0dc374731e2
+    PortName: ...
+    TargetNodeGuid: 05c3cf3d-6616-4b31-b03a-5990149e0fab
+  - BaseNodeGuid: 867d20a0-a1a9-4f6b-b1c0-339231dcf244
+    PortName: ...
+    TargetNodeGuid: b3496565-c4d4-4f37-bee3-fdfbe06f3a33
   DialogueNodeData:
   - Guid: 565e5b19-b434-4e5e-825c-b7ecd5433cdb
     DialogueText: ...

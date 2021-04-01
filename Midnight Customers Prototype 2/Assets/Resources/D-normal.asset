@@ -28,19 +28,19 @@ MonoBehaviour:
   - BaseNodeGuid: 5b20e797-50bb-4eb5-8696-1c1867ab31b9
     PortName: A bundle of what?
     TargetNodeGuid: 644f84d9-5b02-4213-b544-e211952e789e
+  - BaseNodeGuid: 5b20e797-50bb-4eb5-8696-1c1867ab31b9
+    PortName: Like a 24 pack?
+    TargetNodeGuid: 558160bb-326e-4a9c-bb5b-60e6ec913ca8
   - BaseNodeGuid: 47ca2e44-f1d1-472e-8d95-06d7943413d9
     PortName: A bundle of what?
     TargetNodeGuid: 644f84d9-5b02-4213-b544-e211952e789e
   - BaseNodeGuid: 47ca2e44-f1d1-472e-8d95-06d7943413d9
     PortName: Like a 24 pack?
     TargetNodeGuid: 558160bb-326e-4a9c-bb5b-60e6ec913ca8
-  - BaseNodeGuid: 5b20e797-50bb-4eb5-8696-1c1867ab31b9
-    PortName: Like a 24 pack?
-    TargetNodeGuid: 558160bb-326e-4a9c-bb5b-60e6ec913ca8
-  - BaseNodeGuid: 558160bb-326e-4a9c-bb5b-60e6ec913ca8
+  - BaseNodeGuid: 644f84d9-5b02-4213-b544-e211952e789e
     PortName: Sure be right back.
     TargetNodeGuid: 5bc71662-846b-4691-b4ab-006b14245681
-  - BaseNodeGuid: 644f84d9-5b02-4213-b544-e211952e789e
+  - BaseNodeGuid: 558160bb-326e-4a9c-bb5b-60e6ec913ca8
     PortName: Sure be right back.
     TargetNodeGuid: 5bc71662-846b-4691-b4ab-006b14245681
   DialogueNodeData:
