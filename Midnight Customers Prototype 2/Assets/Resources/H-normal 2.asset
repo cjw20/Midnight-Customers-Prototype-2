@@ -22,12 +22,9 @@ MonoBehaviour:
   - BaseNodeGuid: 165761b0-8b4b-4e4f-83e9-0f91a4de1a4c
     PortName: Sorry.
     TargetNodeGuid: b2d3ffb7-1f5f-4f38-acdd-84ccca6379f0
-  - BaseNodeGuid: 16ae2f27-90d1-4913-b9a0-8bc9ce5be0c4
-    PortName: What's your cats name?
-    TargetNodeGuid: b0779f69-a1b5-4f71-84db-2cf51f09bb39
-  - BaseNodeGuid: 16ae2f27-90d1-4913-b9a0-8bc9ce5be0c4
-    PortName: We should have some on the shelf in the left aisle.
-    TargetNodeGuid: afc0d636-b5e3-4ef9-ab82-a9269b2e508b
+  - BaseNodeGuid: 165761b0-8b4b-4e4f-83e9-0f91a4de1a4c
+    PortName: ...
+    TargetNodeGuid: b2d3ffb7-1f5f-4f38-acdd-84ccca6379f0
   - BaseNodeGuid: afc0d636-b5e3-4ef9-ab82-a9269b2e508b
     PortName: Never heard of that flavor, is it new?
     TargetNodeGuid: bc474f73-6ac8-42b1-85df-c7ab0b8c3ff6
@@ -39,6 +36,9 @@ MonoBehaviour:
     TargetNodeGuid: bc474f73-6ac8-42b1-85df-c7ab0b8c3ff6
   - BaseNodeGuid: b0779f69-a1b5-4f71-84db-2cf51f09bb39
     PortName: It was only a simple question
+    TargetNodeGuid: b2d3ffb7-1f5f-4f38-acdd-84ccca6379f0
+  - BaseNodeGuid: b0779f69-a1b5-4f71-84db-2cf51f09bb39
+    PortName: ...
     TargetNodeGuid: b2d3ffb7-1f5f-4f38-acdd-84ccca6379f0
   - BaseNodeGuid: b2d3ffb7-1f5f-4f38-acdd-84ccca6379f0
     PortName: ' It is my first day, Sorry.'
@@ -55,36 +55,39 @@ MonoBehaviour:
   - BaseNodeGuid: bc474f73-6ac8-42b1-85df-c7ab0b8c3ff6
     PortName: Who is Bastet
     TargetNodeGuid: c70b0547-4adc-4993-a07e-c8da27d61f22
-  - BaseNodeGuid: c8657a08-8804-47fc-bcde-aefbf19643e5
-    PortName: No problem
-    TargetNodeGuid: 1235b3ca-a173-4ea0-be27-e98cd7586ece
-  - BaseNodeGuid: c70b0547-4adc-4993-a07e-c8da27d61f22
-    PortName: ' No problem'
-    TargetNodeGuid: c435170f-d8e8-43b2-b639-05ad973b4353
-  - BaseNodeGuid: 669490f4-d9f0-4829-b224-b8b4916154b9
-    PortName: ....
-    TargetNodeGuid: 0e736250-4506-4a1c-89f4-76b75fa824d5
-  - BaseNodeGuid: 16ae2f27-90d1-4913-b9a0-8bc9ce5be0c4
-    PortName: ...
-    TargetNodeGuid: 165761b0-8b4b-4e4f-83e9-0f91a4de1a4c
-  - BaseNodeGuid: 165761b0-8b4b-4e4f-83e9-0f91a4de1a4c
-    PortName: ...
-    TargetNodeGuid: b2d3ffb7-1f5f-4f38-acdd-84ccca6379f0
-  - BaseNodeGuid: b0779f69-a1b5-4f71-84db-2cf51f09bb39
-    PortName: ...
-    TargetNodeGuid: b2d3ffb7-1f5f-4f38-acdd-84ccca6379f0
   - BaseNodeGuid: bc474f73-6ac8-42b1-85df-c7ab0b8c3ff6
     PortName: ...
     TargetNodeGuid: 1235b3ca-a173-4ea0-be27-e98cd7586ece
   - BaseNodeGuid: c8657a08-8804-47fc-bcde-aefbf19643e5
+    PortName: No problem
+    TargetNodeGuid: 1235b3ca-a173-4ea0-be27-e98cd7586ece
+  - BaseNodeGuid: c8657a08-8804-47fc-bcde-aefbf19643e5
     PortName: ...
     TargetNodeGuid: 1235b3ca-a173-4ea0-be27-e98cd7586ece
+  - BaseNodeGuid: c70b0547-4adc-4993-a07e-c8da27d61f22
+    PortName: ' No problem'
+    TargetNodeGuid: c435170f-d8e8-43b2-b639-05ad973b4353
   - BaseNodeGuid: c70b0547-4adc-4993-a07e-c8da27d61f22
     PortName: ...
     TargetNodeGuid: c435170f-d8e8-43b2-b639-05ad973b4353
   - BaseNodeGuid: 669490f4-d9f0-4829-b224-b8b4916154b9
+    PortName: ....
+    TargetNodeGuid: 0e736250-4506-4a1c-89f4-76b75fa824d5
+  - BaseNodeGuid: 669490f4-d9f0-4829-b224-b8b4916154b9
     PortName: ...
     TargetNodeGuid: 0e736250-4506-4a1c-89f4-76b75fa824d5
+  - BaseNodeGuid: 16ae2f27-90d1-4913-b9a0-8bc9ce5be0c4
+    PortName: What's your cats name?
+    TargetNodeGuid: b0779f69-a1b5-4f71-84db-2cf51f09bb39
+  - BaseNodeGuid: 16ae2f27-90d1-4913-b9a0-8bc9ce5be0c4
+    PortName: We should have some on the shelf in the left aisle.
+    TargetNodeGuid: afc0d636-b5e3-4ef9-ab82-a9269b2e508b
+  - BaseNodeGuid: 16ae2f27-90d1-4913-b9a0-8bc9ce5be0c4
+    PortName: ...
+    TargetNodeGuid: 165761b0-8b4b-4e4f-83e9-0f91a4de1a4c
+  - BaseNodeGuid: 38df490e-9909-48fc-8d83-edbf84e7a32c
+    PortName: ...
+    TargetNodeGuid: 16ae2f27-90d1-4913-b9a0-8bc9ce5be0c4
   DialogueNodeData:
   - Guid: 38df490e-9909-48fc-8d83-edbf84e7a32c
     DialogueText: Hello.
