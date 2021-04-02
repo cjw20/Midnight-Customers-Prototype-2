@@ -38,31 +38,30 @@ MonoBehaviour:
     PortName: ....
     TargetNodeGuid: db26d582-af5f-417f-91cc-c3545c84b423
   - BaseNodeGuid: a264948c-2dbe-4bf4-a361-e0dc374731e2
-    PortName: ...
+    PortName: ....
     TargetNodeGuid: 05c3cf3d-6616-4b31-b03a-5990149e0fab
   - BaseNodeGuid: 867d20a0-a1a9-4f6b-b1c0-339231dcf244
-    PortName: ...
+    PortName: ....
     TargetNodeGuid: b3496565-c4d4-4f37-bee3-fdfbe06f3a33
+  - BaseNodeGuid: 565e5b19-b434-4e5e-825c-b7ecd5433cdb
+    PortName: ...
+    TargetNodeGuid: 6afce072-fadf-4ce4-8a1d-3262a7f72c63
+  - BaseNodeGuid: 6afce072-fadf-4ce4-8a1d-3262a7f72c63
+    PortName: ...
+    TargetNodeGuid: 8a0b33b5-cbaa-47d4-bd4d-f2f43bc5c39d
+  - BaseNodeGuid: 8a0b33b5-cbaa-47d4-bd4d-f2f43bc5c39d
+    PortName: ...
+    TargetNodeGuid: db26d582-af5f-417f-91cc-c3545c84b423
+  - BaseNodeGuid: 7482d2e5-7016-42d1-9d9c-2163bc09204e
+    PortName: ...
+    TargetNodeGuid: db26d582-af5f-417f-91cc-c3545c84b423
   DialogueNodeData:
-  - Guid: 565e5b19-b434-4e5e-825c-b7ecd5433cdb
-    DialogueText: ...
-    Position: {x: 205, y: 200}
   - Guid: 6afce072-fadf-4ce4-8a1d-3262a7f72c63
     DialogueText: 'How sweet, the youth of today are something else. '
     Position: {x: 433, y: 199}
   - Guid: 7482d2e5-7016-42d1-9d9c-2163bc09204e
     DialogueText: 'You are nowhere near as old as me. Not even close. '
     Position: {x: 878, y: 297}
-  - Guid: 8a0b33b5-cbaa-47d4-bd4d-f2f43bc5c39d
-    DialogueText: So do you think this feritlizer is good for young plants?
-    Position: {x: 877, y: 197}
-  - Guid: 14841b77-a571-42a1-a0e8-9605c1392b6b
-    DialogueText: 'Thank you, I hope you are right, do not what my children to die. '
-    Position: {x: 1327, y: 105}
-  - Guid: a264948c-2dbe-4bf4-a361-e0dc374731e2
-    DialogueText: Don't you know that it is rude to ask a lady her age.? Pehaps the
-      youth are not as sweet.
-    Position: {x: 1342, y: 217}
   - Guid: 867d20a0-a1a9-4f6b-b1c0-339231dcf244
     DialogueText: Thank you, have a good night.
     Position: {x: 1343, y: 346}
@@ -70,10 +69,23 @@ MonoBehaviour:
     DialogueText: +1
     Position: {x: 1662, y: 349}
   - Guid: db26d582-af5f-417f-91cc-c3545c84b423
-    DialogueText: 0
+    DialogueText: +0
     Position: {x: 1869, y: 89}
   - Guid: 05c3cf3d-6616-4b31-b03a-5990149e0fab
     DialogueText: -1
     Position: {x: 2021, y: 219}
+  - Guid: 565e5b19-b434-4e5e-825c-b7ecd5433cdb
+    DialogueText: ...
+    Position: {x: 202, y: 204}
+  - Guid: 8a0b33b5-cbaa-47d4-bd4d-f2f43bc5c39d
+    DialogueText: So do you think this feritlizer is good for young plants?
+    Position: {x: 860, y: 154}
+  - Guid: 14841b77-a571-42a1-a0e8-9605c1392b6b
+    DialogueText: 'Thank you, I hope you are right, do not what my children to die. '
+    Position: {x: 1323, y: 16}
+  - Guid: a264948c-2dbe-4bf4-a361-e0dc374731e2
+    DialogueText: Don't you know that it is rude to ask a lady her age? Pehaps the
+      youth are not as sweet.
+    Position: {x: 1343, y: 215}
   ExposedProperties: []
   CommentBlockData: []

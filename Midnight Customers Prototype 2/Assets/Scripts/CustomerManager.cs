@@ -8,6 +8,7 @@ public class CustomerManager : MonoBehaviour
 
     [SerializeField] GameObject human1;
     [SerializeField] GameObject human2;
+    [SerializeField] GameObject aylith;
 
     [SerializeField] Transform exit;
     
@@ -50,7 +51,7 @@ public class CustomerManager : MonoBehaviour
     IEnumerator NextCustomer()
     {
         yield return new WaitForSeconds(5);
-        LoadCustomer(human2); //logic for this later when more customers to choose from
+        LoadCustomer(aylith); //logic for this later when more customers to choose from
         yield break;
     }
 
