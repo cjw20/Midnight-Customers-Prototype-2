@@ -28,25 +28,37 @@ MonoBehaviour:
   - BaseNodeGuid: 8929bed1-a36c-4e65-809c-77ffcab4dca6
     PortName: ' Not to bad, how are you?'
     TargetNodeGuid: 7b51d8de-c143-49e8-8398-7d32eb82cc2b
-  - BaseNodeGuid: 85ebc9b7-17e5-4aba-88f8-42f161784f76
-    PortName: The items sure are different, but they sell.
-    TargetNodeGuid: acf6c578-6d4c-4901-9a91-a4d2c2e4c27e
   - BaseNodeGuid: 7b51d8de-c143-49e8-8398-7d32eb82cc2b
     PortName: The items are different  but people seem to like them.
+    TargetNodeGuid: acf6c578-6d4c-4901-9a91-a4d2c2e4c27e
+  - BaseNodeGuid: 85ebc9b7-17e5-4aba-88f8-42f161784f76
+    PortName: The items sure are different, but they sell.
     TargetNodeGuid: acf6c578-6d4c-4901-9a91-a4d2c2e4c27e
   - BaseNodeGuid: dcf0dcc9-8687-4b71-b773-583df73afee7
     PortName: I will be sure to do that, thank you.
     TargetNodeGuid: acf6c578-6d4c-4901-9a91-a4d2c2e4c27e
+  - BaseNodeGuid: fb511715-596b-487e-9485-9b7e9d99d093
+    PortName: ...
+    TargetNodeGuid: 8929bed1-a36c-4e65-809c-77ffcab4dca6
+  - BaseNodeGuid: acf6c578-6d4c-4901-9a91-a4d2c2e4c27e
+    PortName: ....
+    TargetNodeGuid: cc0587b9-1e05-40b2-b196-a30de96af171
+  - BaseNodeGuid: 8929bed1-a36c-4e65-809c-77ffcab4dca6
+    PortName: ...
+    TargetNodeGuid: cc0587b9-1e05-40b2-b196-a30de96af171
+  - BaseNodeGuid: 85ebc9b7-17e5-4aba-88f8-42f161784f76
+    PortName: ...
+    TargetNodeGuid: cc0587b9-1e05-40b2-b196-a30de96af171
+  - BaseNodeGuid: dcf0dcc9-8687-4b71-b773-583df73afee7
+    PortName: ...
+    TargetNodeGuid: cc0587b9-1e05-40b2-b196-a30de96af171
+  - BaseNodeGuid: 7b51d8de-c143-49e8-8398-7d32eb82cc2b
+    PortName: ...
+    TargetNodeGuid: cc0587b9-1e05-40b2-b196-a30de96af171
   DialogueNodeData:
-  - Guid: fb511715-596b-487e-9485-9b7e9d99d093
-    DialogueText: ...
-    Position: {x: 226, y: 186}
   - Guid: 8929bed1-a36c-4e65-809c-77ffcab4dca6
     DialogueText: How are you doing?
     Position: {x: 429, y: 189}
-  - Guid: 7b51d8de-c143-49e8-8398-7d32eb82cc2b
-    DialogueText: Not to bad myself, you have some unique items in here.
-    Position: {x: 857, y: 125}
   - Guid: 85ebc9b7-17e5-4aba-88f8-42f161784f76
     DialogueText: Yes, it was pretty easy to find in the unique items around here.
     Position: {x: 858, y: 234}
@@ -57,5 +69,14 @@ MonoBehaviour:
   - Guid: acf6c578-6d4c-4901-9a91-a4d2c2e4c27e
     DialogueText: Have a good night.
     Position: {x: 1527, y: 217}
+  - Guid: fb511715-596b-487e-9485-9b7e9d99d093
+    DialogueText: ...
+    Position: {x: 227, y: 186}
+  - Guid: cc0587b9-1e05-40b2-b196-a30de96af171
+    DialogueText: +0
+    Position: {x: 1825, y: 387}
+  - Guid: 7b51d8de-c143-49e8-8398-7d32eb82cc2b
+    DialogueText: Not to bad myself, you have some unique items in here.
+    Position: {x: 871, y: 90}
   ExposedProperties: []
   CommentBlockData: []
