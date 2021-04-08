@@ -57,8 +57,8 @@ public class SanityManager : MonoBehaviour
 
     public void UpdateSanityUI()
     {
-        sanityText.text = "Current Sanity: " + currentSanity;
-        stressText.text = "Current Stress: " + currentStress;
+       // sanityText.text = "Current Sanity: " + currentSanity;
+       // stressText.text = "Current Stress: " + currentStress;
 
     }
 }
