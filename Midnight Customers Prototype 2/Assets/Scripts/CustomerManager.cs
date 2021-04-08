@@ -38,7 +38,9 @@ public class CustomerManager : MonoBehaviour
 
     public void LoadCustomer(GameObject customer)
     {
+        CustomerMovement move = customer.GetComponent<CustomerMovement>();
         customer.SetActive(true);
+        move.EnterStore();
         customer.transform.position = exit.position;
         //play sound for customer entering store
         //Set path

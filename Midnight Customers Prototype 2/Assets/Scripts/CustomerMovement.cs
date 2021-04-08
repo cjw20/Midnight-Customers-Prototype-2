@@ -24,6 +24,12 @@ public class CustomerMovement : MonoBehaviour
 
     void Start()
     {
+        
+        //GoToNextPoint();
+    }
+
+    public void EnterStore()
+    {
         customerManager = FindObjectOfType<CustomerManager>();
         agent = GetComponent<NavMeshAgent2D>();
         GoToNextPoint();

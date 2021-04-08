@@ -31,9 +31,10 @@ public class CustomerInfo : MonoBehaviour
     {
         conversationProgress++;
 
-        if(conversationProgress <= conversations.Length)
+        if(conversationProgress <= conversations.Length - 1)
         {
-            nextConversation = conversations[conversationProgress]; 
+            nextConversation = conversations[conversationProgress]; //only advances conversation progress if there are still new conversations to load
+
         }
         
         
