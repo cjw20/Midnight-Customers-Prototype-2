@@ -68,7 +68,9 @@ public class CustomerMovement : MonoBehaviour
 
         if (agent.destination == new Vector2(exit.position.x, exit.position.y))
         {
+            destination = 0; //resets customers planned path
             customerManager.CustomerExit(this.gameObject);
+
             yield break;
             //save properties like convo progress, get ready for next load 
         }

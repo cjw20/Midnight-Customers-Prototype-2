@@ -9,8 +9,11 @@ public class CustomerManager : MonoBehaviour
     [SerializeField] GameObject human1;
     [SerializeField] GameObject human2;
     [SerializeField] GameObject aylith;
-
+    public GameObject[] customers;
     [SerializeField] Transform exit;
+
+    int arrayPos;
+
     
     void Awake()
     {
@@ -26,7 +29,9 @@ public class CustomerManager : MonoBehaviour
     }
     void Start()
     {
-        LoadCustomer(human1);
+        arrayPos = Random.Range(0, customers.Length); //dont need +1 if inclusive?
+
+        LoadCustomer(customers[arrayPos]);
     }
 
     
@@ -38,6 +43,12 @@ public class CustomerManager : MonoBehaviour
         //play sound for customer entering store
         //Set path
         //update any variables in customer info
+
+        arrayPos++;
+        if(arrayPos >= customers.Length)
+        {
+            arrayPos = 0;
+        }
     }
 
     public void CustomerExit(GameObject customer)
@@ -51,7 +62,7 @@ public class CustomerManager : MonoBehaviour
     IEnumerator NextCustomer()
     {
         yield return new WaitForSeconds(5);
-        LoadCustomer(aylith); //logic for this later when more customers to choose from
+        LoadCustomer(customers[arrayPos]); //logic for this later when more customers to choose from
         yield break;
     }
 

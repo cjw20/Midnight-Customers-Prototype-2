@@ -2436,6 +2436,10 @@ MonoBehaviour:
   human1: {fileID: 1258878923}
   human2: {fileID: 5570189988557149941}
   aylith: {fileID: 6193657377496091523}
+  customers:
+  - {fileID: 5570189988557149941}
+  - {fileID: 1258878923}
+  - {fileID: 6193657377496091523}
   exit: {fileID: 719393441}
 --- !u!4 &668096973
 Transform:
@@ -7133,46 +7137,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 668096973}
     m_Modifications:
-    - target: {fileID: 5642382787059048420, guid: 0c385362111dbf04cbbe979bb5f2d605, type: 3}
-      propertyPath: m_Size.x
-      value: 2.2471578
-      objectReference: {fileID: 0}
-    - target: {fileID: 5642382787059048420, guid: 0c385362111dbf04cbbe979bb5f2d605, type: 3}
-      propertyPath: m_Size.y
-      value: 4.2236967
-      objectReference: {fileID: 0}
-    - target: {fileID: 5642382787059048420, guid: 0c385362111dbf04cbbe979bb5f2d605, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.07367599
-      objectReference: {fileID: 0}
-    - target: {fileID: 5642382787059048420, guid: 0c385362111dbf04cbbe979bb5f2d605, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.9462443
-      objectReference: {fileID: 0}
-    - target: {fileID: 5642382787059048421, guid: 0c385362111dbf04cbbe979bb5f2d605, type: 3}
-      propertyPath: conversations.Array.data[0]
-      value: 
-      objectReference: {fileID: 11400000, guid: ca8b130a5e1cdec4895f7ff80e0c675c, type: 2}
-    - target: {fileID: 5642382787059048421, guid: 0c385362111dbf04cbbe979bb5f2d605, type: 3}
-      propertyPath: conversations.Array.data[1]
-      value: 
-      objectReference: {fileID: 11400000, guid: ca8b130a5e1cdec4895f7ff80e0c675c, type: 2}
-    - target: {fileID: 5642382787059048440, guid: 0c385362111dbf04cbbe979bb5f2d605, type: 3}
-      propertyPath: _speed
-      value: 1.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5642382787059048440, guid: 0c385362111dbf04cbbe979bb5f2d605, type: 3}
-      propertyPath: _radius
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5642382787059048440, guid: 0c385362111dbf04cbbe979bb5f2d605, type: 3}
-      propertyPath: _acceleration
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5642382787059048440, guid: 0c385362111dbf04cbbe979bb5f2d605, type: 3}
-      propertyPath: _angularSpeed
-      value: 60
-      objectReference: {fileID: 0}
     - target: {fileID: 5642382787059048441, guid: 0c385362111dbf04cbbe979bb5f2d605, type: 3}
       propertyPath: exit
       value: 
@@ -7196,14 +7160,6 @@ PrefabInstance:
     - target: {fileID: 5642382787059048442, guid: 0c385362111dbf04cbbe979bb5f2d605, type: 3}
       propertyPath: m_RootOrder
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5642382787059048442, guid: 0c385362111dbf04cbbe979bb5f2d605, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.3228
-      objectReference: {fileID: 0}
-    - target: {fileID: 5642382787059048442, guid: 0c385362111dbf04cbbe979bb5f2d605, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.3231
       objectReference: {fileID: 0}
     - target: {fileID: 5642382787059048442, guid: 0c385362111dbf04cbbe979bb5f2d605, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7245,22 +7201,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5642382787059048443, guid: 0c385362111dbf04cbbe979bb5f2d605, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 7f272ed421115ed42a67d55a2b590422, type: 3}
-    - target: {fileID: 5642382787059048443, guid: 0c385362111dbf04cbbe979bb5f2d605, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5642382787059048443, guid: 0c385362111dbf04cbbe979bb5f2d605, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5642382787059048443, guid: 0c385362111dbf04cbbe979bb5f2d605, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5642382787059048446, guid: 0c385362111dbf04cbbe979bb5f2d605, type: 3}
       propertyPath: m_Name
       value: Human1
@@ -7278,30 +7218,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 668096973}
     m_Modifications:
-    - target: {fileID: 2086022073797734984, guid: d52477f69afa3d04ba8c39de28ca629d, type: 3}
-      propertyPath: conversations.Array.data[0]
-      value: 
-      objectReference: {fileID: 11400000, guid: 704beec42c46ee24d91e8de32f01e145, type: 2}
-    - target: {fileID: 2086022073797734984, guid: d52477f69afa3d04ba8c39de28ca629d, type: 3}
-      propertyPath: conversations.Array.data[1]
-      value: 
-      objectReference: {fileID: 11400000, guid: 704beec42c46ee24d91e8de32f01e145, type: 2}
-    - target: {fileID: 2086022073797734985, guid: d52477f69afa3d04ba8c39de28ca629d, type: 3}
-      propertyPath: m_Size.x
-      value: 2.803202
-      objectReference: {fileID: 0}
-    - target: {fileID: 2086022073797734985, guid: d52477f69afa3d04ba8c39de28ca629d, type: 3}
-      propertyPath: m_Size.y
-      value: 6.2185545
-      objectReference: {fileID: 0}
-    - target: {fileID: 2086022073797734985, guid: d52477f69afa3d04ba8c39de28ca629d, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.1298675
-      objectReference: {fileID: 0}
-    - target: {fileID: 2086022073797734985, guid: d52477f69afa3d04ba8c39de28ca629d, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.39258724
-      objectReference: {fileID: 0}
     - target: {fileID: 2086022073797734995, guid: d52477f69afa3d04ba8c39de28ca629d, type: 3}
       propertyPath: m_Name
       value: Human2
@@ -7330,37 +7246,9 @@ PrefabInstance:
       propertyPath: plannedPath.Array.data[2]
       value: 
       objectReference: {fileID: 719393441}
-    - target: {fileID: 2086022073797734997, guid: d52477f69afa3d04ba8c39de28ca629d, type: 3}
-      propertyPath: _speed
-      value: 1.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 2086022073797734997, guid: d52477f69afa3d04ba8c39de28ca629d, type: 3}
-      propertyPath: _radius
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2086022073797734997, guid: d52477f69afa3d04ba8c39de28ca629d, type: 3}
-      propertyPath: _acceleration
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2086022073797734997, guid: d52477f69afa3d04ba8c39de28ca629d, type: 3}
-      propertyPath: _angularSpeed
-      value: 60
-      objectReference: {fileID: 0}
-    - target: {fileID: 2086022073797734998, guid: d52477f69afa3d04ba8c39de28ca629d, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 7f272ed421115ed42a67d55a2b590422, type: 3}
     - target: {fileID: 2086022073797734999, guid: d52477f69afa3d04ba8c39de28ca629d, type: 3}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2086022073797734999, guid: d52477f69afa3d04ba8c39de28ca629d, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.3139
-      objectReference: {fileID: 0}
-    - target: {fileID: 2086022073797734999, guid: d52477f69afa3d04ba8c39de28ca629d, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.2656
       objectReference: {fileID: 0}
     - target: {fileID: 2086022073797734999, guid: d52477f69afa3d04ba8c39de28ca629d, type: 3}
       propertyPath: m_LocalPosition.x

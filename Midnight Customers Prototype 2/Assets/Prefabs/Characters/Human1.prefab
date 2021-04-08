@@ -29,9 +29,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5642382787059048446}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.35, y: 0.38, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.6, y: 1.11, z: 0}
+  m_LocalScale: {x: 0.3228, y: 0.3231, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -76,8 +76,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -9095717837082945937, guid: 34587324d412940a79d530020c957dc0, type: 3}
-  m_Color: {r: 1, g: 0.9486265, b: 0.5424528, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 7f272ed421115ed42a67d55a2b590422, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -99,12 +99,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad705bba33f3642f4bc26cd844e12c6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 3.5
-  _angularSpeed: 120
-  _acceleration: 8
+  _speed: 1.8
+  _angularSpeed: 60
+  _acceleration: 5
   _stoppingDistance: 0
   _autoBraking: 1
-  _radius: 1
+  _radius: 2
   _quality: 0
   _priority: 50
   _autoRepath: 1
@@ -155,8 +155,8 @@ MonoBehaviour:
   - {fileID: 2666151172327968761, guid: c6751cfb41abea84bbcf95e23a908c5e, type: 3}
   nextConversation: {fileID: 0}
   conversations:
-  - {fileID: 11400000, guid: e44a5d801e71f3f4d8c8cf4c3c455d8e, type: 2}
-  - {fileID: 11400000, guid: e44a5d801e71f3f4d8c8cf4c3c455d8e, type: 2}
+  - {fileID: 11400000, guid: ca8b130a5e1cdec4895f7ff80e0c675c, type: 2}
+  - {fileID: 11400000, guid: ca8b130a5e1cdec4895f7ff80e0c675c, type: 2}
   conversationProgress: 0
 --- !u!70 &5642382787059048420
 CapsuleCollider2D:
@@ -171,8 +171,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.029897928, y: -0.014949083}
-  m_Size: {x: 1.418571, y: 2.5680614}
+  m_Offset: {x: 0.07367599, y: -0.9462443}
+  m_Size: {x: 2.2471578, y: 4.2236967}
   m_Direction: 0
 --- !u!50 &5642382787059048423
 Rigidbody2D:
