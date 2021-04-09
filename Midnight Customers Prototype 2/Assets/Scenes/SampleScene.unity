@@ -2719,7 +2719,7 @@ MonoBehaviour:
   day: 1
   dayText: {fileID: 1321719050}
   timeText: {fileID: 1063500180}
-  timeMultiplier: 15
+  timeMultiplier: 150
   toBlack: {fileID: 1151140295}
   fadeDuration: 5
   playerStartingLoc: {fileID: 1405583354}

@@ -58,7 +58,7 @@ public class CustomerManager : MonoBehaviour
 
     public void CustomerExit(GameObject customer)
     {
-        //customersInStore.Remove(customer);
+        //customersInStore.Remove(customer); will need to find work around if we ever decide to have multiple customers in the store at once
         customer.SetActive(false);
 
         lastCoroutine = StartCoroutine(NextCustomer());

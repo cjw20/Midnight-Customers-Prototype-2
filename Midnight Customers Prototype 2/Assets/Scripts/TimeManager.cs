@@ -42,7 +42,7 @@ public class TimeManager : MonoBehaviour
             if (seconds >= 60)
             {
                 minutes++;
-                seconds = 0;
+                seconds -= 60;
             }
             if (minutes >= 60)
             {
