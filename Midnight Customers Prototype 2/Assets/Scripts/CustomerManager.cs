@@ -13,7 +13,7 @@ public class CustomerManager : MonoBehaviour
     [SerializeField] Transform exit;
 
     int arrayPos;
-
+    Coroutine lastCoroutine;
     
     void Awake()
     {
@@ -57,15 +57,31 @@ public class CustomerManager : MonoBehaviour
     {
         customer.SetActive(false);
 
-        StartCoroutine(NextCustomer());
-        //update variables
+        lastCoroutine = StartCoroutine(NextCustomer());
+        //update customer variables
     }
 
     IEnumerator NextCustomer()
     {
         yield return new WaitForSeconds(5);
         LoadCustomer(customers[arrayPos]); //logic for this later when more customers to choose from
+        lastCoroutine = null;
         yield break;
+    }
+
+    public void PauseSpawns()
+    {
+        if(lastCoroutine != null)
+        {
+            StopCoroutine(lastCoroutine);
+            lastCoroutine = null;
+        }
+        
+    }
+
+    public void StartSpawns()
+    {
+        lastCoroutine = StartCoroutine(NextCustomer());
     }
 
 

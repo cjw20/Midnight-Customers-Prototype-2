@@ -2722,6 +2722,7 @@ MonoBehaviour:
   timeMultiplier: 15
   toBlack: {fileID: 1151140295}
   fadeDuration: 5
+  playerStartingLoc: {fileID: 1405583354}
 --- !u!1 &848104265
 GameObject:
   m_ObjectHideFlags: 0
@@ -4538,6 +4539,36 @@ MonoBehaviour:
   countdownSlider: {fileID: 505964449}
   buttonOffset: 70
   checkoutManager: {fileID: 10691447}
+--- !u!1 &1405583353
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1405583354}
+  m_Layer: 0
+  m_Name: Player Start Location
+  m_TagString: Untagged
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1405583354
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1405583353}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.8, y: -6.16, z: -0.45858672}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1422496775
 GameObject:
   m_ObjectHideFlags: 0
@@ -5477,7 +5508,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1675290334}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.7654, y: -6.1874, z: 0}
+  m_LocalPosition: {x: -5.94, y: -6.1874, z: 0}
   m_LocalScale: {x: 0.3293, y: 0.3293, z: 0.6586}
   m_Children: []
   m_Father: {fileID: 0}

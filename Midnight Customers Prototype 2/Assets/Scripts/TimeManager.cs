@@ -17,9 +17,16 @@ public class TimeManager : MonoBehaviour
 
     public Fade toBlack;
     public float fadeDuration;
+
+    GameObject player;
+    public Transform playerStartingLoc;
+
+    CustomerManager customerManager;
     // Start is called before the first frame update
     void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player");
+        customerManager = FindObjectOfType<CustomerManager>();
         timerRunning = true;
         UpdateText();
     }
@@ -80,9 +87,15 @@ public class TimeManager : MonoBehaviour
     IEnumerator EndDay()
     {
         toBlack.FadeIn(fadeDuration);
+        customerManager.PauseSpawns();
         //move player, stop customer spawns etc. new tasks
         yield return new WaitForSeconds(fadeDuration + 2);
+        player.transform.position = playerStartingLoc.position;
         toBlack.FadeOut(fadeDuration);
+        yield return new WaitForSeconds(fadeDuration + 2);
+        customerManager.StartSpawns();
+
+
         
         //check for story events for this night/next day and load them
         timerRunning = true;
