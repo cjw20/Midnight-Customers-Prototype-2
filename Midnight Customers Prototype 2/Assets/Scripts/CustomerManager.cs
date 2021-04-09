@@ -14,6 +14,8 @@ public class CustomerManager : MonoBehaviour
 
     int arrayPos;
     Coroutine lastCoroutine;
+
+    List<GameObject> customersInStore = new List<GameObject>();
     
     void Awake()
     {
@@ -40,6 +42,7 @@ public class CustomerManager : MonoBehaviour
     {
         CustomerMovement move = customer.GetComponent<CustomerMovement>();
         customer.SetActive(true);
+        customersInStore.Add(customer);
         move.EnterStore();
         customer.transform.position = exit.position;
         //play sound for customer entering store
@@ -55,6 +58,7 @@ public class CustomerManager : MonoBehaviour
 
     public void CustomerExit(GameObject customer)
     {
+        //customersInStore.Remove(customer);
         customer.SetActive(false);
 
         lastCoroutine = StartCoroutine(NextCustomer());
@@ -73,10 +77,18 @@ public class CustomerManager : MonoBehaviour
     {
         if(lastCoroutine != null)
         {
+            
             StopCoroutine(lastCoroutine);
             lastCoroutine = null;
         }
-        
+        foreach (GameObject customer in customersInStore)
+        {
+            customer.transform.position = exit.position;
+            customer.GetComponent<CustomerMovement>().ExitStore();
+
+        }
+        customersInStore.Clear();
+
     }
 
     public void StartSpawns()

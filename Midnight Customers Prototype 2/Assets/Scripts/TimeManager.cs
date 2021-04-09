@@ -19,6 +19,7 @@ public class TimeManager : MonoBehaviour
     public float fadeDuration;
 
     GameObject player;
+    PlayerMovement playerMovement;
     public Transform playerStartingLoc;
 
     CustomerManager customerManager;
@@ -26,6 +27,7 @@ public class TimeManager : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+        playerMovement = player.GetComponent<PlayerMovement>();
         customerManager = FindObjectOfType<CustomerManager>();
         timerRunning = true;
         UpdateText();
@@ -86,10 +88,16 @@ public class TimeManager : MonoBehaviour
 
     IEnumerator EndDay()
     {
-        toBlack.FadeIn(fadeDuration);
-        customerManager.PauseSpawns();
+        while (!playerMovement.moveable)
+        {
+            //waits till checkout or minigame is done
+            yield return new WaitForEndOfFrame();
+        }
+        //check if in checkout or task. wait till finished
+        toBlack.FadeIn(fadeDuration);        
         //move player, stop customer spawns etc. new tasks
         yield return new WaitForSeconds(fadeDuration + 2);
+        customerManager.PauseSpawns();
         player.transform.position = playerStartingLoc.position;
         toBlack.FadeOut(fadeDuration);
         yield return new WaitForSeconds(fadeDuration + 2);
