@@ -13,28 +13,44 @@ public class TimeManager : MonoBehaviour
     public Text timeText;
     public float timeMultiplier; //how much faster than real time in game time passes
 
-    
+    bool timerRunning;
+
+    public Fade toBlack;
+    public float fadeDuration;
     // Start is called before the first frame update
     void Start()
     {
+        timerRunning = true;
         UpdateText();
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        seconds += Time.fixedDeltaTime * timeMultiplier;
-        if(seconds >= 60)
+        if (timerRunning)
         {
-            minutes++;
-            seconds = 0;
+            seconds += Time.fixedDeltaTime * timeMultiplier;
+            if (seconds >= 60)
+            {
+                minutes++;
+                seconds = 0;
+            }
+            if (minutes >= 60)
+            {
+                hours++;
+                minutes = 0;
+            }
+
+            if (hours >= 6)
+            {
+                hours = 0;
+                day++;
+                timerRunning = false;
+                StartCoroutine(EndDay());
+            }
+            UpdateText();
         }
-        if(minutes >= 60)
-        {
-            hours++;
-            minutes = 0;
-        }
-        UpdateText();
+        
     }
 
     void UpdateText()
@@ -59,5 +75,18 @@ public class TimeManager : MonoBehaviour
         {
             timeText.text += ":" + minutes.ToString();
         }
+    }
+
+    IEnumerator EndDay()
+    {
+        toBlack.FadeIn(fadeDuration);
+        //move player, stop customer spawns etc. new tasks
+        yield return new WaitForSeconds(fadeDuration + 2);
+        toBlack.FadeOut(fadeDuration);
+        
+        //check for story events for this night/next day and load them
+        timerRunning = true;
+
+        yield break;
     }
 }
