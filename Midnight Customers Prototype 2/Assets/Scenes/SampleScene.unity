@@ -2713,11 +2713,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 547c1ae72b498304b8caea0531cbd9fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minutes: 5
-  hours: 3
-  day: 41
+  minutes: 0
+  hours: 0
+  seconds: 0
+  day: 1
   dayText: {fileID: 1321719050}
   timeText: {fileID: 1063500180}
+  timeMultiplier: 15
 --- !u!1 &848104265
 GameObject:
   m_ObjectHideFlags: 0

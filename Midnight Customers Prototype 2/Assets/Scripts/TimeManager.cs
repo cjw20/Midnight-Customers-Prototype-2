@@ -7,12 +7,13 @@ public class TimeManager : MonoBehaviour
 {
     public float minutes;
     public float hours;
+    public float seconds;
     public int day;
     public Text dayText;
     public Text timeText;
+    public float timeMultiplier; //how much faster than real time in game time passes
 
-    bool singleDHour;
-    bool singleDMin;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -20,24 +21,18 @@ public class TimeManager : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        if(hours < 10)
+        seconds += Time.fixedDeltaTime * timeMultiplier;
+        if(seconds >= 60)
         {
-            singleDHour = true;
+            minutes++;
+            seconds = 0;
         }
-        else
+        if(minutes >= 60)
         {
-            singleDHour = false;
-        }
-
-        if(minutes < 10)
-        {
-            singleDMin = true;
-        }
-        else
-        {
-            singleDMin = false;
+            hours++;
+            minutes = 0;
         }
         UpdateText();
     }
@@ -47,7 +42,7 @@ public class TimeManager : MonoBehaviour
         dayText.text = "Day: " + day.ToString();
 
 
-        if (singleDHour)
+        if (hours < 10)
         {
             timeText.text = "0" + hours.ToString();
         }
@@ -56,7 +51,7 @@ public class TimeManager : MonoBehaviour
             timeText.text = "" + hours.ToString();
         }
 
-        if (singleDMin)
+        if (minutes < 10)
         {
             timeText.text += ":0" + minutes.ToString();
         }
