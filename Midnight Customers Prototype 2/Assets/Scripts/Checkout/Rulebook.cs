@@ -7,7 +7,7 @@ public class Rulebook : MonoBehaviour
     public GameObject openedBook;
     bool bookStatus; //true when opened
     
-    void ToggleBook()
+    public void ToggleBook()
     {
         bookStatus = !bookStatus;
         openedBook.SetActive(bookStatus);
