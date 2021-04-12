@@ -16,6 +16,7 @@ public class CustomerManager : MonoBehaviour
     Coroutine lastCoroutine;
 
     List<GameObject> customersInStore = new List<GameObject>();
+    bool spawning;
     
     void Awake()
     {
@@ -31,6 +32,7 @@ public class CustomerManager : MonoBehaviour
     }
     void Start()
     {
+        spawning = true;
         arrayPos = Random.Range(0, customers.Length); //dont need +1 if inclusive?
 
         LoadCustomer(customers[arrayPos]);
@@ -61,8 +63,12 @@ public class CustomerManager : MonoBehaviour
         //customersInStore.Remove(customer); will need to find work around if we ever decide to have multiple customers in the store at once
         customer.SetActive(false);
 
-        lastCoroutine = StartCoroutine(NextCustomer());
-        //update customer variables
+        if (spawning)
+        {
+            lastCoroutine = StartCoroutine(NextCustomer());
+            //update customer variables
+        }
+
     }
 
     IEnumerator NextCustomer()
@@ -75,6 +81,7 @@ public class CustomerManager : MonoBehaviour
 
     public void PauseSpawns()
     {
+        spawning = false;
         if(lastCoroutine != null)
         {
             
@@ -93,6 +100,7 @@ public class CustomerManager : MonoBehaviour
 
     public void StartSpawns()
     {
+        spawning = true;
         lastCoroutine = StartCoroutine(NextCustomer());
     }
 

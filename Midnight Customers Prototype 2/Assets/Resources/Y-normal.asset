@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
-  m_Name: Y-normal
+  m_Name: Y-Normal
   m_EditorClassIdentifier: 
   NodeLinks:
   - BaseNodeGuid: 6deb90f8-d5eb-472d-886a-257022672e5c
@@ -37,6 +37,24 @@ MonoBehaviour:
   - BaseNodeGuid: be7b202d-8e27-4db5-b1e8-c6b550065e0a
     PortName: I guess we are, have a good night.
     TargetNodeGuid: 06612b58-e352-4832-af46-a8a403cc7281
+  - BaseNodeGuid: 56d5fd71-ca61-4edb-aee3-bd0cc452268b
+    PortName: ...
+    TargetNodeGuid: 06612b58-e352-4832-af46-a8a403cc7281
+  - BaseNodeGuid: 22f7809a-dd32-4885-8ddd-3f244c8237b5
+    PortName: ...
+    TargetNodeGuid: 06612b58-e352-4832-af46-a8a403cc7281
+  - BaseNodeGuid: f2563943-48cb-480b-9d13-99efba105076
+    PortName: ...
+    TargetNodeGuid: 06612b58-e352-4832-af46-a8a403cc7281
+  - BaseNodeGuid: be7b202d-8e27-4db5-b1e8-c6b550065e0a
+    PortName: ...
+    TargetNodeGuid: 06612b58-e352-4832-af46-a8a403cc7281
+  - BaseNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
+    PortName: ...
+    TargetNodeGuid: 06612b58-e352-4832-af46-a8a403cc7281
+  - BaseNodeGuid: ee572ba1-c251-4376-83be-9057196bfa70
+    PortName: ...
+    TargetNodeGuid: 06612b58-e352-4832-af46-a8a403cc7281
   DialogueNodeData:
   - Guid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
     DialogueText: ...
@@ -44,20 +62,20 @@ MonoBehaviour:
   - Guid: ee572ba1-c251-4376-83be-9057196bfa70
     DialogueText: Yesssss I am fine, Why do you assssk?
     Position: {x: 483, y: 195}
-  - Guid: 56d5fd71-ca61-4edb-aee3-bd0cc452268b
-    DialogueText: I am fine, thanksssss
-    Position: {x: 887, y: 137}
   - Guid: 22f7809a-dd32-4885-8ddd-3f244c8237b5
     DialogueText: Thank you, your kindnessss issss very humane.
     Position: {x: 892, y: 274}
   - Guid: f2563943-48cb-480b-9d13-99efba105076
     DialogueText: No, thisssss is it.
     Position: {x: 1225, y: 130}
-  - Guid: be7b202d-8e27-4db5-b1e8-c6b550065e0a
-    DialogueText: Yessss, we humansssss are unique.
-    Position: {x: 1340, y: 276}
   - Guid: 06612b58-e352-4832-af46-a8a403cc7281
     DialogueText: +0
     Position: {x: 1755, y: 191}
+  - Guid: 56d5fd71-ca61-4edb-aee3-bd0cc452268b
+    DialogueText: I am fine, thanksssss
+    Position: {x: 887, y: 137}
+  - Guid: be7b202d-8e27-4db5-b1e8-c6b550065e0a
+    DialogueText: Yessss, we humansssss are unique.
+    Position: {x: 1330, y: 330}
   ExposedProperties: []
   CommentBlockData: []
