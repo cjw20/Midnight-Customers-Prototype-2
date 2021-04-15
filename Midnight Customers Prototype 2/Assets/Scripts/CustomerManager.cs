@@ -6,9 +6,7 @@ public class CustomerManager : MonoBehaviour
 {
     public static CustomerManager customerManager;
 
-    [SerializeField] GameObject human1;
-    [SerializeField] GameObject human2;
-    [SerializeField] GameObject aylith;
+    
     public GameObject[] customers;
     [SerializeField] Transform exit;
 
