@@ -8197,6 +8197,10 @@ PrefabInstance:
       value: -1.5062801
       objectReference: {fileID: 0}
     - target: {fileID: 4341891569755352049, guid: 9579c97dd5ae56845b66ea882b61d3d2, type: 3}
+      propertyPath: portrait
+      value: 
+      objectReference: {fileID: 21300000, guid: cd8080514f97c0342ae78b994f172698, type: 3}
+    - target: {fileID: 4341891569755352049, guid: 9579c97dd5ae56845b66ea882b61d3d2, type: 3}
       propertyPath: conversations.Array.data[0]
       value: 
       objectReference: {fileID: 11400000, guid: d73c6d1c05d89f246864e7a4fcced638, type: 2}
@@ -8281,6 +8285,10 @@ PrefabInstance:
       propertyPath: plannedPath.Array.data[2]
       value: 
       objectReference: {fileID: 719393441}
+    - target: {fileID: 4216765681452312155, guid: 706be3c207d989e4f822127c1904852b, type: 3}
+      propertyPath: portrait
+      value: 
+      objectReference: {fileID: 21300000, guid: a60c92256f4935649ba36c6770e34156, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 706be3c207d989e4f822127c1904852b, type: 3}
 --- !u!1 &3171553143526816585 stripped
@@ -8382,6 +8390,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7804919453073409268, guid: 8b5f02a04c322d144a270de753473b49, type: 3}
+      propertyPath: portrait
+      value: 
+      objectReference: {fileID: 21300000, guid: 71a3d305ce33b204c9e2587fcaa6914d, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b5f02a04c322d144a270de753473b49, type: 3}
 --- !u!4 &5570189988557149937 stripped
