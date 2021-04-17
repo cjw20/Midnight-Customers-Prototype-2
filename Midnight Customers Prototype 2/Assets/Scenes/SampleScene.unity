@@ -1448,7 +1448,7 @@ GameObject:
   m_Component:
   - component: {fileID: 295798633}
   m_Layer: 0
-  m_Name: Mop 1 (5)
+  m_Name: Mop 6
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -3297,7 +3297,7 @@ GameObject:
   m_Component:
   - component: {fileID: 803663756}
   m_Layer: 0
-  m_Name: Mop 1 (4)
+  m_Name: Mop 5
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -4737,6 +4737,7 @@ GameObject:
   - component: {fileID: 1151140297}
   - component: {fileID: 1151140296}
   - component: {fileID: 1151140295}
+  - component: {fileID: 1151140299}
   m_Layer: 5
   m_Name: Black Screen
   m_TagString: Untagged
@@ -4814,6 +4815,20 @@ RectTransform:
   m_AnchoredPosition: {x: 104.51489, y: -728.8282}
   m_SizeDelta: {x: 1722.1929, y: 2662.7275}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1151140299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1151140294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1f22d86298f8b142974139bbd450405, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mopTrigger: {fileID: 0}
+  mopLocations: []
 --- !u!1 &1161566296
 GameObject:
   m_ObjectHideFlags: 0
@@ -6863,7 +6878,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1750873143}
   m_Layer: 0
-  m_Name: Mop 1 (3)
+  m_Name: Mop 4
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -7774,6 +7789,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1927739305}
+  - component: {fileID: 1927739306}
   m_Layer: 0
   m_Name: Task Locations
   m_TagString: Untagged
@@ -7796,6 +7812,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1927739306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1927739304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1f22d86298f8b142974139bbd450405, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mopTrigger: {fileID: 4750385749066029980, guid: a0866cef182794b489e71d5e40252a5a, type: 3}
+  mopLocations:
+  - {fileID: 1961011598}
+  - {fileID: 2101521774}
+  - {fileID: 1526387796}
+  - {fileID: 1750873143}
+  - {fileID: 803663756}
+  - {fileID: 295798633}
 --- !u!1 &1932110254
 GameObject:
   m_ObjectHideFlags: 0
