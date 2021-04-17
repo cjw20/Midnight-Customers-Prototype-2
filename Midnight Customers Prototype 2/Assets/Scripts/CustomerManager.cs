@@ -31,7 +31,7 @@ public class CustomerManager : MonoBehaviour
     void Start()
     {
         spawning = true;
-        arrayPos = Random.Range(0, customers.Length); //dont need +1 if inclusive?
+        //arrayPos = Random.Range(0, customers.Length); //dont need +1 if inclusive?
 
         LoadCustomer(customers[arrayPos]);
     }

@@ -1109,8 +1109,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -13.645691, y: 4.6359024}
-  m_SizeDelta: {x: 925.696, y: 167.719}
+  m_AnchoredPosition: {x: -0.00012207031, y: 0.00022125244}
+  m_SizeDelta: {x: 1210.7, y: 202.98}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &211056937
 MonoBehaviour:
@@ -1134,7 +1134,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 35
+    m_FontSize: 45
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -3141,7 +3141,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 132, y: -72.333984}
-  m_SizeDelta: {x: 982.6157, y: 202.9787}
+  m_SizeDelta: {x: 1210.6841, y: 202.9787}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &723684467
 MonoBehaviour:
@@ -8410,6 +8410,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 668096973}
     m_Modifications:
+    - target: {fileID: 6010064553094314888, guid: c208794e7e4da754bade06a8d0248f4b, type: 3}
+      propertyPath: conversations.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 160010ada55a1e64ea21de66035b2ef1, type: 2}
+    - target: {fileID: 6010064553094314888, guid: c208794e7e4da754bade06a8d0248f4b, type: 3}
+      propertyPath: conversations.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 160010ada55a1e64ea21de66035b2ef1, type: 2}
     - target: {fileID: 6010064553094314899, guid: c208794e7e4da754bade06a8d0248f4b, type: 3}
       propertyPath: m_Name
       value: Investigator

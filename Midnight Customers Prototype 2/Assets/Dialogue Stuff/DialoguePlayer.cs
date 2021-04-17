@@ -143,6 +143,7 @@ public class DialoguePlayer : MonoBehaviour
             {
                 relationshipChange *= -1; //may not need this if parse recognizes negative
             }
+            yield return new WaitForSeconds(1.5f); //makes dialogue not end right away
             checkoutManager.EndDialogue(relationshipChange);
             //add or subtract characters relationship score
             yield break;
