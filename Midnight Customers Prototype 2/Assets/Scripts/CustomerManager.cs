@@ -77,7 +77,7 @@ public class CustomerManager : MonoBehaviour
         yield break;
     }
 
-    public void PauseSpawns()
+    public void StopSpawns()
     {
         spawning = false;
         if(lastCoroutine != null)

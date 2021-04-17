@@ -23,12 +23,15 @@ public class TimeManager : MonoBehaviour
     public Transform playerStartingLoc;
 
     CustomerManager customerManager;
+    TaskSpawner taskSpawner;
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
         playerMovement = player.GetComponent<PlayerMovement>();
         customerManager = FindObjectOfType<CustomerManager>();
+        taskSpawner = FindObjectOfType<TaskSpawner>();
+        //if ^ is too slow, do different way later
         timerRunning = true;
         UpdateText();
     }
@@ -97,9 +100,10 @@ public class TimeManager : MonoBehaviour
         toBlack.FadeIn(fadeDuration);        
         //move player, stop customer spawns etc. new tasks
         yield return new WaitForSeconds(fadeDuration + 2);
-        customerManager.PauseSpawns();
+        customerManager.StopSpawns();
         player.transform.position = playerStartingLoc.position;
         toBlack.FadeOut(fadeDuration);
+        taskSpawner.NewDayTasks();
         yield return new WaitForSeconds(fadeDuration + 2);
         customerManager.StartSpawns();
 
