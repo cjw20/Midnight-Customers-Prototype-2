@@ -25,15 +25,6 @@ MonoBehaviour:
   - BaseNodeGuid: 4a5526bd-5e9a-4e5c-88b5-fd554a4c0ff8
     PortName: ...
     TargetNodeGuid: 914695a2-b27c-409a-be88-0060e3535010
-  - BaseNodeGuid: 914695a2-b27c-409a-be88-0060e3535010
-    PortName: "No\u2026 I can\u2019t say that I have."
-    TargetNodeGuid: 87e9f8f0-fd3c-4b5e-9c38-9e68396f87b0
-  - BaseNodeGuid: 914695a2-b27c-409a-be88-0060e3535010
-    PortName: Other than you? No.
-    TargetNodeGuid: 87e9f8f0-fd3c-4b5e-9c38-9e68396f87b0
-  - BaseNodeGuid: 914695a2-b27c-409a-be88-0060e3535010
-    PortName: ...
-    TargetNodeGuid: 87e9f8f0-fd3c-4b5e-9c38-9e68396f87b0
   - BaseNodeGuid: 87e9f8f0-fd3c-4b5e-9c38-9e68396f87b0
     PortName: Yeah, sure thing. Have a good night.
     TargetNodeGuid: 8225caa5-5bfa-40fb-983e-02f129d377fd
@@ -43,6 +34,15 @@ MonoBehaviour:
   - BaseNodeGuid: 87e9f8f0-fd3c-4b5e-9c38-9e68396f87b0
     PortName: ...
     TargetNodeGuid: 8225caa5-5bfa-40fb-983e-02f129d377fd
+  - BaseNodeGuid: 914695a2-b27c-409a-be88-0060e3535010
+    PortName: "No\u2026 I can\u2019t say that I have."
+    TargetNodeGuid: 87e9f8f0-fd3c-4b5e-9c38-9e68396f87b0
+  - BaseNodeGuid: 914695a2-b27c-409a-be88-0060e3535010
+    PortName: Other than you? No.
+    TargetNodeGuid: 87e9f8f0-fd3c-4b5e-9c38-9e68396f87b0
+  - BaseNodeGuid: 914695a2-b27c-409a-be88-0060e3535010
+    PortName: ...
+    TargetNodeGuid: 87e9f8f0-fd3c-4b5e-9c38-9e68396f87b0
   DialogueNodeData:
   - Guid: 4a5526bd-5e9a-4e5c-88b5-fd554a4c0ff8
     DialogueText: Hey kid, got a second?
@@ -53,7 +53,7 @@ MonoBehaviour:
     Position: {x: 1850, y: 260}
   - Guid: 914695a2-b27c-409a-be88-0060e3535010
     DialogueText: "Just following a lead about some disappearances in the past few
-      years. Have you have seen anything\u2026 weird around here lately? "
+      years. Have you seen anything\u2026 weird around here lately? "
     Position: {x: 799, y: 195}
   - Guid: 8225caa5-5bfa-40fb-983e-02f129d377fd
     DialogueText: +0
