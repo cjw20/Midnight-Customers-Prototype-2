@@ -147,6 +147,7 @@ public class CheckoutManager : MonoBehaviour
         }
         else
         {
+            penaltyPoints++;
             //customer mad
         }
         remainingItems--;
@@ -177,12 +178,7 @@ public class CheckoutManager : MonoBehaviour
                 penaltyPoints++;
                 //forgot to check id
             }
-            if (failedIDCheck)
-            {
-                
-                //check if bagged items needed ID 
-
-            }
+            
             needsIDCheck = false;
             //will need to clear other stuff for future checkouts OR reinstantiate whole object?
             this.gameObject.SetActive(false);
@@ -218,7 +214,7 @@ public class CheckoutManager : MonoBehaviour
         if (needsIDCheck)
         {
             int idRoll = Random.Range(0, 100);
-            if (idRoll < 5)
+            if (idRoll < 25)
             {
                 StartCoroutine(DisplayMessage(noIDMessage, 2f));
                 needsIDCheck = false;
