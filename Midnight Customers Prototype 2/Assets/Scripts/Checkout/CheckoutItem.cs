@@ -12,6 +12,8 @@ public class CheckoutItem : MonoBehaviour
     //rules like alchoholic?
     public bool isScanned = false;
 
+    bool breaksRules;
+
     
 
     public CheckoutManager checkoutManager;
@@ -29,7 +31,7 @@ public class CheckoutItem : MonoBehaviour
         {
             if (isScanned)
             {
-                checkoutManager.Bagged(weight);
+                checkoutManager.Bagged(weight, requiresID);
 
                 Destroy(this.gameObject);
                 //penalty for bagging w/out scan? or make customer happy?
@@ -44,6 +46,12 @@ public class CheckoutItem : MonoBehaviour
                 
             }
 
+        }
+
+        if (collision.CompareTag("Drawer"))
+        {
+            checkoutManager.PutAwayItem(isScanned, price, requiresID);
+            Destroy(this.gameObject);
         }
     }
 }

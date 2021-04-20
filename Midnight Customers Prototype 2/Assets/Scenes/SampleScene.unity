@@ -1267,15 +1267,15 @@ RectTransform:
   m_GameObject: {fileID: 248132320}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1830221796}
   m_Father: {fileID: 1200690026}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0.000020504, y: -557}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 661.0204, y: 145.965}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &248132322
@@ -2881,9 +2881,9 @@ RectTransform:
   - {fileID: 869165503}
   - {fileID: 1699710760}
   - {fileID: 1335715029}
-  - {fileID: 1631305328}
-  - {fileID: 1284473687}
   - {fileID: 1200690026}
+  - {fileID: 1284473687}
+  - {fileID: 1631305328}
   m_Father: {fileID: 10691446}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3183,15 +3183,15 @@ RectTransform:
   m_GameObject: {fileID: 701337375}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1970530137}
   m_Father: {fileID: 1200690026}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0.000020504, y: -557}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 661.0204, y: 145.965}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &701337377
@@ -3431,17 +3431,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 775693610}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 55179766}
   m_Father: {fileID: 1200690026}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -668}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 995.0614, y: 157.78003}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!1 &803663755
@@ -3562,6 +3562,7 @@ Transform:
   - {fileID: 1227284146}
   - {fileID: 1612201179}
   - {fileID: 97134968}
+  - {fileID: 1335903332}
   m_Father: {fileID: 10691446}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3713,7 +3714,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 154.02, y: 25}
+  m_AnchoredPosition: {x: 154.02002, y: 25}
   m_SizeDelta: {x: -1823.31, y: -1039.72}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &878671700
@@ -5091,7 +5092,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1200690025}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -5099,11 +5100,11 @@ RectTransform:
   - {fileID: 701337376}
   - {fileID: 248132321}
   m_Father: {fileID: 605432556}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0.000076293945, y: -97}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1221660999
@@ -5304,7 +5305,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 233.79, y: 25}
+  m_AnchoredPosition: {x: 233.78998, y: 25}
   m_SizeDelta: {x: -1873.46, y: -1039.72}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1290663189
@@ -5672,6 +5673,63 @@ MonoBehaviour:
   countdownSlider: {fileID: 505964449}
   buttonOffset: 90
   checkoutManager: {fileID: 10691447}
+--- !u!1 &1335903331
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1335903332}
+  - component: {fileID: 1335903333}
+  m_Layer: 0
+  m_Name: Drawer
+  m_TagString: Drawer
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1335903332
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335903331}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.97, y: -4.29, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 848104266}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1335903333
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335903331}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.028067112, y: -0.13331908}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4.817131, y: 0.8736979}
+  m_EdgeRadius: 0
 --- !u!1 &1405583353
 GameObject:
   m_ObjectHideFlags: 0
@@ -6594,16 +6652,16 @@ RectTransform:
   m_GameObject: {fileID: 1631305327}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1833950060}
   - {fileID: 1479552703}
   m_Father: {fileID: 605432556}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -96.99997}
   m_SizeDelta: {x: 1376.3337, y: 809.31323}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1631305329
@@ -7710,14 +7768,21 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\"The bagging order is very important! Make sure to weigh your items before
+  m_Text: 'The bagging order is very important! Make sure to weigh your items before
     you bag them by using the scale in front of the cash register! Heavy items are
-    always bagged first and light items last!\r\n\nIs the customer asking for cigarettes
+    always bagged first and light items last!
+
+
+    Is the customer asking for cigarettes
     or scratch tickets?  It is legally required that you confirm that the customer
-    is 21 or over, so ask for their ID. This also applies to any and all alcohol.\r\n\nSome
-    customers prefer to have their items bagged differently so always keep in mind
-    their preferences! For example, some of our elderly customers might like having
-    their light items bagged first!\u201D\r\n"
+    is 21 or over, so ask for their ID. This also applies to any and all alcohol.
+
+
+    If
+    a customer can not afford a product, or does not have the required identification,
+    place the product into the drawer below the register.
+
+'
 --- !u!222 &1833950062
 CanvasRenderer:
   m_ObjectHideFlags: 0

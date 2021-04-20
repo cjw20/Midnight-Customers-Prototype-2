@@ -14,6 +14,7 @@ public class CheckoutManager : MonoBehaviour
     public bool needsIDCheck;
     bool customerPayed;
     bool passedIDCheck;
+    bool failedIDCheck;
     
     int lastWeight = 3;
     float totalPrice;
@@ -38,6 +39,8 @@ public class CheckoutManager : MonoBehaviour
 
     public AudioSource scanSound;
 
+    int penaltyPoints; //sum of errors in this checkout
+
     private void Start()
     {
         checkoutTrigger = FindObjectOfType<CheckoutTrigger>();
@@ -48,6 +51,9 @@ public class CheckoutManager : MonoBehaviour
         customerInfo = info;
         priceText.text = "$0.00";
         weightText.text = "-";
+        needsIDCheck = false;
+        passedIDCheck = false;
+        failedIDCheck = false;
 
         items = customerInfo.checkoutItems;
         portraitLocation.sprite = customerInfo.portrait;
@@ -68,6 +74,7 @@ public class CheckoutManager : MonoBehaviour
                 if (item.GetComponent<CheckoutItem>().requiresID == true)
                 {
                     needsIDCheck = true;
+                    
                 }
             }
            
@@ -85,7 +92,7 @@ public class CheckoutManager : MonoBehaviour
         EndCheckout();
     }
     
-    public void Bagged(int weight)
+    public void Bagged(int weight, bool needsID)
     {
         if(weight > lastWeight)
         {
@@ -94,6 +101,11 @@ public class CheckoutManager : MonoBehaviour
         }
         lastWeight = weight;
 
+        if (needsID && (needsIDCheck || failedIDCheck))
+        {
+            //happens when no valid id was checked and the item needed an ID
+            penaltyPoints++;
+        }
         remainingItems--;
         
         if(remainingItems < 1)
@@ -121,6 +133,32 @@ public class CheckoutManager : MonoBehaviour
         scanSound.Play();
     }
 
+    public void PutAwayItem(bool scanned, float price, bool needsID)
+    {
+        if (scanned)
+        {
+            //refund price
+            totalPrice -= price;
+            priceText.text = "$" + totalPrice.ToString();
+        }
+        if(failedIDCheck && needsID)
+        {
+            //customer not mad
+        }
+        else
+        {
+            //customer mad
+        }
+        remainingItems--;
+
+        if(remainingItems < 1)
+        {
+            //checks if all items are bagged or put away
+            finishedBag = true;
+            GiveMoney();
+        }
+    }
+
     void EndCheckout()
     {
         if (finishedBag && dialogueFinished && customerPayed) //add finished convo too later once implemented
@@ -136,10 +174,12 @@ public class CheckoutManager : MonoBehaviour
             
             if (needsIDCheck)
             {
+                penaltyPoints++;
                 //forgot to check id
             }
-            if (!passedIDCheck)
+            if (failedIDCheck)
             {
+                
                 //check if bagged items needed ID 
 
             }
@@ -182,7 +222,7 @@ public class CheckoutManager : MonoBehaviour
             {
                 StartCoroutine(DisplayMessage(noIDMessage, 2f));
                 needsIDCheck = false;
-                passedIDCheck = false;
+                failedIDCheck = true;
             }
             else
             {
