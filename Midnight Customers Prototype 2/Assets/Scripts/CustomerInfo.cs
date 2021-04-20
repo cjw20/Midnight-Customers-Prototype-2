@@ -17,7 +17,7 @@ public class CustomerInfo : MonoBehaviour
 
     public int conversationProgress; //how far into conversations player is. Will want to save this variable somewhere
 
-
+    public bool hasValidID; //for purchasing items that require ID
 
 
     // Start is called before the first frame update

@@ -13,6 +13,7 @@ public class CheckoutManager : MonoBehaviour
     bool finishedBag; //true when all items have been scanned
     public bool needsIDCheck;
     bool customerPayed;
+    bool passedIDCheck;
     
     int lastWeight = 3;
     float totalPrice;
@@ -24,7 +25,8 @@ public class CheckoutManager : MonoBehaviour
 
     public GameObject misbagMessage; //may replace in later versions
     public GameObject idButton; //probably don't need this reference later
-    public GameObject idMessage;
+    public GameObject hasIDMessage;
+    public GameObject noIDMessage;
 
     public SpriteRenderer portraitLocation;
 
@@ -50,6 +52,7 @@ public class CheckoutManager : MonoBehaviour
         items = customerInfo.checkoutItems;
         portraitLocation.sprite = customerInfo.portrait;
 
+        //pre convo messages before starting regular dialogue, like asking for something behind counter
         dialoguePlayer.StartConvo(customerInfo.nextConversation);
         
         itemNumber = items.Length;
@@ -133,7 +136,12 @@ public class CheckoutManager : MonoBehaviour
             
             if (needsIDCheck)
             {
-                //bad! deduct points or something
+                //forgot to check id
+            }
+            if (!passedIDCheck)
+            {
+                //check if bagged items needed ID 
+
             }
             needsIDCheck = false;
             //will need to clear other stuff for future checkouts OR reinstantiate whole object?
@@ -154,15 +162,7 @@ public class CheckoutManager : MonoBehaviour
         weightText.text = weightCharacter;
     }
 
-    IEnumerator Miss()
-    {
-        misbagMessage.SetActive(true);
-        yield return new WaitForSeconds(1f);
-        misbagMessage.SetActive(false);
-        yield break;
-        //unused
-    }
-    
+  
 
     IEnumerator DisplayMessage(GameObject message, float duration)
     {
@@ -174,10 +174,22 @@ public class CheckoutManager : MonoBehaviour
 
     public void CheckID()
     {
+        
         if (needsIDCheck)
         {
-            StartCoroutine(DisplayMessage(idMessage, 2f));
-            needsIDCheck = false;
+            int idRoll = Random.Range(0, 100);
+            if (idRoll < 5)
+            {
+                StartCoroutine(DisplayMessage(noIDMessage, 2f));
+                needsIDCheck = false;
+                passedIDCheck = false;
+            }
+            else
+            {
+                StartCoroutine(DisplayMessage(hasIDMessage, 2f));
+                needsIDCheck = false;
+                passedIDCheck = true;
+            }
         }
         
     }
