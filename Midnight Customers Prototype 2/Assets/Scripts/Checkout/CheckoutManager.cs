@@ -11,7 +11,7 @@ public class CheckoutManager : MonoBehaviour
     int remainingItems; //items left unbagged
 
     bool finishedBag; //true when all items have been scanned
-    bool needsIDCheck;
+    public bool needsIDCheck;
     bool customerPayed;
     
     int lastWeight = 3;
@@ -24,6 +24,7 @@ public class CheckoutManager : MonoBehaviour
 
     public GameObject misbagMessage; //may replace in later versions
     public GameObject idButton; //probably don't need this reference later
+    public GameObject idMessage;
 
     public SpriteRenderer portraitLocation;
 
@@ -85,7 +86,7 @@ public class CheckoutManager : MonoBehaviour
     {
         if(weight > lastWeight)
         {
-            StartCoroutine(Miss()); //may need to do something that makes this not repeat if already going
+            StartCoroutine(DisplayMessage(misbagMessage, 1f)); //may need to do something that makes this not repeat if already going
             
         }
         lastWeight = weight;
@@ -159,10 +160,25 @@ public class CheckoutManager : MonoBehaviour
         yield return new WaitForSeconds(1f);
         misbagMessage.SetActive(false);
         yield break;
+        //unused
+    }
+    
+
+    IEnumerator DisplayMessage(GameObject message, float duration)
+    {
+        message.SetActive(true);
+        yield return new WaitForSeconds(duration);
+        message.SetActive(false);
+        yield break;
     }
 
     public void CheckID()
     {
-        needsIDCheck = false;
+        if (needsIDCheck)
+        {
+            StartCoroutine(DisplayMessage(idMessage, 2f));
+            needsIDCheck = false;
+        }
+        
     }
 }
