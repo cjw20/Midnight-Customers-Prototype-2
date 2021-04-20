@@ -28,6 +28,7 @@ public class CheckoutManager : MonoBehaviour
     public SpriteRenderer portraitLocation;
 
     public Text priceText;
+    public Text weightText;
     public Transform moneySpawn; //where money gets placed
 
     CustomerInfo customerInfo;
@@ -43,6 +44,7 @@ public class CheckoutManager : MonoBehaviour
     {
         customerInfo = info;
         priceText.text = "$0.00";
+        weightText.text = "-";
 
         items = customerInfo.checkoutItems;
         portraitLocation.sprite = customerInfo.portrait;
@@ -107,10 +109,11 @@ public class CheckoutManager : MonoBehaviour
         priceText.text = "PAID";
         EndCheckout();
     }
-    public void ScanItem(float price)
+    public void ScanItem(float price, int weight)
     {
         totalPrice += price;
         priceText.text = "$" + totalPrice.ToString();
+        DisplayWeight(weight);
         scanSound.Play();
     }
 
@@ -126,6 +129,7 @@ public class CheckoutManager : MonoBehaviour
             
             lastWeight = 3; //resets for next bagging
             totalPrice = 0;
+            
             if (needsIDCheck)
             {
                 //bad! deduct points or something
@@ -135,6 +139,18 @@ public class CheckoutManager : MonoBehaviour
             this.gameObject.SetActive(false);
         }
 
+    }
+
+    void DisplayWeight(int weight)
+    {
+        var weightCharacter = weight switch
+        {
+            1 => "L",
+            2 => "M",
+            3 => "H",
+            _ => "?",
+        }; //defaults to ? in case of error or if we want to mess with player
+        weightText.text = weightCharacter;
     }
 
     IEnumerator Miss()

@@ -32,7 +32,7 @@ public class CheckoutItem : MonoBehaviour
                 checkoutManager.Bagged(weight);
 
                 Destroy(this.gameObject);
-
+                //penalty for bagging w/out scan? or make customer happy?
             }
         }
         if (collision.CompareTag("Scanner"))
@@ -40,7 +40,7 @@ public class CheckoutItem : MonoBehaviour
             if (!isScanned)
             {
                 isScanned = true;
-                checkoutManager.ScanItem(price);
+                checkoutManager.ScanItem(price, weight);
                 
             }
 

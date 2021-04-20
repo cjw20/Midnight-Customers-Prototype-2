@@ -181,6 +181,7 @@ MonoBehaviour:
   idButton: {fileID: 1699710756}
   portraitLocation: {fileID: 1502591133}
   priceText: {fileID: 869165501}
+  weightText: {fileID: 1284473685}
   moneySpawn: {fileID: 375634272}
   scanSound: {fileID: 10691448}
 --- !u!82 &10691448
@@ -2803,6 +2804,7 @@ RectTransform:
   - {fileID: 1699710760}
   - {fileID: 1335715029}
   - {fileID: 1631305328}
+  - {fileID: 1284473687}
   m_Father: {fileID: 10691446}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3556,8 +3558,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 178.40002, y: 25}
-  m_SizeDelta: {x: -1776.62, y: -1039.72}
+  m_AnchoredPosition: {x: 154.02, y: 25}
+  m_SizeDelta: {x: -1823.31, y: -1039.72}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &878671700
 GameObject:
@@ -5033,6 +5035,85 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5642382787059048442, guid: 0c385362111dbf04cbbe979bb5f2d605, type: 3}
   m_PrefabInstance: {fileID: 5642382788014778421}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1284473684
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1284473687}
+  - component: {fileID: 1284473686}
+  - component: {fileID: 1284473685}
+  m_Layer: 5
+  m_Name: Weight Indicator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1284473685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1284473684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 30
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 300
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: '-'
+--- !u!222 &1284473686
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1284473684}
+  m_CullTransparentMesh: 1
+--- !u!224 &1284473687
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1284473684}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 605432556}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 233.79, y: 25}
+  m_SizeDelta: {x: -1873.46, y: -1039.72}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1290663189
 GameObject:
   m_ObjectHideFlags: 0
@@ -7322,7 +7403,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1376.3, y: 260.6463}
+  m_SizeDelta: {x: 1376.3, y: 809.31}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1833950061
 MonoBehaviour:
@@ -7357,14 +7438,14 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '-Bag items from heaviest to lightest
-
-    Light items: Blue
-
-    Medium
-    items: Red, Green and Orange
-
-    Heavy items: Yellow'
+  m_Text: "\"The bagging order is very important! Make sure to weigh your items before
+    you bag them by using the scale in front of the cash register! Heavy items are
+    always bagged first and light items last!\r\n\nIs the customer asking for cigarettes
+    or scratch tickets?  It is legally required that you confirm that the customer
+    is 21 or over, so ask for their ID. This also applies to any and all alcohol.\r\n\nSome
+    customers prefer to have their items bagged differently so always keep in mind
+    their preferences! For example, some of our elderly customers might like having
+    their light items bagged first!\u201D\r\n"
 --- !u!222 &1833950062
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8038,7 +8119,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 29.724976, y: -315}
+  m_AnchoredPosition: {x: 29.724976, y: -314.99997}
   m_SizeDelta: {x: 1101, y: 336.57}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1976128152
