@@ -7768,19 +7768,20 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'The bagging order is very important! Make sure to weigh your items before
-    you bag them by using the scale in front of the cash register! Heavy items are
-    always bagged first and light items last!
+  m_Text: 'The bagging order is very important! Make sure to check the product''s
+    weight, by checking the display above the register, before bagging them! (H)eavy
+    items are always bagged first, (M)edium items next, and (L)ight items last!
 
 
-    Is the customer asking for cigarettes
-    or scratch tickets?  It is legally required that you confirm that the customer
-    is 21 or over, so ask for their ID. This also applies to any and all alcohol.
+    Is
+    the customer asking for cigarettes or scratch tickets?  It is legally required
+    that you confirm that the customer is 21 or over, so ask for their ID. This also
+    applies to any and all alcohol.
 
 
-    If
-    a customer can not afford a product, or does not have the required identification,
-    place the product into the drawer below the register.
+    If a customer can not afford a product,
+    or does not have the required identification, place the product into the drawer
+    below the register.
 
 '
 --- !u!222 &1833950062
