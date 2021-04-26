@@ -28,7 +28,7 @@ public class TaskSpawner : MonoBehaviour
 
     void SpawnMopTask(int amount)
     {
-        int random = Random.Range(0, mopLocations.Length);
+        int random = Random.Range(0, mopLocations.Length - 1);
         for(int i = 0; i < amount; i++)
         {
             Instantiate(mopTrigger, mopLocations[random]);

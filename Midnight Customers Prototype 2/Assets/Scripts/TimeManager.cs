@@ -110,7 +110,7 @@ public class TimeManager : MonoBehaviour
         yield return new WaitForSeconds(fadeDuration + 2);
         customerManager.StartSpawns();
 
-        //send review message
+        review.ReviewMessage();
         
         //check for story events for this night/next day and load them
         timerRunning = true;

@@ -47,7 +47,7 @@ public class PerformanceReview : MonoBehaviour
             phoneMessage = phoneNotification.GetComponent<PhoneMessage>();
 
         }
-
+        phoneMessage.message = MessageSelect();
     }
 
     string MessageSelect()
@@ -80,6 +80,7 @@ public class PerformanceReview : MonoBehaviour
             nextMessage = improvedMessage; 
             //boss notes on improvement when player goes from bad to good
         }
+        lastScore = thisScore;
         return nextMessage;
     }
 }
