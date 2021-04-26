@@ -24,5 +24,7 @@ public class PhoneMessage : MonoBehaviour
         OpenPhone.SetActive(true);
 
         messageText.text = message;
+
+        this.gameObject.SetActive(false); //dismisses notifcation, keep if other uses for phone?
     }
 }
