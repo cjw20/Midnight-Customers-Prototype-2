@@ -98,7 +98,7 @@ public class CheckoutManager : MonoBehaviour
         if(weight > lastWeight)
         {
             StartCoroutine(DisplayMessage(misbagMessage, 1f)); //may need to do something that makes this not repeat if already going
-            
+            review.baggingErrors++;
         }
         lastWeight = weight;
 
@@ -106,6 +106,7 @@ public class CheckoutManager : MonoBehaviour
         {
             //happens when no valid id was checked and the item needed an ID
             penaltyPoints++;
+            review.idErrors++;
         }
         remainingItems--;
         
@@ -149,6 +150,7 @@ public class CheckoutManager : MonoBehaviour
         else
         {
             penaltyPoints++;
+            review.idErrors++;
             //customer mad
         }
         remainingItems--;
@@ -163,7 +165,7 @@ public class CheckoutManager : MonoBehaviour
 
     void EndCheckout()
     {
-        if (finishedBag && dialogueFinished && customerPayed) //add finished convo too later once implemented
+        if (finishedBag && dialogueFinished && customerPayed) 
         {
             checkoutTrigger.EndCheckout();
             checkoutTrigger.customerInfo.GetComponent<CustomerMovement>().FinishedCheckout();
@@ -179,7 +181,9 @@ public class CheckoutManager : MonoBehaviour
                 penaltyPoints++;
                 //forgot to check id
             }
-            
+            review.dayPenaltyPoints += penaltyPoints; //sends penalty points to performance review and recents
+            penaltyPoints = 0;
+
             needsIDCheck = false;
             //will need to clear other stuff for future checkouts OR reinstantiate whole object?
             this.gameObject.SetActive(false);

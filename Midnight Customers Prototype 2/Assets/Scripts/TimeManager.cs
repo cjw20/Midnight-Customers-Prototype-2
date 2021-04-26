@@ -24,6 +24,7 @@ public class TimeManager : MonoBehaviour
 
     CustomerManager customerManager;
     TaskSpawner taskSpawner;
+    PerformanceReview review;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +32,7 @@ public class TimeManager : MonoBehaviour
         playerMovement = player.GetComponent<PlayerMovement>();
         customerManager = FindObjectOfType<CustomerManager>();
         taskSpawner = FindObjectOfType<TaskSpawner>();
+        review = FindObjectOfType<PerformanceReview>();
         //if ^ is too slow, do different way later
         timerRunning = true;
         UpdateText();

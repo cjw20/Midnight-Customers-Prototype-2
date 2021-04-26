@@ -19,4 +19,9 @@ public class PerformanceReview : MonoBehaviour
     {
         
     }
+
+    public void NewDay()
+    {
+
+    }
 }
