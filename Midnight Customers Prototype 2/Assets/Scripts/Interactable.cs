@@ -11,14 +11,13 @@ public class Interactable : MonoBehaviour
     [SerializeField] string[] messages;
     public int progress;
 
-    GameObject thoughtText;
-    GameObject thoughtWindow;
+    [SerializeField] GameObject thoughtText;
+    [SerializeField] GameObject thoughtWindow;
 
     // Start is called before the first frame update
     void Start()
     {
-        thoughtWindow = GameObject.Find("Thought Window");
-        thoughtText = GameObject.Find("Thought Text");
+        
     }
 
     // Update is called once per frame
@@ -59,6 +58,7 @@ public class Interactable : MonoBehaviour
         {
             progress--;
         }
+        interacting = false;
     }
 
     IEnumerator DisplayMessage(string message)
