@@ -1,13 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class PhoneMessage : MonoBehaviour
+public class Phone : MonoBehaviour
 {
-    public string message;
-    public Text messageText;
-    public GameObject OpenPhone;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,10 +15,8 @@ public class PhoneMessage : MonoBehaviour
     {
         
     }
-    public void OpenMessage()
+    public void ClosePhone()
     {
-        OpenPhone.SetActive(true);
-
-        messageText.text = message;
+        this.gameObject.SetActive(false);
     }
 }
