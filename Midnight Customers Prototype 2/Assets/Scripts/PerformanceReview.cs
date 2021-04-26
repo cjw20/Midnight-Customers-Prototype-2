@@ -26,11 +26,7 @@ public class PerformanceReview : MonoBehaviour
         lastScore = 3; //first day expectations. Will need to load this when saving is implemented
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 
     public void NewDay()
     {
