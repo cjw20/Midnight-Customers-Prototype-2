@@ -14,11 +14,7 @@ public class Interactable : MonoBehaviour
     [SerializeField] GameObject thoughtText;
     [SerializeField] GameObject thoughtWindow;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    
 
     // Update is called once per frame
     void Update()

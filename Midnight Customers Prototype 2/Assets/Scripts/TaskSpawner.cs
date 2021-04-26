@@ -9,17 +9,7 @@ public class TaskSpawner : MonoBehaviour
     public List<GameObject> mopSpawns;
     List<int> usedSpawns = new List<int>();
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 
     public void NewDayTasks()
     {
