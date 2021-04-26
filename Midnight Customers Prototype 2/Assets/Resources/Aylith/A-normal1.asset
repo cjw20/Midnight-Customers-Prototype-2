@@ -1,0 +1,144 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
+  m_Name: A-normal1
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: 49f72669-3c3a-4057-b3ae-7a330642169e
+    PortName: Next
+    TargetNodeGuid: 565e5b19-b434-4e5e-825c-b7ecd5433cdb
+  - BaseNodeGuid: 565e5b19-b434-4e5e-825c-b7ecd5433cdb
+    PortName: Hello ma'am.
+    TargetNodeGuid: 6afce072-fadf-4ce4-8a1d-3262a7f72c63
+  - BaseNodeGuid: 6afce072-fadf-4ce4-8a1d-3262a7f72c63
+    PortName: I am not that young.
+    TargetNodeGuid: 7482d2e5-7016-42d1-9d9c-2163bc09204e
+  - BaseNodeGuid: 6afce072-fadf-4ce4-8a1d-3262a7f72c63
+    PortName: Thank you, I think.
+    TargetNodeGuid: 8a0b33b5-cbaa-47d4-bd4d-f2f43bc5c39d
+  - BaseNodeGuid: 6afce072-fadf-4ce4-8a1d-3262a7f72c63
+    PortName: ...
+    TargetNodeGuid: 3e46cfb0-1c7b-4870-97c1-7f288834d499
+  - BaseNodeGuid: a0c76d9d-aa0b-44ef-acc5-bd1dd2ae8abc
+    PortName: ...
+    TargetNodeGuid: cb71a282-b607-4b55-ad0c-31d41c79a9c9
+  - BaseNodeGuid: 14841b77-a571-42a1-a0e8-9605c1392b6b
+    PortName: ....
+    TargetNodeGuid: cb71a282-b607-4b55-ad0c-31d41c79a9c9
+  - BaseNodeGuid: bd4d8209-671d-4e80-bffd-d23d8033b17b
+    PortName: ...
+    TargetNodeGuid: db26d582-af5f-417f-91cc-c3545c84b423
+  - BaseNodeGuid: 8a0b33b5-cbaa-47d4-bd4d-f2f43bc5c39d
+    PortName: ...
+    TargetNodeGuid: bd4d8209-671d-4e80-bffd-d23d8033b17b
+  - BaseNodeGuid: 8a0b33b5-cbaa-47d4-bd4d-f2f43bc5c39d
+    PortName: Um, I think so, seems to be the most popular one.
+    TargetNodeGuid: 14841b77-a571-42a1-a0e8-9605c1392b6b
+  - BaseNodeGuid: 8a0b33b5-cbaa-47d4-bd4d-f2f43bc5c39d
+    PortName: I have no idea, but I am sure it is.
+    TargetNodeGuid: a0c76d9d-aa0b-44ef-acc5-bd1dd2ae8abc
+  - BaseNodeGuid: 7482d2e5-7016-42d1-9d9c-2163bc09204e
+    PortName: How old are you?
+    TargetNodeGuid: 5dd8b2c4-c0eb-4743-8d99-74f1ea2347ac
+  - BaseNodeGuid: 7482d2e5-7016-42d1-9d9c-2163bc09204e
+    PortName: You do not look that old.
+    TargetNodeGuid: a264948c-2dbe-4bf4-a361-e0dc374731e2
+  - BaseNodeGuid: 7482d2e5-7016-42d1-9d9c-2163bc09204e
+    PortName: ...
+    TargetNodeGuid: 81b4885b-4ff2-4a22-a8b1-5faf640faa14
+  - BaseNodeGuid: 3e46cfb0-1c7b-4870-97c1-7f288834d499
+    PortName: Really? I guess clerks probably don't stay for too long then?
+    TargetNodeGuid: 33cf35e6-9b6e-441e-9c84-b7ec193dc33b
+  - BaseNodeGuid: 3e46cfb0-1c7b-4870-97c1-7f288834d499
+    PortName: Generations? How long has the gas station been around?
+    TargetNodeGuid: 867d20a0-a1a9-4f6b-b1c0-339231dcf244
+  - BaseNodeGuid: 3e46cfb0-1c7b-4870-97c1-7f288834d499
+    PortName: ...
+    TargetNodeGuid: 2d7b2d99-507a-435d-963a-f980ff9525f0
+  - BaseNodeGuid: 5dd8b2c4-c0eb-4743-8d99-74f1ea2347ac
+    PortName: ...
+    TargetNodeGuid: 05c3cf3d-6616-4b31-b03a-5990149e0fab
+  - BaseNodeGuid: a264948c-2dbe-4bf4-a361-e0dc374731e2
+    PortName: ....
+    TargetNodeGuid: cb71a282-b607-4b55-ad0c-31d41c79a9c9
+  - BaseNodeGuid: 81b4885b-4ff2-4a22-a8b1-5faf640faa14
+    PortName: ...
+    TargetNodeGuid: db26d582-af5f-417f-91cc-c3545c84b423
+  - BaseNodeGuid: 33cf35e6-9b6e-441e-9c84-b7ec193dc33b
+    PortName: ...
+    TargetNodeGuid: db26d582-af5f-417f-91cc-c3545c84b423
+  - BaseNodeGuid: 867d20a0-a1a9-4f6b-b1c0-339231dcf244
+    PortName: ....
+    TargetNodeGuid: db26d582-af5f-417f-91cc-c3545c84b423
+  - BaseNodeGuid: 2d7b2d99-507a-435d-963a-f980ff9525f0
+    PortName: ...
+    TargetNodeGuid: db26d582-af5f-417f-91cc-c3545c84b423
+  DialogueNodeData:
+  - Guid: 6afce072-fadf-4ce4-8a1d-3262a7f72c63
+    DialogueText: 'How sweet, the youth of today are something else. '
+    Position: {x: 433, y: 199}
+  - Guid: 565e5b19-b434-4e5e-825c-b7ecd5433cdb
+    DialogueText: ...
+    Position: {x: 202, y: 204}
+  - Guid: 7482d2e5-7016-42d1-9d9c-2163bc09204e
+    DialogueText: But you are not as old as me. Not even close.
+    Position: {x: 877, y: 223}
+  - Guid: 8a0b33b5-cbaa-47d4-bd4d-f2f43bc5c39d
+    DialogueText: Say do you think this feritlizer is good for young plants?
+    Position: {x: 857, y: -143}
+  - Guid: 14841b77-a571-42a1-a0e8-9605c1392b6b
+    DialogueText: 'I shall try it, my children shall be fed. Thank you. '
+    Position: {x: 1382, y: -48}
+  - Guid: 3e46cfb0-1c7b-4870-97c1-7f288834d499
+    DialogueText: I have seen many generations of clerks pass through this store.
+    Position: {x: 771, y: 844}
+  - Guid: a264948c-2dbe-4bf4-a361-e0dc374731e2
+    DialogueText: 'You are too kind. I hope you do not meet the same fate as those
+      before you. '
+    Position: {x: 1385, y: 368}
+  - Guid: 5dd8b2c4-c0eb-4743-8d99-74f1ea2347ac
+    DialogueText: 'Are you unaware of how rude it is to ask a lady her age? Perhaps
+      the youth are not that  sweet. '
+    Position: {x: 1372, y: 243}
+  - Guid: 81b4885b-4ff2-4a22-a8b1-5faf640faa14
+    DialogueText: 'Enjoy your youth while it lasts. Life is but a fleeting moment. '
+    Position: {x: 1379, y: 483}
+  - Guid: a0c76d9d-aa0b-44ef-acc5-bd1dd2ae8abc
+    DialogueText: 'Thank you, I hope you are right, do not want my children to die. '
+    Position: {x: 1378, y: -160}
+  - Guid: bd4d8209-671d-4e80-bffd-d23d8033b17b
+    DialogueText: 'I suppose it was foolish to assume youth such as yourself would
+      have knowledge past their age. Alas, I shall try it and find out. Goodnight. '
+    Position: {x: 1247, y: 79}
+  - Guid: db26d582-af5f-417f-91cc-c3545c84b423
+    DialogueText: +0
+    Position: {x: 2367, y: 159}
+  - Guid: 05c3cf3d-6616-4b31-b03a-5990149e0fab
+    DialogueText: -1
+    Position: {x: 2376, y: 348}
+  - Guid: cb71a282-b607-4b55-ad0c-31d41c79a9c9
+    DialogueText: +1
+    Position: {x: 2368, y: 544}
+  - Guid: 33cf35e6-9b6e-441e-9c84-b7ec193dc33b
+    DialogueText: 'The longest I''ve seen one last was two moons. He disappeared
+      inexplicably much like the others before him. I must be off. My children need
+      me. '
+    Position: {x: 1339, y: 770}
+  - Guid: 867d20a0-a1a9-4f6b-b1c0-339231dcf244
+    DialogueText: 'Many moons, my child. Although, it has not always been a gas station.
+      I am afraid I  must be off. My children need me. '
+    Position: {x: 1335, y: 894}
+  - Guid: 2d7b2d99-507a-435d-963a-f980ff9525f0
+    DialogueText: All have met a terrible fate. Perhaps yours will be different.
+    Position: {x: 1402, y: 1044}
+  ExposedProperties: []
+  CommentBlockData: []

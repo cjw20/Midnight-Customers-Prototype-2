@@ -1,0 +1,156 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
+  m_Name: Y-normal1
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: 6deb90f8-d5eb-472d-886a-257022672e5c
+    PortName: Next
+    TargetNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
+  - BaseNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
+    PortName: Are you alright?
+    TargetNodeGuid: ee572ba1-c251-4376-83be-9057196bfa70
+  - BaseNodeGuid: ee572ba1-c251-4376-83be-9057196bfa70
+    PortName: No reason, just making sure.
+    TargetNodeGuid: 22f7809a-dd32-4885-8ddd-3f244c8237b5
+  - BaseNodeGuid: ee572ba1-c251-4376-83be-9057196bfa70
+    PortName: You seem to be a bit spacey.
+    TargetNodeGuid: 56d5fd71-ca61-4edb-aee3-bd0cc452268b
+  - BaseNodeGuid: ee572ba1-c251-4376-83be-9057196bfa70
+    PortName: ...
+    TargetNodeGuid: 6ab70854-7c6b-4987-bc49-b9d3e5fab0dc
+  - BaseNodeGuid: 56d5fd71-ca61-4edb-aee3-bd0cc452268b
+    PortName: Okay, Anything else for you?
+    TargetNodeGuid: f2563943-48cb-480b-9d13-99efba105076
+  - BaseNodeGuid: f2563943-48cb-480b-9d13-99efba105076
+    PortName: Thanks, come again.
+    TargetNodeGuid: 85dace50-c6d9-42f6-96e0-1887ec26faaf
+  - BaseNodeGuid: f2563943-48cb-480b-9d13-99efba105076
+    PortName: 'Here you go. Thank you. '
+    TargetNodeGuid: 85dace50-c6d9-42f6-96e0-1887ec26faaf
+  - BaseNodeGuid: f2563943-48cb-480b-9d13-99efba105076
+    PortName: ...
+    TargetNodeGuid: 85dace50-c6d9-42f6-96e0-1887ec26faaf
+  - BaseNodeGuid: 56d5fd71-ca61-4edb-aee3-bd0cc452268b
+    PortName: Are you sure?
+    TargetNodeGuid: be7b202d-8e27-4db5-b1e8-c6b550065e0a
+  - BaseNodeGuid: be7b202d-8e27-4db5-b1e8-c6b550065e0a
+    PortName: Yes, sorry. Have a good night.
+    TargetNodeGuid: 0e7de25c-7193-47bf-a6b7-082d197017a7
+  - BaseNodeGuid: be7b202d-8e27-4db5-b1e8-c6b550065e0a
+    PortName: 'I apologize for being pushy. Have a good night. '
+    TargetNodeGuid: 0e7de25c-7193-47bf-a6b7-082d197017a7
+  - BaseNodeGuid: be7b202d-8e27-4db5-b1e8-c6b550065e0a
+    PortName: ...
+    TargetNodeGuid: 0e7de25c-7193-47bf-a6b7-082d197017a7
+  - BaseNodeGuid: 56d5fd71-ca61-4edb-aee3-bd0cc452268b
+    PortName: ...
+    TargetNodeGuid: 1e73beba-ef75-4aff-a2c5-27964b37a87a
+  - BaseNodeGuid: 1e73beba-ef75-4aff-a2c5-27964b37a87a
+    PortName: ...
+    TargetNodeGuid: 85dace50-c6d9-42f6-96e0-1887ec26faaf
+  - BaseNodeGuid: 22f7809a-dd32-4885-8ddd-3f244c8237b5
+    PortName: I am a human after all.
+    TargetNodeGuid: a57916dc-3dea-42a9-99a3-6c5052b6f237
+  - BaseNodeGuid: a57916dc-3dea-42a9-99a3-6c5052b6f237
+    PortName: I guess we are, have a good night.
+    TargetNodeGuid: 06612b58-e352-4832-af46-a8a403cc7281
+  - BaseNodeGuid: a57916dc-3dea-42a9-99a3-6c5052b6f237
+    PortName: Okay, have a good night.
+    TargetNodeGuid: 06612b58-e352-4832-af46-a8a403cc7281
+  - BaseNodeGuid: a57916dc-3dea-42a9-99a3-6c5052b6f237
+    PortName: ...
+    TargetNodeGuid: 06612b58-e352-4832-af46-a8a403cc7281
+  - BaseNodeGuid: 22f7809a-dd32-4885-8ddd-3f244c8237b5
+    PortName: Not at all, just being polite.
+    TargetNodeGuid: e926b9c6-8374-4887-a7b0-74146fb08514
+  - BaseNodeGuid: 22f7809a-dd32-4885-8ddd-3f244c8237b5
+    PortName: ..
+    TargetNodeGuid: 447130eb-45a2-4a88-a3bc-5100ee496591
+  - BaseNodeGuid: 6ab70854-7c6b-4987-bc49-b9d3e5fab0dc
+    PortName: Does their need to be one?
+    TargetNodeGuid: 75ad32b2-7dc6-4d52-ab41-17fc6acda9c6
+  - BaseNodeGuid: 6ab70854-7c6b-4987-bc49-b9d3e5fab0dc
+    PortName: 'Nope, just asking. '
+    TargetNodeGuid: a360374e-afcf-4c5f-a9b2-52aff814b567
+  - BaseNodeGuid: 6ab70854-7c6b-4987-bc49-b9d3e5fab0dc
+    PortName: ...
+    TargetNodeGuid: 027075da-2e15-46aa-a2e0-56f31a7035a7
+  - BaseNodeGuid: e926b9c6-8374-4887-a7b0-74146fb08514
+    PortName: ...
+    TargetNodeGuid: 06612b58-e352-4832-af46-a8a403cc7281
+  - BaseNodeGuid: 447130eb-45a2-4a88-a3bc-5100ee496591
+    PortName: ...
+    TargetNodeGuid: 85dace50-c6d9-42f6-96e0-1887ec26faaf
+  - BaseNodeGuid: 75ad32b2-7dc6-4d52-ab41-17fc6acda9c6
+    PortName: ...
+    TargetNodeGuid: 06612b58-e352-4832-af46-a8a403cc7281
+  - BaseNodeGuid: a360374e-afcf-4c5f-a9b2-52aff814b567
+    PortName: ...
+    TargetNodeGuid: 06612b58-e352-4832-af46-a8a403cc7281
+  - BaseNodeGuid: 027075da-2e15-46aa-a2e0-56f31a7035a7
+    PortName: ...
+    TargetNodeGuid: 06612b58-e352-4832-af46-a8a403cc7281
+  DialogueNodeData:
+  - Guid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
+    DialogueText: ...
+    Position: {x: 219, y: 199}
+  - Guid: ee572ba1-c251-4376-83be-9057196bfa70
+    DialogueText: Yesssss I am fine, Why do you assssk?
+    Position: {x: 483, y: 195}
+  - Guid: f2563943-48cb-480b-9d13-99efba105076
+    DialogueText: No, thisssss isssss all.
+    Position: {x: 1428, y: -117}
+  - Guid: 56d5fd71-ca61-4edb-aee3-bd0cc452268b
+    DialogueText: No, I am not from ssspace. I am from your human planet.
+    Position: {x: 845, y: -64}
+  - Guid: be7b202d-8e27-4db5-b1e8-c6b550065e0a
+    DialogueText: I am sssssure, can you finissssssh checking me out?
+    Position: {x: 1450, y: 59}
+  - Guid: 1e73beba-ef75-4aff-a2c5-27964b37a87a
+    DialogueText: Thank you for your concern, enjoy your night. (1)
+    Position: {x: 1480, y: 224}
+  - Guid: a57916dc-3dea-42a9-99a3-6c5052b6f237
+    DialogueText: Yessss, we humanssssss are unique.
+    Position: {x: 1537, y: 364}
+  - Guid: 75ad32b2-7dc6-4d52-ab41-17fc6acda9c6
+    DialogueText: 'Usssssssually there issssss, Thank you. '
+    Position: {x: 1474, y: 778}
+  - Guid: a360374e-afcf-4c5f-a9b2-52aff814b567
+    DialogueText: 'Thank you I guessssss. Have a good night. '
+    Position: {x: 1457, y: 878}
+  - Guid: 027075da-2e15-46aa-a2e0-56f31a7035a7
+    DialogueText: I guesssssss not, you are a wierd ssspeciesssssss.
+    Position: {x: 1457, y: 1002}
+  - Guid: 6ab70854-7c6b-4987-bc49-b9d3e5fab0dc
+    DialogueText: You asssssked and now no reasssson?
+    Position: {x: 1010, y: 881}
+  - Guid: 22f7809a-dd32-4885-8ddd-3f244c8237b5
+    DialogueText: Thank you, your kindnessss issss very humane.
+    Position: {x: 1037, y: 494}
+  - Guid: 447130eb-45a2-4a88-a3bc-5100ee496591
+    DialogueText: 'Thank you for your concern, enjoy your night. '
+    Position: {x: 1545, y: 653}
+  - Guid: e926b9c6-8374-4887-a7b0-74146fb08514
+    DialogueText: Thank you I guessss.
+    Position: {x: 1532, y: 535}
+  - Guid: 06612b58-e352-4832-af46-a8a403cc7281
+    DialogueText: +0
+    Position: {x: 2185, y: 719}
+  - Guid: 0e7de25c-7193-47bf-a6b7-082d197017a7
+    DialogueText: -1
+    Position: {x: 2180, y: 553}
+  - Guid: 85dace50-c6d9-42f6-96e0-1887ec26faaf
+    DialogueText: +1
+    Position: {x: 2184, y: 403}
+  ExposedProperties: []
+  CommentBlockData: []

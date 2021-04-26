@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
+  m_Name: I-normal1
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: 6deb90f8-d5eb-472d-886a-257022672e5c
+    PortName: Next
+    TargetNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
+  - BaseNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
+    PortName: ...
+    TargetNodeGuid: 87fe75d6-3e54-4c93-8606-25d2a0135ae3
+  - BaseNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
+    PortName: Same old same old.
+    TargetNodeGuid: 6881e50f-ed81-4aa1-a715-2dff70a27048
+  - BaseNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
+    PortName: Nope, nothing.
+    TargetNodeGuid: 97fd64c3-e8e1-4666-a110-526c0fc098e4
+  - BaseNodeGuid: 97fd64c3-e8e1-4666-a110-526c0fc098e4
+    PortName: I'll let you know if anything changes.
+    TargetNodeGuid: adec3c2d-9ac5-452a-aada-eacc877d89b2
+  - BaseNodeGuid: 97fd64c3-e8e1-4666-a110-526c0fc098e4
+    PortName: Well that's vaguely ominous. Look, I'll let you know as soon as something
+      changes.
+    TargetNodeGuid: adec3c2d-9ac5-452a-aada-eacc877d89b2
+  - BaseNodeGuid: 97fd64c3-e8e1-4666-a110-526c0fc098e4
+    PortName: ...
+    TargetNodeGuid: adec3c2d-9ac5-452a-aada-eacc877d89b2
+  - BaseNodeGuid: 6881e50f-ed81-4aa1-a715-2dff70a27048
+    PortName: No, but I'll let you know if something does.
+    TargetNodeGuid: adec3c2d-9ac5-452a-aada-eacc877d89b2
+  - BaseNodeGuid: 6881e50f-ed81-4aa1-a715-2dff70a27048
+    PortName: ...
+    TargetNodeGuid: adec3c2d-9ac5-452a-aada-eacc877d89b2
+  - BaseNodeGuid: 6881e50f-ed81-4aa1-a715-2dff70a27048
+    PortName: I would've told you if it had.
+    TargetNodeGuid: adec3c2d-9ac5-452a-aada-eacc877d89b2
+  - BaseNodeGuid: 87fe75d6-3e54-4c93-8606-25d2a0135ae3
+    PortName: I'm not hiding anything. Nothing weird has  happened since the last
+      time you asked.
+    TargetNodeGuid: adec3c2d-9ac5-452a-aada-eacc877d89b2
+  - BaseNodeGuid: 87fe75d6-3e54-4c93-8606-25d2a0135ae3
+    PortName: ...
+    TargetNodeGuid: adec3c2d-9ac5-452a-aada-eacc877d89b2
+  - BaseNodeGuid: 87fe75d6-3e54-4c93-8606-25d2a0135ae3
+    PortName: I already told you that I would let you know if I saw anything weird,
+      and I haven't.
+    TargetNodeGuid: adec3c2d-9ac5-452a-aada-eacc877d89b2
+  DialogueNodeData:
+  - Guid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
+    DialogueText: Anything new?
+    Position: {x: 221, y: 187}
+  - Guid: 97fd64c3-e8e1-4666-a110-526c0fc098e4
+    DialogueText: Weird, I was sure something would've  happened by now.
+    Position: {x: 643, y: -58}
+  - Guid: 6881e50f-ed81-4aa1-a715-2dff70a27048
+    DialogueText: Really? So nothing's changed?
+    Position: {x: 655, y: 167}
+  - Guid: 87fe75d6-3e54-4c93-8606-25d2a0135ae3
+    DialogueText: What are you trying to hide?
+    Position: {x: 664, y: 449}
+  - Guid: adec3c2d-9ac5-452a-aada-eacc877d89b2
+    DialogueText: +0
+    Position: {x: 1356, y: 232}
+  ExposedProperties: []
+  CommentBlockData: []

@@ -1,0 +1,161 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
+  m_Name: HC-normal1
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: 6deb90f8-d5eb-472d-886a-257022672e5c
+    PortName: Next
+    TargetNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
+  - BaseNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
+    PortName: Hello, can you take your hood down please.
+    TargetNodeGuid: caf0570e-dbfd-48a8-b595-f5f289e47310
+  - BaseNodeGuid: caf0570e-dbfd-48a8-b595-f5f289e47310
+    PortName: ...
+    TargetNodeGuid: acf52dbc-2f62-4577-8d50-e2574be21929
+  - BaseNodeGuid: caf0570e-dbfd-48a8-b595-f5f289e47310
+    PortName: Then you have to leave
+    TargetNodeGuid: 2e7348ae-156e-4b42-b026-72c050b7716e
+  - BaseNodeGuid: caf0570e-dbfd-48a8-b595-f5f289e47310
+    PortName: May I ask why?
+    TargetNodeGuid: 4f8607b0-61da-4315-a21f-d5a4a9a5352a
+  - BaseNodeGuid: acf52dbc-2f62-4577-8d50-e2574be21929
+    PortName: ...
+    TargetNodeGuid: 93e6711a-69d9-414f-be29-69c6dea0c848
+  - BaseNodeGuid: acf52dbc-2f62-4577-8d50-e2574be21929
+    PortName: '"I''m sorry, but rules are rules, and the rules say  no hoods."'
+    TargetNodeGuid: 67408695-b226-472e-b208-9550038599d1
+  - BaseNodeGuid: acf52dbc-2f62-4577-8d50-e2574be21929
+    PortName: I understand, I hope I did not offend you.
+    TargetNodeGuid: 85b2530c-eaa0-43e8-94aa-b9bd2f1fd9e2
+  - BaseNodeGuid: 2e7348ae-156e-4b42-b026-72c050b7716e
+    PortName: ...
+    TargetNodeGuid: 13515204-009a-453d-8dca-6b75ddb20fd1
+  - BaseNodeGuid: 2e7348ae-156e-4b42-b026-72c050b7716e
+    PortName: Sir, I'm going to have to ask you to leave.
+    TargetNodeGuid: ef7d7e60-6515-421b-9648-6ce322242467
+  - BaseNodeGuid: 2e7348ae-156e-4b42-b026-72c050b7716e
+    PortName: Fine. But next time, no hoods.
+    TargetNodeGuid: 0d1a1611-ab0b-4ffe-9eaa-cd2007a9e966
+  - BaseNodeGuid: 4f8607b0-61da-4315-a21f-d5a4a9a5352a
+    PortName: ...
+    TargetNodeGuid: eb5c763b-51f7-417d-96ad-f168ca4d1f30
+  - BaseNodeGuid: 4f8607b0-61da-4315-a21f-d5a4a9a5352a
+    PortName: '"Commandments of your gods? What religion is this?"'
+    TargetNodeGuid: 27348020-9aa8-4073-963e-cccd9822df61
+  - BaseNodeGuid: 4f8607b0-61da-4315-a21f-d5a4a9a5352a
+    PortName: Oh, sorry. I didn't know it was a religious reason.
+    TargetNodeGuid: 379bd86e-9a1f-4b68-b8d1-08459b8f4d29
+  - BaseNodeGuid: 379bd86e-9a1f-4b68-b8d1-08459b8f4d29
+    PortName: ...
+    TargetNodeGuid: 5be8637f-3c29-4a67-b346-02c33ff757dd
+  - BaseNodeGuid: 27348020-9aa8-4073-963e-cccd9822df61
+    PortName: ...
+    TargetNodeGuid: 592039d1-3090-460c-8c10-77e1cf8419c1
+  - BaseNodeGuid: eb5c763b-51f7-417d-96ad-f168ca4d1f30
+    PortName: ...
+    TargetNodeGuid: cd77bf7a-d954-41dc-b6c7-6fca2b749dce
+  - BaseNodeGuid: 0d1a1611-ab0b-4ffe-9eaa-cd2007a9e966
+    PortName: ...
+    TargetNodeGuid: 6fed0d51-0ce0-41f4-9f3c-e7a4f6ee49b7
+  - BaseNodeGuid: ef7d7e60-6515-421b-9648-6ce322242467
+    PortName: ...
+    TargetNodeGuid: 4eeceeff-1abb-448b-9e0f-31b4a28d1875
+  - BaseNodeGuid: 13515204-009a-453d-8dca-6b75ddb20fd1
+    PortName: ...
+    TargetNodeGuid: 56ace07e-cee0-41eb-aa6e-5c12f6a5750b
+  - BaseNodeGuid: 85b2530c-eaa0-43e8-94aa-b9bd2f1fd9e2
+    PortName: ...
+    TargetNodeGuid: ef84e92c-eeee-41c8-b0b2-87b642b9d1ae
+  - BaseNodeGuid: 67408695-b226-472e-b208-9550038599d1
+    PortName: ...
+    TargetNodeGuid: b61e3c1c-69b4-4c2c-973e-f7f6d9c73c5e
+  - BaseNodeGuid: 93e6711a-69d9-414f-be29-69c6dea0c848
+    PortName: ...
+    TargetNodeGuid: 18c8216c-2039-46ff-979b-188768bb1c9b
+  DialogueNodeData:
+  - Guid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
+    DialogueText: 
+    Position: {x: 221, y: 187}
+  - Guid: caf0570e-dbfd-48a8-b595-f5f289e47310
+    DialogueText: Sorry, but I cannot do that.
+    Position: {x: 633, y: 189}
+  - Guid: 4f8607b0-61da-4315-a21f-d5a4a9a5352a
+    DialogueText: You would be asking me to foresake the commandments of my gods.
+    Position: {x: 963, y: -172}
+  - Guid: acf52dbc-2f62-4577-8d50-e2574be21929
+    DialogueText: I must keep it up, lest I anger the gods.
+    Position: {x: 932, y: 668}
+  - Guid: 2e7348ae-156e-4b42-b026-72c050b7716e
+    DialogueText: 'Just let me pay and I will. '
+    Position: {x: 1011, y: 208}
+  - Guid: 379bd86e-9a1f-4b68-b8d1-08459b8f4d29
+    DialogueText: It is fine, be careful with what you say around here.  The walls
+      have ears. Praise be to the elder gods.
+    Position: {x: 1575, y: -250}
+  - Guid: 0d1a1611-ab0b-4ffe-9eaa-cd2007a9e966
+    DialogueText: We shall see. Praise be the elder gods.
+    Position: {x: 1554, y: 180}
+  - Guid: ef7d7e60-6515-421b-9648-6ce322242467
+    DialogueText: 'Hmm. Tread carefully. The gods are displeased by your ignorance. '
+    Position: {x: 1557, y: 288}
+  - Guid: 13515204-009a-453d-8dca-6b75ddb20fd1
+    DialogueText: 'Here, I hope we do not have a problem in the future. Praise be
+      the  elder gods. '
+    Position: {x: 1557, y: 407}
+  - Guid: 67408695-b226-472e-b208-9550038599d1
+    DialogueText: 'There are no rules except for those given to us by the gods. Praise
+      be to the elder gods. '
+    Position: {x: 1476, y: 749}
+  - Guid: eb5c763b-51f7-417d-96ad-f168ca4d1f30
+    DialogueText: You don't have to be silent, you did nothing wrong. Praise be the
+      elder  gods.
+    Position: {x: 1585, y: -18}
+  - Guid: 27348020-9aa8-4073-963e-cccd9822df61
+    DialogueText: One you have not heard of. Praise be the elder gods.
+    Position: {x: 1578, y: -144}
+  - Guid: 93e6711a-69d9-414f-be29-69c6dea0c848
+    DialogueText: 'The gods are displeased. Praise be to the elder gods. '
+    Position: {x: 1479, y: 871}
+  - Guid: 6fed0d51-0ce0-41f4-9f3c-e7a4f6ee49b7
+    DialogueText: +0
+    Position: {x: 1981, y: 179}
+  - Guid: 5be8637f-3c29-4a67-b346-02c33ff757dd
+    DialogueText: +0
+    Position: {x: 2349, y: -251}
+  - Guid: 592039d1-3090-460c-8c10-77e1cf8419c1
+    DialogueText: +0
+    Position: {x: 2059, y: -144}
+  - Guid: cd77bf7a-d954-41dc-b6c7-6fca2b749dce
+    DialogueText: +0
+    Position: {x: 2248, y: -20}
+  - Guid: 4eeceeff-1abb-448b-9e0f-31b4a28d1875
+    DialogueText: -1
+    Position: {x: 2132, y: 288}
+  - Guid: 56ace07e-cee0-41eb-aa6e-5c12f6a5750b
+    DialogueText: -1
+    Position: {x: 2197, y: 405}
+  - Guid: 85b2530c-eaa0-43e8-94aa-b9bd2f1fd9e2
+    DialogueText: 'You did not, but heed my warning. Take caution to not displease
+      the elder  gods in the future. '
+    Position: {x: 1471, y: 629}
+  - Guid: ef84e92c-eeee-41c8-b0b2-87b642b9d1ae
+    DialogueText: +0
+    Position: {x: 2196, y: 623}
+  - Guid: b61e3c1c-69b4-4c2c-973e-f7f6d9c73c5e
+    DialogueText: -1
+    Position: {x: 2189, y: 731}
+  - Guid: 18c8216c-2039-46ff-979b-188768bb1c9b
+    DialogueText: -1
+    Position: {x: 1975, y: 865}
+  ExposedProperties: []
+  CommentBlockData: []

@@ -1,0 +1,158 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
+  m_Name: C-normal1
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: 6deb90f8-d5eb-472d-886a-257022672e5c
+    PortName: Next
+    TargetNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
+  - BaseNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
+    PortName: Hello, can I help you find anything else?
+    TargetNodeGuid: d82501cd-2f18-41f5-bd39-bebf99149421
+  - BaseNodeGuid: d82501cd-2f18-41f5-bd39-bebf99149421
+    PortName: Chocolate of the Seven Realms? Sounds good.
+    TargetNodeGuid: 8136e7f3-f4f3-44b5-9eb0-2b9ef256f0b3
+  - BaseNodeGuid: d82501cd-2f18-41f5-bd39-bebf99149421
+    PortName: Alright then, nice and simple.
+    TargetNodeGuid: b3d17d3f-4aaa-464f-be2a-d18fc6540451
+  - BaseNodeGuid: d82501cd-2f18-41f5-bd39-bebf99149421
+    PortName: ...
+    TargetNodeGuid: 39ae75ae-7c42-4f38-83f1-01d7039d39e5
+  - BaseNodeGuid: 8136e7f3-f4f3-44b5-9eb0-2b9ef256f0b3
+    PortName: Right... Well, have a good night.
+    TargetNodeGuid: ceb95081-4b99-46c7-a10f-130a0dcffd31
+  - BaseNodeGuid: 8136e7f3-f4f3-44b5-9eb0-2b9ef256f0b3
+    PortName: Perhaps. It appeases my hunger so it's possible.
+    TargetNodeGuid: b749bdb9-06f6-4f0c-ae73-a0473baf236c
+  - BaseNodeGuid: 8136e7f3-f4f3-44b5-9eb0-2b9ef256f0b3
+    PortName: ...
+    TargetNodeGuid: 49fc6646-beda-423b-b9a2-924e2e105abd
+  - BaseNodeGuid: b3d17d3f-4aaa-464f-be2a-d18fc6540451
+    PortName: Chaos is a part of life, have a nice night.
+    TargetNodeGuid: 37967deb-943d-4a4d-9b28-3a1e6ce4df67
+  - BaseNodeGuid: b3d17d3f-4aaa-464f-be2a-d18fc6540451
+    PortName: ' Ain''t that the truth? Enjoy your night.'
+    TargetNodeGuid: 43c806d9-7b41-42b0-b30e-a48dd3fb29bf
+  - BaseNodeGuid: b3d17d3f-4aaa-464f-be2a-d18fc6540451
+    PortName: ...
+    TargetNodeGuid: 5b418dab-4f63-4a87-9b92-8efc0fed80a5
+  - BaseNodeGuid: 39ae75ae-7c42-4f38-83f1-01d7039d39e5
+    PortName: I can't say that I have.
+    TargetNodeGuid: eece2f50-6495-4375-aa21-8b4759774bf1
+  - BaseNodeGuid: 39ae75ae-7c42-4f38-83f1-01d7039d39e5
+    PortName: I'll give it a try sometime.
+    TargetNodeGuid: 0c47d085-11b4-4ed7-b42c-6cd01f53afd9
+  - BaseNodeGuid: 39ae75ae-7c42-4f38-83f1-01d7039d39e5
+    PortName: ...
+    TargetNodeGuid: 2e7ad210-5be2-4bcd-98f6-764119428654
+  - BaseNodeGuid: ceb95081-4b99-46c7-a10f-130a0dcffd31
+    PortName: ...
+    TargetNodeGuid: 84d96e38-0908-44ca-92e6-b6567a75a343
+  - BaseNodeGuid: b749bdb9-06f6-4f0c-ae73-a0473baf236c
+    PortName: ...
+    TargetNodeGuid: a7460cb9-77a3-4780-91f3-3f2e54009f61
+  - BaseNodeGuid: 49fc6646-beda-423b-b9a2-924e2e105abd
+    PortName: ...
+    TargetNodeGuid: a1a4bd60-28e5-4136-9a29-1b7b47d7d24d
+  - BaseNodeGuid: 37967deb-943d-4a4d-9b28-3a1e6ce4df67
+    PortName: ...
+    TargetNodeGuid: 7662e430-28c7-484a-9061-f456babfccae
+  - BaseNodeGuid: 43c806d9-7b41-42b0-b30e-a48dd3fb29bf
+    PortName: ...
+    TargetNodeGuid: 553ee5e4-358f-4adc-ac88-ed0685fd773a
+  - BaseNodeGuid: 5b418dab-4f63-4a87-9b92-8efc0fed80a5
+    PortName: ...
+    TargetNodeGuid: 52e3a14e-2aea-4373-a6cd-e6406f894caa
+  - BaseNodeGuid: eece2f50-6495-4375-aa21-8b4759774bf1
+    PortName: ...
+    TargetNodeGuid: f18677d2-6ecf-4f03-b49a-f57e69570225
+  - BaseNodeGuid: 0c47d085-11b4-4ed7-b42c-6cd01f53afd9
+    PortName: ...
+    TargetNodeGuid: 4a318116-5143-4fc7-8249-3248e819a1be
+  - BaseNodeGuid: 2e7ad210-5be2-4bcd-98f6-764119428654
+    PortName: ...
+    TargetNodeGuid: 3b22c2d7-a9d2-430f-94a9-e1ab2257ccdd
+  DialogueNodeData:
+  - Guid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
+    DialogueText: 
+    Position: {x: 221, y: 187}
+  - Guid: d82501cd-2f18-41f5-bd39-bebf99149421
+    DialogueText: No thanks. Just the candy bar for me.
+    Position: {x: 598, y: 189}
+  - Guid: 8136e7f3-f4f3-44b5-9eb0-2b9ef256f0b3
+    DialogueText: Seems to appease even the angriest creation, perhaps even the gods.
+    Position: {x: 1208, y: -312}
+  - Guid: 49fc6646-beda-423b-b9a2-924e2e105abd
+    DialogueText: 'Praise be to the elder gods. '
+    Position: {x: 1859, y: -132}
+  - Guid: 39ae75ae-7c42-4f38-83f1-01d7039d39e5
+    DialogueText: Have you tried it? I'm sure you'd like it. I have yet to meet anyone
+      who has.
+    Position: {x: 1119, y: 818}
+  - Guid: b3d17d3f-4aaa-464f-be2a-d18fc6540451
+    DialogueText: 'Can''t be too chaotic. That''s when things start to go wrong. '
+    Position: {x: 1206, y: 219}
+  - Guid: 37967deb-943d-4a4d-9b28-3a1e6ce4df67
+    DialogueText: 'Not if we can help it. Praise be to the elder gods. '
+    Position: {x: 1791, y: 152}
+  - Guid: 5b418dab-4f63-4a87-9b92-8efc0fed80a5
+    DialogueText: 'Praise be to the elder gods. '
+    Position: {x: 1783, y: 392}
+  - Guid: 7662e430-28c7-484a-9061-f456babfccae
+    DialogueText: +0
+    Position: {x: 2248, y: 140}
+  - Guid: 553ee5e4-358f-4adc-ac88-ed0685fd773a
+    DialogueText: +0
+    Position: {x: 2239, y: 268}
+  - Guid: 52e3a14e-2aea-4373-a6cd-e6406f894caa
+    DialogueText: +0
+    Position: {x: 2252, y: 388}
+  - Guid: eece2f50-6495-4375-aa21-8b4759774bf1
+    DialogueText: My colleages and I get them as often as we can. Praise be to the
+      elder gods.
+    Position: {x: 1750, y: 780}
+  - Guid: 0c47d085-11b4-4ed7-b42c-6cd01f53afd9
+    DialogueText: 'Good! Praise be to the elder god. '
+    Position: {x: 1744, y: 896}
+  - Guid: 2e7ad210-5be2-4bcd-98f6-764119428654
+    DialogueText: 'Try it! Praise be to the elder gods. '
+    Position: {x: 1736, y: 1018}
+  - Guid: 4a318116-5143-4fc7-8249-3248e819a1be
+    DialogueText: +0
+    Position: {x: 2244, y: 904}
+  - Guid: b749bdb9-06f6-4f0c-ae73-a0473baf236c
+    DialogueText: 'Indeed, Praise be to the elder gods. '
+    Position: {x: 1872, y: -261}
+  - Guid: 43c806d9-7b41-42b0-b30e-a48dd3fb29bf
+    DialogueText: 'Praise be to the elder gods. '
+    Position: {x: 1778, y: 280}
+  - Guid: ceb95081-4b99-46c7-a10f-130a0dcffd31
+    DialogueText: 'Praise be to the elder gods. '
+    Position: {x: 1856, y: -379}
+  - Guid: 84d96e38-0908-44ca-92e6-b6567a75a343
+    DialogueText: +0
+    Position: {x: 2224, y: -381}
+  - Guid: a7460cb9-77a3-4780-91f3-3f2e54009f61
+    DialogueText: +0
+    Position: {x: 2229, y: -259}
+  - Guid: a1a4bd60-28e5-4136-9a29-1b7b47d7d24d
+    DialogueText: +0
+    Position: {x: 2225, y: -143}
+  - Guid: 3b22c2d7-a9d2-430f-94a9-e1ab2257ccdd
+    DialogueText: +0
+    Position: {x: 2244, y: 1009}
+  - Guid: f18677d2-6ecf-4f03-b49a-f57e69570225
+    DialogueText: +0
+    Position: {x: 2381, y: 775}
+  ExposedProperties: []
+  CommentBlockData: []

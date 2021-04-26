@@ -1,0 +1,192 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
+  m_Name: D-normal1
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: 7839901e-da6c-4eb6-b0b3-03d6da2232ae
+    PortName: Next
+    TargetNodeGuid: 80659683-ae0b-4a67-b9ee-cbc3b9bf5d2f
+  - BaseNodeGuid: 80659683-ae0b-4a67-b9ee-cbc3b9bf5d2f
+    PortName: Hello, How are you.
+    TargetNodeGuid: f29935bb-d6da-4af7-9b64-e043fbe52b25
+  - BaseNodeGuid: f29935bb-d6da-4af7-9b64-e043fbe52b25
+    PortName: I'm fine, thanks.
+    TargetNodeGuid: 5b20e797-50bb-4eb5-8696-1c1867ab31b9
+  - BaseNodeGuid: f29935bb-d6da-4af7-9b64-e043fbe52b25
+    PortName: Great, what can I get you.
+    TargetNodeGuid: 47ca2e44-f1d1-472e-8d95-06d7943413d9
+  - BaseNodeGuid: 5b20e797-50bb-4eb5-8696-1c1867ab31b9
+    PortName: A bundle of what?
+    TargetNodeGuid: 644f84d9-5b02-4213-b544-e211952e789e
+  - BaseNodeGuid: 5b20e797-50bb-4eb5-8696-1c1867ab31b9
+    PortName: Like a 24 pack?
+    TargetNodeGuid: 558160bb-326e-4a9c-bb5b-60e6ec913ca8
+  - BaseNodeGuid: 47ca2e44-f1d1-472e-8d95-06d7943413d9
+    PortName: A bundle of what?
+    TargetNodeGuid: 644f84d9-5b02-4213-b544-e211952e789e
+  - BaseNodeGuid: 47ca2e44-f1d1-472e-8d95-06d7943413d9
+    PortName: Like a 24 pack?
+    TargetNodeGuid: 558160bb-326e-4a9c-bb5b-60e6ec913ca8
+  - BaseNodeGuid: f29935bb-d6da-4af7-9b64-e043fbe52b25
+    PortName: ...
+    TargetNodeGuid: 4bd3f769-390b-4673-8c8c-659f3b3a2424
+  - BaseNodeGuid: 5b20e797-50bb-4eb5-8696-1c1867ab31b9
+    PortName: ...
+    TargetNodeGuid: 0ede3a86-b96c-4b21-9cec-457cddd41b25
+  - BaseNodeGuid: 47ca2e44-f1d1-472e-8d95-06d7943413d9
+    PortName: ...
+    TargetNodeGuid: 0ede3a86-b96c-4b21-9cec-457cddd41b25
+  - BaseNodeGuid: 4bd3f769-390b-4673-8c8c-659f3b3a2424
+    PortName: I do not know how to.
+    TargetNodeGuid: 3e09b97c-3d5c-4bc7-8a5d-b103876cbd1f
+  - BaseNodeGuid: 4bd3f769-390b-4673-8c8c-659f3b3a2424
+    PortName: You talk wierd.
+    TargetNodeGuid: 5811fc50-f2f6-44c2-a6f2-01dd101528f8
+  - BaseNodeGuid: 4bd3f769-390b-4673-8c8c-659f3b3a2424
+    PortName: ...
+    TargetNodeGuid: 5bc71662-846b-4691-b4ab-006b14245681
+  - BaseNodeGuid: 558160bb-326e-4a9c-bb5b-60e6ec913ca8
+    PortName: Sure be right back..
+    TargetNodeGuid: 9d9fa46f-0ec0-47c0-9b76-aa1d63d2c7c3
+  - BaseNodeGuid: 9d9fa46f-0ec0-47c0-9b76-aa1d63d2c7c3
+    PortName: ...
+    TargetNodeGuid: bbeb0969-75cc-434c-8756-8504f4fee3f7
+  - BaseNodeGuid: 748cf821-485a-4cd1-8713-00226f85a75a
+    PortName: ...
+    TargetNodeGuid: bbeb0969-75cc-434c-8756-8504f4fee3f7
+  - BaseNodeGuid: 558160bb-326e-4a9c-bb5b-60e6ec913ca8
+    PortName: Yes, I'll go get it.
+    TargetNodeGuid: 9d9fa46f-0ec0-47c0-9b76-aa1d63d2c7c3
+  - BaseNodeGuid: 644f84d9-5b02-4213-b544-e211952e789e
+    PortName: Sure be right back..
+    TargetNodeGuid: 9d9fa46f-0ec0-47c0-9b76-aa1d63d2c7c3
+  - BaseNodeGuid: 644f84d9-5b02-4213-b544-e211952e789e
+    PortName: Yes, I'll go get it.
+    TargetNodeGuid: 9d9fa46f-0ec0-47c0-9b76-aa1d63d2c7c3
+  - BaseNodeGuid: 0ede3a86-b96c-4b21-9cec-457cddd41b25
+    PortName: Sure, Be right back.
+    TargetNodeGuid: 9d9fa46f-0ec0-47c0-9b76-aa1d63d2c7c3
+  - BaseNodeGuid: 0ede3a86-b96c-4b21-9cec-457cddd41b25
+    PortName: Yes, I'll go get it.
+    TargetNodeGuid: 9d9fa46f-0ec0-47c0-9b76-aa1d63d2c7c3
+  - BaseNodeGuid: 0ede3a86-b96c-4b21-9cec-457cddd41b25
+    PortName: ...
+    TargetNodeGuid: 748cf821-485a-4cd1-8713-00226f85a75a
+  - BaseNodeGuid: 558160bb-326e-4a9c-bb5b-60e6ec913ca8
+    PortName: ...
+    TargetNodeGuid: 748cf821-485a-4cd1-8713-00226f85a75a
+  - BaseNodeGuid: 644f84d9-5b02-4213-b544-e211952e789e
+    PortName: ...
+    TargetNodeGuid: 748cf821-485a-4cd1-8713-00226f85a75a
+  - BaseNodeGuid: 5811fc50-f2f6-44c2-a6f2-01dd101528f8
+    PortName: ...
+    TargetNodeGuid: eec8d609-2411-4263-a184-37ad4b35192c
+  - BaseNodeGuid: 5bc71662-846b-4691-b4ab-006b14245681
+    PortName: Sure, Be right back.
+    TargetNodeGuid: 9d9fa46f-0ec0-47c0-9b76-aa1d63d2c7c3
+  - BaseNodeGuid: 5bc71662-846b-4691-b4ab-006b14245681
+    PortName: Yes, I'll go get it.
+    TargetNodeGuid: 9d9fa46f-0ec0-47c0-9b76-aa1d63d2c7c3
+  - BaseNodeGuid: 5bc71662-846b-4691-b4ab-006b14245681
+    PortName: ...
+    TargetNodeGuid: 748cf821-485a-4cd1-8713-00226f85a75a
+  - BaseNodeGuid: 3e09b97c-3d5c-4bc7-8a5d-b103876cbd1f
+    PortName: Okay I will, Ill get that water.
+    TargetNodeGuid: bfb0d33b-d600-455e-95e3-5658b0ad09b6
+  - BaseNodeGuid: 3e09b97c-3d5c-4bc7-8a5d-b103876cbd1f
+    PortName: Ill try my best, now for that water.
+    TargetNodeGuid: bfb0d33b-d600-455e-95e3-5658b0ad09b6
+  - BaseNodeGuid: 3e09b97c-3d5c-4bc7-8a5d-b103876cbd1f
+    PortName: ...
+    TargetNodeGuid: ed09f438-7dcd-40da-99dc-5045bf68e33a
+  - BaseNodeGuid: bfb0d33b-d600-455e-95e3-5658b0ad09b6
+    PortName: ...
+    TargetNodeGuid: 7a024eea-8e85-4906-b72a-0e86c9afc036
+  - BaseNodeGuid: ed09f438-7dcd-40da-99dc-5045bf68e33a
+    PortName: ...
+    TargetNodeGuid: 7a024eea-8e85-4906-b72a-0e86c9afc036
+  - BaseNodeGuid: eec8d609-2411-4263-a184-37ad4b35192c
+    PortName: ...
+    TargetNodeGuid: 6b59646a-f4a4-4c15-9e3b-0b6de693c50f
+  - BaseNodeGuid: 5811fc50-f2f6-44c2-a6f2-01dd101528f8
+    PortName: I meant no offense, Ill go get it.
+    TargetNodeGuid: b564a96f-eba8-44e3-83bd-d46d5fd3a772
+  - BaseNodeGuid: 5811fc50-f2f6-44c2-a6f2-01dd101528f8
+    PortName: I apologize. ill get that water.
+    TargetNodeGuid: b564a96f-eba8-44e3-83bd-d46d5fd3a772
+  - BaseNodeGuid: b564a96f-eba8-44e3-83bd-d46d5fd3a772
+    PortName: ...
+    TargetNodeGuid: 6b59646a-f4a4-4c15-9e3b-0b6de693c50f
+  DialogueNodeData:
+  - Guid: 80659683-ae0b-4a67-b9ee-cbc3b9bf5d2f
+    DialogueText: ...
+    Position: {x: 198, y: 195}
+  - Guid: f29935bb-d6da-4af7-9b64-e043fbe52b25
+    DialogueText: Great I am. How you?
+    Position: {x: 472, y: 179}
+  - Guid: 47ca2e44-f1d1-472e-8d95-06d7943413d9
+    DialogueText: Bundle of water have you?
+    Position: {x: 835, y: 253}
+  - Guid: 5b20e797-50bb-4eb5-8696-1c1867ab31b9
+    DialogueText: Bundle of water, no singles.
+    Position: {x: 829, y: 110}
+  - Guid: 4bd3f769-390b-4673-8c8c-659f3b3a2424
+    DialogueText: You no answer, why?
+    Position: {x: 843, y: 406}
+  - Guid: 5bc71662-846b-4691-b4ab-006b14245681
+    DialogueText: Water?
+    Position: {x: 1209, y: 1083}
+  - Guid: 5811fc50-f2f6-44c2-a6f2-01dd101528f8
+    DialogueText: And you is rude, give me water so I leave.
+    Position: {x: 1306, y: 641}
+  - Guid: 558160bb-326e-4a9c-bb5b-60e6ec913ca8
+    DialogueText: Yes.
+    Position: {x: 1274, y: -418}
+  - Guid: 9d9fa46f-0ec0-47c0-9b76-aa1d63d2c7c3
+    DialogueText: Thanks.
+    Position: {x: 1800, y: -400}
+  - Guid: 748cf821-485a-4cd1-8713-00226f85a75a
+    DialogueText: Water Please
+    Position: {x: 1805, y: -276}
+  - Guid: 644f84d9-5b02-4213-b544-e211952e789e
+    DialogueText: Water.
+    Position: {x: 1274, y: -224}
+  - Guid: 0ede3a86-b96c-4b21-9cec-457cddd41b25
+    DialogueText: You have or not?
+    Position: {x: 1265, y: -66}
+  - Guid: bbeb0969-75cc-434c-8756-8504f4fee3f7
+    DialogueText: +1
+    Position: {x: 2187, y: -375}
+  - Guid: 3e09b97c-3d5c-4bc7-8a5d-b103876cbd1f
+    DialogueText: Normal answer, I no different from anyone else.
+    Position: {x: 1271, y: 282}
+  - Guid: eec8d609-2411-4263-a184-37ad4b35192c
+    DialogueText: Get me water or I go to manager.
+    Position: {x: 1897, y: 717}
+  - Guid: 6b59646a-f4a4-4c15-9e3b-0b6de693c50f
+    DialogueText: -1
+    Position: {x: 2310, y: 668}
+  - Guid: ed09f438-7dcd-40da-99dc-5045bf68e33a
+    DialogueText: Water please.
+    Position: {x: 1844, y: 296}
+  - Guid: bfb0d33b-d600-455e-95e3-5658b0ad09b6
+    DialogueText: Thanks.
+    Position: {x: 1821, y: 165}
+  - Guid: 7a024eea-8e85-4906-b72a-0e86c9afc036
+    DialogueText: +0
+    Position: {x: 2165, y: 247}
+  - Guid: b564a96f-eba8-44e3-83bd-d46d5fd3a772
+    DialogueText: Thank you
+    Position: {x: 1909, y: 575}
+  ExposedProperties: []
+  CommentBlockData: []

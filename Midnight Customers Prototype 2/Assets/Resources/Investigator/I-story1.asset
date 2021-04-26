@@ -1,0 +1,106 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
+  m_Name: I-story1
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: 6deb90f8-d5eb-472d-886a-257022672e5c
+    PortName: Next
+    TargetNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
+  - BaseNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
+    PortName: Hello.
+    TargetNodeGuid: 6ff13837-b918-46cc-a91d-03f373407d3f
+  - BaseNodeGuid: 6ff13837-b918-46cc-a91d-03f373407d3f
+    PortName: What do you mean?
+    TargetNodeGuid: 19d0ee25-171b-4988-ae28-024f834f5e65
+  - BaseNodeGuid: 6ff13837-b918-46cc-a91d-03f373407d3f
+    PortName: Different? Different how?
+    TargetNodeGuid: f9607c21-7364-4a0b-9ca1-2e9580dd9583
+  - BaseNodeGuid: 6ff13837-b918-46cc-a91d-03f373407d3f
+    PortName: ...
+    TargetNodeGuid: 6977c8fa-52df-47cc-901d-7e0275a3644a
+  - BaseNodeGuid: 19d0ee25-171b-4988-ae28-024f834f5e65
+    PortName: Not that I can tell.
+    TargetNodeGuid: e698462a-60a3-4fa1-acb1-86fcfa60d49b
+  - BaseNodeGuid: 19d0ee25-171b-4988-ae28-024f834f5e65
+    PortName: No weirder than normal.
+    TargetNodeGuid: e698462a-60a3-4fa1-acb1-86fcfa60d49b
+  - BaseNodeGuid: 19d0ee25-171b-4988-ae28-024f834f5e65
+    PortName: ...
+    TargetNodeGuid: 2a6211b3-5db1-4780-b65a-41874a0cad86
+  - BaseNodeGuid: f9607c21-7364-4a0b-9ca1-2e9580dd9583
+    PortName: I don't think so? Sorry.
+    TargetNodeGuid: d98a2f52-1ffc-4661-8b84-6bde56ffbbe5
+  - BaseNodeGuid: f9607c21-7364-4a0b-9ca1-2e9580dd9583
+    PortName: I mean we're out in the middle of nowhere in the middle of the night.
+      The place is full of weirdos."
+    TargetNodeGuid: 91aaba0c-50fd-4ef8-a740-c819501dff4f
+  - BaseNodeGuid: f9607c21-7364-4a0b-9ca1-2e9580dd9583
+    PortName: ...
+    TargetNodeGuid: 43fc1569-6240-4a53-ada8-b47f9f7f105a
+  - BaseNodeGuid: 6977c8fa-52df-47cc-901d-7e0275a3644a
+    PortName: I have no idea what you are talking about.
+    TargetNodeGuid: 498fdafb-5a71-411b-a2a8-09e413577821
+  - BaseNodeGuid: 6977c8fa-52df-47cc-901d-7e0275a3644a
+    PortName: Are you going to buy anything?
+    TargetNodeGuid: 6dacef6f-abad-4918-8916-36b8fadf4a17
+  - BaseNodeGuid: 6977c8fa-52df-47cc-901d-7e0275a3644a
+    PortName: ...
+    TargetNodeGuid: bea253cc-9004-4549-ae17-92d0bf908ea3
+  DialogueNodeData:
+  - Guid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
+    DialogueText: ...
+    Position: {x: 221, y: 187}
+  - Guid: 6ff13837-b918-46cc-a91d-03f373407d3f
+    DialogueText: Have you seen anything... different... around here?
+    Position: {x: 428, y: 181}
+  - Guid: 19d0ee25-171b-4988-ae28-024f834f5e65
+    DialogueText: I mean with the customers. Are they acting weird.
+    Position: {x: 915, y: -112}
+  - Guid: f9607c21-7364-4a0b-9ca1-2e9580dd9583
+    DialogueText: If you had, you wouldn't need to ask.
+    Position: {x: 917, y: 85}
+  - Guid: e698462a-60a3-4fa1-acb1-86fcfa60d49b
+    DialogueText: Let's hope it stays like that. I'll be back. Until then, keep an
+      eye  out for anything out of the ordinary.
+    Position: {x: 1517, y: -206}
+  - Guid: 2a6211b3-5db1-4780-b65a-41874a0cad86
+    DialogueText: I'll be back. If you remember anything or see anything strange,
+      let me know.
+    Position: {x: 1528, y: -79}
+  - Guid: d98a2f52-1ffc-4661-8b84-6bde56ffbbe5
+    DialogueText: Well, I'll be back. If you see anything until then, let me know.
+    Position: {x: 1696, y: 38}
+  - Guid: 91aaba0c-50fd-4ef8-a740-c819501dff4f
+    DialogueText: Most likely not the kind I'm looking for. I'll be back. Keep an
+      eye out for anything strange.
+    Position: {x: 1696, y: 145}
+  - Guid: 43fc1569-6240-4a53-ada8-b47f9f7f105a
+    DialogueText: If you see anything strange, let me know. I'll be back soon.
+    Position: {x: 1695, y: 245}
+  - Guid: 6977c8fa-52df-47cc-901d-7e0275a3644a
+    DialogueText: Did someone tell you not to say anything?
+    Position: {x: 700, y: 442}
+  - Guid: 6dacef6f-abad-4918-8916-36b8fadf4a17
+    DialogueText: No, there are bigger things to worry about. I'll be back. Until
+      then, keep an eye out for anything strange.
+    Position: {x: 1168, y: 486}
+  - Guid: 498fdafb-5a71-411b-a2a8-09e413577821
+    DialogueText: I hope you're not lying to me. If you are, you are indangering 
+      the whole world.
+    Position: {x: 1175, y: 383}
+  - Guid: bea253cc-9004-4549-ae17-92d0bf908ea3
+    DialogueText: You can't protect them. Hopefully next time I come back you'll
+      be more willing to talk.
+    Position: {x: 1174, y: 591}
+  ExposedProperties: []
+  CommentBlockData: []

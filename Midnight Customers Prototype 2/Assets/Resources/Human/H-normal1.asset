@@ -1,0 +1,217 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
+  m_Name: H-normal1
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: 4b9c5641-d455-49e8-bd5b-bcf3ce7f93cc
+    PortName: Next
+    TargetNodeGuid: 452f4620-b47f-4db1-b954-43ddc0df02d1
+  - BaseNodeGuid: 452f4620-b47f-4db1-b954-43ddc0df02d1
+    PortName: Hello how are you?
+    TargetNodeGuid: 4c0cdb74-4456-4a0d-9e14-8cc504e11704
+  - BaseNodeGuid: 4c0cdb74-4456-4a0d-9e14-8cc504e11704
+    PortName: I'm a little tired, but not too bad.
+    TargetNodeGuid: e556369b-656c-4866-9141-94e269223c39
+  - BaseNodeGuid: 4c0cdb74-4456-4a0d-9e14-8cc504e11704
+    PortName: Great did you find everything okay?
+    TargetNodeGuid: 8b790320-1f82-4925-b879-9f23f74f090f
+  - BaseNodeGuid: 4c0cdb74-4456-4a0d-9e14-8cc504e11704
+    PortName: ...
+    TargetNodeGuid: ef6615d0-63a3-4678-9cf7-d2ea6a17ed3a
+  - BaseNodeGuid: e556369b-656c-4866-9141-94e269223c39
+    PortName: 'Yeah, but money is money so I can''t complain. '
+    TargetNodeGuid: 6ed4e232-84dc-420a-b68f-7a6ac6b043d5
+  - BaseNodeGuid: e556369b-656c-4866-9141-94e269223c39
+    PortName: 'I don''t mind it. It''s quiet. (Until you walked in.) '
+    TargetNodeGuid: 5e92f4dd-8e9c-4fdd-99e7-3c3704e3a900
+  - BaseNodeGuid: e556369b-656c-4866-9141-94e269223c39
+    PortName: ...
+    TargetNodeGuid: a2ddbda5-7335-477b-b99f-fca0ac50c3de
+  - BaseNodeGuid: 8b790320-1f82-4925-b879-9f23f74f090f
+    PortName: 'The items are pretty different. I''ve never heard of most of them. '
+    TargetNodeGuid: 539a2d8d-1d6c-47fb-83c2-35e0122f761e
+  - BaseNodeGuid: 8b790320-1f82-4925-b879-9f23f74f090f
+    PortName: So right now we are only taking cash. Is that all right?
+    TargetNodeGuid: da30537c-aa91-4922-a417-6809058f6ab1
+  - BaseNodeGuid: 8b790320-1f82-4925-b879-9f23f74f090f
+    PortName: ...
+    TargetNodeGuid: b67ed45b-460d-49e9-b8e1-d3223311a5bc
+  - BaseNodeGuid: ef6615d0-63a3-4678-9cf7-d2ea6a17ed3a
+    PortName: Yeah we sure do, in fact it's all we take..
+    TargetNodeGuid: 81a6e186-bf73-4a47-9593-303d037cc8a8
+  - BaseNodeGuid: ef6615d0-63a3-4678-9cf7-d2ea6a17ed3a
+    PortName: Yeah, there's a sign when you walk in that says we do..
+    TargetNodeGuid: f8ab1079-2eaf-4efa-9de8-4374063e20fd
+  - BaseNodeGuid: ef6615d0-63a3-4678-9cf7-d2ea6a17ed3a
+    PortName: ...
+    TargetNodeGuid: 018f3c0b-82f1-4045-b15b-ef1691d22018
+  - BaseNodeGuid: 6ed4e232-84dc-420a-b68f-7a6ac6b043d5
+    PortName: ...
+    TargetNodeGuid: 30192fd8-b3e4-40d6-9eea-ca91e895650a
+  - BaseNodeGuid: 5e92f4dd-8e9c-4fdd-99e7-3c3704e3a900
+    PortName: Nothing! Have a good night.
+    TargetNodeGuid: c886d5ea-572f-4de7-ad3d-2a7613e3a8e2
+  - BaseNodeGuid: 5e92f4dd-8e9c-4fdd-99e7-3c3704e3a900
+    PortName: I've got bad gas? Um... Good night!
+    TargetNodeGuid: 3163d36d-690c-402e-9273-51ecf90aa1ce
+  - BaseNodeGuid: 5e92f4dd-8e9c-4fdd-99e7-3c3704e3a900
+    PortName: ...
+    TargetNodeGuid: 90587aff-e4fd-4801-bf56-20a00eb409b1
+  - BaseNodeGuid: a2ddbda5-7335-477b-b99f-fca0ac50c3de
+    PortName: ...
+    TargetNodeGuid: 00319416-d172-408c-8b3b-394bc478bd1e
+  - BaseNodeGuid: 539a2d8d-1d6c-47fb-83c2-35e0122f761e
+    PortName: ...
+    TargetNodeGuid: ab79bdb3-61b9-4742-9b34-bca391f89dd5
+  - BaseNodeGuid: da30537c-aa91-4922-a417-6809058f6ab1
+    PortName: ...
+    TargetNodeGuid: 505ae86e-f573-4f3c-8d52-078d2fe252ed
+  - BaseNodeGuid: b67ed45b-460d-49e9-b8e1-d3223311a5bc
+    PortName: ...
+    TargetNodeGuid: be154566-2d46-4688-b4b9-4fbc9168d592
+  - BaseNodeGuid: 81a6e186-bf73-4a47-9593-303d037cc8a8
+    PortName: ...
+    TargetNodeGuid: 6e9e5a1d-c4ab-4def-80e0-582490223fdc
+  - BaseNodeGuid: f8ab1079-2eaf-4efa-9de8-4374063e20fd
+    PortName: ...
+    TargetNodeGuid: 1a0f07bf-459a-4afe-8145-928f1672fd58
+  - BaseNodeGuid: 9b6f020b-7a89-4d2e-a51c-dfa360727327
+    PortName: ...
+    TargetNodeGuid: 3ffe0634-645f-4c86-9ff2-8e2b7a849025
+  - BaseNodeGuid: c886d5ea-572f-4de7-ad3d-2a7613e3a8e2
+    PortName: ...
+    TargetNodeGuid: cfc8ad52-5da6-4c15-b3a9-92d8bcc8526c
+  - BaseNodeGuid: 3163d36d-690c-402e-9273-51ecf90aa1ce
+    PortName: ...
+    TargetNodeGuid: f9e1bd88-a8ad-49f0-b302-c5960f18d7b6
+  - BaseNodeGuid: 90587aff-e4fd-4801-bf56-20a00eb409b1
+    PortName: ...
+    TargetNodeGuid: f5126bcb-65d2-4b2c-b442-c3a0863efafd
+  - BaseNodeGuid: 018f3c0b-82f1-4045-b15b-ef1691d22018
+    PortName: Oh, yeah. Sorry, I zoned out there for a second.
+    TargetNodeGuid: 60a3e60b-61c4-4f69-b208-d42002380774
+  - BaseNodeGuid: 018f3c0b-82f1-4045-b15b-ef1691d22018
+    PortName: Did you read the sign when you came in?
+    TargetNodeGuid: 1f8862b2-77ea-4f74-bba7-e829bb6406df
+  - BaseNodeGuid: 018f3c0b-82f1-4045-b15b-ef1691d22018
+    PortName: ...
+    TargetNodeGuid: 9b6f020b-7a89-4d2e-a51c-dfa360727327
+  - BaseNodeGuid: 1f8862b2-77ea-4f74-bba7-e829bb6406df
+    PortName: ...
+    TargetNodeGuid: a0ab7965-7800-4233-88c2-6fbf4aa641c7
+  - BaseNodeGuid: 60a3e60b-61c4-4f69-b208-d42002380774
+    PortName: ...
+    TargetNodeGuid: 405a43de-490e-48dc-8ba0-76e9d0dd3811
+  DialogueNodeData:
+  - Guid: 452f4620-b47f-4db1-b954-43ddc0df02d1
+    DialogueText: 
+    Position: {x: 206, y: 200}
+  - Guid: 4c0cdb74-4456-4a0d-9e14-8cc504e11704
+    DialogueText: I'm good, how are you?
+    Position: {x: 461, y: 200}
+  - Guid: a2ddbda5-7335-477b-b99f-fca0ac50c3de
+    DialogueText: 'Alright... Have a good night, man '
+    Position: {x: 1403, y: 15}
+  - Guid: 8b790320-1f82-4925-b879-9f23f74f090f
+    DialogueText: Yeah, just this. Thanks.
+    Position: {x: 857, y: 223}
+  - Guid: ef6615d0-63a3-4678-9cf7-d2ea6a17ed3a
+    DialogueText: Um... do you guys take cash.
+    Position: {x: 890, y: 596}
+  - Guid: da30537c-aa91-4922-a417-6809058f6ab1
+    DialogueText: 'Yup, that''s all I have! Thanks. '
+    Position: {x: 1398, y: 275}
+  - Guid: b67ed45b-460d-49e9-b8e1-d3223311a5bc
+    DialogueText: 'Thanks. Have a good night. '
+    Position: {x: 1401, y: 386}
+  - Guid: e556369b-656c-4866-9141-94e269223c39
+    DialogueText: 'Oh I''m sure. NIht shifts are always rough. '
+    Position: {x: 894, y: -105}
+  - Guid: 6ed4e232-84dc-420a-b68f-7a6ac6b043d5
+    DialogueText: 'Yeah, good luck. Have a good night. '
+    Position: {x: 1337, y: -511}
+  - Guid: 30192fd8-b3e4-40d6-9eea-ca91e895650a
+    DialogueText: +1
+    Position: {x: 1701, y: -511}
+  - Guid: 5e92f4dd-8e9c-4fdd-99e7-3c3704e3a900
+    DialogueText: What  was that?
+    Position: {x: 1356, y: -321}
+  - Guid: 00319416-d172-408c-8b3b-394bc478bd1e
+    DialogueText: +0
+    Position: {x: 1792, y: 18}
+  - Guid: 539a2d8d-1d6c-47fb-83c2-35e0122f761e
+    DialogueText: 'Right? You never know what you''ll find out here. Have a good
+      night, man. '
+    Position: {x: 1395, y: 153}
+  - Guid: ab79bdb3-61b9-4742-9b34-bca391f89dd5
+    DialogueText: +1
+    Position: {x: 2037, y: 164}
+  - Guid: 81a6e186-bf73-4a47-9593-303d037cc8a8
+    DialogueText: Oh great, here you go.
+    Position: {x: 1407, y: 507}
+  - Guid: 505ae86e-f573-4f3c-8d52-078d2fe252ed
+    DialogueText: +1
+    Position: {x: 1781, y: 275}
+  - Guid: be154566-2d46-4688-b4b9-4fbc9168d592
+    DialogueText: +1
+    Position: {x: 1782, y: 390}
+  - Guid: 6e9e5a1d-c4ab-4def-80e0-582490223fdc
+    DialogueText: +1
+    Position: {x: 1782, y: 505}
+  - Guid: f8ab1079-2eaf-4efa-9de8-4374063e20fd
+    DialogueText: 'Ah, sorry. Didn''t see that. Here ya go, have a good one! '
+    Position: {x: 1406, y: 621}
+  - Guid: 1a0f07bf-459a-4afe-8145-928f1672fd58
+    DialogueText: +0
+    Position: {x: 1879, y: 621}
+  - Guid: 018f3c0b-82f1-4045-b15b-ef1691d22018
+    DialogueText: Hello? Do you take cash?
+    Position: {x: 1357, y: 1000}
+  - Guid: 1f8862b2-77ea-4f74-bba7-e829bb6406df
+    DialogueText: 'I must have missed it. Here you go. (Asshole...) '
+    Position: {x: 1846, y: 1018}
+  - Guid: 405a43de-490e-48dc-8ba0-76e9d0dd3811
+    DialogueText: +1
+    Position: {x: 2260, y: 874}
+  - Guid: 60a3e60b-61c4-4f69-b208-d42002380774
+    DialogueText: 'No problem. Anyways, have a good night. '
+    Position: {x: 1843, y: 877}
+  - Guid: c886d5ea-572f-4de7-ad3d-2a7613e3a8e2
+    DialogueText: Thanks, you too.
+    Position: {x: 1754, y: -391}
+  - Guid: 3163d36d-690c-402e-9273-51ecf90aa1ce
+    DialogueText: 'Mhmm... '
+    Position: {x: 1752, y: -287}
+  - Guid: 90587aff-e4fd-4801-bf56-20a00eb409b1
+    DialogueText: Asshole...
+    Position: {x: 1753, y: -181}
+  - Guid: cfc8ad52-5da6-4c15-b3a9-92d8bcc8526c
+    DialogueText: +0
+    Position: {x: 2085, y: -396}
+  - Guid: f9e1bd88-a8ad-49f0-b302-c5960f18d7b6
+    DialogueText: -1
+    Position: {x: 2088, y: -283}
+  - Guid: f5126bcb-65d2-4b2c-b442-c3a0863efafd
+    DialogueText: -1
+    Position: {x: 2087, y: -171}
+  - Guid: 9b6f020b-7a89-4d2e-a51c-dfa360727327
+    DialogueText: 'Right... Well... I''m just gonna leave this here... '
+    Position: {x: 1847, y: 1145}
+  - Guid: 3ffe0634-645f-4c86-9ff2-8e2b7a849025
+    DialogueText: -1
+    Position: {x: 2264, y: 1144}
+  - Guid: a0ab7965-7800-4233-88c2-6fbf4aa641c7
+    DialogueText: -1
+    Position: {x: 2268, y: 1016}
+  ExposedProperties: []
+  CommentBlockData: []
