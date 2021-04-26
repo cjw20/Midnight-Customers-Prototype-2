@@ -99,7 +99,8 @@ public class TimeManager : MonoBehaviour
             yield return new WaitForEndOfFrame();
         }
         //check if in checkout or task. wait till finished
-        toBlack.FadeIn(fadeDuration);        
+        toBlack.FadeIn(fadeDuration);
+        review.NewDay(); //tallys up penalties
         //move player, stop customer spawns etc. new tasks
         yield return new WaitForSeconds(fadeDuration + 2);
         customerManager.StopSpawns();
@@ -109,7 +110,7 @@ public class TimeManager : MonoBehaviour
         yield return new WaitForSeconds(fadeDuration + 2);
         customerManager.StartSpawns();
 
-
+        //send review message
         
         //check for story events for this night/next day and load them
         timerRunning = true;
