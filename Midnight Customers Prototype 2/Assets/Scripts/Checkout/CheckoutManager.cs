@@ -40,6 +40,7 @@ public class CheckoutManager : MonoBehaviour
     public AudioSource scanSound;
 
     int penaltyPoints; //sum of errors in this checkout
+    public PerformanceReview review;
 
     private void Start()
     {
