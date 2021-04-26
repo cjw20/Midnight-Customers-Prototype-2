@@ -42,10 +42,12 @@ public class CheckoutManager : MonoBehaviour
     int penaltyPoints; //sum of errors in this checkout
     public PerformanceReview review;
 
+    public EmoteController emoter;
+
     private void Start()
     {
         checkoutTrigger = FindObjectOfType<CheckoutTrigger>();
-
+        emoter = FindObjectOfType<EmoteController>();
     }
     public void StartCheckout(CustomerInfo info)
     {
@@ -97,8 +99,9 @@ public class CheckoutManager : MonoBehaviour
     {
         if(weight > lastWeight)
         {
-            StartCoroutine(DisplayMessage(misbagMessage, 1f)); //may need to do something that makes this not repeat if already going
+            //StartCoroutine(DisplayMessage(misbagMessage, 1f)); //may need to do something that makes this not repeat if already going
             review.baggingErrors++;
+            emoter.React("Angry");
         }
         lastWeight = weight;
 
@@ -107,6 +110,7 @@ public class CheckoutManager : MonoBehaviour
             //happens when no valid id was checked and the item needed an ID
             penaltyPoints++;
             review.idErrors++;
+            emoter.React("Happy");
         }
         remainingItems--;
         
@@ -145,13 +149,15 @@ public class CheckoutManager : MonoBehaviour
         }
         if(failedIDCheck && needsID)
         {
-            //customer not mad
+            emoter.React("Sad"); 
+            //customer sad that they cant buy item 
         }
         else
         {
             penaltyPoints++;
             review.idErrors++;
-            //customer mad
+            emoter.React("Angry");
+            //customer mad that they werent allowed to buy item they should have
         }
         remainingItems--;
 
