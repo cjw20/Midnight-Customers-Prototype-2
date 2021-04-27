@@ -25,6 +25,7 @@ public class TimeManager : MonoBehaviour
     CustomerManager customerManager;
     TaskSpawner taskSpawner;
     PerformanceReview review;
+    StoryEventHandler storyEvent;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +34,7 @@ public class TimeManager : MonoBehaviour
         customerManager = FindObjectOfType<CustomerManager>();
         taskSpawner = FindObjectOfType<TaskSpawner>();
         review = FindObjectOfType<PerformanceReview>();
+        storyEvent = FindObjectOfType<StoryEventHandler>();
         //if ^ is too slow, do different way later
         timerRunning = true;
         UpdateText();
@@ -107,6 +109,7 @@ public class TimeManager : MonoBehaviour
         player.transform.position = playerStartingLoc.position;
         toBlack.FadeOut(fadeDuration);
         taskSpawner.NewDayTasks();
+        storyEvent.DayEvents(day); //loads any events for coming day
         yield return new WaitForSeconds(fadeDuration + 2);
         customerManager.StartSpawns();
 
