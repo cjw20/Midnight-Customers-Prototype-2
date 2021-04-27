@@ -1,0 +1,105 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
+  m_Name: Hatch Throwaway
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: 6deb90f8-d5eb-472d-886a-257022672e5c
+    PortName: Next
+    TargetNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
+  - BaseNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
+    PortName: Hey, how are you?
+    TargetNodeGuid: 539bba75-0368-4d1e-9932-e47dac33768a
+  - BaseNodeGuid: 539bba75-0368-4d1e-9932-e47dac33768a
+    PortName: Not that I know of. That's odd.
+    TargetNodeGuid: 55fbd27b-a852-46fe-8474-c97e0276a318
+  - BaseNodeGuid: 539bba75-0368-4d1e-9932-e47dac33768a
+    PortName: huh? That's weird I don't even think the A/C is on.
+    TargetNodeGuid: 1798661d-ecff-4f58-bdc4-563f58f39508
+  - BaseNodeGuid: 539bba75-0368-4d1e-9932-e47dac33768a
+    PortName: ...
+    TargetNodeGuid: 8d47b3ad-2f27-4a7d-8112-f197b6a39f06
+  - BaseNodeGuid: 8d47b3ad-2f27-4a7d-8112-f197b6a39f06
+    PortName: ...
+    TargetNodeGuid: 2c291336-462f-44a2-847f-046e697bb5a6
+  - BaseNodeGuid: 8d47b3ad-2f27-4a7d-8112-f197b6a39f06
+    PortName: I'm sure I can fix it...probably.
+    TargetNodeGuid: 4a9a7fdc-e895-4d88-a239-243dc911010f
+  - BaseNodeGuid: 8d47b3ad-2f27-4a7d-8112-f197b6a39f06
+    PortName: I'm so sorry. Next time you come in, the problem will be fixed.
+    TargetNodeGuid: fb476137-ecb5-4adf-b3d4-ba5d578a6c1b
+  - BaseNodeGuid: 1798661d-ecff-4f58-bdc4-563f58f39508
+    PortName: ...
+    TargetNodeGuid: e4fc6754-5710-4985-969e-5db7d1a1e33d
+  - BaseNodeGuid: 1798661d-ecff-4f58-bdc4-563f58f39508
+    PortName: Okay, okay. I'll look.
+    TargetNodeGuid: 3da761a4-21b1-406f-a449-b5def8e81849
+  - BaseNodeGuid: 1798661d-ecff-4f58-bdc4-563f58f39508
+    PortName: You're right. I'll give it a look right now.
+    TargetNodeGuid: a41e3c96-2116-4d9d-a269-193def49f104
+  - BaseNodeGuid: 55fbd27b-a852-46fe-8474-c97e0276a318
+    PortName: ...
+    TargetNodeGuid: 9f7a079c-0b48-459d-b668-a958f7a9d38c
+  - BaseNodeGuid: 55fbd27b-a852-46fe-8474-c97e0276a318
+    PortName: Alright, sure. I'll look at it tonight.
+    TargetNodeGuid: 2f619047-20b5-4a09-b40e-e0198d29c66f
+  - BaseNodeGuid: 55fbd27b-a852-46fe-8474-c97e0276a318
+    PortName: I'm terribly sorry. I'll take a look right away!
+    TargetNodeGuid: a082c508-0c1c-4e5e-8de1-2f96399e3d6c
+  DialogueNodeData:
+  - Guid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
+    DialogueText: ...
+    Position: {x: 221, y: 187}
+  - Guid: 55fbd27b-a852-46fe-8474-c97e0276a318
+    DialogueText: Well you should take a look at it. I was practically shivering!
+    Position: {x: 1346, y: 177}
+  - Guid: 539bba75-0368-4d1e-9932-e47dac33768a
+    DialogueText: '"Good! There was a weird breeze from one of your shelves. Is there
+      a vent or something? It was sure cold."'
+    Position: {x: 561, y: 182}
+  - Guid: 8d47b3ad-2f27-4a7d-8112-f197b6a39f06
+    DialogueText: Hmph. I suggest you take a look if you want people to be comfortable
+      in here.
+    Position: {x: 1302, y: 597}
+  - Guid: a082c508-0c1c-4e5e-8de1-2f96399e3d6c
+    DialogueText: Good. Have a good night!
+    Position: {x: 2079, y: -127}
+  - Guid: 9f7a079c-0b48-459d-b668-a958f7a9d38c
+    DialogueText: At least act like you care.
+    Position: {x: 2085, y: 109}
+  - Guid: a41e3c96-2116-4d9d-a269-193def49f104
+    DialogueText: Of course I am. Take care.
+    Position: {x: 2091, y: 263}
+  - Guid: 3da761a4-21b1-406f-a449-b5def8e81849
+    DialogueText: Don't give me attitude now.
+    Position: {x: 2087, y: 383}
+  - Guid: e4fc6754-5710-4985-969e-5db7d1a1e33d
+    DialogueText: Hmph. Goodbye.
+    Position: {x: 2087, y: 503}
+  - Guid: fb476137-ecb5-4adf-b3d4-ba5d578a6c1b
+    DialogueText: It's alright. Make sure you see to it. Goodnight.
+    Position: {x: 2094, y: 648}
+  - Guid: 4a9a7fdc-e895-4d88-a239-243dc911010f
+    DialogueText: Well figure it out soon. Take care.
+    Position: {x: 2095, y: 774}
+  - Guid: 2c291336-462f-44a2-847f-046e697bb5a6
+    DialogueText: How rude.
+    Position: {x: 2092, y: 887}
+  - Guid: 1798661d-ecff-4f58-bdc4-563f58f39508
+    DialogueText: There must be a vent or something under that shelf. It should be
+      fixed right away!
+    Position: {x: 1297, y: 375}
+  - Guid: 2f619047-20b5-4a09-b40e-e0198d29c66f
+    DialogueText: Thank you. Goodnight.
+    Position: {x: 2080, y: -15}
+  ExposedProperties: []
+  CommentBlockData: []
