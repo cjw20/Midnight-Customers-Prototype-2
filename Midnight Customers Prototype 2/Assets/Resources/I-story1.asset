@@ -56,6 +56,9 @@ MonoBehaviour:
   - BaseNodeGuid: 6977c8fa-52df-47cc-901d-7e0275a3644a
     PortName: ...
     TargetNodeGuid: bea253cc-9004-4549-ae17-92d0bf908ea3
+  - BaseNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
+    PortName: ...
+    TargetNodeGuid: 6ff13837-b918-46cc-a91d-03f373407d3f
   DialogueNodeData:
   - Guid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
     DialogueText: ...

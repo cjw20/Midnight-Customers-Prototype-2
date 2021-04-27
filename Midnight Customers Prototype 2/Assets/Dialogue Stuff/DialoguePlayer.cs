@@ -107,11 +107,12 @@ public class DialoguePlayer : MonoBehaviour
                 button.transform.position = buttonPositions[buttonNumber].position;
                 button.GetComponentInChildren<Text>().text = ProcessProperties(choice.PortName);
                 button.onClick.AddListener(() => ProceedToNarrative(choice.TargetNodeGuid));
+                
             }
-            
+
             buttonNumber++;
 
-            if(ProcessProperties(choice.PortName) == "...")
+            if (ProcessProperties(choice.PortName) == "...")
             {                
                 lastCourutine = StartCoroutine(WaitForSelection(choice.TargetNodeGuid));
                 

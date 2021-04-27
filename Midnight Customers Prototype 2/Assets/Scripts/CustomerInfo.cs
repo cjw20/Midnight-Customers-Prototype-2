@@ -48,7 +48,11 @@ public class CustomerInfo : MonoBehaviour
 
     public void SetStoryConvo(DialogueContainer convo)
     {
-        conversationProgress--; //moves conversation progress back so that after checkout it will go back to where it was
+        if(conversationProgress > 0)
+        {
+            conversationProgress--; //moves conversation progress back so that after checkout it will go back to where it was
+        }
+        
 
         nextConversation = convo;
     }
