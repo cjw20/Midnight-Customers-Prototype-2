@@ -2244,7 +2244,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 458973026}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.1, y: -0.99, z: 0}
+  m_LocalPosition: {x: -3.65, y: -0.99, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 876891119}
@@ -2849,7 +2849,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 549747581}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.07, y: -0.05, z: 0}
+  m_LocalPosition: {x: -1.07, y: 0.41, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1585785787}
@@ -3676,6 +3676,68 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 701337375}
   m_CullTransparentMesh: 1
+--- !u!1 &705307953
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 705307956}
+  - component: {fileID: 705307955}
+  - component: {fileID: 705307954}
+  m_Layer: 0
+  m_Name: Story Events
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &705307954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705307953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21280b0ba0de36f41ae799132846cde1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hatchStory: {fileID: 705307955}
+--- !u!114 &705307955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705307953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bba4fd14bcb3b904797887ac3ad9adab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hatchFound: {fileID: 11400000, guid: 23078caf785ad98439f10eae6d92b236, type: 2}
+  investigator: {fileID: 6208242975807155669}
+  hatchHint: {fileID: 0}
+  hintCustomer: {fileID: 5570189988557149941}
+  hatch: {fileID: 1037565926}
+--- !u!4 &705307956
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705307953}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &718300844
 GameObject:
   m_ObjectHideFlags: 0
@@ -4339,6 +4401,7 @@ Transform:
   - {fileID: 907819166}
   - {fileID: 1867946733}
   - {fileID: 1826295798}
+  - {fileID: 1037565930}
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5153,6 +5216,96 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1033944093}
   m_CullTransparentMesh: 1
+--- !u!1 &1037565926
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1037565930}
+  - component: {fileID: 1037565929}
+  - component: {fileID: 1037565928}
+  - component: {fileID: 1037565927}
+  m_Layer: 0
+  m_Name: Hatch
+  m_TagString: Interactable
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1037565927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1037565926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82f9ddd7679d2de4b983e4962885ecc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  story: {fileID: 705307955}
+--- !u!61 &1037565928
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1037565926}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.30333376, y: -0.589334}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.6066675, y: 2.8720026}
+  m_EdgeRadius: 0
+--- !u!114 &1037565929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1037565926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8368cbbf0cfef0143a2bc1991905c680, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  messages:
+  - Huh? What's a hatch doing under there?
+  - 'Damn, it''s locked. '
+  progress: 0
+  thoughtText: {fileID: 40828502}
+  thoughtWindow: {fileID: 412201978}
+--- !u!4 &1037565930
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1037565926}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.95, y: 2.27, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 876891119}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1042857011
 GameObject:
   m_ObjectHideFlags: 0
@@ -10458,13 +10611,21 @@ PrefabInstance:
     m_TransformParent: {fileID: 668096973}
     m_Modifications:
     - target: {fileID: 6010064553094314888, guid: c208794e7e4da754bade06a8d0248f4b, type: 3}
+      propertyPath: conversations.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6010064553094314888, guid: c208794e7e4da754bade06a8d0248f4b, type: 3}
       propertyPath: conversations.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: 160010ada55a1e64ea21de66035b2ef1, type: 2}
+      objectReference: {fileID: 11400000, guid: 9823276aa8df3014991268895cd4988f, type: 2}
     - target: {fileID: 6010064553094314888, guid: c208794e7e4da754bade06a8d0248f4b, type: 3}
       propertyPath: conversations.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: 160010ada55a1e64ea21de66035b2ef1, type: 2}
+      objectReference: {fileID: 11400000, guid: a0187018c58744d48896acc3547df0d2, type: 2}
+    - target: {fileID: 6010064553094314888, guid: c208794e7e4da754bade06a8d0248f4b, type: 3}
+      propertyPath: conversations.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: 23078caf785ad98439f10eae6d92b236, type: 2}
     - target: {fileID: 6010064553094314899, guid: c208794e7e4da754bade06a8d0248f4b, type: 3}
       propertyPath: m_Name
       value: Investigator
@@ -10689,11 +10850,11 @@ PrefabInstance:
     - target: {fileID: 4341891569755352049, guid: 9579c97dd5ae56845b66ea882b61d3d2, type: 3}
       propertyPath: conversations.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: d73c6d1c05d89f246864e7a4fcced638, type: 2}
+      objectReference: {fileID: 11400000, guid: bbe600570b937194c83b5162b942eb9b, type: 2}
     - target: {fileID: 4341891569755352049, guid: 9579c97dd5ae56845b66ea882b61d3d2, type: 3}
       propertyPath: conversations.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: d73c6d1c05d89f246864e7a4fcced638, type: 2}
+      objectReference: {fileID: 11400000, guid: bbe600570b937194c83b5162b942eb9b, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9579c97dd5ae56845b66ea882b61d3d2, type: 3}
 --- !u!1001 &1623381416244256009
@@ -10803,6 +10964,14 @@ PrefabInstance:
       propertyPath: portrait
       value: 
       objectReference: {fileID: 21300000, guid: a60c92256f4935649ba36c6770e34156, type: 3}
+    - target: {fileID: 4216765681452312155, guid: 706be3c207d989e4f822127c1904852b, type: 3}
+      propertyPath: conversations.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: d2231ba4fd7757a4eb548edb819cdb8d, type: 2}
+    - target: {fileID: 4216765681452312155, guid: 706be3c207d989e4f822127c1904852b, type: 3}
+      propertyPath: conversations.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: d2231ba4fd7757a4eb548edb819cdb8d, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 706be3c207d989e4f822127c1904852b, type: 3}
 --- !u!1 &3171553143526816585 stripped
@@ -10926,6 +11095,14 @@ PrefabInstance:
       propertyPath: portrait
       value: 
       objectReference: {fileID: 21300000, guid: 71a3d305ce33b204c9e2587fcaa6914d, type: 3}
+    - target: {fileID: 7804919453073409268, guid: 8b5f02a04c322d144a270de753473b49, type: 3}
+      propertyPath: conversations.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: a916e72b6050e7048b850385121aadba, type: 2}
+    - target: {fileID: 7804919453073409268, guid: 8b5f02a04c322d144a270de753473b49, type: 3}
+      propertyPath: conversations.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: a916e72b6050e7048b850385121aadba, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b5f02a04c322d144a270de753473b49, type: 3}
 --- !u!1 &4544528076673640755
@@ -10963,6 +11140,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 668096973}
     m_Modifications:
+    - target: {fileID: 5642382787059048421, guid: 0c385362111dbf04cbbe979bb5f2d605, type: 3}
+      propertyPath: portrait
+      value: 
+      objectReference: {fileID: 21300000, guid: 55fa0d86afb24824689580cf56c93ffd, type: 3}
+    - target: {fileID: 5642382787059048421, guid: 0c385362111dbf04cbbe979bb5f2d605, type: 3}
+      propertyPath: conversations.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 9cb02a7b3b1959c4dacee83ac4f8c5a8, type: 2}
+    - target: {fileID: 5642382787059048421, guid: 0c385362111dbf04cbbe979bb5f2d605, type: 3}
+      propertyPath: conversations.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 9cb02a7b3b1959c4dacee83ac4f8c5a8, type: 2}
     - target: {fileID: 5642382787059048441, guid: 0c385362111dbf04cbbe979bb5f2d605, type: 3}
       propertyPath: exit
       value: 
@@ -11048,6 +11237,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 668096973}
     m_Modifications:
+    - target: {fileID: 2086022073797734984, guid: d52477f69afa3d04ba8c39de28ca629d, type: 3}
+      propertyPath: portrait
+      value: 
+      objectReference: {fileID: 21300000, guid: fa1d273e7e22a794c93818290fe5f978, type: 3}
+    - target: {fileID: 2086022073797734984, guid: d52477f69afa3d04ba8c39de28ca629d, type: 3}
+      propertyPath: conversations.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 0bd7cc05aa31f3647931a363b2ab9c98, type: 2}
+    - target: {fileID: 2086022073797734984, guid: d52477f69afa3d04ba8c39de28ca629d, type: 3}
+      propertyPath: conversations.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 0bd7cc05aa31f3647931a363b2ab9c98, type: 2}
     - target: {fileID: 2086022073797734995, guid: d52477f69afa3d04ba8c39de28ca629d, type: 3}
       propertyPath: m_Name
       value: Human2

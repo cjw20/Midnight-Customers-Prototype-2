@@ -4,20 +4,24 @@ using UnityEngine;
 
 public class HatchStoryBeat : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] DialogueContainer hatchFound;
+    [SerializeField] GameObject investigator;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    [SerializeField] DialogueContainer hatchHint;
+    [SerializeField] GameObject hintCustomer;
+
+
+    [SerializeField] GameObject hatch;
+    
 
     public void StartStory()
     {
+        hintCustomer.GetComponent<CustomerInfo>().SetStoryConvo(hatchHint); //puts hint into customer pool
+        hatch.SetActive(true); //makes hatch discoverable
+    }
 
+    public void FoundHatch()
+    {
+        investigator.GetComponent<CustomerInfo>().SetStoryConvo(hatchFound); //will be able to tell investigator about hatch next time she shows up
     }
 }
