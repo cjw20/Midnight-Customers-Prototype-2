@@ -34,6 +34,7 @@ public class CheckoutItem : MonoBehaviour
                 checkoutManager.Bagged(weight, requiresID);
 
                 Destroy(this.gameObject);
+                FMODUnity.RuntimeManager.PlayOneShot("event:/Check Out/bagging");
                 //penalty for bagging w/out scan? or make customer happy?
             }
         }
@@ -52,6 +53,7 @@ public class CheckoutItem : MonoBehaviour
         {
             checkoutManager.PutAwayItem(isScanned, price, requiresID);
             Destroy(this.gameObject);
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Check Out/drawer");
         }
     }
 }

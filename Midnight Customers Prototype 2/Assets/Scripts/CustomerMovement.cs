@@ -22,9 +22,10 @@ public class CustomerMovement : MonoBehaviour
 
     public bool hasCheckedOut = false; //set to true after checkout minigame completed
 
+    FMOD.Studio.EventInstance customerFootsteps;
+
     void Start()
     {
-        
         //GoToNextPoint();
     }
 
@@ -32,7 +33,10 @@ public class CustomerMovement : MonoBehaviour
     {
         customerManager = FindObjectOfType<CustomerManager>();
         agent = GetComponent<NavMeshAgent2D>();
+        customerFootsteps = FMODUnity.RuntimeManager.CreateInstance("event:/Footsteps/aylith-feet");
+
         GoToNextPoint();
+        customerFootsteps.start();
     }
 
     // Update is called once per frame
@@ -71,6 +75,7 @@ public class CustomerMovement : MonoBehaviour
     {
 
         isWaiting = true;
+        customerFootsteps.setPaused(true);
 
         if (agent.destination == new Vector2(exit.position.x, exit.position.y))
         {
@@ -90,6 +95,7 @@ public class CustomerMovement : MonoBehaviour
         yield return new WaitForSeconds(timeToWait);
 
         GoToNextPoint();
+        customerFootsteps.setPaused(false);
         yield break;
     }
 
@@ -99,11 +105,13 @@ public class CustomerMovement : MonoBehaviour
         isWaiting = false;
         hasCheckedOut = true;
         GoToNextPoint();
+        customerFootsteps.setPaused(false);
     }
 
     public void ExitStore()
     {
         destination = 0; //resets customers planned path
         customerManager.CustomerExit(this.gameObject);
+        customerFootsteps.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
     }
 }

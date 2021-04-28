@@ -15,7 +15,7 @@ public class CustomerManager : MonoBehaviour
 
     List<GameObject> customersInStore = new List<GameObject>();
     bool spawning;
-    
+
     void Awake()
     {
         if (customerManager == null)
@@ -36,7 +36,7 @@ public class CustomerManager : MonoBehaviour
         LoadCustomer(customers[arrayPos]);
     }
 
-    
+
 
     public void LoadCustomer(GameObject customer)
     {
@@ -46,6 +46,8 @@ public class CustomerManager : MonoBehaviour
         move.EnterStore();
         customer.transform.position = exit.position;
         //play sound for customer entering store
+        FMODUnity.RuntimeManager.PlayOneShot("event:/door");
+
         //Set path
         //update any variables in customer info
 

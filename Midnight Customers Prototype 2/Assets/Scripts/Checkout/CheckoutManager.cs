@@ -37,7 +37,7 @@ public class CheckoutManager : MonoBehaviour
 
     CustomerInfo customerInfo;
 
-    public AudioSource scanSound;
+    //public AudioSource scanSound;
 
     int penaltyPoints; //sum of errors in this checkout
     public PerformanceReview review;
@@ -129,6 +129,7 @@ public class CheckoutManager : MonoBehaviour
     {
         customerPayed = true;
         priceText.text = "PAID";
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Check Out/register-ding");
         EndCheckout();
     }
     public void ScanItem(float price, int weight)
@@ -136,7 +137,8 @@ public class CheckoutManager : MonoBehaviour
         totalPrice += price;
         priceText.text = "$" + totalPrice.ToString();
         DisplayWeight(weight);
-        scanSound.Play();
+        //scanSound.Play();
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Check Out/check-out");
     }
 
     public void PutAwayItem(bool scanned, float price, bool needsID)
