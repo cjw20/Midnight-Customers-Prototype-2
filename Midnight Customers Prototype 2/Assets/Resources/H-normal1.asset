@@ -16,9 +16,6 @@ MonoBehaviour:
   - BaseNodeGuid: 4b9c5641-d455-49e8-bd5b-bcf3ce7f93cc
     PortName: Next
     TargetNodeGuid: 452f4620-b47f-4db1-b954-43ddc0df02d1
-  - BaseNodeGuid: 452f4620-b47f-4db1-b954-43ddc0df02d1
-    PortName: Hello how are you?
-    TargetNodeGuid: 4c0cdb74-4456-4a0d-9e14-8cc504e11704
   - BaseNodeGuid: 4c0cdb74-4456-4a0d-9e14-8cc504e11704
     PortName: I'm a little tired, but not too bad.
     TargetNodeGuid: e556369b-656c-4866-9141-94e269223c39
@@ -113,6 +110,9 @@ MonoBehaviour:
     PortName: ...
     TargetNodeGuid: 3ffe0634-645f-4c86-9ff2-8e2b7a849025
   - BaseNodeGuid: 452f4620-b47f-4db1-b954-43ddc0df02d1
+    PortName: Hello how are you?
+    TargetNodeGuid: 4c0cdb74-4456-4a0d-9e14-8cc504e11704
+  - BaseNodeGuid: 452f4620-b47f-4db1-b954-43ddc0df02d1
     PortName: ...
     TargetNodeGuid: ef6615d0-63a3-4678-9cf7-d2ea6a17ed3a
   DialogueNodeData:
@@ -135,7 +135,7 @@ MonoBehaviour:
     DialogueText: 'Thanks. Have a good night. '
     Position: {x: 1401, y: 386}
   - Guid: e556369b-656c-4866-9141-94e269223c39
-    DialogueText: 'Oh I''m sure. NIht shifts are always rough. '
+    DialogueText: 'Oh I''m sure. Night shifts are always rough. '
     Position: {x: 894, y: -105}
   - Guid: 6ed4e232-84dc-420a-b68f-7a6ac6b043d5
     DialogueText: 'Yeah, good luck. Have a good night. '

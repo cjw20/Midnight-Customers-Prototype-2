@@ -129,7 +129,7 @@ public class DialoguePlayer : MonoBehaviour
     IEnumerator WaitForSelection(string targetNodeGuid)
     {
         countdownSlider.StartCount();
-        yield return new WaitForSeconds(10); //waits 10 seconds may want to make shorter?
+        yield return new WaitForSeconds(6); //waits 10 seconds may want to make shorter?
         
         ProceedToNarrative(targetNodeGuid);
         countdownSlider.Reset();
@@ -146,7 +146,7 @@ public class DialoguePlayer : MonoBehaviour
             {
                 relationshipChange *= -1; //may not need this if parse recognizes negative
             }
-            yield return new WaitForSeconds(1.5f); //makes dialogue not end right away
+            yield return new WaitForSeconds(0.5f); //makes dialogue not end right away
             checkoutManager.EndDialogue(relationshipChange);
             //add or subtract characters relationship score
             yield break;
