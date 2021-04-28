@@ -20,65 +20,44 @@ MonoBehaviour:
     PortName: 'Can I help you find something?    '
     TargetNodeGuid: ca5e9fff-e93d-4cb2-aa66-ce8e3acc10b4
   - BaseNodeGuid: ca5e9fff-e93d-4cb2-aa66-ce8e3acc10b4
-    PortName: ...
-    TargetNodeGuid: 38374a6d-a66d-4b74-a903-c8a44173729c
-  - BaseNodeGuid: ca5e9fff-e93d-4cb2-aa66-ce8e3acc10b4
     PortName: Yeah, we should. What's your cat's name?
     TargetNodeGuid: 94975025-cb4d-4176-9078-0c482c970669
   - BaseNodeGuid: ca5e9fff-e93d-4cb2-aa66-ce8e3acc10b4
     PortName: ' We should have some on the shelf in the aisle on the far left.'
     TargetNodeGuid: ffafbf0d-b73f-48b0-a3b3-42376f78d969
-  - BaseNodeGuid: bea3717e-ce8a-429a-b10d-31528f7620ab
-    PortName: ...
-    TargetNodeGuid: 6defea11-951d-449a-a581-4357f8e69c51
-  - BaseNodeGuid: ffafbf0d-b73f-48b0-a3b3-42376f78d969
-    PortName: ...
-    TargetNodeGuid: bea3717e-ce8a-429a-b10d-31528f7620ab
   - BaseNodeGuid: ffafbf0d-b73f-48b0-a3b3-42376f78d969
     PortName: ' No problem.'
     TargetNodeGuid: e702a460-8537-4fba-bdfe-e42dfd48dd39
   - BaseNodeGuid: ffafbf0d-b73f-48b0-a3b3-42376f78d969
     PortName: ' Is that a new flavor? I''ve never heard of that one before.'
     TargetNodeGuid: 0d223680-a240-4c86-aa10-eb6907f5ef5f
-  - BaseNodeGuid: 94975025-cb4d-4176-9078-0c482c970669
-    PortName: Um... Would you mind telling me what your cat's name is?
-    TargetNodeGuid: 30a1d184-0304-44ea-8878-25be1666a559
-  - BaseNodeGuid: 94975025-cb4d-4176-9078-0c482c970669
-    PortName: ...
-    TargetNodeGuid: 514ee72f-4a87-4224-99d3-a7fef6e8be7b
-  - BaseNodeGuid: 38374a6d-a66d-4b74-a903-c8a44173729c
-    PortName: ...
-    TargetNodeGuid: e06b70f6-9a63-4de9-9e1c-be573c9fc1bd
-  - BaseNodeGuid: 38374a6d-a66d-4b74-a903-c8a44173729c
-    PortName: Sorry, it's in the left hand aisle. I was trying to remember.
-    TargetNodeGuid: b060580e-be75-43cf-a4e7-fdaeb24f7522
-  - BaseNodeGuid: e06b70f6-9a63-4de9-9e1c-be573c9fc1bd
-    PortName: ...
-    TargetNodeGuid: f1bb2e0c-6bbd-4e4c-8e0b-25411ac5a83b
-  - BaseNodeGuid: b060580e-be75-43cf-a4e7-fdaeb24f7522
-    PortName: ...
-    TargetNodeGuid: 875f3499-c0df-49cd-b60b-61c325712cd4
-  - BaseNodeGuid: 514ee72f-4a87-4224-99d3-a7fef6e8be7b
-    PortName: ...
-    TargetNodeGuid: a609e102-2f2e-4879-8a70-882a1392a2ba
   - BaseNodeGuid: 30a1d184-0304-44ea-8878-25be1666a559
     PortName: ...
     TargetNodeGuid: 94a54567-f553-4535-a7ea-6d984b5fbe57
+  - BaseNodeGuid: 514ee72f-4a87-4224-99d3-a7fef6e8be7b
+    PortName: ...
+    TargetNodeGuid: a609e102-2f2e-4879-8a70-882a1392a2ba
+  - BaseNodeGuid: 38374a6d-a66d-4b74-a903-c8a44173729c
+    PortName: Sorry, it's in the left hand aisle. I was trying to remember.
+    TargetNodeGuid: b060580e-be75-43cf-a4e7-fdaeb24f7522
   - BaseNodeGuid: 38374a6d-a66d-4b74-a903-c8a44173729c
     PortName: I have no clue.
     TargetNodeGuid: 9aecd8d6-b77c-4633-8076-77ce18694c30
   - BaseNodeGuid: 94975025-cb4d-4176-9078-0c482c970669
+    PortName: Um... Would you mind telling me what your cat's name is?
+    TargetNodeGuid: 30a1d184-0304-44ea-8878-25be1666a559
+  - BaseNodeGuid: 94975025-cb4d-4176-9078-0c482c970669
     PortName: ' Right, sorry, it''s in the left aisle.'
     TargetNodeGuid: 6d1a945b-f121-41ec-a2c4-84a0421e6172
-  - BaseNodeGuid: 0d223680-a240-4c86-aa10-eb6907f5ef5f
-    PortName: Right. Well, have a good night!
-    TargetNodeGuid: ae85a94a-3602-4263-8e8a-47e7b52e9ed5
-  - BaseNodeGuid: 0d223680-a240-4c86-aa10-eb6907f5ef5f
-    PortName: Who's Bastet?
-    TargetNodeGuid: 8283744d-c9ac-4020-b575-6d8066d8f4b5
-  - BaseNodeGuid: 0d223680-a240-4c86-aa10-eb6907f5ef5f
+  - BaseNodeGuid: e06b70f6-9a63-4de9-9e1c-be573c9fc1bd
     PortName: ...
-    TargetNodeGuid: beab0205-e490-40a3-99cd-9e34b2673552
+    TargetNodeGuid: f1bb2e0c-6bbd-4e4c-8e0b-25411ac5a83b
+  - BaseNodeGuid: bea3717e-ce8a-429a-b10d-31528f7620ab
+    PortName: ...
+    TargetNodeGuid: 6defea11-951d-449a-a581-4357f8e69c51
+  - BaseNodeGuid: b060580e-be75-43cf-a4e7-fdaeb24f7522
+    PortName: ...
+    TargetNodeGuid: 875f3499-c0df-49cd-b60b-61c325712cd4
   - BaseNodeGuid: e702a460-8537-4fba-bdfe-e42dfd48dd39
     PortName: Who's Bastet?
     TargetNodeGuid: 5240936a-9629-4db1-accc-6654b25e8095
@@ -88,9 +67,19 @@ MonoBehaviour:
   - BaseNodeGuid: e702a460-8537-4fba-bdfe-e42dfd48dd39
     PortName: ...
     TargetNodeGuid: 386d8fb4-a950-49ec-aeda-fdee88149299
+  - BaseNodeGuid: 9aecd8d6-b77c-4633-8076-77ce18694c30
+    PortName: Yeah, sorry, I'm new here.
+    TargetNodeGuid: 7e6b8717-966f-475a-8528-e2f697550ebd
+  - BaseNodeGuid: 9aecd8d6-b77c-4633-8076-77ce18694c30
+    PortName: No, I just bought this uniform online and stand behind the the counter
+      for fun.
+    TargetNodeGuid: 39d5b226-50ef-49e2-9ff7-385d9948967d
+  - BaseNodeGuid: 9aecd8d6-b77c-4633-8076-77ce18694c30
+    PortName: ...
+    TargetNodeGuid: 73792c1d-7c02-4391-ab8b-4a182575e10b
   - BaseNodeGuid: 6d1a945b-f121-41ec-a2c4-84a0421e6172
-    PortName: '"Yeah, I am. Sorry. I kinda feel like I''ve been thrown into the deep
-      end over here."'
+    PortName: Yeah, I am. Sorry. I kinda feel like I've been thrown into the deep
+      end over here.
     TargetNodeGuid: 69074e80-85c1-4db1-8f93-48fe6f39f543
   - BaseNodeGuid: 6d1a945b-f121-41ec-a2c4-84a0421e6172
     PortName: So what if I am?
@@ -98,52 +87,66 @@ MonoBehaviour:
   - BaseNodeGuid: 6d1a945b-f121-41ec-a2c4-84a0421e6172
     PortName: ...
     TargetNodeGuid: 9fb4e9df-f239-4fde-95f9-56eb2275cf9d
-  - BaseNodeGuid: 9aecd8d6-b77c-4633-8076-77ce18694c30
-    PortName: Yeah, sorry, I'm new here.
-    TargetNodeGuid: 7e6b8717-966f-475a-8528-e2f697550ebd
-  - BaseNodeGuid: 9aecd8d6-b77c-4633-8076-77ce18694c30
-    PortName: '"No, I just bought this uniform online and stand behind the the counter
-      for fun."'
-    TargetNodeGuid: 39d5b226-50ef-49e2-9ff7-385d9948967d
-  - BaseNodeGuid: 9aecd8d6-b77c-4633-8076-77ce18694c30
+  - BaseNodeGuid: 34a62311-8d96-4039-a692-6cdc09437e88
     PortName: ...
-    TargetNodeGuid: 73792c1d-7c02-4391-ab8b-4a182575e10b
-  - BaseNodeGuid: 73792c1d-7c02-4391-ab8b-4a182575e10b
+    TargetNodeGuid: 5c5b5c38-a9fe-41ac-9660-c18da3bc5c78
+  - BaseNodeGuid: 0d223680-a240-4c86-aa10-eb6907f5ef5f
+    PortName: Right. Well, have a good night!
+    TargetNodeGuid: ae85a94a-3602-4263-8e8a-47e7b52e9ed5
+  - BaseNodeGuid: 0d223680-a240-4c86-aa10-eb6907f5ef5f
+    PortName: Who's Bastet?
+    TargetNodeGuid: 8283744d-c9ac-4020-b575-6d8066d8f4b5
+  - BaseNodeGuid: 0d223680-a240-4c86-aa10-eb6907f5ef5f
     PortName: ...
-    TargetNodeGuid: 567a1173-f1f9-474b-b51c-0158be43590e
-  - BaseNodeGuid: 39d5b226-50ef-49e2-9ff7-385d9948967d
+    TargetNodeGuid: beab0205-e490-40a3-99cd-9e34b2673552
+  - BaseNodeGuid: 5240936a-9629-4db1-accc-6654b25e8095
     PortName: ...
-    TargetNodeGuid: da7b78d3-edcd-4cbc-b311-33be88f566d6
-  - BaseNodeGuid: 7e6b8717-966f-475a-8528-e2f697550ebd
-    PortName: ...
-    TargetNodeGuid: a9080995-767e-43cc-8e6a-8720e5bcad54
-  - BaseNodeGuid: 9fb4e9df-f239-4fde-95f9-56eb2275cf9d
-    PortName: ...
-    TargetNodeGuid: 73e9b4b3-237c-464d-b92c-9da9598b7e04
-  - BaseNodeGuid: 6834869c-17bc-4c74-bbfb-a4e84dbc2af0
-    PortName: ...
-    TargetNodeGuid: ea9c9643-18c3-42e1-9bb4-46509a60751f
+    TargetNodeGuid: 696376e6-5b3b-4ffc-a2bb-9826098e1dab
   - BaseNodeGuid: 69074e80-85c1-4db1-8f93-48fe6f39f543
     PortName: ...
     TargetNodeGuid: fccb5f15-a768-4dac-8527-ba7b412c2150
+  - BaseNodeGuid: 6834869c-17bc-4c74-bbfb-a4e84dbc2af0
+    PortName: ...
+    TargetNodeGuid: ea9c9643-18c3-42e1-9bb4-46509a60751f
+  - BaseNodeGuid: 9fb4e9df-f239-4fde-95f9-56eb2275cf9d
+    PortName: ...
+    TargetNodeGuid: 73e9b4b3-237c-464d-b92c-9da9598b7e04
+  - BaseNodeGuid: 7e6b8717-966f-475a-8528-e2f697550ebd
+    PortName: ...
+    TargetNodeGuid: a9080995-767e-43cc-8e6a-8720e5bcad54
   - BaseNodeGuid: 8283744d-c9ac-4020-b575-6d8066d8f4b5
     PortName: ...
     TargetNodeGuid: e877901d-e012-44b1-bc71-828418fcf10b
+  - BaseNodeGuid: 386d8fb4-a950-49ec-aeda-fdee88149299
+    PortName: ...
+    TargetNodeGuid: 47a49c24-c865-4c4b-b14b-56c567fec1c3
+  - BaseNodeGuid: 39d5b226-50ef-49e2-9ff7-385d9948967d
+    PortName: ...
+    TargetNodeGuid: da7b78d3-edcd-4cbc-b311-33be88f566d6
+  - BaseNodeGuid: 73792c1d-7c02-4391-ab8b-4a182575e10b
+    PortName: ...
+    TargetNodeGuid: 567a1173-f1f9-474b-b51c-0158be43590e
   - BaseNodeGuid: ae85a94a-3602-4263-8e8a-47e7b52e9ed5
     PortName: ...
     TargetNodeGuid: e6db6f3c-5d8c-4a4e-933a-5f8b0e198b01
   - BaseNodeGuid: beab0205-e490-40a3-99cd-9e34b2673552
     PortName: ...
     TargetNodeGuid: 29858c68-128d-4b89-973a-bfdce1d0abc5
-  - BaseNodeGuid: 5240936a-9629-4db1-accc-6654b25e8095
+  - BaseNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
     PortName: ...
-    TargetNodeGuid: 696376e6-5b3b-4ffc-a2bb-9826098e1dab
-  - BaseNodeGuid: 34a62311-8d96-4039-a692-6cdc09437e88
+    TargetNodeGuid: 38374a6d-a66d-4b74-a903-c8a44173729c
+  - BaseNodeGuid: 94975025-cb4d-4176-9078-0c482c970669
     PortName: ...
-    TargetNodeGuid: 5c5b5c38-a9fe-41ac-9660-c18da3bc5c78
-  - BaseNodeGuid: 386d8fb4-a950-49ec-aeda-fdee88149299
+    TargetNodeGuid: 514ee72f-4a87-4224-99d3-a7fef6e8be7b
+  - BaseNodeGuid: 38374a6d-a66d-4b74-a903-c8a44173729c
     PortName: ...
-    TargetNodeGuid: 47a49c24-c865-4c4b-b14b-56c567fec1c3
+    TargetNodeGuid: e06b70f6-9a63-4de9-9e1c-be573c9fc1bd
+  - BaseNodeGuid: ca5e9fff-e93d-4cb2-aa66-ce8e3acc10b4
+    PortName: ...
+    TargetNodeGuid: 38374a6d-a66d-4b74-a903-c8a44173729c
+  - BaseNodeGuid: ffafbf0d-b73f-48b0-a3b3-42376f78d969
+    PortName: ...
+    TargetNodeGuid: bea3717e-ce8a-429a-b10d-31528f7620ab
   DialogueNodeData:
   - Guid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
     DialogueText: ...
@@ -156,19 +159,13 @@ MonoBehaviour:
       Deep.
     Position: {x: 1100, y: -189}
   - Guid: 30a1d184-0304-44ea-8878-25be1666a559
-    DialogueText: Forget this. I'll just get cat food somewhere else. (-1)
+    DialogueText: Forget this. I'll just get cat food somewhere else.
     Position: {x: 1640, y: 297}
   - Guid: 514ee72f-4a87-4224-99d3-a7fef6e8be7b
-    DialogueText: Ugh. You're useless. (-1)
+    DialogueText: 'Ugh. You''re useless. '
     Position: {x: 1634, y: 407}
-  - Guid: 38374a6d-a66d-4b74-a903-c8a44173729c
-    DialogueText: Hello? Do you guys have any cat food?
-    Position: {x: 1037, y: 672}
-  - Guid: 94975025-cb4d-4176-9078-0c482c970669
-    DialogueText: Um... Would you mind telling me where the cat food is...?
-    Position: {x: 1054, y: 222}
   - Guid: e06b70f6-9a63-4de9-9e1c-be573c9fc1bd
-    DialogueText: Whatever. I'll be speaking with your manager. (-1)
+    DialogueText: 'Whatever. I''ll be speaking with your manager. '
     Position: {x: 1584, y: 840}
   - Guid: 6defea11-951d-449a-a581-4357f8e69c51
     DialogueText: +0
@@ -189,7 +186,7 @@ MonoBehaviour:
     DialogueText: -1
     Position: {x: 2073, y: 863}
   - Guid: b060580e-be75-43cf-a4e7-fdaeb24f7522
-    DialogueText: Was that so hard. Thank you. (-1)
+    DialogueText: Was that so hard. Thank you.
     Position: {x: 1581, y: 607}
   - Guid: e702a460-8537-4fba-bdfe-e42dfd48dd39
     DialogueText: Weird. I've never heard of this one before. Anyway, I'm sure Bastet
@@ -279,5 +276,11 @@ MonoBehaviour:
   - Guid: 567a1173-f1f9-474b-b51c-0158be43590e
     DialogueText: -1
     Position: {x: 3216, y: 896}
+  - Guid: 94975025-cb4d-4176-9078-0c482c970669
+    DialogueText: Um... Would you mind telling me where the cat food is...?
+    Position: {x: 1054, y: 222}
+  - Guid: 38374a6d-a66d-4b74-a903-c8a44173729c
+    DialogueText: Hello? Do you guys have any cat food?
+    Position: {x: 1037, y: 672}
   ExposedProperties: []
   CommentBlockData: []

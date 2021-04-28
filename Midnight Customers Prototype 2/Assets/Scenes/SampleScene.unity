@@ -3721,7 +3721,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hatchFound: {fileID: 11400000, guid: 23078caf785ad98439f10eae6d92b236, type: 2}
   investigator: {fileID: 6208242975807155669}
-  hatchHint: {fileID: 0}
+  hatchHint: {fileID: 11400000, guid: 49007d75e3bb22442a29beba41c00535, type: 2}
   hintCustomer: {fileID: 5570189988557149941}
   hatch: {fileID: 1037565926}
 --- !u!4 &705307956
@@ -10625,7 +10625,7 @@ PrefabInstance:
     - target: {fileID: 6010064553094314888, guid: c208794e7e4da754bade06a8d0248f4b, type: 3}
       propertyPath: conversations.Array.data[2]
       value: 
-      objectReference: {fileID: 11400000, guid: 23078caf785ad98439f10eae6d92b236, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 6010064553094314899, guid: c208794e7e4da754bade06a8d0248f4b, type: 3}
       propertyPath: m_Name
       value: Investigator
@@ -11147,11 +11147,11 @@ PrefabInstance:
     - target: {fileID: 5642382787059048421, guid: 0c385362111dbf04cbbe979bb5f2d605, type: 3}
       propertyPath: conversations.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: 704beec42c46ee24d91e8de32f01e145, type: 2}
+      objectReference: {fileID: 11400000, guid: 9cb02a7b3b1959c4dacee83ac4f8c5a8, type: 2}
     - target: {fileID: 5642382787059048421, guid: 0c385362111dbf04cbbe979bb5f2d605, type: 3}
       propertyPath: conversations.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: 704beec42c46ee24d91e8de32f01e145, type: 2}
+      objectReference: {fileID: 11400000, guid: 9cb02a7b3b1959c4dacee83ac4f8c5a8, type: 2}
     - target: {fileID: 5642382787059048441, guid: 0c385362111dbf04cbbe979bb5f2d605, type: 3}
       propertyPath: exit
       value: 
@@ -11244,11 +11244,11 @@ PrefabInstance:
     - target: {fileID: 2086022073797734984, guid: d52477f69afa3d04ba8c39de28ca629d, type: 3}
       propertyPath: conversations.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: ca8b130a5e1cdec4895f7ff80e0c675c, type: 2}
+      objectReference: {fileID: 11400000, guid: 0bd7cc05aa31f3647931a363b2ab9c98, type: 2}
     - target: {fileID: 2086022073797734984, guid: d52477f69afa3d04ba8c39de28ca629d, type: 3}
       propertyPath: conversations.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: ca8b130a5e1cdec4895f7ff80e0c675c, type: 2}
+      objectReference: {fileID: 11400000, guid: 0bd7cc05aa31f3647931a363b2ab9c98, type: 2}
     - target: {fileID: 2086022073797734995, guid: d52477f69afa3d04ba8c39de28ca629d, type: 3}
       propertyPath: m_Name
       value: Human2

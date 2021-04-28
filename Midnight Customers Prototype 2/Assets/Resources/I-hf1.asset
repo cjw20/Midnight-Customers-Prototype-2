@@ -17,9 +17,6 @@ MonoBehaviour:
     PortName: Next
     TargetNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
   - BaseNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
-    PortName: ...
-    TargetNodeGuid: e2961693-c0ae-4b99-8bfe-05a66b597d21
-  - BaseNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
     PortName: 'Why the hell is there a cellar hidden here? '
     TargetNodeGuid: 1bff14df-89de-404f-9793-802842898358
   - BaseNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
@@ -38,25 +35,25 @@ MonoBehaviour:
     PortName: Okay right, sorry. Under a shelf over there.
     TargetNodeGuid: f2aef63c-6109-4e3f-b77b-a3f849f68686
   - BaseNodeGuid: 1bff14df-89de-404f-9793-802842898358
-    PortName: '"Calm? There''s a random creepy hatch hidden under a shelf over there!"'
+    PortName: Calm? There's a random creepy hatch hidden under a shelf over there!
     TargetNodeGuid: 71629ce1-d9db-46a7-9752-56fdf362cd03
   - BaseNodeGuid: 1bff14df-89de-404f-9793-802842898358
     PortName: ...
     TargetNodeGuid: 451b3dc7-94e5-4e65-9698-1ab386acf3b2
   - BaseNodeGuid: e2961693-c0ae-4b99-8bfe-05a66b597d21
-    PortName: '"Sorry, I found a hatch hidden under a shelf  in the store"'
+    PortName: Sorry, I found a hatch hidden under a shelf  in the store
     TargetNodeGuid: fa7adee1-bd38-4e56-a9a7-0755cb18ec4f
   - BaseNodeGuid: e2961693-c0ae-4b99-8bfe-05a66b597d21
-    PortName: '"I have been freaking out all night because of a creepy ass hatch
-      I found under a shelf"'
+    PortName: I have been freaking out all night because of a creepy ass hatch I
+      found under a shelf
     TargetNodeGuid: 34453234-29c5-426d-aae2-27c268cc6640
   - BaseNodeGuid: e2961693-c0ae-4b99-8bfe-05a66b597d21
     PortName: ...
     TargetNodeGuid: 645f0d04-cb9d-44a2-a85a-e780c560c5ce
+  - BaseNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
+    PortName: ...
+    TargetNodeGuid: e2961693-c0ae-4b99-8bfe-05a66b597d21
   DialogueNodeData:
-  - Guid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
-    DialogueText: Anything new?
-    Position: {x: 240, y: 199}
   - Guid: 099b6d2d-d063-4f02-9313-ba59b92343aa
     DialogueText: Huh, strange. Where was it?
     Position: {x: 690, y: -83}
@@ -102,5 +99,8 @@ MonoBehaviour:
     DialogueText: Alright, so now we have to see if anyone goes in there.  Keep a
       look out for any weird customers and report back to me.
     Position: {x: 1279, y: -311}
+  - Guid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
+    DialogueText: Anything new?
+    Position: {x: 240, y: 199}
   ExposedProperties: []
   CommentBlockData: []

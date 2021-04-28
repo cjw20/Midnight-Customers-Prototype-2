@@ -23,7 +23,11 @@ public class CustomerInfo : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        nextConversation = conversations[conversationProgress]; //may need to put this on load somewhere
+        if(nextConversation == null)
+        {
+            nextConversation = conversations[conversationProgress]; //only assigns when empty so that story convos arent over written when customer enters store
+        }
+        
     }
 
    
