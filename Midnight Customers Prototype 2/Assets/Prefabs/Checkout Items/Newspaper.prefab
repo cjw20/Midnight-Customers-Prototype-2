@@ -101,7 +101,7 @@ MonoBehaviour:
   price: 1.99
   itemName: Newspaper
   weight: 2
-  requiresID: 1
+  requiresID: 0
   isScanned: 0
   checkoutManager: {fileID: 0}
 --- !u!114 &6309670762151803483
