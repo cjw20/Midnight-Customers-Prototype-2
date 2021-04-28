@@ -25,7 +25,7 @@ public class DialoguePlayer : MonoBehaviour
 
     private void OnEnable()
     {
-        countdownSlider.SetMinMax(0, 10, 10);
+        countdownSlider.SetMinMax(0, 6, 6);
     }
 
     public void StartConvo(DialogueContainer convo)
