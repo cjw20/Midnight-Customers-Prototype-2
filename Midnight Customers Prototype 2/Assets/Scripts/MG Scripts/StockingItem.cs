@@ -6,7 +6,7 @@ public class StockingItem : MonoBehaviour
 {
     StockingGame stockingGame;
     ItemBox itemBox;
-    bool selected;
+    bool selected = false;
 
     private void Start()
     {
@@ -18,12 +18,13 @@ public class StockingItem : MonoBehaviour
         if (!selected)
         {
             selected = true;
+            stockingGame.SelectItem(this.gameObject);
             itemBox.SelectItem(this.gameObject);
             itemBox.CloseBox();
 
-
+            
         }
-        //stockingGame.selectedItem = this.gameObject;
+        
         
     }
 }
