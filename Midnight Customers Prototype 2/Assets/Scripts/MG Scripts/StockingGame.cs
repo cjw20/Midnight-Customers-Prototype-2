@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class StockingGame : MonoBehaviour
 {
+
+    public GameObject heldItem;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +16,11 @@ public class StockingGame : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void SelectItem(GameObject item)
+    {
+        heldItem = item;
+        heldItem.transform.parent = this.gameObject.transform; 
     }
 }
