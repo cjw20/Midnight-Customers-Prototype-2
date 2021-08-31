@@ -34,7 +34,9 @@ public class StockingItem : MonoBehaviour
         {
             shelved = true;
             Destroy(GetComponent<ClickDrag>()); //removes ability for player to move item?
-            
+            this.transform.position = other.gameObject.GetComponent<Shelf>().target.position;
+
+            //compare id with shelf id to see if correct item was placed. Affects preformance review?
         }
     }
 
