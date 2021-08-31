@@ -14,6 +14,7 @@ TagManager:
   - Cleanable
   - Cleaner
   - Drawer
+  - Shelf
   layers:
   - Default
   - TransparentFX

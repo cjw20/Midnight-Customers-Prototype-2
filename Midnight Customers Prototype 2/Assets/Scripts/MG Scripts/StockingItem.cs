@@ -6,8 +6,9 @@ public class StockingItem : MonoBehaviour
 {
     StockingGame stockingGame;
     ItemBox itemBox;
-    bool selected = false;
-
+    bool selected;
+    bool shelved;
+    public string itemID;
     private void Start()
     {
         stockingGame = FindObjectOfType<StockingGame>(); //better way to do this later?
@@ -15,7 +16,7 @@ public class StockingItem : MonoBehaviour
     }
     private void OnMouseDown()
     {
-        if (!selected)
+        if (!selected && !shelved)
         {
             selected = true;
             stockingGame.SelectItem(this.gameObject);
@@ -27,4 +28,16 @@ public class StockingItem : MonoBehaviour
         
         
     }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.tag == "Shelf")
+        {
+            shelved = true;
+            Destroy(GetComponent<ClickDrag>()); //removes ability for player to move item?
+            
+        }
+    }
+
+
+   
 }

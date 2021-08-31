@@ -22,7 +22,11 @@ public class Fade : MonoBehaviour
     {
         thisSprite = gameObject.GetComponent<Image>();
         startingColor = thisSprite.color;
+
+        
     }
+
+    
 
     // Update is called once per frame
     void Update()
