@@ -4858,6 +4858,7 @@ MonoBehaviour:
   dayText: {fileID: 1321719050}
   timeText: {fileID: 1063500180}
   timeMultiplier: 150
+  blackScreen: {fileID: 1151140294}
   toBlack: {fileID: 1151140295}
   fadeDuration: 5
   playerStartingLoc: {fileID: 1405583354}

@@ -15,6 +15,8 @@ public class TimeManager : MonoBehaviour
 
     bool timerRunning;
 
+    public GameObject blackScreen; 
+
     public Fade toBlack;
     public float fadeDuration;
 
@@ -101,6 +103,7 @@ public class TimeManager : MonoBehaviour
             yield return new WaitForEndOfFrame();
         }
         //check if in checkout or task. wait till finished
+        blackScreen.SetActive(true);
         toBlack.FadeIn(fadeDuration);
         review.NewDay(); //tallys up penalties
         //move player, stop customer spawns etc. new tasks
@@ -111,6 +114,7 @@ public class TimeManager : MonoBehaviour
         taskSpawner.NewDayTasks();
         storyEvent.DayEvents(day); //loads any events for coming day
         yield return new WaitForSeconds(fadeDuration + 2);
+        blackScreen.SetActive(false);
         customerManager.StartSpawns();
 
         review.ReviewMessage();
