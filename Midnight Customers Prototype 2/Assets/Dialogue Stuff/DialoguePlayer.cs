@@ -34,6 +34,8 @@ public class DialoguePlayer : MonoBehaviour
         //do this after loading the convo?
         var narrativeData = dialogue.NodeLinks.First(); //Entrypoint node
         ProceedToNarrative(narrativeData.TargetNodeGuid);
+        
+
     }
 
     public void SetConversation(DialogueContainer convo)
