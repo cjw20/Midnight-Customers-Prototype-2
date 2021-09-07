@@ -5061,8 +5061,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 132.89001, y: 22.76}
-  m_SizeDelta: {x: -1836.4, y: -909.9}
+  m_AnchoredPosition: {x: 153.55, y: 26.03003}
+  m_SizeDelta: {x: -1823.71, y: -1042.48}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &876891118
 GameObject:
@@ -6863,7 +6863,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1151140295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7426,8 +7426,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 204.9, y: 22.2}
-  m_SizeDelta: {x: -1873.46, y: -896.34}
+  m_AnchoredPosition: {x: 232.72, y: 26.030014}
+  m_SizeDelta: {x: -1870.19, y: -1042.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1285923185
 GameObject:
@@ -11324,8 +11324,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1932110257}
-  - component: {fileID: 1932110256}
   - component: {fileID: 1932110255}
+  - component: {fileID: 1932110256}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
