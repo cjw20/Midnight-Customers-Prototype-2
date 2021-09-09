@@ -61,8 +61,6 @@ public class TimeManager : MonoBehaviour
 
             if (hours >= 6)
             {
-                hours = 0;
-                day++;
                 timerRunning = false;
                 StartCoroutine(EndDay());
             }
@@ -110,6 +108,9 @@ public class TimeManager : MonoBehaviour
         yield return new WaitForSeconds(fadeDuration + 2);
         customerManager.StopSpawns();
         player.transform.position = playerStartingLoc.position;
+        hours = 0;
+        day++;
+        UpdateText();
         toBlack.FadeOut(fadeDuration);
         taskSpawner.NewDayTasks();
         storyEvent.DayEvents(day); //loads any events for coming day
