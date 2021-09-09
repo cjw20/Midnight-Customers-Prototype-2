@@ -111,7 +111,7 @@ public class TimeManager : MonoBehaviour
         customerManager.StopSpawns();
         player.transform.position = playerStartingLoc.position;
         toBlack.FadeOut(fadeDuration);
-        //taskSpawner.NewDayTasks();
+        taskSpawner.NewDayTasks();
         storyEvent.DayEvents(day); //loads any events for coming day
         yield return new WaitForSeconds(fadeDuration + 2);
         blackScreen.SetActive(false);

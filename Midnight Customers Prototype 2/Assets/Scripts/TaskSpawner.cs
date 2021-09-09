@@ -26,12 +26,20 @@ public class TaskSpawner : MonoBehaviour
             Instantiate(mopTrigger, mopSpawns[random].transform);
             usedSpawns.Add(random);
             random = Random.Range(0, mopSpawns.Count);
+
+            int j = -1;
             while (usedSpawns.Contains(random)) //makes sure tasks dont spawn on each other
             {
                 random++;
+                j++;
                 if(random > mopSpawns.Count - 1)
                 {
                     random = 0; //makes sure random doesnt go outside list
+                }
+
+                if(j >= usedSpawns.Count)
+                {
+                    break;
                 }
                 //probably should find different way to do this later
             }
