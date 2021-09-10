@@ -2872,7 +2872,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!114 &519420030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9583,6 +9583,7 @@ GameObject:
   - component: {fileID: 1675290336}
   - component: {fileID: 1675290335}
   - component: {fileID: 1675290340}
+  - component: {fileID: 1675290341}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -9723,6 +9724,14 @@ CapsuleCollider2D:
   m_Offset: {x: 0.18955871, y: -0.4587469}
   m_Size: {x: 4.512994, y: 6.369323}
   m_Direction: 0
+--- !u!81 &1675290341
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1675290334}
+  m_Enabled: 1
 --- !u!1 &1677489713
 GameObject:
   m_ObjectHideFlags: 0
