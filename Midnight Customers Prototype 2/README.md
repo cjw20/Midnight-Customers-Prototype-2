@@ -98,8 +98,10 @@
 
 *SoundManager*
 * Manages BGM (inert?)
+* Manages all sound effects
 * Referenced by
 	* LightSanityEffect
+    * CheckoutManager
 
 *TaskSpawner*
 * Handles randomly spawning new tasks (also happens to murder unity in the process)
@@ -133,6 +135,7 @@
 	* CheckoutTrigger
 	* EmoteController
 	* Checkout Item
+    * SoundManager
 * Referenced by
 	* DialoguePlayer
 	* CheckoutItem

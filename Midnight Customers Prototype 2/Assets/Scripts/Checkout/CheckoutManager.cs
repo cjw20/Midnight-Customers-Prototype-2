@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class CheckoutManager : MonoBehaviour
 {
+    [SerializeField] SoundManager soundManager;
     public GameObject[] itemSpawns;
     GameObject[] items; //items brought to checkout
     int itemNumber; //number of items brought to checkout
@@ -36,8 +37,6 @@ public class CheckoutManager : MonoBehaviour
     public Transform moneySpawn; //where money gets placed
 
     CustomerInfo customerInfo;
-
-    public AudioSource scanSound;
 
     int penaltyPoints; //sum of errors in this checkout
     public PerformanceReview review;
@@ -119,6 +118,7 @@ public class CheckoutManager : MonoBehaviour
             finishedBag = true;
             GiveMoney();
         }
+        soundManager.PlayBaggingSound(weight);
     }
 
     void GiveMoney()
@@ -136,7 +136,7 @@ public class CheckoutManager : MonoBehaviour
         totalPrice += price;
         priceText.text = "$" + totalPrice.ToString();
         DisplayWeight(weight);
-        scanSound.Play();
+        soundManager.PlayScannerSound();
     }
 
     public void PutAwayItem(bool scanned, float price, bool needsID)
