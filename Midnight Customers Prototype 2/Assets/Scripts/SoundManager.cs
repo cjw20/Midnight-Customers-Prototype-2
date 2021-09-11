@@ -9,6 +9,7 @@ public class SoundManager : MonoBehaviour
     [SerializeField] AudioSource[] lightBaggingSound;
     [SerializeField] AudioSource[] mediumBaggingSound;
     [SerializeField] AudioSource scannerSound;
+    [SerializeField] AudioSource[] humanFootStepSound;
 
     // Start is called before the first frame update
     void Start()
@@ -46,5 +47,11 @@ public class SoundManager : MonoBehaviour
     public void PlayScannerSound()
     {
         scannerSound.Play();
+    }
+
+    public void PlayPlayerFootstepSounds()
+    {
+        int rand = Random.Range(0, 3);
+        humanFootStepSound[rand].Play();
     }
 }
