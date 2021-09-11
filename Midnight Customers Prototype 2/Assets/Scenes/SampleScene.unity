@@ -9643,7 +9643,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   moveable: 1
-  stepDistance: 1
+  stepDistance: 0.5
   soundManager: {fileID: 1904453403}
 --- !u!212 &1675290338
 SpriteRenderer:
