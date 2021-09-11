@@ -101,7 +101,8 @@
 * Manages all sound effects
 * Referenced by
 	* LightSanityEffect
-    * CheckoutManager
+    	* CheckoutManager
+	* PlayerMovement
 
 *TaskSpawner*
 * Handles randomly spawning new tasks (also happens to murder unity in the process)
