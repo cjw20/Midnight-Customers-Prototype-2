@@ -15,6 +15,9 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] SoundManager soundManager;
 
+    public GameObject Epopup; //!
+    public GameObject Qpopup; //?
+
     // Start is called before the first frame update
     void Start()
     {

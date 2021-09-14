@@ -34,6 +34,7 @@ public class MiniGameTrigger : MonoBehaviour
         {
             playerReady = true;
             playerMove = collision.gameObject.GetComponent<PlayerMovement>();
+            playerMove.Epopup.SetActive(true);
         }
 
         
@@ -44,6 +45,7 @@ public class MiniGameTrigger : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             playerReady = false;
+            playerMove.Epopup.SetActive(false);
         }
 
        
