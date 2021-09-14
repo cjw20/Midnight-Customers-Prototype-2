@@ -36,7 +36,7 @@
 	* TimeManager
 
 *GameControl*
-* I don't know
+* Loads scenes
 
 *Hatch*
 * Handles hatch triggers 
@@ -58,6 +58,7 @@
 
 *Pause*
 * Pauses the game by setting Time.timeScale to 1 or 0
+* Brings up in game pause screen
 
 *PerformanceReview*
 * Handles which message to send based on the performance score
