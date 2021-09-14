@@ -28,8 +28,9 @@ public class StockingItem : MonoBehaviour
         
         
     }
-    private void OnTriggerEnter2D(Collider2D other)
+    /* private void OnTriggerEnter2D(Collider2D other)
     {
+
         if(other.tag == "Shelf" && !other.gameObject.GetComponent<Shelf>().stocked)
         {
             shelved = true;
@@ -40,7 +41,23 @@ public class StockingItem : MonoBehaviour
             //compare id with shelf id to see if correct item was placed. Affects preformance review?
         }
     }
+    */
 
 
-   
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Shelf") && !collision.gameObject.GetComponent<Shelf>().stocked)
+        {
+            shelved = true;
+            Destroy(GetComponent<ClickDrag>()); //removes ability for player to move item?
+            this.transform.position = collision.gameObject.GetComponent<Shelf>().target.position;
+            collision.gameObject.GetComponent<Shelf>().stocked = true;
+            stockingGame.ShelfItem();
+            Debug.Log(">>>");
+            //compare id with shelf id to see if correct item was placed. Affects preformance review?
+        }
+    }
+
+
+
 }
