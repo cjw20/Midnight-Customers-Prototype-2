@@ -5,6 +5,7 @@ using UnityEngine;
 public class Pause : MonoBehaviour
 {
     public bool paused;
+    [SerializeField] GameObject pauseScreen;
 
     private void Start()
     {
@@ -28,11 +29,13 @@ public class Pause : MonoBehaviour
         {
             paused = true;
             Time.timeScale = 0;
+            pauseScreen.SetActive(true);
         }
         else
         {
             paused = false;
             Time.timeScale = 1;
+            pauseScreen.SetActive(false);
         }
 
 

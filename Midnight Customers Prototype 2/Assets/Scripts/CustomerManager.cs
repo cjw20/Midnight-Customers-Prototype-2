@@ -16,6 +16,7 @@ public class CustomerManager : MonoBehaviour
     List<GameObject> customersInStore = new List<GameObject>();
     bool spawning;
     
+    /*
     void Awake()
     {
         if (customerManager == null)
@@ -28,6 +29,7 @@ public class CustomerManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    */
     void Start()
     {
         spawning = true;

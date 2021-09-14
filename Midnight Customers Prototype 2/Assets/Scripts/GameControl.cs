@@ -2,12 +2,13 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameControl : MonoBehaviour
 {
     public static GameControl control;
 
-    
+    /*
     void Awake()
     {
         if (control == null)
@@ -19,6 +20,14 @@ public class GameControl : MonoBehaviour
         {
             Destroy(gameObject);  
         }
+    }
+    */
+
+
+
+    public void LoadScene(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
     }
 
 
