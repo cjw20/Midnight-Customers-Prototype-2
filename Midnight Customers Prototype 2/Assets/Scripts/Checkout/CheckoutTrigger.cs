@@ -49,6 +49,7 @@ public class CheckoutTrigger : MonoBehaviour
         {
             playerReady = true;
             playerMove = collision.gameObject.GetComponent<PlayerMovement>();
+            playerMove.Epopup.SetActive(true);
         }
 
         if (collision.CompareTag("Customer"))
@@ -64,6 +65,7 @@ public class CheckoutTrigger : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             playerReady = false;
+            playerMove.Epopup.SetActive(false);
         }
 
         if (collision.CompareTag("Customer"))

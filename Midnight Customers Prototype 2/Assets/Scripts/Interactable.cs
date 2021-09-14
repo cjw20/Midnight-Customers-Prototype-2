@@ -34,6 +34,7 @@ public class Interactable : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             inRange = true;
+            collision.gameObject.GetComponent<PlayerMovement>().Qpopup.SetActive(true);
         }
     }
 
@@ -42,6 +43,7 @@ public class Interactable : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             inRange = false;
+            collision.gameObject.GetComponent<PlayerMovement>().Qpopup.SetActive(false);
         }
     }
 
