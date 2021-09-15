@@ -7737,6 +7737,8 @@ MonoBehaviour:
   countdownSlider: {fileID: 505964449}
   buttonOffset: 90
   checkoutManager: {fileID: 10691447}
+  playerDialoguePanel: {fileID: 1976128150}
+  countdownBar: {fileID: 505964447}
 --- !u!1 &1335903331
 GameObject:
   m_ObjectHideFlags: 0

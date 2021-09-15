@@ -22,6 +22,9 @@ public class DialoguePlayer : MonoBehaviour
 
     public CheckoutManager checkoutManager;
     Coroutine lastCourutine;
+    //Dependent on editor references being set to children
+    public GameObject playerDialoguePanel;
+    public GameObject countdownBar;
 
     private void OnEnable()
     {
@@ -33,6 +36,8 @@ public class DialoguePlayer : MonoBehaviour
         dialogue = convo;
         //do this after loading the convo?
         var narrativeData = dialogue.NodeLinks.First(); //Entrypoint node
+        playerDialoguePanel.SetActive(true);
+        countdownBar.SetActive(true);
         ProceedToNarrative(narrativeData.TargetNodeGuid);
         
 
@@ -101,7 +106,6 @@ public class DialoguePlayer : MonoBehaviour
         foreach (var choice in choices)
         {
             
-            
             if(ProcessProperties(choice.PortName) != "...")
             {
                 var button = Instantiate(choicePrefab, buttonContainer);
@@ -121,7 +125,7 @@ public class DialoguePlayer : MonoBehaviour
             }
         }
 
-        if (buttonNumber == 0)
+        if (buttonNumber == 0) //inert? tests with Debug.Log nested inside never got called
         {
             //hide dialogue window?
             checkoutManager.EndDialogue(0);
@@ -140,8 +144,12 @@ public class DialoguePlayer : MonoBehaviour
 
     IEnumerator TypeSentence(string sentence, string narrativeDataGUID) 
     {
+        //This is how the game knows when a conversation ends! The ending nodes MUST begin with + or -
         if(sentence.Substring(0,1) == "+" || sentence.Substring(0, 1) == "-")
         {
+            //May cause issues down the line if there are relationship changes mid conversation or starts with above characters
+            playerDialoguePanel.SetActive(false);
+            countdownBar.SetActive(false);
             int relationshipChange = int.Parse(sentence); //gets change value from string. May need + / - extra
             
             if(sentence.Substring(0,1) == "-")
@@ -149,7 +157,7 @@ public class DialoguePlayer : MonoBehaviour
                 relationshipChange *= -1; //may not need this if parse recognizes negative
             }
             yield return new WaitForSeconds(0.5f); //makes dialogue not end right away
-            checkoutManager.EndDialogue(relationshipChange);
+            checkoutManager.EndDialogue(relationshipChange); //This is what ends the conversation
             //add or subtract characters relationship score
             yield break;
         }
