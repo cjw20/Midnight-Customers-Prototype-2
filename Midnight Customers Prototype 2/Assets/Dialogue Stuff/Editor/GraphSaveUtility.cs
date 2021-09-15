@@ -64,7 +64,7 @@ public class GraphSaveUtility
 
         if(_containerCache == null)
         {
-            EditorUtility.DisplayDialog("File Not Found", "File doesn't exist dumbshit!", "sorry :(");
+            EditorUtility.DisplayDialog("File Not Found", "File doesn't exist! \nMake sure the file is contained within Assets/Resources \n Case Sensitive \n no quotes!", "sorry :(");
             return;
         }
 
