@@ -127,6 +127,7 @@ public class CheckoutManager : MonoBehaviour
     }
     public void TakeMoney()
     {
+        soundManager.PlayCashRegisterSound();
         customerPayed = true;
         priceText.text = "PAID";
         EndCheckout();
