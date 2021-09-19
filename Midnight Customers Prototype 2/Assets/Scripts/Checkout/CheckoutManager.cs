@@ -142,6 +142,7 @@ public class CheckoutManager : MonoBehaviour
 
     public void PutAwayItem(bool scanned, float price, bool needsID)
     {
+        soundManager.PlayDrawerSound();
         if (scanned)
         {
             //refund price
