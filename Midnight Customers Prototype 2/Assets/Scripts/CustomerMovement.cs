@@ -5,6 +5,7 @@ using UnityEngine;
 public class CustomerMovement : MonoBehaviour
 {
     CustomerManager customerManager;
+    SoundManager soundManager;
 
     NavMeshAgent2D agent;
 
@@ -22,14 +23,19 @@ public class CustomerMovement : MonoBehaviour
 
     public bool hasCheckedOut = false; //set to true after checkout minigame completed
 
+    private void Awake()
+    {
+        soundManager = GameObject.Find("Sound Manager").GetComponent<SoundManager>();
+    }
+
     void Start()
     {
-        
         //GoToNextPoint();
     }
 
     public void EnterStore()
     {
+        soundManager.PlayDoorbellSound();
         customerManager = FindObjectOfType<CustomerManager>();
         agent = GetComponent<NavMeshAgent2D>();
         GoToNextPoint();
@@ -105,5 +111,6 @@ public class CustomerMovement : MonoBehaviour
     {
         destination = 0; //resets customers planned path
         customerManager.CustomerExit(this.gameObject);
+        soundManager.PlayDoorbellSound();
     }
 }

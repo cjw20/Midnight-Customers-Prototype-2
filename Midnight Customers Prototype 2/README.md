@@ -29,6 +29,12 @@
 	* CustomerMovement
 	* Itself?
 
+*CustomerMovement*
+* Handles customer movement*
+* Dependencies
+    * CustomerManager
+    * SoundManager
+
 *Fade*
 * Handles fade to black at day transition
 * Dependencies

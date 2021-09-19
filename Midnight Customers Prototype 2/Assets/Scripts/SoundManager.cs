@@ -12,6 +12,7 @@ public class SoundManager : MonoBehaviour
     [SerializeField] AudioSource[] humanFootStepSound;
     [SerializeField] AudioSource cashRegisterSound;
     [SerializeField] AudioSource drawerSound;
+    [SerializeField] AudioSource doorbell;
 
     // Start is called before the first frame update
     void Start()
@@ -65,5 +66,10 @@ public class SoundManager : MonoBehaviour
     public void PlayDrawerSound()
     {
         drawerSound.Play();
+    }
+
+    public void PlayDoorbellSound()
+    {
+        doorbell.Play();
     }
 }
