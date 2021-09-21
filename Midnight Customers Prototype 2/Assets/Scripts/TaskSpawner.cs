@@ -23,6 +23,8 @@ public class TaskSpawner : MonoBehaviour
         List<int> usedSpawns = new List<int>(); //clears used spawns for tasks
 
         //spawn 1-2 of each task each day
+
+        //eventally make it so tasks spawn throughout day instead of all at once
         int random = Random.Range(1, 2);
         SpawnMopTask(random);
         random = Random.Range(1, 2); 
