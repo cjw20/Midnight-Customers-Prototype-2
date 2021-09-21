@@ -329,6 +329,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraPosition: {fileID: 519420032}
+  taskSpawner: {fileID: 1927739306}
 --- !u!1 &24604258
 GameObject:
   m_ObjectHideFlags: 0

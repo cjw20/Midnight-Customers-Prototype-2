@@ -37,6 +37,7 @@ public class TaskSpawner : MonoBehaviour
             GameObject task = Instantiate(mopTrigger, mopSpawns[random].transform);
             tasksInStore.Add(task);
             usedSpawns.Add(random);
+            unfinishedTasks++;
             random = Random.Range(0, mopSpawns.Count);
 
             int j = -1;
@@ -69,6 +70,7 @@ public class TaskSpawner : MonoBehaviour
             GameObject task = Instantiate(shelfTrigger, shelfSpawns[random]);
             tasksInStore.Add(task);
             usedSpawns.Add(random);
+            unfinishedTasks++;
             random = Random.Range(0, shelfSpawns.Count);
 
             int j = -1;
@@ -88,5 +90,15 @@ public class TaskSpawner : MonoBehaviour
                 //probably should find different way to do this later
             }
         }
+    }
+
+    public void ClearTasks()
+    {
+
+        foreach(GameObject task in tasksInStore)
+        {
+            Destroy(task);
+        }
+        tasksInStore.Clear();
     }
 }

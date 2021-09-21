@@ -7,6 +7,8 @@ public class MiniGameControl : MonoBehaviour
     public Transform cameraPosition;
     MiniGameTrigger currentTrigger;
 
+    [SerializeField] TaskSpawner taskSpawner;
+
     GameObject currentGame;
    
 
@@ -19,7 +21,7 @@ public class MiniGameControl : MonoBehaviour
     public void EndMiniGame()
     {
         currentTrigger.EndMiniGame();
-        
+        taskSpawner.unfinishedTasks--; 
         currentGame = null;
         
     }

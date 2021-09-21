@@ -103,6 +103,8 @@ public class TimeManager : MonoBehaviour
         //check if in checkout or task. wait till finished
         blackScreen.SetActive(true);
         toBlack.FadeIn(fadeDuration);
+        taskSpawner.ClearTasks(); //get penalties from unfinished tasks
+        review.dayPenaltyPoints += taskSpawner.unfinishedTasks;
         review.NewDay(); //tallys up penalties
         //move player, stop customer spawns etc. new tasks
         yield return new WaitForSeconds(fadeDuration + 2);
@@ -113,6 +115,7 @@ public class TimeManager : MonoBehaviour
         UpdateText();
         toBlack.FadeOut(fadeDuration);
         taskSpawner.NewDayTasks();
+        
         storyEvent.DayEvents(day); //loads any events for coming day
         yield return new WaitForSeconds(fadeDuration + 2);
         blackScreen.SetActive(false);
