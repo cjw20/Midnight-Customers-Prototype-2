@@ -85,10 +85,11 @@ MonoBehaviour:
     Position: {x: 274.4, y: 186.4}
   - Guid: 895ff1b6-48a8-4111-91cd-b6bf08f3fcc9
     DialogueText: Of course, sugar. I'm just happy y'all finally have this again.
-      You have no idea how long it's been.
+      You have no idea how long it's been. Missy just eats this stuff right up.
     Position: {x: 783.2, y: 203.2}
   - Guid: 7a240708-c9e1-4246-b44f-187746eef29a
     DialogueText: Sorry, sugar, I'm just so gosh darn y'all finally have this again.
+      Missy just eats this stuff right up.
     Position: {x: 789.6, y: 376.80002}
   - Guid: 9ba8ad2a-9ed5-49f5-8d42-bd9eb833f0fa
     DialogueText: For sure, hon. Missy absolutely loves this stuff!
@@ -97,7 +98,7 @@ MonoBehaviour:
     DialogueText: Me too, hon, they're just so gosh darn cute.
     Position: {x: 1504, y: 202.4}
   - Guid: 903106ed-8bb8-405b-a9dd-67e8bccc437b
-    DialogueText: Yes siree bob!
+    DialogueText: Yes siree bob! Missy just eats this stuff right up.
     Position: {x: 779.2, y: 42.4}
   - Guid: ce20c72a-d04d-4612-9a68-e9ae0254d6c7
     DialogueText: Missy's gonna be so happy when she sees this!
