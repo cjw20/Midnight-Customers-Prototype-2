@@ -13986,11 +13986,11 @@ PrefabInstance:
     - target: {fileID: 5642382787059048421, guid: 0c385362111dbf04cbbe979bb5f2d605, type: 3}
       propertyPath: conversations.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: 9cb02a7b3b1959c4dacee83ac4f8c5a8, type: 2}
+      objectReference: {fileID: 11400000, guid: 948591fb641a9914ea314a0f7e88098c, type: 2}
     - target: {fileID: 5642382787059048421, guid: 0c385362111dbf04cbbe979bb5f2d605, type: 3}
       propertyPath: conversations.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: 9cb02a7b3b1959c4dacee83ac4f8c5a8, type: 2}
+      objectReference: {fileID: 11400000, guid: 948591fb641a9914ea314a0f7e88098c, type: 2}
     - target: {fileID: 5642382787059048441, guid: 0c385362111dbf04cbbe979bb5f2d605, type: 3}
       propertyPath: exit
       value: 
@@ -14083,11 +14083,11 @@ PrefabInstance:
     - target: {fileID: 2086022073797734984, guid: d52477f69afa3d04ba8c39de28ca629d, type: 3}
       propertyPath: conversations.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: 0bd7cc05aa31f3647931a363b2ab9c98, type: 2}
+      objectReference: {fileID: 11400000, guid: 9690f172a6c255649bc92d01cec2bc95, type: 2}
     - target: {fileID: 2086022073797734984, guid: d52477f69afa3d04ba8c39de28ca629d, type: 3}
       propertyPath: conversations.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: 0bd7cc05aa31f3647931a363b2ab9c98, type: 2}
+      objectReference: {fileID: 11400000, guid: 9690f172a6c255649bc92d01cec2bc95, type: 2}
     - target: {fileID: 2086022073797734995, guid: d52477f69afa3d04ba8c39de28ca629d, type: 3}
       propertyPath: m_Name
       value: Human2
