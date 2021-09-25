@@ -8,13 +8,16 @@ public class ClickDrag : MonoBehaviour
     float startPosX;
     float startPosY;
     float startPosZ;
-    // Start is called before the first frame update
+    SpriteRenderer sprite;
     void Start()
     {
         startPosZ = this.gameObject.transform.position.z;
+        if(gameObject.TryGetComponent(out SpriteRenderer reference)){
+            sprite = reference; 
+        }
+
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (isHeld == true)
@@ -38,10 +41,19 @@ public class ClickDrag : MonoBehaviour
         startPosY = mousePos.y - this.transform.localPosition.y; //keeps mop from jumping around when picking it up
 
         isHeld = true;
+        sprite.color = new Color(sprite.color.r, sprite.color.g, sprite.color.b, 1f);
     }
 
     private void OnMouseUp()
     {
         isHeld = false;
+    }
+
+    void OnMouseOver(){
+        if (!isHeld) sprite.color = new Color(sprite.color.r, sprite.color.g, sprite.color.b, 0.5f);
+    }
+
+    void OnMouseExit(){
+        if (!isHeld) sprite.color = new Color(sprite.color.r, sprite.color.g, sprite.color.b, 1f);
     }
 }
