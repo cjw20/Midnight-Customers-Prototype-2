@@ -20,6 +20,8 @@ public class CustomerInfo : MonoBehaviour
     public bool hasValidID; //for purchasing items that require ID
 
 
+    public int[] moodMilestones; //how to segment mood timer (100 max, 0 min) timer counts down from 100
+
     // Start is called before the first frame update
     void Start()
     {
