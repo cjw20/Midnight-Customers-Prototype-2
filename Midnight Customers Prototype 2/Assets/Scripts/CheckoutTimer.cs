@@ -56,6 +56,7 @@ public class CheckoutTimer : MonoBehaviour
                         }
 
                         ResetTimer();
+                        return;
                         //leave!
                     }
                 }
