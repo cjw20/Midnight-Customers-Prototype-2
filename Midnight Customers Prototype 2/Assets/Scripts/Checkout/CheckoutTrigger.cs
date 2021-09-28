@@ -34,6 +34,7 @@ public class CheckoutTrigger : MonoBehaviour
                 checkoutGame.SetActive(true);
                 checkoutManager.StartCheckout(customerInfo);
                 checkoutTimer.inCheckout = true; //starts updating timer
+                checkoutTimer.UpdateValue(-checkoutTimer.timePassed); //has ui reflect time customer spent waiting before player showed up
                 
             }
         } 
@@ -43,7 +44,7 @@ public class CheckoutTrigger : MonoBehaviour
     {
         playerMove.moveable = true;
         inCheckout = false;
-
+        checkoutTimer.ResetTimer();
     }
    
 

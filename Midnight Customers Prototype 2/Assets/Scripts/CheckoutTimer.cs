@@ -44,10 +44,13 @@ public class CheckoutTimer : MonoBehaviour
 
             if (inCheckout)
             {
-                slider.value -= timePassed;
+                slider.value -= Time.deltaTime * scale;
             }
         }
     }
+
+
+    
 
     public void StartTimer(CustomerInfo info)
     {
@@ -67,7 +70,11 @@ public class CheckoutTimer : MonoBehaviour
         slider.value = maxValue;
     }
 
-
+    public void UpdateValue(float change)
+    {
+        slider.value += change;
+        //for use of changing value up or down if action make customer happy/unhappy
+    }
     public void ResetTimer()
     {
         timePassed = 0;
