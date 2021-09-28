@@ -1697,8 +1697,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isRunning: 0
+  inCheckout: 0
   slider: {fileID: 1954433555}
   timePassed: 0
+  scale: 0
 --- !u!4 &282933962
 Transform:
   m_ObjectHideFlags: 0
@@ -12334,6 +12336,7 @@ MonoBehaviour:
   playerReady: 0
   customerReady: 0
   checkoutGame: {fileID: 10691445}
+  checkoutTimer: {fileID: 282933961}
   customer: {fileID: 0}
   customerInfo: {fileID: 0}
   inCheckout: 0

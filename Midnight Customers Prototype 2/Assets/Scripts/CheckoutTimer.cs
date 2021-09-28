@@ -15,6 +15,8 @@ public class CheckoutTimer : MonoBehaviour
 
     public Slider slider;    
     public float timePassed;
+
+    public float scale; //affects how quickly timer counts down
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +28,7 @@ public class CheckoutTimer : MonoBehaviour
     {
         if (isRunning)
         {
-            timePassed += Time.deltaTime;
+            timePassed += Time.deltaTime * scale;
 
             if(maxValue - timePassed <= segments[currentMilestone])
             {

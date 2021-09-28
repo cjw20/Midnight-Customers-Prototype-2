@@ -8,7 +8,7 @@ public class CheckoutTrigger : MonoBehaviour
     public bool customerReady; //true when customer is standing in front of register, ready to check out
     public GameObject checkoutGame;
     CheckoutManager checkoutManager;
-    CheckoutTimer checkoutTimer;
+    [SerializeField] CheckoutTimer checkoutTimer;
 
     public GameObject customer; //customer standing in front of checkout
     public CustomerInfo customerInfo;
@@ -18,7 +18,7 @@ public class CheckoutTrigger : MonoBehaviour
     void Start()
     {
         checkoutManager = checkoutGame.GetComponent<CheckoutManager>(); //may not need this part later
-        checkoutTimer = checkoutGame.GetComponent<CheckoutTimer>();
+       
 
     }
 
