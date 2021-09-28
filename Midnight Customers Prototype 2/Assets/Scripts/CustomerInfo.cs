@@ -22,6 +22,8 @@ public class CustomerInfo : MonoBehaviour
 
     public int[] moodMilestones; //how to segment mood timer (100 max, 0 min) timer counts down from 100
 
+    public bool essential; //set to true if customer wont leave when timer runs out
+
     // Start is called before the first frame update
     void Start()
     {

@@ -199,6 +199,36 @@ public class CheckoutManager : MonoBehaviour
 
     }
 
+
+    public void GiveUp()
+    {
+
+        //for when customer leaves early
+
+        checkoutTrigger.EndCheckout();
+        checkoutTrigger.customerInfo.GetComponent<CustomerMovement>().FinishedCheckout();
+
+        dialogueFinished = false;
+        customerPayed = false;
+
+        lastWeight = 3; //resets for next bagging
+        totalPrice = 0;
+
+        if (needsIDCheck)
+        {
+            penaltyPoints++;
+            //forgot to check id
+        }
+        review.dayPenaltyPoints += penaltyPoints; //sends penalty points to performance review and recents
+        penaltyPoints = 0;
+
+        needsIDCheck = false;
+        
+        //will need to reset dialogue and items!
+
+        this.gameObject.SetActive(false);
+    }
+
     void DisplayWeight(int weight)
     {
         var weightCharacter = weight switch

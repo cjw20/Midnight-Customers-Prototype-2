@@ -9,18 +9,23 @@ public class CheckoutTimer : MonoBehaviour
     public bool isRunning; //true when timer is active
     public bool inCheckout; //true when checkout open, (update acutal ui element)
     int[] segments;
+    CustomerInfo currentCustomer;
 
     int maxValue; //value timer starts at
     int currentMilestone; //index of array for most recently passed milestone 
 
-    public Slider slider;    
+    public Slider slider;
     public float timePassed;
 
     public float scale; //affects how quickly timer counts down
+
+    [SerializeField]  CheckoutManager checkoutManager;
+
     // Start is called before the first frame update
     void Start()
     {
         
+
     }
 
     // Update is called once per frame
@@ -38,7 +43,21 @@ public class CheckoutTimer : MonoBehaviour
                 if(currentMilestone < 0)
                 {
                     currentMilestone = 0; //keeps game from breaking
-                    //customer leaves if non essential?
+                    if (!currentCustomer.essential)
+                    {
+                        if (inCheckout)
+                        {
+                            checkoutManager.GiveUp();
+                        }
+
+                        else
+                        {
+                            currentCustomer.gameObject.GetComponent<CustomerMovement>().FinishedCheckout(); //tells customer to leave checkout area. may need to revert conversation progress?
+                        }
+
+                        ResetTimer();
+                        //leave!
+                    }
                 }
             }
 
@@ -56,6 +75,7 @@ public class CheckoutTimer : MonoBehaviour
     {
         isRunning = true;
         segments = info.moodMilestones;
+        currentCustomer = info;
         maxValue = segments.Max(); //gets highest value from array
 
         SetValues();
