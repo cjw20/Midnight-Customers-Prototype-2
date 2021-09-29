@@ -1,0 +1,109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
+  m_Name: Tutorial-Normie
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: fbf35b82-af25-4880-bff1-0b02fa60cd9b
+    PortName: Next
+    TargetNodeGuid: 297ba504-f28e-4f74-89dd-5e7493582e08
+  - BaseNodeGuid: 297ba504-f28e-4f74-89dd-5e7493582e08
+    PortName: It does look pretty old.
+    TargetNodeGuid: a3e727b1-1ad3-4f1b-a657-f45979a92cc5
+  - BaseNodeGuid: 297ba504-f28e-4f74-89dd-5e7493582e08
+    PortName: What do you mean?
+    TargetNodeGuid: f19b1491-ac71-4724-b1c7-1db2c03b47a2
+  - BaseNodeGuid: 297ba504-f28e-4f74-89dd-5e7493582e08
+    PortName: ...
+    TargetNodeGuid: f19b1491-ac71-4724-b1c7-1db2c03b47a2
+  - BaseNodeGuid: f19b1491-ac71-4724-b1c7-1db2c03b47a2
+    PortName: We all have to make money somehow.
+    TargetNodeGuid: 73eedaf4-ed0b-4eae-a08c-a5daff9f2e54
+  - BaseNodeGuid: f19b1491-ac71-4724-b1c7-1db2c03b47a2
+    PortName: Now I definitely want to know.
+    TargetNodeGuid: d4dcea0f-1bbf-421c-8565-c57be824a5cf
+  - BaseNodeGuid: f19b1491-ac71-4724-b1c7-1db2c03b47a2
+    PortName: ...
+    TargetNodeGuid: d4dcea0f-1bbf-421c-8565-c57be824a5cf
+  - BaseNodeGuid: c740520f-5b04-4498-b1c6-f8e98e2bff98
+    PortName: I'll do my best.
+    TargetNodeGuid: c42625dd-e414-44cf-8eb2-5f40722d7ab7
+  - BaseNodeGuid: c740520f-5b04-4498-b1c6-f8e98e2bff98
+    PortName: Why? Was there an issue finding people?
+    TargetNodeGuid: d4dcea0f-1bbf-421c-8565-c57be824a5cf
+  - BaseNodeGuid: c740520f-5b04-4498-b1c6-f8e98e2bff98
+    PortName: ...
+    TargetNodeGuid: d4dcea0f-1bbf-421c-8565-c57be824a5cf
+  - BaseNodeGuid: a3e727b1-1ad3-4f1b-a657-f45979a92cc5
+    PortName: I can definitely tell.
+    TargetNodeGuid: c740520f-5b04-4498-b1c6-f8e98e2bff98
+  - BaseNodeGuid: a3e727b1-1ad3-4f1b-a657-f45979a92cc5
+    PortName: Like what?
+    TargetNodeGuid: d4dcea0f-1bbf-421c-8565-c57be824a5cf
+  - BaseNodeGuid: a3e727b1-1ad3-4f1b-a657-f45979a92cc5
+    PortName: ...
+    TargetNodeGuid: d4dcea0f-1bbf-421c-8565-c57be824a5cf
+  - BaseNodeGuid: 73eedaf4-ed0b-4eae-a08c-a5daff9f2e54
+    PortName: Have a good night!
+    TargetNodeGuid: f317b1ec-5dea-4b4c-a510-9814d750609e
+  - BaseNodeGuid: d4dcea0f-1bbf-421c-8565-c57be824a5cf
+    PortName: Have a good night!
+    TargetNodeGuid: f317b1ec-5dea-4b4c-a510-9814d750609e
+  - BaseNodeGuid: c42625dd-e414-44cf-8eb2-5f40722d7ab7
+    PortName: Have a good night!
+    TargetNodeGuid: f317b1ec-5dea-4b4c-a510-9814d750609e
+  - BaseNodeGuid: c42625dd-e414-44cf-8eb2-5f40722d7ab7
+    PortName: Uh...Okay then. Bye.
+    TargetNodeGuid: f317b1ec-5dea-4b4c-a510-9814d750609e
+  - BaseNodeGuid: c42625dd-e414-44cf-8eb2-5f40722d7ab7
+    PortName: ...
+    TargetNodeGuid: f317b1ec-5dea-4b4c-a510-9814d750609e
+  - BaseNodeGuid: d4dcea0f-1bbf-421c-8565-c57be824a5cf
+    PortName: Uh...Okay then. Bye.
+    TargetNodeGuid: f317b1ec-5dea-4b4c-a510-9814d750609e
+  - BaseNodeGuid: d4dcea0f-1bbf-421c-8565-c57be824a5cf
+    PortName: ...
+    TargetNodeGuid: f317b1ec-5dea-4b4c-a510-9814d750609e
+  - BaseNodeGuid: 73eedaf4-ed0b-4eae-a08c-a5daff9f2e54
+    PortName: Uh...Okay then. Bye.
+    TargetNodeGuid: f317b1ec-5dea-4b4c-a510-9814d750609e
+  - BaseNodeGuid: 73eedaf4-ed0b-4eae-a08c-a5daff9f2e54
+    PortName: ...
+    TargetNodeGuid: f317b1ec-5dea-4b4c-a510-9814d750609e
+  DialogueNodeData:
+  - Guid: 297ba504-f28e-4f74-89dd-5e7493582e08
+    DialogueText: I had no idea this place was still here.
+    Position: {x: 259, y: 285}
+  - Guid: f19b1491-ac71-4724-b1c7-1db2c03b47a2
+    DialogueText: Ah it's not important. I appreciate you comin' into work.
+    Position: {x: 824, y: 489}
+  - Guid: c740520f-5b04-4498-b1c6-f8e98e2bff98
+    DialogueText: It's a good thing they finally found someone to keep this place
+      in shape again.
+    Position: {x: 1537, y: -187}
+  - Guid: d4dcea0f-1bbf-421c-8565-c57be824a5cf
+    DialogueText: Ah don't worry about it. I'm sure you'll be fine. Take care!
+    Position: {x: 2455, y: -36}
+  - Guid: f317b1ec-5dea-4b4c-a510-9814d750609e
+    DialogueText: +0
+    Position: {x: 3271, y: -42}
+  - Guid: 73eedaf4-ed0b-4eae-a08c-a5daff9f2e54
+    DialogueText: Haha very true. You take care now!
+    Position: {x: 2463, y: 233}
+  - Guid: c42625dd-e414-44cf-8eb2-5f40722d7ab7
+    DialogueText: I gotta run. Take care!
+    Position: {x: 2469, y: -223}
+  - Guid: a3e727b1-1ad3-4f1b-a657-f45979a92cc5
+    DialogueText: Haha. You got that right. This place has been through a lot.
+    Position: {x: 864, y: 110}
+  ExposedProperties: []
+  CommentBlockData: []
