@@ -1,0 +1,118 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
+  m_Name: Yith-Intro
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: d3b11bdf-e5b1-46a7-ab48-d987f12debc2
+    PortName: Next
+    TargetNodeGuid: 5172c5ac-29ff-499c-b562-5254a562677b
+  - BaseNodeGuid: 5172c5ac-29ff-499c-b562-5254a562677b
+    PortName: I hope you don't mean me.
+    TargetNodeGuid: b0d1ff6b-2688-4e91-8623-6d60ffd9cfb5
+  - BaseNodeGuid: 5172c5ac-29ff-499c-b562-5254a562677b
+    PortName: Excuse me?
+    TargetNodeGuid: 81ca7c71-5d9c-401b-af49-c4c8ff1bd030
+  - BaseNodeGuid: b0d1ff6b-2688-4e91-8623-6d60ffd9cfb5
+    PortName: It's an interesting town.
+    TargetNodeGuid: d3c4fee3-8a04-4511-aaaa-6fa96e333753
+  - BaseNodeGuid: 81ca7c71-5d9c-401b-af49-c4c8ff1bd030
+    PortName: It's an interesting town.
+    TargetNodeGuid: d3c4fee3-8a04-4511-aaaa-6fa96e333753
+  - BaseNodeGuid: b0d1ff6b-2688-4e91-8623-6d60ffd9cfb5
+    PortName: What do you mean?
+    TargetNodeGuid: b25fe226-363b-4d60-a947-38a82ca92147
+  - BaseNodeGuid: 81ca7c71-5d9c-401b-af49-c4c8ff1bd030
+    PortName: What do you mean?
+    TargetNodeGuid: b25fe226-363b-4d60-a947-38a82ca92147
+  - BaseNodeGuid: d3c4fee3-8a04-4511-aaaa-6fa96e333753
+    PortName: My story?
+    TargetNodeGuid: b25fe226-363b-4d60-a947-38a82ca92147
+  - BaseNodeGuid: d3c4fee3-8a04-4511-aaaa-6fa96e333753
+    PortName: Well, I just moved here.
+    TargetNodeGuid: 15f2577b-36ba-47a1-aeb7-aea6f3e2e743
+  - BaseNodeGuid: 15f2577b-36ba-47a1-aeb7-aea6f3e2e743
+    PortName: I don't really care about other people's business.
+    TargetNodeGuid: 191d97cc-9040-4727-a778-f44d64f49981
+  - BaseNodeGuid: b25fe226-363b-4d60-a947-38a82ca92147
+    PortName: I don't really cvare about other people's business.
+    TargetNodeGuid: 191d97cc-9040-4727-a778-f44d64f49981
+  - BaseNodeGuid: 15f2577b-36ba-47a1-aeb7-aea6f3e2e743
+    PortName: Huh, I never thought of it that way.
+    TargetNodeGuid: 470d1287-8c12-4b61-940e-6a932efb1120
+  - BaseNodeGuid: b25fe226-363b-4d60-a947-38a82ca92147
+    PortName: Huh, I never thought of it that way.
+    TargetNodeGuid: 470d1287-8c12-4b61-940e-6a932efb1120
+  - BaseNodeGuid: 191d97cc-9040-4727-a778-f44d64f49981
+    PortName: If you say so. I'll just keep to myself.
+    TargetNodeGuid: 9457ee8c-4351-4b3a-8896-ad7dffb7f331
+  - BaseNodeGuid: 470d1287-8c12-4b61-940e-6a932efb1120
+    PortName: If you say so. I'll just keep to myself.
+    TargetNodeGuid: 9457ee8c-4351-4b3a-8896-ad7dffb7f331
+  - BaseNodeGuid: 191d97cc-9040-4727-a778-f44d64f49981
+    PortName: That's an interesting way to look at things.
+    TargetNodeGuid: 8233a11b-4121-4bee-8e51-f3b4c71374e1
+  - BaseNodeGuid: 470d1287-8c12-4b61-940e-6a932efb1120
+    PortName: That's an interesting way to look at things.
+    TargetNodeGuid: 8233a11b-4121-4bee-8e51-f3b4c71374e1
+  - BaseNodeGuid: 9457ee8c-4351-4b3a-8896-ad7dffb7f331
+    PortName: Okay then. See ya.
+    TargetNodeGuid: 65a84b93-1023-4970-895d-ef070830e39d
+  - BaseNodeGuid: 9457ee8c-4351-4b3a-8896-ad7dffb7f331
+    PortName: Have a good night!
+    TargetNodeGuid: 65a84b93-1023-4970-895d-ef070830e39d
+  - BaseNodeGuid: 8233a11b-4121-4bee-8e51-f3b4c71374e1
+    PortName: Okay then. See ya.
+    TargetNodeGuid: 65a84b93-1023-4970-895d-ef070830e39d
+  - BaseNodeGuid: 8233a11b-4121-4bee-8e51-f3b4c71374e1
+    PortName: Have a good night!
+    TargetNodeGuid: 65a84b93-1023-4970-895d-ef070830e39d
+  DialogueNodeData:
+  - Guid: b0d1ff6b-2688-4e91-8623-6d60ffd9cfb5
+    DialogueText: Oh no, I'm sorry. I just find everyone here quite interesting.
+    Position: {x: 761, y: 56}
+  - Guid: 81ca7c71-5d9c-401b-af49-c4c8ff1bd030
+    DialogueText: Everyone here is just so...interesting.
+    Position: {x: 772, y: 245}
+  - Guid: 5172c5ac-29ff-499c-b562-5254a562677b
+    DialogueText: Hmmm, what peculiar people.
+    Position: {x: 330, y: 181}
+  - Guid: b25fe226-363b-4d60-a947-38a82ca92147
+    DialogueText: Everyone has a story and each is being written at this very moment
+      until the day that they die. That is fascinating, is it not?
+    Position: {x: 1759, y: 243}
+  - Guid: 15f2577b-36ba-47a1-aeb7-aea6f3e2e743
+    DialogueText: There is more to you than that. Everyone has a story constantly
+      being written until the day they die.
+    Position: {x: 1906, y: 30}
+  - Guid: d3c4fee3-8a04-4511-aaaa-6fa96e333753
+    DialogueText: Hmmm...what is your story?
+    Position: {x: 1473, y: 24}
+  - Guid: 470d1287-8c12-4b61-940e-6a932efb1120
+    DialogueText: It makes the world so much more enthralling. As if we live in a
+      human epic.
+    Position: {x: 2786, y: 241}
+  - Guid: 9457ee8c-4351-4b3a-8896-ad7dffb7f331
+    DialogueText: So you say. Until we meet again.
+    Position: {x: 3737, y: 63}
+  - Guid: 191d97cc-9040-4727-a778-f44d64f49981
+    DialogueText: That is a shame. It makes the world so much more enthralling. As
+      if we live in a human epic.
+    Position: {x: 2817, y: 12}
+  - Guid: 8233a11b-4121-4bee-8e51-f3b4c71374e1
+    DialogueText: It is quite so. I look forward to meeting again. Until then.
+    Position: {x: 3674, y: 275}
+  - Guid: 65a84b93-1023-4970-895d-ef070830e39d
+    DialogueText: +0
+    Position: {x: 4416, y: 194}
+  ExposedProperties: []
+  CommentBlockData: []
