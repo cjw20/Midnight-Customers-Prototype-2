@@ -119,7 +119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04ea495ee3d72804e83ef2581c5f4840, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cleanTime: 1.5
+  cleanTime: 0.5
   currentAlpha: 0
   newColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!70 &4299770359591233679
@@ -685,7 +685,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04ea495ee3d72804e83ef2581c5f4840, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cleanTime: 1.5
+  cleanTime: 0.5
   currentAlpha: 0
   newColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!70 &15640707204820530
@@ -823,7 +823,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04ea495ee3d72804e83ef2581c5f4840, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cleanTime: 1.5
+  cleanTime: 0.5
   currentAlpha: 0
   newColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!70 &1896268946257187048
