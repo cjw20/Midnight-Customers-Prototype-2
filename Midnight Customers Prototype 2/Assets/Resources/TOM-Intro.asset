@@ -1,0 +1,129 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
+  m_Name: TOM-Intro
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: 2cb47c03-101c-421b-8668-57d5f510e07d
+    PortName: Next
+    TargetNodeGuid: 3fa56d7c-7713-4b50-89b5-17ea1f83af09
+  - BaseNodeGuid: 3fa56d7c-7713-4b50-89b5-17ea1f83af09
+    PortName: ...
+    TargetNodeGuid: d1b6d614-f710-4a9e-b1cf-f812eb412bb2
+  - BaseNodeGuid: 3fa56d7c-7713-4b50-89b5-17ea1f83af09
+    PortName: How are you doing tonight?
+    TargetNodeGuid: e273c27d-af5a-4250-9125-91b07e8e5055
+  - BaseNodeGuid: 3fa56d7c-7713-4b50-89b5-17ea1f83af09
+    PortName: Hello, did you find everything alright?
+    TargetNodeGuid: 64818377-f7b2-4e8c-8bd7-955a22092237
+  - BaseNodeGuid: d1b6d614-f710-4a9e-b1cf-f812eb412bb2
+    PortName: ...
+    TargetNodeGuid: c9527b77-b8c4-409a-9846-8ab5ce552fea
+  - BaseNodeGuid: a79d54ba-9ac6-43e4-a4dd-65a973c44d72
+    PortName: ...
+    TargetNodeGuid: 6ca7b72d-c540-434b-9438-e67005063621
+  - BaseNodeGuid: e273c27d-af5a-4250-9125-91b07e8e5055
+    PortName: ...
+    TargetNodeGuid: 6ca7b72d-c540-434b-9438-e67005063621
+  - BaseNodeGuid: 64818377-f7b2-4e8c-8bd7-955a22092237
+    PortName: ...
+    TargetNodeGuid: 6ca7b72d-c540-434b-9438-e67005063621
+  - BaseNodeGuid: 64818377-f7b2-4e8c-8bd7-955a22092237
+    PortName: I'm sorry, sir.
+    TargetNodeGuid: 38ee9e4e-d38c-4b6c-97fb-fde14722dbd4
+  - BaseNodeGuid: e273c27d-af5a-4250-9125-91b07e8e5055
+    PortName: I'm sorry, sir.
+    TargetNodeGuid: 38ee9e4e-d38c-4b6c-97fb-fde14722dbd4
+  - BaseNodeGuid: a79d54ba-9ac6-43e4-a4dd-65a973c44d72
+    PortName: I'm sorry, sir.
+    TargetNodeGuid: 38ee9e4e-d38c-4b6c-97fb-fde14722dbd4
+  - BaseNodeGuid: e273c27d-af5a-4250-9125-91b07e8e5055
+    PortName: What's your problem?
+    TargetNodeGuid: bd3bad23-579f-4f02-a024-4ac4f697922e
+  - BaseNodeGuid: a79d54ba-9ac6-43e4-a4dd-65a973c44d72
+    PortName: What's your problem?
+    TargetNodeGuid: bd3bad23-579f-4f02-a024-4ac4f697922e
+  - BaseNodeGuid: 64818377-f7b2-4e8c-8bd7-955a22092237
+    PortName: What's your problem?
+    TargetNodeGuid: bd3bad23-579f-4f02-a024-4ac4f697922e
+  - BaseNodeGuid: d1b6d614-f710-4a9e-b1cf-f812eb412bb2
+    PortName: Are you ok?
+    TargetNodeGuid: a79d54ba-9ac6-43e4-a4dd-65a973c44d72
+  - BaseNodeGuid: d1b6d614-f710-4a9e-b1cf-f812eb412bb2
+    PortName: Not much for small talk, are you?
+    TargetNodeGuid: a79d54ba-9ac6-43e4-a4dd-65a973c44d72
+  - BaseNodeGuid: 38ee9e4e-d38c-4b6c-97fb-fde14722dbd4
+    PortName: Sorry. Have a good night.
+    TargetNodeGuid: f6f37b8c-1d56-4395-97f3-eb4b737cfe61
+  - BaseNodeGuid: bd3bad23-579f-4f02-a024-4ac4f697922e
+    PortName: Sorry. Have a good night.
+    TargetNodeGuid: f6f37b8c-1d56-4395-97f3-eb4b737cfe61
+  - BaseNodeGuid: 6ca7b72d-c540-434b-9438-e67005063621
+    PortName: Sorry. Have a good night.
+    TargetNodeGuid: f6f37b8c-1d56-4395-97f3-eb4b737cfe61
+  - BaseNodeGuid: 38ee9e4e-d38c-4b6c-97fb-fde14722dbd4
+    PortName: Geez, chill out! I was just being friendly.
+    TargetNodeGuid: e65a7b22-7bd7-4d01-8185-30e66c9e5b0f
+  - BaseNodeGuid: bd3bad23-579f-4f02-a024-4ac4f697922e
+    PortName: Geez, chill out! I was just being friendly.
+    TargetNodeGuid: e65a7b22-7bd7-4d01-8185-30e66c9e5b0f
+  - BaseNodeGuid: 6ca7b72d-c540-434b-9438-e67005063621
+    PortName: Geez, chill out! I was just being friendly.
+    TargetNodeGuid: e65a7b22-7bd7-4d01-8185-30e66c9e5b0f
+  - BaseNodeGuid: 38ee9e4e-d38c-4b6c-97fb-fde14722dbd4
+    PortName: ...
+    TargetNodeGuid: 82eb7d64-666f-411e-991e-7f62cab817d1
+  - BaseNodeGuid: bd3bad23-579f-4f02-a024-4ac4f697922e
+    PortName: ...
+    TargetNodeGuid: 82eb7d64-666f-411e-991e-7f62cab817d1
+  - BaseNodeGuid: 6ca7b72d-c540-434b-9438-e67005063621
+    PortName: ...
+    TargetNodeGuid: 82eb7d64-666f-411e-991e-7f62cab817d1
+  DialogueNodeData:
+  - Guid: 3fa56d7c-7713-4b50-89b5-17ea1f83af09
+    DialogueText: ...
+    Position: {x: 224.8, y: 200}
+  - Guid: c9527b77-b8c4-409a-9846-8ab5ce552fea
+    DialogueText: ...
+    Position: {x: 988.8, y: 776}
+  - Guid: a79d54ba-9ac6-43e4-a4dd-65a973c44d72
+    DialogueText: I liked you better when you kept your mouth shut.
+    Position: {x: 983.2, y: 613.60004}
+  - Guid: e273c27d-af5a-4250-9125-91b07e8e5055
+    DialogueText: Worse now that you're talking to me.
+    Position: {x: 988, y: 259.2}
+  - Guid: 64818377-f7b2-4e8c-8bd7-955a22092237
+    DialogueText: Stop talking. Your voice is annoying.
+    Position: {x: 996.8, y: -73.6}
+  - Guid: 38ee9e4e-d38c-4b6c-97fb-fde14722dbd4
+    DialogueText: Just shut up and stop wasting my time.
+    Position: {x: 1455.2, y: -71.2}
+  - Guid: bd3bad23-579f-4f02-a024-4ac4f697922e
+    DialogueText: My problem is some zit-faced clerk is talking to me.
+    Position: {x: 1456.8, y: 259.2}
+  - Guid: d1b6d614-f710-4a9e-b1cf-f812eb412bb2
+    DialogueText: ...
+    Position: {x: 624.8, y: 620}
+  - Guid: 6ca7b72d-c540-434b-9438-e67005063621
+    DialogueText: See? Was that so hard?
+    Position: {x: 1502.4, y: 616}
+  - Guid: f6f37b8c-1d56-4395-97f3-eb4b737cfe61
+    DialogueText: Don't tell me what to do.
+    Position: {x: 2023.2, y: -76}
+  - Guid: e65a7b22-7bd7-4d01-8185-30e66c9e5b0f
+    DialogueText: Next time, just keep your mouth shut.
+    Position: {x: 2027.2, y: 260}
+  - Guid: 82eb7d64-666f-411e-991e-7f62cab817d1
+    DialogueText: Finally, some goddamn quiet.
+    Position: {x: 2021.6, y: 620}
+  ExposedProperties: []
+  CommentBlockData: []
