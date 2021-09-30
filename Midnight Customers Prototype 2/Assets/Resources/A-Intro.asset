@@ -1,0 +1,117 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
+  m_Name: A-Intro
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: 30233048-696f-4e50-b92c-e3a4e4eb52a5
+    PortName: ...
+    TargetNodeGuid: eac126ec-7e72-4e48-93a7-b5bf6191b4c2
+  - BaseNodeGuid: c9c83879-01da-49ec-baca-d3c29dbce0d7
+    PortName: ...
+    TargetNodeGuid: eac126ec-7e72-4e48-93a7-b5bf6191b4c2
+  - BaseNodeGuid: e482eb58-a2dd-4676-9f55-aec8b1783efe
+    PortName: ...
+    TargetNodeGuid: eac126ec-7e72-4e48-93a7-b5bf6191b4c2
+  - BaseNodeGuid: e482eb58-a2dd-4676-9f55-aec8b1783efe
+    PortName: You two were close then?
+    TargetNodeGuid: c308d187-093d-4faa-8764-e285e5562b8e
+  - BaseNodeGuid: c9c83879-01da-49ec-baca-d3c29dbce0d7
+    PortName: You two were close then?
+    TargetNodeGuid: c308d187-093d-4faa-8764-e285e5562b8e
+  - BaseNodeGuid: 30233048-696f-4e50-b92c-e3a4e4eb52a5
+    PortName: You two were close then?
+    TargetNodeGuid: c308d187-093d-4faa-8764-e285e5562b8e
+  - BaseNodeGuid: e482eb58-a2dd-4676-9f55-aec8b1783efe
+    PortName: Were you two... You know...?
+    TargetNodeGuid: 20406388-9abb-4574-9f09-333c9cd9de72
+  - BaseNodeGuid: c9c83879-01da-49ec-baca-d3c29dbce0d7
+    PortName: Were you two... You know...?
+    TargetNodeGuid: 20406388-9abb-4574-9f09-333c9cd9de72
+  - BaseNodeGuid: 30233048-696f-4e50-b92c-e3a4e4eb52a5
+    PortName: Were you two... You know...?
+    TargetNodeGuid: 20406388-9abb-4574-9f09-333c9cd9de72
+  - BaseNodeGuid: 62b6fbf4-8f67-46ac-9fd5-e50d960bbfeb
+    PortName: ...
+    TargetNodeGuid: 30233048-696f-4e50-b92c-e3a4e4eb52a5
+  - BaseNodeGuid: 62b6fbf4-8f67-46ac-9fd5-e50d960bbfeb
+    PortName: Ouch... Sorry to disappoint.
+    TargetNodeGuid: c9c83879-01da-49ec-baca-d3c29dbce0d7
+  - BaseNodeGuid: 62b6fbf4-8f67-46ac-9fd5-e50d960bbfeb
+    PortName: What's a pity?
+    TargetNodeGuid: e482eb58-a2dd-4676-9f55-aec8b1783efe
+  - BaseNodeGuid: 20406388-9abb-4574-9f09-333c9cd9de72
+    PortName: Different how?
+    TargetNodeGuid: 3872f8b2-21f8-4993-985e-69778da17695
+  - BaseNodeGuid: c308d187-093d-4faa-8764-e285e5562b8e
+    PortName: Well, I am very sorry. Any idea where he might have gone?
+    TargetNodeGuid: 9dde9611-7d99-4264-8653-8834f276554c
+  - BaseNodeGuid: 20406388-9abb-4574-9f09-333c9cd9de72
+    PortName: Well, I am very sorry. Any idea where he might have gone?
+    TargetNodeGuid: 9dde9611-7d99-4264-8653-8834f276554c
+  - BaseNodeGuid: eac126ec-7e72-4e48-93a7-b5bf6191b4c2
+    PortName: Well, I am very sorry. Any idea where he might have gone?
+    TargetNodeGuid: 9dde9611-7d99-4264-8653-8834f276554c
+  - BaseNodeGuid: c308d187-093d-4faa-8764-e285e5562b8e
+    PortName: Different how?
+    TargetNodeGuid: 3872f8b2-21f8-4993-985e-69778da17695
+  - BaseNodeGuid: eac126ec-7e72-4e48-93a7-b5bf6191b4c2
+    PortName: Different how?
+    TargetNodeGuid: 3872f8b2-21f8-4993-985e-69778da17695
+  - BaseNodeGuid: c308d187-093d-4faa-8764-e285e5562b8e
+    PortName: ...
+    TargetNodeGuid: 9e682482-0522-46ac-981e-29629e14df61
+  - BaseNodeGuid: 20406388-9abb-4574-9f09-333c9cd9de72
+    PortName: ...
+    TargetNodeGuid: 9e682482-0522-46ac-981e-29629e14df61
+  - BaseNodeGuid: eac126ec-7e72-4e48-93a7-b5bf6191b4c2
+    PortName: ...
+    TargetNodeGuid: 9e682482-0522-46ac-981e-29629e14df61
+  DialogueNodeData:
+  - Guid: 62b6fbf4-8f67-46ac-9fd5-e50d960bbfeb
+    DialogueText: Ah, another new clerk. What a pity...
+    Position: {x: 224.8, y: 200}
+  - Guid: c9c83879-01da-49ec-baca-d3c29dbce0d7
+    DialogueText: No, no, you misunderstand. It's just that I was starting to grow
+      fond of him.
+    Position: {x: 601.6, y: 205.59999}
+  - Guid: e482eb58-a2dd-4676-9f55-aec8b1783efe
+    DialogueText: His departure. I was starting to grow fond of him.
+    Position: {x: 601.6, y: 48.000004}
+  - Guid: 30233048-696f-4e50-b92c-e3a4e4eb52a5
+    DialogueText: It's a shame, really. I was starting to grow fond of him.
+    Position: {x: 600.8, y: 357.6}
+  - Guid: c308d187-093d-4faa-8764-e285e5562b8e
+    DialogueText: No, not close, but I was rooting for him. I was hoping that this
+      time would be different.
+    Position: {x: 1176, y: 47.2}
+  - Guid: eac126ec-7e72-4e48-93a7-b5bf6191b4c2
+    DialogueText: I was foolish to think that this time would be any different.
+    Position: {x: 1173.6, y: 379.2}
+  - Guid: 20406388-9abb-4574-9f09-333c9cd9de72
+    DialogueText: You humor me. No, but I was hoping that this time would be different.
+    Position: {x: 1174.4, y: 204.8}
+  - Guid: 3872f8b2-21f8-4993-985e-69778da17695
+    DialogueText: I was hoping he would be the one to break the cycle. Perhaps that
+      will be you, instead?
+    Position: {x: 1812, y: 204.8}
+  - Guid: 9e682482-0522-46ac-981e-29629e14df61
+    DialogueText: He wasn't able to break the cycle. Perhaps you will be the one
+      to do so?
+    Position: {x: 1813.6, y: 397.6}
+  - Guid: 9dde9611-7d99-4264-8653-8834f276554c
+    DialogueText: Not the slightest. Just like the others before him, one day here
+      is here, and the next they are gone. Perhaps you will be the one to break the
+      cycle.
+    Position: {x: 1815.2, y: 49.600002}
+  ExposedProperties: []
+  CommentBlockData: []
