@@ -1,0 +1,121 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
+  m_Name: N-Drunk
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: 84ecfeac-3d6a-43ad-a8cf-d4cfdcadd676
+    PortName: Next
+    TargetNodeGuid: 6b48dad3-11c4-4713-bf55-b5caccb6425e
+  - BaseNodeGuid: 0fa0a044-63fc-420d-aff4-322a36016c36
+    PortName: Haven't you had enough for the night?
+    TargetNodeGuid: fec4af35-f7d5-44a0-b891-c9a568a765b8
+  - BaseNodeGuid: 0fa0a044-63fc-420d-aff4-322a36016c36
+    PortName: Ok... Can I see some ID?
+    TargetNodeGuid: 42e13b55-7cb1-4529-99db-69047e6ea218
+  - BaseNodeGuid: 0fa0a044-63fc-420d-aff4-322a36016c36
+    PortName: ...
+    TargetNodeGuid: 9bd4ae32-f52f-40f7-b5e9-0277c0770724
+  - BaseNodeGuid: 0c1875bf-cd35-4616-9fdd-f87e63dd4ff6
+    PortName: Ok... Can I see some ID?
+    TargetNodeGuid: 42e13b55-7cb1-4529-99db-69047e6ea218
+  - BaseNodeGuid: 0c1875bf-cd35-4616-9fdd-f87e63dd4ff6
+    PortName: ...
+    TargetNodeGuid: 9bd4ae32-f52f-40f7-b5e9-0277c0770724
+  - BaseNodeGuid: 0c1875bf-cd35-4616-9fdd-f87e63dd4ff6
+    PortName: I am not a girl.
+    TargetNodeGuid: 373ccea7-68d3-4a1a-bde3-85aebc2b0382
+  - BaseNodeGuid: 0faedefa-3208-4deb-97f6-9a9fb06ac8b4
+    PortName: Haven't you had enough for the night?
+    TargetNodeGuid: fec4af35-f7d5-44a0-b891-c9a568a765b8
+  - BaseNodeGuid: 0faedefa-3208-4deb-97f6-9a9fb06ac8b4
+    PortName: Ok... Can I see some ID?
+    TargetNodeGuid: 42e13b55-7cb1-4529-99db-69047e6ea218
+  - BaseNodeGuid: 0faedefa-3208-4deb-97f6-9a9fb06ac8b4
+    PortName: ...
+    TargetNodeGuid: 9bd4ae32-f52f-40f7-b5e9-0277c0770724
+  - BaseNodeGuid: 9bd4ae32-f52f-40f7-b5e9-0277c0770724
+    PortName: I hope not.
+    TargetNodeGuid: 3ac058d1-9582-446f-8772-e09382c08858
+  - BaseNodeGuid: 9bd4ae32-f52f-40f7-b5e9-0277c0770724
+    PortName: That is super creepy.
+    TargetNodeGuid: 3ac058d1-9582-446f-8772-e09382c08858
+  - BaseNodeGuid: 9bd4ae32-f52f-40f7-b5e9-0277c0770724
+    PortName: ...
+    TargetNodeGuid: 3ac058d1-9582-446f-8772-e09382c08858
+  - BaseNodeGuid: 42e13b55-7cb1-4529-99db-69047e6ea218
+    PortName: Thank you sir, have a good night.
+    TargetNodeGuid: 3ac058d1-9582-446f-8772-e09382c08858
+  - BaseNodeGuid: 42e13b55-7cb1-4529-99db-69047e6ea218
+    PortName: That was wierd. Get home safe.
+    TargetNodeGuid: 3ac058d1-9582-446f-8772-e09382c08858
+  - BaseNodeGuid: 42e13b55-7cb1-4529-99db-69047e6ea218
+    PortName: ...
+    TargetNodeGuid: 3ac058d1-9582-446f-8772-e09382c08858
+  - BaseNodeGuid: fec4af35-f7d5-44a0-b891-c9a568a765b8
+    PortName: Thank you sir, have a good night.
+    TargetNodeGuid: 3ac058d1-9582-446f-8772-e09382c08858
+  - BaseNodeGuid: fec4af35-f7d5-44a0-b891-c9a568a765b8
+    PortName: If there is a next time.
+    TargetNodeGuid: 3ac058d1-9582-446f-8772-e09382c08858
+  - BaseNodeGuid: fec4af35-f7d5-44a0-b891-c9a568a765b8
+    PortName: ...
+    TargetNodeGuid: 3ac058d1-9582-446f-8772-e09382c08858
+  - BaseNodeGuid: 373ccea7-68d3-4a1a-bde3-85aebc2b0382
+    PortName: I hope not.
+    TargetNodeGuid: 3ac058d1-9582-446f-8772-e09382c08858
+  - BaseNodeGuid: 373ccea7-68d3-4a1a-bde3-85aebc2b0382
+    PortName: If there is a next time.
+    TargetNodeGuid: 3ac058d1-9582-446f-8772-e09382c08858
+  - BaseNodeGuid: 373ccea7-68d3-4a1a-bde3-85aebc2b0382
+    PortName: ...
+    TargetNodeGuid: 3ac058d1-9582-446f-8772-e09382c08858
+  - BaseNodeGuid: 6b48dad3-11c4-4713-bf55-b5caccb6425e
+    PortName: ...
+    TargetNodeGuid: 0faedefa-3208-4deb-97f6-9a9fb06ac8b4
+  - BaseNodeGuid: 6b48dad3-11c4-4713-bf55-b5caccb6425e
+    PortName: Beautiful?
+    TargetNodeGuid: 0c1875bf-cd35-4616-9fdd-f87e63dd4ff6
+  - BaseNodeGuid: 6b48dad3-11c4-4713-bf55-b5caccb6425e
+    PortName: Um hello
+    TargetNodeGuid: 0fa0a044-63fc-420d-aff4-322a36016c36
+  DialogueNodeData:
+  - Guid: 9bd4ae32-f52f-40f7-b5e9-0277c0770724
+    DialogueText: You don't have to stay quiet sweetie, I won't bite.
+    Position: {x: 1137, y: 313}
+  - Guid: 42e13b55-7cb1-4529-99db-69047e6ea218
+    DialogueText: I am old enough to be your daddy, but here you go.
+    Position: {x: 1123, y: 150}
+  - Guid: fec4af35-f7d5-44a0-b891-c9a568a765b8
+    DialogueText: That's none of your business. Next time I am taking my business
+      elsewhere.
+    Position: {x: 1117, y: -34}
+  - Guid: 373ccea7-68d3-4a1a-bde3-85aebc2b0382
+    DialogueText: Sure whatever you say hun, I'll be seeing you next time.
+    Position: {x: 1128, y: 483}
+  - Guid: 3ac058d1-9582-446f-8772-e09382c08858
+    DialogueText: +0
+    Position: {x: 1780, y: 74}
+  - Guid: 0faedefa-3208-4deb-97f6-9a9fb06ac8b4
+    DialogueText: Ahhh the silent ones. I guess I'll just be taking this beer then.
+    Position: {x: 593, y: -32}
+  - Guid: 0fa0a044-63fc-420d-aff4-322a36016c36
+    DialogueText: I would like to buy this alcohol for me to drink.
+    Position: {x: 657, y: 362}
+  - Guid: 0c1875bf-cd35-4616-9fdd-f87e63dd4ff6
+    DialogueText: Yes you are ma'am. Now what say you ring up this beer.
+    Position: {x: 618, y: 177}
+  - Guid: 6b48dad3-11c4-4713-bf55-b5caccb6425e
+    DialogueText: Hello there, beautiful.
+    Position: {x: 258, y: 143}
+  ExposedProperties: []
+  CommentBlockData: []

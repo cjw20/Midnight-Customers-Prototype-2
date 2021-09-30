@@ -1,0 +1,146 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
+  m_Name: N-Freight
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: 6deb90f8-d5eb-472d-886a-257022672e5c
+    PortName: Next
+    TargetNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
+  - BaseNodeGuid: b37f3ba2-02a3-44bb-a299-93070ecfb277
+    PortName: ...
+    TargetNodeGuid: 5a71340b-7c80-4d18-a7fa-da7b8dd0b949
+  - BaseNodeGuid: b37f3ba2-02a3-44bb-a299-93070ecfb277
+    PortName: O yeah? How would you know?
+    TargetNodeGuid: e63c9c14-2502-47b8-87f3-094eea10941f
+  - BaseNodeGuid: b37f3ba2-02a3-44bb-a299-93070ecfb277
+    PortName: Yea, it's been a long shift so far.
+    TargetNodeGuid: 0cd7c1fd-31a9-4e74-94f1-f56226e633e8
+  - BaseNodeGuid: 22ccbdb3-0160-4d58-9ed5-a3bb394c7cf9
+    PortName: Sounds about right.
+    TargetNodeGuid: 51f20418-418b-460f-bc5d-1667535fa107
+  - BaseNodeGuid: 22ccbdb3-0160-4d58-9ed5-a3bb394c7cf9
+    PortName: Where did you drive from?
+    TargetNodeGuid: 2b8ce2b2-3132-4697-848a-06b24089d9ed
+  - BaseNodeGuid: 22ccbdb3-0160-4d58-9ed5-a3bb394c7cf9
+    PortName: ...
+    TargetNodeGuid: 5a71340b-7c80-4d18-a7fa-da7b8dd0b949
+  - BaseNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
+    PortName: I'm doing good, is this all for you?
+    TargetNodeGuid: 22ccbdb3-0160-4d58-9ed5-a3bb394c7cf9
+  - BaseNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
+    PortName: Not to bad how about yourself?
+    TargetNodeGuid: 41ad3da6-4250-4dd9-b09f-3903652135fb
+  - BaseNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
+    PortName: ...
+    TargetNodeGuid: b37f3ba2-02a3-44bb-a299-93070ecfb277
+  - BaseNodeGuid: 41ad3da6-4250-4dd9-b09f-3903652135fb
+    PortName: Where did you drive from?
+    TargetNodeGuid: 2b8ce2b2-3132-4697-848a-06b24089d9ed
+  - BaseNodeGuid: 41ad3da6-4250-4dd9-b09f-3903652135fb
+    PortName: ...
+    TargetNodeGuid: 5a71340b-7c80-4d18-a7fa-da7b8dd0b949
+  - BaseNodeGuid: 41ad3da6-4250-4dd9-b09f-3903652135fb
+    PortName: I'm also ready to relax after this shift.
+    TargetNodeGuid: f1228870-e381-4537-b574-47bcd4c07fb2
+  - BaseNodeGuid: 51f20418-418b-460f-bc5d-1667535fa107
+    PortName: Thank you sir, enjoy your time off.
+    TargetNodeGuid: dd346804-0e98-4a7c-98dc-86dcd5fcf1f3
+  - BaseNodeGuid: 51f20418-418b-460f-bc5d-1667535fa107
+    PortName: I hope time flies, enjoy your relaxation
+    TargetNodeGuid: dd346804-0e98-4a7c-98dc-86dcd5fcf1f3
+  - BaseNodeGuid: 51f20418-418b-460f-bc5d-1667535fa107
+    PortName: ...
+    TargetNodeGuid: dd346804-0e98-4a7c-98dc-86dcd5fcf1f3
+  - BaseNodeGuid: 2b8ce2b2-3132-4697-848a-06b24089d9ed
+    PortName: Enjoy you nap.
+    TargetNodeGuid: dd346804-0e98-4a7c-98dc-86dcd5fcf1f3
+  - BaseNodeGuid: 2b8ce2b2-3132-4697-848a-06b24089d9ed
+    PortName: I wish I could nap
+    TargetNodeGuid: dd346804-0e98-4a7c-98dc-86dcd5fcf1f3
+  - BaseNodeGuid: 2b8ce2b2-3132-4697-848a-06b24089d9ed
+    PortName: ...
+    TargetNodeGuid: dd346804-0e98-4a7c-98dc-86dcd5fcf1f3
+  - BaseNodeGuid: 5a71340b-7c80-4d18-a7fa-da7b8dd0b949
+    PortName: Thank you sir, enjoy your time off
+    TargetNodeGuid: dd346804-0e98-4a7c-98dc-86dcd5fcf1f3
+  - BaseNodeGuid: 5a71340b-7c80-4d18-a7fa-da7b8dd0b949
+    PortName: I hope time flies, enjoy your relaxation
+    TargetNodeGuid: dd346804-0e98-4a7c-98dc-86dcd5fcf1f3
+  - BaseNodeGuid: 5a71340b-7c80-4d18-a7fa-da7b8dd0b949
+    PortName: ...
+    TargetNodeGuid: dd346804-0e98-4a7c-98dc-86dcd5fcf1f3
+  - BaseNodeGuid: e63c9c14-2502-47b8-87f3-094eea10941f
+    PortName: That sounds rough, get some rest sir.
+    TargetNodeGuid: dd346804-0e98-4a7c-98dc-86dcd5fcf1f3
+  - BaseNodeGuid: e63c9c14-2502-47b8-87f3-094eea10941f
+    PortName: Relatable, I wish time would fly while at work. Enjoy your break.
+    TargetNodeGuid: dd346804-0e98-4a7c-98dc-86dcd5fcf1f3
+  - BaseNodeGuid: e63c9c14-2502-47b8-87f3-094eea10941f
+    PortName: ...
+    TargetNodeGuid: dd346804-0e98-4a7c-98dc-86dcd5fcf1f3
+  - BaseNodeGuid: 0cd7c1fd-31a9-4e74-94f1-f56226e633e8
+    PortName: I hope time flies, enjoy your relaxation
+    TargetNodeGuid: dd346804-0e98-4a7c-98dc-86dcd5fcf1f3
+  - BaseNodeGuid: 0cd7c1fd-31a9-4e74-94f1-f56226e633e8
+    PortName: Thank you sir, enjoy your time off
+    TargetNodeGuid: dd346804-0e98-4a7c-98dc-86dcd5fcf1f3
+  - BaseNodeGuid: 0cd7c1fd-31a9-4e74-94f1-f56226e633e8
+    PortName: ...
+    TargetNodeGuid: dd346804-0e98-4a7c-98dc-86dcd5fcf1f3
+  - BaseNodeGuid: f1228870-e381-4537-b574-47bcd4c07fb2
+    PortName: Thank you sir, enjoy your time off
+    TargetNodeGuid: dd346804-0e98-4a7c-98dc-86dcd5fcf1f3
+  - BaseNodeGuid: f1228870-e381-4537-b574-47bcd4c07fb2
+    PortName: I hope time flies, enjoy your relaxation
+    TargetNodeGuid: dd346804-0e98-4a7c-98dc-86dcd5fcf1f3
+  - BaseNodeGuid: f1228870-e381-4537-b574-47bcd4c07fb2
+    PortName: ...
+    TargetNodeGuid: dd346804-0e98-4a7c-98dc-86dcd5fcf1f3
+  DialogueNodeData:
+  - Guid: b37f3ba2-02a3-44bb-a299-93070ecfb277
+    DialogueText: One of those nights, I know the feeling.
+    Position: {x: 550, y: 292}
+  - Guid: 22ccbdb3-0160-4d58-9ed5-a3bb394c7cf9
+    DialogueText: 'Yes sir, needed some stuff after a long night of driving. '
+    Position: {x: 545, y: -43}
+  - Guid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
+    DialogueText: How ya doing tonight?
+    Position: {x: 194, y: 179}
+  - Guid: 41ad3da6-4250-4dd9-b09f-3903652135fb
+    DialogueText: I am doing alright, ready to relax after the long drive.
+    Position: {x: 546, y: 125}
+  - Guid: 51f20418-418b-460f-bc5d-1667535fa107
+    DialogueText: Well thank you very much for your service, I hope you get off soon.
+    Position: {x: 1075, y: -240}
+  - Guid: 2b8ce2b2-3132-4697-848a-06b24089d9ed
+    DialogueText: I started way out on the west coast. Now it's time for my nap.
+    Position: {x: 1072, y: -82}
+  - Guid: 5a71340b-7c80-4d18-a7fa-da7b8dd0b949
+    DialogueText: Silence is not so good, hopefully you get off soon.
+    Position: {x: 1081, y: 84}
+  - Guid: e63c9c14-2502-47b8-87f3-094eea10941f
+    DialogueText: 'Well son, I tend to drive at night, the roads are clearer. So
+      I know how it feels. '
+    Position: {x: 1104, y: 405}
+  - Guid: 0cd7c1fd-31a9-4e74-94f1-f56226e633e8
+    DialogueText: 'Well, I hope you get off soon and can enjoy a nice nap. '
+    Position: {x: 1111, y: 579}
+  - Guid: dd346804-0e98-4a7c-98dc-86dcd5fcf1f3
+    DialogueText: +0
+    Position: {x: 1769, y: 140}
+  - Guid: f1228870-e381-4537-b574-47bcd4c07fb2
+    DialogueText: Well son I hope that you are able to get some rest soon, Thank
+      you for your services.
+    Position: {x: 1024, y: 246}
+  ExposedProperties: []
+  CommentBlockData: []
