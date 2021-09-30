@@ -1,0 +1,114 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
+  m_Name: DeepOne-Intro
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: 6685dbc6-c972-46a4-b38b-3f8e10f73a1a
+    PortName: Next
+    TargetNodeGuid: 5993684d-ba85-4b29-a0b5-c571d1e31a10
+  - BaseNodeGuid: 5993684d-ba85-4b29-a0b5-c571d1e31a10
+    PortName: Thank you, sir.
+    TargetNodeGuid: fd9abd68-50c4-4056-9d53-80e728b253a6
+  - BaseNodeGuid: 5993684d-ba85-4b29-a0b5-c571d1e31a10
+    PortName: I like this Place!
+    TargetNodeGuid: 765c147c-cb9d-4825-98e6-ec5573683488
+  - BaseNodeGuid: fd9abd68-50c4-4056-9d53-80e728b253a6
+    PortName: What do you mean?
+    TargetNodeGuid: f56fb1ca-621b-4550-a526-21462d926992
+  - BaseNodeGuid: 765c147c-cb9d-4825-98e6-ec5573683488
+    PortName: What do you mean?
+    TargetNodeGuid: f56fb1ca-621b-4550-a526-21462d926992
+  - BaseNodeGuid: fd9abd68-50c4-4056-9d53-80e728b253a6
+    PortName: I'm not so sure about that.
+    TargetNodeGuid: 61243a48-86e9-4e53-9b5d-13631cd1d5d2
+  - BaseNodeGuid: 765c147c-cb9d-4825-98e6-ec5573683488
+    PortName: I'm not so sure about that.
+    TargetNodeGuid: 61243a48-86e9-4e53-9b5d-13631cd1d5d2
+  - BaseNodeGuid: f56fb1ca-621b-4550-a526-21462d926992
+    PortName: Our bottled water tastes alright to me!
+    TargetNodeGuid: b35ec4eb-ae14-4f04-baf3-9959d9ae0f6f
+  - BaseNodeGuid: f56fb1ca-621b-4550-a526-21462d926992
+    PortName: That's fair, the pollution here is awful.
+    TargetNodeGuid: b8c33f9c-0f87-4699-9d31-9c6a0b48779b
+  - BaseNodeGuid: 61243a48-86e9-4e53-9b5d-13631cd1d5d2
+    PortName: Our bottled water tastes alright to me!
+    TargetNodeGuid: b35ec4eb-ae14-4f04-baf3-9959d9ae0f6f
+  - BaseNodeGuid: 61243a48-86e9-4e53-9b5d-13631cd1d5d2
+    PortName: That's fair, the pollution here is awful.
+    TargetNodeGuid: b8c33f9c-0f87-4699-9d31-9c6a0b48779b
+  - BaseNodeGuid: b35ec4eb-ae14-4f04-baf3-9959d9ae0f6f
+    PortName: Hopefully soon.
+    TargetNodeGuid: 2c605583-fac7-4278-852a-5fd41a01819e
+  - BaseNodeGuid: b8c33f9c-0f87-4699-9d31-9c6a0b48779b
+    PortName: Hopefully soon.
+    TargetNodeGuid: 2c605583-fac7-4278-852a-5fd41a01819e
+  - BaseNodeGuid: b35ec4eb-ae14-4f04-baf3-9959d9ae0f6f
+    PortName: ..
+    TargetNodeGuid: df7eb8c0-92f6-4b7f-b559-07e98a331c94
+  - BaseNodeGuid: b8c33f9c-0f87-4699-9d31-9c6a0b48779b
+    PortName: ...
+    TargetNodeGuid: df7eb8c0-92f6-4b7f-b559-07e98a331c94
+  - BaseNodeGuid: 2c605583-fac7-4278-852a-5fd41a01819e
+    PortName: Goodbye, sir.
+    TargetNodeGuid: 4c00426e-7f58-43e1-adf0-f2f960b722a8
+  - BaseNodeGuid: 2c605583-fac7-4278-852a-5fd41a01819e
+    PortName: I'll see you around.
+    TargetNodeGuid: 4c00426e-7f58-43e1-adf0-f2f960b722a8
+  - BaseNodeGuid: df7eb8c0-92f6-4b7f-b559-07e98a331c94
+    PortName: Goodbye, sir.
+    TargetNodeGuid: 4c00426e-7f58-43e1-adf0-f2f960b722a8
+  - BaseNodeGuid: df7eb8c0-92f6-4b7f-b559-07e98a331c94
+    PortName: I'll see you around.
+    TargetNodeGuid: 4c00426e-7f58-43e1-adf0-f2f960b722a8
+  DialogueNodeData:
+  - Guid: 5993684d-ba85-4b29-a0b5-c571d1e31a10
+    DialogueText: Thank you for cleaning up the messes. I know it's your job, but
+      Arkham is a mess in many ways, and I'm glad to see someone else who cares.
+    Position: {x: 331, y: 188}
+  - Guid: fd9abd68-50c4-4056-9d53-80e728b253a6
+    DialogueText: Don't mention it. I wish more people would take care of this place
+      like you. This town is a pig-sty.
+    Position: {x: 1394, y: 89}
+  - Guid: 765c147c-cb9d-4825-98e6-ec5573683488
+    DialogueText: You like this place? That's because you don't know better; Arkham
+      is a pig-sty.
+    Position: {x: 1404, y: 357}
+  - Guid: 61243a48-86e9-4e53-9b5d-13631cd1d5d2
+    DialogueText: Well you should be. The lights are blinding, our streets are crowded
+      with garbage, and the water is polluted beyond recognition.
+    Position: {x: 2424, y: 375}
+  - Guid: b35ec4eb-ae14-4f04-baf3-9959d9ae0f6f
+    DialogueText: This isn't funny, pollution is killing people and sea-creatures
+      alike. We need to make some serious changes around here.
+    Position: {x: 3583, y: 98}
+  - Guid: f56fb1ca-621b-4550-a526-21462d926992
+    DialogueText: It's an industrial catastrophe! The lights are blinding, the streets
+      are filled with trash, and the water is polluted beyond recognition.
+    Position: {x: 2429, y: 88}
+  - Guid: b8c33f9c-0f87-4699-9d31-9c6a0b48779b
+    DialogueText: I couldn't agree more, though I am not hopeless. Things weren't
+      always like this and I believe Arkham will come back better than before.
+    Position: {x: 3564, y: 396}
+  - Guid: df7eb8c0-92f6-4b7f-b559-07e98a331c94
+    DialogueText: .There I go again, rambling like the old man I am. Sorry, it just
+      angers me to see people littering like that. I should get going.
+    Position: {x: 4777, y: 418}
+  - Guid: 2c605583-fac7-4278-852a-5fd41a01819e
+    DialogueText: Sorry for chewing your ear off. It just angers me to see people
+      shamelessly littering like that. I should get going, take care.
+    Position: {x: 4703, y: 83}
+  - Guid: 4c00426e-7f58-43e1-adf0-f2f960b722a8
+    DialogueText: +0
+    Position: {x: 5627, y: 252}
+  ExposedProperties: []
+  CommentBlockData: []
