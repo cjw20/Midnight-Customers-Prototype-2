@@ -73,7 +73,7 @@ public class CustomerManager : MonoBehaviour
 
     IEnumerator NextCustomer()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(8);
         LoadCustomer(customers[arrayPos]); //logic for this later when more customers to choose from
         lastCoroutine = null;
         yield break;
