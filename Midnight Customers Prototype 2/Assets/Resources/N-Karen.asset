@@ -1,0 +1,151 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
+  m_Name: N-Karen
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: 6deb90f8-d5eb-472d-886a-257022672e5c
+    PortName: Next
+    TargetNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
+  - BaseNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
+    PortName: I am going as fast as I can ma'am
+    TargetNodeGuid: ab4001f9-2b2a-4650-b775-5890a4d28f90
+  - BaseNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
+    PortName: Why the rush it's the middle of the night
+    TargetNodeGuid: c579ca51-f309-4315-9b83-7494cbc9a596
+  - BaseNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
+    PortName: ...
+    TargetNodeGuid: c73ec217-cb4d-44a8-be2d-4f0f932dc513
+  - BaseNodeGuid: ab4001f9-2b2a-4650-b775-5890a4d28f90
+    PortName: I was not argueing.
+    TargetNodeGuid: 013bb0f3-da5e-4b63-97d1-c7418437adf1
+  - BaseNodeGuid: ab4001f9-2b2a-4650-b775-5890a4d28f90
+    PortName: I can not go any faster. Please be Patient
+    TargetNodeGuid: 711a9aaa-2c4b-4c9d-8d7f-90c766435be8
+  - BaseNodeGuid: c579ca51-f309-4315-9b83-7494cbc9a596
+    PortName: I can not go any faster. Please be Patient
+    TargetNodeGuid: 711a9aaa-2c4b-4c9d-8d7f-90c766435be8
+  - BaseNodeGuid: c579ca51-f309-4315-9b83-7494cbc9a596
+    PortName: ...
+    TargetNodeGuid: 89bb0147-296e-438d-8513-f49b6ca78d66
+  - BaseNodeGuid: c73ec217-cb4d-44a8-be2d-4f0f932dc513
+    PortName: ...
+    TargetNodeGuid: 89bb0147-296e-438d-8513-f49b6ca78d66
+  - BaseNodeGuid: ab4001f9-2b2a-4650-b775-5890a4d28f90
+    PortName: ...
+    TargetNodeGuid: 89bb0147-296e-438d-8513-f49b6ca78d66
+  - BaseNodeGuid: c579ca51-f309-4315-9b83-7494cbc9a596
+    PortName: I will try my best ma'am
+    TargetNodeGuid: 939b3a85-354b-401d-94ae-aa1d6b38ffdf
+  - BaseNodeGuid: c73ec217-cb4d-44a8-be2d-4f0f932dc513
+    PortName: It's the middle of the night, I am the only one here.
+    TargetNodeGuid: a8927520-74f4-45d5-b408-5ad8d311462c
+  - BaseNodeGuid: c73ec217-cb4d-44a8-be2d-4f0f932dc513
+    PortName: Ma'am its the middle of the night and you are here doing this?
+    TargetNodeGuid: d626878c-2823-4506-84fc-cb8dc50ab390
+  - BaseNodeGuid: 013bb0f3-da5e-4b63-97d1-c7418437adf1
+    PortName: Do whatever you think neccessary ma'am.
+    TargetNodeGuid: 0b72637f-9e2e-478c-99f9-a3199eab7679
+  - BaseNodeGuid: 013bb0f3-da5e-4b63-97d1-c7418437adf1
+    PortName: Sure thing ma'am, they open in the morning.
+    TargetNodeGuid: 0b72637f-9e2e-478c-99f9-a3199eab7679
+  - BaseNodeGuid: 013bb0f3-da5e-4b63-97d1-c7418437adf1
+    PortName: ...
+    TargetNodeGuid: 0b72637f-9e2e-478c-99f9-a3199eab7679
+  - BaseNodeGuid: 711a9aaa-2c4b-4c9d-8d7f-90c766435be8
+    PortName: Do whatever you think neccessary ma'am.
+    TargetNodeGuid: 0b72637f-9e2e-478c-99f9-a3199eab7679
+  - BaseNodeGuid: 711a9aaa-2c4b-4c9d-8d7f-90c766435be8
+    PortName: Sure thing ma'am, they open in the morning.
+    TargetNodeGuid: 0b72637f-9e2e-478c-99f9-a3199eab7679
+  - BaseNodeGuid: 711a9aaa-2c4b-4c9d-8d7f-90c766435be8
+    PortName: ...
+    TargetNodeGuid: 0b72637f-9e2e-478c-99f9-a3199eab7679
+  - BaseNodeGuid: 89bb0147-296e-438d-8513-f49b6ca78d66
+    PortName: Maybe the problem is you.
+    TargetNodeGuid: 0b72637f-9e2e-478c-99f9-a3199eab7679
+  - BaseNodeGuid: 89bb0147-296e-438d-8513-f49b6ca78d66
+    PortName: How dare you, take your items a please leave the store.
+    TargetNodeGuid: 0b72637f-9e2e-478c-99f9-a3199eab7679
+  - BaseNodeGuid: 89bb0147-296e-438d-8513-f49b6ca78d66
+    PortName: ...
+    TargetNodeGuid: 0b72637f-9e2e-478c-99f9-a3199eab7679
+  - BaseNodeGuid: 939b3a85-354b-401d-94ae-aa1d6b38ffdf
+    PortName: Do whatever you think neccessary ma'am.
+    TargetNodeGuid: 0b72637f-9e2e-478c-99f9-a3199eab7679
+  - BaseNodeGuid: 939b3a85-354b-401d-94ae-aa1d6b38ffdf
+    PortName: Maybe the problem is you.
+    TargetNodeGuid: 0b72637f-9e2e-478c-99f9-a3199eab7679
+  - BaseNodeGuid: 939b3a85-354b-401d-94ae-aa1d6b38ffdf
+    PortName: ...
+    TargetNodeGuid: 0b72637f-9e2e-478c-99f9-a3199eab7679
+  - BaseNodeGuid: a8927520-74f4-45d5-b408-5ad8d311462c
+    PortName: Do whatever you think neccessary ma'am.
+    TargetNodeGuid: 0b72637f-9e2e-478c-99f9-a3199eab7679
+  - BaseNodeGuid: a8927520-74f4-45d5-b408-5ad8d311462c
+    PortName: Maybe the problem is you.
+    TargetNodeGuid: 0b72637f-9e2e-478c-99f9-a3199eab7679
+  - BaseNodeGuid: a8927520-74f4-45d5-b408-5ad8d311462c
+    PortName: ...
+    TargetNodeGuid: 0b72637f-9e2e-478c-99f9-a3199eab7679
+  - BaseNodeGuid: d626878c-2823-4506-84fc-cb8dc50ab390
+    PortName: Do whatever you think neccessary ma'am.
+    TargetNodeGuid: 0b72637f-9e2e-478c-99f9-a3199eab7679
+  - BaseNodeGuid: d626878c-2823-4506-84fc-cb8dc50ab390
+    PortName: Sure thing ma'am, they open in the morning.
+    TargetNodeGuid: 0b72637f-9e2e-478c-99f9-a3199eab7679
+  - BaseNodeGuid: d626878c-2823-4506-84fc-cb8dc50ab390
+    PortName: ...
+    TargetNodeGuid: 0b72637f-9e2e-478c-99f9-a3199eab7679
+  DialogueNodeData:
+  - Guid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
+    DialogueText: Hello, will you please help me a little faster?
+    Position: {x: 221, y: 187}
+  - Guid: c579ca51-f309-4315-9b83-7494cbc9a596
+    DialogueText: I don't need to explain myself to you. Just do what I say and hurry
+      up.
+    Position: {x: 684, y: 227}
+  - Guid: ab4001f9-2b2a-4650-b775-5890a4d28f90
+    DialogueText: Well I am asking you to go faster. Don't argue with the customer
+      they are always right.
+    Position: {x: 671, y: 7}
+  - Guid: c73ec217-cb4d-44a8-be2d-4f0f932dc513
+    DialogueText: Silence will get you nowhere. You know what I would like to speak
+      to your manager.
+    Position: {x: 755, y: 413}
+  - Guid: 013bb0f3-da5e-4b63-97d1-c7418437adf1
+    DialogueText: I am going to file a complaint with this company, the service has
+      been awful.
+    Position: {x: 1421, y: -190}
+  - Guid: 711a9aaa-2c4b-4c9d-8d7f-90c766435be8
+    DialogueText: Patient, how dare you tell me what I should do. I am filing a complaint
+      against you and this establishment.
+    Position: {x: 1419, y: -27}
+  - Guid: 89bb0147-296e-438d-8513-f49b6ca78d66
+    DialogueText: Hmph, that's right. Stay silent. Only way you do your job right.
+    Position: {x: 1422, y: 128}
+  - Guid: 939b3a85-354b-401d-94ae-aa1d6b38ffdf
+    DialogueText: Well try harder, I am going to have to file a complaint with this
+      store as well. I can't find one that is fitting.
+    Position: {x: 1426, y: 281}
+  - Guid: a8927520-74f4-45d5-b408-5ad8d311462c
+    DialogueText: Well then I will be filing a complaint, as this service has been
+      problematic.
+    Position: {x: 1427, y: 442}
+  - Guid: d626878c-2823-4506-84fc-cb8dc50ab390
+    DialogueText: Well then I will be filing a complaint against you and this store.
+    Position: {x: 1430, y: 600}
+  - Guid: 0b72637f-9e2e-478c-99f9-a3199eab7679
+    DialogueText: +0
+    Position: {x: 2314, y: 356}
+  ExposedProperties: []
+  CommentBlockData: []
