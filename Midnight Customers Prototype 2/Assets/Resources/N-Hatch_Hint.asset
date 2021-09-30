@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
+  m_Name: N-Hatch_Hint
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: 8c51ea22-a047-4d39-9c31-08f4eb06068f
+    PortName: That's weird. I don't think our A/C actually works.
+    TargetNodeGuid: 8f384349-01ce-4151-be4b-ec933fc28e68
+  - BaseNodeGuid: 8c51ea22-a047-4d39-9c31-08f4eb06068f
+    PortName: It's an old store, it was probably just a draft.
+    TargetNodeGuid: 317c3c40-0d96-4293-a6e2-6e326441979e
+  - BaseNodeGuid: 8c51ea22-a047-4d39-9c31-08f4eb06068f
+    PortName: ...
+    TargetNodeGuid: cea29368-0478-41b7-8771-c86b5e3e4bf1
+  - BaseNodeGuid: 8f384349-01ce-4151-be4b-ec933fc28e68
+    PortName: Did you see a vent or anything?
+    TargetNodeGuid: bdec71b4-67c7-403a-a831-c66531f32836
+  - BaseNodeGuid: 317c3c40-0d96-4293-a6e2-6e326441979e
+    PortName: Did you see a vent or anything?
+    TargetNodeGuid: bdec71b4-67c7-403a-a831-c66531f32836
+  - BaseNodeGuid: cea29368-0478-41b7-8771-c86b5e3e4bf1
+    PortName: Did you see a vent or anything?
+    TargetNodeGuid: bdec71b4-67c7-403a-a831-c66531f32836
+  - BaseNodeGuid: 8f384349-01ce-4151-be4b-ec933fc28e68
+    PortName: Maybe you just got the chills?
+    TargetNodeGuid: 026ac4c8-9fa0-4b69-895c-e8a3f2a798f1
+  - BaseNodeGuid: 317c3c40-0d96-4293-a6e2-6e326441979e
+    PortName: Maybe you just got the chills?
+    TargetNodeGuid: 026ac4c8-9fa0-4b69-895c-e8a3f2a798f1
+  - BaseNodeGuid: cea29368-0478-41b7-8771-c86b5e3e4bf1
+    PortName: Maybe you just got the chills?
+    TargetNodeGuid: 026ac4c8-9fa0-4b69-895c-e8a3f2a798f1
+  - BaseNodeGuid: cea29368-0478-41b7-8771-c86b5e3e4bf1
+    PortName: ...
+    TargetNodeGuid: 92e00a84-e9f9-4830-b218-037f5dd0d937
+  - BaseNodeGuid: 317c3c40-0d96-4293-a6e2-6e326441979e
+    PortName: ...
+    TargetNodeGuid: 92e00a84-e9f9-4830-b218-037f5dd0d937
+  - BaseNodeGuid: 8f384349-01ce-4151-be4b-ec933fc28e68
+    PortName: ...
+    TargetNodeGuid: 92e00a84-e9f9-4830-b218-037f5dd0d937
+  - BaseNodeGuid: bdec71b4-67c7-403a-a831-c66531f32836
+    PortName: Hmmm... Well, I'll give it a look and see if I can fix it.
+    TargetNodeGuid: d5a33192-142d-4c61-ae73-e9966e855477
+  - BaseNodeGuid: 026ac4c8-9fa0-4b69-895c-e8a3f2a798f1
+    PortName: Hmmm... Well, I'll give it a look and see if I can fix it.
+    TargetNodeGuid: d5a33192-142d-4c61-ae73-e9966e855477
+  - BaseNodeGuid: 92e00a84-e9f9-4830-b218-037f5dd0d937
+    PortName: Hmmm... Well, I'll give it a look and see if I can fix it.
+    TargetNodeGuid: d5a33192-142d-4c61-ae73-e9966e855477
+  - BaseNodeGuid: bdec71b4-67c7-403a-a831-c66531f32836
+    PortName: This doesn't really seem like my problem. I'll leave a note for my
+      manager and I'm sure he'll fix it.
+    TargetNodeGuid: 29931487-7e2e-4b4c-bf9f-e4ad7d8f1ef3
+  - BaseNodeGuid: 026ac4c8-9fa0-4b69-895c-e8a3f2a798f1
+    PortName: This doesn't really seem like my problem. I'll leave a note for my
+      manager and I'm sure he'll fix it.
+    TargetNodeGuid: 29931487-7e2e-4b4c-bf9f-e4ad7d8f1ef3
+  - BaseNodeGuid: 92e00a84-e9f9-4830-b218-037f5dd0d937
+    PortName: This doesn't really seem like my problem. I'll leave a note for my
+      manager and I'm sure he'll fix it.
+    TargetNodeGuid: 29931487-7e2e-4b4c-bf9f-e4ad7d8f1ef3
+  - BaseNodeGuid: bdec71b4-67c7-403a-a831-c66531f32836
+    PortName: ...
+    TargetNodeGuid: fc90880c-be2a-4f9c-b9ea-9a6a169f54fe
+  - BaseNodeGuid: 026ac4c8-9fa0-4b69-895c-e8a3f2a798f1
+    PortName: ...
+    TargetNodeGuid: fc90880c-be2a-4f9c-b9ea-9a6a169f54fe
+  - BaseNodeGuid: 92e00a84-e9f9-4830-b218-037f5dd0d937
+    PortName: ...
+    TargetNodeGuid: fc90880c-be2a-4f9c-b9ea-9a6a169f54fe
+  DialogueNodeData:
+  - Guid: 8c51ea22-a047-4d39-9c31-08f4eb06068f
+    DialogueText: Hey, I think your A/C might be broken? There was a really cold
+      breeze coming from one of the shelves.
+    Position: {x: 225.6, y: 188}
+  - Guid: 8f384349-01ce-4151-be4b-ec933fc28e68
+    DialogueText: Weird. I thought it could be a draft, but it was too sustained
+      and too cold for summertime.
+    Position: {x: 982.4, y: 0}
+  - Guid: 317c3c40-0d96-4293-a6e2-6e326441979e
+    DialogueText: I thought that too at first, but it was too constant and it was
+      too cold for summer.
+    Position: {x: 980, y: 186.4}
+  - Guid: cea29368-0478-41b7-8771-c86b5e3e4bf1
+    DialogueText: I thought it was a draft at first, but there's no way. It was way
+      too cold for summertime.
+    Position: {x: 979.2, y: 393.6}
+  - Guid: bdec71b4-67c7-403a-a831-c66531f32836
+    DialogueText: No, it felt like it was coming from beneath the shelves, and honestly
+      I didn't want to crawl around on the floor to look for it.
+    Position: {x: 1709.6, y: -1.5999985}
+  - Guid: 026ac4c8-9fa0-4b69-895c-e8a3f2a798f1
+    DialogueText: No, I've gotten cold chills before, but never just on my legs.
+    Position: {x: 1708, y: 192}
+  - Guid: 92e00a84-e9f9-4830-b218-037f5dd0d937
+    DialogueText: Can you look at it... Please? It's too cold over there.
+    Position: {x: 1706.4, y: 392.80002}
+  - Guid: 29931487-7e2e-4b4c-bf9f-e4ad7d8f1ef3
+    DialogueText: Thanks... I guess. I hope he gets it fixed soon.
+    Position: {x: 2679.2, y: 192}
+  - Guid: fc90880c-be2a-4f9c-b9ea-9a6a169f54fe
+    DialogueText: Well, if you won't do anything about it, I'll reach out to management
+      and hopefully they'll get it fixed.
+    Position: {x: 2671.2, y: 400}
+  - Guid: d5a33192-142d-4c61-ae73-e9966e855477
+    DialogueText: Thank you, I hope it gets fixed soon.
+    Position: {x: 2675.2, y: 1.6000004}
+  ExposedProperties: []
+  CommentBlockData: []
