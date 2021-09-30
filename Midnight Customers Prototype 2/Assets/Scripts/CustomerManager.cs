@@ -105,4 +105,10 @@ public class CustomerManager : MonoBehaviour
     }
 
 
+    public void PauseSpawns()
+    {
+        spawning = false;
+    }
+
+
 }
