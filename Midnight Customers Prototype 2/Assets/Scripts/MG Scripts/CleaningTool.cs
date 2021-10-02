@@ -5,6 +5,7 @@ using UnityEngine;
 public class CleaningTool : MonoBehaviour
 {
     public bool isCleaning;
+    public string toolName;
     
     public float cleaningThreshold;
 
