@@ -12,7 +12,7 @@ public class CheckoutTimer : MonoBehaviour
     CustomerInfo currentCustomer;
 
     int maxValue; //value timer starts at
-    int currentMilestone; //index of array for most recently passed milestone 
+    [SerializeField] int currentMilestone; //index of array for most recently passed milestone 
 
     public Slider slider;
     public float timePassed;
@@ -39,6 +39,7 @@ public class CheckoutTimer : MonoBehaviour
             {
                 //mood level down
                 currentMilestone--;
+                SetMood();
 
                 if(currentMilestone < 0)
                 {
@@ -69,7 +70,27 @@ public class CheckoutTimer : MonoBehaviour
         }
     }
 
-
+    void SetMood()
+    {
+        switch (currentMilestone + 1)
+        {
+            case 3:
+                currentCustomer.GetComponentInChildren<MoodIndicator>().SetMood("happy");
+                break;
+            case 2:
+                currentCustomer.GetComponentInChildren<MoodIndicator>().SetMood("sad");
+                break;
+            case 1:
+                currentCustomer.GetComponentInChildren<MoodIndicator>().SetMood("angry");
+                break;
+            case 0:
+                currentCustomer.GetComponentInChildren<MoodIndicator>().SetMood("pissed");
+                break;
+            default:
+                currentCustomer.GetComponentInChildren<MoodIndicator>().SetMood("happy");
+                break;
+        }
+    }
     
 
     public void StartTimer(CustomerInfo info)
@@ -77,6 +98,7 @@ public class CheckoutTimer : MonoBehaviour
         isRunning = true;
         segments = info.moodMilestones;
         currentCustomer = info;
+        currentCustomer.GetComponentInChildren<MoodIndicator>().SetMood("happy");
         maxValue = segments.Max(); //gets highest value from array
 
         SetValues();
