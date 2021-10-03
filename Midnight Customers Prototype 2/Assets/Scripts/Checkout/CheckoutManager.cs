@@ -8,6 +8,8 @@ public class CheckoutManager : MonoBehaviour
     [SerializeField] SoundManager soundManager;
     public GameObject[] itemSpawns;
     GameObject[] items; //items brought to checkout
+
+    List<GameObject> spawnedItems = new List<GameObject>();
     int itemNumber; //number of items brought to checkout
     int remainingItems; //items left unbagged
 
@@ -69,7 +71,8 @@ public class CheckoutManager : MonoBehaviour
         int i = 0;
         foreach(GameObject item in items)
         {
-            Instantiate(item, itemSpawns[i].transform);
+            GameObject newItem = Instantiate(item, itemSpawns[i].transform);
+            spawnedItems.Add(newItem);
 
             if(needsIDCheck == false) //skips over to be more efficent
             {
@@ -224,6 +227,11 @@ public class CheckoutManager : MonoBehaviour
 
         needsIDCheck = false;
         
+        foreach(GameObject item in spawnedItems)
+        {
+            Destroy(item);
+        }
+        spawnedItems.Clear();
         //will need to reset dialogue and items!
 
         this.gameObject.SetActive(false);
