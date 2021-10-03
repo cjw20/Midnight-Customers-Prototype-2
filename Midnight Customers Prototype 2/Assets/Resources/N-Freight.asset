@@ -17,9 +17,6 @@ MonoBehaviour:
     PortName: Next
     TargetNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
   - BaseNodeGuid: b37f3ba2-02a3-44bb-a299-93070ecfb277
-    PortName: ...
-    TargetNodeGuid: 5a71340b-7c80-4d18-a7fa-da7b8dd0b949
-  - BaseNodeGuid: b37f3ba2-02a3-44bb-a299-93070ecfb277
     PortName: O yeah? How would you know?
     TargetNodeGuid: e63c9c14-2502-47b8-87f3-094eea10941f
   - BaseNodeGuid: b37f3ba2-02a3-44bb-a299-93070ecfb277
@@ -46,9 +43,6 @@ MonoBehaviour:
   - BaseNodeGuid: 41ad3da6-4250-4dd9-b09f-3903652135fb
     PortName: Where did you drive from?
     TargetNodeGuid: 2b8ce2b2-3132-4697-848a-06b24089d9ed
-  - BaseNodeGuid: 41ad3da6-4250-4dd9-b09f-3903652135fb
-    PortName: ...
-    TargetNodeGuid: 5a71340b-7c80-4d18-a7fa-da7b8dd0b949
   - BaseNodeGuid: 41ad3da6-4250-4dd9-b09f-3903652135fb
     PortName: I'm also ready to relax after this shift.
     TargetNodeGuid: f1228870-e381-4537-b574-47bcd4c07fb2
@@ -106,6 +100,12 @@ MonoBehaviour:
   - BaseNodeGuid: f1228870-e381-4537-b574-47bcd4c07fb2
     PortName: ...
     TargetNodeGuid: dd346804-0e98-4a7c-98dc-86dcd5fcf1f3
+  - BaseNodeGuid: 41ad3da6-4250-4dd9-b09f-3903652135fb
+    PortName: ...
+    TargetNodeGuid: 5a71340b-7c80-4d18-a7fa-da7b8dd0b949
+  - BaseNodeGuid: b37f3ba2-02a3-44bb-a299-93070ecfb277
+    PortName: ...
+    TargetNodeGuid: 5a71340b-7c80-4d18-a7fa-da7b8dd0b949
   DialogueNodeData:
   - Guid: b37f3ba2-02a3-44bb-a299-93070ecfb277
     DialogueText: One of those nights, I know the feeling.

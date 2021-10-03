@@ -17,32 +17,17 @@ MonoBehaviour:
     PortName: Next
     TargetNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
   - BaseNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
-    PortName: ...
-    TargetNodeGuid: 90f23d7b-a1bf-4a85-abee-bd2375ed0fb8
-  - BaseNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
     PortName: I am doing ok... how about you.
     TargetNodeGuid: 8fc1be51-fd6a-47c2-a387-41370a18e90e
   - BaseNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
     PortName: Are you alright?
     TargetNodeGuid: 91fc5a29-67ee-4e8b-87f1-34a24cfbaf58
-  - BaseNodeGuid: 91fc5a29-67ee-4e8b-87f1-34a24cfbaf58
-    PortName: Maybe you should quit
-    TargetNodeGuid: 630f7e59-f1ed-4b8f-841b-4b3e31aa54e0
   - BaseNodeGuid: 90f23d7b-a1bf-4a85-abee-bd2375ed0fb8
     PortName: Maybe you should quit
     TargetNodeGuid: 630f7e59-f1ed-4b8f-841b-4b3e31aa54e0
-  - BaseNodeGuid: 91fc5a29-67ee-4e8b-87f1-34a24cfbaf58
-    PortName: I see, that sounds awful
-    TargetNodeGuid: d65df100-5cdd-4f19-aef8-6002c8b7d06c
   - BaseNodeGuid: 90f23d7b-a1bf-4a85-abee-bd2375ed0fb8
     PortName: I see, that sounds awful
     TargetNodeGuid: d65df100-5cdd-4f19-aef8-6002c8b7d06c
-  - BaseNodeGuid: 8fc1be51-fd6a-47c2-a387-41370a18e90e
-    PortName: ...
-    TargetNodeGuid: 9b395647-abc3-4754-af0f-84cb4c196b96
-  - BaseNodeGuid: 91fc5a29-67ee-4e8b-87f1-34a24cfbaf58
-    PortName: ...
-    TargetNodeGuid: 9b395647-abc3-4754-af0f-84cb4c196b96
   - BaseNodeGuid: 90f23d7b-a1bf-4a85-abee-bd2375ed0fb8
     PortName: ...
     TargetNodeGuid: 9b395647-abc3-4754-af0f-84cb4c196b96
@@ -52,71 +37,53 @@ MonoBehaviour:
   - BaseNodeGuid: 8fc1be51-fd6a-47c2-a387-41370a18e90e
     PortName: Understandable.
     TargetNodeGuid: c48a578f-8ce3-4330-a386-faa1d043f6df
+  - BaseNodeGuid: 91fc5a29-67ee-4e8b-87f1-34a24cfbaf58
+    PortName: Maybe you should quit
+    TargetNodeGuid: 630f7e59-f1ed-4b8f-841b-4b3e31aa54e0
+  - BaseNodeGuid: 91fc5a29-67ee-4e8b-87f1-34a24cfbaf58
+    PortName: I see, that sounds awful
+    TargetNodeGuid: d65df100-5cdd-4f19-aef8-6002c8b7d06c
+  - BaseNodeGuid: 91fc5a29-67ee-4e8b-87f1-34a24cfbaf58
+    PortName: ...
+    TargetNodeGuid: 9b395647-abc3-4754-af0f-84cb4c196b96
   - BaseNodeGuid: 630f7e59-f1ed-4b8f-841b-4b3e31aa54e0
     PortName: Understandable
     TargetNodeGuid: c48a578f-8ce3-4330-a386-faa1d043f6df
   - BaseNodeGuid: 630f7e59-f1ed-4b8f-841b-4b3e31aa54e0
     PortName: Have you tried
     TargetNodeGuid: e953ce5b-edad-4fac-b2fe-4f5f2b08b15d
+  - BaseNodeGuid: 630f7e59-f1ed-4b8f-841b-4b3e31aa54e0
+    PortName: ...
+    TargetNodeGuid: 9cda66c3-9bcd-4e5f-a6e2-ec633082ef46
   - BaseNodeGuid: d65df100-5cdd-4f19-aef8-6002c8b7d06c
     PortName: Have you tried
     TargetNodeGuid: e953ce5b-edad-4fac-b2fe-4f5f2b08b15d
   - BaseNodeGuid: d65df100-5cdd-4f19-aef8-6002c8b7d06c
     PortName: Understandable
     TargetNodeGuid: c48a578f-8ce3-4330-a386-faa1d043f6df
-  - BaseNodeGuid: 630f7e59-f1ed-4b8f-841b-4b3e31aa54e0
-    PortName: ...
-    TargetNodeGuid: 9cda66c3-9bcd-4e5f-a6e2-ec633082ef46
   - BaseNodeGuid: d65df100-5cdd-4f19-aef8-6002c8b7d06c
     PortName: ...
     TargetNodeGuid: 9cda66c3-9bcd-4e5f-a6e2-ec633082ef46
-  - BaseNodeGuid: 9b395647-abc3-4754-af0f-84cb4c196b96
-    PortName: ...
-    TargetNodeGuid: 9cda66c3-9bcd-4e5f-a6e2-ec633082ef46
-  - BaseNodeGuid: e953ce5b-edad-4fac-b2fe-4f5f2b08b15d
-    PortName: ...
-    TargetNodeGuid: 9cda66c3-9bcd-4e5f-a6e2-ec633082ef46
-  - BaseNodeGuid: c48a578f-8ce3-4330-a386-faa1d043f6df
-    PortName: ...
-    TargetNodeGuid: e0fe1443-403e-4969-aeab-87cfa0512c43
-  - BaseNodeGuid: c48a578f-8ce3-4330-a386-faa1d043f6df
-    PortName: I wish you well
-    TargetNodeGuid: e0fe1443-403e-4969-aeab-87cfa0512c43
-  - BaseNodeGuid: c48a578f-8ce3-4330-a386-faa1d043f6df
-    PortName: Well I wish you luck
-    TargetNodeGuid: e0fe1443-403e-4969-aeab-87cfa0512c43
-  - BaseNodeGuid: e953ce5b-edad-4fac-b2fe-4f5f2b08b15d
-    PortName: Perhaps in the future
-    TargetNodeGuid: c080978e-8053-4113-a884-04379d9067e0
   - BaseNodeGuid: 9b395647-abc3-4754-af0f-84cb4c196b96
     PortName: I am not judging
     TargetNodeGuid: e99ad79d-779d-4add-901c-eb5aa46c6c51
-  - BaseNodeGuid: e953ce5b-edad-4fac-b2fe-4f5f2b08b15d
-    PortName: Well, if at first you don't succeed
-    TargetNodeGuid: 7e8442a7-12d0-4f9b-9769-e179896576dd
   - BaseNodeGuid: 9b395647-abc3-4754-af0f-84cb4c196b96
     PortName: Have you tried quiting
     TargetNodeGuid: f2e91cea-b581-49c9-986f-70e39a7fe8e6
-  - BaseNodeGuid: f2e91cea-b581-49c9-986f-70e39a7fe8e6
-    PortName: ...
-    TargetNodeGuid: e0fe1443-403e-4969-aeab-87cfa0512c43
-  - BaseNodeGuid: f2e91cea-b581-49c9-986f-70e39a7fe8e6
-    PortName: Well I wish you luck
-    TargetNodeGuid: e0fe1443-403e-4969-aeab-87cfa0512c43
-  - BaseNodeGuid: f2e91cea-b581-49c9-986f-70e39a7fe8e6
+  - BaseNodeGuid: e953ce5b-edad-4fac-b2fe-4f5f2b08b15d
+    PortName: Perhaps in the future
+    TargetNodeGuid: c080978e-8053-4113-a884-04379d9067e0
+  - BaseNodeGuid: c48a578f-8ce3-4330-a386-faa1d043f6df
     PortName: I wish you well
     TargetNodeGuid: e0fe1443-403e-4969-aeab-87cfa0512c43
-  - BaseNodeGuid: 7e8442a7-12d0-4f9b-9769-e179896576dd
-    PortName: ...
-    TargetNodeGuid: e0fe1443-403e-4969-aeab-87cfa0512c43
-  - BaseNodeGuid: 7e8442a7-12d0-4f9b-9769-e179896576dd
+  - BaseNodeGuid: c48a578f-8ce3-4330-a386-faa1d043f6df
     PortName: Well I wish you luck
     TargetNodeGuid: e0fe1443-403e-4969-aeab-87cfa0512c43
-  - BaseNodeGuid: 7e8442a7-12d0-4f9b-9769-e179896576dd
-    PortName: I wish you well
+  - BaseNodeGuid: 9cda66c3-9bcd-4e5f-a6e2-ec633082ef46
+    PortName: Well I wish you luck
     TargetNodeGuid: e0fe1443-403e-4969-aeab-87cfa0512c43
-  - BaseNodeGuid: e99ad79d-779d-4add-901c-eb5aa46c6c51
-    PortName: ...
+  - BaseNodeGuid: 9cda66c3-9bcd-4e5f-a6e2-ec633082ef46
+    PortName: I wish you well
     TargetNodeGuid: e0fe1443-403e-4969-aeab-87cfa0512c43
   - BaseNodeGuid: e99ad79d-779d-4add-901c-eb5aa46c6c51
     PortName: Well I wish you luck
@@ -125,27 +92,57 @@ MonoBehaviour:
     PortName: I wish you well
     TargetNodeGuid: e0fe1443-403e-4969-aeab-87cfa0512c43
   - BaseNodeGuid: c080978e-8053-4113-a884-04379d9067e0
-    PortName: ...
-    TargetNodeGuid: e0fe1443-403e-4969-aeab-87cfa0512c43
-  - BaseNodeGuid: c080978e-8053-4113-a884-04379d9067e0
     PortName: Well I wish you luck
     TargetNodeGuid: e0fe1443-403e-4969-aeab-87cfa0512c43
   - BaseNodeGuid: c080978e-8053-4113-a884-04379d9067e0
     PortName: I wish you well
     TargetNodeGuid: e0fe1443-403e-4969-aeab-87cfa0512c43
+  - BaseNodeGuid: 7e8442a7-12d0-4f9b-9769-e179896576dd
+    PortName: Well I wish you luck
+    TargetNodeGuid: e0fe1443-403e-4969-aeab-87cfa0512c43
+  - BaseNodeGuid: 7e8442a7-12d0-4f9b-9769-e179896576dd
+    PortName: I wish you well
+    TargetNodeGuid: e0fe1443-403e-4969-aeab-87cfa0512c43
+  - BaseNodeGuid: f2e91cea-b581-49c9-986f-70e39a7fe8e6
+    PortName: Well I wish you luck
+    TargetNodeGuid: e0fe1443-403e-4969-aeab-87cfa0512c43
+  - BaseNodeGuid: f2e91cea-b581-49c9-986f-70e39a7fe8e6
+    PortName: I wish you well
+    TargetNodeGuid: e0fe1443-403e-4969-aeab-87cfa0512c43
+  - BaseNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
+    PortName: ...
+    TargetNodeGuid: 90f23d7b-a1bf-4a85-abee-bd2375ed0fb8
+  - BaseNodeGuid: 9b395647-abc3-4754-af0f-84cb4c196b96
+    PortName: ...
+    TargetNodeGuid: 9cda66c3-9bcd-4e5f-a6e2-ec633082ef46
   - BaseNodeGuid: 9cda66c3-9bcd-4e5f-a6e2-ec633082ef46
     PortName: ...
     TargetNodeGuid: e0fe1443-403e-4969-aeab-87cfa0512c43
-  - BaseNodeGuid: 9cda66c3-9bcd-4e5f-a6e2-ec633082ef46
-    PortName: Well I wish you luck
+  - BaseNodeGuid: c080978e-8053-4113-a884-04379d9067e0
+    PortName: ...
     TargetNodeGuid: e0fe1443-403e-4969-aeab-87cfa0512c43
-  - BaseNodeGuid: 9cda66c3-9bcd-4e5f-a6e2-ec633082ef46
-    PortName: I wish you well
+  - BaseNodeGuid: e99ad79d-779d-4add-901c-eb5aa46c6c51
+    PortName: ...
     TargetNodeGuid: e0fe1443-403e-4969-aeab-87cfa0512c43
+  - BaseNodeGuid: 7e8442a7-12d0-4f9b-9769-e179896576dd
+    PortName: ...
+    TargetNodeGuid: e0fe1443-403e-4969-aeab-87cfa0512c43
+  - BaseNodeGuid: f2e91cea-b581-49c9-986f-70e39a7fe8e6
+    PortName: ...
+    TargetNodeGuid: e0fe1443-403e-4969-aeab-87cfa0512c43
+  - BaseNodeGuid: e953ce5b-edad-4fac-b2fe-4f5f2b08b15d
+    PortName: Well, if at first you don't succeed
+    TargetNodeGuid: 7e8442a7-12d0-4f9b-9769-e179896576dd
+  - BaseNodeGuid: e953ce5b-edad-4fac-b2fe-4f5f2b08b15d
+    PortName: ...
+    TargetNodeGuid: f2e91cea-b581-49c9-986f-70e39a7fe8e6
+  - BaseNodeGuid: c48a578f-8ce3-4330-a386-faa1d043f6df
+    PortName: ...
+    TargetNodeGuid: e0fe1443-403e-4969-aeab-87cfa0512c43
+  - BaseNodeGuid: 8fc1be51-fd6a-47c2-a387-41370a18e90e
+    PortName: ...
+    TargetNodeGuid: 9b395647-abc3-4754-af0f-84cb4c196b96
   DialogueNodeData:
-  - Guid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
-    DialogueText: How you doing *cough*
-    Position: {x: 221, y: 187}
   - Guid: 90f23d7b-a1bf-4a85-abee-bd2375ed0fb8
     DialogueText: No need to worry, happens all the time.
     Position: {x: 670, y: 356}
@@ -164,29 +161,32 @@ MonoBehaviour:
   - Guid: 9b395647-abc3-4754-af0f-84cb4c196b96
     DialogueText: Yea I get silence all the time, *cough* people are so judgey.
     Position: {x: 1147, y: 162}
-  - Guid: e953ce5b-edad-4fac-b2fe-4f5f2b08b15d
-    DialogueText: I have in the past, I don't have the discipline.
-    Position: {x: 1466, y: 340}
   - Guid: c48a578f-8ce3-4330-a386-faa1d043f6df
     DialogueText: Perhaps *cough* in the future.
     Position: {x: 1467, y: 493}
-  - Guid: 9cda66c3-9bcd-4e5f-a6e2-ec633082ef46
-    DialogueText: Maybe Ill give it another try, starting today.
-    Position: {x: 1903, y: -268}
-  - Guid: e99ad79d-779d-4add-901c-eb5aa46c6c51
-    DialogueText: It sure seems like it.
-    Position: {x: 1901, y: 22}
   - Guid: c080978e-8053-4113-a884-04379d9067e0
     DialogueText: Indeed perhaps.
     Position: {x: 1903, y: -127}
-  - Guid: 7e8442a7-12d0-4f9b-9769-e179896576dd
-    DialogueText: Perhaps you are correct. *cough* Maybe I should try again.
-    Position: {x: 1894, y: 169}
   - Guid: f2e91cea-b581-49c9-986f-70e39a7fe8e6
     DialogueText: 'I have, I couldn''t *cough* stick with it. '
     Position: {x: 1903, y: 330}
   - Guid: e0fe1443-403e-4969-aeab-87cfa0512c43
     DialogueText: +0
     Position: {x: 2509, y: 27}
+  - Guid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
+    DialogueText: How you doing *cough*
+    Position: {x: 259, y: 147}
+  - Guid: 9cda66c3-9bcd-4e5f-a6e2-ec633082ef46
+    DialogueText: Maybe Ill give it another try, starting today.
+    Position: {x: 1899, y: -362}
+  - Guid: e99ad79d-779d-4add-901c-eb5aa46c6c51
+    DialogueText: It sure seems like it.
+    Position: {x: 1901, y: 22}
+  - Guid: 7e8442a7-12d0-4f9b-9769-e179896576dd
+    DialogueText: Perhaps you are correct. *cough* Maybe I should try again.
+    Position: {x: 1894, y: 169}
+  - Guid: e953ce5b-edad-4fac-b2fe-4f5f2b08b15d
+    DialogueText: I have in the past, I don't have the discipline.
+    Position: {x: 1466, y: 339}
   ExposedProperties: []
   CommentBlockData: []
