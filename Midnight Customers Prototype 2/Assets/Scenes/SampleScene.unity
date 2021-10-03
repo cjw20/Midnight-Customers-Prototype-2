@@ -1831,6 +1831,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRunning: 0
   inCheckout: 0
+  currentMilestone: 0
   slider: {fileID: 1954433555}
   timePassed: 0
   scale: 1
@@ -5107,12 +5108,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7353394671645645614, guid: cd1317c45a3eaef4ea17cf6999e5d1bb, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7353394671645645614, guid: cd1317c45a3eaef4ea17cf6999e5d1bb, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7353394671645645614, guid: cd1317c45a3eaef4ea17cf6999e5d1bb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7353394671645645614, guid: cd1317c45a3eaef4ea17cf6999e5d1bb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.94
+      value: 2.71
       objectReference: {fileID: 0}
     - target: {fileID: 7353394671645645614, guid: cd1317c45a3eaef4ea17cf6999e5d1bb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -14999,11 +15008,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6010064553094314888, guid: c208794e7e4da754bade06a8d0248f4b, type: 3}
       propertyPath: moodMilestones.Array.data[1]
-      value: 15
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 6010064553094314888, guid: c208794e7e4da754bade06a8d0248f4b, type: 3}
       propertyPath: moodMilestones.Array.data[2]
-      value: 40
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 6010064553094314888, guid: c208794e7e4da754bade06a8d0248f4b, type: 3}
       propertyPath: moodMilestones.Array.data[3]
@@ -15145,14 +15154,6 @@ PrefabInstance:
     - target: {fileID: 7353394671645645614, guid: cd1317c45a3eaef4ea17cf6999e5d1bb, type: 3}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7353394671645645614, guid: cd1317c45a3eaef4ea17cf6999e5d1bb, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7353394671645645614, guid: cd1317c45a3eaef4ea17cf6999e5d1bb, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7353394671645645614, guid: cd1317c45a3eaef4ea17cf6999e5d1bb, type: 3}
       propertyPath: m_LocalPosition.x
