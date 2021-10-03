@@ -17,8 +17,7 @@ public class CheckoutTrigger : MonoBehaviour
     public bool inCheckout; //true while checkout game going on
     void Start()
     {
-        checkoutManager = checkoutGame.GetComponent<CheckoutManager>(); //may not need this part later
-       
+        checkoutManager = checkoutGame.GetComponent<CheckoutManager>(); //may not need this part later      
 
     }
 
@@ -59,11 +58,15 @@ public class CheckoutTrigger : MonoBehaviour
 
         if (collision.CompareTag("Customer"))
         {
-            customerReady = true;
-            customer = collision.gameObject;
-            customerInfo = customer.GetComponent<CustomerInfo>();
-            if(playerReady) playerMove.Epopup.SetActive(true); //Only pops up if waiting on Customer
-            checkoutTimer.StartTimer(customerInfo); //starts global timer for checkout
+            if (collision.gameObject.GetComponent<CustomerMovement>().readyForCheckout)
+            {
+                customerReady = true;
+                customer = collision.gameObject;
+                customerInfo = customer.GetComponent<CustomerInfo>();
+                if (playerReady) playerMove.Epopup.SetActive(true); //Only pops up if waiting on Customer
+                checkoutTimer.StartTimer(customerInfo); //starts global timer for checkout
+            }
+            
         }
     }
 
@@ -77,9 +80,12 @@ public class CheckoutTrigger : MonoBehaviour
 
         if (collision.CompareTag("Customer"))
         {
-            customerReady = false;
-            customer = null;
-            customerInfo = null; //clears out customer data 
+            
+             customerReady = false;
+             customer = null;
+             customerInfo = null; //clears out customer data
+           
+             
         }
     }
 }

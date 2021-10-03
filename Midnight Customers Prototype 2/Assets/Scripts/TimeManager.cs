@@ -60,7 +60,7 @@ public class TimeManager : MonoBehaviour
             }
 
 
-            if(hours == 5 && minutes == 30)
+            if(hours == 4 && minutes == 30)
             {
                 customerManager.PauseSpawns();
                 //lazy way to make it so there wont be customers in store when it starts to close

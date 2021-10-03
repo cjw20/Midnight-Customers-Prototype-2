@@ -22,6 +22,7 @@ public class CustomerMovement : MonoBehaviour
 
 
     public bool hasCheckedOut = false; //set to true after checkout minigame completed
+    public bool readyForCheckout; //so checkout wont be available if customer walks past counter before ready
 
     private void Awake()
     {
@@ -88,6 +89,7 @@ public class CustomerMovement : MonoBehaviour
 
         if (agent.destination == new Vector2(checkout.position.x, checkout.position.y))
         {
+            readyForCheckout = true;
             yield break; //make function that calls next point after checkout done
             //wait until checkout minigame done
         }
@@ -104,6 +106,7 @@ public class CustomerMovement : MonoBehaviour
         //call from MG script after completion
         isWaiting = false;
         hasCheckedOut = true;
+        readyForCheckout = false;
         GoToNextPoint();
     }
 

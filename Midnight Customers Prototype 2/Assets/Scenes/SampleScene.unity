@@ -3196,7 +3196,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -2.3656402, y: 0.37712944}
+  m_Offset: {x: -0.93648005, y: -0.03270316}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -3207,7 +3207,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 9.738065, y: 1.5265987}
+  m_Size: {x: 6.8797455, y: 0.7069335}
   m_EdgeRadius: 0
 --- !u!1 &519420028
 GameObject:
@@ -15001,7 +15001,7 @@ PrefabInstance:
     - target: {fileID: 6010064553094314888, guid: c208794e7e4da754bade06a8d0248f4b, type: 3}
       propertyPath: conversations.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: 6bf2fcf94005c494ca21cbf691995cc2, type: 2}
+      objectReference: {fileID: 11400000, guid: a4c1585c87510ad4795367226f8cd87f, type: 2}
     - target: {fileID: 6010064553094314888, guid: c208794e7e4da754bade06a8d0248f4b, type: 3}
       propertyPath: conversations.Array.data[1]
       value: 
