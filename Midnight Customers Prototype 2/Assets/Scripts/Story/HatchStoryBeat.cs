@@ -16,12 +16,12 @@ public class HatchStoryBeat : MonoBehaviour
 
     public void StartStory()
     {
-        hintCustomer.GetComponent<CustomerInfo>().SetStoryConvo(hatchHint); //puts hint into customer pool
+        //hintCustomer.GetComponent<CustomerInfo>().SetStoryConvo(hatchHint); //puts hint into customer pool
         hatch.SetActive(true); //makes hatch discoverable
     }
 
     public void FoundHatch()
     {
-        investigator.GetComponent<CustomerInfo>().SetStoryConvo(hatchFound); //will be able to tell investigator about hatch next time she shows up
+        //investigator.GetComponent<CustomerInfo>().SetStoryConvo(hatchFound); //will be able to tell investigator about hatch next time she shows up
     }
 }

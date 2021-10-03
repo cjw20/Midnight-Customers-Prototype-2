@@ -4427,10 +4427,13 @@ MonoBehaviour:
   - {fileID: 1258878923}
   - {fileID: 1258878923}
   - {fileID: 6208242975807155669}
-  - {fileID: 3260826082827519750}
-  - {fileID: 3171553143526816585}
+  - {fileID: 5570189988557149941}
+  - {fileID: 1258878923}
+  - {fileID: 5570189988557149941}
+  - {fileID: 5482497132447540406}
   - {fileID: 5570189988557149941}
   - {fileID: 2480230834637058604}
+  - {fileID: 5570189988557149941}
   exit: {fileID: 719393441}
 --- !u!4 &668096973
 Transform:
@@ -15554,11 +15557,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8396762688156681531, guid: b2dd033b1b039cd468d20d6509b308d7, type: 3}
   m_PrefabInstance: {fileID: 6263600950566876951}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &3171553143526816585 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4216765681452312128, guid: 706be3c207d989e4f822127c1904852b, type: 3}
-  m_PrefabInstance: {fileID: 1623381416244256009}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3171553143526816589 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4216765681452312132, guid: 706be3c207d989e4f822127c1904852b, type: 3}
@@ -15567,11 +15565,6 @@ Transform:
 --- !u!4 &3260826082827519746 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4341891569755352046, guid: 9579c97dd5ae56845b66ea882b61d3d2, type: 3}
-  m_PrefabInstance: {fileID: 1225462245585366252}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &3260826082827519750 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4341891569755352042, guid: 9579c97dd5ae56845b66ea882b61d3d2, type: 3}
   m_PrefabInstance: {fileID: 1225462245585366252}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &3407723778454602979
@@ -15894,6 +15887,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 694592631186955907, guid: 57b0baff431f6ff4285709247c7e3789, type: 3}
   m_PrefabInstance: {fileID: 5023218142284003889}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5482497132447540406 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 694592631186955911, guid: 57b0baff431f6ff4285709247c7e3789, type: 3}
+  m_PrefabInstance: {fileID: 5023218142284003889}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5570189988557149937 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2086022073797734999, guid: d52477f69afa3d04ba8c39de28ca629d, type: 3}
@@ -15916,9 +15914,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 55fa0d86afb24824689580cf56c93ffd, type: 3}
     - target: {fileID: 5642382787059048421, guid: 0c385362111dbf04cbbe979bb5f2d605, type: 3}
+      propertyPath: conversations.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5642382787059048421, guid: 0c385362111dbf04cbbe979bb5f2d605, type: 3}
       propertyPath: moodMilestones.Array.size
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 5642382787059048421, guid: 0c385362111dbf04cbbe979bb5f2d605, type: 3}
+      propertyPath: checkoutItems.Array.data[1]
+      value: 
+      objectReference: {fileID: 6622352218425897467, guid: 85baa298a036f994283ed841ac75fdc2, type: 3}
     - target: {fileID: 5642382787059048421, guid: 0c385362111dbf04cbbe979bb5f2d605, type: 3}
       propertyPath: conversations.Array.data[0]
       value: 
@@ -15927,6 +15933,10 @@ PrefabInstance:
       propertyPath: conversations.Array.data[1]
       value: 
       objectReference: {fileID: 11400000, guid: 948591fb641a9914ea314a0f7e88098c, type: 2}
+    - target: {fileID: 5642382787059048421, guid: 0c385362111dbf04cbbe979bb5f2d605, type: 3}
+      propertyPath: conversations.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: 1187793a551ab1544aaf5e3c8fb67eab, type: 2}
     - target: {fileID: 5642382787059048421, guid: 0c385362111dbf04cbbe979bb5f2d605, type: 3}
       propertyPath: moodMilestones.Array.data[1]
       value: 25
@@ -16050,7 +16060,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: fa1d273e7e22a794c93818290fe5f978, type: 3}
     - target: {fileID: 2086022073797734984, guid: d52477f69afa3d04ba8c39de28ca629d, type: 3}
       propertyPath: conversations.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2086022073797734984, guid: d52477f69afa3d04ba8c39de28ca629d, type: 3}
       propertyPath: moodMilestones.Array.size
@@ -16068,6 +16078,10 @@ PrefabInstance:
       propertyPath: conversations.Array.data[2]
       value: 
       objectReference: {fileID: 11400000, guid: 94373bee1fe14b44397b66becbbf40e2, type: 2}
+    - target: {fileID: 2086022073797734984, guid: d52477f69afa3d04ba8c39de28ca629d, type: 3}
+      propertyPath: conversations.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: d478f082043dc5e45a70e3b41c2fba3f, type: 2}
     - target: {fileID: 2086022073797734984, guid: d52477f69afa3d04ba8c39de28ca629d, type: 3}
       propertyPath: moodMilestones.Array.data[1]
       value: 25

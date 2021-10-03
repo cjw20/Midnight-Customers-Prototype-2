@@ -23,7 +23,7 @@ public class StoryEventHandler : MonoBehaviour
     {
         switch (day)
         {
-            case 2:
+            case 4:
                 hatchStory.StartStory();
                 break;
             default:
