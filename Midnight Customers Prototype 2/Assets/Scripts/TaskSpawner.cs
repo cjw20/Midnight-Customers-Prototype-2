@@ -27,8 +27,9 @@ public class TaskSpawner : MonoBehaviour
         //eventally make it so tasks spawn throughout day instead of all at once
         int random = Random.Range(1, 2);
         SpawnMopTask(random);
-        random = Random.Range(1, 2); 
-        SpawnShelfTask(random);
+        //random = Random.Range(1, 2); 
+        //SpawnShelfTask(random);
+        //commented ^ out for gdex build because of dumb bug and no visual assets
     }
 
     void SpawnMopTask(int amount)
