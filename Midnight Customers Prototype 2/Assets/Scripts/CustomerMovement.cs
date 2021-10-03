@@ -70,6 +70,10 @@ public class CustomerMovement : MonoBehaviour
         agent.destination = plannedPath[destination].position;
 
         destination++;
+        if (agent.destination == new Vector2(checkout.position.x, checkout.position.y))
+        {
+            readyForCheckout = true;
+        }
 
         isWaiting = false;
     }

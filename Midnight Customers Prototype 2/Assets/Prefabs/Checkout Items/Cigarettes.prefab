@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2b87dcfaf0fceb45b8bd3a1ce5c324a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  price: 6.99
+  price: 7
   itemName: cigarettes
   weight: 1
   requiresID: 1
