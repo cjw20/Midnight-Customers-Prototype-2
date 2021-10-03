@@ -1,0 +1,149 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
+  m_Name: Invest-Intro
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: dc1ba96b-c2e6-4786-bcce-43defb5a3cc1
+    PortName: Did you find it okay?
+    TargetNodeGuid: 44d26f0a-d79d-4652-bcdd-cb0180904aa6
+  - BaseNodeGuid: dc1ba96b-c2e6-4786-bcce-43defb5a3cc1
+    PortName: I haven't seen you around before.
+    TargetNodeGuid: f83fb91d-8660-4f8c-8792-c75ad1991c05
+  - BaseNodeGuid: 49ea00d8-e4f6-49b5-90e8-cf46083d020e
+    PortName: Next
+    TargetNodeGuid: dc1ba96b-c2e6-4786-bcce-43defb5a3cc1
+  - BaseNodeGuid: 44d26f0a-d79d-4652-bcdd-cb0180904aa6
+    PortName: I try to stay busy.
+    TargetNodeGuid: 9f21882b-ead9-4c3f-845c-439e0e95b663
+  - BaseNodeGuid: 44d26f0a-d79d-4652-bcdd-cb0180904aa6
+    PortName: All the time.
+    TargetNodeGuid: 058aee6a-33f2-499f-8e9c-7a23ec2abe4a
+  - BaseNodeGuid: f83fb91d-8660-4f8c-8792-c75ad1991c05
+    PortName: A smoke break?
+    TargetNodeGuid: 1047866f-7c8d-4363-a1e1-e278e09b0a22
+  - BaseNodeGuid: 058aee6a-33f2-499f-8e9c-7a23ec2abe4a
+    PortName: A smoke break?
+    TargetNodeGuid: 1047866f-7c8d-4363-a1e1-e278e09b0a22
+  - BaseNodeGuid: 058aee6a-33f2-499f-8e9c-7a23ec2abe4a
+    PortName: Oh, I hope you're enjoying the area!
+    TargetNodeGuid: 26881446-7839-4128-b739-29a3e0b3cccc
+  - BaseNodeGuid: f83fb91d-8660-4f8c-8792-c75ad1991c05
+    PortName: Oh, I hope you're enjoying the area!
+    TargetNodeGuid: 26881446-7839-4128-b739-29a3e0b3cccc
+  - BaseNodeGuid: 9f21882b-ead9-4c3f-845c-439e0e95b663
+    PortName: Whatever gets us through the day, right?
+    TargetNodeGuid: 16a4d796-9fed-42a6-8724-b8154deb6cc3
+  - BaseNodeGuid: 26881446-7839-4128-b739-29a3e0b3cccc
+    PortName: Whatever gets us through the day, right?
+    TargetNodeGuid: 16a4d796-9fed-42a6-8724-b8154deb6cc3
+  - BaseNodeGuid: 1047866f-7c8d-4363-a1e1-e278e09b0a22
+    PortName: Whatever gets us through the day, right?
+    TargetNodeGuid: 16a4d796-9fed-42a6-8724-b8154deb6cc3
+  - BaseNodeGuid: 1047866f-7c8d-4363-a1e1-e278e09b0a22
+    PortName: I'm sorry it didn't work out.
+    TargetNodeGuid: 46a3a5fb-9c93-4d48-ac0e-82e73d5be6e1
+  - BaseNodeGuid: 9f21882b-ead9-4c3f-845c-439e0e95b663
+    PortName: What do you do?
+    TargetNodeGuid: 0e02fcec-95f7-467e-9f46-cc93eafcd842
+  - BaseNodeGuid: 26881446-7839-4128-b739-29a3e0b3cccc
+    PortName: What do you do?
+    TargetNodeGuid: 0e02fcec-95f7-467e-9f46-cc93eafcd842
+  - BaseNodeGuid: 46a3a5fb-9c93-4d48-ac0e-82e73d5be6e1
+    PortName: What do you do?
+    TargetNodeGuid: 0e02fcec-95f7-467e-9f46-cc93eafcd842
+  - BaseNodeGuid: 46a3a5fb-9c93-4d48-ac0e-82e73d5be6e1
+    PortName: That's understandable. I'm always stressed here.
+    TargetNodeGuid: a65f9911-078a-4db1-a6e7-1864af50c457
+  - BaseNodeGuid: 0e02fcec-95f7-467e-9f46-cc93eafcd842
+    PortName: That sounds exciting, though!
+    TargetNodeGuid: b8d244d7-f9dc-4563-af9b-e55b10b8159c
+  - BaseNodeGuid: 16a4d796-9fed-42a6-8724-b8154deb6cc3
+    PortName: That sounds exciting, though!
+    TargetNodeGuid: b8d244d7-f9dc-4563-af9b-e55b10b8159c
+  - BaseNodeGuid: a65f9911-078a-4db1-a6e7-1864af50c457
+    PortName: That sounds exciting, though!
+    TargetNodeGuid: b8d244d7-f9dc-4563-af9b-e55b10b8159c
+  - BaseNodeGuid: 0e02fcec-95f7-467e-9f46-cc93eafcd842
+    PortName: How intense? Murder? Heists? What?
+    TargetNodeGuid: 50892242-74ad-49e0-a7f5-ca73560d57f9
+  - BaseNodeGuid: 16a4d796-9fed-42a6-8724-b8154deb6cc3
+    PortName: How intense? Murder? Heists? What?
+    TargetNodeGuid: 50892242-74ad-49e0-a7f5-ca73560d57f9
+  - BaseNodeGuid: a65f9911-078a-4db1-a6e7-1864af50c457
+    PortName: How intense? Murder? Heists? What?
+    TargetNodeGuid: 50892242-74ad-49e0-a7f5-ca73560d57f9
+  - BaseNodeGuid: b8d244d7-f9dc-4563-af9b-e55b10b8159c
+    PortName: It was nice meeting you!
+    TargetNodeGuid: bf5c2a16-725a-4ddf-ba49-3cf6fe6d449d
+  - BaseNodeGuid: b8d244d7-f9dc-4563-af9b-e55b10b8159c
+    PortName: See ya.
+    TargetNodeGuid: bf5c2a16-725a-4ddf-ba49-3cf6fe6d449d
+  - BaseNodeGuid: 50892242-74ad-49e0-a7f5-ca73560d57f9
+    PortName: Same to you!
+    TargetNodeGuid: bf5c2a16-725a-4ddf-ba49-3cf6fe6d449d
+  - BaseNodeGuid: 50892242-74ad-49e0-a7f5-ca73560d57f9
+    PortName: Awww lame! Well, see ya.
+    TargetNodeGuid: bf5c2a16-725a-4ddf-ba49-3cf6fe6d449d
+  DialogueNodeData:
+  - Guid: dc1ba96b-c2e6-4786-bcce-43defb5a3cc1
+    DialogueText: Just this, thanks.
+    Position: {x: 283, y: 199}
+  - Guid: f83fb91d-8660-4f8c-8792-c75ad1991c05
+    DialogueText: I'm just in town for work but I'm on a bit of a break right now.
+    Position: {x: 664, y: 317}
+  - Guid: 058aee6a-33f2-499f-8e9c-7a23ec2abe4a
+    DialogueText: I'd imagine/ A job's a job thoug, right? I'm taking a break from
+      work right now myself.
+    Position: {x: 1323, y: 191}
+  - Guid: 44d26f0a-d79d-4652-bcdd-cb0180904aa6
+    DialogueText: Fine, yeah. This place is pretty dead. Aren't ya bored?
+    Position: {x: 673, y: 110}
+  - Guid: 1047866f-7c8d-4363-a1e1-e278e09b0a22
+    DialogueText: Watch it. I tried to quit a while back but it didn't work out.
+    Position: {x: 1978, y: 510}
+  - Guid: 26881446-7839-4128-b739-29a3e0b3cccc
+    DialogueText: It's alright, I guess. I'm usually working though.
+    Position: {x: 2074, y: 266}
+  - Guid: 9f21882b-ead9-4c3f-845c-439e0e95b663
+    DialogueText: I'd imagine that's a tough task. I get that though. I'm always
+      working too.
+    Position: {x: 1770, y: 7}
+  - Guid: 46a3a5fb-9c93-4d48-ac0e-82e73d5be6e1
+    DialogueText: Ah, it's fine. My ex was big on me quitting but after the split
+      I went back. Work sure doesn't help.
+    Position: {x: 2815, y: 653}
+  - Guid: 16a4d796-9fed-42a6-8724-b8154deb6cc3
+    DialogueText: You got that right. I'm a private investigator so it's not like
+      I'm a stranger to risk. Shit can get real intense.
+    Position: {x: 3724, y: 410}
+  - Guid: 0e02fcec-95f7-467e-9f46-cc93eafcd842
+    DialogueText: I do some private investigation work. Lots of finding cheating
+      spouses and stuff but some cases can be more intense.
+    Position: {x: 3645, y: 202}
+  - Guid: a65f9911-078a-4db1-a6e7-1864af50c457
+    DialogueText: It's not exactly the same. I do some private Investigation work
+      and some cases can get real intense.
+    Position: {x: 3740, y: 648}
+  - Guid: b8d244d7-f9dc-4563-af9b-e55b10b8159c
+    DialogueText: It can be, I guess. Ah well looks like I gotta run. See ya around,
+      kid.
+    Position: {x: 4820, y: 264}
+  - Guid: 50892242-74ad-49e0-a7f5-ca73560d57f9
+    DialogueText: Stories for another time, kid. I'm sorry but I gotta run. It was
+      nice talkin' to ya.
+    Position: {x: 4820, y: 603}
+  - Guid: bf5c2a16-725a-4ddf-ba49-3cf6fe6d449d
+    DialogueText: +0
+    Position: {x: 5549, y: 426}
+  ExposedProperties: []
+  CommentBlockData: []

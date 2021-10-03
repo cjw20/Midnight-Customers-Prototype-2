@@ -25,6 +25,7 @@ public class DialoguePlayer : MonoBehaviour
     //Dependent on editor references being set to children
     public GameObject playerDialoguePanel;
     public GameObject countdownBar;
+    bool charDelay;
 
     private void OnEnable()
     {
@@ -142,6 +143,7 @@ public class DialoguePlayer : MonoBehaviour
         yield break;
     }
 
+
     IEnumerator TypeSentence(string sentence, string narrativeDataGUID) 
     {
         //This is how the game knows when a conversation ends! The ending nodes MUST begin with + or -
@@ -163,15 +165,21 @@ public class DialoguePlayer : MonoBehaviour
         }
         else
         {
+            charDelay = true;
             dialogueText.text = "";
             foreach (char letter in sentence.ToCharArray())
             {
                 dialogueText.text += letter;
-                yield return new WaitForSeconds(0.05f); //delay goes here
+                if(charDelay) yield return new WaitForSeconds(0.05f); //delay goes here
             }
             StartCoroutine(WaitForNewChoices(narrativeDataGUID));
             yield break;
         }
         
+    }
+    void Update(){
+        if (Input.GetKeyDown(KeyCode.Q)){
+            charDelay = false;
+        }
     }
 }

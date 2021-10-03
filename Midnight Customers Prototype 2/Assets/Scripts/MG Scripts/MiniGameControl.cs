@@ -8,6 +8,7 @@ public class MiniGameControl : MonoBehaviour
     MiniGameTrigger currentTrigger;
 
     [SerializeField] TaskSpawner taskSpawner;
+    [SerializeField] SoundManager soundManager;
 
     GameObject currentGame;
    
@@ -23,6 +24,6 @@ public class MiniGameControl : MonoBehaviour
         currentTrigger.EndMiniGame();
         taskSpawner.unfinishedTasks--; 
         currentGame = null;
-        
+        soundManager.StopSweepingSound();
     }
 }

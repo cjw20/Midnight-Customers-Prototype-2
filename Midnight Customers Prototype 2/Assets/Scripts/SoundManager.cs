@@ -13,6 +13,7 @@ public class SoundManager : MonoBehaviour
     [SerializeField] AudioSource cashRegisterSound;
     [SerializeField] AudioSource drawerSound;
     [SerializeField] AudioSource doorbell;
+    [SerializeField] AudioSource sweepingSound;
 
     // Start is called before the first frame update
     void Start()
@@ -71,5 +72,29 @@ public class SoundManager : MonoBehaviour
     public void PlayDoorbellSound()
     {
         doorbell.Play();
+    }
+
+    public void PlaySweepingSound()
+    {
+        if (!sweepingSound.isPlaying)
+        {
+            sweepingSound.Play();
+        }
+    }
+
+    public void PauseSweepingSound()
+    {
+        if (sweepingSound.isPlaying)
+        {
+            sweepingSound.Pause();
+        }
+    }
+
+    public void StopSweepingSound()
+    {
+        if (sweepingSound.isPlaying)
+        {
+            sweepingSound.Stop();
+        }
     }
 }

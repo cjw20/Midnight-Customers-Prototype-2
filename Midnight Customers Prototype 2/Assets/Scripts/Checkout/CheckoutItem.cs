@@ -48,8 +48,16 @@ public class CheckoutItem : MonoBehaviour
 
         }
 
-        if (collision.CompareTag("Drawer"))
+        /*if (collision.CompareTag("Drawer")) Moved to OnTriggerStay2D
         {
+            checkoutManager.PutAwayItem(isScanned, price, requiresID);
+            Destroy(this.gameObject);
+        }
+        */
+    }
+
+    private void OnTriggerStay2D(Collider2D collision){
+        if (collision.CompareTag("Drawer") && !Input.GetMouseButton(0)) {
             checkoutManager.PutAwayItem(isScanned, price, requiresID);
             Destroy(this.gameObject);
         }
