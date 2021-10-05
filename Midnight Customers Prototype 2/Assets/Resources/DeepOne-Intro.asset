@@ -25,21 +25,15 @@ MonoBehaviour:
   - BaseNodeGuid: fd9abd68-50c4-4056-9d53-80e728b253a6
     PortName: What do you mean?
     TargetNodeGuid: f56fb1ca-621b-4550-a526-21462d926992
-  - BaseNodeGuid: 765c147c-cb9d-4825-98e6-ec5573683488
-    PortName: What do you mean?
-    TargetNodeGuid: f56fb1ca-621b-4550-a526-21462d926992
   - BaseNodeGuid: fd9abd68-50c4-4056-9d53-80e728b253a6
     PortName: I'm not so sure about that.
     TargetNodeGuid: 61243a48-86e9-4e53-9b5d-13631cd1d5d2
   - BaseNodeGuid: 765c147c-cb9d-4825-98e6-ec5573683488
+    PortName: What do you mean?
+    TargetNodeGuid: f56fb1ca-621b-4550-a526-21462d926992
+  - BaseNodeGuid: 765c147c-cb9d-4825-98e6-ec5573683488
     PortName: I'm not so sure about that.
     TargetNodeGuid: 61243a48-86e9-4e53-9b5d-13631cd1d5d2
-  - BaseNodeGuid: f56fb1ca-621b-4550-a526-21462d926992
-    PortName: Our bottled water tastes alright to me!
-    TargetNodeGuid: b35ec4eb-ae14-4f04-baf3-9959d9ae0f6f
-  - BaseNodeGuid: f56fb1ca-621b-4550-a526-21462d926992
-    PortName: That's fair, the pollution here is awful.
-    TargetNodeGuid: b8c33f9c-0f87-4699-9d31-9c6a0b48779b
   - BaseNodeGuid: 61243a48-86e9-4e53-9b5d-13631cd1d5d2
     PortName: Our bottled water tastes alright to me!
     TargetNodeGuid: b35ec4eb-ae14-4f04-baf3-9959d9ae0f6f
@@ -47,27 +41,33 @@ MonoBehaviour:
     PortName: That's fair, the pollution here is awful.
     TargetNodeGuid: b8c33f9c-0f87-4699-9d31-9c6a0b48779b
   - BaseNodeGuid: b35ec4eb-ae14-4f04-baf3-9959d9ae0f6f
-    PortName: Hopefully soon.
-    TargetNodeGuid: 2c605583-fac7-4278-852a-5fd41a01819e
-  - BaseNodeGuid: b8c33f9c-0f87-4699-9d31-9c6a0b48779b
     PortName: Hopefully soon.
     TargetNodeGuid: 2c605583-fac7-4278-852a-5fd41a01819e
   - BaseNodeGuid: b35ec4eb-ae14-4f04-baf3-9959d9ae0f6f
     PortName: ..
     TargetNodeGuid: df7eb8c0-92f6-4b7f-b559-07e98a331c94
+  - BaseNodeGuid: f56fb1ca-621b-4550-a526-21462d926992
+    PortName: Our bottled water tastes alright to me!
+    TargetNodeGuid: b35ec4eb-ae14-4f04-baf3-9959d9ae0f6f
+  - BaseNodeGuid: f56fb1ca-621b-4550-a526-21462d926992
+    PortName: That's fair, the pollution here is awful.
+    TargetNodeGuid: b8c33f9c-0f87-4699-9d31-9c6a0b48779b
+  - BaseNodeGuid: b8c33f9c-0f87-4699-9d31-9c6a0b48779b
+    PortName: Hopefully soon.
+    TargetNodeGuid: 2c605583-fac7-4278-852a-5fd41a01819e
   - BaseNodeGuid: b8c33f9c-0f87-4699-9d31-9c6a0b48779b
     PortName: ...
     TargetNodeGuid: df7eb8c0-92f6-4b7f-b559-07e98a331c94
-  - BaseNodeGuid: 2c605583-fac7-4278-852a-5fd41a01819e
+  - BaseNodeGuid: df7eb8c0-92f6-4b7f-b559-07e98a331c94
     PortName: Goodbye, sir.
     TargetNodeGuid: 4c00426e-7f58-43e1-adf0-f2f960b722a8
-  - BaseNodeGuid: 2c605583-fac7-4278-852a-5fd41a01819e
+  - BaseNodeGuid: df7eb8c0-92f6-4b7f-b559-07e98a331c94
     PortName: I'll see you around.
     TargetNodeGuid: 4c00426e-7f58-43e1-adf0-f2f960b722a8
-  - BaseNodeGuid: df7eb8c0-92f6-4b7f-b559-07e98a331c94
+  - BaseNodeGuid: 2c605583-fac7-4278-852a-5fd41a01819e
     PortName: Goodbye, sir.
     TargetNodeGuid: 4c00426e-7f58-43e1-adf0-f2f960b722a8
-  - BaseNodeGuid: df7eb8c0-92f6-4b7f-b559-07e98a331c94
+  - BaseNodeGuid: 2c605583-fac7-4278-852a-5fd41a01819e
     PortName: I'll see you around.
     TargetNodeGuid: 4c00426e-7f58-43e1-adf0-f2f960b722a8
   DialogueNodeData:
@@ -100,11 +100,11 @@ MonoBehaviour:
       always like this and I believe Arkham will come back better than before.
     Position: {x: 3564, y: 396}
   - Guid: df7eb8c0-92f6-4b7f-b559-07e98a331c94
-    DialogueText: .There I go again, rambling like the old man I am. Sorry, it just
+    DialogueText: There I go again, rambling like the old man I am. Sorry, it just
       angers me to see people littering like that. I should get going.
     Position: {x: 4777, y: 418}
   - Guid: 2c605583-fac7-4278-852a-5fd41a01819e
-    DialogueText: Sorry for chewing your ear off. It just angers me to see people
+    DialogueText: Sorry for chewing your ear off. It just bothers me to see people
       shamelessly littering like that. I should get going, take care.
     Position: {x: 4703, y: 83}
   - Guid: 4c00426e-7f58-43e1-adf0-f2f960b722a8

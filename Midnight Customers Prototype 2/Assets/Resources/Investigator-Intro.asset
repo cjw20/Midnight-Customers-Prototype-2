@@ -143,7 +143,7 @@ MonoBehaviour:
       kid.
     Position: {x: 4235, y: 96}
   - Guid: 1225c548-6d2b-4876-a9a4-c47aaa3bbf32
-    DialogueText: Dialogue Node
+    DialogueText: +0
     Position: {x: 4879, y: 192}
   ExposedProperties: []
   CommentBlockData: []
