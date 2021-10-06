@@ -170,7 +170,7 @@ public class DialoguePlayer : MonoBehaviour
             foreach (char letter in sentence.ToCharArray())
             {
                 dialogueText.text += letter;
-                if(charDelay) yield return new WaitForSeconds(0.05f); //delay goes here
+                if(charDelay) yield return new WaitForSeconds(0.03f); //delay goes here
             }
             StartCoroutine(WaitForNewChoices(narrativeDataGUID));
             yield break;
