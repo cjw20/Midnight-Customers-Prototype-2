@@ -27,11 +27,13 @@ public class CleanableObject : MonoBehaviour
     {
         if (isBeingCleaned && tool.isCleaning)
         {
-            passedTime += Time.deltaTime;
-            currentAlpha = Mathf.Lerp(1, 0, (passedTime / cleanTime));
+            //hitpoints = 3
+            //if mop is passing over object at fast speed
+            //hitpoints decrease and alpha is updated
+            currentAlpha = Mathf.Lerp(1, 0, 1);
             newColor = new Color(startingColor.r, startingColor.g, startingColor.b, currentAlpha);
             mess.color = newColor;
-            if (currentAlpha <= 0)
+            if (currentAlpha <= 0.1f) //float 
             {
                 mopGame.CleanedObject();
                 Destroy(this.gameObject);
