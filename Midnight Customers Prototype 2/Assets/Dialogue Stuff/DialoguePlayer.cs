@@ -43,7 +43,7 @@ public class DialoguePlayer : MonoBehaviour
         playerInput.Disable();
     }
     
-    public void StartConvo(DialogueContainer convo)
+    public void StartConvo(DialogueContainer convo, Font dialogueFont)
     {
         dialogue = convo;
         //do this after loading the convo?
@@ -51,7 +51,7 @@ public class DialoguePlayer : MonoBehaviour
         playerDialoguePanel.SetActive(true);
         countdownBar.SetActive(true);
         ProceedToNarrative(narrativeData.TargetNodeGuid);
-        
+        dialogueText.font = dialogueFont;
 
     }
 

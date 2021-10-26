@@ -63,7 +63,7 @@ public class CheckoutManager : MonoBehaviour
         portraitLocation.sprite = customerInfo.portrait;
 
         //pre convo messages before starting regular dialogue, like asking for something behind counter
-        dialoguePlayer.StartConvo(customerInfo.nextConversation);
+        dialoguePlayer.StartConvo(customerInfo.nextConversation, customerInfo.dialogueFont);
         
         itemNumber = items.Length;
         remainingItems = itemNumber;

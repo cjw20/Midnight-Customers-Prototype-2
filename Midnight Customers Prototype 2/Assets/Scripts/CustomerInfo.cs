@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CustomerInfo : MonoBehaviour
 {
     public string customerName;
+    public Font dialogueFont; //font customer will use
     public Sprite portrait;
     public int relationshipScore; //will need to save and load this for each customer 
     public GameObject[] checkoutItems; //items brought to checkout. May make script to choose this later

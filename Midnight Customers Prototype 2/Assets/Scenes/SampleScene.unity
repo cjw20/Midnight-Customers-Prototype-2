@@ -15135,6 +15135,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 668096973}
     m_Modifications:
     - target: {fileID: 6010064553094314888, guid: c208794e7e4da754bade06a8d0248f4b, type: 3}
+      propertyPath: dialogueFont
+      value: 
+      objectReference: {fileID: 12800000, guid: a35c41e5165ca3c4db1d4f24b69c9516, type: 3}
+    - target: {fileID: 6010064553094314888, guid: c208794e7e4da754bade06a8d0248f4b, type: 3}
       propertyPath: conversations.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -15473,6 +15477,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: cd8080514f97c0342ae78b994f172698, type: 3}
     - target: {fileID: 4341891569755352049, guid: 9579c97dd5ae56845b66ea882b61d3d2, type: 3}
+      propertyPath: dialogueFont
+      value: 
+      objectReference: {fileID: 12800000, guid: a35c41e5165ca3c4db1d4f24b69c9516, type: 3}
+    - target: {fileID: 4341891569755352049, guid: 9579c97dd5ae56845b66ea882b61d3d2, type: 3}
       propertyPath: checkoutItems.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -15649,6 +15657,10 @@ PrefabInstance:
       propertyPath: portrait
       value: 
       objectReference: {fileID: 21300000, guid: a60c92256f4935649ba36c6770e34156, type: 3}
+    - target: {fileID: 4216765681452312155, guid: 706be3c207d989e4f822127c1904852b, type: 3}
+      propertyPath: dialogueFont
+      value: 
+      objectReference: {fileID: 12800000, guid: a35c41e5165ca3c4db1d4f24b69c9516, type: 3}
     - target: {fileID: 4216765681452312155, guid: 706be3c207d989e4f822127c1904852b, type: 3}
       propertyPath: checkoutItems.Array.size
       value: 3
@@ -15890,6 +15902,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 71a3d305ce33b204c9e2587fcaa6914d, type: 3}
     - target: {fileID: 7804919453073409268, guid: 8b5f02a04c322d144a270de753473b49, type: 3}
+      propertyPath: dialogueFont
+      value: 
+      objectReference: {fileID: 12800000, guid: a35c41e5165ca3c4db1d4f24b69c9516, type: 3}
+    - target: {fileID: 7804919453073409268, guid: 8b5f02a04c322d144a270de753473b49, type: 3}
       propertyPath: checkoutItems.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -16028,6 +16044,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 694592631186955932, guid: 57b0baff431f6ff4285709247c7e3789, type: 3}
+      propertyPath: dialogueFont
+      value: 
+      objectReference: {fileID: 12800000, guid: a35c41e5165ca3c4db1d4f24b69c9516, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57b0baff431f6ff4285709247c7e3789, type: 3}
 --- !u!4 &5482497132447540402 stripped
@@ -16061,6 +16081,10 @@ PrefabInstance:
       propertyPath: portrait
       value: 
       objectReference: {fileID: 21300000, guid: 55fa0d86afb24824689580cf56c93ffd, type: 3}
+    - target: {fileID: 5642382787059048421, guid: 0c385362111dbf04cbbe979bb5f2d605, type: 3}
+      propertyPath: dialogueFont
+      value: 
+      objectReference: {fileID: 12800000, guid: a35c41e5165ca3c4db1d4f24b69c9516, type: 3}
     - target: {fileID: 5642382787059048421, guid: 0c385362111dbf04cbbe979bb5f2d605, type: 3}
       propertyPath: conversations.Array.size
       value: 3
@@ -16206,6 +16230,10 @@ PrefabInstance:
       propertyPath: portrait
       value: 
       objectReference: {fileID: 21300000, guid: fa1d273e7e22a794c93818290fe5f978, type: 3}
+    - target: {fileID: 2086022073797734984, guid: d52477f69afa3d04ba8c39de28ca629d, type: 3}
+      propertyPath: dialogueFont
+      value: 
+      objectReference: {fileID: 12800000, guid: a35c41e5165ca3c4db1d4f24b69c9516, type: 3}
     - target: {fileID: 2086022073797734984, guid: d52477f69afa3d04ba8c39de28ca629d, type: 3}
       propertyPath: conversations.Array.size
       value: 4
@@ -16378,6 +16406,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 668096973}
     m_Modifications:
+    - target: {fileID: 8396762688156681504, guid: b2dd033b1b039cd468d20d6509b308d7, type: 3}
+      propertyPath: dialogueFont
+      value: 
+      objectReference: {fileID: 12800000, guid: a35c41e5165ca3c4db1d4f24b69c9516, type: 3}
     - target: {fileID: 8396762688156681504, guid: b2dd033b1b039cd468d20d6509b308d7, type: 3}
       propertyPath: moodMilestones.Array.size
       value: 4
