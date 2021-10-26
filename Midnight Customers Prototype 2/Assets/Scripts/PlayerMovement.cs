@@ -18,6 +18,20 @@ public class PlayerMovement : MonoBehaviour
     public GameObject Epopup; //!
     public GameObject Qpopup; //?
 
+    private PlayerInput playerInput; //asset that has player controls
+    private void Awake()
+    {
+        playerInput = new PlayerInput();
+    }
+    private void OnEnable()
+    {
+        playerInput.Enable();
+    }
+
+    private void OnDisable()
+    {
+        playerInput.Disable();
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -45,8 +59,11 @@ public class PlayerMovement : MonoBehaviour
                 timerRunning = true;
             }
         }
-        movementDirection.x = Input.GetAxisRaw("Horizontal");
-        movementDirection.y = Input.GetAxisRaw("Vertical"); //movement using wasd or arrow keys
+        //movementDirection.x = Input.GetAxisRaw("Horizontal");
+        //movementDirection.y = Input.GetAxisRaw("Vertical"); //movement using wasd or arrow keys 
+        //old input system above
+
+        movementDirection = playerInput.Store.Move.ReadValue<Vector2>();
         playerLastFramePosition = transform.position;
     }
 
