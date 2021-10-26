@@ -7,13 +7,27 @@ public class Pause : MonoBehaviour
     public bool paused;
     [SerializeField] GameObject pauseScreen;
 
+    private PlayerInput playerInput; //asset that has player controls
+    private void Awake()
+    {
+        playerInput = new PlayerInput();
+    }
+    private void OnEnable()
+    {
+        playerInput.Enable();
+    }
+
+    private void OnDisable()
+    {
+        playerInput.Disable();
+    }
     private void Start()
     {
         Time.timeScale = 1;
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (playerInput.Store.Pause.triggered) 
         {        
             
             TogglePause();

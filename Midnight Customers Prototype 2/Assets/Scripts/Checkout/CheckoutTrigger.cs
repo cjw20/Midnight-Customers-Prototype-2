@@ -15,6 +15,21 @@ public class CheckoutTrigger : MonoBehaviour
     PlayerMovement playerMove;
 
     public bool inCheckout; //true while checkout game going on
+
+    private PlayerInput playerInput; //asset that has player controls
+    private void Awake()
+    {
+        playerInput = new PlayerInput();
+    }
+    private void OnEnable()
+    {
+        playerInput.Enable();
+    }
+
+    private void OnDisable()
+    {
+        playerInput.Disable();
+    }
     void Start()
     {
         checkoutManager = checkoutGame.GetComponent<CheckoutManager>(); //may not need this part later      
@@ -24,7 +39,7 @@ public class CheckoutTrigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.E))
+        if (playerInput.Store.Interact.triggered)
         {
             if (playerReady && customerReady && !inCheckout)//and customer ready too later once implemented
             {

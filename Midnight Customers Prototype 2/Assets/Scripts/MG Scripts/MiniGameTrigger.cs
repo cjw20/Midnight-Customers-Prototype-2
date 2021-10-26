@@ -10,6 +10,21 @@ public class MiniGameTrigger : MonoBehaviour
     bool playerReady;
     bool inGame;
     // Start is called before the first frame update
+
+    private PlayerInput playerInput; //asset that has player controls
+    private void Awake()
+    {
+        playerInput = new PlayerInput();
+    }
+    private void OnEnable()
+    {
+        playerInput.Enable();
+    }
+
+    private void OnDisable()
+    {
+        playerInput.Disable();
+    }
     void Start()
     {
         mgControl = FindObjectOfType<MiniGameControl>();
@@ -18,7 +33,7 @@ public class MiniGameTrigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.E))
+        if (playerInput.Store.Interact.triggered)
         {
             if (playerReady && !inGame)
             {

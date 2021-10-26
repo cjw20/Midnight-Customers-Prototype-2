@@ -7,9 +7,23 @@ public class Hatch : MonoBehaviour
     bool found;
     bool inRange;
     [SerializeField] HatchStoryBeat story;
+    private PlayerInput playerInput; //asset that has player controls
+    private void Awake()
+    {
+        playerInput = new PlayerInput();
+    }
+    private void OnEnable()
+    {
+        playerInput.Enable();
+    }
+
+    private void OnDisable()
+    {
+        playerInput.Disable();
+    }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.E))
+        if (playerInput.Store.Interact.triggered)
         {
             if (inRange && !found)
             {

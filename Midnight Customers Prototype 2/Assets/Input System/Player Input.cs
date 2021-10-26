@@ -194,7 +194,7 @@ public class @PlayerInput : IInputActionCollection, IDisposable
             ""id"": ""2c850802-727d-43ba-aadb-818a9c3d6bb4"",
             ""actions"": [
                 {
-                    ""name"": ""New action"",
+                    ""name"": ""Skip"",
                     ""type"": ""Button"",
                     ""id"": ""fe55b30e-1ed1-4261-a27a-292be2da8121"",
                     ""expectedControlType"": ""Button"",
@@ -206,11 +206,11 @@ public class @PlayerInput : IInputActionCollection, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""4d9f605a-fe2e-41d6-af4d-213aed5fd680"",
-                    ""path"": """",
+                    ""path"": ""<Keyboard>/q"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""New action"",
+                    ""action"": ""Skip"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -280,7 +280,7 @@ public class @PlayerInput : IInputActionCollection, IDisposable
         m_Store_Pause = m_Store.FindAction("Pause", throwIfNotFound: true);
         // Checkout
         m_Checkout = asset.FindActionMap("Checkout", throwIfNotFound: true);
-        m_Checkout_Newaction = m_Checkout.FindAction("New action", throwIfNotFound: true);
+        m_Checkout_Skip = m_Checkout.FindAction("Skip", throwIfNotFound: true);
         // Minigame
         m_Minigame = asset.FindActionMap("Minigame", throwIfNotFound: true);
         m_Minigame_Newaction = m_Minigame.FindAction("New action", throwIfNotFound: true);
@@ -385,12 +385,12 @@ public class @PlayerInput : IInputActionCollection, IDisposable
     // Checkout
     private readonly InputActionMap m_Checkout;
     private ICheckoutActions m_CheckoutActionsCallbackInterface;
-    private readonly InputAction m_Checkout_Newaction;
+    private readonly InputAction m_Checkout_Skip;
     public struct CheckoutActions
     {
         private @PlayerInput m_Wrapper;
         public CheckoutActions(@PlayerInput wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Newaction => m_Wrapper.m_Checkout_Newaction;
+        public InputAction @Skip => m_Wrapper.m_Checkout_Skip;
         public InputActionMap Get() { return m_Wrapper.m_Checkout; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -400,16 +400,16 @@ public class @PlayerInput : IInputActionCollection, IDisposable
         {
             if (m_Wrapper.m_CheckoutActionsCallbackInterface != null)
             {
-                @Newaction.started -= m_Wrapper.m_CheckoutActionsCallbackInterface.OnNewaction;
-                @Newaction.performed -= m_Wrapper.m_CheckoutActionsCallbackInterface.OnNewaction;
-                @Newaction.canceled -= m_Wrapper.m_CheckoutActionsCallbackInterface.OnNewaction;
+                @Skip.started -= m_Wrapper.m_CheckoutActionsCallbackInterface.OnSkip;
+                @Skip.performed -= m_Wrapper.m_CheckoutActionsCallbackInterface.OnSkip;
+                @Skip.canceled -= m_Wrapper.m_CheckoutActionsCallbackInterface.OnSkip;
             }
             m_Wrapper.m_CheckoutActionsCallbackInterface = instance;
             if (instance != null)
             {
-                @Newaction.started += instance.OnNewaction;
-                @Newaction.performed += instance.OnNewaction;
-                @Newaction.canceled += instance.OnNewaction;
+                @Skip.started += instance.OnSkip;
+                @Skip.performed += instance.OnSkip;
+                @Skip.canceled += instance.OnSkip;
             }
         }
     }
@@ -488,7 +488,7 @@ public class @PlayerInput : IInputActionCollection, IDisposable
     }
     public interface ICheckoutActions
     {
-        void OnNewaction(InputAction.CallbackContext context);
+        void OnSkip(InputAction.CallbackContext context);
     }
     public interface IMinigameActions
     {

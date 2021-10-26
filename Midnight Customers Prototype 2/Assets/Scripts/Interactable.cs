@@ -14,12 +14,26 @@ public class Interactable : MonoBehaviour
     [SerializeField] GameObject thoughtText;
     [SerializeField] GameObject thoughtWindow;
 
-    
 
+
+    private PlayerInput playerInput; //asset that has player controls
+    private void Awake()
+    {
+        playerInput = new PlayerInput();
+    }
+    private void OnEnable()
+    {
+        playerInput.Enable();
+    }
+
+    private void OnDisable()
+    {
+        playerInput.Disable();
+    }
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.E))
+        if (playerInput.Store.Interact.triggered)
         {
             if (inRange && !interacting)
             {

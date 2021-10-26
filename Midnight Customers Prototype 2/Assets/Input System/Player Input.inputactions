@@ -181,7 +181,7 @@
             "id": "2c850802-727d-43ba-aadb-818a9c3d6bb4",
             "actions": [
                 {
-                    "name": "New action",
+                    "name": "Skip",
                     "type": "Button",
                     "id": "fe55b30e-1ed1-4261-a27a-292be2da8121",
                     "expectedControlType": "Button",
@@ -193,11 +193,11 @@
                 {
                     "name": "",
                     "id": "4d9f605a-fe2e-41d6-af4d-213aed5fd680",
-                    "path": "",
+                    "path": "<Keyboard>/q",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "New action",
+                    "action": "Skip",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

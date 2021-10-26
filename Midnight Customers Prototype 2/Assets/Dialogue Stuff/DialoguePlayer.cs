@@ -27,11 +27,22 @@ public class DialoguePlayer : MonoBehaviour
     public GameObject countdownBar;
     bool charDelay;
 
+    private PlayerInput playerInput; //asset that has player controls
+    private void Awake()
+    {
+        playerInput = new PlayerInput();
+    }
     private void OnEnable()
     {
+        playerInput.Enable();
         countdownSlider.SetMinMax(0, 6, 6);
     }
 
+    private void OnDisable()
+    {
+        playerInput.Disable();
+    }
+    
     public void StartConvo(DialogueContainer convo)
     {
         dialogue = convo;
@@ -178,7 +189,7 @@ public class DialoguePlayer : MonoBehaviour
         
     }
     void Update(){
-        if (Input.GetKeyDown(KeyCode.Q)){
+        if (playerInput.Checkout.Skip.triggered){
             charDelay = false;
         }
     }
