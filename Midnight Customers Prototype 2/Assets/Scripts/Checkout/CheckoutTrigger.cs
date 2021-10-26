@@ -57,6 +57,7 @@ public class CheckoutTrigger : MonoBehaviour
     public void EndCheckout()
     {
         playerMove.moveable = true;
+        playerMove.Epopup.SetActive(false);
         inCheckout = false;
         checkoutTimer.ResetTimer();
     }
