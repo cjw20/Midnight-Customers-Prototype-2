@@ -15147,6 +15147,10 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6010064553094314888, guid: c208794e7e4da754bade06a8d0248f4b, type: 3}
+      propertyPath: checkoutItems.Array.data[1]
+      value: 
+      objectReference: {fileID: 6458507682949979337, guid: 82366301ebe00414a8c1ff52a146546d, type: 3}
+    - target: {fileID: 6010064553094314888, guid: c208794e7e4da754bade06a8d0248f4b, type: 3}
       propertyPath: conversations.Array.data[0]
       value: 
       objectReference: {fileID: 11400000, guid: a4c1585c87510ad4795367226f8cd87f, type: 2}
@@ -15670,9 +15674,13 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4216765681452312155, guid: 706be3c207d989e4f822127c1904852b, type: 3}
+      propertyPath: checkoutItems.Array.data[0]
+      value: 
+      objectReference: {fileID: 2212872583737943908, guid: 480b8c6d5e4b530478ec6fc17e877396, type: 3}
+    - target: {fileID: 4216765681452312155, guid: 706be3c207d989e4f822127c1904852b, type: 3}
       propertyPath: checkoutItems.Array.data[1]
       value: 
-      objectReference: {fileID: 3780908588764048216, guid: a8e72861f571ac84d849f1274aa3d5ba, type: 3}
+      objectReference: {fileID: 7408723352087344292, guid: b89b784da7220264ea748952275c579b, type: 3}
     - target: {fileID: 4216765681452312155, guid: 706be3c207d989e4f822127c1904852b, type: 3}
       propertyPath: checkoutItems.Array.data[2]
       value: 
@@ -16048,6 +16056,10 @@ PrefabInstance:
       propertyPath: dialogueFont
       value: 
       objectReference: {fileID: 12800000, guid: 41f0b41479f9f004bbb8c0e97b7fb179, type: 3}
+    - target: {fileID: 694592631186955932, guid: 57b0baff431f6ff4285709247c7e3789, type: 3}
+      propertyPath: checkoutItems.Array.data[2]
+      value: 
+      objectReference: {fileID: 3386115859536216938, guid: 4f97401727ff00345915c33fbc827720, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57b0baff431f6ff4285709247c7e3789, type: 3}
 --- !u!4 &5482497132447540402 stripped
@@ -16094,9 +16106,17 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5642382787059048421, guid: 0c385362111dbf04cbbe979bb5f2d605, type: 3}
+      propertyPath: checkoutItems.Array.data[0]
+      value: 
+      objectReference: {fileID: 2212872583737943908, guid: 480b8c6d5e4b530478ec6fc17e877396, type: 3}
+    - target: {fileID: 5642382787059048421, guid: 0c385362111dbf04cbbe979bb5f2d605, type: 3}
       propertyPath: checkoutItems.Array.data[1]
       value: 
       objectReference: {fileID: 6622352218425897467, guid: 85baa298a036f994283ed841ac75fdc2, type: 3}
+    - target: {fileID: 5642382787059048421, guid: 0c385362111dbf04cbbe979bb5f2d605, type: 3}
+      propertyPath: checkoutItems.Array.data[2]
+      value: 
+      objectReference: {fileID: 8311772619888331098, guid: 9a3ef9872c72661458d29cfb354027a8, type: 3}
     - target: {fileID: 5642382787059048421, guid: 0c385362111dbf04cbbe979bb5f2d605, type: 3}
       propertyPath: conversations.Array.data[0]
       value: 
@@ -16242,6 +16262,14 @@ PrefabInstance:
       propertyPath: moodMilestones.Array.size
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 2086022073797734984, guid: d52477f69afa3d04ba8c39de28ca629d, type: 3}
+      propertyPath: checkoutItems.Array.data[0]
+      value: 
+      objectReference: {fileID: 3780908588764048216, guid: a8e72861f571ac84d849f1274aa3d5ba, type: 3}
+    - target: {fileID: 2086022073797734984, guid: d52477f69afa3d04ba8c39de28ca629d, type: 3}
+      propertyPath: checkoutItems.Array.data[2]
+      value: 
+      objectReference: {fileID: 9144726806842012718, guid: 39f71a162c8919542ba51c560f0dd197, type: 3}
     - target: {fileID: 2086022073797734984, guid: d52477f69afa3d04ba8c39de28ca629d, type: 3}
       propertyPath: conversations.Array.data[0]
       value: 
