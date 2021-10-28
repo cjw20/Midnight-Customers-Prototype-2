@@ -15137,7 +15137,7 @@ PrefabInstance:
     - target: {fileID: 6010064553094314888, guid: c208794e7e4da754bade06a8d0248f4b, type: 3}
       propertyPath: dialogueFont
       value: 
-      objectReference: {fileID: 12800000, guid: a35c41e5165ca3c4db1d4f24b69c9516, type: 3}
+      objectReference: {fileID: 12800000, guid: e86f06ea0a36a0e42970c16855b93423, type: 3}
     - target: {fileID: 6010064553094314888, guid: c208794e7e4da754bade06a8d0248f4b, type: 3}
       propertyPath: conversations.Array.size
       value: 2
@@ -15479,7 +15479,7 @@ PrefabInstance:
     - target: {fileID: 4341891569755352049, guid: 9579c97dd5ae56845b66ea882b61d3d2, type: 3}
       propertyPath: dialogueFont
       value: 
-      objectReference: {fileID: 12800000, guid: a35c41e5165ca3c4db1d4f24b69c9516, type: 3}
+      objectReference: {fileID: 12800000, guid: 7304d254776e0ac4e9139035f80cf4ff, type: 3}
     - target: {fileID: 4341891569755352049, guid: 9579c97dd5ae56845b66ea882b61d3d2, type: 3}
       propertyPath: checkoutItems.Array.size
       value: 1
@@ -15904,7 +15904,7 @@ PrefabInstance:
     - target: {fileID: 7804919453073409268, guid: 8b5f02a04c322d144a270de753473b49, type: 3}
       propertyPath: dialogueFont
       value: 
-      objectReference: {fileID: 12800000, guid: a35c41e5165ca3c4db1d4f24b69c9516, type: 3}
+      objectReference: {fileID: 12800000, guid: 6756acbb0bc1aa6489c1758bea8de6bf, type: 3}
     - target: {fileID: 7804919453073409268, guid: 8b5f02a04c322d144a270de753473b49, type: 3}
       propertyPath: checkoutItems.Array.size
       value: 4
@@ -16047,7 +16047,7 @@ PrefabInstance:
     - target: {fileID: 694592631186955932, guid: 57b0baff431f6ff4285709247c7e3789, type: 3}
       propertyPath: dialogueFont
       value: 
-      objectReference: {fileID: 12800000, guid: a35c41e5165ca3c4db1d4f24b69c9516, type: 3}
+      objectReference: {fileID: 12800000, guid: 41f0b41479f9f004bbb8c0e97b7fb179, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57b0baff431f6ff4285709247c7e3789, type: 3}
 --- !u!4 &5482497132447540402 stripped
@@ -16409,7 +16409,7 @@ PrefabInstance:
     - target: {fileID: 8396762688156681504, guid: b2dd033b1b039cd468d20d6509b308d7, type: 3}
       propertyPath: dialogueFont
       value: 
-      objectReference: {fileID: 12800000, guid: a35c41e5165ca3c4db1d4f24b69c9516, type: 3}
+      objectReference: {fileID: 12800000, guid: 1b65f1fdfb628a84d91278cecf98d841, type: 3}
     - target: {fileID: 8396762688156681504, guid: b2dd033b1b039cd468d20d6509b308d7, type: 3}
       propertyPath: moodMilestones.Array.size
       value: 4
