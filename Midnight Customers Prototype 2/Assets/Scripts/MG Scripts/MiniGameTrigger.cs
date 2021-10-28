@@ -33,6 +33,7 @@ public class MiniGameTrigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /*
         if (playerInput.Store.Interact.triggered)
         {
             if (playerReady && !inGame)
@@ -42,6 +43,7 @@ public class MiniGameTrigger : MonoBehaviour
                 mgControl.LoadMiniGame(miniGame, this);
             }
         }
+        */
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -50,9 +52,17 @@ public class MiniGameTrigger : MonoBehaviour
             playerReady = true;
             playerMove = collision.gameObject.GetComponent<PlayerMovement>();
             playerMove.Epopup.SetActive(true);
+            playerMove.nearbyMG = this;
         }
 
         
+    }
+
+    public void TriggerMiniGame()
+    {
+        playerMove.moveable = false;
+        inGame = true;
+        mgControl.LoadMiniGame(miniGame, this);
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -61,6 +71,7 @@ public class MiniGameTrigger : MonoBehaviour
         {
             playerReady = false;
             playerMove.Epopup.SetActive(false);
+            playerMove.nearbyMG = null;
         }
 
        

@@ -33,22 +33,33 @@ public class Interactable : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (playerInput.Store.Interact.triggered)
-        {
+        //if (playerInput.Store.Interact.triggered)
+        //{
+            /*
             if (inRange && !interacting)
             {
                 interacting = true;
                 StartCoroutine(DisplayMessage(messages[progress]));
             }
-        }
+            */
+        //}
     }
 
+    public void TriggerInteractable()
+    {
+        if (inRange && !interacting)
+        {
+            interacting = true;
+            StartCoroutine(DisplayMessage(messages[progress]));
+        }
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
             inRange = true;
             collision.gameObject.GetComponent<PlayerMovement>().Qpopup.SetActive(true);
+            collision.gameObject.GetComponent<PlayerMovement>().nearbyInteractable = this;
         }
     }
 
@@ -58,6 +69,7 @@ public class Interactable : MonoBehaviour
         {
             inRange = false;
             collision.gameObject.GetComponent<PlayerMovement>().Qpopup.SetActive(false);
+            collision.gameObject.GetComponent<PlayerMovement>().nearbyInteractable = null;
         }
     }
 

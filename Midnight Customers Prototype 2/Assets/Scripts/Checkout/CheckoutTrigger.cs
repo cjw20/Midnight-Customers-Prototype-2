@@ -39,8 +39,10 @@ public class CheckoutTrigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /*
         if (playerInput.Store.Interact.triggered)
         {
+            
             if (playerReady && customerReady && !inCheckout)//and customer ready too later once implemented
             {
                 playerMove.moveable = false;
@@ -51,9 +53,27 @@ public class CheckoutTrigger : MonoBehaviour
                 checkoutTimer.UpdateValue(-checkoutTimer.timePassed); //has ui reflect time customer spent waiting before player showed up
                 
             }
-        } 
+            
+        // old input method
+        */
+    
+
+
     }
 
+    public void TriggerCheckout()
+    {
+        if (playerReady && customerReady && !inCheckout)//and customer ready too later once implemented
+        {
+            playerMove.moveable = false;
+            inCheckout = true;
+            checkoutGame.SetActive(true);
+            checkoutManager.StartCheckout(customerInfo);
+            checkoutTimer.inCheckout = true; //starts updating timer
+            checkoutTimer.UpdateValue(-checkoutTimer.timePassed); //has ui reflect time customer spent waiting before player showed up
+
+        }
+    }
     public void EndCheckout()
     {
         playerMove.moveable = true;
@@ -70,6 +90,7 @@ public class CheckoutTrigger : MonoBehaviour
             playerReady = true;
             playerMove = collision.gameObject.GetComponent<PlayerMovement>();
             if(customerReady) playerMove.Epopup.SetActive(true); //Only pops up if waiting on Customer
+            playerMove.checkoutTrigger = this;
         }
 
         if (collision.CompareTag("Customer"))
@@ -92,6 +113,7 @@ public class CheckoutTrigger : MonoBehaviour
         {
             playerReady = false;
             playerMove.Epopup.SetActive(false);
+            playerMove.checkoutTrigger = null;
         }
 
         if (collision.CompareTag("Customer"))

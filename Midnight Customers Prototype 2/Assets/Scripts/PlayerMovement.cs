@@ -18,6 +18,10 @@ public class PlayerMovement : MonoBehaviour
     public GameObject Epopup; //!
     public GameObject Qpopup; //?
 
+    public MiniGameTrigger nearbyMG;
+    public Interactable nearbyInteractable;
+    public CheckoutTrigger checkoutTrigger;
+
     private PlayerInput playerInput; //asset that has player controls
     private void Awake()
     {
@@ -67,6 +71,26 @@ public class PlayerMovement : MonoBehaviour
         playerLastFramePosition = transform.position;
     }
 
+
+    public void Interact()
+    {
+        if (!moveable)
+            return; // so interactions dont overlap
+
+        if(checkoutTrigger != null)
+        {
+            checkoutTrigger.TriggerCheckout();
+        }
+        else if(nearbyMG != null)
+        {
+            nearbyMG.TriggerMiniGame();
+        }
+        else if(nearbyInteractable != null)
+        {
+            nearbyInteractable.TriggerInteractable();
+        }
+    }
+
     private void FixedUpdate()
     {
         if (moveable)
@@ -75,13 +99,5 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        
-    }
+  
 }
