@@ -15,6 +15,7 @@ TagManager:
   - Cleaner
   - Drawer
   - Shelf
+  - Minigame
   layers:
   - Default
   - TransparentFX

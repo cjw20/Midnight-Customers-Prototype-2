@@ -24,6 +24,11 @@ public class CustomerMovement : MonoBehaviour
     public bool hasCheckedOut = false; //set to true after checkout minigame completed
     public bool readyForCheckout; //so checkout wont be available if customer walks past counter before ready
 
+    //Get reference to mop prefab
+    //implement trigger, add behaviors later
+    //instantiate at customer location (maybe should put in CustomerMovement)
+    public GameObject mopTriggerPrefab;
+    bool hasPlacedMop = false;
     private void Awake()
     {
         soundManager = GameObject.Find("Sound Manager").GetComponent<SoundManager>();
@@ -56,8 +61,14 @@ public class CustomerMovement : MonoBehaviour
             StartCoroutine(Wait());
 
         }
+        if (!hasPlacedMop){
+            float randy = Random.Range(0,10);
+            if (randy <= 0.001f) {
+                Instantiate(mopTriggerPrefab, transform.TransformPoint(transform.position), Quaternion.identity);
+                hasPlacedMop = true;
+            }
 
-
+        }
     }
     void GoToNextPoint()
     {

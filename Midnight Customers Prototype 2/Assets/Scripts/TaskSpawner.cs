@@ -103,5 +103,13 @@ public class TaskSpawner : MonoBehaviour
             Destroy(task);
         }
         tasksInStore.Clear();
+        ManualClearTasks();
+    }
+    public void ManualClearTasks(){
+        GameObject[] gameTriggers = GameObject.FindGameObjectsWithTag("Minigame");
+        foreach(GameObject mg in gameTriggers){
+            unfinishedTasks++;
+            Destroy(mg);
+        }
     }
 }

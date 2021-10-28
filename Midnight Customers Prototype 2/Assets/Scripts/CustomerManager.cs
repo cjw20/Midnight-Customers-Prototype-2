@@ -15,21 +15,6 @@ public class CustomerManager : MonoBehaviour
 
     List<GameObject> customersInStore = new List<GameObject>();
     bool spawning;
-    
-    /*
-    void Awake()
-    {
-        if (customerManager == null)
-        {
-            DontDestroyOnLoad(gameObject);  //makes sure there is only one game control in scene. 
-            customerManager = this;
-        }
-        else if (customerManager != this)
-        {
-            Destroy(gameObject);
-        }
-    }
-    */
     void Start()
     {
         spawning = true;
