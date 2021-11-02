@@ -26,21 +26,8 @@ public class SanityEventManager : MonoBehaviour
     {
         //logic for choosing effect here
 
-        StartCoroutine(lightEffects.RedLightScare(targetLights));
+       // StartCoroutine(lightEffects.RedLightScare(targetLights));
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Customer"))
-        {
-            if (!alreadyTriggered)
-            {
-                LightEffect();
-                //this is placeholder for testing
-                alreadyTriggered = true;
-            }
-        }
-        
-
-    }
+    
 }

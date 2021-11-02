@@ -11,7 +11,7 @@ public class LightSanityEffect : MonoBehaviour
     public float effectDuration; //separate later when more effects/ Public for testing purposes
     public Light2D globalLight;
 
-    public AudioSource creepySound; 
+    
 
     float normalGlobalIntensity;
     Color normalColor;
@@ -42,7 +42,7 @@ public class LightSanityEffect : MonoBehaviour
         }
         i = 0;
 
-        creepySound.Play();
+        
         
         soundManager.PauseBGM();
         
@@ -57,7 +57,7 @@ public class LightSanityEffect : MonoBehaviour
         }
         
         globalLight.intensity = 1;
-        creepySound.Stop();
+        
         soundManager.UnpauseBGM();
 
         yield break;
