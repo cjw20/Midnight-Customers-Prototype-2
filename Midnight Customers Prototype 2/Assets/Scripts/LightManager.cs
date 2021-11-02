@@ -8,11 +8,16 @@ public class LightManager : MonoBehaviour
     public Light2D[] ceilingLights;
     public Light2D[] windowLights;
     public Light2D globalLight;
-    
+
+    float normalGlobalIntensity;
+    Color normalColor;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        //Strobe(ceilingLights[0], 0.5, 0.2, true); //test call
+        normalGlobalIntensity = globalLight.intensity;
+        normalColor = globalLight.color;
     }
 
     // Update is called once per frame
@@ -31,8 +36,9 @@ public class LightManager : MonoBehaviour
         return oldColor;
     }
 
-    void Strobe(Light2D target, double strobeRate, bool starting)
+    void Strobe(Light2D target, double strobeRate, double offDuration, bool starting)
     {
+        //starting = false when turning off strobe effect
         GameObject lightObject = target.gameObject;
 
         if (starting)
@@ -42,10 +48,10 @@ public class LightManager : MonoBehaviour
 
 
                 LightFlicker strobeEffect = lightObject.AddComponent<LightFlicker>();
-                strobeEffect.offDuration = strobeRate;
-                strobeEffect.frequency = strobeRate;
-                strobeEffect.offIntensity = 0;
-                strobeEffect.onIntensity = 2;
+                strobeEffect.offDuration = offDuration;
+                strobeEffect.frequency = strobeRate;  
+                strobeEffect.offIntensity = 0.2f;
+                //strobeEffect.onIntensity = 2;
 
             }
 
@@ -56,5 +62,11 @@ public class LightManager : MonoBehaviour
             Destroy(lightObject.GetComponent<LightFlicker>());
             //may want to check if it was a prexisting component and not destroy it if true
         }
+    }
+
+    void ResetLight(Light2D target)
+    {
+        target.color = normalColor;
+        target.intensity = 1;
     }
 }
