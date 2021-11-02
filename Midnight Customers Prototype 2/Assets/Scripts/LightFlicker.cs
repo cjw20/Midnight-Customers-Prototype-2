@@ -19,6 +19,7 @@ public class LightFlicker : MonoBehaviour
     void Start()
     {
         thisLight = this.GetComponent<Light2D>();
+        onIntensity = thisLight.intensity;
     }
 
     // Update is called once per frame

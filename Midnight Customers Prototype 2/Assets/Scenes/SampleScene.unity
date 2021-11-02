@@ -3168,6 +3168,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 507476518}
+  - component: {fileID: 507476519}
   m_Layer: 0
   m_Name: Lights
   m_TagString: Untagged
@@ -3192,6 +3193,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &507476519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 507476517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6fdbf312badde64597db3ccdd03b954, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ceilingLights:
+  - {fileID: 611076775}
+  - {fileID: 1493718210}
+  - {fileID: 1468675007}
+  - {fileID: 2066994319}
+  - {fileID: 2062255469}
+  windowLights:
+  - {fileID: 1077216053}
+  - {fileID: 650083168}
+  - {fileID: 602091139}
+  globalLight: {fileID: 854993843}
 --- !u!1 &514181754
 GameObject:
   m_ObjectHideFlags: 0
@@ -4169,7 +4193,7 @@ GameObject:
   - component: {fileID: 611076774}
   - component: {fileID: 611076775}
   m_Layer: 0
-  m_Name: Point Light 2D
+  m_Name: NW light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5464,7 +5488,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 854993842}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
   m_Name: 
@@ -5473,8 +5497,8 @@ MonoBehaviour:
   m_LightType: 4
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
-  m_Color: {r: 0.36271802, g: 0.37713563, b: 0.5377358, a: 1}
-  m_Intensity: 0.8
+  m_Color: {r: 0.9245283, g: 0.9245283, b: 0.9245283, a: 1}
+  m_Intensity: 0.1
   m_LightVolumeIntensity: 0
   m_LightVolumeIntensityEnabled: 0
   m_ApplyToSortingLayers: 00000000d1c21359
@@ -5651,17 +5675,13 @@ GameObject:
   m_Component:
   - component: {fileID: 878671701}
   - component: {fileID: 878671702}
-  - component: {fileID: 878671703}
-  - component: {fileID: 878671704}
-  - component: {fileID: 878671705}
-  - component: {fileID: 878671706}
   m_Layer: 0
-  m_Name: Sanity Manager
+  m_Name: Random Event Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &878671701
 Transform:
   m_ObjectHideFlags: 0
@@ -5670,7 +5690,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 878671700}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.63, y: 7.41, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5685,171 +5705,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 878671700}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2033f51c9a3a0584fa78a1bc35a17491, type: 3}
+  m_Script: {fileID: 11500000, guid: fd87a9ea3f37dbb44abc274e3f30c2d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxStress: 100
-  currentStress: 0
-  currentSanity: 0
-  stressText: {fileID: 0}
-  sanityText: {fileID: 0}
---- !u!114 &878671703
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 878671700}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77f927dd0bb3ec5469874bc82719f59f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  soundManager: {fileID: 1904453403}
-  targetLights: []
-  effectDuration: 5
-  globalLight: {fileID: 854993843}
-  creepySound: {fileID: 878671705}
---- !u!114 &878671704
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 878671700}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30486b9039631a140a9b607671fc5d54, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lightEffects: {fileID: 878671703}
-  targetLights:
-  - {fileID: 611076775}
-  - {fileID: 1493718210}
-  - {fileID: 1468675007}
-  - {fileID: 2066994319}
---- !u!82 &878671705
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 878671700}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: a2a215111d236c84dbab7175ad0a4cf7, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!61 &878671706
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 878671700}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -5.0557446, y: -6.5983973}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 3.2815657, y: 2.892664}
-  m_EdgeRadius: 0
+  lightManager: {fileID: 507476519}
 --- !u!1 &885160248
 GameObject:
   m_ObjectHideFlags: 0
@@ -9122,7 +8981,7 @@ GameObject:
   - component: {fileID: 1468675006}
   - component: {fileID: 1468675007}
   m_Layer: 0
-  m_Name: Point Light 2D (2)
+  m_Name: SE light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9464,7 +9323,7 @@ GameObject:
   - component: {fileID: 1493718209}
   - component: {fileID: 1493718210}
   m_Layer: 0
-  m_Name: Point Light 2D (1)
+  m_Name: NE light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14833,7 +14692,7 @@ GameObject:
   - component: {fileID: 2062255468}
   - component: {fileID: 2062255469}
   m_Layer: 0
-  m_Name: Point Light 2D (4)
+  m_Name: S light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15017,7 +14876,7 @@ GameObject:
   - component: {fileID: 2066994318}
   - component: {fileID: 2066994319}
   m_Layer: 0
-  m_Name: Point Light 2D (3)
+  m_Name: SW light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
