@@ -13,6 +13,9 @@ public class LightManager : MonoBehaviour
     float normalGlobalIntensity;
     Color normalColor;
 
+    [SerializeField] Color lightningColor;
+    [SerializeField] AudioSource lightningSound; //currently a placeholder sound effect
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +24,9 @@ public class LightManager : MonoBehaviour
         normalGlobalIntensity = globalLight.intensity;
         normalColor = globalLight.color;
 
-        //PowerOutage(5f);
+        //PowerOutage(15f);
+        //StartCoroutine(LightningEffect());
+
     }
 
     // Update is called once per frame
@@ -84,6 +89,34 @@ public class LightManager : MonoBehaviour
         foreach (Light2D light in ceilingLights)
         {
             light.gameObject.SetActive(true);
+        }
+
+        yield break;
+    }
+
+
+    public IEnumerator LightningEffect()
+    {
+        Color oldColor = windowLights[0].color; //saves color for after light effect
+        float oldIntensity = windowLights[0].intensity;
+        
+
+
+        yield return new WaitForSeconds(3f); //start delay, probably not neccessary
+
+        foreach (Light2D light in windowLights)
+        {
+            light.color = lightningColor; //maybe find more specific color later
+            light.intensity = 4;
+        }
+        //play sound effect here! or with delay because sound comes later?
+        lightningSound.Play();
+        yield return new WaitForSeconds(2f); //duration
+
+        foreach (Light2D light in windowLights)
+        {
+            light.color = oldColor; //maybe find more specific color later
+            light.intensity = oldIntensity;
         }
 
         yield break;
