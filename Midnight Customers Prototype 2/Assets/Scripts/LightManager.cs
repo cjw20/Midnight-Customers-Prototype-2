@@ -5,19 +5,28 @@ using UnityEngine.Experimental.Rendering.Universal;
 
 public class LightManager : MonoBehaviour
 {
-    public Light2D[] ceilingLights;
-    public Light2D[] windowLights;
-    public Light2D globalLight;
+    [SerializeField] Light2D[] ceilingLights;
+    [SerializeField] Light2D[] miscLights; //fridges, cash register
+    [SerializeField] Light2D[] windowLights;
+    [SerializeField] Light2D globalLight;
 
     float normalGlobalIntensity;
     Color normalColor;
+
+    [SerializeField] Color lightningColor;
+    [SerializeField] AudioSource lightningSound; //currently a placeholder sound effect
 
     // Start is called before the first frame update
     void Start()
     {
         //Strobe(ceilingLights[0], 0.5, 0.2, true); //test call
+
         normalGlobalIntensity = globalLight.intensity;
         normalColor = globalLight.color;
+
+        //PowerOutage(15f);
+        //StartCoroutine(LightningEffect());
+
     }
 
     // Update is called once per frame
@@ -62,6 +71,55 @@ public class LightManager : MonoBehaviour
             Destroy(lightObject.GetComponent<LightFlicker>());
             //may want to check if it was a prexisting component and not destroy it if true
         }
+    }
+
+    public void PowerOutage(float duration)
+    {
+        foreach(Light2D light in ceilingLights)
+        {
+            light.gameObject.SetActive(false);
+        }
+        StartCoroutine(RestorePower(duration));
+    }
+
+    IEnumerator RestorePower(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+
+        foreach (Light2D light in ceilingLights)
+        {
+            light.gameObject.SetActive(true);
+        }
+
+        yield break;
+    }
+
+
+    public IEnumerator LightningEffect()
+    {
+        Color oldColor = windowLights[0].color; //saves color for after light effect
+        float oldIntensity = windowLights[0].intensity;
+        
+
+
+        yield return new WaitForSeconds(3f); //start delay, probably not neccessary
+
+        foreach (Light2D light in windowLights)
+        {
+            light.color = lightningColor; //maybe find more specific color later
+            light.intensity = 4;
+        }
+        //play sound effect here! or with delay because sound comes later?
+        lightningSound.Play();
+        yield return new WaitForSeconds(2f); //duration
+
+        foreach (Light2D light in windowLights)
+        {
+            light.color = oldColor; //maybe find more specific color later
+            light.intensity = oldIntensity;
+        }
+
+        yield break;
     }
 
     void ResetLight(Light2D target)

@@ -6,6 +6,8 @@ using UnityEngine.Experimental.Rendering.Universal;
 
 public class LightSanityEffect : MonoBehaviour
 {
+
+    //OLD CLASS DONT USE
     [SerializeField] SoundManager soundManager;
     public Light2D[] targetLights; //light that effect will be played on. May need to make array if multiple targets for some effects
     public float effectDuration; //separate later when more effects/ Public for testing purposes
