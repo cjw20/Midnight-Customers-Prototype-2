@@ -3215,13 +3215,7 @@ MonoBehaviour:
   - {fileID: 1468675007}
   - {fileID: 2066994319}
   - {fileID: 2062255469}
-  miscLights:
-  - {fileID: 974029760}
-  - {fileID: 1818599887}
-  - {fileID: 1870136929}
-  - {fileID: 1010113047}
-  - {fileID: 1391352387}
-  - {fileID: 1158453847}
+  miscLights: []
   windowLights:
   - {fileID: 1077216053}
   - {fileID: 650083168}
@@ -3229,7 +3223,7 @@ MonoBehaviour:
   - {fileID: 1738454320}
   - {fileID: 732664191}
   globalLight: {fileID: 854993843}
-  lightningColor: {r: 0.88997686, g: 0.9150943, b: 0.7208526, a: 1}
+  lightningColor: {r: 1, g: 0.93917257, b: 0.48584908, a: 1}
   lightningSound: {fileID: 507476520}
 --- !u!82 &507476520
 AudioSource:

@@ -24,8 +24,8 @@ public class LightManager : MonoBehaviour
         normalGlobalIntensity = globalLight.intensity;
         normalColor = globalLight.color;
 
-        //PowerOutage(15f);
-        //StartCoroutine(LightningEffect());
+        PowerOutage(15f);
+        StartCoroutine(LightningEffect());
 
     }
 
