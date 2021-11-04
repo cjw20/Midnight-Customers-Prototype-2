@@ -16,7 +16,7 @@ public class CleanableObject : MonoBehaviour
     MopGame mopGame;
     
     [SerializeField]
-    int hitpoints = 5;
+    float hitpoints = 5.0f;
     void Start()
     {
         mess = this.gameObject.GetComponent<SpriteRenderer>();
@@ -59,19 +59,16 @@ public class CleanableObject : MonoBehaviour
         float newAlpha = hitpoints/5;//There's an issue with this line 
         newColor = new Color(startingColor.r, startingColor.g, startingColor.b, newAlpha);
         mess.color = newColor;
-        Debug.Log(newAlpha);
-        Debug.Log(hitpoints);
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        Debug.Log("Out");
         if (collision.CompareTag("Cleaner"))
         {
             if(isBeingCleaned){
                 tool = collision.gameObject.GetComponent<CleaningTool>();
-                hitpoints--;
-                if (hitpoints == 0){
+                hitpoints-=1;
+                if (hitpoints <= 0){
                     mopGame.CleanedObject();
                     Destroy(this.gameObject);//pretty messed up, man
                 }
