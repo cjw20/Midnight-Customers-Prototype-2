@@ -16,8 +16,11 @@ public class LightManager : MonoBehaviour
     void Start()
     {
         //Strobe(ceilingLights[0], 0.5, 0.2, true); //test call
+
         normalGlobalIntensity = globalLight.intensity;
         normalColor = globalLight.color;
+
+        //PowerOutage(5f);
     }
 
     // Update is called once per frame
@@ -62,6 +65,27 @@ public class LightManager : MonoBehaviour
             Destroy(lightObject.GetComponent<LightFlicker>());
             //may want to check if it was a prexisting component and not destroy it if true
         }
+    }
+
+    public void PowerOutage(float duration)
+    {
+        foreach(Light2D light in ceilingLights)
+        {
+            light.gameObject.SetActive(false);
+        }
+        StartCoroutine(RestorePower(duration));
+    }
+
+    IEnumerator RestorePower(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+
+        foreach (Light2D light in ceilingLights)
+        {
+            light.gameObject.SetActive(true);
+        }
+
+        yield break;
     }
 
     void ResetLight(Light2D target)
