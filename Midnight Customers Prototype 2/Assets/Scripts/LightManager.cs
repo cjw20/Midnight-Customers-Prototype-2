@@ -5,9 +5,10 @@ using UnityEngine.Experimental.Rendering.Universal;
 
 public class LightManager : MonoBehaviour
 {
-    public Light2D[] ceilingLights;
-    public Light2D[] windowLights;
-    public Light2D globalLight;
+    [SerializeField] Light2D[] ceilingLights;
+    [SerializeField] Light2D[] miscLights; //fridges, cash register
+    [SerializeField] Light2D[] windowLights;
+    [SerializeField] Light2D globalLight;
 
     float normalGlobalIntensity;
     Color normalColor;
