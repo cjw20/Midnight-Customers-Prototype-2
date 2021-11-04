@@ -18,11 +18,15 @@ public class PlayerMovement : MonoBehaviour
     public GameObject Epopup; //!
     public GameObject Qpopup; //?
 
+    [SerializeField] GameObject flashLight;
+
     public MiniGameTrigger nearbyMG;
     public Interactable nearbyInteractable;
     public CheckoutTrigger checkoutTrigger;
 
     private PlayerInput playerInput; //asset that has player controls
+
+    
     private void Awake()
     {
         playerInput = new PlayerInput();
@@ -68,6 +72,14 @@ public class PlayerMovement : MonoBehaviour
         //old input system above
 
         movementDirection = playerInput.Store.Move.ReadValue<Vector2>();
+        //float fAngle = Vector2.SignedAngle(Vector2.zero, movementDirection);
+        Vector2 vel = this.gameObject.GetComponent<Rigidbody2D>().velocity;
+        if(movementDirection != Vector2.zero)
+        {
+            flashLight.transform.rotation = Quaternion.Euler(new Vector3(fAngle, 0, 0));
+        }
+            
+
         playerLastFramePosition = transform.position;
     }
 

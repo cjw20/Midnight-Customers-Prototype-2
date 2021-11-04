@@ -9,6 +9,7 @@ public class LightManager : MonoBehaviour
     [SerializeField] Light2D[] miscLights; //fridges, cash register
     [SerializeField] Light2D[] windowLights;
     [SerializeField] Light2D globalLight;
+    [SerializeField] Light2D flashLight;
 
     float normalGlobalIntensity;
     Color normalColor;
@@ -84,13 +85,15 @@ public class LightManager : MonoBehaviour
 
     IEnumerator RestorePower(float waitTime)
     {
+        yield return new WaitForSeconds(.5f);
+        flashLight.gameObject.SetActive(true);  //turns on player flashlight after short delay
         yield return new WaitForSeconds(waitTime);
 
         foreach (Light2D light in ceilingLights)
         {
             light.gameObject.SetActive(true);
         }
-
+        flashLight.gameObject.SetActive(false);
         yield break;
     }
 
