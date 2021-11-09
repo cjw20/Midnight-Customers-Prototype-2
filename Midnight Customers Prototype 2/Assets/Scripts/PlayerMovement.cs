@@ -76,6 +76,9 @@ public class PlayerMovement : MonoBehaviour
             
 
         playerLastFramePosition = transform.position;
+
+
+       
     }
 
 
