@@ -15,7 +15,9 @@ public class MiniGameControl : MonoBehaviour
 
     public void LoadMiniGame(GameObject miniGame, MiniGameTrigger trigger)
     {
-        currentGame = Instantiate(miniGame, cameraPosition);
+        currentGame = Instantiate(miniGame, this.gameObject.transform);
+        cameraPosition = Camera.main.transform;
+        Camera.main.transform.position = this.transform.position;
         currentTrigger = trigger;
     }
 
@@ -25,5 +27,6 @@ public class MiniGameControl : MonoBehaviour
         taskSpawner.unfinishedTasks--; 
         currentGame = null;
         soundManager.StopSweepingSound();
+        Camera.main.transform.position = cameraPosition.position;
     }
 }

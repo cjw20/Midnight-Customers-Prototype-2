@@ -41,6 +41,14 @@ public class @PlayerInput : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Flashlight Toggle"",
+                    ""type"": ""Button"",
+                    ""id"": ""ff90527e-04fc-45f8-9fe6-9f9c00eeda91"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -186,6 +194,17 @@ public class @PlayerInput : IInputActionCollection, IDisposable
                     ""action"": ""Pause"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""fcd03eb9-44a6-4415-82a5-bc9897f1dfcf"",
+                    ""path"": ""<Keyboard>/f"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Flashlight Toggle"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -278,6 +297,7 @@ public class @PlayerInput : IInputActionCollection, IDisposable
         m_Store_Move = m_Store.FindAction("Move", throwIfNotFound: true);
         m_Store_Interact = m_Store.FindAction("Interact", throwIfNotFound: true);
         m_Store_Pause = m_Store.FindAction("Pause", throwIfNotFound: true);
+        m_Store_FlashlightToggle = m_Store.FindAction("Flashlight Toggle", throwIfNotFound: true);
         // Checkout
         m_Checkout = asset.FindActionMap("Checkout", throwIfNotFound: true);
         m_Checkout_Skip = m_Checkout.FindAction("Skip", throwIfNotFound: true);
@@ -339,6 +359,7 @@ public class @PlayerInput : IInputActionCollection, IDisposable
     private readonly InputAction m_Store_Move;
     private readonly InputAction m_Store_Interact;
     private readonly InputAction m_Store_Pause;
+    private readonly InputAction m_Store_FlashlightToggle;
     public struct StoreActions
     {
         private @PlayerInput m_Wrapper;
@@ -346,6 +367,7 @@ public class @PlayerInput : IInputActionCollection, IDisposable
         public InputAction @Move => m_Wrapper.m_Store_Move;
         public InputAction @Interact => m_Wrapper.m_Store_Interact;
         public InputAction @Pause => m_Wrapper.m_Store_Pause;
+        public InputAction @FlashlightToggle => m_Wrapper.m_Store_FlashlightToggle;
         public InputActionMap Get() { return m_Wrapper.m_Store; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -364,6 +386,9 @@ public class @PlayerInput : IInputActionCollection, IDisposable
                 @Pause.started -= m_Wrapper.m_StoreActionsCallbackInterface.OnPause;
                 @Pause.performed -= m_Wrapper.m_StoreActionsCallbackInterface.OnPause;
                 @Pause.canceled -= m_Wrapper.m_StoreActionsCallbackInterface.OnPause;
+                @FlashlightToggle.started -= m_Wrapper.m_StoreActionsCallbackInterface.OnFlashlightToggle;
+                @FlashlightToggle.performed -= m_Wrapper.m_StoreActionsCallbackInterface.OnFlashlightToggle;
+                @FlashlightToggle.canceled -= m_Wrapper.m_StoreActionsCallbackInterface.OnFlashlightToggle;
             }
             m_Wrapper.m_StoreActionsCallbackInterface = instance;
             if (instance != null)
@@ -377,6 +402,9 @@ public class @PlayerInput : IInputActionCollection, IDisposable
                 @Pause.started += instance.OnPause;
                 @Pause.performed += instance.OnPause;
                 @Pause.canceled += instance.OnPause;
+                @FlashlightToggle.started += instance.OnFlashlightToggle;
+                @FlashlightToggle.performed += instance.OnFlashlightToggle;
+                @FlashlightToggle.canceled += instance.OnFlashlightToggle;
             }
         }
     }
@@ -485,6 +513,7 @@ public class @PlayerInput : IInputActionCollection, IDisposable
         void OnMove(InputAction.CallbackContext context);
         void OnInteract(InputAction.CallbackContext context);
         void OnPause(InputAction.CallbackContext context);
+        void OnFlashlightToggle(InputAction.CallbackContext context);
     }
     public interface ICheckoutActions
     {

@@ -28,6 +28,7 @@ public class TimeManager : MonoBehaviour
     TaskSpawner taskSpawner;
     PerformanceReview review;
     StoryEventHandler storyEvent;
+    RandomEventManager randomEvent;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,6 +38,7 @@ public class TimeManager : MonoBehaviour
         taskSpawner = FindObjectOfType<TaskSpawner>();
         review = FindObjectOfType<PerformanceReview>();
         storyEvent = FindObjectOfType<StoryEventHandler>();
+        randomEvent = FindObjectOfType<RandomEventManager>();
         //if ^ is too slow, do different way later
         timerRunning = true;
         UpdateText();
@@ -56,6 +58,10 @@ public class TimeManager : MonoBehaviour
             if (minutes >= 60)
             {
                 hours++;
+                if(hours < 5)
+                {
+                    randomEvent.CallRandomEvent();
+                }
                 minutes = 0;
             }
 
