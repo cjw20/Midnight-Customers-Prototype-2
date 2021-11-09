@@ -86,14 +86,14 @@ public class LightManager : MonoBehaviour
     IEnumerator RestorePower(float waitTime)
     {
         yield return new WaitForSeconds(.5f);
-        flashLight.gameObject.SetActive(true);  //turns on player flashlight after short delay
+        //flashLight.gameObject.SetActive(true);  //turns on player flashlight after short delay
         yield return new WaitForSeconds(waitTime);
 
         foreach (Light2D light in ceilingLights)
         {
             light.gameObject.SetActive(true);
         }
-        flashLight.gameObject.SetActive(false);
+        //flashLight.gameObject.SetActive(false); not needed since flashlight has own toggle
         yield break;
     }
 
