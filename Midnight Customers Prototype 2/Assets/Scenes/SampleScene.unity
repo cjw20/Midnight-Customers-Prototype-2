@@ -328,7 +328,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee2733c1f2ffe224cb9187a12e78e017, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraPosition: {fileID: 519420032}
   taskSpawner: {fileID: 1927739306}
   soundManager: {fileID: 1904453403}
 --- !u!1 &24604258
@@ -3191,6 +3190,7 @@ MonoBehaviour:
   flashLight: {fileID: 758472969}
   lightningColor: {r: 1, g: 0.93917257, b: 0.48584908, a: 1}
   lightningSound: {fileID: 507476520}
+  powerGameTrigger: {fileID: 5943365616048291751, guid: b7052b37cc18c9c4b891cd9d630afd3f, type: 3}
 --- !u!82 &507476520
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3521,7 +3521,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.18, y: -0.86, z: -10}
+  m_LocalPosition: {x: 0, y: -1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 10691446}
