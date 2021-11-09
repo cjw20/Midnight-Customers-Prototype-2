@@ -25,8 +25,8 @@ public class LightManager : MonoBehaviour
         normalGlobalIntensity = globalLight.intensity;
         normalColor = globalLight.color;
 
-        PowerOutage(15f);
-        StartCoroutine(LightningEffect());
+        //PowerOutage(15f);
+        //StartCoroutine(LightningEffect());
 
     }
 
@@ -97,8 +97,11 @@ public class LightManager : MonoBehaviour
         yield break;
     }
 
-
-    public IEnumerator LightningEffect()
+    public void CallLightning()
+    {
+        StartCoroutine(LightningEffect());
+    }
+    IEnumerator LightningEffect()
     {
         Color oldColor = windowLights[0].color; //saves color for after light effect
         float oldIntensity = windowLights[0].intensity;

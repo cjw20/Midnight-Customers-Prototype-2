@@ -6301,6 +6301,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lightManager: {fileID: 507476519}
+  eventChance: 50
 --- !u!1 &885160248
 GameObject:
   m_ObjectHideFlags: 0
