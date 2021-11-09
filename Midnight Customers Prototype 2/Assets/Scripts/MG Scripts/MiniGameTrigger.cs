@@ -7,8 +7,8 @@ public class MiniGameTrigger : MonoBehaviour
     public GameObject miniGame; //minigame to load
     MiniGameControl mgControl;
     PlayerMovement playerMove;
-    bool playerReady;
-    bool inGame;
+    //bool playerReady;
+    //bool inGame;
     // Start is called before the first frame update
 
     private PlayerInput playerInput; //asset that has player controls
@@ -29,7 +29,6 @@ public class MiniGameTrigger : MonoBehaviour
     {
         mgControl = FindObjectOfType<MiniGameControl>();
     }
-
     // Update is called once per frame
     void Update()
     {
@@ -49,7 +48,7 @@ public class MiniGameTrigger : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            playerReady = true;
+            //playerReady = true;
             playerMove = collision.gameObject.GetComponent<PlayerMovement>();
             playerMove.Epopup.SetActive(true);
             playerMove.nearbyMG = this;
@@ -61,7 +60,7 @@ public class MiniGameTrigger : MonoBehaviour
     public void TriggerMiniGame()
     {
         playerMove.moveable = false;
-        inGame = true;
+        //inGame = true;
         mgControl.LoadMiniGame(miniGame, this);
     }
 
@@ -69,7 +68,7 @@ public class MiniGameTrigger : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            playerReady = false;
+            //playerReady = false;
             playerMove.Epopup.SetActive(false);
             playerMove.nearbyMG = null;
         }

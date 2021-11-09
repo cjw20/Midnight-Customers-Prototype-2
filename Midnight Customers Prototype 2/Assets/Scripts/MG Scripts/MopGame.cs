@@ -21,7 +21,7 @@ public class MopGame : MonoBehaviour
         int startingNumber = Random.Range(2,6);
         cleanableObjects = new GameObject[startingNumber]; //double check for accurate array length
         for(int i = 0; i < startingNumber; i++){
-            Vector3 positionGenerator = new Vector3(Random.Range(-9f, 9f),Random.Range(-4f, 4f), 0);//double check that I'm using prefabs right
+            Vector3 positionGenerator = new Vector3(Random.Range(-8f, 8f),Random.Range(-4f, 4f), 10);
             cleanableObjects[i] = Instantiate(dirt1, positionGenerator + mgControl.transform.position, Quaternion.identity, this.gameObject.transform);
         }
         remainingObjects = cleanableObjects.Length;

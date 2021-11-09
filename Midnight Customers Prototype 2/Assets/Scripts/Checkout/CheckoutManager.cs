@@ -16,7 +16,7 @@ public class CheckoutManager : MonoBehaviour
     bool finishedBag; //true when all items have been scanned
     public bool needsIDCheck;
     bool customerPayed;
-    bool passedIDCheck;
+    //bool passedIDCheck;
     bool failedIDCheck;
     
     int lastWeight = 3;
@@ -56,7 +56,7 @@ public class CheckoutManager : MonoBehaviour
         priceText.text = "$0.00";
         weightText.text = "-";
         needsIDCheck = false;
-        passedIDCheck = false;
+        //passedIDCheck = false;
         failedIDCheck = false;
 
         items = customerInfo.checkoutItems;
@@ -275,7 +275,7 @@ public class CheckoutManager : MonoBehaviour
             {
                 StartCoroutine(DisplayMessage(hasIDMessage, 2f));
                 needsIDCheck = false;
-                passedIDCheck = true;
+                //passedIDCheck = true;
             }
         }
         
