@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MiniGameControl : MonoBehaviour
 {
-    public Transform cameraPosition;
+    Transform cameraPosition;
     MiniGameTrigger currentTrigger;
 
     [SerializeField] TaskSpawner taskSpawner;
@@ -23,10 +23,11 @@ public class MiniGameControl : MonoBehaviour
 
     public void EndMiniGame()
     {
+        Camera.main.transform.position = new Vector3(0 , -1, -10);
         currentTrigger.EndMiniGame();
         taskSpawner.unfinishedTasks--; 
         currentGame = null;
         soundManager.StopSweepingSound();
-        Camera.main.transform.position = cameraPosition.position;
+        
     }
 }

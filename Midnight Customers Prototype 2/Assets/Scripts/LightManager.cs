@@ -17,6 +17,8 @@ public class LightManager : MonoBehaviour
     [SerializeField] Color lightningColor;
     [SerializeField] AudioSource lightningSound; //currently a placeholder sound effect
 
+    [SerializeField] GameObject powerGameTrigger;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -80,21 +82,22 @@ public class LightManager : MonoBehaviour
         {
             light.gameObject.SetActive(false);
         }
-        StartCoroutine(RestorePower(duration));
+        //StartCoroutine(RestorePower(duration));
+        Instantiate(powerGameTrigger);
     }
 
-    IEnumerator RestorePower(float waitTime)
+    public void RestorePower()
     {
-        yield return new WaitForSeconds(.5f);
+        
         //flashLight.gameObject.SetActive(true);  //turns on player flashlight after short delay
-        yield return new WaitForSeconds(waitTime);
+        
 
         foreach (Light2D light in ceilingLights)
         {
             light.gameObject.SetActive(true);
         }
         //flashLight.gameObject.SetActive(false); not needed since flashlight has own toggle
-        yield break;
+        
     }
 
     public void CallLightning()

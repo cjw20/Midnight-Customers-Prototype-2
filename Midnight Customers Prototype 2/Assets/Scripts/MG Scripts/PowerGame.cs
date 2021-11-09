@@ -8,10 +8,12 @@ public class PowerGame : MonoBehaviour
     [SerializeField] PowerButton[] onButtons;
 
     MiniGameControl mgControl;
+    LightManager lightManager;
     // Start is called before the first frame update
     void Start()
     {
         mgControl = FindObjectOfType<MiniGameControl>();
+        lightManager = FindObjectOfType<LightManager>();
     }
 
     // Update is called once per frame
@@ -33,6 +35,7 @@ public class PowerGame : MonoBehaviour
 
         if (finished)
         {
+            lightManager.RestorePower();
             mgControl.EndMiniGame();
             Destroy(this.gameObject);
         }
