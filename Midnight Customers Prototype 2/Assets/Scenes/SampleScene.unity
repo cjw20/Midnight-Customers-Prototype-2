@@ -5503,13 +5503,14 @@ GameObject:
   m_Component:
   - component: {fileID: 758472968}
   - component: {fileID: 758472969}
+  - component: {fileID: 758472970}
   m_Layer: 0
   m_Name: Flash Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &758472968
 Transform:
   m_ObjectHideFlags: 0
@@ -5531,7 +5532,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 758472967}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
   m_Name: 
@@ -5602,6 +5603,19 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &758472970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 758472967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22652143e1dda154288f3ae94cb56552, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fLight: {fileID: 758472969}
 --- !u!1 &759210621
 GameObject:
   m_ObjectHideFlags: 0
@@ -12138,7 +12152,6 @@ MonoBehaviour:
   nearbyMG: {fileID: 0}
   nearbyInteractable: {fileID: 0}
   checkoutTrigger: {fileID: 0}
-  fAngle: 0
 --- !u!212 &1675290338
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12293,6 +12306,22 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: c9ca83c8-b872-47de-b7f8-b2234f3ee75e
     m_ActionName: Menu/New action
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 758472970}
+        m_TargetAssemblyTypeName: FlashLight, Assembly-CSharp
+        m_MethodName: ToggleFlashlight
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: ff90527e-04fc-45f8-9fe6-9f9c00eeda91
+    m_ActionName: Store/Flashlight Toggle[/Keyboard/f]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Store

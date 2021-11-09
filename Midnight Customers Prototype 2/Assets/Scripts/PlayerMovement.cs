@@ -72,12 +72,7 @@ public class PlayerMovement : MonoBehaviour
         //old input system above
 
         movementDirection = playerInput.Store.Move.ReadValue<Vector2>();
-        //float fAngle = Vector2.SignedAngle(Vector2.zero, movementDirection);
-        Vector2 vel = this.gameObject.GetComponent<Rigidbody2D>().velocity;
-        if(movementDirection != Vector2.zero)
-        {
-            flashLight.transform.rotation = Quaternion.Euler(new Vector3(fAngle, 0, 0));
-        }
+        
             
 
         playerLastFramePosition = transform.position;
