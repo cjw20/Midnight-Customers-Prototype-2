@@ -11,12 +11,14 @@ public class PlayerTrigger : MonoBehaviour
     public GameObject mopTriggerPrefab;
     bool hasPlacedMop = false;
     bool isBehindCounter = false;
+    public float poopChance = 0f; //Currently inert code
     void OnTriggerEnter2D(Collider2D other){
         if (other.tag=="Register"){
             isBehindCounter=true;
         }
         if (other.tag=="Customer" && !hasPlacedMop && !isBehindCounter){
-            Instantiate(mopTriggerPrefab, transform.position, Quaternion.identity);
+            float randy = Random.Range(0f,1f);
+            if(randy <= poopChance) Instantiate(mopTriggerPrefab, transform.position, Quaternion.identity);
             //Add oof sfx?
             hasPlacedMop = true;
         }
