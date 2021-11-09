@@ -1834,10 +1834,10 @@ MonoBehaviour:
   isRunning: 0
   inCheckout: 0
   currentMilestone: 0
-  slider: {fileID: 0}
+  slider: {fileID: 1954433555}
   timePassed: 0
   scale: 1
-  checkoutManager: {fileID: 0}
+  checkoutManager: {fileID: 10691447}
 --- !u!4 &282933962
 Transform:
   m_ObjectHideFlags: 0
