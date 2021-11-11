@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 983670818175001459}
   - component: {fileID: 4211410690832683303}
   m_Layer: 0
-  m_Name: Mop Trigger
+  m_Name: Ice Trigger
   m_TagString: Minigame
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -134,7 +134,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: 7785445002530814709, guid: 17715145133b66c48b112106b654a66c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6ae3d5c6cc1ff7140a43bb18a776d9d6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
