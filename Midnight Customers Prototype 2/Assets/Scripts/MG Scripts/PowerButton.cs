@@ -18,16 +18,15 @@ public class PowerButton : MonoBehaviour
         powerGame = FindObjectOfType<PowerGame>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-
+    
     void OnMouseDown()
     {
-        foreach(PowerButton button in targetSwitch)
+        if (!activated)
+        {
+            return;
+            //so you cant press an unactivated button, works more like switch for when art is made
+        }
+        foreach (PowerButton button in targetSwitch)
         {
             button.ToggleButton();
         }
@@ -35,6 +34,7 @@ public class PowerButton : MonoBehaviour
 
     public void ToggleButton()
     {
+        
         activated = !activated;
         thisLight.enabled = activated;
         powerGame.CheckFinish();

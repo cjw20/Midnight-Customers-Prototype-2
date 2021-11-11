@@ -16,11 +16,7 @@ public class PowerGame : MonoBehaviour
         lightManager = FindObjectOfType<LightManager>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 
     public void CheckFinish()
     {
