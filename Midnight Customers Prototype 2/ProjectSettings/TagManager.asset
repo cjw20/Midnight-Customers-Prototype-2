@@ -16,6 +16,7 @@ TagManager:
   - Drawer
   - Shelf
   - Minigame
+  - Base
   layers:
   - Default
   - TransparentFX
