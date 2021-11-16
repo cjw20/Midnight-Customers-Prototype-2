@@ -18,7 +18,9 @@ public class LightManager : MonoBehaviour
     [SerializeField] AudioSource lightningSound; //currently a placeholder sound effect
 
     [SerializeField] GameObject powerGameTrigger;
+    [SerializeField] GameObject lightBulbTrigger;
 
+    Light2D brokenLight;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +31,7 @@ public class LightManager : MonoBehaviour
 
         //PowerOutage(15f);
         //StartCoroutine(LightningEffect());
+       // BreakBulb();
 
     }
 
@@ -135,5 +138,28 @@ public class LightManager : MonoBehaviour
     {
         target.color = normalColor;
         target.intensity = 1;
+    }
+
+
+
+    public void BreakBulb()
+    {
+        if (brokenLight != null)
+        {
+            return; //keeps multiple bulbs from breaking at once
+        }
+        int bulbNum = Random.Range(0, ceilingLights.Length - 1);
+
+        ceilingLights[bulbNum].enabled = false;
+        Instantiate(lightBulbTrigger, ceilingLights[bulbNum].gameObject.transform);
+        brokenLight = ceilingLights[bulbNum];
+        //lightBulbTrigger.transform.position = ceilingLights[bulbNum].gameObject.transform.position;
+    }
+
+    public void FixBulb()
+    {
+        brokenLight.enabled = true;
+        brokenLight = null;
+        //will need to store multiple if somehow multiple bulbs are broken
     }
 }
