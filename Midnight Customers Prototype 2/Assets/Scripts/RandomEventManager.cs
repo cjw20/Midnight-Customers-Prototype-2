@@ -21,7 +21,7 @@ public class RandomEventManager : MonoBehaviour
             }
             else
             {
-                lightManager.CallLightning();
+                lightManager.BreakBulb();
             }
         }
     }

@@ -21,7 +21,7 @@ public class LightChangeGame : MonoBehaviour
     IEnumerator EndGame()
     {
         yield return new WaitForSeconds(1f); //short delay so player can see light turn on
-
+        lightManager.FixBulb();
         mgControl.EndMiniGame();
         Destroy(this.gameObject);
         yield break;
