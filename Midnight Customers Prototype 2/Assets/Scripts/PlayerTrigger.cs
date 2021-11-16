@@ -18,9 +18,10 @@ public class PlayerTrigger : MonoBehaviour
         }
         if (other.tag=="Customer" && !hasPlacedMop && !isBehindCounter){
             float randy = Random.Range(0f,1f);
-            Debug.Log(randy);
+            //Debug.Log(randy);
             if(randy <= poopChance) {
-                Instantiate(mopTriggerPrefab, transform.position, Quaternion.identity);
+                //I'm going to leave this commented out
+                //Instantiate(mopTriggerPrefab, transform.position, Quaternion.identity);
                 //Add oof sfx?
                 hasPlacedMop = true;
             }
