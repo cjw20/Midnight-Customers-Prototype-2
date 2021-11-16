@@ -27,6 +27,8 @@ public class PlayerMovement : MonoBehaviour
     private PlayerInput playerInput; //asset that has player controls
     Animator animator;
 
+    SpriteRenderer spriteRenderer;
+
     private void Awake()
     {
         playerInput = new PlayerInput();
@@ -46,6 +48,7 @@ public class PlayerMovement : MonoBehaviour
         body = this.gameObject.GetComponent<Rigidbody2D>();
         playerLastFramePosition = transform.position;
         animator = this.gameObject.GetComponent<Animator>();
+        spriteRenderer = this.gameObject.GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -83,6 +86,15 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             animator.SetBool("Moving", true);
+        }
+
+        if(movementDirection.x > 0)
+        {
+            spriteRenderer.flipX = true;
+        }
+        else
+        {
+            spriteRenderer.flipX = false;
         }
         playerLastFramePosition = transform.position;
 
