@@ -25,8 +25,8 @@ public class PlayerMovement : MonoBehaviour
     public CheckoutTrigger checkoutTrigger;
 
     private PlayerInput playerInput; //asset that has player controls
+    Animator animator;
 
-    
     private void Awake()
     {
         playerInput = new PlayerInput();
@@ -45,6 +45,7 @@ public class PlayerMovement : MonoBehaviour
     {
         body = this.gameObject.GetComponent<Rigidbody2D>();
         playerLastFramePosition = transform.position;
+        animator = this.gameObject.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -72,9 +73,17 @@ public class PlayerMovement : MonoBehaviour
         //old input system above
 
         movementDirection = playerInput.Store.Move.ReadValue<Vector2>();
-        
-            
+        animator.SetFloat("Horizontal", movementDirection.x);
+        animator.SetFloat("Vertical", movementDirection.y);
 
+        if(movementDirection.x == 0 && movementDirection.y == 0)
+        {
+            animator.SetBool("Moving", false);
+        }
+        else
+        {
+            animator.SetBool("Moving", true);
+        }
         playerLastFramePosition = transform.position;
 
 

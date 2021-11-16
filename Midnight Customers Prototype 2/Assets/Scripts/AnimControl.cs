@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class AnimControl : MonoBehaviour
 {
+    //OLD DONT USE THIS
     Rigidbody2D body;
     public Vector2 velocity;
     Animator animator;
