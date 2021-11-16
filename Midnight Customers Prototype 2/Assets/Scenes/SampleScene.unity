@@ -12242,8 +12242,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.008045527, y: 0.47624782}
-  m_Size: {x: 0.7296463, y: 0.93305755}
+  m_Offset: {x: -0.046135098, y: 0.47624782}
+  m_Size: {x: 0.6026818, y: 0.93305755}
   m_Direction: 0
 --- !u!114 &1675290337
 MonoBehaviour:
@@ -12349,8 +12349,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.044882298, y: 0.5091052}
-  m_Size: {x: 1.335494, y: 2.0853987}
+  m_Offset: {x: -0.044882298, y: 0.534498}
+  m_Size: {x: 1.335494, y: 1.5775414}
   m_Direction: 0
 --- !u!81 &1675290341
 AudioListener:
