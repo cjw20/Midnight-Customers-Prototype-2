@@ -48,7 +48,7 @@ public class CustomerMovement : MonoBehaviour
             return;
 
         //is walking for footstep sounds
-
+        
         if (!agent.pathPending && agent.remainingDistance < minDistance)
         {
             
