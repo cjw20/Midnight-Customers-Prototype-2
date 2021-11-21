@@ -110,8 +110,8 @@ MonoBehaviour:
     DialogueText: Bless your heart! Missy isn't a cat! Missy's human!
     Position: {x: 1956, y: 205.59999}
   - Guid: 00f3852d-6afa-43d6-a279-a73f58da1863
-    DialogueText: I can't wait so show this to Missy. Maybe next time I'll send her
-      in here to pick some up on her own.
+    DialogueText: It's gonna be real sad when she goes off to college next year.
+      I'll have to send her off with some of this.
     Position: {x: 1956.8, y: 380}
   ExposedProperties: []
   CommentBlockData: []

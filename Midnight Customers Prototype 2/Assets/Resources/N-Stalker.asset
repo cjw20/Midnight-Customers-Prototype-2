@@ -1,0 +1,118 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
+  m_Name: N-Stalker
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: b678c041-6dbe-4af7-8c78-74f0315b7a69
+    PortName: Next
+    TargetNodeGuid: 6d139e9a-dcc1-45f7-9d19-e9ed9c266c02
+  - BaseNodeGuid: 6d139e9a-dcc1-45f7-9d19-e9ed9c266c02
+    PortName: No, she's not scheduled tonight. Why do you ask?
+    TargetNodeGuid: 1281d269-c11f-48a1-8183-91f0875a904d
+  - BaseNodeGuid: 6d139e9a-dcc1-45f7-9d19-e9ed9c266c02
+    PortName: No, I can leave a message for her though. What's your name?
+    TargetNodeGuid: 650dc299-cb60-4f79-8a06-72233177f086
+  - BaseNodeGuid: 6d139e9a-dcc1-45f7-9d19-e9ed9c266c02
+    PortName: ...
+    TargetNodeGuid: 3d40753c-64da-4357-8c83-93f5344c57da
+  - BaseNodeGuid: 1281d269-c11f-48a1-8183-91f0875a904d
+    PortName: If you two are so close, why don't you already have her number?
+    TargetNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+  - BaseNodeGuid: 1281d269-c11f-48a1-8183-91f0875a904d
+    PortName: Sorry, sir, but that's against company policy.
+    TargetNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+  - BaseNodeGuid: 1281d269-c11f-48a1-8183-91f0875a904d
+    PortName: ...
+    TargetNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+  - BaseNodeGuid: 650dc299-cb60-4f79-8a06-72233177f086
+    PortName: If you two are so close, why don't you already have her number?
+    TargetNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+  - BaseNodeGuid: 650dc299-cb60-4f79-8a06-72233177f086
+    PortName: Sorry, sir, but that's against company policy.
+    TargetNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+  - BaseNodeGuid: 650dc299-cb60-4f79-8a06-72233177f086
+    PortName: ...
+    TargetNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+  - BaseNodeGuid: 3d40753c-64da-4357-8c83-93f5344c57da
+    PortName: If you two are so close, why don't you already have her number?
+    TargetNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+  - BaseNodeGuid: 3d40753c-64da-4357-8c83-93f5344c57da
+    PortName: Sorry, sir, but that's against company policy.
+    TargetNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+  - BaseNodeGuid: 3d40753c-64da-4357-8c83-93f5344c57da
+    PortName: ...
+    TargetNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+  - BaseNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+    PortName: What did you say your name was again?
+    TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+  - BaseNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+    PortName: I'll tell her that someone stopped by looking for her.
+    TargetNodeGuid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
+  - BaseNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+    PortName: ...
+    TargetNodeGuid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
+  - BaseNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+    PortName: What did you say your name was again?
+    TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+  - BaseNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+    PortName: I'll tell her that someone stopped by looking for her.
+    TargetNodeGuid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
+  - BaseNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+    PortName: ...
+    TargetNodeGuid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
+  - BaseNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+    PortName: What did you say your name was again?
+    TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+  - BaseNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+    PortName: I'll tell her that someone stopped by looking for her.
+    TargetNodeGuid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
+  - BaseNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+    PortName: ...
+    TargetNodeGuid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
+  DialogueNodeData:
+  - Guid: 6d139e9a-dcc1-45f7-9d19-e9ed9c266c02
+    DialogueText: Hey, is Laura around?
+    Position: {x: 219.2, y: 193.59999}
+  - Guid: 1281d269-c11f-48a1-8183-91f0875a904d
+    DialogueText: She's a close friend of mine, and I really need to talk to her.
+      Do you have her number by chance?
+    Position: {x: 772, y: 36}
+  - Guid: 650dc299-cb60-4f79-8a06-72233177f086
+    DialogueText: Sorry, that's rather private. If you give me her number, I can
+      give her the message myself.
+    Position: {x: 773.6, y: 197.59999}
+  - Guid: 3d40753c-64da-4357-8c83-93f5344c57da
+    DialogueText: I'm guessing that's a no... Can you give me her number at least?
+      I really need to talk to her.
+    Position: {x: 774.4, y: 363.2}
+  - Guid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
+    DialogueText: No! That's fine. Just forget about it.
+    Position: {x: 2208.8, y: 216.8}
+  - Guid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
+    DialogueText: Ugh, you're no help. I'll stop by later.
+    Position: {x: 2208, y: 378.40002}
+  - Guid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+    DialogueText: I just got a new phone, so I lost all my old contacts.
+    Position: {x: 1599.2, y: 39.2}
+  - Guid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+    DialogueText: Come on, don't be like that. She's my friend! I just need to talk
+      to her.
+    Position: {x: 1598.4, y: 204.8}
+  - Guid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+    DialogueText: Well? Are you going to give me her number or not?!
+    Position: {x: 1600.8, y: 367.2}
+  - Guid: c6d5da48-58f5-455b-95d2-29176a75c75d
+    DialogueText: I didn't. Whatever, this was a waste of time.
+    Position: {x: 2204, y: 37.600002}
+  ExposedProperties: []
+  CommentBlockData: []

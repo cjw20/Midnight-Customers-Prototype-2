@@ -14,104 +14,105 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodeLinks:
   - BaseNodeGuid: 30233048-696f-4e50-b92c-e3a4e4eb52a5
-    PortName: ...
-    TargetNodeGuid: eac126ec-7e72-4e48-93a7-b5bf6191b4c2
-  - BaseNodeGuid: c9c83879-01da-49ec-baca-d3c29dbce0d7
-    PortName: ...
-    TargetNodeGuid: eac126ec-7e72-4e48-93a7-b5bf6191b4c2
-  - BaseNodeGuid: e482eb58-a2dd-4676-9f55-aec8b1783efe
-    PortName: ...
-    TargetNodeGuid: eac126ec-7e72-4e48-93a7-b5bf6191b4c2
-  - BaseNodeGuid: e482eb58-a2dd-4676-9f55-aec8b1783efe
-    PortName: You two were close then?
-    TargetNodeGuid: c308d187-093d-4faa-8764-e285e5562b8e
-  - BaseNodeGuid: c9c83879-01da-49ec-baca-d3c29dbce0d7
-    PortName: You two were close then?
-    TargetNodeGuid: c308d187-093d-4faa-8764-e285e5562b8e
-  - BaseNodeGuid: 30233048-696f-4e50-b92c-e3a4e4eb52a5
-    PortName: You two were close then?
-    TargetNodeGuid: c308d187-093d-4faa-8764-e285e5562b8e
-  - BaseNodeGuid: e482eb58-a2dd-4676-9f55-aec8b1783efe
-    PortName: Were you two... You know...?
-    TargetNodeGuid: 20406388-9abb-4574-9f09-333c9cd9de72
-  - BaseNodeGuid: c9c83879-01da-49ec-baca-d3c29dbce0d7
-    PortName: Were you two... You know...?
-    TargetNodeGuid: 20406388-9abb-4574-9f09-333c9cd9de72
-  - BaseNodeGuid: 30233048-696f-4e50-b92c-e3a4e4eb52a5
-    PortName: Were you two... You know...?
-    TargetNodeGuid: 20406388-9abb-4574-9f09-333c9cd9de72
-  - BaseNodeGuid: 62b6fbf4-8f67-46ac-9fd5-e50d960bbfeb
-    PortName: ...
-    TargetNodeGuid: 30233048-696f-4e50-b92c-e3a4e4eb52a5
-  - BaseNodeGuid: 62b6fbf4-8f67-46ac-9fd5-e50d960bbfeb
-    PortName: Ouch... Sorry to disappoint.
-    TargetNodeGuid: c9c83879-01da-49ec-baca-d3c29dbce0d7
-  - BaseNodeGuid: 62b6fbf4-8f67-46ac-9fd5-e50d960bbfeb
+    PortName: Next
+    TargetNodeGuid: 1c6d7691-4ba6-4631-98cb-c8de1584702e
+  - BaseNodeGuid: 1c6d7691-4ba6-4631-98cb-c8de1584702e
     PortName: What's a pity?
-    TargetNodeGuid: e482eb58-a2dd-4676-9f55-aec8b1783efe
-  - BaseNodeGuid: 20406388-9abb-4574-9f09-333c9cd9de72
-    PortName: Different how?
-    TargetNodeGuid: 3872f8b2-21f8-4993-985e-69778da17695
-  - BaseNodeGuid: c308d187-093d-4faa-8764-e285e5562b8e
-    PortName: Well, I am very sorry. Any idea where he might have gone?
-    TargetNodeGuid: 9dde9611-7d99-4264-8653-8834f276554c
-  - BaseNodeGuid: 20406388-9abb-4574-9f09-333c9cd9de72
-    PortName: Well, I am very sorry. Any idea where he might have gone?
-    TargetNodeGuid: 9dde9611-7d99-4264-8653-8834f276554c
-  - BaseNodeGuid: eac126ec-7e72-4e48-93a7-b5bf6191b4c2
-    PortName: Well, I am very sorry. Any idea where he might have gone?
-    TargetNodeGuid: 9dde9611-7d99-4264-8653-8834f276554c
-  - BaseNodeGuid: c308d187-093d-4faa-8764-e285e5562b8e
-    PortName: Different how?
-    TargetNodeGuid: 3872f8b2-21f8-4993-985e-69778da17695
-  - BaseNodeGuid: eac126ec-7e72-4e48-93a7-b5bf6191b4c2
-    PortName: Different how?
-    TargetNodeGuid: 3872f8b2-21f8-4993-985e-69778da17695
-  - BaseNodeGuid: c308d187-093d-4faa-8764-e285e5562b8e
+    TargetNodeGuid: 832a56d8-5db9-497c-8f69-4d070eddf7ce
+  - BaseNodeGuid: 1c6d7691-4ba6-4631-98cb-c8de1584702e
+    PortName: Ouch... Sorry to disappoint.
+    TargetNodeGuid: 96e471fd-063c-4a29-9d9c-0f58bbd7d5f0
+  - BaseNodeGuid: 1c6d7691-4ba6-4631-98cb-c8de1584702e
     PortName: ...
-    TargetNodeGuid: 9e682482-0522-46ac-981e-29629e14df61
-  - BaseNodeGuid: 20406388-9abb-4574-9f09-333c9cd9de72
+    TargetNodeGuid: 501e434e-cdba-4ca1-859a-c3888a10429a
+  - BaseNodeGuid: 832a56d8-5db9-497c-8f69-4d070eddf7ce
+    PortName: You two were close then?
+    TargetNodeGuid: b72e0e11-5db8-4e2d-8420-f5597727b304
+  - BaseNodeGuid: 501e434e-cdba-4ca1-859a-c3888a10429a
+    PortName: You two were close then?
+    TargetNodeGuid: b72e0e11-5db8-4e2d-8420-f5597727b304
+  - BaseNodeGuid: 832a56d8-5db9-497c-8f69-4d070eddf7ce
+    PortName: Were you two... You know...?
+    TargetNodeGuid: 51915a2c-5455-4ada-b2bf-6088dec6a4ed
+  - BaseNodeGuid: 96e471fd-063c-4a29-9d9c-0f58bbd7d5f0
+    PortName: Were you two... You know...?
+    TargetNodeGuid: 51915a2c-5455-4ada-b2bf-6088dec6a4ed
+  - BaseNodeGuid: 96e471fd-063c-4a29-9d9c-0f58bbd7d5f0
+    PortName: You two were close then?
+    TargetNodeGuid: b72e0e11-5db8-4e2d-8420-f5597727b304
+  - BaseNodeGuid: 501e434e-cdba-4ca1-859a-c3888a10429a
+    PortName: Were you two... You know...?
+    TargetNodeGuid: 51915a2c-5455-4ada-b2bf-6088dec6a4ed
+  - BaseNodeGuid: 832a56d8-5db9-497c-8f69-4d070eddf7ce
     PortName: ...
-    TargetNodeGuid: 9e682482-0522-46ac-981e-29629e14df61
-  - BaseNodeGuid: eac126ec-7e72-4e48-93a7-b5bf6191b4c2
+    TargetNodeGuid: 33f61297-6b31-49a8-a762-83f1e417f43d
+  - BaseNodeGuid: 96e471fd-063c-4a29-9d9c-0f58bbd7d5f0
     PortName: ...
-    TargetNodeGuid: 9e682482-0522-46ac-981e-29629e14df61
+    TargetNodeGuid: 33f61297-6b31-49a8-a762-83f1e417f43d
+  - BaseNodeGuid: 501e434e-cdba-4ca1-859a-c3888a10429a
+    PortName: ...
+    TargetNodeGuid: 33f61297-6b31-49a8-a762-83f1e417f43d
+  - BaseNodeGuid: b72e0e11-5db8-4e2d-8420-f5597727b304
+    PortName: Well, I am very sorry. Any idea where he might have gone?
+    TargetNodeGuid: 7c6dcdb4-ff92-44cb-a19a-8b64ce8f0d05
+  - BaseNodeGuid: 51915a2c-5455-4ada-b2bf-6088dec6a4ed
+    PortName: Well, I am very sorry. Any idea where he might have gone?
+    TargetNodeGuid: 7c6dcdb4-ff92-44cb-a19a-8b64ce8f0d05
+  - BaseNodeGuid: 33f61297-6b31-49a8-a762-83f1e417f43d
+    PortName: Well, I am very sorry. Any idea where he might have gone?
+    TargetNodeGuid: 7c6dcdb4-ff92-44cb-a19a-8b64ce8f0d05
+  - BaseNodeGuid: b72e0e11-5db8-4e2d-8420-f5597727b304
+    PortName: Different how?
+    TargetNodeGuid: 1110b1fc-6a4d-4eab-a3d7-86ed00cc8208
+  - BaseNodeGuid: 51915a2c-5455-4ada-b2bf-6088dec6a4ed
+    PortName: Different how?
+    TargetNodeGuid: 1110b1fc-6a4d-4eab-a3d7-86ed00cc8208
+  - BaseNodeGuid: 33f61297-6b31-49a8-a762-83f1e417f43d
+    PortName: Different how?
+    TargetNodeGuid: 1110b1fc-6a4d-4eab-a3d7-86ed00cc8208
+  - BaseNodeGuid: 33f61297-6b31-49a8-a762-83f1e417f43d
+    PortName: ...
+    TargetNodeGuid: 0527a1c8-14c4-49a3-bf70-52c6b0b667a4
+  - BaseNodeGuid: 51915a2c-5455-4ada-b2bf-6088dec6a4ed
+    PortName: ...
+    TargetNodeGuid: 0527a1c8-14c4-49a3-bf70-52c6b0b667a4
+  - BaseNodeGuid: b72e0e11-5db8-4e2d-8420-f5597727b304
+    PortName: ...
+    TargetNodeGuid: 0527a1c8-14c4-49a3-bf70-52c6b0b667a4
   DialogueNodeData:
-  - Guid: 62b6fbf4-8f67-46ac-9fd5-e50d960bbfeb
-    DialogueText: Ah, another new clerk. What a pity...
-    Position: {x: 224.8, y: 200}
-  - Guid: c9c83879-01da-49ec-baca-d3c29dbce0d7
+  - Guid: 501e434e-cdba-4ca1-859a-c3888a10429a
+    DialogueText: It's a shame, really. I was starting to grow fond of him.
+    Position: {x: 668.8, y: 365.6}
+  - Guid: 96e471fd-063c-4a29-9d9c-0f58bbd7d5f0
     DialogueText: No, no, you misunderstand. It's just that I was starting to grow
       fond of him.
-    Position: {x: 601.6, y: 205.59999}
-  - Guid: e482eb58-a2dd-4676-9f55-aec8b1783efe
+    Position: {x: 665.6, y: 198.4}
+  - Guid: 832a56d8-5db9-497c-8f69-4d070eddf7ce
     DialogueText: His departure. I was starting to grow fond of him.
-    Position: {x: 601.6, y: 48.000004}
-  - Guid: 30233048-696f-4e50-b92c-e3a4e4eb52a5
-    DialogueText: It's a shame, really. I was starting to grow fond of him.
-    Position: {x: 600.8, y: 357.6}
-  - Guid: c308d187-093d-4faa-8764-e285e5562b8e
+    Position: {x: 668, y: 1.6000004}
+  - Guid: 1c6d7691-4ba6-4631-98cb-c8de1584702e
+    DialogueText: Ah, another new clerk. What a pity...
+    Position: {x: 208, y: 190.4}
+  - Guid: 33f61297-6b31-49a8-a762-83f1e417f43d
+    DialogueText: I was foolish to think that this time would be any different.
+    Position: {x: 1251.2, y: 365.6}
+  - Guid: 51915a2c-5455-4ada-b2bf-6088dec6a4ed
+    DialogueText: You humor me. No, but I was hoping that this time would be different.
+    Position: {x: 1304, y: 212}
+  - Guid: b72e0e11-5db8-4e2d-8420-f5597727b304
     DialogueText: No, not close, but I was rooting for him. I was hoping that this
       time would be different.
-    Position: {x: 1176, y: 47.2}
-  - Guid: eac126ec-7e72-4e48-93a7-b5bf6191b4c2
-    DialogueText: I was foolish to think that this time would be any different.
-    Position: {x: 1173.6, y: 379.2}
-  - Guid: 20406388-9abb-4574-9f09-333c9cd9de72
-    DialogueText: You humor me. No, but I was hoping that this time would be different.
-    Position: {x: 1174.4, y: 204.8}
-  - Guid: 3872f8b2-21f8-4993-985e-69778da17695
-    DialogueText: I was hoping he would be the one to break the cycle. Perhaps that
-      will be you, instead?
-    Position: {x: 1812, y: 204.8}
-  - Guid: 9e682482-0522-46ac-981e-29629e14df61
-    DialogueText: He wasn't able to break the cycle. Perhaps you will be the one
-      to do so?
-    Position: {x: 1813.6, y: 397.6}
-  - Guid: 9dde9611-7d99-4264-8653-8834f276554c
-    DialogueText: Not the slightest. Just like the others before him, one day here
-      is here, and the next they are gone. Perhaps you will be the one to break the
-      cycle.
-    Position: {x: 1815.2, y: 49.600002}
+    Position: {x: 1247.2, y: 13.600002}
+  - Guid: 7c6dcdb4-ff92-44cb-a19a-8b64ce8f0d05
+    DialogueText: Not the slightest. Gone, just like the others before him. Perhaps
+      you will break the cycle.
+    Position: {x: 2048, y: 8}
+  - Guid: 1110b1fc-6a4d-4eab-a3d7-86ed00cc8208
+    DialogueText: I was hoping he wouldn't vanish like the others before him. Perhaps
+      you will be the one to change that.
+    Position: {x: 2052, y: 239.99998}
+  - Guid: 0527a1c8-14c4-49a3-bf70-52c6b0b667a4
+    DialogueText: Perhaps you will be the first to break the cycle.
+    Position: {x: 2046.4, y: 385.6}
   ExposedProperties: []
   CommentBlockData: []

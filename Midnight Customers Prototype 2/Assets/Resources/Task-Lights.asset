@@ -1,0 +1,98 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
+  m_Name: Task-Lights
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: b678c041-6dbe-4af7-8c78-74f0315b7a69
+    PortName: Next
+    TargetNodeGuid: 6d139e9a-dcc1-45f7-9d19-e9ed9c266c02
+  - BaseNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+    PortName: The Gas Station Slasher isn't real.
+    TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+  - BaseNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+    PortName: Have people actually seen him before?
+    TargetNodeGuid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
+  - BaseNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+    PortName: The Gas Station Slasher isn't real.
+    TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+  - BaseNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+    PortName: Have people actually seen him before?
+    TargetNodeGuid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
+  - BaseNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+    PortName: The Gas Station Slasher isn't real.
+    TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+  - BaseNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+    PortName: Have people actually seen him before?
+    TargetNodeGuid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
+  - BaseNodeGuid: 6d139e9a-dcc1-45f7-9d19-e9ed9c266c02
+    PortName: Wait, this sounds familiar...
+    TargetNodeGuid: 456fefe7-ec79-4455-a9cb-5360e378c99a
+  - BaseNodeGuid: 6d139e9a-dcc1-45f7-9d19-e9ed9c266c02
+    PortName: The what?
+    TargetNodeGuid: a35cfcf9-c58f-4b10-9b4b-d8fd66c28413
+  - BaseNodeGuid: 456fefe7-ec79-4455-a9cb-5360e378c99a
+    PortName: How does it go, again?
+    TargetNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+  - BaseNodeGuid: 456fefe7-ec79-4455-a9cb-5360e378c99a
+    PortName: Isn't that the one about the disgruntled employee?
+    TargetNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+  - BaseNodeGuid: a35cfcf9-c58f-4b10-9b4b-d8fd66c28413
+    PortName: Sounds like you're trying to scare me.
+    TargetNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+  - BaseNodeGuid: a35cfcf9-c58f-4b10-9b4b-d8fd66c28413
+    PortName: How does the story go?
+    TargetNodeGuid: 45ea4498-3831-45f5-98ab-5eb92b46d37b
+  - BaseNodeGuid: 45ea4498-3831-45f5-98ab-5eb92b46d37b
+    PortName: Have people actually seen him before?
+    TargetNodeGuid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
+  - BaseNodeGuid: 45ea4498-3831-45f5-98ab-5eb92b46d37b
+    PortName: The Gas Station Slasher isn't real.
+    TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+  DialogueNodeData:
+  - Guid: 6d139e9a-dcc1-45f7-9d19-e9ed9c266c02
+    DialogueText: Huh, flickering lights. I wonder if that means the Gas Station
+      Slasher is coming...
+    Position: {x: 219.2, y: 193.59999}
+  - Guid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
+    DialogueText: It's a true story. It happened to my cousin's friend. But really,
+      you should fix that light, it's kinda annoying.
+    Position: {x: 2572.8, y: 220}
+  - Guid: a35cfcf9-c58f-4b10-9b4b-d8fd66c28413
+    DialogueText: Not what, who! He's a bit of an urban legend around here.
+    Position: {x: 878.4, y: 279.2}
+  - Guid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+    DialogueText: Yeah that's the one. A former disgruntled with a hook for a hand
+      stalking gas stations at night for revenge.
+    Position: {x: 1635.2, y: -195.2}
+  - Guid: c6d5da48-58f5-455b-95d2-29176a75c75d
+    DialogueText: For your sake, I hope not. But really, you should fix that light,
+      it's kinda annoying.
+    Position: {x: 2600, y: -9.599999}
+  - Guid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+    DialogueText: They say a former gas station employee with a hook for a hand stalks
+      gas stations at night looking for revenge.
+    Position: {x: 1576, y: 41.600002}
+  - Guid: 456fefe7-ec79-4455-a9cb-5360e378c99a
+    DialogueText: You've probably heard the story before. It's one of my favorite
+      urban legends.
+    Position: {x: 885.6, y: 39.2}
+  - Guid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+    DialogueText: Am not! I just wanted to warn you because he targets Gas Station
+      employees like yourself.
+    Position: {x: 1572, y: 357.6}
+  - Guid: 45ea4498-3831-45f5-98ab-5eb92b46d37b
+    DialogueText: They say a former gas station employee with a hook for a hand stalks
+      gas stations at night looking for revenge.
+    Position: {x: 1565.6, y: 553.60004}
+  ExposedProperties: []
+  CommentBlockData: []
