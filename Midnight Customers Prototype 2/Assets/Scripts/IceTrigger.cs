@@ -15,7 +15,7 @@ public class IceTrigger : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other){
         if (done) {
             mgControl.EndMiniGame();
-            Destroy(this.gameObject); //woah thats dark
+            Destroy(transform.parent.gameObject); //woah thats dark
         }
         first.SetActive(true);
         if (halfway) {
