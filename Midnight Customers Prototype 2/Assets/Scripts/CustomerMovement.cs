@@ -20,6 +20,7 @@ public class CustomerMovement : MonoBehaviour
     public float timeToWait = 5f; //time for customer to chill at destination before moving to next one
     bool isWaiting;
 
+    Vector2 velocity;
 
     public bool hasCheckedOut = false; //set to true after checkout minigame completed
     public bool readyForCheckout; //so checkout wont be available if customer walks past counter before ready
@@ -44,6 +45,8 @@ public class CustomerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        velocity = agent.velocity; //for animator stuff
+
         if (isWaiting)
             return;
 
