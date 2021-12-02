@@ -64,6 +64,15 @@ public class CheckoutManager : MonoBehaviour
             activeRules.Add(rule);
         }
     }
+
+    public void LoadPhase1()
+    {
+        activePhase = 1;
+        foreach(Rule rule in phase1Rules)
+        {
+            activeRules.Add(rule);
+        }
+    }
     public void StartCheckout(CustomerInfo info)
     {
         customerInfo = info;
@@ -124,7 +133,7 @@ public class CheckoutManager : MonoBehaviour
 
             if (passed)
             {
-                
+                //add in increase to customer mood here?
             }
         }
         /*

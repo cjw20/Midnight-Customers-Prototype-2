@@ -29,6 +29,7 @@ public class TimeManager : MonoBehaviour
     PerformanceReview review;
     StoryEventHandler storyEvent;
     RandomEventManager randomEvent;
+    CheckoutManager checkoutManager;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,6 +40,7 @@ public class TimeManager : MonoBehaviour
         review = FindObjectOfType<PerformanceReview>();
         storyEvent = FindObjectOfType<StoryEventHandler>();
         randomEvent = FindObjectOfType<RandomEventManager>();
+        checkoutManager = FindObjectOfType<CheckoutManager>();
         //if ^ is too slow, do different way later
         timerRunning = true;
         UpdateText();
@@ -125,6 +127,10 @@ public class TimeManager : MonoBehaviour
         player.transform.position = playerStartingLoc.position;
         hours = 0;
         day++;
+        if(day == 8)
+        {
+            checkoutManager.LoadPhase1();
+        }
         UpdateText();
         toBlack.FadeOut(fadeDuration);
         taskSpawner.NewDayTasks();
