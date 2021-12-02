@@ -20,10 +20,13 @@ public class LightManager : MonoBehaviour
     [SerializeField] GameObject powerGameTrigger;
     [SerializeField] GameObject lightBulbTrigger;
 
+    RandomEventManager randomEventManager;
+
     Light2D brokenLight;
     // Start is called before the first frame update
     void Start()
     {
+        randomEventManager = FindObjectOfType<RandomEventManager>();
         //Strobe(ceilingLights[0], 0.5, 0.2, true); //test call
 
         normalGlobalIntensity = globalLight.intensity;
@@ -100,7 +103,7 @@ public class LightManager : MonoBehaviour
             light.gameObject.SetActive(true);
         }
         //flashLight.gameObject.SetActive(false); not needed since flashlight has own toggle
-        
+        randomEventManager.ongoingLightEvent = false;
     }
 
     public void CallLightning()
@@ -130,7 +133,7 @@ public class LightManager : MonoBehaviour
             light.color = oldColor; //maybe find more specific color later
             light.intensity = oldIntensity;
         }
-
+        randomEventManager.ongoingLightEvent = false;
         yield break;
     }
 
@@ -160,6 +163,7 @@ public class LightManager : MonoBehaviour
     {
         brokenLight.enabled = true;
         brokenLight = null;
+        randomEventManager.ongoingLightEvent = false;
         //will need to store multiple if somehow multiple bulbs are broken
     }
 }
