@@ -17,7 +17,7 @@ public class CheckoutManager : MonoBehaviour
     public bool needsIDCheck;
     bool customerPayed;
     //bool passedIDCheck;
-    bool failedIDCheck;
+    public bool failedIDCheck;
     
     int lastWeight = 3;
     float totalPrice;
@@ -52,8 +52,14 @@ public class CheckoutManager : MonoBehaviour
     List<Rule> activeRules = new List<Rule>();
     private void Start()
     {
+        activePhase = 0; //load this variable when loading saved game
         checkoutTrigger = FindObjectOfType<CheckoutTrigger>();
         emoter = FindObjectOfType<EmoteController>();
+
+        foreach(Rule rule in phase0Rules)
+        {
+            activeRules.Add(rule);
+        }
     }
     public void StartCheckout(CustomerInfo info)
     {

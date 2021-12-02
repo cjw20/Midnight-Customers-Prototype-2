@@ -12,7 +12,8 @@ public class CheckoutItem : MonoBehaviour
     //rules like alchoholic?
     public bool isScanned = false;
 
-    
+    public bool foodItem; //true if food
+    public bool paperItem; //make sure weight is 1 for these items
 
     
 
