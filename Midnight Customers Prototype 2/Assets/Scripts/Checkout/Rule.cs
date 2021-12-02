@@ -10,6 +10,7 @@ public class Rule : MonoBehaviour
     
     public virtual bool CheckRule(CheckoutItem currentItem, CheckoutItem lastItem)
     {
+
         passed = true;
         return passed;
     }

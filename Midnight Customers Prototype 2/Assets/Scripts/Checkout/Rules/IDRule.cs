@@ -11,6 +11,9 @@ public class IDRule : Rule
         if(currentItem.requiresID && (currentItem.checkoutManager.needsIDCheck || currentItem.checkoutManager.failedIDCheck))
         {
             passed = false;
+            currentItem.checkoutManager.penaltyPoints++;
+            currentItem.checkoutManager.review.idErrors++;
+            currentItem.checkoutManager.emoter.React("Happy");
         }
 
         return passed;

@@ -8,9 +8,16 @@ public class PaperRule : Rule
     {
         passed = true;
 
+        if(lastItem == null)
+        {
+            return true; //first item always passes
+        }
+
         if(currentItem.foodItem && lastItem.paperItem)
         {
             passed = false;
+            currentItem.checkoutManager.review.baggingErrors++;
+            currentItem.checkoutManager.emoter.React("Angry");
         }
         return passed;
     }

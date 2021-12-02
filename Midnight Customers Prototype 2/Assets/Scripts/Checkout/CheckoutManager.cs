@@ -40,7 +40,7 @@ public class CheckoutManager : MonoBehaviour
 
     CustomerInfo customerInfo;
 
-    int penaltyPoints; //sum of errors in this checkout
+    public int penaltyPoints; //sum of errors in this checkout
     public PerformanceReview review;
 
     public EmoteController emoter;
@@ -50,6 +50,9 @@ public class CheckoutManager : MonoBehaviour
     [SerializeField] Rule[] phase1Rules;
 
     List<Rule> activeRules = new List<Rule>();
+
+    CheckoutItem currentItem;
+    CheckoutItem lastItem;
     private void Start()
     {
         activePhase = 0; //load this variable when loading saved game
@@ -107,9 +110,24 @@ public class CheckoutManager : MonoBehaviour
         dialogueFinished = true;
         EndCheckout();
     }
-    
+    public void UpdateItem(CheckoutItem newItem)
+    {
+        lastItem = currentItem;
+        currentItem = newItem;
+    }
     public void Bagged(int weight, bool needsID)
     {
+
+        foreach(Rule rule in activeRules)
+        {            
+            bool passed = rule.CheckRule(currentItem, lastItem);
+
+            if (passed)
+            {
+                
+            }
+        }
+        /*
         if(weight > lastWeight)
         {
             //StartCoroutine(DisplayMessage(misbagMessage, 1f)); //may need to do something that makes this not repeat if already going
@@ -125,6 +143,7 @@ public class CheckoutManager : MonoBehaviour
             review.idErrors++;
             emoter.React("Happy");
         }
+        */
         remainingItems--;
         
         if(remainingItems < 1)
@@ -207,6 +226,9 @@ public class CheckoutManager : MonoBehaviour
             penaltyPoints = 0;
 
             needsIDCheck = false;
+
+            currentItem = null;
+            lastItem = null;
             //will need to clear other stuff for future checkouts OR reinstantiate whole object?
             this.gameObject.SetActive(false);
         }

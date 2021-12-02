@@ -32,6 +32,7 @@ public class CheckoutItem : MonoBehaviour
         {
             if (isScanned)
             {
+                checkoutManager.UpdateItem(this);
                 checkoutManager.Bagged(weight, requiresID);
 
                 Destroy(this.gameObject);
