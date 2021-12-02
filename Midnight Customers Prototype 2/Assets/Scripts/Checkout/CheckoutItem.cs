@@ -12,7 +12,7 @@ public class CheckoutItem : MonoBehaviour
     //rules like alchoholic?
     public bool isScanned = false;
 
-    bool breaksRules;
+    
 
     
 

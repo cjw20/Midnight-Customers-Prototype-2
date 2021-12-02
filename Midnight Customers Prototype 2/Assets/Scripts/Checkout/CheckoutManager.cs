@@ -45,6 +45,11 @@ public class CheckoutManager : MonoBehaviour
 
     public EmoteController emoter;
 
+    public int activePhase;
+    [SerializeField] Rule[] phase0Rules;
+    [SerializeField] Rule[] phase1Rules;
+
+    List<Rule> activeRules = new List<Rule>();
     private void Start()
     {
         checkoutTrigger = FindObjectOfType<CheckoutTrigger>();
