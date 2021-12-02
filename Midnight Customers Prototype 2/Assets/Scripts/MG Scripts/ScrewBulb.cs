@@ -25,8 +25,15 @@ public class ScrewBulb : MonoBehaviour
   
     private void OnMouseDown()
     {
-        
-        
+        if (newBulb)
+        {
+            this.gameObject.transform.position += new Vector3(0, 0.1f, 0); //simulates bulb being screwed in
+        }
+        else
+        {
+            this.gameObject.transform.position += new Vector3(0, -0.1f, 0);
+        }
+
         numberOfPresses--;
         if(numberOfPresses <= 0)
         {

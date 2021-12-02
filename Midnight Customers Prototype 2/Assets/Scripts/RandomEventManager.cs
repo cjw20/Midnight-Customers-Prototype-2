@@ -14,12 +14,12 @@ public class RandomEventManager : MonoBehaviour
         {
             roll = Random.Range(0, 100);
 
-            if (roll >= 60)
+            if (roll >= 80)
             {
                 lightManager.PowerOutage(15f); //logic to decide which event would go here
                 lightManager.CallLightning();
             }
-            else if (roll < 60 && roll >= 30)
+            else if (roll < 80 && roll >= 30)
             {
                 lightManager.BreakBulb();
             }
