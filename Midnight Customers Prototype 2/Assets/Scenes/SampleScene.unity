@@ -6513,6 +6513,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lightManager: {fileID: 507476519}
   eventChance: 50
+  ongoingLightEvent: 0
 --- !u!1 &885160248
 GameObject:
   m_ObjectHideFlags: 0
@@ -9665,6 +9666,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5642382787059048442, guid: 0c385362111dbf04cbbe979bb5f2d605, type: 3}
   m_PrefabInstance: {fileID: 5642382788014778421}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1258878931
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258878923}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0c6dab8fa41319445b6a85f88580a266, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1261649850
 GameObject:
   m_ObjectHideFlags: 0
@@ -19055,6 +19075,25 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2086022073797734995, guid: d52477f69afa3d04ba8c39de28ca629d, type: 3}
   m_PrefabInstance: {fileID: 5890216067761218726}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &5570189988557149948
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5570189988557149941}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7b475290c5c19a24dadc503243a640d2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &5642382788014778421
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19126,6 +19165,10 @@ PrefabInstance:
       propertyPath: exit
       value: 
       objectReference: {fileID: 719393441}
+    - target: {fileID: 5642382787059048441, guid: 0c385362111dbf04cbbe979bb5f2d605, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1258878931}
     - target: {fileID: 5642382787059048441, guid: 0c385362111dbf04cbbe979bb5f2d605, type: 3}
       propertyPath: checkout
       value: 
