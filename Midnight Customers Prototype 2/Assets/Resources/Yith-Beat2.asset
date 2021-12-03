@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
+  m_Name: Yith-Beat2
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: 6deb90f8-d5eb-472d-886a-257022672e5c
+    PortName: Next
+    TargetNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
+  - BaseNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
+    PortName: Still on that?
+    TargetNodeGuid: 297b72f2-c138-44ff-9a99-7725df885e10
+  - BaseNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
+    PortName: I am begginging to see what you mean.
+    TargetNodeGuid: bb50e372-f70e-4e0e-8bd1-5c043962c012
+  - BaseNodeGuid: 297b72f2-c138-44ff-9a99-7725df885e10
+    PortName: Oh, you mean the detective.
+    TargetNodeGuid: d81673cb-5d6d-4007-b923-14ec5e3fc870
+  - BaseNodeGuid: 297b72f2-c138-44ff-9a99-7725df885e10
+    PortName: Yea she seems interesting.
+    TargetNodeGuid: 2f85583c-ade2-4261-b7a1-e35764696e98
+  - BaseNodeGuid: bb50e372-f70e-4e0e-8bd1-5c043962c012
+    PortName: Yea she seems interesting.
+    TargetNodeGuid: 2f85583c-ade2-4261-b7a1-e35764696e98
+  - BaseNodeGuid: bb50e372-f70e-4e0e-8bd1-5c043962c012
+    PortName: Oh, you mean the detective.
+    TargetNodeGuid: d81673cb-5d6d-4007-b923-14ec5e3fc870
+  - BaseNodeGuid: d81673cb-5d6d-4007-b923-14ec5e3fc870
+    PortName: I never said I have talked to her.
+    TargetNodeGuid: 18d2dfd9-dfeb-4126-83bc-a8bd93b3aa70
+  - BaseNodeGuid: 2f85583c-ade2-4261-b7a1-e35764696e98
+    PortName: I never said I have talked to her.
+    TargetNodeGuid: 18d2dfd9-dfeb-4126-83bc-a8bd93b3aa70
+  - BaseNodeGuid: d81673cb-5d6d-4007-b923-14ec5e3fc870
+    PortName: How did you know I have talked to her.
+    TargetNodeGuid: e89bf624-6879-4aa0-90c8-4eebcb63f1c7
+  - BaseNodeGuid: 2f85583c-ade2-4261-b7a1-e35764696e98
+    PortName: How did you know I have talked to her.
+    TargetNodeGuid: e89bf624-6879-4aa0-90c8-4eebcb63f1c7
+  DialogueNodeData:
+  - Guid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
+    DialogueText: I continue to see you people as..... intriguing.
+    Position: {x: 221, y: 187}
+  - Guid: 297b72f2-c138-44ff-9a99-7725df885e10
+    DialogueText: Yes, one person in particular has caught my eye. This woman in
+      a fedora.
+    Position: {x: 818, y: 39}
+  - Guid: bb50e372-f70e-4e0e-8bd1-5c043962c012
+    DialogueText: Exactly. One that stands out to me is this woman in a fedora.
+    Position: {x: 837, y: 256}
+  - Guid: d81673cb-5d6d-4007-b923-14ec5e3fc870
+    DialogueText: So you know of this woman, what have you two talked about?
+    Position: {x: 1410, y: 80}
+  - Guid: 2f85583c-ade2-4261-b7a1-e35764696e98
+    DialogueText: What have you talked to her about? Anything... special?
+    Position: {x: 1454, y: 226}
+  - Guid: 18d2dfd9-dfeb-4126-83bc-a8bd93b3aa70
+    DialogueText: I am always watching and learning, I know and see everything.
+    Position: {x: 1973, y: 165}
+  - Guid: e89bf624-6879-4aa0-90c8-4eebcb63f1c7
+    DialogueText: I am always watching, always learning, nothing hides from me...
+    Position: {x: 1960, y: 287}
+  ExposedProperties: []
+  CommentBlockData: []

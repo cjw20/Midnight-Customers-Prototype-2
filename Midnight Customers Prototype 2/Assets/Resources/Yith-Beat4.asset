@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
+  m_Name: Yith-Beat4
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: 6deb90f8-d5eb-472d-886a-257022672e5c
+    PortName: Next
+    TargetNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
+  - BaseNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
+    PortName: Why are you the only one who knew she wasn't a cop?
+    TargetNodeGuid: 31cbc37d-01cb-4625-bc2d-30917e02f566
+  - BaseNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
+    PortName: How did you know?
+    TargetNodeGuid: 04be44d8-7732-42b5-a0a1-2d6fd5edab9d
+  - BaseNodeGuid: 31cbc37d-01cb-4625-bc2d-30917e02f566
+    PortName: Trust goes both ways.
+    TargetNodeGuid: 3c01502e-4f0c-4777-b9c5-3c6c0fba29cb
+  - BaseNodeGuid: 31cbc37d-01cb-4625-bc2d-30917e02f566
+    PortName: I am guessing I should trust you?
+    TargetNodeGuid: bbf43fdc-fb63-4c3c-b037-8ba8e807e48a
+  - BaseNodeGuid: 04be44d8-7732-42b5-a0a1-2d6fd5edab9d
+    PortName: Everyone has secrets even you.
+    TargetNodeGuid: 83705846-d1bd-4e3d-8425-5a1bbca359e6
+  - BaseNodeGuid: 04be44d8-7732-42b5-a0a1-2d6fd5edab9d
+    PortName: Like who?
+    TargetNodeGuid: da3c6c29-ba6b-4735-a8e5-24b4fdd789ce
+  DialogueNodeData:
+  - Guid: 04be44d8-7732-42b5-a0a1-2d6fd5edab9d
+    DialogueText: Doesn't matter, others have secrets around here as well. Be careful
+      who you trust.
+    Position: {x: 736, y: 72}
+  - Guid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
+    DialogueText: How did your little talk with the liar of an investigator go?
+    Position: {x: 221, y: 187}
+  - Guid: 83705846-d1bd-4e3d-8425-5a1bbca359e6
+    DialogueText: Some are bigger, like your fish friend.
+    Position: {x: 1399, y: 86}
+  - Guid: bbf43fdc-fb63-4c3c-b037-8ba8e807e48a
+    DialogueText: Yes, at least more than your fish friend, they are hiding a secret.
+    Position: {x: 1365, y: 250}
+  - Guid: 3c01502e-4f0c-4777-b9c5-3c6c0fba29cb
+    DialogueText: Then your fish friend has a lot of work to do.
+    Position: {x: 1488, y: 419}
+  - Guid: da3c6c29-ba6b-4735-a8e5-24b4fdd789ce
+    DialogueText: Ask your fish friend about his family....
+    Position: {x: 1453, y: -106}
+  - Guid: 31cbc37d-01cb-4625-bc2d-30917e02f566
+    DialogueText: That's not important, what is, is who you trust.
+    Position: {x: 779, y: 271}
+  ExposedProperties: []
+  CommentBlockData: []
