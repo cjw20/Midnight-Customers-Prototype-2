@@ -24,6 +24,12 @@ public class CustomerMovement : MonoBehaviour
 
     public bool hasCheckedOut = false; //set to true after checkout minigame completed
     public bool readyForCheckout; //so checkout wont be available if customer walks past counter before ready
+
+    Vector3 lastPosition;
+    float speed;
+
+    [SerializeField] Animator animator;
+
     private void Awake()
     {
         soundManager = GameObject.Find("Sound Manager").GetComponent<SoundManager>();
@@ -46,12 +52,18 @@ public class CustomerMovement : MonoBehaviour
     void Update()
     {
         velocity = agent.velocity; //for animator stuff
-
+        animator.SetFloat("Horizontal", velocity.x);
+        animator.SetFloat("Vertical", velocity.y);
+        if (velocity.magnitude <= 0.1f) {
+            animator.SetBool("Moving",false);
+        } else {
+            animator.SetBool("Moving",true);
+        }
         if (isWaiting)
             return;
 
         //is walking for footstep sounds
-        
+
         if (!agent.pathPending && agent.remainingDistance < minDistance)
         {
             
@@ -59,6 +71,15 @@ public class CustomerMovement : MonoBehaviour
 
         }
     }
+    // //https://gamedev.stackexchange.com/questions/133380/how-do-i-find-an-accurate-current-speed-of-a-navmesh-agent
+    // void FixedUpdate()
+    // {
+    //     speed = Mathf.Lerp(speed, (transform.position - lastPosition).magnitude, 0.7f /*adjust this number in order to make interpolation quicker or slower*/);
+    //     lastPosition = transform.position;
+    //     animator.SetFloat("Horizontal", speed);
+    //     animator.SetFloat("Vertical", speed);
+        
+    // }
     void GoToNextPoint()
     {
         if (destination >= plannedPath.Length)
