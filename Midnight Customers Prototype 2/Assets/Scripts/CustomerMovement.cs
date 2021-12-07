@@ -8,6 +8,7 @@ public class CustomerMovement : MonoBehaviour
     SoundManager soundManager;
 
     NavMeshAgent2D agent;
+    SpriteRenderer spriteRenderer;
 
     public Transform[] plannedPath; //an array of waypoints that the customer will travel to in course of time in store
     public Transform checkout;
@@ -28,17 +29,15 @@ public class CustomerMovement : MonoBehaviour
     Vector3 lastPosition;
     float speed;
 
-    [SerializeField] Animator animator;
+    Animator animator;
 
     private void Awake()
     {
         soundManager = GameObject.Find("Sound Manager").GetComponent<SoundManager>();
+        animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    void Start()
-    {
-        //GoToNextPoint();
-    }
 
     public void EnterStore()
     {
@@ -52,6 +51,8 @@ public class CustomerMovement : MonoBehaviour
     void Update()
     {
         velocity = agent.velocity; //for animator stuff
+        //https://gamedev.stackexchange.com/questions/133380/how-do-i-find-an-accurate-current-speed-of-a-navmesh-agent
+        //speed = Mathf.Lerp(speed, (transform.position - lastPosition).magnitude, 0.7f /*adjust this number in order to make interpolation quicker or slower*/);
         animator.SetFloat("Horizontal", velocity.x);
         animator.SetFloat("Vertical", velocity.y);
         if (velocity.magnitude <= 0.1f) {
@@ -70,16 +71,17 @@ public class CustomerMovement : MonoBehaviour
             StartCoroutine(Wait());
 
         }
-    }
-    // //https://gamedev.stackexchange.com/questions/133380/how-do-i-find-an-accurate-current-speed-of-a-navmesh-agent
-    // void FixedUpdate()
-    // {
-    //     speed = Mathf.Lerp(speed, (transform.position - lastPosition).magnitude, 0.7f /*adjust this number in order to make interpolation quicker or slower*/);
-    //     lastPosition = transform.position;
-    //     animator.SetFloat("Horizontal", speed);
-    //     animator.SetFloat("Vertical", speed);
         
-    // }
+        if(velocity.x > 0)
+        {
+            spriteRenderer.flipX = true;
+        }
+        else
+        {
+            spriteRenderer.flipX = false;
+        }
+        
+    }
     void GoToNextPoint()
     {
         if (destination >= plannedPath.Length)
