@@ -8,6 +8,7 @@ public class CustomerMovement : MonoBehaviour
     SoundManager soundManager;
 
     NavMeshAgent2D agent;
+    SpriteRenderer spriteRenderer;
 
     public Transform[] plannedPath; //an array of waypoints that the customer will travel to in course of time in store
     public Transform checkout;
@@ -24,15 +25,19 @@ public class CustomerMovement : MonoBehaviour
 
     public bool hasCheckedOut = false; //set to true after checkout minigame completed
     public bool readyForCheckout; //so checkout wont be available if customer walks past counter before ready
+
+    Vector3 lastPosition;
+    float speed;
+
+    Animator animator;
+
     private void Awake()
     {
         soundManager = GameObject.Find("Sound Manager").GetComponent<SoundManager>();
+        animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    void Start()
-    {
-        //GoToNextPoint();
-    }
 
     public void EnterStore()
     {
@@ -46,18 +51,36 @@ public class CustomerMovement : MonoBehaviour
     void Update()
     {
         velocity = agent.velocity; //for animator stuff
-
+        //https://gamedev.stackexchange.com/questions/133380/how-do-i-find-an-accurate-current-speed-of-a-navmesh-agent
+        //speed = Mathf.Lerp(speed, (transform.position - lastPosition).magnitude, 0.7f /*adjust this number in order to make interpolation quicker or slower*/);
+        animator.SetFloat("Horizontal", velocity.x);
+        animator.SetFloat("Vertical", velocity.y);
+        if (velocity.magnitude <= 0.1f) {
+            animator.SetBool("Moving",false);
+        } else {
+            animator.SetBool("Moving",true);
+        }
         if (isWaiting)
             return;
 
         //is walking for footstep sounds
-        
+
         if (!agent.pathPending && agent.remainingDistance < minDistance)
         {
             
             StartCoroutine(Wait());
 
         }
+        
+        if(velocity.x > 0)
+        {
+            spriteRenderer.flipX = true;
+        }
+        else
+        {
+            spriteRenderer.flipX = false;
+        }
+        
     }
     void GoToNextPoint()
     {

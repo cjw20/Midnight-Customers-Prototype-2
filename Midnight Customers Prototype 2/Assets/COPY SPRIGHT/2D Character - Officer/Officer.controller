@@ -58,7 +58,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Player
+  m_Name: Officer
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: Horizontal
@@ -77,7 +77,7 @@ AnimatorController:
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
-    m_DefaultBool: 0
+    m_DefaultBool: 1
     m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
@@ -126,7 +126,7 @@ BlendTree:
   m_Name: Blend Tree
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: a7e90f5eb12e448aabe67b4b737f3b46, type: 2}
+    m_Motion: {fileID: 7400000, guid: c0c0437e55904bcba8747fae9013b53e, type: 2}
     m_Threshold: 0.25
     m_Position: {x: 1, y: 0}
     m_TimeScale: 1
@@ -134,7 +134,7 @@ BlendTree:
     m_DirectBlendParameter: Horizontal
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: a7e90f5eb12e448aabe67b4b737f3b46, type: 2}
+    m_Motion: {fileID: 7400000, guid: c0c0437e55904bcba8747fae9013b53e, type: 2}
     m_Threshold: 0.5
     m_Position: {x: -1, y: 0}
     m_TimeScale: 1
@@ -142,7 +142,7 @@ BlendTree:
     m_DirectBlendParameter: Horizontal
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 8cf10810198e4aed993868407d903710, type: 2}
+    m_Motion: {fileID: 7400000, guid: 357f663fb796433f9ab14d9582e51927, type: 2}
     m_Threshold: 0.75
     m_Position: {x: 0, y: 1}
     m_TimeScale: 1
@@ -150,7 +150,7 @@ BlendTree:
     m_DirectBlendParameter: Horizontal
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 897343691f40416b8061812324354092, type: 2}
+    m_Motion: {fileID: 7400000, guid: f272d0fb8eb44a0699fcf7181d95ac2d, type: 2}
     m_Threshold: 1
     m_Position: {x: 0, y: -1}
     m_TimeScale: 1
@@ -193,7 +193,7 @@ AnimatorStateMachine:
     m_Position: {x: 350, y: 140, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 8597414417785031370}
-    m_Position: {x: 360, y: 10, z: 0}
+    m_Position: {x: 350, y: 20, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
