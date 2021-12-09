@@ -12636,7 +12636,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 3
   moveable: 1
-  stepDistance: 0.5
+  stepDistance: 0.32
   soundManager: {fileID: 1904453403}
   Epopup: {fileID: 1038442745}
   Qpopup: {fileID: 2053526541}
