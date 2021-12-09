@@ -11,7 +11,7 @@ public class ClickDrag : MonoBehaviour
     SpriteRenderer sprite;
     void Start()
     {
-        startPosZ = this.gameObject.transform.position.z;
+        startPosZ = this.gameObject.transform.localPosition.z;
         if(gameObject.TryGetComponent(out SpriteRenderer reference)){
             sprite = reference; 
         }
