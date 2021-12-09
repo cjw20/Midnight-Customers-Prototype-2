@@ -104,6 +104,8 @@ MonoBehaviour:
   weight: 3
   requiresID: 1
   isScanned: 0
+  foodItem: 0
+  paperItem: 0
   checkoutManager: {fileID: 0}
 --- !u!114 &5121236344858949185
 MonoBehaviour:
@@ -130,8 +132,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0051492453, y: -0.051490866}
-  m_Size: {x: 0.17614786, y: 0.5994519}
+  m_Offset: {x: -0.013775438, y: -0.01399219}
+  m_Size: {x: 0.6429574, y: 2.457888}
   m_Direction: 0
 --- !u!50 &5121236344858949187
 Rigidbody2D:
