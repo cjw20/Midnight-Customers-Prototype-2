@@ -10,10 +10,12 @@ public class FlashLight : MonoBehaviour
     [SerializeField] Light2D fLight;
 
     [SerializeField] float rotateSpeed;
+
     private void Awake()
     {
         playerInput = new PlayerInput();
     }
+
     private void OnEnable()
     {
         playerInput.Enable();
@@ -22,11 +24,6 @@ public class FlashLight : MonoBehaviour
     private void OnDisable()
     {
         playerInput.Disable();
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
     }
 
     // Update is called once per frame
@@ -40,20 +37,18 @@ public class FlashLight : MonoBehaviour
         
         Vector3 targetDirection = mousePos - transform.position;
 
-
         float angle = Mathf.Atan2(targetDirection.y, targetDirection.x) * Mathf.Rad2Deg;
         angle -= 90; //dont know why, but above function is off by 90 degrees so this fixes it
         Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
         transform.rotation = Quaternion.Slerp(transform.rotation, rotation, rotateSpeed * Time.deltaTime);
-
-
-        
     }
     public void ToggleFlashlight()
     {
+        if (!gameObject.GetComponent<AudioSource>().isPlaying)
+        {
+            gameObject.GetComponent<AudioSource>().Play();
+        }
         on = !on;
         fLight.enabled = on;
-        
-
     }
 }

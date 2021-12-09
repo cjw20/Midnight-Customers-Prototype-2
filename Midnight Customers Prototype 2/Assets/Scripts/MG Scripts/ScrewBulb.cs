@@ -21,10 +21,8 @@ public class ScrewBulb : MonoBehaviour
         soundManager = GameObject.Find("Sound Manager").GetComponent<SoundManager>();
         thisLight = this.gameObject.GetComponent<Light2D>();
         lightGame = FindObjectOfType<LightChangeGame>();
-
     }
 
-  
     private void OnMouseDown()
     {
         soundManager.PlayScrewLightbulbSound();
@@ -52,7 +50,5 @@ public class ScrewBulb : MonoBehaviour
                     //gets rid of old bulb
             }
         }
-        
-        
     }
 }
