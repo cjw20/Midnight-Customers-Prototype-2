@@ -16,6 +16,8 @@ public class SoundManager : MonoBehaviour
     [SerializeField] AudioSource sweepingSound;
     [SerializeField] AudioSource breakerSwitch;
     [SerializeField] AudioSource screwLightbulbSound;
+    [SerializeField] AudioSource chipsPickUpSound;
+    [SerializeField] AudioSource chipsPutDownSound;
 
     // Start is called before the first frame update
     void Start()
@@ -111,5 +113,15 @@ public class SoundManager : MonoBehaviour
         {
             screwLightbulbSound.Play();
         }
+    }
+
+    public void PlayChipsUpSound()
+    {
+        chipsPickUpSound.Play();
+    }
+
+    public void PlayChipsDownSound()
+    {
+        chipsPutDownSound.Play();
     }
 }

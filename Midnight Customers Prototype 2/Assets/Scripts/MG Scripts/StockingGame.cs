@@ -8,17 +8,12 @@ public class StockingGame : MonoBehaviour
     public GameObject heldItem;
     int remainingShelves;
     MiniGameControl mgControl;
+
     // Start is called before the first frame update
     void Start()
     {
         remainingShelves = 3; //have shelves tell this how many if this number can change
         mgControl = FindObjectOfType<MiniGameControl>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     public void SelectItem(GameObject item)

@@ -12,18 +12,12 @@ public class ItemBox : MonoBehaviour
     public Transform[] boxSpawns; //where items are to be instantiated in box
 
     public List<GameObject> spawnedItems;
+
     // Start is called before the first frame update
     void Start()
     {
         
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
 
     private void OnMouseDown()
     {
@@ -34,12 +28,12 @@ public class ItemBox : MonoBehaviour
         }
         //open up box to pick item
     }
+
     public void SelectItem(GameObject item)
     {
         spawnedItems.Remove(item);
         //prevents item from being deleted when box closes
     }
-
 
     void OpenBox()
     {
@@ -58,7 +52,6 @@ public class ItemBox : MonoBehaviour
         }
         openedBox.SetActive(false);
     }
-
 
     void SpawnItems()
     {
