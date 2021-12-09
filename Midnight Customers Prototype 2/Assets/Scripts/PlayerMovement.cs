@@ -33,6 +33,7 @@ public class PlayerMovement : MonoBehaviour
     {
         playerInput = new PlayerInput();
     }
+
     private void OnEnable()
     {
         playerInput.Enable();
@@ -42,6 +43,7 @@ public class PlayerMovement : MonoBehaviour
     {
         playerInput.Disable();
     }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -97,11 +99,7 @@ public class PlayerMovement : MonoBehaviour
             spriteRenderer.flipX = false;
         }
         playerLastFramePosition = transform.position;
-
-
-       
     }
-
 
     public void Interact()
     {
@@ -129,6 +127,4 @@ public class PlayerMovement : MonoBehaviour
             body.MovePosition(body.position + movementDirection * moveSpeed * Time.fixedDeltaTime);
         }
     }
-
-  
 }
