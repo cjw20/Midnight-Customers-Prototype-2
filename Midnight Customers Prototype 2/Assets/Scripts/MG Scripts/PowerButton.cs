@@ -11,14 +11,15 @@ public class PowerButton : MonoBehaviour
     [SerializeField] PowerButton[] targetSwitch; //buttons that this button affects
     Light2D thisLight;
     PowerGame powerGame;
+    SoundManager soundManager;
     // Start is called before the first frame update
     void Start()
     {
+        soundManager = GameObject.Find("Sound Manager").GetComponent<SoundManager>();
         thisLight = this.gameObject.GetComponent<Light2D>();
         powerGame = FindObjectOfType<PowerGame>();
     }
 
-    
     void OnMouseDown()
     {
         if (!activated)
@@ -34,11 +35,9 @@ public class PowerButton : MonoBehaviour
 
     public void ToggleButton()
     {
-        
+        soundManager.PlayBreakerSwitchSound();
         activated = !activated;
         thisLight.enabled = activated;
         powerGame.CheckFinish();
     }
-
-
 }
