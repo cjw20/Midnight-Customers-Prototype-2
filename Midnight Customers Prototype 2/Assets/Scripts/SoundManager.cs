@@ -15,6 +15,7 @@ public class SoundManager : MonoBehaviour
     [SerializeField] AudioSource doorbell;
     [SerializeField] AudioSource sweepingSound;
     [SerializeField] AudioSource breakerSwitch;
+    [SerializeField] AudioSource screwLightbulbSound;
 
     // Start is called before the first frame update
     void Start()
@@ -102,5 +103,13 @@ public class SoundManager : MonoBehaviour
     public void PlayBreakerSwitchSound()
     {
         breakerSwitch.Play();
+    }
+
+    public void PlayScrewLightbulbSound()
+    {
+        if (!screwLightbulbSound.isPlaying)
+        {
+            screwLightbulbSound.Play();
+        }
     }
 }

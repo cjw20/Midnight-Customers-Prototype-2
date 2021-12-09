@@ -12,11 +12,13 @@ public class ScrewBulb : MonoBehaviour
 
     Light2D thisLight;
     LightChangeGame lightGame;
+    SoundManager soundManager;
 
     [SerializeField] GameObject dragBulb; //object that player will drag to empty slot
 
     void Start()
     {
+        soundManager = GameObject.Find("Sound Manager").GetComponent<SoundManager>();
         thisLight = this.gameObject.GetComponent<Light2D>();
         lightGame = FindObjectOfType<LightChangeGame>();
 
@@ -25,6 +27,7 @@ public class ScrewBulb : MonoBehaviour
   
     private void OnMouseDown()
     {
+        soundManager.PlayScrewLightbulbSound();
         if (newBulb)
         {
             this.gameObject.transform.position += new Vector3(0, 0.1f, 0); //simulates bulb being screwed in
