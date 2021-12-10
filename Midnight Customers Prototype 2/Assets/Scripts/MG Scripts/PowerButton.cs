@@ -12,6 +12,7 @@ public class PowerButton : MonoBehaviour
     Light2D thisLight;
     PowerGame powerGame;
     SoundManager soundManager;
+
     // Start is called before the first frame update
     void Start()
     {

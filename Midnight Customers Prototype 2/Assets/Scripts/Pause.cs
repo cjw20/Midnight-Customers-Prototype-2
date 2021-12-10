@@ -8,10 +8,12 @@ public class Pause : MonoBehaviour
     [SerializeField] GameObject pauseScreen;
 
     private PlayerInput playerInput; //asset that has player controls
+
     private void Awake()
     {
         playerInput = new PlayerInput();
     }
+
     private void OnEnable()
     {
         playerInput.Enable();
@@ -21,10 +23,12 @@ public class Pause : MonoBehaviour
     {
         playerInput.Disable();
     }
+
     private void Start()
     {
         Time.timeScale = 1;
     }
+
     void Update()
     {
         if (playerInput.Store.Pause.triggered) 
@@ -33,8 +37,6 @@ public class Pause : MonoBehaviour
             TogglePause();
 
         }
-
-       
     }
 
     private void TogglePause()
@@ -51,8 +53,5 @@ public class Pause : MonoBehaviour
             Time.timeScale = 1;
             pauseScreen.SetActive(false);
         }
-
-
-       
     }
 }

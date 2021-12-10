@@ -9,6 +9,7 @@ public class SanityEventManager : MonoBehaviour
     public LightSanityEffect lightEffects;
     public Light2D[] targetLights;
     bool alreadyTriggered;
+
     void Awake()
     {
         if (sanityEvents == null)
@@ -20,7 +21,6 @@ public class SanityEventManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    
 
     public void LightEffect()
     {
@@ -28,6 +28,4 @@ public class SanityEventManager : MonoBehaviour
 
        // StartCoroutine(lightEffects.RedLightScare(targetLights));
     }
-
-    
 }

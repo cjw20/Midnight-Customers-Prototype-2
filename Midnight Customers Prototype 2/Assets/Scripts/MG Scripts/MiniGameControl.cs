@@ -11,7 +11,6 @@ public class MiniGameControl : MonoBehaviour
     [SerializeField] SoundManager soundManager;
 
     GameObject currentGame;
-   
 
     public void LoadMiniGame(GameObject miniGame, MiniGameTrigger trigger)
     {
@@ -28,6 +27,5 @@ public class MiniGameControl : MonoBehaviour
         taskSpawner.unfinishedTasks--; 
         currentGame = null;
         soundManager.StopSweepingSound();
-        
     }
 }

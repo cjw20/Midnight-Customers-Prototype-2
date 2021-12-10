@@ -21,7 +21,6 @@ public class SanityManager : MonoBehaviour
         UpdateSanityUI();
     }
 
-    
     public void UpdateSanity(int change)
     {
         //updates stress sanity by change value - if losing, + if gaining
@@ -48,17 +47,13 @@ public class SanityManager : MonoBehaviour
             {
                 currentStress = 0; //stress can not be below 0
             }
-            
-
         }
         UpdateSanityUI();
-       
     }
 
     public void UpdateSanityUI()
     {
        // sanityText.text = "Current Sanity: " + currentSanity;
        // stressText.text = "Current Stress: " + currentStress;
-
     }
 }

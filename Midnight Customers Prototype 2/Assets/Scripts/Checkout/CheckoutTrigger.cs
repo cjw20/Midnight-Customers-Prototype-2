@@ -17,10 +17,12 @@ public class CheckoutTrigger : MonoBehaviour
     public bool inCheckout; //true while checkout game going on
 
     private PlayerInput playerInput; //asset that has player controls
+
     private void Awake()
     {
         playerInput = new PlayerInput();
     }
+
     private void OnEnable()
     {
         playerInput.Enable();
@@ -30,10 +32,10 @@ public class CheckoutTrigger : MonoBehaviour
     {
         playerInput.Disable();
     }
+
     void Start()
     {
-        checkoutManager = checkoutGame.GetComponent<CheckoutManager>(); //may not need this part later      
-
+        checkoutManager = checkoutGame.GetComponent<CheckoutManager>(); //may not need this part later
     }
 
     // Update is called once per frame
@@ -42,7 +44,6 @@ public class CheckoutTrigger : MonoBehaviour
         /*
         if (playerInput.Store.Interact.triggered)
         {
-            
             if (playerReady && customerReady && !inCheckout)//and customer ready too later once implemented
             {
                 playerMove.moveable = false;
@@ -56,9 +57,6 @@ public class CheckoutTrigger : MonoBehaviour
             
         // old input method
         */
-    
-
-
     }
 
     public void TriggerCheckout()
@@ -74,6 +72,7 @@ public class CheckoutTrigger : MonoBehaviour
 
         }
     }
+
     public void EndCheckout()
     {
         playerMove.moveable = true;
@@ -81,7 +80,6 @@ public class CheckoutTrigger : MonoBehaviour
         inCheckout = false;
         checkoutTimer.ResetTimer();
     }
-   
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -103,7 +101,6 @@ public class CheckoutTrigger : MonoBehaviour
                 if (playerReady) playerMove.Epopup.SetActive(true); //Only pops up if waiting on Customer
                 checkoutTimer.StartTimer(customerInfo); //starts global timer for checkout
             }
-            
         }
     }
 
@@ -118,12 +115,9 @@ public class CheckoutTrigger : MonoBehaviour
 
         if (collision.CompareTag("Customer"))
         {
-            
              customerReady = false;
              customer = null;
              customerInfo = null; //clears out customer data
-           
-             
         }
     }
 }

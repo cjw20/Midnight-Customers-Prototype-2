@@ -21,13 +21,6 @@ public class CheckoutTimer : MonoBehaviour
 
     [SerializeField]  CheckoutManager checkoutManager;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -62,7 +55,6 @@ public class CheckoutTimer : MonoBehaviour
                     }
                 }
             }
-
             if (inCheckout)
             {
                 slider.value -= Time.deltaTime * scale;
@@ -91,7 +83,6 @@ public class CheckoutTimer : MonoBehaviour
                 break;
         }
     }
-    
 
     public void StartTimer(CustomerInfo info)
     {
@@ -103,7 +94,6 @@ public class CheckoutTimer : MonoBehaviour
 
         SetValues();
         currentMilestone = segments.Length - 2; //gets index of value 1 behind max
-
     }
 
     void SetValues()
@@ -118,12 +108,12 @@ public class CheckoutTimer : MonoBehaviour
         slider.value += change;
         //for use of changing value up or down if action make customer happy/unhappy
     }
+
     public void ResetTimer()
     {
         timePassed = 0;
         isRunning = false;
         inCheckout = false;
         segments = null;
-        
     }
 }

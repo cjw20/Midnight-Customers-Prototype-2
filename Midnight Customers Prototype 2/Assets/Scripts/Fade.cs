@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class Fade : MonoBehaviour
 {
-    
     bool fadeIN;
     bool fadeOUT;
 
@@ -22,11 +21,7 @@ public class Fade : MonoBehaviour
     {
         thisSprite = gameObject.GetComponent<Image>();
         startingColor = thisSprite.color;
-
-        
     }
-
-    
 
     // Update is called once per frame
     void Update()
@@ -64,7 +59,6 @@ public class Fade : MonoBehaviour
     {
         duration = time;
         fadeIN = true;
-
     }
 
     public void FadeOut(float time)

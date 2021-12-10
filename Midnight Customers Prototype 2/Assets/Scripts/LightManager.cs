@@ -23,6 +23,7 @@ public class LightManager : MonoBehaviour
     RandomEventManager randomEventManager;
 
     Light2D brokenLight;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,13 +36,6 @@ public class LightManager : MonoBehaviour
         //PowerOutage(15f);
         //StartCoroutine(LightningEffect());
        // BreakBulb();
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     Color ChangeColor(Light2D target, Color newColor)
@@ -72,7 +66,6 @@ public class LightManager : MonoBehaviour
                 //strobeEffect.onIntensity = 2;
 
             }
-
         }
         if (!starting)
         {
@@ -94,10 +87,8 @@ public class LightManager : MonoBehaviour
 
     public void RestorePower()
     {
-        
         //flashLight.gameObject.SetActive(true);  //turns on player flashlight after short delay
         
-
         foreach (Light2D light in ceilingLights)
         {
             light.gameObject.SetActive(true);
@@ -110,13 +101,12 @@ public class LightManager : MonoBehaviour
     {
         StartCoroutine(LightningEffect());
     }
+
     IEnumerator LightningEffect()
     {
         Color oldColor = windowLights[0].color; //saves color for after light effect
         float oldIntensity = windowLights[0].intensity;
         
-
-
         yield return new WaitForSeconds(3f); //start delay, probably not neccessary
 
         foreach (Light2D light in windowLights)
@@ -142,8 +132,6 @@ public class LightManager : MonoBehaviour
         target.color = normalColor;
         target.intensity = 1;
     }
-
-
 
     public void BreakBulb()
     {

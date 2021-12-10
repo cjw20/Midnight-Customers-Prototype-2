@@ -30,6 +30,7 @@ public class TimeManager : MonoBehaviour
     StoryEventHandler storyEvent;
     RandomEventManager randomEvent;
     CheckoutManager checkoutManager;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -67,7 +68,6 @@ public class TimeManager : MonoBehaviour
                 minutes = 0;
             }
 
-
             if(hours == 4 && minutes == 30)
             {
                 customerManager.PauseSpawns();
@@ -81,13 +81,11 @@ public class TimeManager : MonoBehaviour
             }
             UpdateText();
         }
-        
     }
 
     void UpdateText()
     {
         dayText.text = "Day: " + day.ToString();
-
 
         if (hours < 10)
         {

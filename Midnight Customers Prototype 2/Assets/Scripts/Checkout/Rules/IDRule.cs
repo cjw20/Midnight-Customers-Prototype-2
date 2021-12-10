@@ -17,6 +17,5 @@ public class IDRule : Rule
         }
 
         return passed;
-
     }
 }

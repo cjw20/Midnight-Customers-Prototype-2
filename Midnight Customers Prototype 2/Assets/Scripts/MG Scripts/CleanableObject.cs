@@ -17,12 +17,14 @@ public class CleanableObject : MonoBehaviour
     
     [SerializeField]
     float hitpoints = 5.0f;
+
     void Start()
     {
         mess = this.gameObject.GetComponent<SpriteRenderer>();
         startingColor = mess.color;
         mopGame = FindObjectOfType<MopGame>();
     }
+
 /*
     // Update is called once per frame
     void Update()
@@ -46,6 +48,7 @@ public class CleanableObject : MonoBehaviour
     //check for no hitpoints
     // destroy object
     //refactor mopgame 
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("In");
@@ -54,6 +57,7 @@ public class CleanableObject : MonoBehaviour
             isBeingCleaned = true;
         }
     }
+
     //Helper for Function Above
     void setAlpha() {
         float newAlpha = hitpoints/5;//There's an issue with this line 

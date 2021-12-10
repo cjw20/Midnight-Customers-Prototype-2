@@ -6,14 +6,11 @@ using UnityEngine.Experimental.Rendering.Universal;
 
 public class LightSanityEffect : MonoBehaviour
 {
-
     //OLD CLASS DONT USE
     [SerializeField] SoundManager soundManager;
     public Light2D[] targetLights; //light that effect will be played on. May need to make array if multiple targets for some effects
     public float effectDuration; //separate later when more effects/ Public for testing purposes
     public Light2D globalLight;
-
-    
 
     float normalGlobalIntensity;
     Color normalColor;
@@ -28,7 +25,6 @@ public class LightSanityEffect : MonoBehaviour
     {
         //makes a light flash red rapidly
 
-        
         double strobeRate = 0.1;
         Color scaryRed = Color.red; //make new one later?
 
@@ -44,8 +40,6 @@ public class LightSanityEffect : MonoBehaviour
         }
         i = 0;
 
-        
-        
         soundManager.PauseBGM();
         
         yield return new WaitForSeconds(effectDuration);
@@ -65,12 +59,4 @@ public class LightSanityEffect : MonoBehaviour
         yield break;
     }
     */
-
-   
-
-    
-
-    
-
-    
 }

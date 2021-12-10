@@ -5,7 +5,6 @@ using UnityEngine;
 public class CustomerManager : MonoBehaviour
 {
     public static CustomerManager customerManager;
-
     
     public GameObject[] customers;
     [SerializeField] Transform exit;
@@ -15,6 +14,7 @@ public class CustomerManager : MonoBehaviour
 
     List<GameObject> customersInStore = new List<GameObject>();
     bool spawning;
+
     void Start()
     {
         spawning = true;
@@ -23,8 +23,6 @@ public class CustomerManager : MonoBehaviour
 
         LoadCustomer(customers[arrayPos]);
     }
-
-    
 
     public void LoadCustomer(GameObject customer)
     {
@@ -55,7 +53,6 @@ public class CustomerManager : MonoBehaviour
             lastCoroutine = StartCoroutine(NextCustomer());
             //update customer variables
         }
-
     }
 
     IEnumerator NextCustomer()
@@ -79,10 +76,8 @@ public class CustomerManager : MonoBehaviour
         {
             customer.transform.position = exit.position;
             customer.GetComponent<CustomerMovement>().ExitStore();
-
         }
         customersInStore.Clear();
-
     }
 
     public void StartSpawns()
@@ -91,11 +86,8 @@ public class CustomerManager : MonoBehaviour
         lastCoroutine = StartCoroutine(NextCustomer());
     }
 
-
     public void PauseSpawns()
     {
         spawning = false;
     }
-
-
 }

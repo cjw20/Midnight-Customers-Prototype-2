@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class StockingGame : MonoBehaviour
 {
-
     public GameObject heldItem;
     int remainingShelves;
     MiniGameControl mgControl;

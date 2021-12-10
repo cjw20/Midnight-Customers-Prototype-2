@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class EmoteController : MonoBehaviour
 {
-    
     [SerializeField] SpriteRenderer spriteRenderer;
     [SerializeField] Sprite happyEmote;
     [SerializeField] Sprite sadEmote;
     [SerializeField] Sprite angryEmote;
 
     Coroutine lastCoroutine;
-    // Start is called before the first frame update
-    
 
     public void React(string emotion)
     {

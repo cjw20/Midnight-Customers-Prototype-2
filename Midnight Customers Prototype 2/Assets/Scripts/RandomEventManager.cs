@@ -8,6 +8,7 @@ public class RandomEventManager : MonoBehaviour
     [SerializeField] LightManager lightManager;
     [SerializeField] int eventChance; // % chance that a random event will occur when called 
     public bool ongoingLightEvent;
+
     public void CallRandomEvent()
     {
         int roll = Random.Range(0, 100);
@@ -17,7 +18,6 @@ public class RandomEventManager : MonoBehaviour
                        
         }
     }
-
 
     void CallLightEvent()
     {

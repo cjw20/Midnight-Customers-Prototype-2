@@ -10,10 +10,8 @@ public class HatchStoryBeat : MonoBehaviour
     [SerializeField] DialogueContainer hatchHint;
     [SerializeField] GameObject hintCustomer;
 
-
     [SerializeField] GameObject hatch;
     
-
     public void StartStory()
     {
         //hintCustomer.GetComponent<CustomerInfo>().SetStoryConvo(hatchHint); //puts hint into customer pool

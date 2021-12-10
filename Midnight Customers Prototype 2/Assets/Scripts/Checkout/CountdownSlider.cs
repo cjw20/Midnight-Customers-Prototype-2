@@ -12,7 +12,8 @@ public class CountdownSlider : MonoBehaviour
     public void SetValue(float change)
     {
         slider.value += change;
-    } 
+    }
+
     public void SetMinMax(float min, float max, float current)
     {
         slider.minValue = min;
@@ -22,7 +23,6 @@ public class CountdownSlider : MonoBehaviour
 
     private void Update()
     {
-        
         if (isCountingDown)
         {
             timePassed += Time.deltaTime;
@@ -32,7 +32,6 @@ public class CountdownSlider : MonoBehaviour
                 timePassed = 0;
                 //if value = 0, tell dialogue player?
             }
-
         }
     }
 

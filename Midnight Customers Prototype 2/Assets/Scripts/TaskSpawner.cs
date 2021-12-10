@@ -13,12 +13,8 @@ public class TaskSpawner : MonoBehaviour
     List<GameObject> tasksInStore = new List<GameObject>();
     public int unfinishedTasks; //number of spawned tasks that are unfinished
 
-    
-
     public void NewDayTasks()
     {
-
-
         //logic to decide which tasks to choose here
         List<int> usedSpawns = new List<int>(); //clears used spawns for tasks
 
@@ -60,8 +56,6 @@ public class TaskSpawner : MonoBehaviour
                 //probably should find different way to do this later
             }
         }
-
-        
     }
 
     void SpawnShelfTask(int amount)
@@ -97,7 +91,6 @@ public class TaskSpawner : MonoBehaviour
 
     public void ClearTasks()
     {
-
         foreach(GameObject task in tasksInStore)
         {
             Destroy(task);

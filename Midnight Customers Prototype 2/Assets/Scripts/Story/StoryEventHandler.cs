@@ -4,20 +4,7 @@ using UnityEngine;
 
 public class StoryEventHandler : MonoBehaviour
 {
-
     [SerializeField] HatchStoryBeat hatchStory;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public void DayEvents(int day)
     {
@@ -32,6 +19,4 @@ public class StoryEventHandler : MonoBehaviour
                 //add more days or make cleaner later
         }
     }
-
-
 }

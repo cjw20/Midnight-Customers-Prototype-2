@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class PlayerTrigger : MonoBehaviour
 {
-    
     //Get reference to mop prefab
     //implement trigger, add behaviors later
     //instantiate at customer location (maybe should put in CustomerMovement)
     public GameObject mopTriggerPrefab;
     bool hasPlacedMop = false;
     bool isBehindCounter = false;
+
     public float poopChance = 0.4f; //Currently inert code
-    void OnTriggerEnter2D(Collider2D other){
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
         if (other.tag=="Register"){
             isBehindCounter=true;
         }
@@ -27,7 +29,9 @@ public class PlayerTrigger : MonoBehaviour
             }
         }
     }
-    void OnTriggerExit2D(Collider2D other){
+
+    void OnTriggerExit2D(Collider2D other)
+    {
         if(other.tag=="Register"){
             isBehindCounter=false;
         }

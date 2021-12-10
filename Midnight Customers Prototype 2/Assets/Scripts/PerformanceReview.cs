@@ -26,8 +26,6 @@ public class PerformanceReview : MonoBehaviour
         lastScore = 3; //first day expectations. Will need to load this when saving is implemented
     }
 
-    
-
     public void NewDay()
     {
         totalPenaltyPoints += dayPenaltyPoints;
@@ -41,7 +39,6 @@ public class PerformanceReview : MonoBehaviour
         if(phoneMessage == null)
         {
             phoneMessage = phoneNotification.GetComponent<PhoneMessage>();
-
         }
         phoneMessage.message = MessageSelect();
     }

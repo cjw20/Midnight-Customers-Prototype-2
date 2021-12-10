@@ -6,6 +6,7 @@ public class LightChangeGame : MonoBehaviour
 {
     MiniGameControl mgControl;
     LightManager lightManager;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,11 +14,11 @@ public class LightChangeGame : MonoBehaviour
         lightManager = FindObjectOfType<LightManager>();
     }
 
-
     public void Finish()
     {
         StartCoroutine(EndGame()); //only here because cant start coroutine from other classes??
     }
+
     IEnumerator EndGame()
     {
         yield return new WaitForSeconds(1f); //short delay so player can see light turn on

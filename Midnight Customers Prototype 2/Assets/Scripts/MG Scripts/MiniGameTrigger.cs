@@ -12,10 +12,12 @@ public class MiniGameTrigger : MonoBehaviour
     // Start is called before the first frame update
 
     private PlayerInput playerInput; //asset that has player controls
+
     private void Awake()
     {
         playerInput = new PlayerInput();
     }
+
     private void OnEnable()
     {
         playerInput.Enable();
@@ -25,10 +27,12 @@ public class MiniGameTrigger : MonoBehaviour
     {
         playerInput.Disable();
     }
+
     void Start()
     {
         mgControl = FindObjectOfType<MiniGameControl>();
     }
+
     // Update is called once per frame
     void Update()
     {
@@ -44,6 +48,7 @@ public class MiniGameTrigger : MonoBehaviour
         }
         */
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
@@ -53,8 +58,6 @@ public class MiniGameTrigger : MonoBehaviour
             playerMove.Epopup.SetActive(true);
             playerMove.nearbyMG = this;
         }
-
-        
     }
 
     public void TriggerMiniGame()
@@ -72,8 +75,6 @@ public class MiniGameTrigger : MonoBehaviour
             playerMove.Epopup.SetActive(false);
             playerMove.nearbyMG = null;
         }
-
-       
     }
 
     public void EndMiniGame()

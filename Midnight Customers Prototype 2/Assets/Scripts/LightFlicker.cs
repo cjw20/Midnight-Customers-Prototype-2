@@ -5,7 +5,6 @@ using UnityEngine.Experimental.Rendering.Universal;
 
 public class LightFlicker : MonoBehaviour
 {
-
     Light2D thisLight; //light this script is referencing
     public double frequency; //how frequently the light should flicker
     public double offDuration; //how long the light should stay off when flickering

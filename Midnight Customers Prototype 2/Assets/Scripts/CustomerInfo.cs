@@ -33,10 +33,8 @@ public class CustomerInfo : MonoBehaviour
         {
             nextConversation = conversations[conversationProgress]; //only assigns when empty so that story convos arent over written when customer enters store
         }
-        
     }
 
-   
     public void LoadNextConvo()
     {
         conversationProgress++;
@@ -44,10 +42,7 @@ public class CustomerInfo : MonoBehaviour
         if(conversationProgress <= conversations.Length - 1)
         {
             nextConversation = conversations[conversationProgress]; //only advances conversation progress if there are still new conversations to load
-
         }
-        
-        
     }
 
     public void UpdateRelationship(int change)
@@ -55,15 +50,12 @@ public class CustomerInfo : MonoBehaviour
         relationshipScore += change;
     }
 
-
     public void SetStoryConvo(DialogueContainer convo)
     {
         if(conversationProgress > 0)
         {
             conversationProgress--; //moves conversation progress back so that after checkout it will go back to where it was
         }
-        
-
         nextConversation = convo;
     }
     //function that determines what money the customer will pay with later

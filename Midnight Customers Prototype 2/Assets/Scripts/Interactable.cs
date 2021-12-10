@@ -14,13 +14,13 @@ public class Interactable : MonoBehaviour
     [SerializeField] GameObject thoughtText;
     [SerializeField] GameObject thoughtWindow;
 
-
-
     private PlayerInput playerInput; //asset that has player controls
+
     private void Awake()
     {
         playerInput = new PlayerInput();
     }
+
     private void OnEnable()
     {
         playerInput.Enable();
@@ -30,6 +30,7 @@ public class Interactable : MonoBehaviour
     {
         playerInput.Disable();
     }
+
     // Update is called once per frame
     void Update()
     {
@@ -53,6 +54,7 @@ public class Interactable : MonoBehaviour
             StartCoroutine(DisplayMessage(messages[progress]));
         }
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))

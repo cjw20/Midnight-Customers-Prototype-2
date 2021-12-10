@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class ItemBox : MonoBehaviour
 {
-
     public bool boxOpen;
     public GameObject openedBox;
 
@@ -12,12 +11,6 @@ public class ItemBox : MonoBehaviour
     public Transform[] boxSpawns; //where items are to be instantiated in box
 
     public List<GameObject> spawnedItems;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     private void OnMouseDown()
     {

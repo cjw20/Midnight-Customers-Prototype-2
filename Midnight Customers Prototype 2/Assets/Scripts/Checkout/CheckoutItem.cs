@@ -15,16 +15,13 @@ public class CheckoutItem : MonoBehaviour
     public bool foodItem; //true if food
     public bool paperItem; //make sure weight is 1 for these items
 
-    
-
     public CheckoutManager checkoutManager;
+
     // Start is called before the first frame update
     void Start()
     {
         checkoutManager = FindObjectOfType<CheckoutManager>();
     }
-
-   
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

@@ -17,6 +17,7 @@ public class StockingItem : MonoBehaviour
         stockingGame = FindObjectOfType<StockingGame>(); //better way to do this later?
         itemBox = FindObjectOfType<ItemBox>();
     }
+
     private void OnMouseDown()
     {
         if (!selected && !shelved)
@@ -31,6 +32,7 @@ public class StockingItem : MonoBehaviour
             itemBox.CloseBox();
         }
     }
+
     /* private void OnTriggerEnter2D(Collider2D other)
     {
 

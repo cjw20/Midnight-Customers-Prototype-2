@@ -10,6 +10,7 @@ public class MoodIndicator : MonoBehaviour
     [SerializeField] Sprite pissedSprite;
 
     SpriteRenderer spriteRenderer;
+
     private void Start()
     {
         spriteRenderer = this.gameObject.GetComponent<SpriteRenderer>();
@@ -35,7 +36,5 @@ public class MoodIndicator : MonoBehaviour
                 spriteRenderer.sprite = happySprite;  //default to happy just in case
                 break;
         }
-            
     }
-
 }

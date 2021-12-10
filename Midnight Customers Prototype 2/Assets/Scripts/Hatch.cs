@@ -8,10 +8,12 @@ public class Hatch : MonoBehaviour
     bool inRange;
     [SerializeField] HatchStoryBeat story;
     private PlayerInput playerInput; //asset that has player controls
+
     private void Awake()
     {
         playerInput = new PlayerInput();
     }
+
     private void OnEnable()
     {
         playerInput.Enable();
@@ -21,6 +23,7 @@ public class Hatch : MonoBehaviour
     {
         playerInput.Disable();
     }
+
     void Update()
     {
         if (playerInput.Store.Interact.triggered)

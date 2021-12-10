@@ -42,6 +42,7 @@ public class FlashLight : MonoBehaviour
         Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
         transform.rotation = Quaternion.Slerp(transform.rotation, rotation, rotateSpeed * Time.deltaTime);
     }
+
     public void ToggleFlashlight()
     {
         if (!gameObject.GetComponent<AudioSource>().isPlaying)

@@ -38,7 +38,6 @@ public class CustomerMovement : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-
     public void EnterStore()
     {
         soundManager.PlayDoorbellSound();
@@ -67,9 +66,7 @@ public class CustomerMovement : MonoBehaviour
 
         if (!agent.pathPending && agent.remainingDistance < minDistance)
         {
-            
             StartCoroutine(Wait());
-
         }
         
         if(velocity.x > 0)
@@ -82,6 +79,7 @@ public class CustomerMovement : MonoBehaviour
         }
         
     }
+
     void GoToNextPoint()
     {
         if (destination >= plannedPath.Length)
@@ -103,7 +101,6 @@ public class CustomerMovement : MonoBehaviour
 
     IEnumerator Wait()
     {
-
         isWaiting = true;
 
         if (agent.destination == new Vector2(exit.position.x, exit.position.y))
@@ -120,7 +117,6 @@ public class CustomerMovement : MonoBehaviour
             yield break; //make function that calls next point after checkout done
             //wait until checkout minigame done
         }
-
 
         yield return new WaitForSeconds(timeToWait);
 

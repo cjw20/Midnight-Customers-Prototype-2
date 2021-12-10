@@ -13,6 +13,7 @@ public class CleaningTool : MonoBehaviour
     Vector3 newPosition;
     Rigidbody2D rb;
     SoundManager soundmanager;
+
     // Start is called before the first frame update
     void Start()
     {

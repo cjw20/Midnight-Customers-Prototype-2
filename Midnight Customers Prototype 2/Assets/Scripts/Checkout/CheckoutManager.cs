@@ -53,6 +53,7 @@ public class CheckoutManager : MonoBehaviour
 
     CheckoutItem currentItem;
     CheckoutItem lastItem;
+
     private void Start()
     {
         activePhase = 0; //load this variable when loading saved game
@@ -73,6 +74,7 @@ public class CheckoutManager : MonoBehaviour
             activeRules.Add(rule);
         }
     }
+
     public void StartCheckout(CustomerInfo info)
     {
         customerInfo = info;
@@ -105,11 +107,8 @@ public class CheckoutManager : MonoBehaviour
                     
                 }
             }
-           
             i++;
         }
-
-        
     }
 
     public void EndDialogue(int relationshipChange)
@@ -119,14 +118,15 @@ public class CheckoutManager : MonoBehaviour
         dialogueFinished = true;
         EndCheckout();
     }
+
     public void UpdateItem(CheckoutItem newItem)
     {
         lastItem = currentItem;
         currentItem = newItem;
     }
+
     public void Bagged(int weight, bool needsID)
     {
-
         foreach(Rule rule in activeRules)
         {            
             bool passed = rule.CheckRule(currentItem, lastItem);
@@ -167,6 +167,7 @@ public class CheckoutManager : MonoBehaviour
     {
         Instantiate(customerInfo.carriedMoney[0], moneySpawn);
     }
+
     public void TakeMoney()
     {
         soundManager.PlayCashRegisterSound();
@@ -174,6 +175,7 @@ public class CheckoutManager : MonoBehaviour
         priceText.text = "PAID";
         EndCheckout();
     }
+
     public void ScanItem(float price, int weight)
     {
         totalPrice += price;
@@ -241,13 +243,10 @@ public class CheckoutManager : MonoBehaviour
             //will need to clear other stuff for future checkouts OR reinstantiate whole object?
             this.gameObject.SetActive(false);
         }
-
     }
-
 
     public void GiveUp()
     {
-
         //for when customer leaves early
 
         checkoutTrigger.EndCheckout();
@@ -291,8 +290,6 @@ public class CheckoutManager : MonoBehaviour
         weightText.text = weightCharacter;
     }
 
-  
-
     IEnumerator DisplayMessage(GameObject message, float duration)
     {
         message.SetActive(true);
@@ -303,7 +300,6 @@ public class CheckoutManager : MonoBehaviour
 
     public void CheckID()
     {
-        
         if (needsIDCheck)
         {
             int idRoll = Random.Range(0, 100);
@@ -320,6 +316,5 @@ public class CheckoutManager : MonoBehaviour
                 //passedIDCheck = true;
             }
         }
-        
     }
 }
