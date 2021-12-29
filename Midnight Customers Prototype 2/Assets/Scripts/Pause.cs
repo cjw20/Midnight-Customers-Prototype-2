@@ -4,10 +4,16 @@ using UnityEngine;
 
 public class Pause : MonoBehaviour
 {
+    // Fields
+    [Header("Game Speed")]
+    [Tooltip("Whether the game is paused or not.")]
     public bool paused;
-    [SerializeField] GameObject pauseScreen;
 
+    // References
     private PlayerInput playerInput; //asset that has player controls
+    [Header("Object References")]
+    [Tooltip("Reference to the pause screen prefab.")]
+    [SerializeField] GameObject pauseScreen;
 
     private void Awake()
     {
@@ -33,9 +39,7 @@ public class Pause : MonoBehaviour
     {
         if (playerInput.Store.Pause.triggered) 
         {        
-            
             TogglePause();
-
         }
     }
 
