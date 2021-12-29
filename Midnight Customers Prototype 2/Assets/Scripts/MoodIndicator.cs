@@ -4,12 +4,19 @@ using UnityEngine;
 
 public class MoodIndicator : MonoBehaviour
 {
-    [SerializeField] Sprite happySprite;
-    [SerializeField] Sprite sadSprite;
-    [SerializeField] Sprite angrySprite;
-    [SerializeField] Sprite pissedSprite;
+    // Fields
 
+    // References
     SpriteRenderer spriteRenderer;
+    [Header("Sprites")]
+    [Tooltip("Sprite for the happy mood.")]
+    [SerializeField] Sprite happySprite;
+    [Tooltip("Sprite for the sad mood.")]
+    [SerializeField] Sprite sadSprite;
+    [Tooltip("Sprite for the angry mood.")]
+    [SerializeField] Sprite angrySprite;
+    [Tooltip("Sprite for the pissed mood.")]
+    [SerializeField] Sprite pissedSprite;
 
     private void Start()
     {

@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class IceTrigger : MonoBehaviour
 {
+    // Fields
+    bool halfway = false;
+    bool done = false;
+
+    // References
     MiniGameControl mgControl;
     GameObject first;
     GameObject second;
-
-    bool halfway = false;
-    bool done = false;
 
     //Ice Trigger handles filling the soda machine with ice
     void OnTriggerEnter2D(Collider2D other){
