@@ -4,23 +4,36 @@ using UnityEngine;
 
 public class PerformanceReview : MonoBehaviour
 {
-    public int totalPenaltyPoints;
-    public int dayPenaltyPoints;
+    // Fields
     int lastPenalty;
-    public int idErrors;
-    public int baggingErrors;
-
-    public GameObject phoneNotification;
-    PhoneMessage phoneMessage;
-
-    public string goodMessage;
-    public string badMessage;
-    public string neutralMessage;
-    public string improvedMessage;
     int thisScore; //score on how well player did, 3 = best, 0 worst
     int lastScore;
+    [Header("Score Tracking")]
+    [Tooltip("Total penalty points accumulated.")]
+    public int totalPenaltyPoints;
+    [Tooltip("Penalty points accumulated during the current day.")]
+    public int dayPenaltyPoints;
+    [Tooltip("The number of ID errors made.")]
+    public int idErrors;
+    [Tooltip("The number of bagging errors made.")]
+    public int baggingErrors;
 
-    // Start is called before the first frame update
+    [Header("Performance Messages")]
+    [Tooltip("Message displayed when performance is good.")]
+    public string goodMessage;
+    [Tooltip("Message displayed when performance is bad.")]
+    public string badMessage;
+    [Tooltip("Message displayed when performance is average.")]
+    public string neutralMessage;
+    [Tooltip("Message displayed when performance has improved.")]
+    public string improvedMessage;
+
+    // References
+    PhoneMessage phoneMessage;
+    [Header("Object References")]
+    [Tooltip("Reference to the phone notification prefab.")]
+    public GameObject phoneNotification;
+    
     void Start()
     {
         lastScore = 3; //first day expectations. Will need to load this when saving is implemented
@@ -65,8 +78,6 @@ public class PerformanceReview : MonoBehaviour
                 nextMessage = badMessage;
                 thisScore = 1;
                 break;
-
-
         }
         if(thisScore > lastScore + 1)
         {
