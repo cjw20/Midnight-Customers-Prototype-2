@@ -5,16 +5,22 @@ using UnityEngine.UI;
 
 public class Interactable : MonoBehaviour
 {
+    // Fields
     bool inRange;
     bool interacting;
-
+    [Header("Data")]
+    [Tooltip("Various messages.")]
     [SerializeField] string[] messages;
+    [Tooltip("Progress.")]
     public int progress;
 
-    [SerializeField] GameObject thoughtText;
-    [SerializeField] GameObject thoughtWindow;
-
+    // References
     private PlayerInput playerInput; //asset that has player controls
+    [Header("UI References")]
+    [Tooltip("Reference to the thought text object.")]
+    [SerializeField] GameObject thoughtText;
+    [Tooltip("Reference to the thought window object.")]
+    [SerializeField] GameObject thoughtWindow;
 
     private void Awake()
     {
@@ -31,7 +37,6 @@ public class Interactable : MonoBehaviour
         playerInput.Disable();
     }
 
-    // Update is called once per frame
     void Update()
     {
         //if (playerInput.Store.Interact.triggered)
