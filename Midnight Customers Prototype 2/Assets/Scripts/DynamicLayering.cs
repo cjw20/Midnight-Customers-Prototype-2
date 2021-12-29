@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class DynamicLayering : MonoBehaviour
 {
+    // Fields
+    [Header("Layers")]
+    [Tooltip("Target layer for player and customers.")]
     public int targetLayer;
     
     private void OnTriggerEnter2D(Collider2D collision)
