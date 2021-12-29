@@ -4,10 +4,15 @@ using UnityEngine;
 
 public class Hatch : MonoBehaviour
 {
+    // Fields
     bool found;
     bool inRange;
-    [SerializeField] HatchStoryBeat story;
+
+    // References
     private PlayerInput playerInput; //asset that has player controls
+    [Header("References")]
+    [Tooltip("Reference to a HatchStoryBeat class instance.")]
+    [SerializeField] HatchStoryBeat story;
 
     private void Awake()
     {
