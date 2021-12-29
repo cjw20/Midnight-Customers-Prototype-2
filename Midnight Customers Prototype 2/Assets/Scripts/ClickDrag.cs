@@ -4,18 +4,21 @@ using UnityEngine;
 
 public class ClickDrag : MonoBehaviour
 {
+    // Fields
     bool isHeld = false;
     float startPosX;
     float startPosY;
     float startPosZ;
+
+    // References
     SpriteRenderer sprite;
+
     void Start()
     {
         startPosZ = this.gameObject.transform.localPosition.z;
         if(gameObject.TryGetComponent(out SpriteRenderer reference)){
             sprite = reference; 
         }
-
     }
 
     void Update()
@@ -49,11 +52,13 @@ public class ClickDrag : MonoBehaviour
         isHeld = false;
     }
 
-    void OnMouseOver(){
+    void OnMouseOver()
+    {
         if (!isHeld) sprite.color = new Color(sprite.color.r, sprite.color.g, sprite.color.b, 0.5f);
     }
 
-    void OnMouseExit(){
+    void OnMouseExit()
+    {
         if (!isHeld) sprite.color = new Color(sprite.color.r, sprite.color.g, sprite.color.b, 1f);
     }
 }
