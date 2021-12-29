@@ -5,12 +5,22 @@ using UnityEngine.UI;
 
 public class SanityManager : MonoBehaviour
 {
-    public int maxStress; //full value of stress 
+    // Fields
+    [Header("Stress and Sanity")]
+    [Tooltip("Maximum stress limit.")]
+    public int maxStress;
+    [Tooltip("Current stress amount.")]
     public int currentStress;
-    public int currentSanity; //the higher the number the more insane you are
-    int excessLoss; //the excess change that stress did not block
+    [Tooltip("Current sanity amount. (Higher numbers means more insane)")]
+    public int currentSanity;
+    [Tooltip("Excess change that stress did not block.")]
+    int excessLoss;
 
+    // References
+    [Header("UI References")]
+    [Tooltip("Text to show current stress.")]
     public Text stressText;
+    [Tooltip("Text to show current sanity.")]
     public Text sanityText;
 
     void Start()
