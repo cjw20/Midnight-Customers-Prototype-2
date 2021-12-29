@@ -6,6 +6,11 @@ using UnityEngine.SceneManagement;
 
 public class GameControl : MonoBehaviour
 {
+    // Fields
+
+    // References
+    [Header("References")]
+    [Tooltip("Reference to a GameControl class instance.")]
     public static GameControl control;
 
     /*
