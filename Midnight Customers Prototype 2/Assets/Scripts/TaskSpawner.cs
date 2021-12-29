@@ -4,15 +4,24 @@ using UnityEngine;
 using System.Linq;
 public class TaskSpawner : MonoBehaviour
 {
-    [SerializeField] GameObject mopTrigger;
-    [SerializeField] GameObject shelfTrigger; //maybe make array once variations are added
-    
-    public List<GameObject> mopSpawns; //make transform later
-    public List<Transform> shelfSpawns;
+    // Fields
+    [Header("Task Management")]
+    [Tooltip("Number of spawned tasks that are unfinished.")]
+    public int unfinishedTasks;
     List<int> usedSpawns = new List<int>();
     List<GameObject> tasksInStore = new List<GameObject>();
-    public int unfinishedTasks; //number of spawned tasks that are unfinished
 
+    // References
+    [Header("Task References")]
+    [Tooltip("Location to trigger the mop minigame.")]
+    [SerializeField] GameObject mopTrigger;
+    [Tooltip("Location to trigger the stocking minigame.")]
+    [SerializeField] GameObject shelfTrigger; //maybe make array once variations are added
+    [Tooltip("List of spawn points for the mop minigame.")]
+    public List<GameObject> mopSpawns; //make transform later
+    [Tooltip("List of spawn points for the stocking minigame.")]
+    public List<Transform> shelfSpawns;
+    
     public void NewDayTasks()
     {
         //logic to decide which tasks to choose here
