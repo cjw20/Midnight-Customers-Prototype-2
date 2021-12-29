@@ -5,18 +5,22 @@ using UnityEngine;
 public class AnimControl : MonoBehaviour
 {
     //OLD DONT USE THIS
-    Rigidbody2D body;
-    public Vector2 velocity;
-    Animator animator;
 
-    // Start is called before the first frame update
+    // Fields
+    [Header("Data")]
+    [Tooltip("Velocity of this object.")]
+    public Vector2 velocity;
+
+    // References
+    Rigidbody2D body;
+    Animator animator;
+    
     void Start()
     {
         body = this.gameObject.GetComponent<Rigidbody2D>();
         animator = this.gameObject.GetComponent<Animator>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         velocity = body.velocity;
