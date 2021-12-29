@@ -5,25 +5,39 @@ using UnityEngine.UI;
 
 public class TimeManager : MonoBehaviour
 {
-    public float minutes;
-    public float hours;
-    public float seconds;
+    // Fields
+    [Header("Time Controls")]
+    [Tooltip("Current day.")]
     public int day;
-    public Text dayText;
-    public Text timeText;
-    public float timeMultiplier; //how much faster than real time in game time passes
-
-    bool timerRunning;
-
-    public GameObject blackScreen; 
-
-    public Fade toBlack;
+    [Tooltip("Current hour of the current day.")]
+    public float hours;
+    [Tooltip("Current minutes of the current hour.")]
+    public float minutes;
+    [Tooltip("Current seconds of the current minute.")]
+    public float seconds;
+    [Tooltip("How much faster than real time in game time passes.")]
+    public float timeMultiplier;
+    [Tooltip("Duration of fade from one day to the next.")]
     public float fadeDuration;
+    private bool timerRunning;
+
+    // References
+    [Header("UI Object References")]
+    [Tooltip("Text to display the current day.")]
+    public Text dayText;
+    [Tooltip("Text to display the current time of the current day.")]
+    public Text timeText;
+    [Tooltip("Black screen game object for fades during day transitions.")]
+    public GameObject blackScreen; 
+    [Tooltip("Reference to the Fade class.")]
+    public Fade toBlack;
+
+    [Header("Player References")]
+    [Tooltip("Player start location.")]
+    public Transform playerStartingLoc;
 
     GameObject player;
     PlayerMovement playerMovement;
-    public Transform playerStartingLoc;
-
     CustomerManager customerManager;
     TaskSpawner taskSpawner;
     PerformanceReview review;
