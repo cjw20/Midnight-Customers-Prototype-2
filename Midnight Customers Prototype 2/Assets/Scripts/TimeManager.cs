@@ -29,7 +29,7 @@ public class TimeManager : MonoBehaviour
     public Text timeText;
     [Tooltip("Black screen game object for fades during day transitions.")]
     public GameObject blackScreen; 
-    [Tooltip("Reference to the Fade class.")]
+    [Tooltip("Reference to a Fade class instance.")]
     public Fade toBlack;
 
     [Header("Player References")]
