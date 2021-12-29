@@ -4,20 +4,40 @@ using UnityEngine;
 
 public class SoundManager : MonoBehaviour
 {
+    // References
+    [Header("Music/Ambiance Sounds")]
+    [Tooltip("Background music.")]
     public AudioSource bgm;
+    [Header("Checkout Sounds")]
+    [Tooltip("Sounds of heavy objects being put in bag.")]
     [SerializeField] AudioSource[] heavyBaggingSound;
+    [Tooltip("Sounds of light objects being put in bag.")]
     [SerializeField] AudioSource[] lightBaggingSound;
+    [Tooltip("Sounds of medium objects being put in bag.")]
     [SerializeField] AudioSource[] mediumBaggingSound;
+    [Tooltip("Sound for the barcode scanner.")]
     [SerializeField] AudioSource scannerSound;
-    [SerializeField] AudioSource[] humanFootStepSound;
+    [Tooltip("Sound for the cash register.")]
     [SerializeField] AudioSource cashRegisterSound;
+    [Tooltip("Sound for the prohibited item drawer.")]
     [SerializeField] AudioSource drawerSound;
-    [SerializeField] AudioSource doorbell;
+    [Header("Minigame Sounds")]
+    [Tooltip("Sound for the mopping minigame.")]
     [SerializeField] AudioSource sweepingSound;
+    [Tooltip("Sound for toggling the breaker switches.")]
     [SerializeField] AudioSource breakerSwitch;
+    [Tooltip("Sound for screwing a lightbulb.")]
     [SerializeField] AudioSource screwLightbulbSound;
+    [Tooltip("Sound for picking up a bag of chips.")]
     [SerializeField] AudioSource chipsPickUpSound;
+    [Tooltip("Sound for setting down a bag of chips.")]
     [SerializeField] AudioSource chipsPutDownSound;
+
+    [Header("Misc Sounds")]
+    [Tooltip("Human footstep sounds.")]
+    [SerializeField] AudioSource[] humanFootStepSound;
+    [Tooltip("Sound for the door chime.")]
+    [SerializeField] AudioSource doorbell;
 
     // Start is called before the first frame update
     void Start()
