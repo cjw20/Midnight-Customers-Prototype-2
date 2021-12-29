@@ -57,19 +57,15 @@ public class LightManager : MonoBehaviour
         {
             if (lightObject.GetComponent<LightFlicker>() == null)
             {
-
-
                 LightFlicker strobeEffect = lightObject.AddComponent<LightFlicker>();
                 strobeEffect.offDuration = offDuration;
                 strobeEffect.frequency = strobeRate;  
                 strobeEffect.offIntensity = 0.2f;
                 //strobeEffect.onIntensity = 2;
-
             }
         }
         if (!starting)
         {
-
             Destroy(lightObject.GetComponent<LightFlicker>());
             //may want to check if it was a prexisting component and not destroy it if true
         }
