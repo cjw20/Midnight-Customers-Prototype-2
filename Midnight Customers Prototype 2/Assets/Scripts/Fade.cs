@@ -5,18 +5,20 @@ using UnityEngine.UI;
 
 public class Fade : MonoBehaviour
 {
+    // Fields
     bool fadeIN;
     bool fadeOUT;
-
     float currentAlpha;
-    Image thisSprite;
-    Color startingColor;
-    public Color newColor;
-
     float duration;
     float passedTime;
 
-    // Start is called before the first frame update
+    // References
+    Image thisSprite;
+    Color startingColor;
+    [Header("Fade Color")]
+    [Tooltip("Color for the fade screen.")]
+    public Color newColor;
+
     void Start()
     {
         thisSprite = gameObject.GetComponent<Image>();
