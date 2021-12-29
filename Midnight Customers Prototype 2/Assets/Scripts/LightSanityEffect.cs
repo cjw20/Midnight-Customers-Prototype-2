@@ -7,14 +7,25 @@ using UnityEngine.Experimental.Rendering.Universal;
 public class LightSanityEffect : MonoBehaviour
 {
     //OLD CLASS DONT USE
-    [SerializeField] SoundManager soundManager;
-    public Light2D[] targetLights; //light that effect will be played on. May need to make array if multiple targets for some effects
-    public float effectDuration; //separate later when more effects/ Public for testing purposes
-    public Light2D globalLight;
 
+    // Fields
     float normalGlobalIntensity;
     Color normalColor;
-    
+    [Header("Effect Settings")]
+    [Tooltip("Duration of the effect.")]
+    public float effectDuration; //separate later when more effects/ Public for testing purposes
+
+    // References
+    [Header("Lights")]
+    [Tooltip("Lights to be used for unique effects.")]
+    public Light2D[] targetLights; //light that effect will be played on. May need to make array if multiple targets for some effects
+    [Tooltip("Light to be used for global effects.")]
+    public Light2D globalLight;
+
+    [Header("Sound")]
+    [Tooltip("Reference to a SoundManager class instance.")]
+    [SerializeField] SoundManager soundManager;
+
     void Start()
     {
         normalGlobalIntensity = globalLight.intensity;
