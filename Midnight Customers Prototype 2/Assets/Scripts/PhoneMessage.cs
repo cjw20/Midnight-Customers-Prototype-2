@@ -5,8 +5,16 @@ using UnityEngine.UI;
 
 public class PhoneMessage : MonoBehaviour
 {
+    // Fields
+    [Header("Phone")]
+    [Tooltip("Message to be displayed on the phone.")]
     public string message;
+
+    // References
+    [Header("UI References")]
+    [Tooltip("Reference to the text object where message is displayed.")]
     public Text messageText;
+    [Tooltip("Reference to the phone prefab.")]
     public GameObject OpenPhone;
    
     public void OpenMessage()
@@ -15,6 +23,6 @@ public class PhoneMessage : MonoBehaviour
 
         messageText.text = message;
 
-        this.gameObject.SetActive(false); //dismisses notifcation, keep if other uses for phone?
+        this.gameObject.SetActive(false); //dismisses notification, keep if other uses for phone?
     }
 }

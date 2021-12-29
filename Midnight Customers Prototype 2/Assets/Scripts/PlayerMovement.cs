@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed;
     [Tooltip("Toggle if player is movable.")]
     public bool moveable = true;
-    [Tooltip("Distance of each step.")]
+    [Tooltip("Distance of each step. (Used to match footstep sounds with walking animation)")]
     [SerializeField] float stepDistance;
 
     // References
