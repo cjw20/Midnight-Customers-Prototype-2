@@ -4,16 +4,21 @@ using UnityEngine;
 
 public class CustomerManager : MonoBehaviour
 {
-    public static CustomerManager customerManager;
-    
-    public GameObject[] customers;
-    [SerializeField] Transform exit;
-
-    int arrayPos;
-    Coroutine lastCoroutine;
-
-    List<GameObject> customersInStore = new List<GameObject>();
+    // Fields
     bool spawning;
+    int arrayPos;
+
+    // References
+    Coroutine lastCoroutine;
+    [Header("Customer Management")]
+    [Tooltip("Reference to a CustomerMangager class instance.")]
+    public static CustomerManager customerManager;
+    [Tooltip("List of customers.")]
+    public GameObject[] customers;
+    [Tooltip("Point of exit for the customers.")]
+    [SerializeField] Transform exit;
+    [Tooltip("List of the customers currently in the store.")]
+    List<GameObject> customersInStore = new List<GameObject>();
 
     void Start()
     {
