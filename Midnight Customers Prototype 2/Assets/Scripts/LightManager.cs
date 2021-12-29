@@ -5,26 +5,37 @@ using UnityEngine.Experimental.Rendering.Universal;
 
 public class LightManager : MonoBehaviour
 {
-    [SerializeField] Light2D[] ceilingLights;
-    [SerializeField] Light2D[] miscLights; //fridges, cash register
-    [SerializeField] Light2D[] windowLights;
-    [SerializeField] Light2D globalLight;
-    [SerializeField] Light2D flashLight;
-
+    // Fields
     float normalGlobalIntensity;
     Color normalColor;
 
+    // References
+    RandomEventManager randomEventManager;
+    Light2D brokenLight;
+    [Header("Scene Lights")]
+    [Tooltip("Ceiling lights.")]
+    [SerializeField] Light2D[] ceilingLights;
+    [Tooltip("Misc lights.")]
+    [SerializeField] Light2D[] miscLights; //fridges, cash register
+    [Tooltip("Window lights.")]
+    [SerializeField] Light2D[] windowLights;
+    [Tooltip("Global light.")]
+    [SerializeField] Light2D globalLight;
+    [Tooltip("Player flashlight light.")]
+    [SerializeField] Light2D flashLight;
+
+    [Header("Lightning")]
+    [Tooltip("Lightning color.")]
     [SerializeField] Color lightningColor;
+    [Tooltip("Lightning sound effect.")]
     [SerializeField] AudioSource lightningSound; //currently a placeholder sound effect
 
+    [Header("Triggers")]
+    [Tooltip("Trigger to start the power minigame.")]
     [SerializeField] GameObject powerGameTrigger;
+    [Tooltip("Trigger to start the light bulb minigame.")]
     [SerializeField] GameObject lightBulbTrigger;
 
-    RandomEventManager randomEventManager;
-
-    Light2D brokenLight;
-
-    // Start is called before the first frame update
     void Start()
     {
         randomEventManager = FindObjectOfType<RandomEventManager>();
@@ -33,9 +44,9 @@ public class LightManager : MonoBehaviour
         normalGlobalIntensity = globalLight.intensity;
         normalColor = globalLight.color;
 
-        //PowerOutage(15f);
-        //StartCoroutine(LightningEffect());
-       // BreakBulb();
+        // PowerOutage(15f);
+        // StartCoroutine(LightningEffect());
+        // BreakBulb();
     }
 
     Color ChangeColor(Light2D target, Color newColor)
