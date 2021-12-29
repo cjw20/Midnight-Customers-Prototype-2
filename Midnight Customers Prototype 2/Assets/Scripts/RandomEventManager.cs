@@ -4,18 +4,24 @@ using UnityEngine;
 
 public class RandomEventManager : MonoBehaviour
 {
-
-    [SerializeField] LightManager lightManager;
-    [SerializeField] int eventChance; // % chance that a random event will occur when called 
+    // Fields
+    [Header("Random Events")]
+    [Tooltip("Toggle if a light event is ongoing.")]
     public bool ongoingLightEvent;
+    [Tooltip("Percentage chance that a random event will occur when called.")]
+    [SerializeField] int eventChance;
 
+    // References
+    [Header("Event Management")]
+    [Tooltip("Reference to a LightManager class instance.")]
+    [SerializeField] LightManager lightManager;
+    
     public void CallRandomEvent()
     {
         int roll = Random.Range(0, 100);
         if(roll >= eventChance)
         {
             CallLightEvent();
-                       
         }
     }
 
