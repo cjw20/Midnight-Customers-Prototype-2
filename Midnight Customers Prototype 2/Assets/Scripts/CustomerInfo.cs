@@ -5,28 +5,37 @@ using UnityEngine.UI;
 
 public class CustomerInfo : MonoBehaviour
 {
+    // Fields
+    [Header("Customer Information")]
+    [Tooltip("Customer name.")]
     public string customerName;
-    public Font dialogueFont; //font customer will use
-    public Sprite portrait;
-    public int relationshipScore; //will need to save and load this for each customer 
-    public GameObject[] checkoutItems; //items brought to checkout. May make script to choose this later
-
-    public GameObject[] carriedMoney;
-
-    public DialogueContainer nextConversation;
-    public DialogueContainer[] conversations; //list of conversations that customer will progress through
-    //may need to split up once conversation variants are added (happy/unhappy)
-
+    [Tooltip("Current relationship score the player has with this character.")]
+    public int relationshipScore; //will need to save and load this for each customer
+    [Tooltip("Whether the character has a valid ID or not.")]
+    public bool hasValidID;
+    [Tooltip("Set to true if the character should NOT leave when the timer runs out.")]
+    public bool essential;
+    [Tooltip("How far the player is into the conversations with this character.")]
     public int conversationProgress; //how far into conversations player is. Will want to save this variable somewhere
-
-    public bool hasValidID; //for purchasing items that require ID
-
-
+    [Tooltip("Determines how to segment the mood timer.")]
+    [Range(0, 100)]
     public int[] moodMilestones; //how to segment mood timer (100 max, 0 min) timer counts down from 100
 
-    public bool essential; //set to true if customer wont leave when timer runs out
+    // References
+    [Header("Customer Data")]
+    [Tooltip("Font to use for this customer.")]
+    public Font dialogueFont; //font customer will use
+    [Tooltip("Sprite to use for this customer.")]
+    public Sprite portrait;
+    [Tooltip("Objects this character will bring to the checkout counter.")]
+    public GameObject[] checkoutItems; //items brought to checkout. May make script to choose this later
+    [Tooltip("The amount of money carried by this character.")]
+    public GameObject[] carriedMoney;
+    [Tooltip("Next conversation that this character will have next.")]
+    public DialogueContainer nextConversation;
+    [Tooltip("All conversations this character will progress through.")]
+    public DialogueContainer[] conversations; //may need to split up once conversation variants are added (happy/unhappy)
 
-    // Start is called before the first frame update
     void Start()
     {
         if(nextConversation == null)
