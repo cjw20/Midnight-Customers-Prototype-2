@@ -4,32 +4,38 @@ using UnityEngine;
 
 public class CustomerMovement : MonoBehaviour
 {
-    CustomerManager customerManager;
-    SoundManager soundManager;
-
-    NavMeshAgent2D agent;
-    SpriteRenderer spriteRenderer;
-
-    public Transform[] plannedPath; //an array of waypoints that the customer will travel to in course of time in store
-    public Transform checkout;
-    public Transform exit;
-
-    public float minDistance = 0.5f;
-
-    public int destination = 0;
-
-    public float timeToWait = 5f; //time for customer to chill at destination before moving to next one
+    // Fields
+    float speed;
     bool isWaiting;
-
     Vector2 velocity;
+    Vector3 lastPosition;
+    [Header("Movement/Pathfinding")]
+    [Tooltip("Margin of error to determine if customer has reached waypoint.")]
+    public float minDistance = 0.5f;
+    [Tooltip("Destination of the customer.")]
+    public int destination = 0;
+    [Tooltip("How long the customer will wait at a waypoint before moving to the next one.")]
+    public float timeToWait = 5f;
 
+    [Header("Checkout")]
+    [Tooltip("Whether the customer has completed checking out or not.")]
     public bool hasCheckedOut = false; //set to true after checkout minigame completed
+    [Tooltip("Whether the customer is ready for checkout or not.")]
     public bool readyForCheckout; //so checkout wont be available if customer walks past counter before ready
 
-    Vector3 lastPosition;
-    float speed;
-
+    // References
+    CustomerManager customerManager;
+    SoundManager soundManager;
+    NavMeshAgent2D agent;
+    SpriteRenderer spriteRenderer;
     Animator animator;
+    [Header("Pathfinding")]
+    [Tooltip("Array of waypoints the customer will travel along.")]
+    public Transform[] plannedPath; //an array of waypoints that the customer will travel to in course of time in store
+    [Tooltip("Location of the checkout zone.")]
+    public Transform checkout;
+    [Tooltip("Location of the exit area.")]
+    public Transform exit;
 
     private void Awake()
     {
@@ -54,9 +60,11 @@ public class CustomerMovement : MonoBehaviour
         //speed = Mathf.Lerp(speed, (transform.position - lastPosition).magnitude, 0.7f /*adjust this number in order to make interpolation quicker or slower*/);
         animator.SetFloat("Horizontal", velocity.x);
         animator.SetFloat("Vertical", velocity.y);
-        if (velocity.magnitude <= 0.1f) {
+        if (velocity.magnitude <= 0.1f)
+        {
             animator.SetBool("Moving",false);
-        } else {
+        } else
+        {
             animator.SetBool("Moving",true);
         }
         if (isWaiting)
@@ -77,7 +85,6 @@ public class CustomerMovement : MonoBehaviour
         {
             spriteRenderer.flipX = false;
         }
-        
     }
 
     void GoToNextPoint()
