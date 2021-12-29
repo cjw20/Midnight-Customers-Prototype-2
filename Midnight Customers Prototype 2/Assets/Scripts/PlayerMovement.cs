@@ -4,31 +4,44 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    // Fields
     Vector2 movementDirection;
-    Rigidbody2D body;
-    public float moveSpeed;
-    public bool moveable = true;
     private Vector2 playerLastFramePosition;
-    [SerializeField] float stepDistance;
+    Rigidbody2D body;
     private float stepTimer = 0f;
     private bool timerRunning = false;
+    [Header("Movement Data")]
+    [Tooltip("Movement speed.")]
+    public float moveSpeed;
+    [Tooltip("Toggle if player is movable.")]
+    public bool moveable = true;
+    [Tooltip("Distance of each step.")]
+    [SerializeField] float stepDistance;
 
-    [SerializeField] SoundManager soundManager;
-
-    public GameObject Epopup; //!
-    public GameObject Qpopup; //?
-
-    [SerializeField] GameObject flashLight;
-
-    public MiniGameTrigger nearbyMG;
-    public Interactable nearbyInteractable;
-    public CheckoutTrigger checkoutTrigger;
-
+    // References
     private PlayerInput playerInput; //asset that has player controls
     Animator animator;
-
     SpriteRenderer spriteRenderer;
+    [Header("Trigger/Interaction References")]
+    [Tooltip("Reference to a CheckoutTrigger class instance.")]
+    public CheckoutTrigger checkoutTrigger;
+    [Tooltip("Reference to a MiniGameTrigger class instance.")]
+    public MiniGameTrigger nearbyMG;
+    [Tooltip("Reference to an Interactable class instance.")]
+    public Interactable nearbyInteractable;
 
+    [Header("Object References")]
+    [Tooltip("No idea what this does.")]
+    public GameObject Epopup; //!
+    [Tooltip("No idea what this does.")]
+    public GameObject Qpopup; //?
+    [Tooltip("Reference to the player's flashlight game object.")]
+    [SerializeField] GameObject flashLight;
+
+    [Header("Audio")]
+    [Tooltip("Reference to a SoundManager class instance.")]
+    [SerializeField] SoundManager soundManager;
+    
     private void Awake()
     {
         playerInput = new PlayerInput();
