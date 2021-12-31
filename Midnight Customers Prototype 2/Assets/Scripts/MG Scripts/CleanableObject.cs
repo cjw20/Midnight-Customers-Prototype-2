@@ -4,19 +4,24 @@ using UnityEngine;
 
 public class CleanableObject : MonoBehaviour
 {
+    // Fields
     bool isBeingCleaned;
-    CleaningTool tool;
-    SpriteRenderer mess;
-    public float cleanTime;
     float passedTime;
-    public float currentAlpha;
     Color startingColor;
+    [Header("Cleaning Data")]
+    [Tooltip("Hitpoints of the cleanable object.")]
+    [SerializeField] float hitpoints = 5.0f;
+    [Tooltip("Cleaning time.")]
+    public float cleanTime;
+    [Tooltip("Current alpha (transparency) value.")]
+    public float currentAlpha;
+    [Tooltip("New color to use.")]
     public Color newColor;
 
+    // References
+    CleaningTool tool;
+    SpriteRenderer mess;
     MopGame mopGame;
-    
-    [SerializeField]
-    float hitpoints = 5.0f;
 
     void Start()
     {
@@ -26,7 +31,6 @@ public class CleanableObject : MonoBehaviour
     }
 
 /*
-    // Update is called once per frame
     void Update()
     {
         if (isBeingCleaned && tool.isCleaning)

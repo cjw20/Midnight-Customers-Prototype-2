@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class LightChangeGame : MonoBehaviour
 {
+    // Fields
+
+    // References
     MiniGameControl mgControl;
     LightManager lightManager;
 
-    // Start is called before the first frame update
     void Start()
     {
         mgControl = FindObjectOfType<MiniGameControl>();

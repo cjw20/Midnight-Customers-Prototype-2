@@ -4,14 +4,17 @@ using UnityEngine;
 
 public class MiniGameTrigger : MonoBehaviour
 {
-    public GameObject miniGame; //minigame to load
-    MiniGameControl mgControl;
-    PlayerMovement playerMove;
+    // Fields
     //bool playerReady;
     //bool inGame;
-    // Start is called before the first frame update
 
+    // References
     private PlayerInput playerInput; //asset that has player controls
+    MiniGameControl mgControl;
+    PlayerMovement playerMove;
+    [Header("Mini Games")]
+    [Tooltip("The mini game to be loaded.")]
+    public GameObject miniGame;
 
     private void Awake()
     {
@@ -33,7 +36,6 @@ public class MiniGameTrigger : MonoBehaviour
         mgControl = FindObjectOfType<MiniGameControl>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         /*

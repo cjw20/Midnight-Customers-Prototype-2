@@ -4,17 +4,22 @@ using UnityEngine;
 
 public class MopGame : MonoBehaviour
 {
+    // Fields
     //public int numObjects = Random.Range(2,6)
     //instantiate number of Objects at start
-    //include two different prefab references 
-
-    public GameObject dirt1; //dependent on prefab reference in-editor
-    public GameObject dirt2; //dependent on prefab reference in-editor
-    GameObject[] cleanableObjects;
+    //include two different prefab references
     int remainingObjects;
-    MiniGameControl mgControl;
 
-    // Start is called before the first frame update
+    // References
+    GameObject[] cleanableObjects;
+    MiniGameControl mgControl;
+    [Header("Dirt Spots")]
+    [Tooltip("First dirt spot.")]
+    public GameObject dirt1; //dependent on prefab reference in-editor
+    [Tooltip("Second dirt spot.")]
+    public GameObject dirt2; //dependent on prefab reference in-editor
+    
+
     void Start()
     {
         mgControl = FindObjectOfType<MiniGameControl>();

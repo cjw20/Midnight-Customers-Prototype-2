@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class StockingGame : MonoBehaviour
 {
-    public GameObject heldItem;
+    // Fields
     int remainingShelves;
-    MiniGameControl mgControl;
 
-    // Start is called before the first frame update
+    // References
+    MiniGameControl mgControl;
+    [Header("Game Object References")]
+    [Tooltip("The currently held item.")]
+    public GameObject heldItem;
+
     void Start()
     {
         remainingShelves = 3; //have shelves tell this how many if this number can change

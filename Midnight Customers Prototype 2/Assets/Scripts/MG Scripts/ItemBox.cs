@@ -4,17 +4,24 @@ using UnityEngine;
 
 public class ItemBox : MonoBehaviour
 {
+    // Fields
+    [Header("Box Data")]
+    [Tooltip("Whether the box is open or not.")]
     public bool boxOpen;
+
+    // References
+    [Header("References")]
+    [Tooltip("The opened box object.")]
     public GameObject openedBox;
-
+    [Tooltip("Array of items in the box.")]
     public GameObject[] itemsInBox;
-    public Transform[] boxSpawns; //where items are to be instantiated in box
-
+    [Tooltip("Locations for items to be instantiated in the box.")]
+    public Transform[] boxSpawns;
+    [Tooltip("Items that have been spawned.")]
     public List<GameObject> spawnedItems;
 
     private void OnMouseDown()
     {
-
         if (!boxOpen)
         {
             OpenBox();

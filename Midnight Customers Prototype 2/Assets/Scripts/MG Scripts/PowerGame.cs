@@ -4,13 +4,17 @@ using UnityEngine;
 
 public class PowerGame : MonoBehaviour
 {
-    [SerializeField] PowerButton[] offButtons;
-    [SerializeField] PowerButton[] onButtons;
+    // Fields
 
+    // References
     MiniGameControl mgControl;
     LightManager lightManager;
+    [Header("Power Buttons")]
+    [Tooltip("Off buttons on the breaker box.")]
+    [SerializeField] PowerButton[] offButtons;
+    [Tooltip("On buttons on the breaker box.")]
+    [SerializeField] PowerButton[] onButtons;
 
-    // Start is called before the first frame update
     void Start()
     {
         mgControl = FindObjectOfType<MiniGameControl>();

@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class StockingItem : MonoBehaviour
 {
-    StockingGame stockingGame;
-    ItemBox itemBox;
+    // Fields
     bool selected;
     bool shelved;
     public string itemID;
+
+    // References
+    StockingGame stockingGame;
+    ItemBox itemBox;
     SoundManager soundManager;
 
     private void Start()

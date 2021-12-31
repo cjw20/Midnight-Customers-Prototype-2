@@ -5,15 +5,21 @@ using UnityEngine.Experimental.Rendering.Universal;
 
 public class PowerButton : MonoBehaviour
 {
+    // Fields
+    [Header("Power Data")]
+    [Tooltip("Whether the on button is lit or not.")]
     public bool onButton;
+    [Tooltip("Whether the button is active or not.")]
     public bool activated;
 
-    [SerializeField] PowerButton[] targetSwitch; //buttons that this button affects
+    // References
     Light2D thisLight;
     PowerGame powerGame;
     SoundManager soundManager;
+    [Header("Switches")]
+    [Tooltip("Array of PowerButtons that this button affects.")]
+    [SerializeField] PowerButton[] targetSwitch;
 
-    // Start is called before the first frame update
     void Start()
     {
         soundManager = GameObject.Find("Sound Manager").GetComponent<SoundManager>();

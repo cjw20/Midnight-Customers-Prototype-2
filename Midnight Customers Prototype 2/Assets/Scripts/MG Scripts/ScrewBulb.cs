@@ -5,15 +5,21 @@ using UnityEngine.Experimental.Rendering.Universal;
 
 public class ScrewBulb : MonoBehaviour
 {
-    [SerializeField] int numberOfPresses; //how many time bulb needs to be clicked on
-    [SerializeField] bool newBulb; //true if new
-
+    // Fields
+    [Header("Bulb Data")]
+    [Tooltip("How many times the bulb needs to be clicked on.")]
+    [SerializeField] int numberOfPresses;
+    [Tooltip("Whether the bulb is new or not.")]
+    [SerializeField] bool newBulb;
+    [Tooltip("Whether the bulb is in the correct place or not.")]
     [SerializeField] bool inPlace;
 
+    // References
     Light2D thisLight;
     LightChangeGame lightGame;
     SoundManager soundManager;
-
+    [Header("Bulb Reference")]
+    [Tooltip("The bulb that the player will drag to the empty slot.")]
     [SerializeField] GameObject dragBulb; //object that player will drag to empty slot
 
     void Start()

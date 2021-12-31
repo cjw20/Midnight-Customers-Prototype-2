@@ -4,13 +4,17 @@ using UnityEngine;
 
 public class MiniGameControl : MonoBehaviour
 {
+    // Fields
+
+    // References
     Transform cameraPosition;
     MiniGameTrigger currentTrigger;
-
-    [SerializeField] TaskSpawner taskSpawner;
-    [SerializeField] SoundManager soundManager;
-
     GameObject currentGame;
+    [Header("References")]
+    [Tooltip("Reference to a TaskSpawner class instance.")]
+    [SerializeField] TaskSpawner taskSpawner;
+    [Tooltip("Reference to a SoundManager class instance.")]
+    [SerializeField] SoundManager soundManager;
 
     public void LoadMiniGame(GameObject miniGame, MiniGameTrigger trigger)
     {

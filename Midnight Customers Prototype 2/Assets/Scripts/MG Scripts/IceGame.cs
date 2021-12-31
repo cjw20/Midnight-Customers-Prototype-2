@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class IceGame : MonoBehaviour
 {
+    // Fields
+
+    // References
     MiniGameControl mgControl;
 
 void Start()

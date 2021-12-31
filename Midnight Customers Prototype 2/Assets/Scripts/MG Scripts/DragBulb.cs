@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class DragBulb : MonoBehaviour
 {
+    // Fields
+
+    // References
+    [Header("Bulbs")]
+    [Tooltip("Reference to the bulb prefab.")]
     [SerializeField] GameObject newBulb;
 
     private void OnTriggerEnter2D(Collider2D collision)

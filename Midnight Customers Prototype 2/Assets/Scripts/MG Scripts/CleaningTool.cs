@@ -4,17 +4,21 @@ using UnityEngine;
 
 public class CleaningTool : MonoBehaviour
 {
-    public bool isCleaning;
-    public string toolName;
-    
-    public float cleaningThreshold;
-
+    // Fields
     Vector3 oldPosition;
     Vector3 newPosition;
+    [Header("Tool Data")]
+    [Tooltip("Whether the tool is cleaning currently or not.")]
+    public bool isCleaning;
+    [Tooltip("Name of the tool.")]
+    public string toolName;
+    [Tooltip("The cleaning threshold for the tool.")]
+    public float cleaningThreshold;
+
+    // References
     Rigidbody2D rb;
     SoundManager soundmanager;
 
-    // Start is called before the first frame update
     void Start()
     {
         rb = this.gameObject.GetComponent<Rigidbody2D>();
@@ -22,7 +26,6 @@ public class CleaningTool : MonoBehaviour
         soundmanager = GameObject.Find("Sound Manager").GetComponent<SoundManager>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         newPosition = rb.position;
