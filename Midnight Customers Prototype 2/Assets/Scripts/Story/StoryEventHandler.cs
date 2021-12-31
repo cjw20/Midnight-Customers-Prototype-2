@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class StoryEventHandler : MonoBehaviour
 {
+    // Fields
+
+    //References
+    [Header("Story Events")]
+    [Tooltip("Reference to a HatchStoryBeat class instance.")]
     [SerializeField] HatchStoryBeat hatchStory;
 
     public void DayEvents(int day)

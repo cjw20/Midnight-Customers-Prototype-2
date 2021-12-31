@@ -4,12 +4,20 @@ using UnityEngine;
 
 public class HatchStoryBeat : MonoBehaviour
 {
+    // Fields
+
+    // References
+    [Header("Dialogs")]
+    [Tooltip("Reference to a DialogueContainer class instance for hatch found dialog.")]
     [SerializeField] DialogueContainer hatchFound;
-    [SerializeField] GameObject investigator;
-
+    [Tooltip("Reference to a DialogueContainer class instance for hatch hint dialog.")]
     [SerializeField] DialogueContainer hatchHint;
+    [Tooltip("Reference to the Investigator.")]
+    [SerializeField] GameObject investigator;
+    [Header("Game Object References")]
+    [Tooltip("Reference to the hint customer.")]
     [SerializeField] GameObject hintCustomer;
-
+    [Tooltip("Reference to the hatch object.")]
     [SerializeField] GameObject hatch;
     
     public void StartStory()
