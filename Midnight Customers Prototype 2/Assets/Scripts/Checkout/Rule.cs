@@ -4,10 +4,15 @@ using UnityEngine;
 
 public class Rule : MonoBehaviour
 {
-    public int phase; //which phase of rules this rule belongs to, starting with 0
+    // Fields
+    [Header("Rule Data")]
+    [Tooltip("Which phase of rules this rule belongs to, starting with 0.")]
+    public int phase;
+    [Tooltip("Whether the rule was broken or not. (True if rule was NOT broken)")]
+    public bool passed;
 
-    public bool passed; //true if rule was not broken
-    
+    // References
+
     public virtual bool CheckRule(CheckoutItem currentItem, CheckoutItem lastItem)
     {
         passed = true;

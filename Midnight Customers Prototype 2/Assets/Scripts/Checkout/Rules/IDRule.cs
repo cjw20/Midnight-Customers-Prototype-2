@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class IDRule : Rule
 {
+    // Fields
+
+    // References
+
     public override bool CheckRule(CheckoutItem currentItem, CheckoutItem lastItem)
     {
         passed = true;

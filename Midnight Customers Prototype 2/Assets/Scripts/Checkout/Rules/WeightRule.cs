@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class WeightRule : Rule
 {
+    // Fields
+
+    // References
+
     public override bool CheckRule(CheckoutItem currentItem, CheckoutItem lastItem)
     {
         passed = true;
