@@ -4,19 +4,28 @@ using UnityEngine;
 
 public class CheckoutTrigger : MonoBehaviour
 {
+    // Fields
+    [Header("Checkout Data")]
+    [Tooltip("Whether the player is standing behind the register or not.")]
     public bool playerReady; //true when player is standing behind register
+    [Tooltip("Whether the customer is in front of the register and ready to checkout or not.")]
     public bool customerReady; //true when customer is standing in front of register, ready to check out
-    public GameObject checkoutGame;
-    CheckoutManager checkoutManager;
-    [SerializeField] CheckoutTimer checkoutTimer;
-
-    public GameObject customer; //customer standing in front of checkout
-    public CustomerInfo customerInfo;
-    PlayerMovement playerMove;
-
+    [Tooltip("Whether the checkout minigame is running or not.")]
     public bool inCheckout; //true while checkout game going on
 
+    // References
+    PlayerMovement playerMove;
     private PlayerInput playerInput; //asset that has player controls
+    CheckoutManager checkoutManager;
+    [Header("References")]
+    [Tooltip("Reference to a CheckoutTimer class instance.")]
+    [SerializeField] CheckoutTimer checkoutTimer;
+    [Tooltip("Reference to the checkout game prefab.")]
+    public GameObject checkoutGame;
+    [Tooltip("Reference to the customer that is ready to checkout.")]
+    public GameObject customer; //customer standing in front of checkout
+    [Tooltip("Reference to a CustomerInfo class instance.")]
+    public CustomerInfo customerInfo;
 
     private void Awake()
     {
@@ -38,7 +47,6 @@ public class CheckoutTrigger : MonoBehaviour
         checkoutManager = checkoutGame.GetComponent<CheckoutManager>(); //may not need this part later
     }
 
-    // Update is called once per frame
     void Update()
     {
         /*
@@ -52,7 +60,6 @@ public class CheckoutTrigger : MonoBehaviour
                 checkoutManager.StartCheckout(customerInfo);
                 checkoutTimer.inCheckout = true; //starts updating timer
                 checkoutTimer.UpdateValue(-checkoutTimer.timePassed); //has ui reflect time customer spent waiting before player showed up
-                
             }
             
         // old input method
@@ -69,7 +76,6 @@ public class CheckoutTrigger : MonoBehaviour
             checkoutManager.StartCheckout(customerInfo);
             checkoutTimer.inCheckout = true; //starts updating timer
             checkoutTimer.UpdateValue(-checkoutTimer.timePassed); //has ui reflect time customer spent waiting before player showed up
-
         }
     }
 

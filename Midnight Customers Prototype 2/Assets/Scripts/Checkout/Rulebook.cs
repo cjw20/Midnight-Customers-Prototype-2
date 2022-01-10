@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class Rulebook : MonoBehaviour
 {
-    public GameObject openedBook;
+    // Fields
     bool bookStatus; //true when opened
+
+    // References
+    [Header("References")]
+    [Tooltip("Reference to the opened book prefab.")]
+    public GameObject openedBook;
     
     public void ToggleBook()
     {

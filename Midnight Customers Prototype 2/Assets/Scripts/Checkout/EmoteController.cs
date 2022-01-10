@@ -4,12 +4,19 @@ using UnityEngine;
 
 public class EmoteController : MonoBehaviour
 {
-    [SerializeField] SpriteRenderer spriteRenderer;
-    [SerializeField] Sprite happyEmote;
-    [SerializeField] Sprite sadEmote;
-    [SerializeField] Sprite angryEmote;
+    // Fields
 
+    // References
     Coroutine lastCoroutine;
+    [Header("Sprites")]
+    [Tooltip("Reference to a Sprite Renderer.")]
+    [SerializeField] SpriteRenderer spriteRenderer;
+    [Tooltip("Reference to the happy emote sprite.")]
+    [SerializeField] Sprite happyEmote;
+    [Tooltip("Reference to the sad emote sprite.")]
+    [SerializeField] Sprite sadEmote;
+    [Tooltip("Reference to the angry emote sprite.")]
+    [SerializeField] Sprite angryEmote;
 
     public void React(string emotion)
     {

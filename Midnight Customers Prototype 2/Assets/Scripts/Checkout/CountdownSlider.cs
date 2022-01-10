@@ -5,10 +5,18 @@ using UnityEngine.UI;
 
 public class CountdownSlider : MonoBehaviour
 {
-    public Slider slider;
+    // Fields
+    [Header("Data")]
+    [Tooltip("Whether timer is counting or not.")]
     public bool isCountingDown;
+    [Tooltip("How much time has passed on the timer.")]
     public float timePassed;
 
+    // References
+    [Header("References")]
+    [Tooltip("Reference to the time slider.")]
+    public Slider slider;
+    
     public void SetValue(float change)
     {
         slider.value += change;

@@ -4,7 +4,12 @@ using UnityEngine;
 
 public class Money : MonoBehaviour
 {
+    // Fields
+    [Header("Data")]
+    [Tooltip("Monetary value.")]
     public float value;
+
+    // References
     CheckoutManager checkoutManager;
 
     //animation or movement towards counter

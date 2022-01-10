@@ -5,55 +5,66 @@ using UnityEngine.UI;
 
 public class CheckoutManager : MonoBehaviour
 {
-    [SerializeField] SoundManager soundManager;
-    public GameObject[] itemSpawns;
-    GameObject[] items; //items brought to checkout
-
-    List<GameObject> spawnedItems = new List<GameObject>();
+    // Fields
     int itemNumber; //number of items brought to checkout
     int remainingItems; //items left unbagged
-
-    bool finishedBag; //true when all items have been scanned
-    public bool needsIDCheck;
     bool customerPayed;
     //bool passedIDCheck;
-    public bool failedIDCheck;
-    
+    bool finishedBag; //true when all items have been scanned
     int lastWeight = 3;
     float totalPrice;
-
     bool dialogueFinished; //set true by dialogue player when finished
-    public DialoguePlayer dialoguePlayer; 
-
-    CheckoutTrigger checkoutTrigger;
-
-    public GameObject misbagMessage; //may replace in later versions
-    public GameObject idButton; //probably don't need this reference later
-    public GameObject hasIDMessage;
-    public GameObject noIDMessage;
-
-    public SpriteRenderer portraitLocation;
-
-    public Text priceText;
-    public Text weightText;
-    public Transform moneySpawn; //where money gets placed
-
-    CustomerInfo customerInfo;
-
+    [Header("Checkout Information")]
+    [Tooltip("Whether an ID check is needed or not.")]
+    public bool needsIDCheck;
+    [Tooltip("Whether the ID check was failed or not.")]
+    public bool failedIDCheck;
+    [Tooltip("Sum of errors in this checkout interaction.")]
     public int penaltyPoints; //sum of errors in this checkout
-    public PerformanceReview review;
-
-    public EmoteController emoter;
-
+    [Tooltip("Current active phase.")]
     public int activePhase;
-    [SerializeField] Rule[] phase0Rules;
-    [SerializeField] Rule[] phase1Rules;
 
+    // References
+    CheckoutTrigger checkoutTrigger;
+    GameObject[] items; //items brought to checkout
+    List<GameObject> spawnedItems = new List<GameObject>();
+    CustomerInfo customerInfo;
     List<Rule> activeRules = new List<Rule>();
-
     CheckoutItem currentItem;
     CheckoutItem lastItem;
-
+    [Header("Misc References")]
+    [Tooltip("Reference to a SoundManager class instance.")]
+    [SerializeField] SoundManager soundManager;
+    [Tooltip("Reference to a PerformanceReview class instance.")]
+    public PerformanceReview review;
+    [Tooltip("Reference to an EmoteController class instance.")]
+    public EmoteController emoter;
+    [Tooltip("Reference to a DialoguePlayer class instance.")]
+    public DialoguePlayer dialoguePlayer;
+    [Tooltip("Array of items to spawn.")]
+    public GameObject[] itemSpawns;
+    [Tooltip("Reference to a SpriteRenderer for the portrait location.")]
+    public SpriteRenderer portraitLocation;
+    [Tooltip("Array of Rules for phase 0 rules.")]
+    [SerializeField] Rule[] phase0Rules;
+    [Tooltip("Array of Rules for phase 1 rules.")]
+    [SerializeField] Rule[] phase1Rules;
+    [Tooltip("Reference to the Transform where money will be placed.")]
+    public Transform moneySpawn; //where money gets placed
+    [Header("UI References")]
+    [Tooltip("Reference to the misbag message.")]
+    public GameObject misbagMessage; //may replace in later versions
+    [Tooltip("Reference to the ID button.")]
+    public GameObject idButton; //probably don't need this reference later
+    [Tooltip("Reference to the has ID message.")]
+    public GameObject hasIDMessage;
+    [Tooltip("Reference to the no ID message.")]
+    public GameObject noIDMessage;
+    [Tooltip("Reference to the Text object for price text.")]
+    public Text priceText;
+    [Tooltip("Reference to the Text object for weight text.")]
+    public Text weightText;
+    
     private void Start()
     {
         activePhase = 0; //load this variable when loading saved game
@@ -104,7 +115,6 @@ public class CheckoutManager : MonoBehaviour
                 if (item.GetComponent<CheckoutItem>().requiresID == true)
                 {
                     needsIDCheck = true;
-                    
                 }
             }
             i++;

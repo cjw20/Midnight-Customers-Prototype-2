@@ -6,22 +6,29 @@ using UnityEngine.UI;
 
 public class CheckoutTimer : MonoBehaviour
 {
-    public bool isRunning; //true when timer is active
-    public bool inCheckout; //true when checkout open, (update acutal ui element)
+    // Fields
     int[] segments;
-    CustomerInfo currentCustomer;
-
     int maxValue; //value timer starts at
-    [SerializeField] int currentMilestone; //index of array for most recently passed milestone 
-
-    public Slider slider;
+    [Header("Timer Data")]
+    [Tooltip("Whether the timer is active or not.")]
+    public bool isRunning; //true when timer is active
+    [Tooltip("Whether checkout is open or not.")]
+    public bool inCheckout; //true when checkout open, (update acutal ui element)
+    [Tooltip("How much time has passed.")]
     public float timePassed;
-
+    [Tooltip("How quickly the timer counts down.")]
     public float scale; //affects how quickly timer counts down
+    [Tooltip("Index of the array for the most recently passed milestone.")]
+    [SerializeField] int currentMilestone; //index of array for most recently passed milestone
 
-    [SerializeField]  CheckoutManager checkoutManager;
+    // References
+    CustomerInfo currentCustomer;
+    [Header("References")]
+    [Tooltip("Reference to the time slider.")]
+    public Slider slider;
+    [Tooltip("Reference to a CheckoutManager class instance.")]
+    [SerializeField] CheckoutManager checkoutManager;
 
-    // Update is called once per frame
     void Update()
     {
         if (isRunning)
