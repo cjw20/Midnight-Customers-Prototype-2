@@ -22,12 +22,16 @@ public class CustomerManager : MonoBehaviour
 
     void Start()
     {
-        spawning = true;        
-        //arrayPos = 0; //for use in gdex demo, more elegant solution later
+        OnLoadGame(0); //call this from game control later, only here to keep game from breaking while loading is implemented
+    }
+
+    public void OnLoadGame(int progress)
+    {
+        arrayPos = progress;
+        spawning = true;
 
         LoadCustomer(customers[arrayPos]);
     }
-
     public void LoadCustomer(GameObject customer)
     {
         CustomerMovement move = customer.GetComponent<CustomerMovement>();

@@ -28,8 +28,9 @@ public class GameControl : MonoBehaviour
     }
     
     public void ContinueGame()
-    {
-
+    {         
+        SaveData loadedData = saveUtility.LoadGame();
+        GameObject.FindObjectOfType<CustomerManager>().OnLoadGame(loadedData.customerProgress);
     }
     public void LoadScene(string sceneName)
     {

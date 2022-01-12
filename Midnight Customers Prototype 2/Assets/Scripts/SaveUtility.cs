@@ -6,7 +6,7 @@ using System.IO;
 
 public class SaveUtility : MonoBehaviour
 {
-    public static void SaveGame()
+    public void SaveGame()
     {
         BinaryFormatter formatter = new BinaryFormatter();
         string path = Application.persistentDataPath + "/Game.MCsaves";
@@ -22,7 +22,7 @@ public class SaveUtility : MonoBehaviour
     }
 
 
-    public static SaveData LoadGame()
+    public SaveData LoadGame()
     {
         string path = Application.persistentDataPath + "/Game.MCsaves";
 
