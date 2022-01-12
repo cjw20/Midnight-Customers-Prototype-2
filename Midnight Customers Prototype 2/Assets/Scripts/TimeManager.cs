@@ -64,7 +64,7 @@ public class TimeManager : MonoBehaviour
     public void OnLoadGame(int dayProgress)
     {
         day = dayProgress;
-        //load passed checkout phases and stuff
+        NewDay();
     }
 
     // Update is called once per frame
@@ -145,24 +145,31 @@ public class TimeManager : MonoBehaviour
         player.transform.position = playerStartingLoc.position;
         hours = 0;
         day++;
-        if(day == 8)
-        {
-            checkoutManager.LoadPhase1();
-        }
+        
         UpdateText();
         toBlack.FadeOut(fadeDuration);
-        taskSpawner.NewDayTasks();
-        
-        storyEvent.DayEvents(day); //loads any events for coming day
+        NewDay();
         yield return new WaitForSeconds(fadeDuration + 2);
         blackScreen.SetActive(false);
         customerManager.StartSpawns();
-
         review.ReviewMessage();
         
         //check for story events for this night/next day and load them
         timerRunning = true;
 
         yield break;
+    }
+
+
+
+    void NewDay()
+    {        
+        taskSpawner.NewDayTasks();
+        storyEvent.DayEvents(day); //loads any events for coming day
+
+        if (day == 8)
+        {
+            checkoutManager.LoadPhase1();
+        }
     }
 }
