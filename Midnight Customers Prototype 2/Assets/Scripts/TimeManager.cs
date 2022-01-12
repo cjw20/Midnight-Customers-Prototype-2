@@ -61,6 +61,12 @@ public class TimeManager : MonoBehaviour
         UpdateText();
     }
 
+    public void OnLoadGame(int dayProgress)
+    {
+        day = dayProgress;
+        //load passed checkout phases and stuff
+    }
+
     // Update is called once per frame
     void FixedUpdate()
     {

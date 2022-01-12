@@ -31,6 +31,7 @@ public class GameControl : MonoBehaviour
     {         
         SaveData loadedData = saveUtility.LoadGame();
         GameObject.FindObjectOfType<CustomerManager>().OnLoadGame(loadedData.customerProgress);
+        GameObject.FindObjectOfType<TimeManager>().OnLoadGame(loadedData.day);
     }
     public void LoadScene(string sceneName)
     {
