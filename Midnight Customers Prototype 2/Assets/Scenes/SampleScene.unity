@@ -172,32 +172,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b884f8fd8e66b24ea71bb10e749757f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  needsIDCheck: 0
+  failedIDCheck: 0
+  penaltyPoints: 0
+  activePhase: 0
   soundManager: {fileID: 1904453403}
+  review: {fileID: 514181755}
+  emoter: {fileID: 0}
+  dialoguePlayer: {fileID: 1335715032}
   itemSpawns:
   - {fileID: 1566599318}
   - {fileID: 1852031209}
   - {fileID: 718300844}
   - {fileID: 1311951098}
-  needsIDCheck: 0
-  failedIDCheck: 0
-  dialoguePlayer: {fileID: 1335715032}
-  misbagMessage: {fileID: 775693610}
-  idButton: {fileID: 1699710756}
-  hasIDMessage: {fileID: 248132320}
-  noIDMessage: {fileID: 701337375}
   portraitLocation: {fileID: 1502591133}
-  priceText: {fileID: 869165501}
-  weightText: {fileID: 1284473685}
-  moneySpawn: {fileID: 375634272}
-  penaltyPoints: 0
-  review: {fileID: 514181755}
-  emoter: {fileID: 0}
-  activePhase: 0
   phase0Rules:
   - {fileID: 700387696}
   - {fileID: 1589166230}
   phase1Rules:
   - {fileID: 862451526}
+  moneySpawn: {fileID: 375634272}
+  misbagMessage: {fileID: 775693610}
+  idButton: {fileID: 1699710756}
+  hasIDMessage: {fileID: 248132320}
+  noIDMessage: {fileID: 701337375}
+  priceText: {fileID: 869165501}
+  weightText: {fileID: 1284473685}
 --- !u!82 &10691448
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1874,10 +1874,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRunning: 0
   inCheckout: 0
-  currentMilestone: 0
-  slider: {fileID: 1954433555}
   timePassed: 0
   scale: 1
+  currentMilestone: 0
+  slider: {fileID: 1954433555}
   checkoutManager: {fileID: 10691447}
 --- !u!4 &282933962
 Transform:
@@ -3120,9 +3120,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3ed13ffbcbd28547bc709eec2a40c3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slider: {fileID: 505964450}
   isCountingDown: 0
   timePassed: 0
+  slider: {fileID: 505964450}
 --- !u!114 &505964450
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3371,12 +3371,12 @@ MonoBehaviour:
   dayPenaltyPoints: 0
   idErrors: 0
   baggingErrors: 0
-  phoneNotification: {fileID: 1013319163}
   goodMessage: Keep up the good work and you just might see a raise in your future!
   badMessage: I expect better.
   neutralMessage: You met expectations yesterday, but there is always room for improvement!
   improvedMessage: I'm glad you got your crap together. I wasn't looking forward
     to finding a replacement so soon.
+  phoneNotification: {fileID: 1013319163}
 --- !u!4 &514181756
 Transform:
   m_ObjectHideFlags: 0
@@ -4920,6 +4920,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce848e5f9e9d7b14aacdb717b48f4ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  arrayPos: 0
   customers:
   - {fileID: 1258878923}
   - {fileID: 1258878923}
@@ -5292,8 +5293,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hatchFound: {fileID: 11400000, guid: 23078caf785ad98439f10eae6d92b236, type: 2}
-  investigator: {fileID: 6208242975807155669}
   hatchHint: {fileID: 11400000, guid: 49007d75e3bb22442a29beba41c00535, type: 2}
+  investigator: {fileID: 6208242975807155669}
   hintCustomer: {fileID: 5570189988557149941}
   hatch: {fileID: 1037565926}
 --- !u!4 &705307956
@@ -5832,8 +5833,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22652143e1dda154288f3ae94cb56552, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fLight: {fileID: 758472969}
   rotateSpeed: 5
+  fLight: {fileID: 758472969}
 --- !u!82 &758472971
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6319,16 +6320,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 547c1ae72b498304b8caea0531cbd9fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minutes: 0
-  hours: 0
-  seconds: 0
   day: 1
+  hours: 0
+  minutes: 0
+  seconds: 0
+  timeMultiplier: 115
+  fadeDuration: 5
   dayText: {fileID: 1321719050}
   timeText: {fileID: 1063500180}
-  timeMultiplier: 115
   blackScreen: {fileID: 1151140294}
   toBlack: {fileID: 1151140295}
-  fadeDuration: 5
   playerStartingLoc: {fileID: 1405583354}
 --- !u!1 &848104265
 GameObject:
@@ -6658,9 +6659,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd87a9ea3f37dbb44abc274e3f30c2d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lightManager: {fileID: 507476519}
-  eventChance: 50
   ongoingLightEvent: 0
+  eventChance: 50
+  lightManager: {fileID: 507476519}
 --- !u!1 &885160248
 GameObject:
   m_ObjectHideFlags: 0
@@ -12637,13 +12638,13 @@ MonoBehaviour:
   moveSpeed: 3
   moveable: 1
   stepDistance: 0.32
-  soundManager: {fileID: 1904453403}
+  checkoutTrigger: {fileID: 0}
+  nearbyMG: {fileID: 0}
+  nearbyInteractable: {fileID: 0}
   Epopup: {fileID: 1038442745}
   Qpopup: {fileID: 2053526541}
   flashLight: {fileID: 758472967}
-  nearbyMG: {fileID: 0}
-  nearbyInteractable: {fileID: 0}
-  checkoutTrigger: {fileID: 0}
+  soundManager: {fileID: 1904453403}
 --- !u!212 &1675290338
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12831,8 +12832,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ef695be3b9294743a9008320cf2fbae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mopTriggerPrefab: {fileID: 4750385749066029980, guid: a0866cef182794b489e71d5e40252a5a, type: 3}
   poopChance: 0.4
+  mopTriggerPrefab: {fileID: 4750385749066029980, guid: a0866cef182794b489e71d5e40252a5a, type: 3}
 --- !u!95 &1675290344
 Animator:
   serializedVersion: 3
@@ -15255,18 +15256,18 @@ MonoBehaviour:
   - {fileID: 1904453407}
   - {fileID: 1904453406}
   scannerSound: {fileID: 1904453405}
-  humanFootStepSound:
-  - {fileID: 1904453414}
-  - {fileID: 1904453413}
-  - {fileID: 1904453412}
   cashRegisterSound: {fileID: 1904453415}
   drawerSound: {fileID: 1904453416}
-  doorbell: {fileID: 2019865362}
   sweepingSound: {fileID: 1904453418}
   breakerSwitch: {fileID: 1904453417}
   screwLightbulbSound: {fileID: 1904453419}
   chipsPickUpSound: {fileID: 1904453421}
   chipsPutDownSound: {fileID: 1904453420}
+  humanFootStepSound:
+  - {fileID: 1904453414}
+  - {fileID: 1904453413}
+  - {fileID: 1904453412}
+  doorbell: {fileID: 2019865362}
 --- !u!4 &1904453404
 Transform:
   m_ObjectHideFlags: 0
@@ -17013,11 +17014,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerReady: 0
   customerReady: 0
-  checkoutGame: {fileID: 10691445}
+  inCheckout: 0
   checkoutTimer: {fileID: 282933961}
+  checkoutGame: {fileID: 10691445}
   customer: {fileID: 0}
   customerInfo: {fileID: 0}
-  inCheckout: 0
 --- !u!61 &1907573571
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17124,6 +17125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1f22d86298f8b142974139bbd450405, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  unfinishedTasks: 0
   mopTrigger: {fileID: 4750385749066029980, guid: a0866cef182794b489e71d5e40252a5a, type: 3}
   shelfTrigger: {fileID: 3135554285058181083, guid: 7183df81bff2a8a4288efe9fa6efec70, type: 3}
   mopSpawns:
@@ -17135,7 +17137,6 @@ MonoBehaviour:
   - {fileID: 1797173883}
   - {fileID: 1139593441}
   - {fileID: 1785020851}
-  unfinishedTasks: 0
 --- !u!1 &1932110254
 GameObject:
   m_ObjectHideFlags: 0

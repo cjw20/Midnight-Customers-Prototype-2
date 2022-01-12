@@ -12,8 +12,8 @@ public class GameControl : MonoBehaviour
     [Header("References")]
     [Tooltip("Reference to a GameControl class instance.")]
     public static GameControl control;
-
-    /*
+    [SerializeField] SaveUtility saveUtility;
+    
     void Awake()
     {
         if (control == null)
@@ -26,8 +26,11 @@ public class GameControl : MonoBehaviour
             Destroy(gameObject);  
         }
     }
-    */
+    
+    public void ContinueGame()
+    {
 
+    }
     public void LoadScene(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
