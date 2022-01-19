@@ -6,11 +6,15 @@ using System.IO;
 
 public class SaveUtility : MonoBehaviour
 {
+    [SerializeField] GameObject loadWindow;
+    [SerializeField] GameObject loadFileButton;
+
+    [SerializeField] GlobalSave globalSave;
     public void SaveGame(string saveName)
     {
         BinaryFormatter formatter = new BinaryFormatter();
         string path = Application.persistentDataPath + "/Game." + saveName;
-        //will need to update to include multiple saves
+        globalSave.AddSave(saveName);
 
         FileStream stream = new FileStream(path, FileMode.Create);
 
@@ -44,10 +48,20 @@ public class SaveUtility : MonoBehaviour
         }
     }
 
+    public void UpdateGlobalSave()
+    {
+
+    }
+    public void GetGlobalSave()
+    {
+
+    }
 
     public void DisplaySaves()
     {
+        Instantiate(loadWindow);
+
         //get saves from file and display them all as buttons
-        //buttons call game control function that loads game
+        
     }
 }
