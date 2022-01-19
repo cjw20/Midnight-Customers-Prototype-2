@@ -13,6 +13,7 @@ public class GameControl : MonoBehaviour
     [Tooltip("Reference to a GameControl class instance.")]
     public static GameControl control;
     [SerializeField] SaveUtility saveUtility;
+    SaveData dataToLoad;
     
     void Awake()
     {
@@ -26,10 +27,14 @@ public class GameControl : MonoBehaviour
             Destroy(gameObject);  
         }
     }
+
+    public void LoadSave()
+    {
+        SaveData dataToLoad = saveUtility.LoadGame("MC1");
+    }
     
-    public void ContinueGame()
+    public void ContinueGame(SaveData loadedData)
     {         
-        SaveData loadedData = saveUtility.LoadGame();
         GameObject.FindObjectOfType<CustomerManager>().OnLoadGame(loadedData.customerProgress);
         GameObject.FindObjectOfType<TimeManager>().OnLoadGame(loadedData.day);
     }

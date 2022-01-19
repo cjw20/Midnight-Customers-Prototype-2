@@ -6,10 +6,10 @@ using System.IO;
 
 public class SaveUtility : MonoBehaviour
 {
-    public void SaveGame()
+    public void SaveGame(string saveName)
     {
         BinaryFormatter formatter = new BinaryFormatter();
-        string path = Application.persistentDataPath + "/Game.MCsaves";
+        string path = Application.persistentDataPath + "/Game." + saveName;
         //will need to update to include multiple saves
 
         FileStream stream = new FileStream(path, FileMode.Create);
@@ -22,9 +22,9 @@ public class SaveUtility : MonoBehaviour
     }
 
 
-    public SaveData LoadGame()
+    public SaveData LoadGame(string saveName)
     {
-        string path = Application.persistentDataPath + "/Game.MCsaves";
+        string path = Application.persistentDataPath + "/Game." + saveName;
 
         if (File.Exists(path))
         {
@@ -42,5 +42,12 @@ public class SaveUtility : MonoBehaviour
             Debug.LogError("Error: Save file not found in " + path);
             return null;
         }
+    }
+
+
+    public void DisplaySaves()
+    {
+        //get saves from file and display them all as buttons
+        //buttons call game control function that loads game
     }
 }
