@@ -7437,7 +7437,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1704561443}
         m_TargetAssemblyTypeName: SettingsScreen, Assembly-CSharp
-        m_MethodName: SetFullscreen
+        m_MethodName: SetFont
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
