@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
+using UnityEngine.UI;
 
 public class SaveUtility : MonoBehaviour
 {
-    [SerializeField] GameObject loadWindow;
-    [SerializeField] GameObject loadFileButton;
+    [SerializeField] GameObject loadWindowPrefab;
+    [SerializeField] GameObject loadFileButtonPrefab;
 
     GlobalSave globalSave;
     public void SaveGame(string saveName)
@@ -87,9 +88,16 @@ public class SaveUtility : MonoBehaviour
         if(globalSave == null)
         {
             //no saves messsage
+            return;
         }
-        Instantiate(loadWindow);
-
+        GameObject loadWindow = Instantiate(loadWindowPrefab);
+        foreach(string saveName in globalSave.saveFileNames)
+        {
+            GameObject newButton = Instantiate(loadFileButtonPrefab, loadWindow.transform);
+            Button button = newButton.GetComponent<Button>();
+            button.onClick.AddListener(delegate { LoadGame(saveName); }); //vertical layout group should organize position of buttons
+            button.GetComponentInChildren<Text>().text = saveName; //maybe change what gets displayed 
+        }
         //get saves from file and display them all as buttons
         
     }
