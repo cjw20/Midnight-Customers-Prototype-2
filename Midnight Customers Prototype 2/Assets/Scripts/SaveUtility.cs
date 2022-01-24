@@ -95,7 +95,7 @@ public class SaveUtility : MonoBehaviour
         {
             GameObject newButton = Instantiate(loadFileButtonPrefab, loadWindow.transform);
             Button button = newButton.GetComponent<Button>();
-            button.onClick.AddListener(delegate { LoadGame(saveName); }); //vertical layout group should organize position of buttons
+            button.onClick.AddListener(delegate { GameControl.control.LoadSave(saveName); }); //vertical layout group should organize position of buttons
             button.GetComponentInChildren<Text>().text = saveName; //maybe change what gets displayed 
         }
         //get saves from file and display them all as buttons

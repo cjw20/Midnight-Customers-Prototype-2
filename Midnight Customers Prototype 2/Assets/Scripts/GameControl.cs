@@ -28,9 +28,14 @@ public class GameControl : MonoBehaviour
         }
     }
     
-    public void LoadSave()
+    public void SaveGame(string saveName)
     {
-        SaveData dataToLoad = saveUtility.LoadGame("MC1");
+        saveUtility.SaveGame(saveName);
+    }
+    public void LoadSave(string saveName)
+    {
+        SaveData dataToLoad = saveUtility.LoadGame(saveName);
+        LoadScene("SampleScene"); //load variables from save data once scene has loaded
     }
     
     public void ContinueGame(SaveData loadedData)
