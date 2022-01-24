@@ -27,7 +27,7 @@ public class GameControl : MonoBehaviour
             Destroy(gameObject);  
         }
     }
-
+    
     public void LoadSave()
     {
         SaveData dataToLoad = saveUtility.LoadGame("MC1");
