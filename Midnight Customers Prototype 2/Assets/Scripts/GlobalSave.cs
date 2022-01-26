@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class GlobalSave : MonoBehaviour
+public class GlobalSave
 {
     public List<string> saveFileNames;  //list of existing saves
     //make sure it is okay to save as list instead of array

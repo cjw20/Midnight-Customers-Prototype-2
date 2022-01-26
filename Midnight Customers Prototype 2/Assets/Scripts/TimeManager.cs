@@ -146,7 +146,7 @@ public class TimeManager : MonoBehaviour
         hours = 0;
         day++;
 
-        GameControl.control.SaveGame("Day: " + day.ToString()); //may not be best place to do this
+        GameControl.control.SaveGame("Day " + day.ToString()); //may not be best place to do this
         UpdateText();
         toBlack.FadeOut(fadeDuration);
         NewDay();

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class SaveData : MonoBehaviour
+public class SaveData
 {
     public int customerProgress; //how far into customer array player is
     public int day; //beginning of what day the save was made

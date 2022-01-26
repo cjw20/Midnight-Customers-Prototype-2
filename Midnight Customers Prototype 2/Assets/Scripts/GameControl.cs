@@ -26,6 +26,8 @@ public class GameControl : MonoBehaviour
         {
             Destroy(gameObject);  
         }
+
+        SceneManager.sceneLoaded += OnSceneLoaded;
     }
     
     public void SaveGame(string saveName)
