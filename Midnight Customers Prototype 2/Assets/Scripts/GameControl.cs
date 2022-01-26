@@ -36,8 +36,18 @@ public class GameControl : MonoBehaviour
     {
         SaveData dataToLoad = saveUtility.LoadGame(saveName);
         LoadScene("SampleScene"); //load variables from save data once scene has loaded
+
     }
-    
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if(scene.name == "SampleScene")
+        {
+            if(dataToLoad != null)
+            {
+                ContinueGame(dataToLoad);
+            }
+        }
+    }
     public void ContinueGame(SaveData loadedData)
     {         
         GameObject.FindObjectOfType<CustomerManager>().OnLoadGame(loadedData.customerProgress);
