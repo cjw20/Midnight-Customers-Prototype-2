@@ -43,7 +43,7 @@ public class Pause : MonoBehaviour
         }
     }
 
-    private void TogglePause()
+    public void TogglePause()
     {
         if (!paused)
         {

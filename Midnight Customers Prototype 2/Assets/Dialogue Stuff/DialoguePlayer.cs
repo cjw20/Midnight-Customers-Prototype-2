@@ -26,8 +26,14 @@ public class DialoguePlayer : MonoBehaviour
     public GameObject playerDialoguePanel;
     public GameObject countdownBar;
     bool charDelay;
+    float charDelaySpeed = 0.03f; // Determines typing speed for dialogue
+    public int slideSpeed = 6; // Determines Countdown slider speed
 
     private PlayerInput playerInput; //asset that has player controls
+    [SerializeField]
+    Font openDyslexic;
+    bool dyslexicToggle;
+
     private void Awake()
     {
         playerInput = new PlayerInput();
@@ -35,7 +41,7 @@ public class DialoguePlayer : MonoBehaviour
     private void OnEnable()
     {
         playerInput.Enable();
-        countdownSlider.SetMinMax(0, 6, 6);
+        countdownSlider.SetMinMax(0, slideSpeed, 6);
     }
 
     private void OnDisable()
@@ -51,7 +57,8 @@ public class DialoguePlayer : MonoBehaviour
         playerDialoguePanel.SetActive(true);
         countdownBar.SetActive(true);
         ProceedToNarrative(narrativeData.TargetNodeGuid);
-        dialogueText.font = dialogueFont;
+        if(!dyslexicToggle) dialogueText.font = dialogueFont;
+        else dialogueText.font = openDyslexic;
 
     }
 
@@ -147,7 +154,7 @@ public class DialoguePlayer : MonoBehaviour
     IEnumerator WaitForSelection(string targetNodeGuid)
     {
         countdownSlider.StartCount();
-        yield return new WaitForSeconds(6); //waits 10 seconds may want to make shorter?
+        yield return new WaitForSeconds(slideSpeed); //waits 10 seconds may want to make shorter?
         
         ProceedToNarrative(targetNodeGuid);
         countdownSlider.Reset();
@@ -181,7 +188,7 @@ public class DialoguePlayer : MonoBehaviour
             foreach (char letter in sentence.ToCharArray())
             {
                 dialogueText.text += letter;
-                if(charDelay) yield return new WaitForSeconds(0.03f); //delay goes here
+                if(charDelay) yield return new WaitForSeconds(charDelaySpeed); //delay goes here
             }
             StartCoroutine(WaitForNewChoices(narrativeDataGUID));
             yield break;
@@ -192,5 +199,16 @@ public class DialoguePlayer : MonoBehaviour
         if (playerInput.Checkout.Skip.triggered){
             charDelay = false;
         }
+    }
+
+    public void SetDelay(int delayLevel){
+        if(delayLevel == 0) charDelaySpeed = 0.0f;
+        if(delayLevel == 1) charDelaySpeed = 0.015f;
+        if(delayLevel == 2) charDelaySpeed = 0.03f;
+        if(delayLevel == 3) charDelaySpeed = 0.1f;
+    }
+
+    public void ToggleDyslexicFont(bool isOn){
+        dyslexicToggle = isOn;
     }
 }
