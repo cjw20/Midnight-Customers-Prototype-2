@@ -22,7 +22,11 @@ public class CustomerManager : MonoBehaviour
 
     void Start()
     {
-        OnLoadGame(0); //call this from game control later, only here to keep game from breaking while loading is implemented
+        if(GameControl.control.loadingGame == false)
+        {
+            OnLoadGame(0); //call this from game control later, only here to keep game from breaking while loading is implemented
+        }
+        
     }
 
     public void OnLoadGame(int progress)

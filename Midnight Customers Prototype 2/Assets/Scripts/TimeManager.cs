@@ -46,7 +46,7 @@ public class TimeManager : MonoBehaviour
     CheckoutManager checkoutManager;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player");
         playerMovement = player.GetComponent<PlayerMovement>();
@@ -65,6 +65,7 @@ public class TimeManager : MonoBehaviour
     {
         day = dayProgress;
         NewDay();
+        Debug.Log("Did day");
     }
 
     // Update is called once per frame

@@ -606,6 +606,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Game Control
       objectReference: {fileID: 0}
+    - target: {fileID: 8162826010906192080, guid: f1ae77c73e93e944d91f5fa074e5b7a1, type: 3}
+      propertyPath: loadWindowPrefab
+      value: 
+      objectReference: {fileID: 7287833227206988459, guid: 800b8c3813b445741ac1027e28b5c031, type: 3}
+    - target: {fileID: 8162826010906192080, guid: f1ae77c73e93e944d91f5fa074e5b7a1, type: 3}
+      propertyPath: loadFileButtonPrefab
+      value: 
+      objectReference: {fileID: 1892240222137522728, guid: 0938d1b1953291d408ea3cafe2d11136, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f1ae77c73e93e944d91f5fa074e5b7a1, type: 3}
 --- !u!114 &788804162 stripped

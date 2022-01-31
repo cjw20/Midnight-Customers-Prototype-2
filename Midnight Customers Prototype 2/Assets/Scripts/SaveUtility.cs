@@ -37,7 +37,8 @@ public class SaveUtility : MonoBehaviour
             SaveData data = formatter.Deserialize(stream) as SaveData;
 
             stream.Close();
-
+            Debug.Log(data.day.ToString());
+            Debug.Log(data.customerProgress.ToString());
             return data;
         }
         else
@@ -93,7 +94,8 @@ public class SaveUtility : MonoBehaviour
             //no saves messsage
             return;
         }
-        GameObject loadWindow = Instantiate(loadWindowPrefab);
+        GameObject canvas = GameObject.Find("Canvas");
+        GameObject loadWindow = Instantiate(loadWindowPrefab, canvas.transform);
         foreach(string saveName in globalSave.saveFileNames)
         {
             GameObject newButton = Instantiate(loadFileButtonPrefab, loadWindow.transform);

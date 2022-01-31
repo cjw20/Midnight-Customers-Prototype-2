@@ -13,7 +13,10 @@ public class GameControl : MonoBehaviour
     [Tooltip("Reference to a GameControl class instance.")]
     public static GameControl control;
     [SerializeField] SaveUtility saveUtility;
-    SaveData dataToLoad;
+    public SaveData dataToLoad;
+    public int dayProg;
+    public int customerProg;
+    public bool loadingGame; //true when not new game
     
     void Awake()
     {
@@ -36,7 +39,13 @@ public class GameControl : MonoBehaviour
     }
     public void LoadSave(string saveName)
     {
+        loadingGame = true;
         SaveData dataToLoad = saveUtility.LoadGame(saveName);
+        Debug.Log(dataToLoad.day.ToString());
+        Debug.Log(dataToLoad.customerProgress.ToString() + ":)");
+
+        dayProg = dataToLoad.day;
+        customerProg = dataToLoad.customerProgress;
         LoadScene("SampleScene"); //load variables from save data once scene has loaded
 
     }
@@ -47,13 +56,17 @@ public class GameControl : MonoBehaviour
             if(dataToLoad != null)
             {
                 ContinueGame(dataToLoad);
+                Debug.Log("cont");
             }
+            Debug.Log("helloooo");
         }
+        
     }
     public void ContinueGame(SaveData loadedData)
     {         
-        GameObject.FindObjectOfType<CustomerManager>().OnLoadGame(loadedData.customerProgress);
-        GameObject.FindObjectOfType<TimeManager>().OnLoadGame(loadedData.day);
+        GameObject.FindObjectOfType<CustomerManager>().OnLoadGame(dayProg);
+        GameObject.FindObjectOfType<TimeManager>().OnLoadGame(customerProg);
+        Debug.Log("contgame");
     }
     public void LoadScene(string sceneName)
     {
