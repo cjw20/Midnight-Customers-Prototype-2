@@ -11,6 +11,12 @@ public class SaveUtility : MonoBehaviour
     [SerializeField] GameObject loadFileButtonPrefab;
 
     GlobalSave globalSave;
+
+
+    private void Start()
+    {
+       // DeleteAllSaves();
+    }
     public void SaveGame(string saveName)
     {
         BinaryFormatter formatter = new BinaryFormatter();
@@ -103,5 +109,15 @@ public class SaveUtility : MonoBehaviour
         }
         //get saves from file and display them all as buttons
         
+    }
+
+
+
+    void DeleteAllSaves()
+    {
+        string path = Application.persistentDataPath;
+        DirectoryInfo directory = new DirectoryInfo(path);
+        directory.Delete(true);
+        Directory.CreateDirectory(path);
     }
 }
