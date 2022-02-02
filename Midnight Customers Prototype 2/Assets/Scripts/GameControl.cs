@@ -50,7 +50,7 @@ public class GameControl : MonoBehaviour
     {
         if(scene.name == "SampleScene")
         {
-            if(dataToLoad != null)
+            if(dataToLoad.day != 0)
             {
                 ContinueGame();               
             }            
