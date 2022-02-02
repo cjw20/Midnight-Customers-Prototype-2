@@ -64,8 +64,6 @@ public class StockingItem : MonoBehaviour
             this.transform.position = collision.gameObject.GetComponent<Shelf>().target.position;
             collision.gameObject.GetComponent<Shelf>().stocked = true;
             stockingGame.ShelfItem();
-            Debug.Log(">>>");
-            //compare id with shelf id to see if correct item was placed. Affects preformance review?
         }
     }
 }
