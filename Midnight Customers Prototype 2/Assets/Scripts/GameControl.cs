@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.IO;
 
 public class GameControl : MonoBehaviour
 {
@@ -55,18 +57,18 @@ public class GameControl : MonoBehaviour
         {
             if(dataToLoad != null)
             {
-                ContinueGame(dataToLoad);
-                Debug.Log("cont");
+                ContinueGame();
+               
             }
-            Debug.Log("helloooo");
+            
         }
         
     }
-    public void ContinueGame(SaveData loadedData)
+    public void ContinueGame()
     {         
         GameObject.FindObjectOfType<CustomerManager>().OnLoadGame(dayProg);
         GameObject.FindObjectOfType<TimeManager>().OnLoadGame(customerProg);
-        Debug.Log("contgame");
+        
     }
     public void LoadScene(string sceneName)
     {

@@ -37,8 +37,7 @@ public class SaveUtility : MonoBehaviour
             SaveData data = formatter.Deserialize(stream) as SaveData;
 
             stream.Close();
-            Debug.Log(data.day.ToString());
-            Debug.Log(data.customerProgress.ToString());
+            
             return data;
         }
         else

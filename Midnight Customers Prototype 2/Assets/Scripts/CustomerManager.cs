@@ -20,7 +20,7 @@ public class CustomerManager : MonoBehaviour
     [Tooltip("List of the customers currently in the store.")]
     List<GameObject> customersInStore = new List<GameObject>();
 
-    void Start()
+    void Awake()
     {
         if(GameControl.control.loadingGame == false)
         {
