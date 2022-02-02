@@ -31,7 +31,6 @@ public class GameControl : MonoBehaviour
         {
             Destroy(gameObject);  
         }
-
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
     
@@ -43,13 +42,9 @@ public class GameControl : MonoBehaviour
     {
         loadingGame = true;
         SaveData dataToLoad = saveUtility.LoadGame(saveName);
-        Debug.Log(dataToLoad.day.ToString());
-        Debug.Log(dataToLoad.customerProgress.ToString() + ":)");
-
         dayProg = dataToLoad.day;
         customerProg = dataToLoad.customerProgress;
         LoadScene("SampleScene"); //load variables from save data once scene has loaded
-
     }
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
@@ -57,18 +52,14 @@ public class GameControl : MonoBehaviour
         {
             if(dataToLoad != null)
             {
-                ContinueGame();
-               
-            }
-            
-        }
-        
+                ContinueGame();               
+            }            
+        }        
     }
     public void ContinueGame()
     {         
         GameObject.FindObjectOfType<CustomerManager>().OnLoadGame(dayProg);
-        GameObject.FindObjectOfType<TimeManager>().OnLoadGame(customerProg);
-        
+        GameObject.FindObjectOfType<TimeManager>().OnLoadGame(customerProg);        
     }
     public void LoadScene(string sceneName)
     {

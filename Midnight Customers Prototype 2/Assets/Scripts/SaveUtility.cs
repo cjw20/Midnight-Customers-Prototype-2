@@ -51,8 +51,7 @@ public class SaveUtility : MonoBehaviour
     {
         BinaryFormatter formatter = new BinaryFormatter();
         string path = Application.persistentDataPath + "/Game.GlobalSave";
-        globalSave = new GlobalSave();
-        globalSave.saveFileNames = new List<string>();
+        
         if (!File.Exists(path))
         {
             //only happens first time            
