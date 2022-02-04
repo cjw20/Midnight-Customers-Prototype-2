@@ -26,7 +26,8 @@ public class SaveUtility : MonoBehaviour
         saveData.GetData();
         formatter.Serialize(stream, saveData);
         stream.Close();
-        
+
+        globalSave = GetGlobalSave();
         UpdateGlobalSave(saveName);
     }
 
@@ -75,7 +76,7 @@ public class SaveUtility : MonoBehaviour
         if (File.Exists(path))
         {
             BinaryFormatter formatter = new BinaryFormatter();
-            FileStream stream = new FileStream(path, FileMode.Open);
+            FileStream stream = new FileStream(path, FileMode.OpenOrCreate);
 
             GlobalSave data = formatter.Deserialize(stream) as GlobalSave;
 

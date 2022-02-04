@@ -33,7 +33,6 @@ public class CustomerManager : MonoBehaviour
     {
         arrayPos = progress;
         spawning = true;
-
         LoadCustomer(customers[arrayPos]);
     }
     public void LoadCustomer(GameObject customer)

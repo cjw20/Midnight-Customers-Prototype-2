@@ -50,7 +50,7 @@ public class GameControl : MonoBehaviour
     {
         if(scene.name == "SampleScene")
         {
-            if(dataToLoad.day != 0)
+            if(dayProg != 0)
             {
                 ContinueGame();               
             }            
@@ -58,8 +58,8 @@ public class GameControl : MonoBehaviour
     }
     public void ContinueGame()
     {         
-        GameObject.FindObjectOfType<CustomerManager>().OnLoadGame(dayProg);
-        GameObject.FindObjectOfType<TimeManager>().OnLoadGame(customerProg);        
+        GameObject.FindObjectOfType<CustomerManager>().OnLoadGame(customerProg);
+        GameObject.FindObjectOfType<TimeManager>().OnLoadGame(dayProg);        
     }
     public void LoadScene(string sceneName)
     {

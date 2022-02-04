@@ -65,7 +65,6 @@ public class TimeManager : MonoBehaviour
     {
         day = dayProgress;
         NewDay();
-        
     }
 
     // Update is called once per frame
