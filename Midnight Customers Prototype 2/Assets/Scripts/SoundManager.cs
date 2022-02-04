@@ -33,6 +33,14 @@ public class SoundManager : MonoBehaviour
     [Tooltip("Sound for setting down a bag of chips.")]
     [SerializeField] AudioSource chipsPutDownSound;
 
+    [Header("Phone Sounds")]
+    [Tooltip("Text message sound.")]
+    [SerializeField] AudioSource textMessageSound;
+    [Tooltip("Phone unlock sound.")]
+    [SerializeField] AudioSource unlockPhoneSound;
+    [Tooltip("Phone lock sound.")]
+    [SerializeField] AudioSource lockPhoneSound;
+
     [Header("Misc Sounds")]
     [Tooltip("Human footstep sounds.")]
     [SerializeField] AudioSource[] humanFootStepSound;
@@ -143,5 +151,20 @@ public class SoundManager : MonoBehaviour
     public void PlayChipsDownSound()
     {
         chipsPutDownSound.Play();
+    }
+
+    public void PlayTextMessageSound()
+    {
+        textMessageSound.Play();
+    }
+
+    public void PlayPhoneUnlockSound()
+    {
+        unlockPhoneSound.Play();
+    }
+
+    public void PlayPhoneLockSound()
+    {
+        lockPhoneSound.Play();
     }
 }
