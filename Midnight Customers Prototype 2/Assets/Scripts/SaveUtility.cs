@@ -15,13 +15,13 @@ public class SaveUtility : MonoBehaviour
 
     private void Start()
     {
-       // DeleteAllSaves();
+       
     }
     public void SaveGame(string saveName)
     {
         BinaryFormatter formatter = new BinaryFormatter();
         string path = Application.persistentDataPath + "/Game." + saveName;
-        FileStream stream = new FileStream(path, FileMode.Create);
+        FileStream stream = new FileStream(path, FileMode.OpenOrCreate);
         SaveData saveData = new SaveData();
         saveData.GetData();
         formatter.Serialize(stream, saveData);
@@ -64,7 +64,7 @@ public class SaveUtility : MonoBehaviour
             globalSave = new GlobalSave();
             globalSave.saveFileNames = new List<string>(); //if statement not working
         }
-        FileStream stream = new FileStream(path, FileMode.Create);
+        FileStream stream = new FileStream(path, FileMode.OpenOrCreate);
         globalSave.AddSave(saveName);
         formatter.Serialize(stream, globalSave);
         stream.Close();
@@ -113,7 +113,7 @@ public class SaveUtility : MonoBehaviour
 
 
 
-    void DeleteAllSaves()
+    public void DeleteAllSaves()
     {
         string path = Application.persistentDataPath;
         DirectoryInfo directory = new DirectoryInfo(path);
