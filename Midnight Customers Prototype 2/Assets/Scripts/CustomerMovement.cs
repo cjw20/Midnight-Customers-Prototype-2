@@ -50,6 +50,7 @@ public class CustomerMovement : MonoBehaviour
         customerManager = FindObjectOfType<CustomerManager>();
         agent = GetComponent<NavMeshAgent2D>();
         GoToNextPoint();
+        soundManager.PlayDoorCloseSound();
     }
 
     // Update is called once per frame
@@ -144,6 +145,7 @@ public class CustomerMovement : MonoBehaviour
     {
         destination = 0; //resets customers planned path
         customerManager.CustomerExit(this.gameObject);
-        soundManager.PlayDoorbellSound();
+        //soundManager.PlayDoorbellSound();
+        soundManager.PlayDoorCloseSound();
     }
 }

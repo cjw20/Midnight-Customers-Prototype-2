@@ -48,6 +48,8 @@ public class SoundManager : MonoBehaviour
     [SerializeField] AudioSource[] humanFootStepSound;
     [Tooltip("Sound for the door chime.")]
     [SerializeField] AudioSource doorbell;
+    [Tooltip("Door closing sound.")]
+    [SerializeField] AudioSource doorCloseSound;
 
     void Start()
     {
@@ -106,6 +108,11 @@ public class SoundManager : MonoBehaviour
     public void PlayDoorbellSound()
     {
         doorbell.Play();
+    }
+
+    public void PlayDoorCloseSound()
+    {
+        doorCloseSound.Play();
     }
 
     public void PlaySweepingSound()
