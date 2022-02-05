@@ -43,6 +43,10 @@ public class SoundManager : MonoBehaviour
     [Tooltip("Phone lock sound.")]
     [SerializeField] AudioSource lockPhoneSound;
 
+    [Header("UI Button Sounds")]
+    [Tooltip("Button sounds.")]
+    [SerializeField] AudioSource[] buttonSounds;
+
     [Header("Misc Sounds")]
     [Tooltip("Human footstep sounds.")]
     [SerializeField] AudioSource[] humanFootStepSound;
@@ -175,5 +179,10 @@ public class SoundManager : MonoBehaviour
     public void PlayPhoneLockSound()
     {
         lockPhoneSound.Play();
+    }
+
+    public void PlayButtonSound(int index)
+    {
+        buttonSounds[index].Play();
     }
 }
