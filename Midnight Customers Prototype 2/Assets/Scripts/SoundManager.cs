@@ -8,6 +8,8 @@ public class SoundManager : MonoBehaviour
     [Header("Music/Ambiance Sounds")]
     [Tooltip("Background music.")]
     public AudioSource bgm;
+    [Tooltip("Rain/Storm Sounds.")]
+    [SerializeField] AudioSource rain;
     [Header("Checkout Sounds")]
     [Tooltip("Sounds of heavy objects being put in bag.")]
     [SerializeField] AudioSource[] heavyBaggingSound;
@@ -47,10 +49,10 @@ public class SoundManager : MonoBehaviour
     [Tooltip("Sound for the door chime.")]
     [SerializeField] AudioSource doorbell;
 
-    // Start is called before the first frame update
     void Start()
     {
-        bgm.Play(); //looping?
+        //bgm.Play(); //looping?
+        rain.Play();
     }
 
     public void PauseBGM()
