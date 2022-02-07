@@ -45,6 +45,8 @@ public class TimeManager : MonoBehaviour
     RandomEventManager randomEvent;
     CheckoutManager checkoutManager;
 
+    [SerializeField] JournalDisplay journalDisplay;
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -150,6 +152,12 @@ public class TimeManager : MonoBehaviour
         UpdateText();
         toBlack.FadeOut(fadeDuration);
         NewDay();
+        journalDisplay.OpenJournal();
+        while (journalDisplay.inJournal)
+        {
+            yield return null; //waits until journal is closed
+        }
+
         yield return new WaitForSeconds(fadeDuration + 2);
         blackScreen.SetActive(false);
         customerManager.StartSpawns();
