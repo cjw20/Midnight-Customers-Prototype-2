@@ -15,10 +15,10 @@ public class SettingsScreen : MonoBehaviour
     [SerializeField] 
     TMPro.TMP_Dropdown resolutionDropdown;
 
-    public Font anti_dyslexia_font;
-    public Font default_font;
+    public TMPro.TMP_FontAsset anti_dyslexia_font;
+    public TMPro.TMP_FontAsset default_font;
 
-    public Text text;
+    public TMPro.TMP_Text text;
 
     void Start(){
         resolutions = Screen.resolutions;
