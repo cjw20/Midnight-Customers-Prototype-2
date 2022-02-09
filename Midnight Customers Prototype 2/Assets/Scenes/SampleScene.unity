@@ -9499,7 +9499,7 @@ MonoBehaviour:
   blackScreen: {fileID: 1151140294}
   toBlack: {fileID: 1151140295}
   playerStartingLoc: {fileID: 1405583354}
-  journalDisplay: {fileID: 0}
+  journalDisplay: {fileID: 350225329}
 --- !u!1 &848104265
 GameObject:
   m_ObjectHideFlags: 0
