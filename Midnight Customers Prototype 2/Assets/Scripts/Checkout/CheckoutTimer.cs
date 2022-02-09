@@ -122,6 +122,7 @@ public class CheckoutTimer : MonoBehaviour
     public void UpdateValue(float change)
     {
         slider.value += change;
+        SetMood();
         //for use of changing value up or down if action make customer happy/unhappy
     }
 

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Pause : MonoBehaviour
 {
@@ -57,5 +58,12 @@ public class Pause : MonoBehaviour
             Time.timeScale = 1;
             pauseScreen.SetActive(false);
         }
+    }
+
+
+    public void LoadScene(string sceneName)
+    {
+        Destroy(GameControl.control.gameObject); //prevents main menu button bugs
+        SceneManager.LoadScene(sceneName);
     }
 }
