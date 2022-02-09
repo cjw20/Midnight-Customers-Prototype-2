@@ -26,6 +26,10 @@ public class CheckoutTimer : MonoBehaviour
     [Header("References")]
     [Tooltip("Reference to the time slider.")]
     public Slider slider;
+    
+    [Tooltip("Reference to the image within the time slider.")]
+    public Image slideImage;
+    
     [Tooltip("Reference to a CheckoutManager class instance.")]
     [SerializeField] CheckoutManager checkoutManager;
 
@@ -75,18 +79,23 @@ public class CheckoutTimer : MonoBehaviour
         {
             case 3:
                 currentCustomer.GetComponentInChildren<MoodIndicator>().SetMood("happy");
+                slideImage.color = new Color(255f, 0f, 0f, 255f);
                 break;
             case 2:
                 currentCustomer.GetComponentInChildren<MoodIndicator>().SetMood("sad");
+                slideImage.color = new Color(200f, 0f, 0f, 255f);
                 break;
             case 1:
                 currentCustomer.GetComponentInChildren<MoodIndicator>().SetMood("angry");
+                slideImage.color = new Color(150f, 0f, 0f, 255f);
                 break;
             case 0:
                 currentCustomer.GetComponentInChildren<MoodIndicator>().SetMood("pissed");
+                slideImage.color = new Color(100f, 0f, 0f, 255f);
                 break;
             default:
                 currentCustomer.GetComponentInChildren<MoodIndicator>().SetMood("happy");
+                slideImage.color = Color.white;
                 break;
         }
     }
