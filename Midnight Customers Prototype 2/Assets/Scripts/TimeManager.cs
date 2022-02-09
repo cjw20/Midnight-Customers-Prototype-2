@@ -23,10 +23,10 @@ public class TimeManager : MonoBehaviour
 
     // References
     [Header("UI Object References")]
-    [Tooltip("Rect Tranform for Minutes Hand on Time Window")]
-    public RectTransform minutes_hand;
-    [Tooltip("Rect Tranform for Hours Hand on Time Window")]
-    public RectTransform hours_hand;
+    [Tooltip("Text to display the current day.")]
+    public Text dayText;
+    [Tooltip("Text to display the current time of the current day.")]
+    public Text timeText;
     [Tooltip("Black screen game object for fades during day transitions.")]
     public GameObject blackScreen; 
     [Tooltip("Reference to a Fade class instance.")]
@@ -44,7 +44,6 @@ public class TimeManager : MonoBehaviour
     StoryEventHandler storyEvent;
     RandomEventManager randomEvent;
     CheckoutManager checkoutManager;
-    float minutes_last = 0f;
 
     [SerializeField] JournalDisplay journalDisplay;
 
@@ -61,7 +60,7 @@ public class TimeManager : MonoBehaviour
         checkoutManager = FindObjectOfType<CheckoutManager>();
         //if ^ is too slow, do different way later
         timerRunning = true;
-        UpdateClock();
+        UpdateText();
     }
 
     public void OnLoadGame(int dayProgress)
@@ -102,19 +101,31 @@ public class TimeManager : MonoBehaviour
                 timerRunning = false;
                 StartCoroutine(EndDay());
             }
-            UpdateClock();
+            UpdateText();
         }
     }
 
-    void UpdateClock()
+    void UpdateText()
     {
-        float elapsed = 0f; //accounts for time elapsed since last call
-        elapsed = (minutes_last > minutes) ? 60 - minutes_last + minutes : minutes - minutes_last; 
-        Vector3 min_rot = new Vector3(0f, 0f, elapsed * 6f);
-        Vector3 h_rot = new Vector3(0f, 0f, elapsed * 0.5f);
-        minutes_hand.Rotate(-min_rot);
-        hours_hand.Rotate(-h_rot);
-        minutes_last = minutes;
+        dayText.text = "Day: " + day.ToString();
+
+        if (hours < 10)
+        {
+            timeText.text = "0" + hours.ToString();
+        }
+        else
+        {
+            timeText.text = "" + hours.ToString();
+        }
+
+        if (minutes < 10)
+        {
+            timeText.text += ":0" + minutes.ToString();
+        }
+        else
+        {
+            timeText.text += ":" + minutes.ToString();
+        }
     }
 
     IEnumerator EndDay()
@@ -138,7 +149,7 @@ public class TimeManager : MonoBehaviour
         day++;
 
         GameControl.control.SaveGame("Day " + day.ToString()); //may not be best place to do this
-        UpdateClock();
+        UpdateText();
         toBlack.FadeOut(fadeDuration);
         NewDay();
         journalDisplay.OpenJournal();
