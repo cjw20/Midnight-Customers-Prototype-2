@@ -350,7 +350,7 @@ GameObject:
   m_Component:
   - component: {fileID: 24604259}
   - component: {fileID: 24604260}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Door Mat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -594,7 +594,7 @@ GameObject:
   - component: {fileID: 78084128}
   - component: {fileID: 78084127}
   - component: {fileID: 78084126}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Sunglasses Stand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -944,6 +944,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mood Indicator
       objectReference: {fileID: 0}
+    - target: {fileID: 2781311071296055028, guid: cd1317c45a3eaef4ea17cf6999e5d1bb, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7353394671645645614, guid: cd1317c45a3eaef4ea17cf6999e5d1bb, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -1044,7 +1048,7 @@ GameObject:
   m_Component:
   - component: {fileID: 150262515}
   - component: {fileID: 150262514}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Door Close
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1493,7 +1497,7 @@ GameObject:
   - component: {fileID: 175568687}
   - component: {fileID: 175568686}
   - component: {fileID: 175568688}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1704,7 +1708,7 @@ GameObject:
   - component: {fileID: 195523774}
   - component: {fileID: 195523773}
   - component: {fileID: 195523776}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ATM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2004,7 +2008,7 @@ GameObject:
   m_Component:
   - component: {fileID: 232381487}
   - component: {fileID: 232381488}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Fresh 2 Go
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2729,7 +2733,7 @@ GameObject:
   - component: {fileID: 283636691}
   - component: {fileID: 283636690}
   - component: {fileID: 283636695}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Wine Shelf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3014,7 +3018,7 @@ GameObject:
   m_Component:
   - component: {fileID: 298740108}
   - component: {fileID: 298740109}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Fridge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3173,7 +3177,7 @@ GameObject:
   - component: {fileID: 333814748}
   - component: {fileID: 333814747}
   - component: {fileID: 333814746}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Gumball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3765,6 +3769,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mood Indicator
       objectReference: {fileID: 0}
+    - target: {fileID: 2781311071296055028, guid: cd1317c45a3eaef4ea17cf6999e5d1bb, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7353394671645645614, guid: cd1317c45a3eaef4ea17cf6999e5d1bb, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -4101,7 +4109,7 @@ GameObject:
   - component: {fileID: 423739896}
   - component: {fileID: 423739895}
   - component: {fileID: 423739897}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Wall (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5261,7 +5269,7 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
-  - component: {fileID: 519420033}
+  - component: {fileID: 519420034}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -5367,7 +5375,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &519420033
+--- !u!114 &519420034
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5376,12 +5384,57 @@ MonoBehaviour:
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f66cf749fd2cf5f4a8b6b006ec72634f, type: 3}
+  m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GrainStrange: 0.2
-  VignetteStrange: 15.1
-  JitterStrange: 0.00123
+  volumeTrigger: {fileID: 519420032}
+  volumeLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  stopNaNPropagation: 1
+  finalBlitToCameraTarget: 0
+  antialiasingMode: 3
+  temporalAntialiasing:
+    jitterSpread: 0.75
+    sharpness: 1.59
+    stationaryBlending: 0.95
+    motionBlending: 0.85
+  subpixelMorphologicalAntialiasing:
+    quality: 2
+  fastApproximateAntialiasing:
+    fastMode: 0
+    keepAlpha: 0
+  fog:
+    enabled: 1
+    excludeSkybox: 1
+  debugLayer:
+    lightMeter:
+      width: 512
+      height: 256
+      showCurves: 1
+    histogram:
+      width: 512
+      height: 256
+      channel: 3
+    waveform:
+      exposure: 0.12
+      height: 256
+    vectorscope:
+      size: 256
+      exposure: 0.12
+    overlaySettings:
+      linearDepth: 0
+      motionColorIntensity: 4
+      motionGridSize: 64
+      colorBlindnessType: 0
+      colorBlindnessStrength: 1
+  m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
+  m_ShowToolkit: 0
+  m_ShowCustomSorter: 0
+  breakBeforeColorGrading: 0
+  m_BeforeTransparentBundles: []
+  m_BeforeStackBundles: []
+  m_AfterStackBundles: []
 --- !u!1 &535664505
 GameObject:
   m_ObjectHideFlags: 0
@@ -5497,7 +5550,7 @@ GameObject:
   m_Component:
   - component: {fileID: 543929686}
   - component: {fileID: 543929687}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor and Walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5751,7 +5804,7 @@ GameObject:
   - component: {fileID: 558794629}
   - component: {fileID: 558794628}
   - component: {fileID: 558794627}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Middle Shelf 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6439,7 +6492,7 @@ GameObject:
   m_Component:
   - component: {fileID: 603537990}
   - component: {fileID: 603537991}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Drink Up
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7327,7 +7380,7 @@ GameObject:
   m_Component:
   - component: {fileID: 668096973}
   - component: {fileID: 668096972}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Customer Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8185,7 +8238,7 @@ GameObject:
   - component: {fileID: 758472969}
   - component: {fileID: 758472970}
   - component: {fileID: 758472971}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Flash Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8606,6 +8659,10 @@ PrefabInstance:
     - target: {fileID: 2781311071296055028, guid: cd1317c45a3eaef4ea17cf6999e5d1bb, type: 3}
       propertyPath: m_Name
       value: Mood Indicator
+      objectReference: {fileID: 0}
+    - target: {fileID: 2781311071296055028, guid: cd1317c45a3eaef4ea17cf6999e5d1bb, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7353394671645645614, guid: cd1317c45a3eaef4ea17cf6999e5d1bb, type: 3}
       propertyPath: m_RootOrder
@@ -9386,7 +9443,7 @@ GameObject:
   - component: {fileID: 885160251}
   - component: {fileID: 885160250}
   - component: {fileID: 885160255}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Counter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11222,7 +11279,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1038442746}
   - component: {fileID: 1038442747}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: '! Pop up'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11338,7 +11395,7 @@ GameObject:
   - component: {fileID: 1050122171}
   - component: {fileID: 1050122173}
   - component: {fileID: 1050122172}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Middle Shelf 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11898,7 +11955,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1089940875}
   - component: {fileID: 1089940876}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Top Double Shelves
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12158,7 +12215,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1141931087}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Store
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15088,6 +15145,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mood Indicator
       objectReference: {fileID: 0}
+    - target: {fileID: 2781311071296055028, guid: cd1317c45a3eaef4ea17cf6999e5d1bb, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7353394671645645614, guid: cd1317c45a3eaef4ea17cf6999e5d1bb, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -17366,7 +17427,7 @@ GameObject:
   - component: {fileID: 1562058184}
   - component: {fileID: 1562058183}
   - component: {fileID: 1562058185}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Wall (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17739,7 +17800,7 @@ GameObject:
   - component: {fileID: 1586952604}
   - component: {fileID: 1586952603}
   - component: {fileID: 1586952605}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Wall (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18191,7 +18252,7 @@ GameObject:
   - component: {fileID: 1638469476}
   - component: {fileID: 1638469475}
   - component: {fileID: 1638469474}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Food Station
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18420,7 +18481,7 @@ GameObject:
   - component: {fileID: 1675290342}
   - component: {fileID: 1675290343}
   - component: {fileID: 1675290344}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -19238,6 +19299,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mood Indicator
       objectReference: {fileID: 0}
+    - target: {fileID: 2781311071296055028, guid: cd1317c45a3eaef4ea17cf6999e5d1bb, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7353394671645645614, guid: cd1317c45a3eaef4ea17cf6999e5d1bb, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -19706,7 +19771,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1779060661}
   - component: {fileID: 1779060662}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Soda Machine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19939,7 +20004,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1800237444}
   - component: {fileID: 1800237445}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Point Light 2D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20024,7 +20089,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1803079049}
   - component: {fileID: 1803079050}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Windows
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20107,7 +20172,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1804073395}
   - component: {fileID: 1804073396}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Bathroom Sign
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24398,7 +24463,7 @@ GameObject:
   - component: {fileID: 1907573569}
   - component: {fileID: 1907573570}
   - component: {fileID: 1907573571}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Register
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25218,6 +25283,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mood Indicator
       objectReference: {fileID: 0}
+    - target: {fileID: 2781311071296055028, guid: cd1317c45a3eaef4ea17cf6999e5d1bb, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7353394671645645614, guid: cd1317c45a3eaef4ea17cf6999e5d1bb, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -25744,7 +25813,7 @@ GameObject:
   - component: {fileID: 2019865360}
   - component: {fileID: 2019865361}
   - component: {fileID: 2019865362}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25924,7 +25993,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2022322654}
   - component: {fileID: 2022322655}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Fridge Compressor Sound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26187,7 +26256,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2053526542}
   - component: {fileID: 2053526543}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: '? Pop up'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26699,7 +26768,7 @@ GameObject:
   - component: {fileID: 2102159245}
   - component: {fileID: 2102159244}
   - component: {fileID: 2102159243}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Magazine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27021,6 +27090,10 @@ PrefabInstance:
       value: Investigator
       objectReference: {fileID: 0}
     - target: {fileID: 6010064553094314899, guid: c208794e7e4da754bade06a8d0248f4b, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6010064553094314899, guid: c208794e7e4da754bade06a8d0248f4b, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -27157,6 +27230,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mood Indicator
       objectReference: {fileID: 0}
+    - target: {fileID: 2781311071296055028, guid: cd1317c45a3eaef4ea17cf6999e5d1bb, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7353394671645645614, guid: cd1317c45a3eaef4ea17cf6999e5d1bb, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -27221,6 +27298,10 @@ PrefabInstance:
     - target: {fileID: 4341891569755352042, guid: 9579c97dd5ae56845b66ea882b61d3d2, type: 3}
       propertyPath: m_Name
       value: Dchichi
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341891569755352042, guid: 9579c97dd5ae56845b66ea882b61d3d2, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4341891569755352042, guid: 9579c97dd5ae56845b66ea882b61d3d2, type: 3}
       propertyPath: m_IsActive
@@ -27402,6 +27483,10 @@ PrefabInstance:
     - target: {fileID: 4216765681452312128, guid: 706be3c207d989e4f822127c1904852b, type: 3}
       propertyPath: m_Name
       value: Ygolonac
+      objectReference: {fileID: 0}
+    - target: {fileID: 4216765681452312128, guid: 706be3c207d989e4f822127c1904852b, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4216765681452312128, guid: 706be3c207d989e4f822127c1904852b, type: 3}
       propertyPath: m_IsActive
@@ -27758,6 +27843,10 @@ PrefabInstance:
       value: Aylith
       objectReference: {fileID: 0}
     - target: {fileID: 7804919453073409263, guid: 8b5f02a04c322d144a270de753473b49, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7804919453073409263, guid: 8b5f02a04c322d144a270de753473b49, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -27923,6 +28012,10 @@ PrefabInstance:
     - target: {fileID: 694592631186955911, guid: 57b0baff431f6ff4285709247c7e3789, type: 3}
       propertyPath: m_Name
       value: Yith
+      objectReference: {fileID: 0}
+    - target: {fileID: 694592631186955911, guid: 57b0baff431f6ff4285709247c7e3789, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 694592631186955911, guid: 57b0baff431f6ff4285709247c7e3789, type: 3}
       propertyPath: m_IsActive
@@ -28159,6 +28252,10 @@ PrefabInstance:
     - target: {fileID: 1866453741624688688, guid: 57b0baff431f6ff4285709247c7e3789, type: 3}
       propertyPath: m_LocalPosition.y
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445578069389032938, guid: 57b0baff431f6ff4285709247c7e3789, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57b0baff431f6ff4285709247c7e3789, type: 3}
@@ -28416,6 +28513,10 @@ PrefabInstance:
       value: Human1
       objectReference: {fileID: 0}
     - target: {fileID: 5642382787059048446, guid: 0c385362111dbf04cbbe979bb5f2d605, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5642382787059048446, guid: 0c385362111dbf04cbbe979bb5f2d605, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -28483,6 +28584,10 @@ PrefabInstance:
     - target: {fileID: 2086022073797734995, guid: d52477f69afa3d04ba8c39de28ca629d, type: 3}
       propertyPath: m_Name
       value: Human2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2086022073797734995, guid: d52477f69afa3d04ba8c39de28ca629d, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2086022073797734995, guid: d52477f69afa3d04ba8c39de28ca629d, type: 3}
       propertyPath: m_IsActive
@@ -28698,6 +28803,10 @@ PrefabInstance:
     - target: {fileID: 8396762688156681531, guid: b2dd033b1b039cd468d20d6509b308d7, type: 3}
       propertyPath: m_Name
       value: Deep One
+      objectReference: {fileID: 0}
+    - target: {fileID: 8396762688156681531, guid: b2dd033b1b039cd468d20d6509b308d7, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8396762688156681531, guid: b2dd033b1b039cd468d20d6509b308d7, type: 3}
       propertyPath: m_IsActive
