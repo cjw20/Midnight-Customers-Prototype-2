@@ -17,41 +17,115 @@ MonoBehaviour:
     PortName: Next
     TargetNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
   - BaseNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
-    PortName: That is none of your business.
-    TargetNodeGuid: b7fd2938-526d-4215-a179-cb84dfa4443c
-  - BaseNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
-    PortName: Perhaps, why does it matter to you?
+    PortName: What are you talking about?
     TargetNodeGuid: b4bd8c43-26fb-45d4-8901-ad8c9d6ab453
+  - BaseNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
+    PortName: A discovery about who?
+    TargetNodeGuid: b7fd2938-526d-4215-a179-cb84dfa4443c
+  - BaseNodeGuid: b7fd2938-526d-4215-a179-cb84dfa4443c
+    PortName: Oh, you mean Vanessa?
+    TargetNodeGuid: dc06b0af-bab4-4d5c-855d-9162593efcb9
   - BaseNodeGuid: b4bd8c43-26fb-45d4-8901-ad8c9d6ab453
-    PortName: Maybe she is undercover.
+    PortName: Oh, you mean Vanessa?
+    TargetNodeGuid: dc06b0af-bab4-4d5c-855d-9162593efcb9
+  - BaseNodeGuid: b4bd8c43-26fb-45d4-8901-ad8c9d6ab453
+    PortName: What about her?
     TargetNodeGuid: 3c449ca4-7be4-4486-a872-a5c1b450de74
   - BaseNodeGuid: b7fd2938-526d-4215-a179-cb84dfa4443c
-    PortName: Maybe she is undercover.
+    PortName: What about her?
     TargetNodeGuid: 3c449ca4-7be4-4486-a872-a5c1b450de74
-  - BaseNodeGuid: b4bd8c43-26fb-45d4-8901-ad8c9d6ab453
-    PortName: How do you know all of this.
-    TargetNodeGuid: dc06b0af-bab4-4d5c-855d-9162593efcb9
-  - BaseNodeGuid: b7fd2938-526d-4215-a179-cb84dfa4443c
-    PortName: How do you know all of this.
-    TargetNodeGuid: dc06b0af-bab4-4d5c-855d-9162593efcb9
+  - BaseNodeGuid: dc06b0af-bab4-4d5c-855d-9162593efcb9
+    PortName: What's your point?
+    TargetNodeGuid: 66d39f57-650a-4758-a14a-16c5c02ece3c
+  - BaseNodeGuid: dc06b0af-bab4-4d5c-855d-9162593efcb9
+    PortName: For good things, I hope.
+    TargetNodeGuid: 516a6227-7bce-475e-99b6-1d340f6e33ff
+  - BaseNodeGuid: 66d39f57-650a-4758-a14a-16c5c02ece3c
+    PortName: Asking too much about what?
+    TargetNodeGuid: 5dbadf25-9f9b-4640-9502-71d15f4fc64c
+  - BaseNodeGuid: 516a6227-7bce-475e-99b6-1d340f6e33ff
+    PortName: Asking too much about what?
+    TargetNodeGuid: 5dbadf25-9f9b-4640-9502-71d15f4fc64c
+  - BaseNodeGuid: 3c449ca4-7be4-4486-a872-a5c1b450de74
+    PortName: Asking too much about what?
+    TargetNodeGuid: 5dbadf25-9f9b-4640-9502-71d15f4fc64c
+  - BaseNodeGuid: 3c449ca4-7be4-4486-a872-a5c1b450de74
+    PortName: So, she was a cop. Who cares?
+    TargetNodeGuid: bbcd677f-fd88-4736-a63a-a11ae8b00d88
+  - BaseNodeGuid: 66d39f57-650a-4758-a14a-16c5c02ece3c
+    PortName: So, she was a cop. Who cares?
+    TargetNodeGuid: bbcd677f-fd88-4736-a63a-a11ae8b00d88
+  - BaseNodeGuid: 516a6227-7bce-475e-99b6-1d340f6e33ff
+    PortName: So, she was a cop. Who cares?
+    TargetNodeGuid: bbcd677f-fd88-4736-a63a-a11ae8b00d88
+  - BaseNodeGuid: bbcd677f-fd88-4736-a63a-a11ae8b00d88
+    PortName: That seems far fetched.
+    TargetNodeGuid: 77bec7f1-2b43-4604-b0e5-67fa5b75dcb9
+  - BaseNodeGuid: 5dbadf25-9f9b-4640-9502-71d15f4fc64c
+    PortName: That seems far fetched.
+    TargetNodeGuid: 77bec7f1-2b43-4604-b0e5-67fa5b75dcb9
+  - BaseNodeGuid: bbcd677f-fd88-4736-a63a-a11ae8b00d88
+    PortName: How did she lie?
+    TargetNodeGuid: 52961a3d-5419-4796-860e-30211ac0b733
+  - BaseNodeGuid: 5dbadf25-9f9b-4640-9502-71d15f4fc64c
+    PortName: How did she lie?
+    TargetNodeGuid: 52961a3d-5419-4796-860e-30211ac0b733
+  - BaseNodeGuid: 77bec7f1-2b43-4604-b0e5-67fa5b75dcb9
+    PortName: If you say so. Bye.
+    TargetNodeGuid: a46bea4b-6fc5-43fb-9caf-c4bfc63525e3
+  - BaseNodeGuid: 77bec7f1-2b43-4604-b0e5-67fa5b75dcb9
+    PortName: I'll ask her about it. Thanks.
+    TargetNodeGuid: a46bea4b-6fc5-43fb-9caf-c4bfc63525e3
+  - BaseNodeGuid: 52961a3d-5419-4796-860e-30211ac0b733
+    PortName: If you say so. Bye.
+    TargetNodeGuid: a46bea4b-6fc5-43fb-9caf-c4bfc63525e3
+  - BaseNodeGuid: 52961a3d-5419-4796-860e-30211ac0b733
+    PortName: I'll ask her about it. Thanks.
+    TargetNodeGuid: a46bea4b-6fc5-43fb-9caf-c4bfc63525e3
   DialogueNodeData:
-  - Guid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
-    DialogueText: Have you talked to the woman in a fedora recently?
-    Position: {x: 221, y: 187}
   - Guid: b4bd8c43-26fb-45d4-8901-ad8c9d6ab453
-    DialogueText: She is not who she says she is.... I recognize her. She got fired
-      as a cop... no agency says that she is registered as an investigator.
-    Position: {x: 789, y: 109}
+    DialogueText: The one in the hat, of course.
+    Position: {x: 1182, y: 116}
+  - Guid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
+    DialogueText: You will be pleased to know I have made quite an interesting discovery
+      about her since we last met.
+    Position: {x: 227, y: 200}
   - Guid: b7fd2938-526d-4215-a179-cb84dfa4443c
-    DialogueText: She is a liar. She lost her job as a cop and is not a registered
-      private investigator.
-    Position: {x: 807, y: 283}
-  - Guid: 3c449ca4-7be4-4486-a872-a5c1b450de74
-    DialogueText: Ask her yourself, but I warn you in trusting this lying woman in
-      a fedora.
-    Position: {x: 1758, y: 189}
+    DialogueText: The one in the hat, of course.
+    Position: {x: 1183, y: 290}
   - Guid: dc06b0af-bab4-4d5c-855d-9162593efcb9
-    DialogueText: Ask her for the truth, but be warned she will likely lie.
-    Position: {x: 1773, y: 310}
+    DialogueText: Ah, yes. Vanessa...she is well known here.
+    Position: {x: 1820, y: 311}
+  - Guid: 66d39f57-650a-4758-a14a-16c5c02ece3c
+    DialogueText: She was once an enforcer of the law. She was forced to leave the
+      position for asking too many questions.
+    Position: {x: 2494, y: 321}
+  - Guid: 516a6227-7bce-475e-99b6-1d340f6e33ff
+    DialogueText: She was once an enforcer of the law. She was forced to leave the
+      position for asking too many questions.
+    Position: {x: 2493, y: 468}
+  - Guid: 3c449ca4-7be4-4486-a872-a5c1b450de74
+    DialogueText: She was once an enforcer of the law. She was forced to leave the
+      position for asking too many questions.
+    Position: {x: 2492, y: 152}
+  - Guid: bbcd677f-fd88-4736-a63a-a11ae8b00d88
+    DialogueText: She has since given herself the title of Private Investigator,
+      but this is a lie.
+    Position: {x: 3481, y: 248}
+  - Guid: 5dbadf25-9f9b-4640-9502-71d15f4fc64c
+    DialogueText: I suggest you direct that question at her. You should also ask
+      why she has lied about her current position.
+    Position: {x: 3480, y: 404}
+  - Guid: 52961a3d-5419-4796-860e-30211ac0b733
+    DialogueText: Well, no one has hired her. The rest of the of the answers you
+      seek are with her. I look forward to hearing what you learn.
+    Position: {x: 4348, y: 399}
+  - Guid: 77bec7f1-2b43-4604-b0e5-67fa5b75dcb9
+    DialogueText: Not when no one has ever hired her. She can explain further. You
+      must only ask. I look forward to hearing what you learn.
+    Position: {x: 4346, y: 231}
+  - Guid: a46bea4b-6fc5-43fb-9caf-c4bfc63525e3
+    DialogueText: +0
+    Position: {x: 5309, y: 342}
   ExposedProperties: []
   CommentBlockData: []
