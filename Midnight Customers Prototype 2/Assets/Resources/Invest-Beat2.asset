@@ -1,0 +1,249 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
+  m_Name: Invest-Beat2
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: 46c52957-038e-4fe9-9645-c1a9851b21ff
+    PortName: Next
+    TargetNodeGuid: ec4ae997-7b04-4744-84c3-237610341385
+  - BaseNodeGuid: ec4ae997-7b04-4744-84c3-237610341385
+    PortName: How are you today?
+    TargetNodeGuid: 7e5b076d-19f6-470e-985f-39fde9fb500a
+  - BaseNodeGuid: ec4ae997-7b04-4744-84c3-237610341385
+    PortName: How's work going?
+    TargetNodeGuid: de53fefc-c1f1-425a-a7eb-3134ea2ef0b0
+  - BaseNodeGuid: de53fefc-c1f1-425a-a7eb-3134ea2ef0b0
+    PortName: How can I help?
+    TargetNodeGuid: 9cadfa13-f21e-4526-907e-c574f1a6563b
+  - BaseNodeGuid: de53fefc-c1f1-425a-a7eb-3134ea2ef0b0
+    PortName: Me? Am I your partner now?
+    TargetNodeGuid: 94cfc63e-89f5-48b5-9338-2ec82e604b60
+  - BaseNodeGuid: 7e5b076d-19f6-470e-985f-39fde9fb500a
+    PortName: What cellar?
+    TargetNodeGuid: ecc2d524-071c-48c9-b03a-6ce12aa54c63
+  - BaseNodeGuid: 9cadfa13-f21e-4526-907e-c574f1a6563b
+    PortName: What cellar?
+    TargetNodeGuid: ecc2d524-071c-48c9-b03a-6ce12aa54c63
+  - BaseNodeGuid: 94cfc63e-89f5-48b5-9338-2ec82e604b60
+    PortName: What cellar?
+    TargetNodeGuid: ecc2d524-071c-48c9-b03a-6ce12aa54c63
+  - BaseNodeGuid: 7e5b076d-19f6-470e-985f-39fde9fb500a
+    PortName: Why are you being so aggressive?
+    TargetNodeGuid: a95f2c21-8498-47b1-a95e-798be112bbc4
+  - BaseNodeGuid: 9cadfa13-f21e-4526-907e-c574f1a6563b
+    PortName: Why are you being so aggressive?
+    TargetNodeGuid: a95f2c21-8498-47b1-a95e-798be112bbc4
+  - BaseNodeGuid: 94cfc63e-89f5-48b5-9338-2ec82e604b60
+    PortName: Why are you being so aggressive?
+    TargetNodeGuid: a95f2c21-8498-47b1-a95e-798be112bbc4
+  - BaseNodeGuid: ecc2d524-071c-48c9-b03a-6ce12aa54c63
+    PortName: There's a storage room but that's it, sorry.
+    TargetNodeGuid: 9b924737-9f1d-491a-8f23-abf065b7ced7
+  - BaseNodeGuid: a95f2c21-8498-47b1-a95e-798be112bbc4
+    PortName: There's a storage room but that's it, sorry.
+    TargetNodeGuid: 9b924737-9f1d-491a-8f23-abf065b7ced7
+  - BaseNodeGuid: ecc2d524-071c-48c9-b03a-6ce12aa54c63
+    PortName: What kind of stuff?
+    TargetNodeGuid: 5b7f3df5-ad1f-402f-940d-f606c8d884ff
+  - BaseNodeGuid: a95f2c21-8498-47b1-a95e-798be112bbc4
+    PortName: What kind of stuff?
+    TargetNodeGuid: 5b7f3df5-ad1f-402f-940d-f606c8d884ff
+  - BaseNodeGuid: 9b924737-9f1d-491a-8f23-abf065b7ced7
+    PortName: I'm sorry. I don't know anything about it.
+    TargetNodeGuid: d5a9b725-2fef-4a1a-929e-3e8909d0257c
+  - BaseNodeGuid: 5b7f3df5-ad1f-402f-940d-f606c8d884ff
+    PortName: I'm sorry. I don't know anything about it.
+    TargetNodeGuid: d5a9b725-2fef-4a1a-929e-3e8909d0257c
+  - BaseNodeGuid: 9b924737-9f1d-491a-8f23-abf065b7ced7
+    PortName: Seriously, what are you talking about?
+    TargetNodeGuid: b6e20d64-4936-4fdc-bd2c-8363ac5ec725
+  - BaseNodeGuid: 5b7f3df5-ad1f-402f-940d-f606c8d884ff
+    PortName: Seriously, what are you talking about?
+    TargetNodeGuid: b6e20d64-4936-4fdc-bd2c-8363ac5ec725
+  - BaseNodeGuid: d5a9b725-2fef-4a1a-929e-3e8909d0257c
+    PortName: How did you learn about this?
+    TargetNodeGuid: b66936f9-c35e-44a1-85f7-86cf75e2823e
+  - BaseNodeGuid: b6e20d64-4936-4fdc-bd2c-8363ac5ec725
+    PortName: How did you learn about this?
+    TargetNodeGuid: b66936f9-c35e-44a1-85f7-86cf75e2823e
+  - BaseNodeGuid: d5a9b725-2fef-4a1a-929e-3e8909d0257c
+    PortName: Wait. Is this place haunted?
+    TargetNodeGuid: a492bf32-879d-4d59-a809-507dab361ec1
+  - BaseNodeGuid: b6e20d64-4936-4fdc-bd2c-8363ac5ec725
+    PortName: Wait. Is this place haunted?
+    TargetNodeGuid: a492bf32-879d-4d59-a809-507dab361ec1
+  - BaseNodeGuid: b66936f9-c35e-44a1-85f7-86cf75e2823e
+    PortName: Maybe my boss would know more.
+    TargetNodeGuid: 52fd924a-47c8-4013-8ee1-e9d0c4c89266
+  - BaseNodeGuid: b66936f9-c35e-44a1-85f7-86cf75e2823e
+    PortName: So, you broke in?
+    TargetNodeGuid: 8f668426-6c2e-4b3c-8c18-44369da9bc05
+  - BaseNodeGuid: a492bf32-879d-4d59-a809-507dab361ec1
+    PortName: So, you broke in?
+    TargetNodeGuid: 8f668426-6c2e-4b3c-8c18-44369da9bc05
+  - BaseNodeGuid: a492bf32-879d-4d59-a809-507dab361ec1
+    PortName: Maybe my boss would know more.
+    TargetNodeGuid: 52fd924a-47c8-4013-8ee1-e9d0c4c89266
+  - BaseNodeGuid: 52fd924a-47c8-4013-8ee1-e9d0c4c89266
+    PortName: Should I be worried?
+    TargetNodeGuid: 814bef28-39b9-4d8c-b5fd-56b00a883316
+  - BaseNodeGuid: 52fd924a-47c8-4013-8ee1-e9d0c4c89266
+    PortName: Well, I wanna know about it.
+    TargetNodeGuid: 6601043c-549f-411e-bf22-b5e7911e3eca
+  - BaseNodeGuid: 8f668426-6c2e-4b3c-8c18-44369da9bc05
+    PortName: What? You don't believe me?
+    TargetNodeGuid: 055c9032-95fe-470a-a1b4-14e0d9e3ba90
+  - BaseNodeGuid: 6601043c-549f-411e-bf22-b5e7911e3eca
+    PortName: What? You don't believe me?
+    TargetNodeGuid: 055c9032-95fe-470a-a1b4-14e0d9e3ba90
+  - BaseNodeGuid: 814bef28-39b9-4d8c-b5fd-56b00a883316
+    PortName: What? You don't believe me?
+    TargetNodeGuid: 055c9032-95fe-470a-a1b4-14e0d9e3ba90
+  - BaseNodeGuid: 814bef28-39b9-4d8c-b5fd-56b00a883316
+    PortName: I'm absolutely sure.
+    TargetNodeGuid: bed3b73e-db39-4ffe-8134-09377d813118
+  - BaseNodeGuid: 6601043c-549f-411e-bf22-b5e7911e3eca
+    PortName: I'm absolutely sure.
+    TargetNodeGuid: bed3b73e-db39-4ffe-8134-09377d813118
+  - BaseNodeGuid: 8f668426-6c2e-4b3c-8c18-44369da9bc05
+    PortName: I'm absolutely sure.
+    TargetNodeGuid: bed3b73e-db39-4ffe-8134-09377d813118
+  - BaseNodeGuid: 055c9032-95fe-470a-a1b4-14e0d9e3ba90
+    PortName: I promise that I don't know anything.
+    TargetNodeGuid: 43134244-7afc-45be-bfce-3eff9a4dae64
+  - BaseNodeGuid: 055c9032-95fe-470a-a1b4-14e0d9e3ba90
+    PortName: How do I know you're not lying?
+    TargetNodeGuid: 7127c8af-0fb7-4eb8-9cf5-c1006f0b3d3b
+  - BaseNodeGuid: 43134244-7afc-45be-bfce-3eff9a4dae64
+    PortName: I'll think about it.
+    TargetNodeGuid: b66fbd22-70e3-4bfd-9f85-3fd968ba78ce
+  - BaseNodeGuid: 7127c8af-0fb7-4eb8-9cf5-c1006f0b3d3b
+    PortName: I'll think about it.
+    TargetNodeGuid: b66fbd22-70e3-4bfd-9f85-3fd968ba78ce
+  - BaseNodeGuid: bed3b73e-db39-4ffe-8134-09377d813118
+    PortName: I'll think about it.
+    TargetNodeGuid: b66fbd22-70e3-4bfd-9f85-3fd968ba78ce
+  - BaseNodeGuid: bed3b73e-db39-4ffe-8134-09377d813118
+    PortName: I'll help in anyway I can, ma'am.
+    TargetNodeGuid: b661949b-aeb5-4cf6-b037-801bece3cca5
+  - BaseNodeGuid: 43134244-7afc-45be-bfce-3eff9a4dae64
+    PortName: I'll help in anyway I can, ma'am.
+    TargetNodeGuid: b661949b-aeb5-4cf6-b037-801bece3cca5
+  - BaseNodeGuid: 7127c8af-0fb7-4eb8-9cf5-c1006f0b3d3b
+    PortName: I'll help in anyway I can, ma'am.
+    TargetNodeGuid: b661949b-aeb5-4cf6-b037-801bece3cca5
+  - BaseNodeGuid: b661949b-aeb5-4cf6-b037-801bece3cca5
+    PortName: Have a good night!
+    TargetNodeGuid: 97c7f332-aa94-4186-aff8-bfa2151fd79c
+  - BaseNodeGuid: b661949b-aeb5-4cf6-b037-801bece3cca5
+    PortName: Later.
+    TargetNodeGuid: 97c7f332-aa94-4186-aff8-bfa2151fd79c
+  - BaseNodeGuid: b66fbd22-70e3-4bfd-9f85-3fd968ba78ce
+    PortName: Have a good night!
+    TargetNodeGuid: 97c7f332-aa94-4186-aff8-bfa2151fd79c
+  - BaseNodeGuid: b66fbd22-70e3-4bfd-9f85-3fd968ba78ce
+    PortName: Later.
+    TargetNodeGuid: 97c7f332-aa94-4186-aff8-bfa2151fd79c
+  DialogueNodeData:
+  - Guid: ec4ae997-7b04-4744-84c3-237610341385
+    DialogueText: Hey, kid.
+    Position: {x: 238, y: 199}
+  - Guid: de53fefc-c1f1-425a-a7eb-3134ea2ef0b0
+    DialogueText: That's what I'm here for, actually. I have a question for ya.
+    Position: {x: 593, y: 252}
+  - Guid: 9cadfa13-f21e-4526-907e-c574f1a6563b
+    DialogueText: Explain the cellar. What the hell is going on down there?
+    Position: {x: 1112, y: 217}
+  - Guid: 94cfc63e-89f5-48b5-9338-2ec82e604b60
+    DialogueText: Cut the shit. Explain the cellar. What the hell is going on down
+      there?
+    Position: {x: 1108, y: 354}
+  - Guid: 7e5b076d-19f6-470e-985f-39fde9fb500a
+    DialogueText: Cut the small talk. Explain the cellar. What the hell is going
+      on down there?
+    Position: {x: 1113, y: 54}
+  - Guid: ecc2d524-071c-48c9-b03a-6ce12aa54c63
+    DialogueText: The storm cellar underneath this place. Someone's been doin' stuff
+      down there.
+    Position: {x: 1835, y: 107}
+  - Guid: a95f2c21-8498-47b1-a95e-798be112bbc4
+    DialogueText: There's storm cellar underneath this place. Someone's been doin'
+      stuff down there.
+    Position: {x: 1832, y: 249}
+  - Guid: 9b924737-9f1d-491a-8f23-abf065b7ced7
+    DialogueText: You really don't know? What about your co-workers?
+    Position: {x: 2605, y: 120}
+  - Guid: 5b7f3df5-ad1f-402f-940d-f606c8d884ff
+    DialogueText: You really don't know? What about your co-workers?
+    Position: {x: 2607, y: 259}
+  - Guid: d5a9b725-2fef-4a1a-929e-3e8909d0257c
+    DialogueText: Like I said, there's a storm cellar underneath this place. Probably
+      from an old church that was built here.
+    Position: {x: 3199, y: 132}
+  - Guid: b6e20d64-4936-4fdc-bd2c-8363ac5ec725
+    DialogueText: Like I said, there's a storm cellar underneath this place. Probably
+      from an old church that was built here.
+    Position: {x: 3201, y: 285}
+  - Guid: b66936f9-c35e-44a1-85f7-86cf75e2823e
+    DialogueText: I was looking through the town archives and found the blueprints
+      for this place.
+    Position: {x: 4072, y: 147}
+  - Guid: 52fd924a-47c8-4013-8ee1-e9d0c4c89266
+    DialogueText: What? No, don't be stupid. What if they're in on it? There was
+      clearly something messed up going on down there.
+    Position: {x: 5059, y: 118}
+  - Guid: a492bf32-879d-4d59-a809-507dab361ec1
+    DialogueText: Quit joking around. I was looking through the town archives and
+      found the blueprints for this place. That's how I found it.
+    Position: {x: 4074, y: 301}
+  - Guid: 814bef28-39b9-4d8c-b5fd-56b00a883316
+    DialogueText: Well, there's weird books and chalk drawings of...something. You're
+      sure you know nothing about this?
+    Position: {x: 5940, y: 65}
+  - Guid: 6601043c-549f-411e-bf22-b5e7911e3eca
+    DialogueText: Well, there's weird books and chalk drawings of...something. You're
+      sure you know nothing about this?
+    Position: {x: 5940, y: 206}
+  - Guid: 055c9032-95fe-470a-a1b4-14e0d9e3ba90
+    DialogueText: Well, when someone finds your secret little demon worship dungeon
+      and confronts you about it, I doubt you'd be honest about it.
+    Position: {x: 6894, y: 301}
+  - Guid: 8f668426-6c2e-4b3c-8c18-44369da9bc05
+    DialogueText: I just checked it out is all. There's weird books and chalk drawings
+      of...something. You're sure you know nothing about this?
+    Position: {x: 5823, y: 352}
+  - Guid: 43134244-7afc-45be-bfce-3eff9a4dae64
+    DialogueText: If you say so. I'm gonna do some more digging but I'll be back
+      in a few days. I wanna know about any suspicious people you see, got it?
+    Position: {x: 7810, y: 250}
+  - Guid: 7127c8af-0fb7-4eb8-9cf5-c1006f0b3d3b
+    DialogueText: Don't get smart with me, kid. I'm gonna do some more digging but
+      I'll be back in a few days. I wanna know about any suspicious people you see,
+      got it?
+    Position: {x: 7810, y: 387}
+  - Guid: bed3b73e-db39-4ffe-8134-09377d813118
+    DialogueText: If you say so. I'm gonna do some more digging but I'll be back
+      in a few days. I wanna know about any suspicious people you see, got it?
+    Position: {x: 7809, y: 96}
+  - Guid: b66fbd22-70e3-4bfd-9f85-3fd968ba78ce
+    DialogueText: Just do as I say. The name's Vanessa Romero by the way. I'll see
+      ya soon, kid.
+    Position: {x: 8929, y: 258}
+  - Guid: b661949b-aeb5-4cf6-b037-801bece3cca5
+    DialogueText: The name's Vanessa Romero by the way. I'll see ya soon, kid.
+    Position: {x: 8931, y: 114}
+  - Guid: 97c7f332-aa94-4186-aff8-bfa2151fd79c
+    DialogueText: +0
+    Position: {x: 9632, y: 185}
+  ExposedProperties: []
+  CommentBlockData: []
