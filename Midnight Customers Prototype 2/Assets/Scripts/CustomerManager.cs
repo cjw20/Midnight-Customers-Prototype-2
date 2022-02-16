@@ -42,7 +42,7 @@ public class CustomerManager : MonoBehaviour
         customersInStore.Add(customer);
         move.EnterStore();
         customer.transform.position = exit.position;
-        customer.GetComponent<MoodIndicator>().SetMood("happy");
+        customer.GetComponentInChildren<MoodIndicator>().SetMood("happy");
         //play sound for customer entering store
         //Set path
         //update any variables in customer info
