@@ -186,6 +186,7 @@ public class CheckoutManager : MonoBehaviour
         soundManager.PlayCashRegisterSound();
         customerPayed = true;
         priceText.text = "PAID";
+        checkoutTimer.isRunning = false;
         EndCheckout();
     }
 
