@@ -1,0 +1,199 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
+  m_Name: N-Cop
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: b678c041-6dbe-4af7-8c78-74f0315b7a69
+    PortName: Next
+    TargetNodeGuid: 6d139e9a-dcc1-45f7-9d19-e9ed9c266c02
+  - BaseNodeGuid: 6d139e9a-dcc1-45f7-9d19-e9ed9c266c02
+    PortName: Sure thing. What do you need?
+    TargetNodeGuid: 1281d269-c11f-48a1-8183-91f0875a904d
+  - BaseNodeGuid: 6d139e9a-dcc1-45f7-9d19-e9ed9c266c02
+    PortName: Maybe... A lot of people come in.
+    TargetNodeGuid: 650dc299-cb60-4f79-8a06-72233177f086
+  - BaseNodeGuid: 6d139e9a-dcc1-45f7-9d19-e9ed9c266c02
+    PortName: ...
+    TargetNodeGuid: 3d40753c-64da-4357-8c83-93f5344c57da
+  - BaseNodeGuid: 1281d269-c11f-48a1-8183-91f0875a904d
+    PortName: Nope, can't say that it does.
+    TargetNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+  - BaseNodeGuid: 1281d269-c11f-48a1-8183-91f0875a904d
+    PortName: Well... I don't know if I should say anything.
+    TargetNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+  - BaseNodeGuid: 1281d269-c11f-48a1-8183-91f0875a904d
+    PortName: ...
+    TargetNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+  - BaseNodeGuid: 650dc299-cb60-4f79-8a06-72233177f086
+    PortName: Nope, can't say that it does.
+    TargetNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+  - BaseNodeGuid: 650dc299-cb60-4f79-8a06-72233177f086
+    PortName: Well... I don't know if I should say anything.
+    TargetNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+  - BaseNodeGuid: 650dc299-cb60-4f79-8a06-72233177f086
+    PortName: ...
+    TargetNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+  - BaseNodeGuid: 3d40753c-64da-4357-8c83-93f5344c57da
+    PortName: Nope, can't say that it does.
+    TargetNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+  - BaseNodeGuid: 3d40753c-64da-4357-8c83-93f5344c57da
+    PortName: Well... I don't know if I should say anything.
+    TargetNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+  - BaseNodeGuid: 3d40753c-64da-4357-8c83-93f5344c57da
+    PortName: ...
+    TargetNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+  - BaseNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+    PortName: No, he didn't threaten me!
+    TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+  - BaseNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+    PortName: He told me I shouldn't trust you.
+    TargetNodeGuid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
+  - BaseNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+    PortName: 3-3
+    TargetNodeGuid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
+  - BaseNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+    PortName: No, he didn't threaten me!
+    TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+  - BaseNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+    PortName: He told me I shouldn't trust you.
+    TargetNodeGuid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
+  - BaseNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+    PortName: 3-3
+    TargetNodeGuid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
+  - BaseNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+    PortName: No, he didn't threaten me!
+    TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+  - BaseNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+    PortName: He told me I shouldn't trust you.
+    TargetNodeGuid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
+  - BaseNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+    PortName: 3-3
+    TargetNodeGuid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
+  - BaseNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+    PortName: If you're a cop, can I see your badge?
+    TargetNodeGuid: af93f235-b8f3-472c-bb2e-e406e04328c8
+  - BaseNodeGuid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
+    PortName: If you're a cop, can I see your badge?
+    TargetNodeGuid: af93f235-b8f3-472c-bb2e-e406e04328c8
+  - BaseNodeGuid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
+    PortName: If you're a cop, can I see your badge?
+    TargetNodeGuid: af93f235-b8f3-472c-bb2e-e406e04328c8
+  - BaseNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+    PortName: What did this guy do?
+    TargetNodeGuid: 51d1be4c-03cd-4c57-9b0e-b028c1d6887d
+  - BaseNodeGuid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
+    PortName: What did this guy do?
+    TargetNodeGuid: 51d1be4c-03cd-4c57-9b0e-b028c1d6887d
+  - BaseNodeGuid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
+    PortName: What did this guy do?
+    TargetNodeGuid: 51d1be4c-03cd-4c57-9b0e-b028c1d6887d
+  - BaseNodeGuid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
+    PortName: ...
+    TargetNodeGuid: ed6c6f38-4f65-4e43-8166-16f525b9d881
+  - BaseNodeGuid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
+    PortName: ...
+    TargetNodeGuid: ed6c6f38-4f65-4e43-8166-16f525b9d881
+  - BaseNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+    PortName: ...
+    TargetNodeGuid: ed6c6f38-4f65-4e43-8166-16f525b9d881
+  - BaseNodeGuid: af93f235-b8f3-472c-bb2e-e406e04328c8
+    PortName: I'm not telling you anything.
+    TargetNodeGuid: 301c581f-4662-4457-9959-b5f6686b82b2
+  - BaseNodeGuid: 51d1be4c-03cd-4c57-9b0e-b028c1d6887d
+    PortName: I'm not telling you anything.
+    TargetNodeGuid: 301c581f-4662-4457-9959-b5f6686b82b2
+  - BaseNodeGuid: ed6c6f38-4f65-4e43-8166-16f525b9d881
+    PortName: I'm not telling you anything.
+    TargetNodeGuid: 301c581f-4662-4457-9959-b5f6686b82b2
+  - BaseNodeGuid: af93f235-b8f3-472c-bb2e-e406e04328c8
+    PortName: He went that way.
+    TargetNodeGuid: 445d820a-059d-4bf9-8c8f-435d12a08ef0
+  - BaseNodeGuid: 51d1be4c-03cd-4c57-9b0e-b028c1d6887d
+    PortName: He went that way.
+    TargetNodeGuid: 445d820a-059d-4bf9-8c8f-435d12a08ef0
+  - BaseNodeGuid: ed6c6f38-4f65-4e43-8166-16f525b9d881
+    PortName: He went that way.
+    TargetNodeGuid: 445d820a-059d-4bf9-8c8f-435d12a08ef0
+  - BaseNodeGuid: ed6c6f38-4f65-4e43-8166-16f525b9d881
+    PortName: ...
+    TargetNodeGuid: 7ce00f99-aefb-473e-9e19-97f311d6521d
+  - BaseNodeGuid: 51d1be4c-03cd-4c57-9b0e-b028c1d6887d
+    PortName: ...
+    TargetNodeGuid: 7ce00f99-aefb-473e-9e19-97f311d6521d
+  - BaseNodeGuid: af93f235-b8f3-472c-bb2e-e406e04328c8
+    PortName: ...
+    TargetNodeGuid: 7ce00f99-aefb-473e-9e19-97f311d6521d
+  DialogueNodeData:
+  - Guid: 6d139e9a-dcc1-45f7-9d19-e9ed9c266c02
+    DialogueText: I'm looking for someone who may have stopped by here a few nights
+      ago. Thought maybe you could help.
+    Position: {x: 187.2, y: 200}
+  - Guid: 1281d269-c11f-48a1-8183-91f0875a904d
+    DialogueText: This person's a fugitive. Witnesses reported a red hatchback we
+      believe our suspect had stolen here a few nights ago. Ringing any bells?
+    Position: {x: 960.8, y: 55.2}
+  - Guid: 650dc299-cb60-4f79-8a06-72233177f086
+    DialogueText: Well this person's a wanted criminal. Witnesses reported a red
+      hatchback here a few nights ago our suspect may have stolen here a few nights
+      ago. Ringing any bells?
+    Position: {x: 962.4, y: 216.8}
+  - Guid: 3d40753c-64da-4357-8c83-93f5344c57da
+    DialogueText: This person's a fugitive. Witnesses reported a red hatchback we
+      believe our suspect had stolen here a few nights ago. Ringing any bells?
+    Position: {x: 963.2, y: 382.40002}
+  - Guid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+    DialogueText: Did he threaten you? Is that why you're keeping quiet?
+    Position: {x: 2086.4, y: 45.600002}
+  - Guid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+    DialogueText: Did he threaten you? Is that why you're covering for him?
+    Position: {x: 2085.6, y: 211.2}
+  - Guid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+    DialogueText: Did he threaten you? Is that why you're keeping quiet?
+    Position: {x: 2088, y: 373.6}
+  - Guid: c6d5da48-58f5-455b-95d2-29176a75c75d
+    DialogueText: So he was in here then? Look, kid, I'm a cop. I need you to tell
+      me which way he drove off.
+    Position: {x: 2576, y: 44.8}
+  - Guid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
+    DialogueText: So he was in here then? Look, kid, I'm a cop so you can trust me.
+      I just need you to tell me which way he drove off.
+    Position: {x: 2575.2, y: 212}
+  - Guid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
+    DialogueText: Look, kid, I'm a cop. If you don't help, I'll have to take you
+      into the station for official questioning.
+    Position: {x: 2574.4, y: 373.6}
+  - Guid: af93f235-b8f3-472c-bb2e-e406e04328c8
+    DialogueText: We don't have time for this. If you don't tell me, I'll place you
+      under arrest for obstructing justice. So are you going to tell me or not?
+    Position: {x: 3364, y: 41.600002}
+  - Guid: 51d1be4c-03cd-4c57-9b0e-b028c1d6887d
+    DialogueText: He murdered his wife and three kids. Now are you going to tell
+      me what direction this guy went or not? We're wasting time!
+    Position: {x: 3391.2, y: 208.8}
+  - Guid: ed6c6f38-4f65-4e43-8166-16f525b9d881
+    DialogueText: Look, kid, if you know something, you have to tell me. We're wasting
+      time, and this guy is getting away!
+    Position: {x: 3398.4, y: 392}
+  - Guid: 301c581f-4662-4457-9959-b5f6686b82b2
+    DialogueText: Damn it, thanks for nothing kid. Any more blood he spills will
+      be on your hands.
+    Position: {x: 4280, y: 42.4}
+  - Guid: 445d820a-059d-4bf9-8c8f-435d12a08ef0
+    DialogueText: Perfect. Thank you for your cooperation.
+    Position: {x: 4236.8, y: 208.8}
+  - Guid: 7ce00f99-aefb-473e-9e19-97f311d6521d
+    DialogueText: What a waste of time. Thanks for nothing, kid. We'll be back with
+      a warrant to get the security camera footage since you're no help.
+    Position: {x: 4177.6, y: 395.2}
+  ExposedProperties: []
+  CommentBlockData: []

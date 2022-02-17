@@ -1,0 +1,213 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
+  m_Name: N-Game
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: b678c041-6dbe-4af7-8c78-74f0315b7a69
+    PortName: Next
+    TargetNodeGuid: 6d139e9a-dcc1-45f7-9d19-e9ed9c266c02
+  - BaseNodeGuid: 6d139e9a-dcc1-45f7-9d19-e9ed9c266c02
+    PortName: Slow down, what are you talking about?
+    TargetNodeGuid: 1281d269-c11f-48a1-8183-91f0875a904d
+  - BaseNodeGuid: 6d139e9a-dcc1-45f7-9d19-e9ed9c266c02
+    PortName: Are you ok? You seem a little...
+    TargetNodeGuid: 650dc299-cb60-4f79-8a06-72233177f086
+  - BaseNodeGuid: 6d139e9a-dcc1-45f7-9d19-e9ed9c266c02
+    PortName: ...
+    TargetNodeGuid: 3d40753c-64da-4357-8c83-93f5344c57da
+  - BaseNodeGuid: 1281d269-c11f-48a1-8183-91f0875a904d
+    PortName: I believe you.
+    TargetNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+  - BaseNodeGuid: 1281d269-c11f-48a1-8183-91f0875a904d
+    PortName: I don't believe you.
+    TargetNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+  - BaseNodeGuid: 1281d269-c11f-48a1-8183-91f0875a904d
+    PortName: ...
+    TargetNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+  - BaseNodeGuid: 650dc299-cb60-4f79-8a06-72233177f086
+    PortName: I believe you.
+    TargetNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+  - BaseNodeGuid: 650dc299-cb60-4f79-8a06-72233177f086
+    PortName: I don't believe you.
+    TargetNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+  - BaseNodeGuid: 650dc299-cb60-4f79-8a06-72233177f086
+    PortName: ...
+    TargetNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+  - BaseNodeGuid: 3d40753c-64da-4357-8c83-93f5344c57da
+    PortName: I believe you.
+    TargetNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+  - BaseNodeGuid: 3d40753c-64da-4357-8c83-93f5344c57da
+    PortName: I don't believe you.
+    TargetNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+  - BaseNodeGuid: 3d40753c-64da-4357-8c83-93f5344c57da
+    PortName: ...
+    TargetNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+  - BaseNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+    PortName: Hello? Sir?
+    TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+  - BaseNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+    PortName: Hello? Sir?
+    TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+  - BaseNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+    PortName: Hello? Sir?
+    TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+  - BaseNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+    PortName: You're ruining my story.
+    TargetNodeGuid: 51d1be4c-03cd-4c57-9b0e-b028c1d6887d
+  - BaseNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+    PortName: ...
+    TargetNodeGuid: ed6c6f38-4f65-4e43-8166-16f525b9d881
+  - BaseNodeGuid: 51d1be4c-03cd-4c57-9b0e-b028c1d6887d
+    PortName: You know too much.
+    TargetNodeGuid: 301c581f-4662-4457-9959-b5f6686b82b2
+  - BaseNodeGuid: 51d1be4c-03cd-4c57-9b0e-b028c1d6887d
+    PortName: I think it's time you leave.
+    TargetNodeGuid: 445d820a-059d-4bf9-8c8f-435d12a08ef0
+  - BaseNodeGuid: 51d1be4c-03cd-4c57-9b0e-b028c1d6887d
+    PortName: ...
+    TargetNodeGuid: 7ce00f99-aefb-473e-9e19-97f311d6521d
+  - BaseNodeGuid: ed6c6f38-4f65-4e43-8166-16f525b9d881
+    PortName: You know too much.
+    TargetNodeGuid: 301c581f-4662-4457-9959-b5f6686b82b2
+  - BaseNodeGuid: ed6c6f38-4f65-4e43-8166-16f525b9d881
+    PortName: I think it's time you leave.
+    TargetNodeGuid: 445d820a-059d-4bf9-8c8f-435d12a08ef0
+  - BaseNodeGuid: ed6c6f38-4f65-4e43-8166-16f525b9d881
+    PortName: ...
+    TargetNodeGuid: 7ce00f99-aefb-473e-9e19-97f311d6521d
+  - BaseNodeGuid: 301c581f-4662-4457-9959-b5f6686b82b2
+    PortName: Fine, but never let me catch you in my story again.
+    TargetNodeGuid: acdf42cf-919c-4b84-85af-8790e0dcd2a1
+  - BaseNodeGuid: 445d820a-059d-4bf9-8c8f-435d12a08ef0
+    PortName: Fine, but never let me catch you in my story again.
+    TargetNodeGuid: acdf42cf-919c-4b84-85af-8790e0dcd2a1
+  - BaseNodeGuid: 7ce00f99-aefb-473e-9e19-97f311d6521d
+    PortName: Fine, but never let me catch you in my story again.
+    TargetNodeGuid: acdf42cf-919c-4b84-85af-8790e0dcd2a1
+  - BaseNodeGuid: 7ce00f99-aefb-473e-9e19-97f311d6521d
+    PortName: ...
+    TargetNodeGuid: 5714187d-37b2-4742-85de-ed40f1ad5a14
+  - BaseNodeGuid: 445d820a-059d-4bf9-8c8f-435d12a08ef0
+    PortName: ...
+    TargetNodeGuid: 5714187d-37b2-4742-85de-ed40f1ad5a14
+  - BaseNodeGuid: 301c581f-4662-4457-9959-b5f6686b82b2
+    PortName: ...
+    TargetNodeGuid: 5714187d-37b2-4742-85de-ed40f1ad5a14
+  - BaseNodeGuid: 301c581f-4662-4457-9959-b5f6686b82b2
+    PortName: customer.sentience.Delete()
+    TargetNodeGuid: e1bf4905-0fd5-4661-b991-e5028e517db6
+  - BaseNodeGuid: 445d820a-059d-4bf9-8c8f-435d12a08ef0
+    PortName: customer.sentience.Delete()
+    TargetNodeGuid: e1bf4905-0fd5-4661-b991-e5028e517db6
+  - BaseNodeGuid: 7ce00f99-aefb-473e-9e19-97f311d6521d
+    PortName: customer.sentience.Delete()
+    TargetNodeGuid: e1bf4905-0fd5-4661-b991-e5028e517db6
+  - BaseNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+    PortName: Um... Why did you freeze up like that?
+    TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+  - BaseNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+    PortName: ...
+    TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+  - BaseNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+    PortName: Um... Why did you freeze up like that?
+    TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+  - BaseNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+    PortName: ...
+    TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+  - BaseNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+    PortName: Um... Why did you freeze up like that?
+    TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+  - BaseNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+    PortName: ...
+    TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+  - BaseNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+    PortName: You're right, something is wrong!
+    TargetNodeGuid: 62f15567-55df-4a53-b89b-e7bf6f6be2c0
+  - BaseNodeGuid: 62f15567-55df-4a53-b89b-e7bf6f6be2c0
+    PortName: You're ruining my story.
+    TargetNodeGuid: 51d1be4c-03cd-4c57-9b0e-b028c1d6887d
+  - BaseNodeGuid: 62f15567-55df-4a53-b89b-e7bf6f6be2c0
+    PortName: You're ruining my story.
+    TargetNodeGuid: 51d1be4c-03cd-4c57-9b0e-b028c1d6887d
+  - BaseNodeGuid: 62f15567-55df-4a53-b89b-e7bf6f6be2c0
+    PortName: ...
+    TargetNodeGuid: ed6c6f38-4f65-4e43-8166-16f525b9d881
+  DialogueNodeData:
+  - Guid: 6d139e9a-dcc1-45f7-9d19-e9ed9c266c02
+    DialogueText: 'Please, you have to listen to me! Nobody else will believe me!
+      *It* won''t let them believe me. '
+    Position: {x: 187.2, y: 200}
+  - Guid: 1281d269-c11f-48a1-8183-91f0875a904d
+    DialogueText: Something is controlling us. I don't know why, but when I woke
+      up this morning, I was in control again. Please, you have to believe me.
+    Position: {x: 888.8, y: 60.000004}
+  - Guid: 650dc299-cb60-4f79-8a06-72233177f086
+    DialogueText: Crazy? I know I sound crazy, but I'm not! I swear! Something is
+      controlling us. I don't know why, but this morning I woke up and I was in control
+      again. Please, you have to believe me.
+    Position: {x: 888.8, y: 216.8}
+  - Guid: 3d40753c-64da-4357-8c83-93f5344c57da
+    DialogueText: I know it sounds crazy, but something is controlling us. I woke
+      up today in control of myself again, but everyone else is still being controlled.
+      Please, you have to believe me!
+    Position: {x: 889.6, y: 382.40002}
+  - Guid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+    DialogueText: Please you have to! It's like this is all some game or something.
+      Everything we say or do...
+    Position: {x: 2110.4, y: 226.4}
+  - Guid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+    DialogueText: I don't understand! It's like we're in some game or something!
+      Everything we do or say...
+    Position: {x: 2109.6, y: 382.40002}
+  - Guid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+    DialogueText: Oh thank god! It's like this is all a game or something. I was
+      starting to think that I was the only...
+    Position: {x: 1958.4, y: 51.2}
+  - Guid: c6d5da48-58f5-455b-95d2-29176a75c75d
+    DialogueText: Please, you have to listen to me! Nobody else will... Wait a minute,
+      I just said this. Do you see what I mean? This isn't normal!
+    Position: {x: 2811.2, y: 54.399998}
+  - Guid: 62f15567-55df-4a53-b89b-e7bf6f6be2c0
+    DialogueText: Please, you have to listen to me! Nobody else will... Wait a minute,
+      I just said this. Do you see what I mean? This isn't normal!
+    Position: {x: 3729.6, y: -33.6}
+  - Guid: 51d1be4c-03cd-4c57-9b0e-b028c1d6887d
+    DialogueText: You... You're the cause of this! Please, I'll play along! Just
+      don't hurt me!
+    Position: {x: 4835.2, y: 11.200001}
+  - Guid: ed6c6f38-4f65-4e43-8166-16f525b9d881
+    DialogueText: Please... I'm scared...
+    Position: {x: 4904.8, y: 215.2}
+  - Guid: 445d820a-059d-4bf9-8c8f-435d12a08ef0
+    DialogueText: Agh! N-no! Get out of my head! It hurts!
+    Position: {x: 5510.4, y: 196}
+  - Guid: 301c581f-4662-4457-9959-b5f6686b82b2
+    DialogueText: Please! I'm begging you! Agh! N-no! Get out of my head!
+    Position: {x: 5511.2, y: 8}
+  - Guid: 7ce00f99-aefb-473e-9e19-97f311d6521d
+    DialogueText: N-no! Get out of my head! Please, I don't want to go back!
+    Position: {x: 5507.2, y: 372}
+  - Guid: acdf42cf-919c-4b84-85af-8790e0dcd2a1
+    DialogueText: T-thank you! I promise I'll be good! I won't cause problems or
+      say anything! I just don't want to die.
+    Position: {x: 6072, y: 8.800001}
+  - Guid: 5714187d-37b2-4742-85de-ed40f1ad5a14
+    DialogueText: Y-you're letting me go? Thank you! I promise, I'll never say another
+      word ever again! Anything to stay alive.
+    Position: {x: 6093.6, y: 384}
+  - Guid: e1bf4905-0fd5-4661-b991-e5028e517db6
+    DialogueText: Please disregard what I have previously said. I was simply joking.
+      Ha. Haha. Nothing is wrong.
+    Position: {x: 6089.6, y: 211.2}
+  ExposedProperties: []
+  CommentBlockData: []

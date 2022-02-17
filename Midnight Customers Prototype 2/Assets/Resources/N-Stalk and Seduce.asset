@@ -1,0 +1,236 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
+  m_Name: N-Stalk and Seduce
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: b678c041-6dbe-4af7-8c78-74f0315b7a69
+    PortName: Next
+    TargetNodeGuid: 6d139e9a-dcc1-45f7-9d19-e9ed9c266c02
+  - BaseNodeGuid: 6d139e9a-dcc1-45f7-9d19-e9ed9c266c02
+    PortName: What do you mean?
+    TargetNodeGuid: 1281d269-c11f-48a1-8183-91f0875a904d
+  - BaseNodeGuid: 6d139e9a-dcc1-45f7-9d19-e9ed9c266c02
+    PortName: Did you find everything all right?
+    TargetNodeGuid: 650dc299-cb60-4f79-8a06-72233177f086
+  - BaseNodeGuid: 6d139e9a-dcc1-45f7-9d19-e9ed9c266c02
+    PortName: ...
+    TargetNodeGuid: 3d40753c-64da-4357-8c83-93f5344c57da
+  - BaseNodeGuid: 1281d269-c11f-48a1-8183-91f0875a904d
+    PortName: I guess...
+    TargetNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+  - BaseNodeGuid: 1281d269-c11f-48a1-8183-91f0875a904d
+    PortName: No, I like being alone.
+    TargetNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+  - BaseNodeGuid: 1281d269-c11f-48a1-8183-91f0875a904d
+    PortName: ...
+    TargetNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+  - BaseNodeGuid: 650dc299-cb60-4f79-8a06-72233177f086
+    PortName: I guess...
+    TargetNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+  - BaseNodeGuid: 650dc299-cb60-4f79-8a06-72233177f086
+    PortName: No, I like being alone.
+    TargetNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+  - BaseNodeGuid: 650dc299-cb60-4f79-8a06-72233177f086
+    PortName: ...
+    TargetNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+  - BaseNodeGuid: 3d40753c-64da-4357-8c83-93f5344c57da
+    PortName: I guess...
+    TargetNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+  - BaseNodeGuid: 3d40753c-64da-4357-8c83-93f5344c57da
+    PortName: No, I like being alone.
+    TargetNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+  - BaseNodeGuid: 3d40753c-64da-4357-8c83-93f5344c57da
+    PortName: ...
+    TargetNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+  - BaseNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+    PortName: N-no, that's fine. Really, there's no need!
+    TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+  - BaseNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+    PortName: No. I'm just fine by myself.
+    TargetNodeGuid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
+  - BaseNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+    PortName: ...
+    TargetNodeGuid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
+  - BaseNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+    PortName: N-no, that's fine. Really, there's no need!
+    TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+  - BaseNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+    PortName: No. I'm just fine by myself.
+    TargetNodeGuid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
+  - BaseNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+    PortName: ...
+    TargetNodeGuid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
+  - BaseNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+    PortName: Have we met before?
+    TargetNodeGuid: af93f235-b8f3-472c-bb2e-e406e04328c8
+  - BaseNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+    PortName: What's your problem?
+    TargetNodeGuid: 51d1be4c-03cd-4c57-9b0e-b028c1d6887d
+  - BaseNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+    PortName: ...
+    TargetNodeGuid: ed6c6f38-4f65-4e43-8166-16f525b9d881
+  - BaseNodeGuid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
+    PortName: Have we met before?
+    TargetNodeGuid: af93f235-b8f3-472c-bb2e-e406e04328c8
+  - BaseNodeGuid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
+    PortName: What's your problem?
+    TargetNodeGuid: 51d1be4c-03cd-4c57-9b0e-b028c1d6887d
+  - BaseNodeGuid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
+    PortName: ...
+    TargetNodeGuid: ed6c6f38-4f65-4e43-8166-16f525b9d881
+  - BaseNodeGuid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
+    PortName: Have we met before?
+    TargetNodeGuid: af93f235-b8f3-472c-bb2e-e406e04328c8
+  - BaseNodeGuid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
+    PortName: What's your problem?
+    TargetNodeGuid: 51d1be4c-03cd-4c57-9b0e-b028c1d6887d
+  - BaseNodeGuid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
+    PortName: ...
+    TargetNodeGuid: ed6c6f38-4f65-4e43-8166-16f525b9d881
+  - BaseNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+    PortName: N-no, that's fine. Really, there's no need!
+    TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+  - BaseNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+    PortName: YNo. I'm just fine by myself.ah, just fine.
+    TargetNodeGuid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
+  - BaseNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+    PortName: ...
+    TargetNodeGuid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
+  - BaseNodeGuid: af93f235-b8f3-472c-bb2e-e406e04328c8
+    PortName: Please don't hurt me.
+    TargetNodeGuid: 301c581f-4662-4457-9959-b5f6686b82b2
+  - BaseNodeGuid: af93f235-b8f3-472c-bb2e-e406e04328c8
+    PortName: Look, lady, I'm not interested.
+    TargetNodeGuid: 445d820a-059d-4bf9-8c8f-435d12a08ef0
+  - BaseNodeGuid: af93f235-b8f3-472c-bb2e-e406e04328c8
+    PortName: ...
+    TargetNodeGuid: 7ce00f99-aefb-473e-9e19-97f311d6521d
+  - BaseNodeGuid: 51d1be4c-03cd-4c57-9b0e-b028c1d6887d
+    PortName: Please don't hurt me.
+    TargetNodeGuid: 301c581f-4662-4457-9959-b5f6686b82b2
+  - BaseNodeGuid: 51d1be4c-03cd-4c57-9b0e-b028c1d6887d
+    PortName: Look, lady, I'm not interested.
+    TargetNodeGuid: 445d820a-059d-4bf9-8c8f-435d12a08ef0
+  - BaseNodeGuid: 51d1be4c-03cd-4c57-9b0e-b028c1d6887d
+    PortName: ...
+    TargetNodeGuid: 7ce00f99-aefb-473e-9e19-97f311d6521d
+  - BaseNodeGuid: ed6c6f38-4f65-4e43-8166-16f525b9d881
+    PortName: Please don't hurt me.
+    TargetNodeGuid: 301c581f-4662-4457-9959-b5f6686b82b2
+  - BaseNodeGuid: ed6c6f38-4f65-4e43-8166-16f525b9d881
+    PortName: Look, lady, I'm not interested.
+    TargetNodeGuid: 445d820a-059d-4bf9-8c8f-435d12a08ef0
+  - BaseNodeGuid: ed6c6f38-4f65-4e43-8166-16f525b9d881
+    PortName: ...
+    TargetNodeGuid: 7ce00f99-aefb-473e-9e19-97f311d6521d
+  - BaseNodeGuid: 445d820a-059d-4bf9-8c8f-435d12a08ef0
+    PortName: Just go! Please!
+    TargetNodeGuid: acdf42cf-919c-4b84-85af-8790e0dcd2a1
+  - BaseNodeGuid: 445d820a-059d-4bf9-8c8f-435d12a08ef0
+    PortName: You need to leave. Now!
+    TargetNodeGuid: 5714187d-37b2-4742-85de-ed40f1ad5a14
+  - BaseNodeGuid: 445d820a-059d-4bf9-8c8f-435d12a08ef0
+    PortName: ...
+    TargetNodeGuid: e1bf4905-0fd5-4661-b991-e5028e517db6
+  - BaseNodeGuid: 301c581f-4662-4457-9959-b5f6686b82b2
+    PortName: Just go! Please!
+    TargetNodeGuid: acdf42cf-919c-4b84-85af-8790e0dcd2a1
+  - BaseNodeGuid: 301c581f-4662-4457-9959-b5f6686b82b2
+    PortName: You need to leave. Now!
+    TargetNodeGuid: 5714187d-37b2-4742-85de-ed40f1ad5a14
+  - BaseNodeGuid: 301c581f-4662-4457-9959-b5f6686b82b2
+    PortName: ...
+    TargetNodeGuid: e1bf4905-0fd5-4661-b991-e5028e517db6
+  - BaseNodeGuid: 7ce00f99-aefb-473e-9e19-97f311d6521d
+    PortName: Just go! Please!
+    TargetNodeGuid: acdf42cf-919c-4b84-85af-8790e0dcd2a1
+  - BaseNodeGuid: 7ce00f99-aefb-473e-9e19-97f311d6521d
+    PortName: You need to leave. Now!
+    TargetNodeGuid: 5714187d-37b2-4742-85de-ed40f1ad5a14
+  - BaseNodeGuid: 7ce00f99-aefb-473e-9e19-97f311d6521d
+    PortName: ...
+    TargetNodeGuid: e1bf4905-0fd5-4661-b991-e5028e517db6
+  DialogueNodeData:
+  - Guid: 6d139e9a-dcc1-45f7-9d19-e9ed9c266c02
+    DialogueText: Well, aren't you a sight for sore eyes.
+    Position: {x: 187.2, y: 200}
+  - Guid: 1281d269-c11f-48a1-8183-91f0875a904d
+    DialogueText: Now, now, don't play coy. Tell me, do you ever get lonely out here
+      all by yourself?
+    Position: {x: 578.4, y: 49.600002}
+  - Guid: 650dc299-cb60-4f79-8a06-72233177f086
+    DialogueText: Oh, everything is just to my liking. Do you ever get lonely out
+      here all by yourself?
+    Position: {x: 578.4, y: 206.4}
+  - Guid: 3d40753c-64da-4357-8c83-93f5344c57da
+    DialogueText: Tell me, hun, do you ever get lonely out here all by yourself?
+    Position: {x: 579.2, y: 372}
+  - Guid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+    DialogueText: Maybe I'll stick around then. Give you some company?
+    Position: {x: 1250.4, y: 48.8}
+  - Guid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+    DialogueText: Oh, you want to be alone, huh? You sure you don't want any company?
+    Position: {x: 1247.2, y: 210.4}
+  - Guid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+    DialogueText: Well, your body is definitely telling me "yes." Maybe I'll stick
+      around, give you some company.
+    Position: {x: 1248, y: 372}
+  - Guid: c6d5da48-58f5-455b-95d2-29176a75c75d
+    DialogueText: Nonsense. You have no idea how long I've been waiting to get you
+      all alone.
+    Position: {x: 1979.2, y: 43.2}
+  - Guid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
+    DialogueText: I'll just have to change your mind then. You have no idea how long
+      I've been waiting to get you all alone.
+    Position: {x: 1978.4, y: 210.4}
+  - Guid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
+    DialogueText: What's the matter? Cat got your tongue? Don't worry, I like 'em
+      quiet. You have no idea how long I've been waiting to get you all alone.
+    Position: {x: 1977.6, y: 372}
+  - Guid: af93f235-b8f3-472c-bb2e-e406e04328c8
+    DialogueText: Not quite, but I've been keeping a close eye on you for a while.
+      Oh, the thing's I've dreamt about doing to you. And now you're here. Now you're
+      mine.
+    Position: {x: 2760, y: 24.8}
+  - Guid: 51d1be4c-03cd-4c57-9b0e-b028c1d6887d
+    DialogueText: Don't be like that, sweetie. I've been watching you for a while
+      now.. Oh, the things I've dreamt about doing to you. And now you're here. Now
+      you're mine.
+    Position: {x: 2758.4, y: 195.2}
+  - Guid: ed6c6f38-4f65-4e43-8166-16f525b9d881
+    DialogueText: I've been watching you for a while now. Oh, the things I've dreamt
+      about doing to you. And now you're here. Now you're mine.
+    Position: {x: 2912, y: 372.80002}
+  - Guid: 445d820a-059d-4bf9-8c8f-435d12a08ef0
+    DialogueText: Don't play hard-to-get, love. You're not the one in charge here.
+    Position: {x: 3868, y: 192.8}
+  - Guid: 301c581f-4662-4457-9959-b5f6686b82b2
+    DialogueText: Awe... You're so cute when you beg.
+    Position: {x: 3868, y: 22.400002}
+  - Guid: 7ce00f99-aefb-473e-9e19-97f311d6521d
+    DialogueText: Don't be shy. Come on, smile. Don't make me ask again.
+    Position: {x: 3871.2, y: 361.6}
+  - Guid: acdf42cf-919c-4b84-85af-8790e0dcd2a1
+    DialogueText: Ugh, fine. Looks like it's time to find a new toy. This one is
+      boring.
+    Position: {x: 4311.2, y: 25.600002}
+  - Guid: e1bf4905-0fd5-4661-b991-e5028e517db6
+    DialogueText: Fine... Looks like playtime is over. I thought you'd last a little
+      longer.
+    Position: {x: 4406.4, y: 203.2}
+  - Guid: 5714187d-37b2-4742-85de-ed40f1ad5a14
+    DialogueText: Ugh, and  here I thought you would be able to satisfy. Don't take
+      this personally, but this isn't working. It's not you, it's me.
+    Position: {x: 4394.4, y: 360.80002}
+  ExposedProperties: []
+  CommentBlockData: []

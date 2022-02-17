@@ -1,0 +1,123 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
+  m_Name: N-Conspiracy
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: b678c041-6dbe-4af7-8c78-74f0315b7a69
+    PortName: Next
+    TargetNodeGuid: 6d139e9a-dcc1-45f7-9d19-e9ed9c266c02
+  - BaseNodeGuid: 6d139e9a-dcc1-45f7-9d19-e9ed9c266c02
+    PortName: I'm sorry, but I'm not following...
+    TargetNodeGuid: 1281d269-c11f-48a1-8183-91f0875a904d
+  - BaseNodeGuid: 6d139e9a-dcc1-45f7-9d19-e9ed9c266c02
+    PortName: Are you high?
+    TargetNodeGuid: 650dc299-cb60-4f79-8a06-72233177f086
+  - BaseNodeGuid: 6d139e9a-dcc1-45f7-9d19-e9ed9c266c02
+    PortName: ...
+    TargetNodeGuid: 3d40753c-64da-4357-8c83-93f5344c57da
+  - BaseNodeGuid: 1281d269-c11f-48a1-8183-91f0875a904d
+    PortName: What? No, I'm not a lizard person.
+    TargetNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+  - BaseNodeGuid: 1281d269-c11f-48a1-8183-91f0875a904d
+    PortName: Damn, you caught me. I guess the gig is up.
+    TargetNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+  - BaseNodeGuid: 1281d269-c11f-48a1-8183-91f0875a904d
+    PortName: 2-3
+    TargetNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+  - BaseNodeGuid: 650dc299-cb60-4f79-8a06-72233177f086
+    PortName: What? No, I'm not a lizard person.
+    TargetNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+  - BaseNodeGuid: 650dc299-cb60-4f79-8a06-72233177f086
+    PortName: Damn, you caught me. I guess the gig is up.
+    TargetNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+  - BaseNodeGuid: 650dc299-cb60-4f79-8a06-72233177f086
+    PortName: ...
+    TargetNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+  - BaseNodeGuid: 3d40753c-64da-4357-8c83-93f5344c57da
+    PortName: What? No, I'm not a lizard person.
+    TargetNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+  - BaseNodeGuid: 3d40753c-64da-4357-8c83-93f5344c57da
+    PortName: Damn, you caught me. I guess the gig is up.
+    TargetNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+  - BaseNodeGuid: 3d40753c-64da-4357-8c83-93f5344c57da
+    PortName: ...
+    TargetNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+  - BaseNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+    PortName: Have you actually seen a lizard person before?
+    TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+  - BaseNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+    PortName: Do you realize how crazy you sound?
+    TargetNodeGuid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
+  - BaseNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+    PortName: ...
+    TargetNodeGuid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
+  - BaseNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+    PortName: Have you actually seen a lizard person before?
+    TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+  - BaseNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+    PortName: Do you realize how crazy you sound?
+    TargetNodeGuid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
+  - BaseNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+    PortName: ...
+    TargetNodeGuid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
+  - BaseNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+    PortName: Have you actually seen a lizard person before?
+    TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+  - BaseNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+    PortName: Do you realize how crazy you sound?
+    TargetNodeGuid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
+  - BaseNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+    PortName: ...
+    TargetNodeGuid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
+  DialogueNodeData:
+  - Guid: 6d139e9a-dcc1-45f7-9d19-e9ed9c266c02
+    DialogueText: You... I haven't seen you before. You're not... one of THEM are
+      you?
+    Position: {x: 219.2, y: 193.59999}
+  - Guid: 1281d269-c11f-48a1-8183-91f0875a904d
+    DialogueText: Don't play dumb with me! Are you a lizard person or aren't you?
+    Position: {x: 789.6, y: 28}
+  - Guid: 650dc299-cb60-4f79-8a06-72233177f086
+    DialogueText: Hey! Don't avoid the question! Are you a lizard person or aren't
+      you?
+    Position: {x: 791.2, y: 189.59999}
+  - Guid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+    DialogueText: That's exactly what a lizard person would say. Still... you seem
+      trustworthy. Look, those damn things run this town. Trust no one.
+    Position: {x: 1324, y: 28.8}
+  - Guid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+    DialogueText: '*Scoffs* Don''t patronize me. A lizard person would never admit
+      to being one. Look, the damn things run this town. Trust no one.'
+    Position: {x: 1323.2, y: 194.4}
+  - Guid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+    DialogueText: I'm onto you lizard person. I know you 're secretly running this
+      town.
+    Position: {x: 1325.6, y: 356.80002}
+  - Guid: 3d40753c-64da-4357-8c83-93f5344c57da
+    DialogueText: Answer the question! Are you a lizard person, or aren't you?
+    Position: {x: 792, y: 355.2}
+  - Guid: c6d5da48-58f5-455b-95d2-29176a75c75d
+    DialogueText: Well... Not exactly. But I know it's the truth! I'll expose the
+      lizard people running the town from it's underbelly, and when I do, I'll be
+      a hero!
+    Position: {x: 2247.2, y: 47.2}
+  - Guid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
+    DialogueText: I do... But I know it's the truth! I'll expose the lizard people
+      running the town from it's underbelly, and when I do, I'll be a hero!
+    Position: {x: 2246.4, y: 214.4}
+  - Guid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
+    DialogueText: It's the truth! I know it! I'll expose the lizard people running
+      the town from it's underbelly, and when I do, I'll be a hero!
+    Position: {x: 2245.6, y: 376}
+  ExposedProperties: []
+  CommentBlockData: []
