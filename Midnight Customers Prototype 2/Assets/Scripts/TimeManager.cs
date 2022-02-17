@@ -106,6 +106,12 @@ public class TimeManager : MonoBehaviour
         }
     }
 
+    void ResetClock() 
+    { 
+        minutes_hand.SetPositionAndRotation(minutes_hand.position, Quaternion.Euler(new Vector3(0f, 0f, 90f)));
+        hours_hand.SetPositionAndRotation(hours_hand.position, Quaternion.Euler(new Vector3(0f, 0f, 90f)));
+    }
+
     void UpdateClock()
     {
         float elapsed = 0f; //accounts for time elapsed since last call
@@ -138,9 +144,9 @@ public class TimeManager : MonoBehaviour
         day++;
 
         GameControl.control.SaveGame("Day " + day.ToString()); //may not be best place to do this
-        UpdateClock();
         toBlack.FadeOut(fadeDuration);
         NewDay();
+        ResetClock();
         journalDisplay.OpenJournal();
         while (journalDisplay.inJournal)
         {
