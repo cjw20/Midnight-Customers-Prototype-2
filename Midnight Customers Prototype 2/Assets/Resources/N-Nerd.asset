@@ -10,108 +10,113 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
-  m_Name: N-Hair
+  m_Name: N-Nerd
   m_EditorClassIdentifier: 
   NodeLinks:
   - BaseNodeGuid: b678c041-6dbe-4af7-8c78-74f0315b7a69
     PortName: Next
     TargetNodeGuid: 6d139e9a-dcc1-45f7-9d19-e9ed9c266c02
   - BaseNodeGuid: 6d139e9a-dcc1-45f7-9d19-e9ed9c266c02
-    PortName: What the hell is wrong with you?
+    PortName: Um... yes?
     TargetNodeGuid: 1281d269-c11f-48a1-8183-91f0875a904d
   - BaseNodeGuid: 6d139e9a-dcc1-45f7-9d19-e9ed9c266c02
-    PortName: Uh... No, you can't.
+    PortName: Bro, what?
     TargetNodeGuid: 650dc299-cb60-4f79-8a06-72233177f086
   - BaseNodeGuid: 6d139e9a-dcc1-45f7-9d19-e9ed9c266c02
     PortName: ...
     TargetNodeGuid: 3d40753c-64da-4357-8c83-93f5344c57da
   - BaseNodeGuid: 1281d269-c11f-48a1-8183-91f0875a904d
-    PortName: It's not soft. Now stop asking.
+    PortName: Indeed, m'lord, we have that which you seek.
     TargetNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
   - BaseNodeGuid: 1281d269-c11f-48a1-8183-91f0875a904d
-    PortName: You're making me really uncomfortable.
+    PortName: Are you talking about a chocolate bar?
     TargetNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
   - BaseNodeGuid: 1281d269-c11f-48a1-8183-91f0875a904d
     PortName: ...
     TargetNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
   - BaseNodeGuid: 650dc299-cb60-4f79-8a06-72233177f086
-    PortName: It's not soft. Now stop asking.
+    PortName: Indeed, m'lord, we have that which you seek.
     TargetNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
   - BaseNodeGuid: 650dc299-cb60-4f79-8a06-72233177f086
-    PortName: You're making me really uncomfortable.
+    PortName: Are you talking about a chocolate bar?
     TargetNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
   - BaseNodeGuid: 650dc299-cb60-4f79-8a06-72233177f086
     PortName: ...
     TargetNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
   - BaseNodeGuid: 3d40753c-64da-4357-8c83-93f5344c57da
-    PortName: It's not soft. Now stop asking.
+    PortName: Indeed, m'lord, we have that which you seek.
     TargetNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
   - BaseNodeGuid: 3d40753c-64da-4357-8c83-93f5344c57da
-    PortName: You're making me really uncomfortable.
+    PortName: Are you talking about a chocolate bar?
     TargetNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
   - BaseNodeGuid: 3d40753c-64da-4357-8c83-93f5344c57da
     PortName: ...
     TargetNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
   - BaseNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
-    PortName: Get out and don't come back!
+    PortName: If you attain this treasure, a trade of gold worth $1.72 is necessary..
     TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
   - BaseNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
-    PortName: 3-2
+    PortName: Can you like... speak normally?
     TargetNodeGuid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
   - BaseNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
     PortName: ...
     TargetNodeGuid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
   - BaseNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
-    PortName: Get out and don't come back!
+    PortName: If you attain this treasure, a trade of gold worth $1.72 is necessary..
     TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
   - BaseNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
-    PortName: 3-2
+    PortName: Can you like... speak normally?
     TargetNodeGuid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
   - BaseNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
     PortName: ...
     TargetNodeGuid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
   - BaseNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
-    PortName: Get out and don't come back!
+    PortName: If you attain this treasure, a trade of gold worth $1.72 is necessary..
     TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
   - BaseNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
-    PortName: 3-2
+    PortName: Can you like... speak normally?
     TargetNodeGuid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
   - BaseNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
     PortName: ...
     TargetNodeGuid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
   DialogueNodeData:
   - Guid: 6d139e9a-dcc1-45f7-9d19-e9ed9c266c02
-    DialogueText: Your hair... It looks so soft... Can I touch it?
-    Position: {x: 219.2, y: 193.59999}
-  - Guid: 650dc299-cb60-4f79-8a06-72233177f086
-    DialogueText: Please? I just want feel how soft it is.
-    Position: {x: 628.8, y: 193.59999}
+    DialogueText: Salutations, merchant. Do you have any wares for a weary traveler?
+    Position: {x: -210.4, y: 358.40002}
   - Guid: 1281d269-c11f-48a1-8183-91f0875a904d
-    DialogueText: That's a little harsh... Come on, I just want to see how soft it
-      is.
-    Position: {x: 631.2, y: 35.2}
+    DialogueText: I am on quest to retrieve a delicacy for m'lady, and other travelers
+      have told me that a bar of pure cocoa can be found here.
+    Position: {x: 379.2, y: 55.2}
   - Guid: 3d40753c-64da-4357-8c83-93f5344c57da
-    DialogueText: Is that a yes? I mean, it's not a no...
-    Position: {x: 634.4, y: 359.2}
+    DialogueText: I require your only your finest. I seek a bar of pure cocoa for
+      m'lady.
+    Position: {x: 380, y: 377.6}
+  - Guid: 650dc299-cb60-4f79-8a06-72233177f086
+    DialogueText: I require a bar of pure cocoa for m'lady, the queen of this land.
+      Other travelers told me I could find the item I seek in your possession.
+    Position: {x: 379.2, y: 212}
   - Guid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
-    DialogueText: Fine... Can I at least smell it?
-    Position: {x: 1174.4, y: 36}
-  - Guid: 94966c1d-d873-40e1-9ae3-07e55d209f90
-    DialogueText: I'm sorry... Can you at least tell me what it smells like?
-    Position: {x: 1175.2, y: 190.4}
+    DialogueText: Alas, my quest is coming to an end! Tell me, what must I do to
+      acquire what I seek?
+    Position: {x: 1306.4, y: 44.000004}
   - Guid: 1a936d76-6a21-4823-8cea-5f178c0ff189
-    DialogueText: I bet it feels so soft... Can I smell it too?
-    Position: {x: 1177.6, y: 353.6}
+    DialogueText: Behold! The item which I seek! Tell me, what must I do to acquire
+      this treasure?
+    Position: {x: 1308, y: 372}
+  - Guid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+    DialogueText: Yes! I require it at once! The queen cannot wait much longer!
+    Position: {x: 1305.6, y: 209.59999}
   - Guid: c6d5da48-58f5-455b-95d2-29176a75c75d
-    DialogueText: No! Please! At least give me some of your hair to remember you
-      by!
-    Position: {x: 1652.8, y: 34.4}
+    DialogueText: A hefty fee, yet one I must pay. Hold on, m'lady! I am returning
+      posthaste! I pray thee, please have not fallen to your hunger!
+    Position: {x: 1968.8, y: 41.600002}
   - Guid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
-    DialogueText: Fine, I have to go anyway. I'll be back later to touch it then.
-    Position: {x: 1652, y: 201.59999}
+    DialogueText: Knave! How dare you disrespect an honored knight of The Sacred
+      Order. Take my coin, villain, and know that I detest thee!
+    Position: {x: 1957.6, y: 184.8}
   - Guid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
-    DialogueText: I'm not gonna give up that easily. You'll let me feel it another
-      time.
-    Position: {x: 1651.2, y: 363.2}
+    DialogueText: Thank you, goodly merchant. I must leave, posthaste! Fear not,
+      m'lady! Your valiant knight returns with the antidote for your hunger!
+    Position: {x: 1956, y: 382.40002}
   ExposedProperties: []
   CommentBlockData: []
