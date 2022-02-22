@@ -25,24 +25,24 @@ MonoBehaviour:
   - BaseNodeGuid: 8449fe03-0edf-48c3-8f9d-0432281cc28d
     PortName: What did you see?
     TargetNodeGuid: 491dc2cd-d70c-4f7e-a06f-4401626f6a73
-  - BaseNodeGuid: 2567c137-6270-44b6-8a81-6577863993bc
-    PortName: What did you see?
-    TargetNodeGuid: 491dc2cd-d70c-4f7e-a06f-4401626f6a73
   - BaseNodeGuid: 8449fe03-0edf-48c3-8f9d-0432281cc28d
     PortName: So, you were stalking me.
     TargetNodeGuid: e8b89ad8-1b26-4a7d-aaac-9699225fc62d
   - BaseNodeGuid: 2567c137-6270-44b6-8a81-6577863993bc
+    PortName: What did you see?
+    TargetNodeGuid: 491dc2cd-d70c-4f7e-a06f-4401626f6a73
+  - BaseNodeGuid: 2567c137-6270-44b6-8a81-6577863993bc
     PortName: So, you were stalking me.
     TargetNodeGuid: e8b89ad8-1b26-4a7d-aaac-9699225fc62d
   - BaseNodeGuid: 491dc2cd-d70c-4f7e-a06f-4401626f6a73
-    PortName: She's a regular customer.
-    TargetNodeGuid: 77930127-4405-43ec-b078-6442b6a67be0
-  - BaseNodeGuid: e8b89ad8-1b26-4a7d-aaac-9699225fc62d
-    PortName: She's a regular customer.
+    PortName: Yeah, she runs Arkham.
     TargetNodeGuid: 77930127-4405-43ec-b078-6442b6a67be0
   - BaseNodeGuid: 491dc2cd-d70c-4f7e-a06f-4401626f6a73
     PortName: Yeah, the cult leader.
     TargetNodeGuid: 1a49a2dc-9d94-4732-94d0-4aceb3da8c73
+  - BaseNodeGuid: e8b89ad8-1b26-4a7d-aaac-9699225fc62d
+    PortName: Yeah, she runs Arkham.
+    TargetNodeGuid: 77930127-4405-43ec-b078-6442b6a67be0
   - BaseNodeGuid: e8b89ad8-1b26-4a7d-aaac-9699225fc62d
     PortName: Yeah, the cult leader.
     TargetNodeGuid: 1a49a2dc-9d94-4732-94d0-4aceb3da8c73
@@ -61,48 +61,48 @@ MonoBehaviour:
   - BaseNodeGuid: 77930127-4405-43ec-b078-6442b6a67be0
     PortName: Am I in danger!?
     TargetNodeGuid: 7f0754e8-e723-48f1-940f-bf3d3de9db59
-  - BaseNodeGuid: 205d045e-f793-45ca-b462-a427ea6ec022
-    PortName: Am I in danger!?
-    TargetNodeGuid: 7f0754e8-e723-48f1-940f-bf3d3de9db59
-  - BaseNodeGuid: 53784d99-050b-46e0-862d-9f769ba44f5e
-    PortName: Am I in danger!?
-    TargetNodeGuid: 7f0754e8-e723-48f1-940f-bf3d3de9db59
-  - BaseNodeGuid: e634317c-e2da-40fc-a05b-1b59eccd5289
-    PortName: Am I in danger!?
-    TargetNodeGuid: 7f0754e8-e723-48f1-940f-bf3d3de9db59
   - BaseNodeGuid: 77930127-4405-43ec-b078-6442b6a67be0
     PortName: You're just gonna run away?
     TargetNodeGuid: 4cc57f13-5571-4fb6-a54b-bcbea13b8ef9
   - BaseNodeGuid: 205d045e-f793-45ca-b462-a427ea6ec022
+    PortName: Am I in danger!?
+    TargetNodeGuid: 7f0754e8-e723-48f1-940f-bf3d3de9db59
+  - BaseNodeGuid: 205d045e-f793-45ca-b462-a427ea6ec022
     PortName: You're just gonna run away?
     TargetNodeGuid: 4cc57f13-5571-4fb6-a54b-bcbea13b8ef9
   - BaseNodeGuid: 53784d99-050b-46e0-862d-9f769ba44f5e
+    PortName: Am I in danger!?
+    TargetNodeGuid: 7f0754e8-e723-48f1-940f-bf3d3de9db59
+  - BaseNodeGuid: 53784d99-050b-46e0-862d-9f769ba44f5e
     PortName: You're just gonna run away?
     TargetNodeGuid: 4cc57f13-5571-4fb6-a54b-bcbea13b8ef9
+  - BaseNodeGuid: e634317c-e2da-40fc-a05b-1b59eccd5289
+    PortName: Am I in danger!?
+    TargetNodeGuid: 7f0754e8-e723-48f1-940f-bf3d3de9db59
   - BaseNodeGuid: e634317c-e2da-40fc-a05b-1b59eccd5289
     PortName: You're just gonna run away?
     TargetNodeGuid: 4cc57f13-5571-4fb6-a54b-bcbea13b8ef9
   - BaseNodeGuid: 7f0754e8-e723-48f1-940f-bf3d3de9db59
     PortName: Then what?
     TargetNodeGuid: 18ed665e-0b8a-41ce-9115-4c089a4fa03a
-  - BaseNodeGuid: 4cc57f13-5571-4fb6-a54b-bcbea13b8ef9
-    PortName: Then what?
-    TargetNodeGuid: 18ed665e-0b8a-41ce-9115-4c089a4fa03a
   - BaseNodeGuid: 7f0754e8-e723-48f1-940f-bf3d3de9db59
     PortName: What if they tapped my phone?
     TargetNodeGuid: f547e9fc-6a24-4afe-9027-822378fc8324
   - BaseNodeGuid: 4cc57f13-5571-4fb6-a54b-bcbea13b8ef9
+    PortName: Then what?
+    TargetNodeGuid: 18ed665e-0b8a-41ce-9115-4c089a4fa03a
+  - BaseNodeGuid: 4cc57f13-5571-4fb6-a54b-bcbea13b8ef9
     PortName: What if they tapped my phone?
     TargetNodeGuid: f547e9fc-6a24-4afe-9027-822378fc8324
   - BaseNodeGuid: 18ed665e-0b8a-41ce-9115-4c089a4fa03a
-    PortName: Yes ma'am.
-    TargetNodeGuid: a5bac74d-0e3b-47e3-af0b-0a9bb9c0bdbb
-  - BaseNodeGuid: f547e9fc-6a24-4afe-9027-822378fc8324
     PortName: Yes ma'am.
     TargetNodeGuid: a5bac74d-0e3b-47e3-af0b-0a9bb9c0bdbb
   - BaseNodeGuid: 18ed665e-0b8a-41ce-9115-4c089a4fa03a
     PortName: This seems risky.
     TargetNodeGuid: 1a47e20e-c066-4efe-acd4-a123cba94bc6
+  - BaseNodeGuid: f547e9fc-6a24-4afe-9027-822378fc8324
+    PortName: Yes ma'am.
+    TargetNodeGuid: a5bac74d-0e3b-47e3-af0b-0a9bb9c0bdbb
   - BaseNodeGuid: f547e9fc-6a24-4afe-9027-822378fc8324
     PortName: This seems risky.
     TargetNodeGuid: 1a47e20e-c066-4efe-acd4-a123cba94bc6

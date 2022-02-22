@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
+  m_Name: HighCultist-Beat1
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: e744abd5-b9c6-4ea9-afe8-fc2bbfb04571
+    PortName: Next
+    TargetNodeGuid: 709b3c47-f1e0-4526-b635-04c4b14469f2
+  - BaseNodeGuid: 709b3c47-f1e0-4526-b635-04c4b14469f2
+    PortName: I am new in town!
+    TargetNodeGuid: d968803d-b996-4851-b909-ce386f56504b
+  - BaseNodeGuid: 709b3c47-f1e0-4526-b635-04c4b14469f2
+    PortName: Why do you ask?
+    TargetNodeGuid: 8077a078-9b6b-43e4-b25d-da2173c583c1
+  - BaseNodeGuid: d968803d-b996-4851-b909-ce386f56504b
+    PortName: Can't imagine why.
+    TargetNodeGuid: daf288a5-2c8d-429d-a24d-7fb764259047
+  - BaseNodeGuid: d968803d-b996-4851-b909-ce386f56504b
+    PortName: Do a lot of young people come here?
+    TargetNodeGuid: cec6485b-0b02-48a1-9db4-75f31802fec8
+  - BaseNodeGuid: 8077a078-9b6b-43e4-b25d-da2173c583c1
+    PortName: You don't look old.
+    TargetNodeGuid: 5139d60c-45c4-485b-b78f-1800946525d5
+  - BaseNodeGuid: 8077a078-9b6b-43e4-b25d-da2173c583c1
+    PortName: I'm not excited to get old.
+    TargetNodeGuid: f2086c53-3e39-40ab-a8f4-ba2ec550d441
+  - BaseNodeGuid: daf288a5-2c8d-429d-a24d-7fb764259047
+    PortName: I just needed a job.
+    TargetNodeGuid: 89f7b588-48ea-496a-b776-2c4923f82e21
+  - BaseNodeGuid: cec6485b-0b02-48a1-9db4-75f31802fec8
+    PortName: I just needed a job.
+    TargetNodeGuid: 89f7b588-48ea-496a-b776-2c4923f82e21
+  - BaseNodeGuid: 5139d60c-45c4-485b-b78f-1800946525d5
+    PortName: I just needed a job.
+    TargetNodeGuid: 89f7b588-48ea-496a-b776-2c4923f82e21
+  - BaseNodeGuid: f2086c53-3e39-40ab-a8f4-ba2ec550d441
+    PortName: I just needed a job.
+    TargetNodeGuid: 89f7b588-48ea-496a-b776-2c4923f82e21
+  - BaseNodeGuid: f2086c53-3e39-40ab-a8f4-ba2ec550d441
+    PortName: This place is interesting.
+    TargetNodeGuid: 6c05de82-5ef6-44e4-8c19-43affce05e4b
+  - BaseNodeGuid: 5139d60c-45c4-485b-b78f-1800946525d5
+    PortName: This place is interesting.
+    TargetNodeGuid: 6c05de82-5ef6-44e4-8c19-43affce05e4b
+  - BaseNodeGuid: cec6485b-0b02-48a1-9db4-75f31802fec8
+    PortName: This place is interesting.
+    TargetNodeGuid: 6c05de82-5ef6-44e4-8c19-43affce05e4b
+  - BaseNodeGuid: daf288a5-2c8d-429d-a24d-7fb764259047
+    PortName: This place is interesting.
+    TargetNodeGuid: 6c05de82-5ef6-44e4-8c19-43affce05e4b
+  - BaseNodeGuid: 89f7b588-48ea-496a-b776-2c4923f82e21
+    PortName: You too!
+    TargetNodeGuid: 49c2c915-564c-4dbe-95fb-f24eb1373c8b
+  - BaseNodeGuid: 89f7b588-48ea-496a-b776-2c4923f82e21
+    PortName: See ya.
+    TargetNodeGuid: 49c2c915-564c-4dbe-95fb-f24eb1373c8b
+  - BaseNodeGuid: 6c05de82-5ef6-44e4-8c19-43affce05e4b
+    PortName: You too!
+    TargetNodeGuid: 49c2c915-564c-4dbe-95fb-f24eb1373c8b
+  - BaseNodeGuid: 6c05de82-5ef6-44e4-8c19-43affce05e4b
+    PortName: See ya.
+    TargetNodeGuid: 49c2c915-564c-4dbe-95fb-f24eb1373c8b
+  DialogueNodeData:
+  - Guid: 709b3c47-f1e0-4526-b635-04c4b14469f2
+    DialogueText: Hey, dear! Are you new in town? I've been here for so many years,
+      young faces always stick out to me!
+    Position: {x: 195, y: 201}
+  - Guid: 8077a078-9b6b-43e4-b25d-da2173c583c1
+    DialogueText: Just making conversation! I see lots of young folks coming here.
+      I'm so old, I can remember Arkham before my factories brought workers here!
+    Position: {x: 928, y: 273}
+  - Guid: d968803d-b996-4851-b909-ce386f56504b
+    DialogueText: I knew it! Your youthful face gave it away! That's one thing I
+      love about Arkham, spry young folks are always coming here and making it better.
+    Position: {x: 930, y: 146}
+  - Guid: daf288a5-2c8d-429d-a24d-7fb764259047
+    DialogueText: Now, don't be crass. Arkham is wonderful! It's bursting with opportunity!
+      If you find this town so disagreeable, why did you come here?
+    Position: {x: 1906, y: 84}
+  - Guid: f2086c53-3e39-40ab-a8f4-ba2ec550d441
+    DialogueText: Don't hurt my feelings, dear! I think I'm still young inside. My
+      businesses would have failed were it not for my youthful ambition! I suspect
+      ambition is what brought you here too.
+    Position: {x: 1909, y: 462}
+  - Guid: 5139d60c-45c4-485b-b78f-1800946525d5
+    DialogueText: Oh stop it! You charmer, you! I'm older than dirt, dear! So, what
+      brings you to Arkham? I assume you didn't come all this way just to flatter!
+    Position: {x: 1909, y: 336}
+  - Guid: cec6485b-0b02-48a1-9db4-75f31802fec8
+    DialogueText: Absolutley! I own many of Arkham's businesses, thus I meet lots
+      of young folks coming here to work! So, what brings you to Arkham?
+    Position: {x: 1908, y: 210}
+  - Guid: 89f7b588-48ea-496a-b776-2c4923f82e21
+    DialogueText: Aren't we all? I admire your determination! With an attitude like
+      that, you will go far here. You have a nice day, dear.
+    Position: {x: 3029, y: 191}
+  - Guid: 6c05de82-5ef6-44e4-8c19-43affce05e4b
+    DialogueText: Incredible! Arkham isn't perfect, but it's home. It always make
+      me feel hopeful to see the youth so engaged with Arkham. You have a nice day,
+      dear.
+    Position: {x: 3036, y: 371}
+  - Guid: 49c2c915-564c-4dbe-95fb-f24eb1373c8b
+    DialogueText: +0
+    Position: {x: 4021, y: 249}
+  ExposedProperties: []
+  CommentBlockData: []

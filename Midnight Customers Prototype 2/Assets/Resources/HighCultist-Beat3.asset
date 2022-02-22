@@ -1,0 +1,178 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
+  m_Name: HighCultist-Beat3
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: f6e2734c-66a3-4cf7-997f-1628277aaa7f
+    PortName: Next
+    TargetNodeGuid: b2e7add3-9e52-4e96-b5b0-c1d25cc9c5bc
+  - BaseNodeGuid: b2e7add3-9e52-4e96-b5b0-c1d25cc9c5bc
+    PortName: Anxious, actually.
+    TargetNodeGuid: 468ab183-21d4-4d1a-8853-30a5f305946f
+  - BaseNodeGuid: b2e7add3-9e52-4e96-b5b0-c1d25cc9c5bc
+    PortName: Great, and yourself?
+    TargetNodeGuid: 892e1a1f-12e2-4571-b8ad-29252a5c5fc0
+  - BaseNodeGuid: 892e1a1f-12e2-4571-b8ad-29252a5c5fc0
+    PortName: Yes.
+    TargetNodeGuid: 26a4a69f-7e2c-4992-a455-1540e383ba90
+  - BaseNodeGuid: 468ab183-21d4-4d1a-8853-30a5f305946f
+    PortName: Yes.
+    TargetNodeGuid: 26a4a69f-7e2c-4992-a455-1540e383ba90
+  - BaseNodeGuid: 892e1a1f-12e2-4571-b8ad-29252a5c5fc0
+    PortName: No.
+    TargetNodeGuid: b2bc457f-55b2-4a19-94c6-83c6cac45c11
+  - BaseNodeGuid: 468ab183-21d4-4d1a-8853-30a5f305946f
+    PortName: No.
+    TargetNodeGuid: b2bc457f-55b2-4a19-94c6-83c6cac45c11
+  - BaseNodeGuid: 26a4a69f-7e2c-4992-a455-1540e383ba90
+    PortName: Who stole it?
+    TargetNodeGuid: 2ebc51b2-dd4a-483e-965b-5f0ea3651efe
+  - BaseNodeGuid: b2bc457f-55b2-4a19-94c6-83c6cac45c11
+    PortName: Who stole it?
+    TargetNodeGuid: 2ebc51b2-dd4a-483e-965b-5f0ea3651efe
+  - BaseNodeGuid: 26a4a69f-7e2c-4992-a455-1540e383ba90
+    PortName: You got it back?
+    TargetNodeGuid: 68105645-ffd4-480a-b775-939b0f96a4cf
+  - BaseNodeGuid: b2bc457f-55b2-4a19-94c6-83c6cac45c11
+    PortName: You got it back?
+    TargetNodeGuid: 68105645-ffd4-480a-b775-939b0f96a4cf
+  - BaseNodeGuid: 2ebc51b2-dd4a-483e-965b-5f0ea3651efe
+    PortName: Pressure?
+    TargetNodeGuid: a6878c51-2230-4511-96b4-c5f74b95e270
+  - BaseNodeGuid: 68105645-ffd4-480a-b775-939b0f96a4cf
+    PortName: Pressure?
+    TargetNodeGuid: a6878c51-2230-4511-96b4-c5f74b95e270
+  - BaseNodeGuid: 2ebc51b2-dd4a-483e-965b-5f0ea3651efe
+    PortName: How did you find them?
+    TargetNodeGuid: cf13e099-c0d7-45a3-b84a-b7f4be1efcea
+  - BaseNodeGuid: 68105645-ffd4-480a-b775-939b0f96a4cf
+    PortName: How did you find them?
+    TargetNodeGuid: cf13e099-c0d7-45a3-b84a-b7f4be1efcea
+  - BaseNodeGuid: a6878c51-2230-4511-96b4-c5f74b95e270
+    PortName: Fired? Just for that?
+    TargetNodeGuid: fc94faf9-b9e9-4a6d-b2c4-d2e1c1e3fe7e
+  - BaseNodeGuid: cf13e099-c0d7-45a3-b84a-b7f4be1efcea
+    PortName: Fired? That's terrible!
+    TargetNodeGuid: fc94faf9-b9e9-4a6d-b2c4-d2e1c1e3fe7e
+  - BaseNodeGuid: a6878c51-2230-4511-96b4-c5f74b95e270
+    PortName: What's the arrangement?
+    TargetNodeGuid: 5297b4cf-afd5-4273-8395-106dc08560d8
+  - BaseNodeGuid: cf13e099-c0d7-45a3-b84a-b7f4be1efcea
+    PortName: What's the arrangement?
+    TargetNodeGuid: 5297b4cf-afd5-4273-8395-106dc08560d8
+  - BaseNodeGuid: 5297b4cf-afd5-4273-8395-106dc08560d8
+    PortName: Are you sure about this?
+    TargetNodeGuid: 214662f5-b87a-4b96-b317-9bd9f1ba0d8a
+  - BaseNodeGuid: fc94faf9-b9e9-4a6d-b2c4-d2e1c1e3fe7e
+    PortName: Are you sure about this?
+    TargetNodeGuid: 214662f5-b87a-4b96-b317-9bd9f1ba0d8a
+  - BaseNodeGuid: 5297b4cf-afd5-4273-8395-106dc08560d8
+    PortName: That's ominous.
+    TargetNodeGuid: 61ae97db-4315-4367-a593-89754bc4d1cb
+  - BaseNodeGuid: fc94faf9-b9e9-4a6d-b2c4-d2e1c1e3fe7e
+    PortName: That's ominous.
+    TargetNodeGuid: 61ae97db-4315-4367-a593-89754bc4d1cb
+  - BaseNodeGuid: 214662f5-b87a-4b96-b317-9bd9f1ba0d8a
+    PortName: Anything else?
+    TargetNodeGuid: 2c7644ab-ae07-4613-84d0-1dc3b91be69d
+  - BaseNodeGuid: 61ae97db-4315-4367-a593-89754bc4d1cb
+    PortName: Anything else?
+    TargetNodeGuid: 2c7644ab-ae07-4613-84d0-1dc3b91be69d
+  - BaseNodeGuid: 214662f5-b87a-4b96-b317-9bd9f1ba0d8a
+    PortName: You're all set.
+    TargetNodeGuid: 85957b5b-c56f-442f-acf0-7fefbd4ce0db
+  - BaseNodeGuid: 61ae97db-4315-4367-a593-89754bc4d1cb
+    PortName: You're all set.
+    TargetNodeGuid: 85957b5b-c56f-442f-acf0-7fefbd4ce0db
+  - BaseNodeGuid: 2c7644ab-ae07-4613-84d0-1dc3b91be69d
+    PortName: You too!
+    TargetNodeGuid: e09f2248-a470-4ae9-bfa3-81d66e4f33fe
+  - BaseNodeGuid: 2c7644ab-ae07-4613-84d0-1dc3b91be69d
+    PortName: Bye.
+    TargetNodeGuid: e09f2248-a470-4ae9-bfa3-81d66e4f33fe
+  - BaseNodeGuid: 85957b5b-c56f-442f-acf0-7fefbd4ce0db
+    PortName: You too!
+    TargetNodeGuid: e09f2248-a470-4ae9-bfa3-81d66e4f33fe
+  - BaseNodeGuid: 85957b5b-c56f-442f-acf0-7fefbd4ce0db
+    PortName: Bye.
+    TargetNodeGuid: e09f2248-a470-4ae9-bfa3-81d66e4f33fe
+  DialogueNodeData:
+  - Guid: b2e7add3-9e52-4e96-b5b0-c1d25cc9c5bc
+    DialogueText: Hello, dear! How are you?
+    Position: {x: 195, y: 199}
+  - Guid: 892e1a1f-12e2-4571-b8ad-29252a5c5fc0
+    DialogueText: Oh likewise dear, oh quite extremely likewise! I'm having an extraordinarily
+      wonderful day! Do you recall my safe being stolen from me?
+    Position: {x: 494, y: 136}
+  - Guid: 468ab183-21d4-4d1a-8853-30a5f305946f
+    DialogueText: Anxious? I'm afraid I simply cannot relate; I'm having an exquisitely
+      fantastical day! Do you recall when that safe was stolen from me?
+    Position: {x: 493, y: 274}
+  - Guid: b2bc457f-55b2-4a19-94c6-83c6cac45c11
+    DialogueText: Well, I told you that a safe was stolen from my mansion! And as
+      it turns out, it was not the authorities coming to rob me out of my riches,
+      or idealists attempting to undermine my successes.
+    Position: {x: 1429, y: 276}
+  - Guid: 26a4a69f-7e2c-4992-a455-1540e383ba90
+    DialogueText: Such a keen listener! As it turns out, it was not the authorities
+      coming to rob me out of my riches, or idealists attempting to undermine my
+      successes.
+    Position: {x: 1428, y: 136}
+  - Guid: 68105645-ffd4-480a-b775-939b0f96a4cf
+    DialogueText: I did! They decided to bite the hand that feeds them. My managers
+      recovered the safe a couple hours after applying a little bit of 'pressure',
+      shall we say.
+    Position: {x: 2642, y: 280}
+  - Guid: 2ebc51b2-dd4a-483e-965b-5f0ea3651efe
+    DialogueText: One of my own employees! They decided to bite the hand that feeds
+      them. My managers recovered the safe a couple hours after applying a little
+      bit of 'pressure', shall we say.
+    Position: {x: 2640, y: 129}
+  - Guid: a6878c51-2230-4511-96b4-c5f74b95e270
+    DialogueText: Nice try, but a good magician never reveals her tricks! All I can
+      say is that the thief has been fired. I've also made an arrangement with the
+      owner of the gas-station to make sure this never happens again
+    Position: {x: 3811, y: 125}
+  - Guid: cf13e099-c0d7-45a3-b84a-b7f4be1efcea
+    DialogueText: Nice try, but a good magician never reveals her tricks! All I can
+      say is that the thief has been fired. I've also made an arrangement with the
+      owner of the gas-station to make sure this never happens again.
+    Position: {x: 3815, y: 282}
+  - Guid: fc94faf9-b9e9-4a6d-b2c4-d2e1c1e3fe7e
+    DialogueText: Why certainly! Workers become criminals when they steal from their
+      employers, wouldn't you say? They forced my hand here. That's why I'll be making
+      executive decisions about the future of my enterprise very soon.
+    Position: {x: 5118, y: 281}
+  - Guid: 5297b4cf-afd5-4273-8395-106dc08560d8
+    DialogueText: "What did I tell you about great magicians? Oh you are so eager,
+      I simply adore your gumption! You\u2019ll see for yourself! I promise, dear,
+      I won\u2019t keep you in suspense forever. Soon the everyone will know, and
+      be safer for it!"
+    Position: {x: 5117, y: 125}
+  - Guid: 214662f5-b87a-4b96-b317-9bd9f1ba0d8a
+    DialogueText: I know what I'm doing, dear!
+    Position: {x: 6483, y: 122}
+  - Guid: 61ae97db-4315-4367-a593-89754bc4d1cb
+    DialogueText: Well that's certianly one perspective on the matter!
+    Position: {x: 6485, y: 278}
+  - Guid: 2c7644ab-ae07-4613-84d0-1dc3b91be69d
+    DialogueText: Not today, I'll see you around! Please do take care, dear!
+    Position: {x: 6922, y: 125}
+  - Guid: 85957b5b-c56f-442f-acf0-7fefbd4ce0db
+    DialogueText: Thank you! I'll see you around! Please do take care, dear!
+    Position: {x: 6920, y: 279}
+  - Guid: e09f2248-a470-4ae9-bfa3-81d66e4f33fe
+    DialogueText: +0
+    Position: {x: 7462, y: 201}
+  ExposedProperties: []
+  CommentBlockData: []

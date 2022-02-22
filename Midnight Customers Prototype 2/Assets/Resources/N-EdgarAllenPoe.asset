@@ -1,0 +1,132 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
+  m_Name: N-EdgarAllenPoe
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: 026055d1-c771-48bf-8172-a74ff93e1fa5
+    PortName: Next
+    TargetNodeGuid: bfe35042-3c92-4e8f-b497-9eae0420fcf4
+  - BaseNodeGuid: bfe35042-3c92-4e8f-b497-9eae0420fcf4
+    PortName: Did you find everything okay?
+    TargetNodeGuid: 141769c3-d1d3-416d-9252-bbb78fb96c46
+  - BaseNodeGuid: bfe35042-3c92-4e8f-b497-9eae0420fcf4
+    PortName: Uh...what?
+    TargetNodeGuid: 5485bd7d-edaa-427e-af01-d20503117e41
+  - BaseNodeGuid: bfe35042-3c92-4e8f-b497-9eae0420fcf4
+    PortName: ...
+    TargetNodeGuid: 5485bd7d-edaa-427e-af01-d20503117e41
+  - BaseNodeGuid: 5485bd7d-edaa-427e-af01-d20503117e41
+    PortName: You're making me uncomfrotable.
+    TargetNodeGuid: 880b08c4-25db-4193-9520-7681437c3c0b
+  - BaseNodeGuid: 5485bd7d-edaa-427e-af01-d20503117e41
+    PortName: ...
+    TargetNodeGuid: 880b08c4-25db-4193-9520-7681437c3c0b
+  - BaseNodeGuid: 5485bd7d-edaa-427e-af01-d20503117e41
+    PortName: Thanks. Will this be all?
+    TargetNodeGuid: 880b08c4-25db-4193-9520-7681437c3c0b
+  - BaseNodeGuid: 141769c3-d1d3-416d-9252-bbb78fb96c46
+    PortName: Thanks. Will this be all?
+    TargetNodeGuid: 880b08c4-25db-4193-9520-7681437c3c0b
+  - BaseNodeGuid: 141769c3-d1d3-416d-9252-bbb78fb96c46
+    PortName: What sin?
+    TargetNodeGuid: 880b08c4-25db-4193-9520-7681437c3c0b
+  - BaseNodeGuid: 141769c3-d1d3-416d-9252-bbb78fb96c46
+    PortName: ...
+    TargetNodeGuid: 880b08c4-25db-4193-9520-7681437c3c0b
+  - BaseNodeGuid: 880b08c4-25db-4193-9520-7681437c3c0b
+    PortName: Cash or credit?
+    TargetNodeGuid: 9a2daf0a-d9d5-4701-84a2-d94b7d77f951
+  - BaseNodeGuid: 880b08c4-25db-4193-9520-7681437c3c0b
+    PortName: Hear what?
+    TargetNodeGuid: 9a2daf0a-d9d5-4701-84a2-d94b7d77f951
+  - BaseNodeGuid: 880b08c4-25db-4193-9520-7681437c3c0b
+    PortName: ...
+    TargetNodeGuid: 9a2daf0a-d9d5-4701-84a2-d94b7d77f951
+  - BaseNodeGuid: 9a2daf0a-d9d5-4701-84a2-d94b7d77f951
+    PortName: You should leave.
+    TargetNodeGuid: 72e84ef3-6f54-40f1-9972-4eb99362fa9a
+  - BaseNodeGuid: 72e84ef3-6f54-40f1-9972-4eb99362fa9a
+    PortName: Have a nice night.
+    TargetNodeGuid: 76559ff6-709a-4414-9420-7133dbef9d2d
+  - BaseNodeGuid: 72e84ef3-6f54-40f1-9972-4eb99362fa9a
+    PortName: Okay...good luck?
+    TargetNodeGuid: 76559ff6-709a-4414-9420-7133dbef9d2d
+  - BaseNodeGuid: 72e84ef3-6f54-40f1-9972-4eb99362fa9a
+    PortName: ...
+    TargetNodeGuid: 76559ff6-709a-4414-9420-7133dbef9d2d
+  - BaseNodeGuid: 9a2daf0a-d9d5-4701-84a2-d94b7d77f951
+    PortName: Are you okay?
+    TargetNodeGuid: d27fb80e-d7ac-4579-8aec-8458df61ffa4
+  - BaseNodeGuid: 9a2daf0a-d9d5-4701-84a2-d94b7d77f951
+    PortName: ..
+    TargetNodeGuid: d27fb80e-d7ac-4579-8aec-8458df61ffa4
+  - BaseNodeGuid: d27fb80e-d7ac-4579-8aec-8458df61ffa4
+    PortName: Please leave.
+    TargetNodeGuid: 72e84ef3-6f54-40f1-9972-4eb99362fa9a
+  - BaseNodeGuid: d27fb80e-d7ac-4579-8aec-8458df61ffa4
+    PortName: Do I need to call someone?
+    TargetNodeGuid: 42296491-ec54-4ea9-a913-ac821fe50d8b
+  - BaseNodeGuid: d27fb80e-d7ac-4579-8aec-8458df61ffa4
+    PortName: ...
+    TargetNodeGuid: 42296491-ec54-4ea9-a913-ac821fe50d8b
+  - BaseNodeGuid: 42296491-ec54-4ea9-a913-ac821fe50d8b
+    PortName: Have a nice night.
+    TargetNodeGuid: 76559ff6-709a-4414-9420-7133dbef9d2d
+  - BaseNodeGuid: 42296491-ec54-4ea9-a913-ac821fe50d8b
+    PortName: Okay...good luck?
+    TargetNodeGuid: 76559ff6-709a-4414-9420-7133dbef9d2d
+  - BaseNodeGuid: 42296491-ec54-4ea9-a913-ac821fe50d8b
+    PortName: ...
+    TargetNodeGuid: 76559ff6-709a-4414-9420-7133dbef9d2d
+  DialogueNodeData:
+  - Guid: 5485bd7d-edaa-427e-af01-d20503117e41
+    DialogueText: They do not possess the evil that his did. His vengeful eye. No.
+      Yours have sincerity. They were made to part the darkness.
+    Position: {x: 1039, y: 267}
+  - Guid: bfe35042-3c92-4e8f-b497-9eae0420fcf4
+    DialogueText: Your eyes. Your beautiful eyes. I dare say I have not seen such
+      eyes. They are clear. Devoid of the darkness.
+    Position: {x: 217, y: 192}
+  - Guid: 141769c3-d1d3-416d-9252-bbb78fb96c46
+    DialogueText: I have. Yes. I live alone, you see. Seeing your eyes have given
+      me comfort. They have reminded me that I was just in my sin.
+    Position: {x: 1039, y: 117}
+  - Guid: 880b08c4-25db-4193-9520-7681437c3c0b
+    DialogueText: A moment. I hear it. The tapping. The pitter patter of the heart.
+      It sounds familiar. It invigorates me with the same fervor. Surely you must
+      hear it.
+    Position: {x: 1896, y: 201}
+  - Guid: 9a2daf0a-d9d5-4701-84a2-d94b7d77f951
+    DialogueText: You think me mad. I assure you that it is merely my acute senses.
+      Madmen would not speak so calmly. However, I cannot shake this new anxiety.
+      The sound pierces me like a dagger.
+    Position: {x: 2843, y: 201}
+  - Guid: d27fb80e-d7ac-4579-8aec-8458df61ffa4
+    DialogueText: It seems I will not know peace until the infernal beating stops.
+      I pray the darkness does not embark on your eye. The fog. It tortures my memories.
+    Position: {x: 4017, y: 297}
+  - Guid: 72e84ef3-6f54-40f1-9972-4eb99362fa9a
+    DialogueText: A good idea. I fear the beating is loud enough to be heard from
+      afar. If there was silence, I would be marked a madman. I have no choice but
+      to make haste. Farewell.
+    Position: {x: 4990, y: 114}
+  - Guid: 42296491-ec54-4ea9-a913-ac821fe50d8b
+    DialogueText: I must take my leave. I fear the beating is loud enough to be heard
+      from afar. If there was silence, I would be marked a madman. I have no choice
+      but to make haste. Farewell.
+    Position: {x: 4981, y: 345}
+  - Guid: 76559ff6-709a-4414-9420-7133dbef9d2d
+    DialogueText: +0
+    Position: {x: 6105, y: 242}
+  ExposedProperties: []
+  CommentBlockData: []

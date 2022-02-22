@@ -19,6 +19,15 @@ public class ItemBox : MonoBehaviour
     public Transform[] boxSpawns;
     [Tooltip("Items that have been spawned.")]
     public List<GameObject> spawnedItems;
+    SpriteRenderer sprite;
+
+    void Start()
+    {
+        if(gameObject.TryGetComponent(out SpriteRenderer reference)){
+            sprite = reference; 
+        }
+    }
+
 
     private void OnMouseDown()
     {
@@ -65,4 +74,14 @@ public class ItemBox : MonoBehaviour
             i++;
         }
     }
+
+    void OnMouseOver()
+        {
+            sprite.color = new Color(sprite.color.r, sprite.color.g, sprite.color.b, 0.5f);
+        }
+
+    void OnMouseExit()
+        {
+            sprite.color = new Color(sprite.color.r, sprite.color.g, sprite.color.b, 1f);
+        }
 }

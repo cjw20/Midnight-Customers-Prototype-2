@@ -1,0 +1,165 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
+  m_Name: N-Breakup
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: 49e2425e-5baf-4fb5-8716-1a58b2b26cf2
+    PortName: Next
+    TargetNodeGuid: 89320a1d-2ad4-4463-bc25-7afe7cfca3cc
+  - BaseNodeGuid: 89320a1d-2ad4-4463-bc25-7afe7cfca3cc
+    PortName: How are you today?
+    TargetNodeGuid: 572f7f90-03e2-4e74-952e-1b1900e43ac7
+  - BaseNodeGuid: 89320a1d-2ad4-4463-bc25-7afe7cfca3cc
+    PortName: Have you been crying?
+    TargetNodeGuid: 68cc8f14-12d5-441c-a1a2-1e75798fef64
+  - BaseNodeGuid: 89320a1d-2ad4-4463-bc25-7afe7cfca3cc
+    PortName: ...
+    TargetNodeGuid: 572f7f90-03e2-4e74-952e-1b1900e43ac7
+  - BaseNodeGuid: 68cc8f14-12d5-441c-a1a2-1e75798fef64
+    PortName: What happened?
+    TargetNodeGuid: 9ce005e6-11ff-4d14-9b46-d592249a3003
+  - BaseNodeGuid: 572f7f90-03e2-4e74-952e-1b1900e43ac7
+    PortName: What happened?
+    TargetNodeGuid: 9ce005e6-11ff-4d14-9b46-d592249a3003
+  - BaseNodeGuid: 68cc8f14-12d5-441c-a1a2-1e75798fef64
+    PortName: ...
+    TargetNodeGuid: 9ce005e6-11ff-4d14-9b46-d592249a3003
+  - BaseNodeGuid: 572f7f90-03e2-4e74-952e-1b1900e43ac7
+    PortName: ...
+    TargetNodeGuid: 9ce005e6-11ff-4d14-9b46-d592249a3003
+  - BaseNodeGuid: 68cc8f14-12d5-441c-a1a2-1e75798fef64
+    PortName: I'm sorry to hear that.
+    TargetNodeGuid: 79ba25db-0cb1-4b1d-9556-45fb373f8f2a
+  - BaseNodeGuid: 572f7f90-03e2-4e74-952e-1b1900e43ac7
+    PortName: I'm sorry to hear that.
+    TargetNodeGuid: 79ba25db-0cb1-4b1d-9556-45fb373f8f2a
+  - BaseNodeGuid: 79ba25db-0cb1-4b1d-9556-45fb373f8f2a
+    PortName: Aw yeah. I can see how.
+    TargetNodeGuid: 856b4ad3-d262-4910-9c86-4935277b93be
+  - BaseNodeGuid: 79ba25db-0cb1-4b1d-9556-45fb373f8f2a
+    PortName: ...
+    TargetNodeGuid: 856b4ad3-d262-4910-9c86-4935277b93be
+  - BaseNodeGuid: 9ce005e6-11ff-4d14-9b46-d592249a3003
+    PortName: Aw yeah. I can see how.
+    TargetNodeGuid: 856b4ad3-d262-4910-9c86-4935277b93be
+  - BaseNodeGuid: 9ce005e6-11ff-4d14-9b46-d592249a3003
+    PortName: ...
+    TargetNodeGuid: 856b4ad3-d262-4910-9c86-4935277b93be
+  - BaseNodeGuid: 9ce005e6-11ff-4d14-9b46-d592249a3003
+    PortName: Did you visit eachother?
+    TargetNodeGuid: 7e6e966b-ed59-4a84-b885-02424ac5b3a7
+  - BaseNodeGuid: 79ba25db-0cb1-4b1d-9556-45fb373f8f2a
+    PortName: Did you visit eachother?
+    TargetNodeGuid: 7e6e966b-ed59-4a84-b885-02424ac5b3a7
+  - BaseNodeGuid: 7e6e966b-ed59-4a84-b885-02424ac5b3a7
+    PortName: ...
+    TargetNodeGuid: f17a41b0-954f-4dab-af3a-f2abc25286fc
+  - BaseNodeGuid: 7e6e966b-ed59-4a84-b885-02424ac5b3a7
+    PortName: How come you didn't help?
+    TargetNodeGuid: f17a41b0-954f-4dab-af3a-f2abc25286fc
+  - BaseNodeGuid: 856b4ad3-d262-4910-9c86-4935277b93be
+    PortName: ...
+    TargetNodeGuid: f17a41b0-954f-4dab-af3a-f2abc25286fc
+  - BaseNodeGuid: 856b4ad3-d262-4910-9c86-4935277b93be
+    PortName: How come you didn't help?
+    TargetNodeGuid: f17a41b0-954f-4dab-af3a-f2abc25286fc
+  - BaseNodeGuid: 7e6e966b-ed59-4a84-b885-02424ac5b3a7
+    PortName: Well, family is important.
+    TargetNodeGuid: bce71f28-d8af-4f97-9a38-c02ab9399e8d
+  - BaseNodeGuid: 856b4ad3-d262-4910-9c86-4935277b93be
+    PortName: Well, family is important.
+    TargetNodeGuid: bce71f28-d8af-4f97-9a38-c02ab9399e8d
+  - BaseNodeGuid: bce71f28-d8af-4f97-9a38-c02ab9399e8d
+    PortName: They farmed pearls?
+    TargetNodeGuid: d198c0db-8572-4869-81b3-f084d759cad7
+  - BaseNodeGuid: f17a41b0-954f-4dab-af3a-f2abc25286fc
+    PortName: They farmed pearls?
+    TargetNodeGuid: d198c0db-8572-4869-81b3-f084d759cad7
+  - BaseNodeGuid: bce71f28-d8af-4f97-9a38-c02ab9399e8d
+    PortName: what do you mean "deep"?
+    TargetNodeGuid: 4db4ccd7-d36a-4b78-aa27-f6b0286a975a
+  - BaseNodeGuid: bce71f28-d8af-4f97-9a38-c02ab9399e8d
+    PortName: ...
+    TargetNodeGuid: 4db4ccd7-d36a-4b78-aa27-f6b0286a975a
+  - BaseNodeGuid: f17a41b0-954f-4dab-af3a-f2abc25286fc
+    PortName: what do you mean "deep"?
+    TargetNodeGuid: 4db4ccd7-d36a-4b78-aa27-f6b0286a975a
+  - BaseNodeGuid: f17a41b0-954f-4dab-af3a-f2abc25286fc
+    PortName: ...
+    TargetNodeGuid: 4db4ccd7-d36a-4b78-aa27-f6b0286a975a
+  - BaseNodeGuid: d198c0db-8572-4869-81b3-f084d759cad7
+    PortName: I hope you feel better.
+    TargetNodeGuid: e8ff4edd-9bfe-4648-8acd-5255a9643252
+  - BaseNodeGuid: d198c0db-8572-4869-81b3-f084d759cad7
+    PortName: Oh, okay then. Bye.
+    TargetNodeGuid: e8ff4edd-9bfe-4648-8acd-5255a9643252
+  - BaseNodeGuid: d198c0db-8572-4869-81b3-f084d759cad7
+    PortName: ...
+    TargetNodeGuid: e8ff4edd-9bfe-4648-8acd-5255a9643252
+  - BaseNodeGuid: 4db4ccd7-d36a-4b78-aa27-f6b0286a975a
+    PortName: I hope you feel better.
+    TargetNodeGuid: e8ff4edd-9bfe-4648-8acd-5255a9643252
+  - BaseNodeGuid: 4db4ccd7-d36a-4b78-aa27-f6b0286a975a
+    PortName: Oh, okay then. Bye.
+    TargetNodeGuid: e8ff4edd-9bfe-4648-8acd-5255a9643252
+  - BaseNodeGuid: 4db4ccd7-d36a-4b78-aa27-f6b0286a975a
+    PortName: ...
+    TargetNodeGuid: e8ff4edd-9bfe-4648-8acd-5255a9643252
+  DialogueNodeData:
+  - Guid: 89320a1d-2ad4-4463-bc25-7afe7cfca3cc
+    DialogueText: Just uh...just this please.
+    Position: {x: 195, y: 196}
+  - Guid: 572f7f90-03e2-4e74-952e-1b1900e43ac7
+    DialogueText: I've been a wreck all week. My uh...my partner left me.
+    Position: {x: 513, y: 133}
+  - Guid: 68cc8f14-12d5-441c-a1a2-1e75798fef64
+    DialogueText: No..well yes. I just...my partner left me and I've been a wreck
+      all week.
+    Position: {x: 513, y: 299}
+  - Guid: 79ba25db-0cb1-4b1d-9556-45fb373f8f2a
+    DialogueText: Thanks. It was long distance most of the time. It was hard not
+      being able to see each other often. So, we just kind of grew apart.
+    Position: {x: 1078, y: 135}
+  - Guid: 9ce005e6-11ff-4d14-9b46-d592249a3003
+    DialogueText: I guess we grew apart? It was long distance most of the time. It
+      was hard not being able to see each other often.
+    Position: {x: 1081, y: 297}
+  - Guid: 7e6e966b-ed59-4a84-b885-02424ac5b3a7
+    DialogueText: Not much. I couldn't really. They spent most of their time on their
+      parents' farm since the upkeep had become harder over recent years.
+    Position: {x: 1936, y: 295}
+  - Guid: 856b4ad3-d262-4910-9c86-4935277b93be
+    DialogueText: They had to spend a lot of time with their parents too. They have
+      some farm and needed extra hands.
+    Position: {x: 1982, y: 135}
+  - Guid: bce71f28-d8af-4f97-9a38-c02ab9399e8d
+    DialogueText: Yeah and I would've helped, but I just don't know much about farming
+      pearls. Plus, their home is really deep.
+    Position: {x: 2778, y: 135}
+  - Guid: f17a41b0-954f-4dab-af3a-f2abc25286fc
+    DialogueText: I just don't know much about farming pearls, ya know? Plus, their
+      home is really deep.
+    Position: {x: 2903, y: 295}
+  - Guid: 4db4ccd7-d36a-4b78-aa27-f6b0286a975a
+    DialogueText: I was going to take diving lessons but they're expensive. Ugh,
+      sorry just...this is a lot to talk about right now. I think I'm gonna go.
+    Position: {x: 3533, y: 297}
+  - Guid: d198c0db-8572-4869-81b3-f084d759cad7
+    DialogueText: Yeah a lot of people like them up here so. Ugh, sorry just...this
+      is a lot to talk about right now. I think I'm gonna go.
+    Position: {x: 3534, y: 137}
+  - Guid: e8ff4edd-9bfe-4648-8acd-5255a9643252
+    DialogueText: +0
+    Position: {x: 4409, y: 226}
+  ExposedProperties: []
+  CommentBlockData: []
