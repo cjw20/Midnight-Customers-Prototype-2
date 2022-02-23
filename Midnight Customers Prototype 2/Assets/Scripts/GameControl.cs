@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.IO;
 
 public class GameControl : MonoBehaviour
 {
@@ -13,7 +15,10 @@ public class GameControl : MonoBehaviour
     [Tooltip("Reference to a GameControl class instance.")]
     public static GameControl control;
     [SerializeField] SaveUtility saveUtility;
-    SaveData dataToLoad;
+    public SaveData dataToLoad;
+    public int dayProg;
+    public int customerProg;
+    public bool loadingGame; //true when not new game
     
     void Awake()
     {
@@ -26,6 +31,7 @@ public class GameControl : MonoBehaviour
         {
             Destroy(gameObject);  
         }
+        SceneManager.sceneLoaded += OnSceneLoaded;
     }
     
     public void SaveGame(string saveName)
@@ -34,14 +40,26 @@ public class GameControl : MonoBehaviour
     }
     public void LoadSave(string saveName)
     {
+        loadingGame = true;
         SaveData dataToLoad = saveUtility.LoadGame(saveName);
+        dayProg = dataToLoad.day;
+        customerProg = dataToLoad.customerProgress;
         LoadScene("SampleScene"); //load variables from save data once scene has loaded
     }
-    
-    public void ContinueGame(SaveData loadedData)
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if(scene.name == "SampleScene")
+        {
+            if(dayProg != 0)
+            {
+                ContinueGame();               
+            }            
+        }        
+    }
+    public void ContinueGame()
     {         
-        GameObject.FindObjectOfType<CustomerManager>().OnLoadGame(loadedData.customerProgress);
-        GameObject.FindObjectOfType<TimeManager>().OnLoadGame(loadedData.day);
+        GameObject.FindObjectOfType<CustomerManager>().OnLoadGame(customerProg);
+        GameObject.FindObjectOfType<TimeManager>().OnLoadGame(dayProg);        
     }
     public void LoadScene(string sceneName)
     {

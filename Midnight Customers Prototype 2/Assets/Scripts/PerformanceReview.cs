@@ -33,6 +33,8 @@ public class PerformanceReview : MonoBehaviour
     [Header("Object References")]
     [Tooltip("Reference to the phone notification prefab.")]
     public GameObject phoneNotification;
+    [Tooltip("Reference to the Sound Manager.")]
+    [SerializeField] SoundManager soundManager;
     
     void Start()
     {
@@ -48,6 +50,7 @@ public class PerformanceReview : MonoBehaviour
 
     public void ReviewMessage()
     {
+        soundManager.PlayTextMessageSound();
         phoneNotification.SetActive(true);
         if(phoneMessage == null)
         {

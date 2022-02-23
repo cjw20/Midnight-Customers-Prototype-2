@@ -55,7 +55,6 @@ public class CleanableObject : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("In");
         if (collision.CompareTag("Cleaner"))
         {
             isBeingCleaned = true;

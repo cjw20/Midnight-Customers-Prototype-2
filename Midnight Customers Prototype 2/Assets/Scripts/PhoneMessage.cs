@@ -16,9 +16,12 @@ public class PhoneMessage : MonoBehaviour
     public Text messageText;
     [Tooltip("Reference to the phone prefab.")]
     public GameObject OpenPhone;
+    [Tooltip("Reference to the Sound Manager.")]
+    [SerializeField] SoundManager soundManager;
    
     public void OpenMessage()
     {
+        soundManager.PlayPhoneUnlockSound();
         OpenPhone.SetActive(true);
 
         messageText.text = message;

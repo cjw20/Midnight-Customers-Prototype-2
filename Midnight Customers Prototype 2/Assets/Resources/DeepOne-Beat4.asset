@@ -1,0 +1,183 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
+  m_Name: DeepOne-Beat4
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: 3fdd7bfe-643a-445c-8895-bedd0509c685
+    PortName: Next
+    TargetNodeGuid: ee7a9b99-0e28-4652-ac4e-5e4e6d292981
+  - BaseNodeGuid: ee7a9b99-0e28-4652-ac4e-5e4e6d292981
+    PortName: It was strange.
+    TargetNodeGuid: 93e563f1-9f1f-4cd2-a66f-574716937642
+  - BaseNodeGuid: ee7a9b99-0e28-4652-ac4e-5e4e6d292981
+    PortName: This town would drive anyone crazy.
+    TargetNodeGuid: eb234ee6-36e6-45ff-8aa3-8da2e5b50734
+  - BaseNodeGuid: 93e563f1-9f1f-4cd2-a66f-574716937642
+    PortName: Does your family worry?
+    TargetNodeGuid: 07d65cc7-59f1-4edf-b6a4-90811f6e90df
+  - BaseNodeGuid: eb234ee6-36e6-45ff-8aa3-8da2e5b50734
+    PortName: Does your family worry?
+    TargetNodeGuid: 07d65cc7-59f1-4edf-b6a4-90811f6e90df
+  - BaseNodeGuid: 93e563f1-9f1f-4cd2-a66f-574716937642
+    PortName: Does your family hate Arkham?
+    TargetNodeGuid: f5f77c12-38ce-4e7f-9619-f7c1cf496377
+  - BaseNodeGuid: eb234ee6-36e6-45ff-8aa3-8da2e5b50734
+    PortName: Does your family hate Arkham?
+    TargetNodeGuid: f5f77c12-38ce-4e7f-9619-f7c1cf496377
+  - BaseNodeGuid: 07d65cc7-59f1-4edf-b6a4-90811f6e90df
+    PortName: Sorry I brought it up.
+    TargetNodeGuid: 695ad8b7-2275-4ac6-8fec-4e2bdd1cc24b
+  - BaseNodeGuid: f5f77c12-38ce-4e7f-9619-f7c1cf496377
+    PortName: Sorry I brought it up.
+    TargetNodeGuid: 695ad8b7-2275-4ac6-8fec-4e2bdd1cc24b
+  - BaseNodeGuid: f5f77c12-38ce-4e7f-9619-f7c1cf496377
+    PortName: What happened?
+    TargetNodeGuid: 1f18beb4-cacb-4bb3-b960-c8d63412850d
+  - BaseNodeGuid: 07d65cc7-59f1-4edf-b6a4-90811f6e90df
+    PortName: What happened?
+    TargetNodeGuid: 1f18beb4-cacb-4bb3-b960-c8d63412850d
+  - BaseNodeGuid: 695ad8b7-2275-4ac6-8fec-4e2bdd1cc24b
+    PortName: Owning everything wasn't enough.
+    TargetNodeGuid: fb78434e-53f7-4eee-a1cf-2fdfd709dd90
+  - BaseNodeGuid: 1f18beb4-cacb-4bb3-b960-c8d63412850d
+    PortName: Owning everything wasn't enough.
+    TargetNodeGuid: fb78434e-53f7-4eee-a1cf-2fdfd709dd90
+  - BaseNodeGuid: 695ad8b7-2275-4ac6-8fec-4e2bdd1cc24b
+    PortName: I think I see where this is going.
+    TargetNodeGuid: 130e093b-a087-445f-8784-fd3741130162
+  - BaseNodeGuid: 1f18beb4-cacb-4bb3-b960-c8d63412850d
+    PortName: I think I see where this is going.
+    TargetNodeGuid: 130e093b-a087-445f-8784-fd3741130162
+  - BaseNodeGuid: fb78434e-53f7-4eee-a1cf-2fdfd709dd90
+    PortName: That's terrible!
+    TargetNodeGuid: 0ea2a37b-3e69-414d-880b-b0c69a771c07
+  - BaseNodeGuid: 130e093b-a087-445f-8784-fd3741130162
+    PortName: That's terrible!
+    TargetNodeGuid: 0ea2a37b-3e69-414d-880b-b0c69a771c07
+  - BaseNodeGuid: fb78434e-53f7-4eee-a1cf-2fdfd709dd90
+    PortName: ...
+    TargetNodeGuid: 85de9e24-aa52-4683-8a07-f08929c31d8b
+  - BaseNodeGuid: 130e093b-a087-445f-8784-fd3741130162
+    PortName: ...
+    TargetNodeGuid: 85de9e24-aa52-4683-8a07-f08929c31d8b
+  - BaseNodeGuid: 85de9e24-aa52-4683-8a07-f08929c31d8b
+    PortName: Sorry I asked.
+    TargetNodeGuid: c458ba78-7543-454c-b069-a33c624e0afe
+  - BaseNodeGuid: 0ea2a37b-3e69-414d-880b-b0c69a771c07
+    PortName: Sorry I asked.
+    TargetNodeGuid: c458ba78-7543-454c-b069-a33c624e0afe
+  - BaseNodeGuid: 85de9e24-aa52-4683-8a07-f08929c31d8b
+    PortName: You've been through a lot.
+    TargetNodeGuid: 657f8d0d-db8e-4287-8936-8d8d61b77faf
+  - BaseNodeGuid: 0ea2a37b-3e69-414d-880b-b0c69a771c07
+    PortName: You've been through a lot.
+    TargetNodeGuid: 657f8d0d-db8e-4287-8936-8d8d61b77faf
+  - BaseNodeGuid: c458ba78-7543-454c-b069-a33c624e0afe
+    PortName: I don't blame you.
+    TargetNodeGuid: 829f3926-5263-4926-96b2-061120e2834c
+  - BaseNodeGuid: 657f8d0d-db8e-4287-8936-8d8d61b77faf
+    PortName: I don't blame you.
+    TargetNodeGuid: 829f3926-5263-4926-96b2-061120e2834c
+  - BaseNodeGuid: c458ba78-7543-454c-b069-a33c624e0afe
+    PortName: It won't bring them back.
+    TargetNodeGuid: 9b241994-7c02-4c02-847b-f29d33041af9
+  - BaseNodeGuid: 657f8d0d-db8e-4287-8936-8d8d61b77faf
+    PortName: It won't bring them back.
+    TargetNodeGuid: 9b241994-7c02-4c02-847b-f29d33041af9
+  - BaseNodeGuid: 829f3926-5263-4926-96b2-061120e2834c
+    PortName: I won't.
+    TargetNodeGuid: 427fe623-e43e-47b1-b03b-a5aa00ed1930
+  - BaseNodeGuid: 829f3926-5263-4926-96b2-061120e2834c
+    PortName: See ya later.
+    TargetNodeGuid: 427fe623-e43e-47b1-b03b-a5aa00ed1930
+  - BaseNodeGuid: 9b241994-7c02-4c02-847b-f29d33041af9
+    PortName: Good luck.
+    TargetNodeGuid: 427fe623-e43e-47b1-b03b-a5aa00ed1930
+  - BaseNodeGuid: 9b241994-7c02-4c02-847b-f29d33041af9
+    PortName: See ya later.
+    TargetNodeGuid: 427fe623-e43e-47b1-b03b-a5aa00ed1930
+  DialogueNodeData:
+  - Guid: ee7a9b99-0e28-4652-ac4e-5e4e6d292981
+    DialogueText: Hello there. I hope you've been staying safe since our last interaction.
+      I know I seemed paranoid, but my knowledge of Arkham is a blessing and a burden.
+    Position: {x: 198, y: 196}
+  - Guid: eb234ee6-36e6-45ff-8aa3-8da2e5b50734
+    DialogueText: You are wise beyond your years. This town really does take a toll
+      on me, and others. I appreciate your understanding.
+    Position: {x: 1207, y: 274}
+  - Guid: 93e563f1-9f1f-4cd2-a66f-574716937642
+    DialogueText: Again, I know more about this place than you know. I haven't been
+      under this much stress since the cult first arrived here.
+    Position: {x: 1205, y: 147}
+  - Guid: 07d65cc7-59f1-4edf-b6a4-90811f6e90df
+    DialogueText: My family? It crushes me to even think of them now... The memories
+      are too painful. Helen Maxwell took them away from me, and my friends too.
+      She took everything from me!
+    Position: {x: 2066, y: 148}
+  - Guid: f5f77c12-38ce-4e7f-9619-f7c1cf496377
+    DialogueText: My family? It crushes me to even think of them now... The memories
+      are too painful. Helen Maxwell took them away from me, and my friends too.
+      She took everything from me!
+    Position: {x: 2067, y: 274}
+  - Guid: 695ad8b7-2275-4ac6-8fec-4e2bdd1cc24b
+    DialogueText: And I'm sorry that Helen Maxwell ever existed! When the cultists
+      arrived their new industry destroyed Arkham's ecosystems and economy. It was
+      an extermination of nature!
+    Position: {x: 3189, y: 150}
+  - Guid: 1f18beb4-cacb-4bb3-b960-c8d63412850d
+    DialogueText: Helen Maxwell is what happened! The cult stormed in, built their
+      factories, annihilated our ecosystem, and devistated our economy! Right before
+      our very eyes!
+    Position: {x: 3188, y: 281}
+  - Guid: fb78434e-53f7-4eee-a1cf-2fdfd709dd90
+    DialogueText: It wasn't, not for those criminals. After the economic fallout
+      of their relentless banditry, they made it illegal to be homeless or unemployed!
+      We were all forced into dangerous labor.
+    Position: {x: 4293, y: 150}
+  - Guid: 130e093b-a087-445f-8784-fd3741130162
+    DialogueText: I doubt that, their cruelty is shockingly imaginative. After the
+      economic fallout of their banditry, they made it illegal to be homeless or
+      unemployed! We were all forced into dangerous labor.
+    Position: {x: 4294, y: 282}
+  - Guid: 0ea2a37b-3e69-414d-880b-b0c69a771c07
+    DialogueText: It is. My wife was crushed by unsafe canning equipment. My son
+      got typhoid from the polluted water. My daughter was killed for defying her
+      manager.
+    Position: {x: 5477, y: 287}
+  - Guid: 85de9e24-aa52-4683-8a07-f08929c31d8b
+    DialogueText: My wife was crushed by unsafe canning equipment. My son got typhoid
+      from the polluted water. My daughter was killed for defying her manager.
+    Position: {x: 5476, y: 151}
+  - Guid: c458ba78-7543-454c-b069-a33c624e0afe
+    DialogueText: You needed to know. I've done things I'm not proud of in my search
+      for justice, but it has always been for the greater good. I won't let another
+      family turn out like mine.
+    Position: {x: 6500, y: 151}
+  - Guid: 657f8d0d-db8e-4287-8936-8d8d61b77faf
+    DialogueText: Now you understand my rage. I've done things I'm not proud of in
+      my search for justice, but it has all been for the greater good. I won't let
+      another family turn out like mine.
+    Position: {x: 6501, y: 287}
+  - Guid: 829f3926-5263-4926-96b2-061120e2834c
+    DialogueText: I'm glad you see things the way they are. Now if you'll excuse
+      me, I must to go. Never forget what I have told you today.
+    Position: {x: 7629, y: 151}
+  - Guid: 9b241994-7c02-4c02-847b-f29d33041af9
+    DialogueText: Don't you think I know that? They're never coming back. But at
+      least I can save others. I have to go. I'm sorry.
+    Position: {x: 7628, y: 286}
+  - Guid: 427fe623-e43e-47b1-b03b-a5aa00ed1930
+    DialogueText: +0
+    Position: {x: 8454, y: 235}
+  ExposedProperties: []
+  CommentBlockData: []

@@ -1,0 +1,128 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
+  m_Name: N-Ghost
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: b678c041-6dbe-4af7-8c78-74f0315b7a69
+    PortName: Next
+    TargetNodeGuid: 6d139e9a-dcc1-45f7-9d19-e9ed9c266c02
+  - BaseNodeGuid: 6d139e9a-dcc1-45f7-9d19-e9ed9c266c02
+    PortName: Who looks a bit dumb?
+    TargetNodeGuid: 1281d269-c11f-48a1-8183-91f0875a904d
+  - BaseNodeGuid: 6d139e9a-dcc1-45f7-9d19-e9ed9c266c02
+    PortName: Are you talking to me?
+    TargetNodeGuid: 650dc299-cb60-4f79-8a06-72233177f086
+  - BaseNodeGuid: 6d139e9a-dcc1-45f7-9d19-e9ed9c266c02
+    PortName: ...
+    TargetNodeGuid: 3d40753c-64da-4357-8c83-93f5344c57da
+  - BaseNodeGuid: 1281d269-c11f-48a1-8183-91f0875a904d
+    PortName: I'm sorry, I thought you were talking to me.
+    TargetNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+  - BaseNodeGuid: 1281d269-c11f-48a1-8183-91f0875a904d
+    PortName: Who are you talking to? There's no one else here.
+    TargetNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+  - BaseNodeGuid: 1281d269-c11f-48a1-8183-91f0875a904d
+    PortName: ...
+    TargetNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+  - BaseNodeGuid: 650dc299-cb60-4f79-8a06-72233177f086
+    PortName: I'm sorry, I thought you were talking to me.
+    TargetNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+  - BaseNodeGuid: 650dc299-cb60-4f79-8a06-72233177f086
+    PortName: Who are you talking to? There's no one else here.
+    TargetNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+  - BaseNodeGuid: 650dc299-cb60-4f79-8a06-72233177f086
+    PortName: ...
+    TargetNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+  - BaseNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+    PortName: Who is Hunter?
+    TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+  - BaseNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+    PortName: Where is all of this attitude coming from?
+    TargetNodeGuid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
+  - BaseNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+    PortName: ...
+    TargetNodeGuid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
+  - BaseNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+    PortName: Who is Hunter?
+    TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+  - BaseNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+    PortName: Where is all of this attitude coming from?
+    TargetNodeGuid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
+  - BaseNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+    PortName: ...
+    TargetNodeGuid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
+  - BaseNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+    PortName: Who is Hunter?
+    TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+  - BaseNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+    PortName: Where is all of this attitude coming from?
+    TargetNodeGuid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
+  - BaseNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+    PortName: ...
+    TargetNodeGuid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
+  - BaseNodeGuid: 3d40753c-64da-4357-8c83-93f5344c57da
+    PortName: I'm sorry, I thought you were talking to me.
+    TargetNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+  - BaseNodeGuid: 3d40753c-64da-4357-8c83-93f5344c57da
+    PortName: Who are you talking to? There's no one else here.
+    TargetNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+  - BaseNodeGuid: 3d40753c-64da-4357-8c83-93f5344c57da
+    PortName: ...
+    TargetNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+  DialogueNodeData:
+  - Guid: 6d139e9a-dcc1-45f7-9d19-e9ed9c266c02
+    DialogueText: You're right, they do look a bit dumb? Don't they?
+    Position: {x: 219.2, y: 193.59999}
+  - Guid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+    DialogueText: Of course you do. You always think you're the center of attention.
+      As a matter of fact, no, I wasn't talking to you. I was talking to Hunter.
+    Position: {x: 1324, y: 28.8}
+  - Guid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+    DialogueText: I'll have you know that I'm talking to Hunter. Of course you wouldn't
+      notice him, you're only ever thinking of yourself.
+    Position: {x: 1323.2, y: 194.4}
+  - Guid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+    DialogueText: What...? Do you think I'm crazy? That I'm talking to myself? I'll
+      have you know, that I'm talking to Hunter.
+    Position: {x: 1325.6, y: 356.80002}
+  - Guid: c6d5da48-58f5-455b-95d2-29176a75c75d
+    DialogueText: Hunter was the worker here before you, and let me tell you, he
+      doesn't have anything nice to say about you. In fact, none of the ghosts here
+      do. They all think you're dumb for working here and deserve what's coming for
+      you for being so dumb.
+    Position: {x: 2247.2, y: 47.2}
+  - Guid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
+    DialogueText: Hunter's been telling me A LOT about you, and let me tell you,
+      he doesn't have anything nice to say. In fact, none of the ghosts here do.
+      They all think you're dumb for working here and deserve what's coming for you
+      for being so dumb.
+    Position: {x: 2246.4, y: 214.4}
+  - Guid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
+    DialogueText: Hunter... Are they always this quiet? I know you said they were
+      dumb and deserves what's coming for them, but like, this is a lot. I'm sorry
+      your stuck haunting this place with them around...
+    Position: {x: 2245.6, y: 376}
+  - Guid: 1281d269-c11f-48a1-8183-91f0875a904d
+    DialogueText: Hey! Were you raised in a barn? It's rude to budge into other people's
+      conversations.
+    Position: {x: 644.8, y: 25.600002}
+  - Guid: 650dc299-cb60-4f79-8a06-72233177f086
+    DialogueText: Hey! Read the room, buddy. It's rude to budge into other people's
+      conversations.
+    Position: {x: 652, y: 191.2}
+  - Guid: 3d40753c-64da-4357-8c83-93f5344c57da
+    DialogueText: I'm sorry, but can you not stare at me like that? I'm trying to
+      have a conversation here.
+    Position: {x: 656, y: 351.2}
+  ExposedProperties: []
+  CommentBlockData: []

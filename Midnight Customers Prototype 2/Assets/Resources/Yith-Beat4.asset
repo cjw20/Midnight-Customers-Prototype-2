@@ -17,45 +17,153 @@ MonoBehaviour:
     PortName: Next
     TargetNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
   - BaseNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
-    PortName: Why are you the only one who knew she wasn't a cop?
+    PortName: I feel like I'm missing something.
     TargetNodeGuid: 31cbc37d-01cb-4625-bc2d-30917e02f566
   - BaseNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
-    PortName: How did you know?
+    PortName: What's your angle?
     TargetNodeGuid: 04be44d8-7732-42b5-a0a1-2d6fd5edab9d
-  - BaseNodeGuid: 31cbc37d-01cb-4625-bc2d-30917e02f566
-    PortName: Trust goes both ways.
-    TargetNodeGuid: 3c01502e-4f0c-4777-b9c5-3c6c0fba29cb
-  - BaseNodeGuid: 31cbc37d-01cb-4625-bc2d-30917e02f566
-    PortName: I am guessing I should trust you?
-    TargetNodeGuid: bbf43fdc-fb63-4c3c-b037-8ba8e807e48a
   - BaseNodeGuid: 04be44d8-7732-42b5-a0a1-2d6fd5edab9d
-    PortName: Everyone has secrets even you.
-    TargetNodeGuid: 83705846-d1bd-4e3d-8425-5a1bbca359e6
-  - BaseNodeGuid: 04be44d8-7732-42b5-a0a1-2d6fd5edab9d
-    PortName: Like who?
+    PortName: How did you know Vanessa was a cop?
     TargetNodeGuid: da3c6c29-ba6b-4735-a8e5-24b4fdd789ce
+  - BaseNodeGuid: 31cbc37d-01cb-4625-bc2d-30917e02f566
+    PortName: How did you know Vanessa was a cop?
+    TargetNodeGuid: da3c6c29-ba6b-4735-a8e5-24b4fdd789ce
+  - BaseNodeGuid: 04be44d8-7732-42b5-a0a1-2d6fd5edab9d
+    PortName: An Arkham native doesn't know Vanessa.
+    TargetNodeGuid: 83705846-d1bd-4e3d-8425-5a1bbca359e6
+  - BaseNodeGuid: 31cbc37d-01cb-4625-bc2d-30917e02f566
+    PortName: An Arkham native doesn't know Vanessa.
+    TargetNodeGuid: 83705846-d1bd-4e3d-8425-5a1bbca359e6
+  - BaseNodeGuid: da3c6c29-ba6b-4735-a8e5-24b4fdd789ce
+    PortName: You aren't telling me something.
+    TargetNodeGuid: bbf43fdc-fb63-4c3c-b037-8ba8e807e48a
+  - BaseNodeGuid: da3c6c29-ba6b-4735-a8e5-24b4fdd789ce
+    PortName: How come Daniel didn't know?
+    TargetNodeGuid: 3c01502e-4f0c-4777-b9c5-3c6c0fba29cb
+  - BaseNodeGuid: 83705846-d1bd-4e3d-8425-5a1bbca359e6
+    PortName: Well, one of you is lying.
+    TargetNodeGuid: 9c97c4bb-fff8-4103-83fc-ef40c739a603
+  - BaseNodeGuid: 83705846-d1bd-4e3d-8425-5a1bbca359e6
+    PortName: Why should I believe you instead?
+    TargetNodeGuid: 215dd742-e4e1-48e5-89f5-e00e69458adb
+  - BaseNodeGuid: bbf43fdc-fb63-4c3c-b037-8ba8e807e48a
+    PortName: Does that include you?
+    TargetNodeGuid: ec8d4a7c-d64a-4be9-b028-3d309386174d
+  - BaseNodeGuid: 3c01502e-4f0c-4777-b9c5-3c6c0fba29cb
+    PortName: Does that include you?
+    TargetNodeGuid: ec8d4a7c-d64a-4be9-b028-3d309386174d
+  - BaseNodeGuid: 9c97c4bb-fff8-4103-83fc-ef40c739a603
+    PortName: Does that include you?
+    TargetNodeGuid: ec8d4a7c-d64a-4be9-b028-3d309386174d
+  - BaseNodeGuid: 215dd742-e4e1-48e5-89f5-e00e69458adb
+    PortName: Does that include you?
+    TargetNodeGuid: ec8d4a7c-d64a-4be9-b028-3d309386174d
+  - BaseNodeGuid: 215dd742-e4e1-48e5-89f5-e00e69458adb
+    PortName: Why would he lie?
+    TargetNodeGuid: 2920659e-fe72-4423-8ca5-426eb96352a7
+  - BaseNodeGuid: 9c97c4bb-fff8-4103-83fc-ef40c739a603
+    PortName: Why would he lie?
+    TargetNodeGuid: 2920659e-fe72-4423-8ca5-426eb96352a7
+  - BaseNodeGuid: 3c01502e-4f0c-4777-b9c5-3c6c0fba29cb
+    PortName: Why would he lie?
+    TargetNodeGuid: 2920659e-fe72-4423-8ca5-426eb96352a7
+  - BaseNodeGuid: bbf43fdc-fb63-4c3c-b037-8ba8e807e48a
+    PortName: Why would he lie?
+    TargetNodeGuid: 2920659e-fe72-4423-8ca5-426eb96352a7
+  - BaseNodeGuid: ec8d4a7c-d64a-4be9-b028-3d309386174d
+    PortName: What should I ask him then?
+    TargetNodeGuid: cdd1ba9a-085a-42bc-ad22-087a5cc1aa50
+  - BaseNodeGuid: 2920659e-fe72-4423-8ca5-426eb96352a7
+    PortName: What should I ask him then?
+    TargetNodeGuid: cdd1ba9a-085a-42bc-ad22-087a5cc1aa50
+  - BaseNodeGuid: ec8d4a7c-d64a-4be9-b028-3d309386174d
+    PortName: You can't just tell me?
+    TargetNodeGuid: 0d72f2ec-0f0c-4511-bac8-6cd2e7def16c
+  - BaseNodeGuid: 2920659e-fe72-4423-8ca5-426eb96352a7
+    PortName: You can't just tell me?
+    TargetNodeGuid: 0d72f2ec-0f0c-4511-bac8-6cd2e7def16c
+  - BaseNodeGuid: 3c07657b-589a-40a3-8f13-8bcfbdaaebe4
+    PortName: Bye.
+    TargetNodeGuid: b5886380-64c8-48f2-80eb-ab84d3547826
+  - BaseNodeGuid: 3c07657b-589a-40a3-8f13-8bcfbdaaebe4
+    PortName: See you later.
+    TargetNodeGuid: b5886380-64c8-48f2-80eb-ab84d3547826
+  - BaseNodeGuid: e67dc796-8319-45e7-9e1c-4907c4c50486
+    PortName: Bye.
+    TargetNodeGuid: b5886380-64c8-48f2-80eb-ab84d3547826
+  - BaseNodeGuid: e67dc796-8319-45e7-9e1c-4907c4c50486
+    PortName: See you later.
+    TargetNodeGuid: b5886380-64c8-48f2-80eb-ab84d3547826
+  - BaseNodeGuid: 0d72f2ec-0f0c-4511-bac8-6cd2e7def16c
+    PortName: Fine. Whatever. I'll ask him.
+    TargetNodeGuid: 3c07657b-589a-40a3-8f13-8bcfbdaaebe4
+  - BaseNodeGuid: cdd1ba9a-085a-42bc-ad22-087a5cc1aa50
+    PortName: Fine. Whatever. I'll ask him.
+    TargetNodeGuid: 3c07657b-589a-40a3-8f13-8bcfbdaaebe4
+  - BaseNodeGuid: 0d72f2ec-0f0c-4511-bac8-6cd2e7def16c
+    PortName: Okay, sure. Maybe I'll learn something useful.
+    TargetNodeGuid: e67dc796-8319-45e7-9e1c-4907c4c50486
+  - BaseNodeGuid: cdd1ba9a-085a-42bc-ad22-087a5cc1aa50
+    PortName: Okay, sure. Maybe I'll learn something useful.
+    TargetNodeGuid: e67dc796-8319-45e7-9e1c-4907c4c50486
   DialogueNodeData:
-  - Guid: 04be44d8-7732-42b5-a0a1-2d6fd5edab9d
-    DialogueText: Doesn't matter, others have secrets around here as well. Be careful
-      who you trust.
-    Position: {x: 736, y: 72}
   - Guid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
-    DialogueText: How did your little talk with the liar of an investigator go?
+    DialogueText: You seem to be troubled. I hope I have not made an appearance at
+      a bad time.
     Position: {x: 221, y: 187}
-  - Guid: 83705846-d1bd-4e3d-8425-5a1bbca359e6
-    DialogueText: Some are bigger, like your fish friend.
-    Position: {x: 1399, y: 86}
-  - Guid: bbf43fdc-fb63-4c3c-b037-8ba8e807e48a
-    DialogueText: Yes, at least more than your fish friend, they are hiding a secret.
-    Position: {x: 1365, y: 250}
-  - Guid: 3c01502e-4f0c-4777-b9c5-3c6c0fba29cb
-    DialogueText: Then your fish friend has a lot of work to do.
-    Position: {x: 1488, y: 419}
-  - Guid: da3c6c29-ba6b-4735-a8e5-24b4fdd789ce
-    DialogueText: Ask your fish friend about his family....
-    Position: {x: 1453, y: -106}
+  - Guid: 04be44d8-7732-42b5-a0a1-2d6fd5edab9d
+    DialogueText: My angle? I do not understand.
+    Position: {x: 947, y: 84}
   - Guid: 31cbc37d-01cb-4625-bc2d-30917e02f566
-    DialogueText: That's not important, what is, is who you trust.
-    Position: {x: 779, y: 271}
+    DialogueText: What are you looking for? Perhaps I can help you.
+    Position: {x: 949, y: 268}
+  - Guid: da3c6c29-ba6b-4735-a8e5-24b4fdd789ce
+    DialogueText: I live here. I enjoy knowing those I live with.
+    Position: {x: 1556, y: 99}
+  - Guid: bbf43fdc-fb63-4c3c-b037-8ba8e807e48a
+    DialogueText: You have so much doubt. Of course, it is only natural when being
+      manipulated by predators.
+    Position: {x: 2115, y: -43}
+  - Guid: 3c01502e-4f0c-4777-b9c5-3c6c0fba29cb
+    DialogueText: This is a world where trust is a gift. However, some see it as
+      a disposable tool for selfish gain.
+    Position: {x: 2118, y: 119}
+  - Guid: 83705846-d1bd-4e3d-8425-5a1bbca359e6
+    DialogueText: Are you speaking of the one named Daniel? You believe him?
+    Position: {x: 1551, y: 286}
+  - Guid: 9c97c4bb-fff8-4103-83fc-ef40c739a603
+    DialogueText: You have so much doubt. Of course, it is only natural when being
+      manipulated by predators.
+    Position: {x: 2118, y: 283}
+  - Guid: 215dd742-e4e1-48e5-89f5-e00e69458adb
+    DialogueText: This is a world where trust is a gift. However, some see it as
+      a disposable tool for selfish gain.
+    Position: {x: 2120, y: 431}
+  - Guid: ec8d4a7c-d64a-4be9-b028-3d309386174d
+    DialogueText: You will be happy to know that it does not. I only encourage you
+      to learn from those around you. Including his motives for being so deceiptful.
+    Position: {x: 3048, y: 134}
+  - Guid: 2920659e-fe72-4423-8ca5-426eb96352a7
+    DialogueText: That is for him to confide in you.
+    Position: {x: 3048, y: 292}
+  - Guid: 0d72f2ec-0f0c-4511-bac8-6cd2e7def16c
+    DialogueText: I cannot tell you what I do not know. However, I do know that you
+      should ask about his Family. Perhaps then you may learn more about him.
+    Position: {x: 4100, y: 145}
+  - Guid: cdd1ba9a-085a-42bc-ad22-087a5cc1aa50
+    DialogueText: With that, I can help. Ask him of his family. Perhaps then he will
+      reveal more about his motives.
+    Position: {x: 4105, y: 338}
+  - Guid: e67dc796-8319-45e7-9e1c-4907c4c50486
+    DialogueText: I hope for the same. Now, I must once again depart but do take
+      care of yourself. I would hate for something to happen to you so soon.
+    Position: {x: 5193, y: 338}
+  - Guid: 3c07657b-589a-40a3-8f13-8bcfbdaaebe4
+    DialogueText: Maybe then your doubt of me will disipate. Now, I must once again
+      depart but be cautious. I would hate for something to happen to you so soon.
+    Position: {x: 5190, y: 149}
+  - Guid: b5886380-64c8-48f2-80eb-ab84d3547826
+    DialogueText: +0
+    Position: {x: 6230, y: 260}
   ExposedProperties: []
   CommentBlockData: []

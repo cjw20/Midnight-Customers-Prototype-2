@@ -1,0 +1,154 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
+  m_Name: N-ElonSimp
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: df19e632-cb4d-4cf5-a4f8-5f192d8e1cd7
+    PortName: Next
+    TargetNodeGuid: 1c5d41a9-bcb2-4bb8-ac1b-a23eadb419c9
+  - BaseNodeGuid: 1c5d41a9-bcb2-4bb8-ac1b-a23eadb419c9
+    PortName: Anything I can help you with today?
+    TargetNodeGuid: 774463c5-b7ff-494e-92c6-e9e4d288ac16
+  - BaseNodeGuid: 1c5d41a9-bcb2-4bb8-ac1b-a23eadb419c9
+    PortName: Charging stations?
+    TargetNodeGuid: b0c659a9-24c4-48e2-a9fd-2451aa8321e7
+  - BaseNodeGuid: 1c5d41a9-bcb2-4bb8-ac1b-a23eadb419c9
+    PortName: ...
+    TargetNodeGuid: 774463c5-b7ff-494e-92c6-e9e4d288ac16
+  - BaseNodeGuid: b0c659a9-24c4-48e2-a9fd-2451aa8321e7
+    PortName: Sorry to hear that. Will this be all?
+    TargetNodeGuid: 9620bf49-d66d-47a9-a5a4-11376a5ea1dc
+  - BaseNodeGuid: b0c659a9-24c4-48e2-a9fd-2451aa8321e7
+    PortName: Don't those cars catch fire?
+    TargetNodeGuid: 53be6efd-76d8-4f95-97d3-6e338a898625
+  - BaseNodeGuid: b0c659a9-24c4-48e2-a9fd-2451aa8321e7
+    PortName: ...
+    TargetNodeGuid: ab18f380-d75f-46cd-9c2a-18368f21d400
+  - BaseNodeGuid: 53be6efd-76d8-4f95-97d3-6e338a898625
+    PortName: That's nice. Cash or credit?
+    TargetNodeGuid: ab18f380-d75f-46cd-9c2a-18368f21d400
+  - BaseNodeGuid: 53be6efd-76d8-4f95-97d3-6e338a898625
+    PortName: Shouldn't they should be safe to drive first?
+    TargetNodeGuid: ea8851c7-4a72-4dd9-a24f-802a0e217110
+  - BaseNodeGuid: 53be6efd-76d8-4f95-97d3-6e338a898625
+    PortName: ...
+    TargetNodeGuid: ab18f380-d75f-46cd-9c2a-18368f21d400
+  - BaseNodeGuid: bc4155e8-836c-4ad2-bcd1-da87c4b7be28
+    PortName: Isn't that bad for the environment?
+    TargetNodeGuid: 4d403615-4593-4c66-9557-aba40280fbd1
+  - BaseNodeGuid: bc4155e8-836c-4ad2-bcd1-da87c4b7be28
+    PortName: No. Just cash or credit.
+    TargetNodeGuid: b3027f0d-ccd9-473d-8f61-580e4116b42d
+  - BaseNodeGuid: bc4155e8-836c-4ad2-bcd1-da87c4b7be28
+    PortName: ...
+    TargetNodeGuid: b3027f0d-ccd9-473d-8f61-580e4116b42d
+  - BaseNodeGuid: ea8851c7-4a72-4dd9-a24f-802a0e217110
+    PortName: Most don't have the money to do that.
+    TargetNodeGuid: bc4155e8-836c-4ad2-bcd1-da87c4b7be28
+  - BaseNodeGuid: ea8851c7-4a72-4dd9-a24f-802a0e217110
+    PortName: If you say so. Cash or credit?
+    TargetNodeGuid: b3027f0d-ccd9-473d-8f61-580e4116b42d
+  - BaseNodeGuid: ea8851c7-4a72-4dd9-a24f-802a0e217110
+    PortName: ...
+    TargetNodeGuid: ab18f380-d75f-46cd-9c2a-18368f21d400
+  - BaseNodeGuid: 9620bf49-d66d-47a9-a5a4-11376a5ea1dc
+    PortName: No. Just cash or credit.
+    TargetNodeGuid: b3027f0d-ccd9-473d-8f61-580e4116b42d
+  - BaseNodeGuid: 9620bf49-d66d-47a9-a5a4-11376a5ea1dc
+    PortName: Isn't that bad for the environment?
+    TargetNodeGuid: 4d403615-4593-4c66-9557-aba40280fbd1
+  - BaseNodeGuid: 9620bf49-d66d-47a9-a5a4-11376a5ea1dc
+    PortName: ...
+    TargetNodeGuid: b3027f0d-ccd9-473d-8f61-580e4116b42d
+  - BaseNodeGuid: ab18f380-d75f-46cd-9c2a-18368f21d400
+    PortName: Isn't that bad for the environment?
+    TargetNodeGuid: 4d403615-4593-4c66-9557-aba40280fbd1
+  - BaseNodeGuid: ab18f380-d75f-46cd-9c2a-18368f21d400
+    PortName: No. Just cash or credit.
+    TargetNodeGuid: b3027f0d-ccd9-473d-8f61-580e4116b42d
+  - BaseNodeGuid: ab18f380-d75f-46cd-9c2a-18368f21d400
+    PortName: ...
+    TargetNodeGuid: b3027f0d-ccd9-473d-8f61-580e4116b42d
+  - BaseNodeGuid: 774463c5-b7ff-494e-92c6-e9e4d288ac16
+    PortName: Sorry to hear that. Will this be all?
+    TargetNodeGuid: 9620bf49-d66d-47a9-a5a4-11376a5ea1dc
+  - BaseNodeGuid: 774463c5-b7ff-494e-92c6-e9e4d288ac16
+    PortName: Don't those cars catch fire?
+    TargetNodeGuid: 53be6efd-76d8-4f95-97d3-6e338a898625
+  - BaseNodeGuid: 774463c5-b7ff-494e-92c6-e9e4d288ac16
+    PortName: ...
+    TargetNodeGuid: ab18f380-d75f-46cd-9c2a-18368f21d400
+  - BaseNodeGuid: b3027f0d-ccd9-473d-8f61-580e4116b42d
+    PortName: Enjoy your night!
+    TargetNodeGuid: c4cff9e8-5321-495c-aa7d-2de7fdb9962a
+  - BaseNodeGuid: b3027f0d-ccd9-473d-8f61-580e4116b42d
+    PortName: Whatever, buddy.
+    TargetNodeGuid: c4cff9e8-5321-495c-aa7d-2de7fdb9962a
+  - BaseNodeGuid: b3027f0d-ccd9-473d-8f61-580e4116b42d
+    PortName: ...
+    TargetNodeGuid: c4cff9e8-5321-495c-aa7d-2de7fdb9962a
+  - BaseNodeGuid: 4d403615-4593-4c66-9557-aba40280fbd1
+    PortName: Enjoy your night!
+    TargetNodeGuid: c4cff9e8-5321-495c-aa7d-2de7fdb9962a
+  - BaseNodeGuid: 4d403615-4593-4c66-9557-aba40280fbd1
+    PortName: Whatever, buddy.
+    TargetNodeGuid: c4cff9e8-5321-495c-aa7d-2de7fdb9962a
+  - BaseNodeGuid: 4d403615-4593-4c66-9557-aba40280fbd1
+    PortName: ...
+    TargetNodeGuid: c4cff9e8-5321-495c-aa7d-2de7fdb9962a
+  DialogueNodeData:
+  - Guid: 1c5d41a9-bcb2-4bb8-ac1b-a23eadb419c9
+    DialogueText: Ugh. There's no charging stations around here.
+    Position: {x: 270, y: 191}
+  - Guid: b0c659a9-24c4-48e2-a9fd-2451aa8321e7
+    DialogueText: Yeah, for my car. I swear, so many places aren't environmentally
+      friendly and the future is going to pass you all by.
+    Position: {x: 690, y: 284}
+  - Guid: 53be6efd-76d8-4f95-97d3-6e338a898625
+    DialogueText: Those were edge cases! Do side effects stop you from taking medicine?
+      No. These cars are a step forward in helping the planet heal. Plus, I can make
+      the horn be a fart hehe.
+    Position: {x: 1516, y: 299}
+  - Guid: bc4155e8-836c-4ad2-bcd1-da87c4b7be28
+    DialogueText: That's because most people our age don't invest. Plus, crypto has
+      allowed me and my friends to make so much more money. Do you accept crypto
+      here?
+    Position: {x: 3413, y: 458}
+  - Guid: b3027f0d-ccd9-473d-8f61-580e4116b42d
+    DialogueText: I should've figured. You all reject the future and that's why you're
+      poor, stuck working here. Take your dumb paper money.
+    Position: {x: 4312, y: 110}
+  - Guid: 4d403615-4593-4c66-9557-aba40280fbd1
+    DialogueText: The technology is still improving! Ugh, next you'll tell me it's
+      a scam. Here, just take stupid paper money. Have fun living in the past.
+    Position: {x: 4438, y: 298}
+  - Guid: ea8851c7-4a72-4dd9-a24f-802a0e217110
+    DialogueText: They are! I've only crashed twice and had to replace it once. Totally
+      worth it. Not a scratch on me, see?
+    Position: {x: 2656, y: 382}
+  - Guid: 9620bf49-d66d-47a9-a5a4-11376a5ea1dc
+    DialogueText: I'm sure you are. I'm almost afraid to ask, but do you take cryptocurrency
+      here?
+    Position: {x: 3412, y: 138}
+  - Guid: ab18f380-d75f-46cd-9c2a-18368f21d400
+    DialogueText: I'm almost afraid to ask, but do you take cryptocurrency here?
+    Position: {x: 3412, y: 292}
+  - Guid: 774463c5-b7ff-494e-92c6-e9e4d288ac16
+    DialogueText: Unless you can point me to a place to charge my car, this is everything.
+      These cars are the future and so many people refuse to see it.
+    Position: {x: 692, y: 133}
+  - Guid: c4cff9e8-5321-495c-aa7d-2de7fdb9962a
+    DialogueText: +0
+    Position: {x: 5331, y: 211}
+  ExposedProperties: []
+  CommentBlockData: []

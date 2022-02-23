@@ -20,16 +20,19 @@ public class CustomerManager : MonoBehaviour
     [Tooltip("List of the customers currently in the store.")]
     List<GameObject> customersInStore = new List<GameObject>();
 
-    void Start()
+    void Awake()
     {
-        OnLoadGame(0); //call this from game control later, only here to keep game from breaking while loading is implemented
+        if(GameControl.control.loadingGame == false)
+        {
+            OnLoadGame(0); //call this from game control later, only here to keep game from breaking while loading is implemented
+        }
+        
     }
 
     public void OnLoadGame(int progress)
     {
         arrayPos = progress;
         spawning = true;
-
         LoadCustomer(customers[arrayPos]);
     }
     public void LoadCustomer(GameObject customer)
@@ -39,6 +42,7 @@ public class CustomerManager : MonoBehaviour
         customersInStore.Add(customer);
         move.EnterStore();
         customer.transform.position = exit.position;
+        customer.GetComponentInChildren<MoodIndicator>().SetMood("happy");
         //play sound for customer entering store
         //Set path
         //update any variables in customer info

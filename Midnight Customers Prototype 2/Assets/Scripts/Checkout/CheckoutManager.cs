@@ -26,6 +26,7 @@ public class CheckoutManager : MonoBehaviour
 
     // References
     CheckoutTrigger checkoutTrigger;
+    CheckoutTimer checkoutTimer;
     GameObject[] items; //items brought to checkout
     List<GameObject> spawnedItems = new List<GameObject>();
     CustomerInfo customerInfo;
@@ -70,6 +71,7 @@ public class CheckoutManager : MonoBehaviour
         activePhase = 0; //load this variable when loading saved game
         checkoutTrigger = FindObjectOfType<CheckoutTrigger>();
         emoter = FindObjectOfType<EmoteController>();
+        checkoutTimer = FindObjectOfType<CheckoutTimer>();
 
         foreach(Rule rule in phase0Rules)
         {
@@ -143,6 +145,7 @@ public class CheckoutManager : MonoBehaviour
 
             if (passed)
             {
+                checkoutTimer.UpdateValue(5);
                 //add in increase to customer mood here?
             }
         }
@@ -183,6 +186,7 @@ public class CheckoutManager : MonoBehaviour
         soundManager.PlayCashRegisterSound();
         customerPayed = true;
         priceText.text = "PAID";
+        checkoutTimer.isRunning = false;
         EndCheckout();
     }
 
@@ -205,14 +209,15 @@ public class CheckoutManager : MonoBehaviour
         }
         if(failedIDCheck && needsID)
         {
-            emoter.React("Sad"); 
-            //customer sad that they cant buy item 
+            emoter.React("Sad");
+            checkoutTimer.UpdateValue(-5);
         }
         else
         {
             penaltyPoints++;
             review.idErrors++;
             emoter.React("Angry");
+            checkoutTimer.UpdateValue(-15);
             //customer mad that they werent allowed to buy item they should have
         }
         remainingItems--;

@@ -23,10 +23,10 @@ public class TimeManager : MonoBehaviour
 
     // References
     [Header("UI Object References")]
-    [Tooltip("Text to display the current day.")]
-    public Text dayText;
-    [Tooltip("Text to display the current time of the current day.")]
-    public Text timeText;
+    [Tooltip("Rect Tranform for Minutes Hand on Time Window")]
+    public RectTransform minutes_hand;
+    [Tooltip("Rect Tranform for Hours Hand on Time Window")]
+    public RectTransform hours_hand;
     [Tooltip("Black screen game object for fades during day transitions.")]
     public GameObject blackScreen; 
     [Tooltip("Reference to a Fade class instance.")]
@@ -44,9 +44,12 @@ public class TimeManager : MonoBehaviour
     StoryEventHandler storyEvent;
     RandomEventManager randomEvent;
     CheckoutManager checkoutManager;
+    float minutes_last = 0f;
+
+    [SerializeField] JournalDisplay journalDisplay;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player");
         playerMovement = player.GetComponent<PlayerMovement>();
@@ -58,7 +61,7 @@ public class TimeManager : MonoBehaviour
         checkoutManager = FindObjectOfType<CheckoutManager>();
         //if ^ is too slow, do different way later
         timerRunning = true;
-        UpdateText();
+        UpdateClock();
     }
 
     public void OnLoadGame(int dayProgress)
@@ -99,31 +102,25 @@ public class TimeManager : MonoBehaviour
                 timerRunning = false;
                 StartCoroutine(EndDay());
             }
-            UpdateText();
+            UpdateClock();
         }
     }
 
-    void UpdateText()
+    void ResetClock() 
+    { 
+        minutes_hand.SetPositionAndRotation(minutes_hand.position, Quaternion.Euler(new Vector3(0f, 0f, 90f)));
+        hours_hand.SetPositionAndRotation(hours_hand.position, Quaternion.Euler(new Vector3(0f, 0f, 90f)));
+    }
+
+    void UpdateClock()
     {
-        dayText.text = "Day: " + day.ToString();
-
-        if (hours < 10)
-        {
-            timeText.text = "0" + hours.ToString();
-        }
-        else
-        {
-            timeText.text = "" + hours.ToString();
-        }
-
-        if (minutes < 10)
-        {
-            timeText.text += ":0" + minutes.ToString();
-        }
-        else
-        {
-            timeText.text += ":" + minutes.ToString();
-        }
+        float elapsed = 0f; //accounts for time elapsed since last call
+        elapsed = (minutes_last > minutes) ? 60 - minutes_last + minutes : minutes - minutes_last; 
+        Vector3 min_rot = new Vector3(0f, 0f, elapsed * 6f);
+        Vector3 h_rot = new Vector3(0f, 0f, elapsed * 0.5f);
+        minutes_hand.Rotate(-min_rot);
+        hours_hand.Rotate(-h_rot);
+        minutes_last = minutes;
     }
 
     IEnumerator EndDay()
@@ -146,10 +143,16 @@ public class TimeManager : MonoBehaviour
         hours = 0;
         day++;
 
-        GameControl.control.SaveGame("Day: " + day.ToString()); //may not be best place to do this
-        UpdateText();
+        GameControl.control.SaveGame("Day " + day.ToString()); //may not be best place to do this
         toBlack.FadeOut(fadeDuration);
         NewDay();
+        ResetClock();
+        journalDisplay.OpenJournal();
+        while (journalDisplay.inJournal)
+        {
+            yield return null; //waits until journal is closed
+        }
+
         yield return new WaitForSeconds(fadeDuration + 2);
         blackScreen.SetActive(false);
         customerManager.StartSpawns();

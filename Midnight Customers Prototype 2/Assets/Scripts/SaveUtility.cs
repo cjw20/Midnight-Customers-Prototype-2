@@ -11,16 +11,23 @@ public class SaveUtility : MonoBehaviour
     [SerializeField] GameObject loadFileButtonPrefab;
 
     GlobalSave globalSave;
+
+
+    private void Start()
+    {
+       
+    }
     public void SaveGame(string saveName)
     {
         BinaryFormatter formatter = new BinaryFormatter();
         string path = Application.persistentDataPath + "/Game." + saveName;
-        FileStream stream = new FileStream(path, FileMode.Create);
+        FileStream stream = new FileStream(path, FileMode.OpenOrCreate);
         SaveData saveData = new SaveData();
         saveData.GetData();
         formatter.Serialize(stream, saveData);
         stream.Close();
-        
+
+        globalSave = GetGlobalSave();
         UpdateGlobalSave(saveName);
     }
 
@@ -37,7 +44,7 @@ public class SaveUtility : MonoBehaviour
             SaveData data = formatter.Deserialize(stream) as SaveData;
 
             stream.Close();
-
+            
             return data;
         }
         else
@@ -51,12 +58,14 @@ public class SaveUtility : MonoBehaviour
     {
         BinaryFormatter formatter = new BinaryFormatter();
         string path = Application.persistentDataPath + "/Game.GlobalSave";
-        FileStream stream = new FileStream(path, FileMode.Create);
+        
         if (!File.Exists(path))
         {
             //only happens first time            
             globalSave = new GlobalSave();
+            globalSave.saveFileNames = new List<string>(); //if statement not working
         }
+        FileStream stream = new FileStream(path, FileMode.OpenOrCreate);
         globalSave.AddSave(saveName);
         formatter.Serialize(stream, globalSave);
         stream.Close();
@@ -67,7 +76,7 @@ public class SaveUtility : MonoBehaviour
         if (File.Exists(path))
         {
             BinaryFormatter formatter = new BinaryFormatter();
-            FileStream stream = new FileStream(path, FileMode.Open);
+            FileStream stream = new FileStream(path, FileMode.OpenOrCreate);
 
             GlobalSave data = formatter.Deserialize(stream) as GlobalSave;
 
@@ -90,7 +99,8 @@ public class SaveUtility : MonoBehaviour
             //no saves messsage
             return;
         }
-        GameObject loadWindow = Instantiate(loadWindowPrefab);
+        GameObject canvas = GameObject.Find("Canvas");
+        GameObject loadWindow = Instantiate(loadWindowPrefab, canvas.transform);
         foreach(string saveName in globalSave.saveFileNames)
         {
             GameObject newButton = Instantiate(loadFileButtonPrefab, loadWindow.transform);
@@ -100,5 +110,15 @@ public class SaveUtility : MonoBehaviour
         }
         //get saves from file and display them all as buttons
         
+    }
+
+
+
+    public void DeleteAllSaves()
+    {
+        string path = Application.persistentDataPath;
+        DirectoryInfo directory = new DirectoryInfo(path);
+        directory.Delete(true);
+        Directory.CreateDirectory(path);
     }
 }
