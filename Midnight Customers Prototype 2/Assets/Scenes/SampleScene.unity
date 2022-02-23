@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 10691446}
   - component: {fileID: 10691447}
   - component: {fileID: 10691448}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Checkout Game
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -513,7 +513,7 @@ GameObject:
   - component: {fileID: 55179766}
   - component: {fileID: 55179768}
   - component: {fileID: 55179767}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -740,7 +740,7 @@ GameObject:
   m_Component:
   - component: {fileID: 97134968}
   - component: {fileID: 97134969}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Cash Register
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -824,7 +824,7 @@ GameObject:
   m_Component:
   - component: {fileID: 126953562}
   - component: {fileID: 126953563}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Scan Mat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1175,7 +1175,7 @@ GameObject:
   m_Component:
   - component: {fileID: 163005510}
   - component: {fileID: 163005511}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Reject Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1259,7 +1259,7 @@ GameObject:
   - component: {fileID: 166571424}
   - component: {fileID: 166571426}
   - component: {fileID: 166571425}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Angry Milestone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1334,7 +1334,7 @@ GameObject:
   - component: {fileID: 167377631}
   - component: {fileID: 167377633}
   - component: {fileID: 167377632}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1855,7 +1855,7 @@ GameObject:
   - component: {fileID: 211056936}
   - component: {fileID: 211056938}
   - component: {fileID: 211056937}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Customer Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2125,7 +2125,7 @@ GameObject:
   - component: {fileID: 248132321}
   - component: {fileID: 248132323}
   - component: {fileID: 248132322}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: 'Has ID Message '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3314,7 +3314,7 @@ GameObject:
   - component: {fileID: 334642021}
   - component: {fileID: 334642023}
   - component: {fileID: 334642022}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3662,7 +3662,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 375634272}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Money Spawn
   m_TagString: Untagged
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
@@ -3958,7 +3958,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 395785384}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Item Spawns
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4429,7 +4429,7 @@ GameObject:
   m_Component:
   - component: {fileID: 458143163}
   - component: {fileID: 458143164}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Rulebook Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4578,7 +4578,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 481052228}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Option 2 location
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4614,7 +4614,7 @@ GameObject:
   m_Component:
   - component: {fileID: 481504394}
   - component: {fileID: 481504395}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Scanner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4799,7 +4799,7 @@ GameObject:
   - component: {fileID: 505964448}
   - component: {fileID: 505964450}
   - component: {fileID: 505964449}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: CountdownBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5269,7 +5269,8 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
-  m_Layer: 3
+  - component: {fileID: 519420033}
+  m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -5306,7 +5307,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -5374,6 +5375,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isGlobal: 1
+  priority: 1
+  blendDistance: 0
+  weight: 1
+  sharedProfile: {fileID: 11400000, guid: cd3414858b693464aa0797f0c7b7657b, type: 2}
 --- !u!1 &535664505
 GameObject:
   m_ObjectHideFlags: 0
@@ -6516,7 +6534,7 @@ GameObject:
   - component: {fileID: 605432559}
   - component: {fileID: 605432558}
   - component: {fileID: 605432557}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Checkout UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7593,7 +7611,7 @@ GameObject:
   m_Component:
   - component: {fileID: 700387695}
   - component: {fileID: 700387696}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: ID Rule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7639,7 +7657,7 @@ GameObject:
   - component: {fileID: 701337376}
   - component: {fileID: 701337378}
   - component: {fileID: 701337377}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: No ID Message
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7775,7 +7793,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 718300845}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Spawn (2)
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -7837,7 +7855,7 @@ GameObject:
   - component: {fileID: 723684466}
   - component: {fileID: 723684468}
   - component: {fileID: 723684467}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Customer Message Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8427,7 +8445,7 @@ GameObject:
   - component: {fileID: 775693613}
   - component: {fileID: 775693612}
   - component: {fileID: 775693611}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Misbag Message
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8934,7 +8952,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 848104266}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Counter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9170,7 +9188,7 @@ GameObject:
   m_Component:
   - component: {fileID: 862451527}
   - component: {fileID: 862451526}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Paper Rule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9216,7 +9234,7 @@ GameObject:
   - component: {fileID: 869165503}
   - component: {fileID: 869165502}
   - component: {fileID: 869165501}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Price Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9745,7 +9763,7 @@ GameObject:
   m_Component:
   - component: {fileID: 957289633}
   - component: {fileID: 957289634}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Bagging
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11832,7 +11850,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1078342838}
   - component: {fileID: 1078342841}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Register
   m_TagString: CashReg
   m_Icon: {fileID: 0}
@@ -12402,7 +12420,7 @@ GameObject:
   - component: {fileID: 1148798518}
   - component: {fileID: 1148798520}
   - component: {fileID: 1148798519}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12913,7 +12931,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1161566297}
   - component: {fileID: 1161566298}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13198,7 +13216,7 @@ GameObject:
   - component: {fileID: 1190792482}
   - component: {fileID: 1190792484}
   - component: {fileID: 1190792483}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Pissed Milestone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13346,7 +13364,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1200690026}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Messages
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13899,7 +13917,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1227284146}
   - component: {fileID: 1227284147}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Card Scanner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14451,7 +14469,7 @@ GameObject:
   - component: {fileID: 1284473687}
   - component: {fileID: 1284473686}
   - component: {fileID: 1284473685}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Weight Indicator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14851,7 +14869,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1306631517}
   - component: {fileID: 1306631519}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Bag
   m_TagString: Bag
   m_Icon: {fileID: 0}
@@ -14907,7 +14925,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1311951099}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Spawn (3)
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -15154,7 +15172,7 @@ GameObject:
   - component: {fileID: 1335715031}
   - component: {fileID: 1335715030}
   - component: {fileID: 1335715032}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Dialogue Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15258,7 +15276,7 @@ GameObject:
   - component: {fileID: 1335903332}
   - component: {fileID: 1335903333}
   - component: {fileID: 1335903334}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Drawer
   m_TagString: Drawer
   m_Icon: {fileID: 0}
@@ -15329,7 +15347,7 @@ GameObject:
   - component: {fileID: 1335995010}
   - component: {fileID: 1335995012}
   - component: {fileID: 1335995011}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15536,7 +15554,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1346041063}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Rules
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15958,54 +15976,6 @@ MonoBehaviour:
   - {x: 0.4996854, y: -0.110966206, z: 0}
   - {x: 0.49265182, y: 0.42504835, z: 0}
   - {x: -0.39702058, y: 0.42168903, z: 0}
---- !u!1 &1398765382
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1398765384}
-  - component: {fileID: 1398765383}
-  m_Layer: 3
-  m_Name: Global Volume
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1398765383
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1398765382}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isGlobal: 1
-  priority: 0
-  blendDistance: 0
-  weight: 1
-  sharedProfile: {fileID: 11400000, guid: cd3414858b693464aa0797f0c7b7657b, type: 2}
---- !u!4 &1398765384
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1398765382}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 22
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1404441904
 GameObject:
   m_ObjectHideFlags: 0
@@ -16204,7 +16174,7 @@ GameObject:
   - component: {fileID: 1422496776}
   - component: {fileID: 1422496778}
   - component: {fileID: 1422496777}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16469,7 +16439,7 @@ GameObject:
   - component: {fileID: 1479552706}
   - component: {fileID: 1479552705}
   - component: {fileID: 1479552704}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Close Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16601,7 +16571,7 @@ GameObject:
   - component: {fileID: 1482281012}
   - component: {fileID: 1482281014}
   - component: {fileID: 1482281013}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Emote
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16809,7 +16779,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1502591134}
   - component: {fileID: 1502591133}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Customer Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17001,7 +16971,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1515479978}
   - component: {fileID: 1515479979}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Scanner
   m_TagString: Scanner
   m_Icon: {fileID: 0}
@@ -17236,7 +17206,7 @@ GameObject:
   - component: {fileID: 1538883457}
   - component: {fileID: 1538883459}
   - component: {fileID: 1538883458}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Happy Milestone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17547,7 +17517,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1566599319}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Spawn
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -17921,7 +17891,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1589166229}
   - component: {fileID: 1589166230}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Weight Rule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18116,7 +18086,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1612201179}
   - component: {fileID: 1612201180}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Tip Jar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18200,7 +18170,7 @@ GameObject:
   - component: {fileID: 1631305328}
   - component: {fileID: 1631305330}
   - component: {fileID: 1631305329}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Open Rulebook
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18977,7 +18947,7 @@ GameObject:
   - component: {fileID: 1699710759}
   - component: {fileID: 1699710758}
   - component: {fileID: 1699710757}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Check ID Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19698,7 +19668,7 @@ GameObject:
   - component: {fileID: 1759213791}
   - component: {fileID: 1759213793}
   - component: {fileID: 1759213792}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Rulebook
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20763,7 +20733,7 @@ GameObject:
   - component: {fileID: 1830221796}
   - component: {fileID: 1830221798}
   - component: {fileID: 1830221797}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20842,7 +20812,7 @@ GameObject:
   - component: {fileID: 1833950060}
   - component: {fileID: 1833950062}
   - component: {fileID: 1833950061}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Rule 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21318,7 +21288,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1852031210}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Spawn (1)
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -24645,7 +24615,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1919787332}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Option 1 location
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24880,7 +24850,7 @@ GameObject:
   - component: {fileID: 1941841828}
   - component: {fileID: 1941841830}
   - component: {fileID: 1941841829}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25124,7 +25094,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1954433553}
   - component: {fileID: 1954433555}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Global Timer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25406,7 +25376,7 @@ GameObject:
   - component: {fileID: 1970530137}
   - component: {fileID: 1970530139}
   - component: {fileID: 1970530138}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25636,7 +25606,7 @@ GameObject:
   - component: {fileID: 1976128151}
   - component: {fileID: 1976128153}
   - component: {fileID: 1976128152}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Player Message Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26503,7 +26473,7 @@ GameObject:
   - component: {fileID: 2062959671}
   - component: {fileID: 2062959673}
   - component: {fileID: 2062959672}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Unhappy Milestone
   m_TagString: Untagged
   m_Icon: {fileID: 0}

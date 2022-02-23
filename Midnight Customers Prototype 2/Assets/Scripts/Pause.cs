@@ -16,6 +16,7 @@ public class Pause : MonoBehaviour
     [Tooltip("Reference to the pause screen prefab.")]
     [SerializeField] GameObject pauseScreen;
 
+    
     private void Awake()
     {
         playerInput = new PlayerInput();
