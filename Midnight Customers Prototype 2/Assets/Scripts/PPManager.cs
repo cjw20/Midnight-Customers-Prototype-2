@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Experimental.Rendering.Universal;
 using UnityEngine.Rendering;
-public class PostProcessingManager : MonoBehaviour
+
+public class PPManager : MonoBehaviour
 {
     public Volume volume;
     
@@ -11,6 +12,7 @@ public class PostProcessingManager : MonoBehaviour
     void Start()
     {
         JustWork();
+        
     }
     
 
