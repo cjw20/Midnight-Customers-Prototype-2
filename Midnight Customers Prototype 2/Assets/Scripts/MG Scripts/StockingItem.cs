@@ -7,7 +7,6 @@ public class StockingItem : MonoBehaviour
     // Fields
     bool selected;
     bool shelved;
-    public string itemID;
 
     // References
     StockingGame stockingGame;
@@ -25,10 +24,7 @@ public class StockingItem : MonoBehaviour
     {
         if (!selected && !shelved)
         {
-            if (itemID == "Cheez-O's")
-            {
-                soundManager.PlayChipsUpSound();
-            }
+            soundManager.PlayChipsUpSound();
             selected = true;
             stockingGame.SelectItem(this.gameObject);
             itemBox.SelectItem(this.gameObject);
@@ -55,10 +51,7 @@ public class StockingItem : MonoBehaviour
     {
         if (collision.CompareTag("Shelf") && !collision.gameObject.GetComponent<Shelf>().stocked)
         {
-            if (itemID == "Cheez-O's")
-            {
-                soundManager.PlayChipsDownSound();
-            }
+            soundManager.PlayChipsDownSound();
             shelved = true;
             Destroy(GetComponent<ClickDrag>()); //removes ability for player to move item?
             this.transform.position = collision.gameObject.GetComponent<Shelf>().target.position;

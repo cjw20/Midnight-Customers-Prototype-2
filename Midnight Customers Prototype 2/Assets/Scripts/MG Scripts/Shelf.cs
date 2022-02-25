@@ -8,8 +8,6 @@ public class Shelf : MonoBehaviour
     [Header("Stocking Info")]
     [Tooltip("Whether the shelf is stocked or not.")]
     public bool stocked;
-    [Tooltip("The name of the correct item that should be stocked.")]
-    public string requiredItem;
 
     // References
     [Header("Locations")]
