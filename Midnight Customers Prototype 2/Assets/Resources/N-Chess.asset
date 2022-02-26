@@ -1,0 +1,177 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
+  m_Name: N-Chess
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: ba770864-b6a9-4927-a063-67772fc862ba
+    PortName: Next
+    TargetNodeGuid: b59047ae-a59a-4a9a-8224-d4d278ef9cb3
+  - BaseNodeGuid: b59047ae-a59a-4a9a-8224-d4d278ef9cb3
+    PortName: Pawn to what?
+    TargetNodeGuid: c4d06773-bdc6-48b9-88a7-96ed98897dbb
+  - BaseNodeGuid: b59047ae-a59a-4a9a-8224-d4d278ef9cb3
+    PortName: Pawn to D4.
+    TargetNodeGuid: eb004e25-0653-4ab4-810c-1b5611459adf
+  - BaseNodeGuid: c4d06773-bdc6-48b9-88a7-96ed98897dbb
+    PortName: Okay then. Knight to F3.
+    TargetNodeGuid: 282137f1-bb80-45eb-a0a2-94036e94710a
+  - BaseNodeGuid: c4d06773-bdc6-48b9-88a7-96ed98897dbb
+    PortName: Okay uh...pawn to E4.
+    TargetNodeGuid: 8fbea16f-0cb1-4891-bfc6-ddd18ca7936c
+  - BaseNodeGuid: 8fbea16f-0cb1-4891-bfc6-ddd18ca7936c
+    PortName: Queen to G4.
+    TargetNodeGuid: f4e37488-3df1-4ace-84b1-2cc2b120f86e
+  - BaseNodeGuid: 282137f1-bb80-45eb-a0a2-94036e94710a
+    PortName: Queen to G4.
+    TargetNodeGuid: f4e37488-3df1-4ace-84b1-2cc2b120f86e
+  - BaseNodeGuid: 8fbea16f-0cb1-4891-bfc6-ddd18ca7936c
+    PortName: Pawn to F3.
+    TargetNodeGuid: 1a6f17b9-d3f0-4b0f-9200-4be5a1ac7951
+  - BaseNodeGuid: 282137f1-bb80-45eb-a0a2-94036e94710a
+    PortName: Pawn to F3.
+    TargetNodeGuid: 1a6f17b9-d3f0-4b0f-9200-4be5a1ac7951
+  - BaseNodeGuid: f4e37488-3df1-4ace-84b1-2cc2b120f86e
+    PortName: The gas station gambit. Queen to E6.
+    TargetNodeGuid: a3180411-c26a-445c-bcd3-0235da2b9f75
+  - BaseNodeGuid: f4e37488-3df1-4ace-84b1-2cc2b120f86e
+    PortName: Queen to E6, checkmate. Good game.
+    TargetNodeGuid: c81d6a0f-24a0-422b-89fd-ecae9ffe25b9
+  - BaseNodeGuid: 1a6f17b9-d3f0-4b0f-9200-4be5a1ac7951
+    PortName: Hmmm...Pawn to D3.
+    TargetNodeGuid: db70e14f-01d1-45e5-b1e1-2f0290f04cea
+  - BaseNodeGuid: 1a6f17b9-d3f0-4b0f-9200-4be5a1ac7951
+    PortName: Hmmm...Pawn to D4.
+    TargetNodeGuid: db70e14f-01d1-45e5-b1e1-2f0290f04cea
+  - BaseNodeGuid: db70e14f-01d1-45e5-b1e1-2f0290f04cea
+    PortName: Ah well, good game.
+    TargetNodeGuid: bdb11a04-9329-452b-93ee-36a605b3efab
+  - BaseNodeGuid: db70e14f-01d1-45e5-b1e1-2f0290f04cea
+    PortName: I seem to have blundered.
+    TargetNodeGuid: 7d340908-7152-4695-b3a9-9a02726699ae
+  - BaseNodeGuid: eb004e25-0653-4ab4-810c-1b5611459adf
+    PortName: Queen to D2.
+    TargetNodeGuid: d6a724b4-6398-4bdf-a836-b7f0cbed54b3
+  - BaseNodeGuid: eb004e25-0653-4ab4-810c-1b5611459adf
+    PortName: Pawn to E5.
+    TargetNodeGuid: 48416522-9e17-4a93-bdce-8eec36f3e235
+  - BaseNodeGuid: 48416522-9e17-4a93-bdce-8eec36f3e235
+    PortName: Ah well, good game.
+    TargetNodeGuid: bdb11a04-9329-452b-93ee-36a605b3efab
+  - BaseNodeGuid: 48416522-9e17-4a93-bdce-8eec36f3e235
+    PortName: I seem to have blundered.
+    TargetNodeGuid: 7d340908-7152-4695-b3a9-9a02726699ae
+  - BaseNodeGuid: d6a724b4-6398-4bdf-a836-b7f0cbed54b3
+    PortName: Queen to B4.
+    TargetNodeGuid: d83c6cd9-fb18-46e4-be8e-a097a3f64dda
+  - BaseNodeGuid: d83c6cd9-fb18-46e4-be8e-a097a3f64dda
+    PortName: Queen to F8, checkmate. Good game.
+    TargetNodeGuid: c81d6a0f-24a0-422b-89fd-ecae9ffe25b9
+  - BaseNodeGuid: d83c6cd9-fb18-46e4-be8e-a097a3f64dda
+    PortName: The gas station gambit. Queen to F8.
+    TargetNodeGuid: a3180411-c26a-445c-bcd3-0235da2b9f75
+  - BaseNodeGuid: d6a724b4-6398-4bdf-a836-b7f0cbed54b3
+    PortName: Queen to G5.
+    TargetNodeGuid: d83c6cd9-fb18-46e4-be8e-a097a3f64dda
+  - BaseNodeGuid: 7d340908-7152-4695-b3a9-9a02726699ae
+    PortName: Bye! Good Game!
+    TargetNodeGuid: f10d54a6-814b-4485-984d-989c7a7540cf
+  - BaseNodeGuid: 7d340908-7152-4695-b3a9-9a02726699ae
+    PortName: And they're running away...
+    TargetNodeGuid: f10d54a6-814b-4485-984d-989c7a7540cf
+  - BaseNodeGuid: bdb11a04-9329-452b-93ee-36a605b3efab
+    PortName: And they're running away...
+    TargetNodeGuid: f10d54a6-814b-4485-984d-989c7a7540cf
+  - BaseNodeGuid: bdb11a04-9329-452b-93ee-36a605b3efab
+    PortName: Bye! I believe in you!
+    TargetNodeGuid: f10d54a6-814b-4485-984d-989c7a7540cf
+  - BaseNodeGuid: a3180411-c26a-445c-bcd3-0235da2b9f75
+    PortName: And they're running away...
+    TargetNodeGuid: f10d54a6-814b-4485-984d-989c7a7540cf
+  - BaseNodeGuid: a3180411-c26a-445c-bcd3-0235da2b9f75
+    PortName: Bye! I believe in you!
+    TargetNodeGuid: f10d54a6-814b-4485-984d-989c7a7540cf
+  - BaseNodeGuid: c81d6a0f-24a0-422b-89fd-ecae9ffe25b9
+    PortName: And they're running away...
+    TargetNodeGuid: f10d54a6-814b-4485-984d-989c7a7540cf
+  - BaseNodeGuid: c81d6a0f-24a0-422b-89fd-ecae9ffe25b9
+    PortName: Bye! I believe in you!
+    TargetNodeGuid: f10d54a6-814b-4485-984d-989c7a7540cf
+  DialogueNodeData:
+  - Guid: b59047ae-a59a-4a9a-8224-d4d278ef9cb3
+    DialogueText: Pawn to E5.
+    Position: {x: 191, y: 199}
+  - Guid: eb004e25-0653-4ab4-810c-1b5611459adf
+    DialogueText: Ha! They're falling for it. The Englund Gambit has never failed
+      me. This time shall be no different. Queen to E7.
+    Position: {x: 455, y: 265}
+  - Guid: c4d06773-bdc6-48b9-88a7-96ed98897dbb
+    DialogueText: Tch. Do they not know this is a game? I've made my move. I believe
+      in the heart of the pawns. Now, will they play or forfeit like a coward?
+    Position: {x: 457, y: 132}
+  - Guid: 282137f1-bb80-45eb-a0a2-94036e94710a
+    DialogueText: Hmph. Not the move I thought they would make. No matter, there
+      is still hope for me yet. Pawn to D6.
+    Position: {x: 1380, y: 130}
+  - Guid: 8fbea16f-0cb1-4891-bfc6-ddd18ca7936c
+    DialogueText: Hmph. Not the move I thought they would take. No matter, there
+      is still hope for me yet. Pawn to D6.
+    Position: {x: 1379, y: 1}
+  - Guid: 1a6f17b9-d3f0-4b0f-9200-4be5a1ac7951
+    DialogueText: Are they serious? They're giving me an opening! The fool! I'm not
+      out of this yet! Queen to G5.
+    Position: {x: 2102, y: 135}
+  - Guid: f4e37488-3df1-4ace-84b1-2cc2b120f86e
+    DialogueText: The queen? What could they possibly be thinking? Is this a trap?
+      Have I fallen for an unknown gambit? I cannot fail. I will not fail! Pawn to
+      F6!
+    Position: {x: 2105, y: 0}
+  - Guid: db70e14f-01d1-45e5-b1e1-2f0290f04cea
+    DialogueText: I can't believe it. One move away from Victory. My opponent was
+      tough but no match for me. Queen to E3! Checkmate!
+    Position: {x: 3036, y: 136}
+  - Guid: d6a724b4-6398-4bdf-a836-b7f0cbed54b3
+    DialogueText: The queen? What could they possibly be thinking? Is this a trap?
+      Have I fallen for an unknown gambit? I cannot fail. I will not fail! Pawn to
+      F6!
+    Position: {x: 1245, y: 265}
+  - Guid: 48416522-9e17-4a93-bdce-8eec36f3e235
+    DialogueText: You think you have me cornered, but that pawn was merely bait.
+      Take this! Queen to B4! Checkmate!
+    Position: {x: 3052, y: 586}
+  - Guid: d83c6cd9-fb18-46e4-be8e-a097a3f64dda
+    DialogueText: ARGH! I have one last chance to save myself. What do I do? Have
+      they already won? Is resistence futile? I still have to try! Knight to H6!
+    Position: {x: 2230, y: 272}
+  - Guid: bdb11a04-9329-452b-93ee-36a605b3efab
+    DialogueText: That's it? Good game? What are they playing at. I humiliated them
+      yet they are so calm. Perhaps the game is not over. You won't trap me in another
+      gambit!
+    Position: {x: 3934, y: 318}
+  - Guid: 7d340908-7152-4695-b3a9-9a02726699ae
+    DialogueText: HA! INDEED! It was elementary, my dear clerk. Perhaps some training
+      will do you good. Chess is no place for welps like you. HAHAHAHA!
+    Position: {x: 3937, y: 453}
+  - Guid: a3180411-c26a-445c-bcd3-0235da2b9f75
+    DialogueText: G-GAS STATION GAMBIT? I'VE BLUNDERED! Where did I go wrong? The
+      Englund Gambit was supposed to be fool proof! I must train harder and faster!
+      AHHHHHHHHHH!
+    Position: {x: 3937, y: 177}
+  - Guid: c81d6a0f-24a0-422b-89fd-ecae9ffe25b9
+    DialogueText: C-CHECKMATE? GAH! I'VE BLUNDERED! Where did I go wrong? The Englund
+      Gambit was supposed to be fool proof! I must train harder and faster! AHHHHHHHHHH!
+    Position: {x: 3938, y: 37}
+  - Guid: f10d54a6-814b-4485-984d-989c7a7540cf
+    DialogueText: +0
+    Position: {x: 5084, y: 239}
+  ExposedProperties: []
+  CommentBlockData: []
