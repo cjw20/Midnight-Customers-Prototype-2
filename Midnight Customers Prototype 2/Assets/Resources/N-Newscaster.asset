@@ -1,0 +1,214 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
+  m_Name: N-Newscaster
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: 432b7740-da4d-45b3-91f6-e4fe7e7415d5
+    PortName: Next
+    TargetNodeGuid: 4598d44e-53b6-46c7-8cb3-8b4554fb0a44
+  - BaseNodeGuid: 4598d44e-53b6-46c7-8cb3-8b4554fb0a44
+    PortName: Sure.
+    TargetNodeGuid: e360f3a0-9335-44eb-8ab8-818e41ddc1f7
+  - BaseNodeGuid: 4598d44e-53b6-46c7-8cb3-8b4554fb0a44
+    PortName: What is Maxwell News?
+    TargetNodeGuid: 97d696df-ce48-4cbb-b939-d2b3ec7b4522
+  - BaseNodeGuid: 4598d44e-53b6-46c7-8cb3-8b4554fb0a44
+    PortName: ...
+    TargetNodeGuid: 97d696df-ce48-4cbb-b939-d2b3ec7b4522
+  - BaseNodeGuid: e360f3a0-9335-44eb-8ab8-818e41ddc1f7
+    PortName: Sounds shady.
+    TargetNodeGuid: d7c0ad4b-12d6-4e70-96d3-e79fde3e32dd
+  - BaseNodeGuid: 97d696df-ce48-4cbb-b939-d2b3ec7b4522
+    PortName: Sounds shady.
+    TargetNodeGuid: d7c0ad4b-12d6-4e70-96d3-e79fde3e32dd
+  - BaseNodeGuid: e360f3a0-9335-44eb-8ab8-818e41ddc1f7
+    PortName: Let's start the interview.
+    TargetNodeGuid: a85e7329-218f-4426-91a8-82c6418b3db3
+  - BaseNodeGuid: 97d696df-ce48-4cbb-b939-d2b3ec7b4522
+    PortName: Let's start the interview.
+    TargetNodeGuid: a85e7329-218f-4426-91a8-82c6418b3db3
+  - BaseNodeGuid: 97d696df-ce48-4cbb-b939-d2b3ec7b4522
+    PortName: ...
+    TargetNodeGuid: 386b9e20-1409-4de6-9037-421f2e13a2d0
+  - BaseNodeGuid: e360f3a0-9335-44eb-8ab8-818e41ddc1f7
+    PortName: ...
+    TargetNodeGuid: 386b9e20-1409-4de6-9037-421f2e13a2d0
+  - BaseNodeGuid: d7c0ad4b-12d6-4e70-96d3-e79fde3e32dd
+    PortName: I like the people here.
+    TargetNodeGuid: c8458c97-d2f2-4982-8abe-f5456c8c143b
+  - BaseNodeGuid: d7c0ad4b-12d6-4e70-96d3-e79fde3e32dd
+    PortName: The rich culture and history.
+    TargetNodeGuid: c8458c97-d2f2-4982-8abe-f5456c8c143b
+  - BaseNodeGuid: a85e7329-218f-4426-91a8-82c6418b3db3
+    PortName: I like the people here.
+    TargetNodeGuid: c8458c97-d2f2-4982-8abe-f5456c8c143b
+  - BaseNodeGuid: a85e7329-218f-4426-91a8-82c6418b3db3
+    PortName: The rich culture and history.
+    TargetNodeGuid: c8458c97-d2f2-4982-8abe-f5456c8c143b
+  - BaseNodeGuid: 386b9e20-1409-4de6-9037-421f2e13a2d0
+    PortName: I like the people here.
+    TargetNodeGuid: c8458c97-d2f2-4982-8abe-f5456c8c143b
+  - BaseNodeGuid: 386b9e20-1409-4de6-9037-421f2e13a2d0
+    PortName: The rich culture and history.
+    TargetNodeGuid: c8458c97-d2f2-4982-8abe-f5456c8c143b
+  - BaseNodeGuid: d7c0ad4b-12d6-4e70-96d3-e79fde3e32dd
+    PortName: ...
+    TargetNodeGuid: f50e6787-4508-4dc2-a1cd-cebdcbf65cb8
+  - BaseNodeGuid: a85e7329-218f-4426-91a8-82c6418b3db3
+    PortName: ...
+    TargetNodeGuid: f50e6787-4508-4dc2-a1cd-cebdcbf65cb8
+  - BaseNodeGuid: 386b9e20-1409-4de6-9037-421f2e13a2d0
+    PortName: ...
+    TargetNodeGuid: f50e6787-4508-4dc2-a1cd-cebdcbf65cb8
+  - BaseNodeGuid: c8458c97-d2f2-4982-8abe-f5456c8c143b
+    PortName: Protestors being arrested is awful.
+    TargetNodeGuid: 19bf59d1-c5d2-4ece-b385-2dac2773f657
+  - BaseNodeGuid: f50e6787-4508-4dc2-a1cd-cebdcbf65cb8
+    PortName: Protestors being arrested is awful.
+    TargetNodeGuid: 19bf59d1-c5d2-4ece-b385-2dac2773f657
+  - BaseNodeGuid: c8458c97-d2f2-4982-8abe-f5456c8c143b
+    PortName: It's not making enough progress.
+    TargetNodeGuid: b31d6f63-b1b2-4e9d-9724-39f6abaca187
+  - BaseNodeGuid: f50e6787-4508-4dc2-a1cd-cebdcbf65cb8
+    PortName: It's not making enough progress.
+    TargetNodeGuid: b31d6f63-b1b2-4e9d-9724-39f6abaca187
+  - BaseNodeGuid: c8458c97-d2f2-4982-8abe-f5456c8c143b
+    PortName: ...
+    TargetNodeGuid: 61520c0e-9427-4b57-8836-6499e3b0a924
+  - BaseNodeGuid: f50e6787-4508-4dc2-a1cd-cebdcbf65cb8
+    PortName: ...
+    TargetNodeGuid: 61520c0e-9427-4b57-8836-6499e3b0a924
+  - BaseNodeGuid: b31d6f63-b1b2-4e9d-9724-39f6abaca187
+    PortName: I'm sorry, no more questions.
+    TargetNodeGuid: b8135382-d713-448d-a044-85be9cd240fb
+  - BaseNodeGuid: 61520c0e-9427-4b57-8836-6499e3b0a924
+    PortName: I'm sorry, no more questions.
+    TargetNodeGuid: b8135382-d713-448d-a044-85be9cd240fb
+  - BaseNodeGuid: 19bf59d1-c5d2-4ece-b385-2dac2773f657
+    PortName: Then maybe you should leave.
+    TargetNodeGuid: d03c4eca-39a8-488e-8d7b-2841c709788b
+  - BaseNodeGuid: b31d6f63-b1b2-4e9d-9724-39f6abaca187
+    PortName: Then maybe you should leave.
+    TargetNodeGuid: d03c4eca-39a8-488e-8d7b-2841c709788b
+  - BaseNodeGuid: 61520c0e-9427-4b57-8836-6499e3b0a924
+    PortName: Then maybe you should leave.
+    TargetNodeGuid: d03c4eca-39a8-488e-8d7b-2841c709788b
+  - BaseNodeGuid: 19bf59d1-c5d2-4ece-b385-2dac2773f657
+    PortName: I'm sorry, no more questions.
+    TargetNodeGuid: b8135382-d713-448d-a044-85be9cd240fb
+  - BaseNodeGuid: 61520c0e-9427-4b57-8836-6499e3b0a924
+    PortName: ...
+    TargetNodeGuid: f7344f78-7e52-4233-bb46-2457dc5b1683
+  - BaseNodeGuid: b31d6f63-b1b2-4e9d-9724-39f6abaca187
+    PortName: ...
+    TargetNodeGuid: f7344f78-7e52-4233-bb46-2457dc5b1683
+  - BaseNodeGuid: 19bf59d1-c5d2-4ece-b385-2dac2773f657
+    PortName: ...
+    TargetNodeGuid: f7344f78-7e52-4233-bb46-2457dc5b1683
+  - BaseNodeGuid: d03c4eca-39a8-488e-8d7b-2841c709788b
+    PortName: Good riddance.
+    TargetNodeGuid: dce16b8b-efd6-4640-a031-e4666112305e
+  - BaseNodeGuid: d03c4eca-39a8-488e-8d7b-2841c709788b
+    PortName: Goodbye.
+    TargetNodeGuid: dce16b8b-efd6-4640-a031-e4666112305e
+  - BaseNodeGuid: d03c4eca-39a8-488e-8d7b-2841c709788b
+    PortName: ...
+    TargetNodeGuid: dce16b8b-efd6-4640-a031-e4666112305e
+  - BaseNodeGuid: b8135382-d713-448d-a044-85be9cd240fb
+    PortName: Good riddance.
+    TargetNodeGuid: dce16b8b-efd6-4640-a031-e4666112305e
+  - BaseNodeGuid: b8135382-d713-448d-a044-85be9cd240fb
+    PortName: Goodbye.
+    TargetNodeGuid: dce16b8b-efd6-4640-a031-e4666112305e
+  - BaseNodeGuid: b8135382-d713-448d-a044-85be9cd240fb
+    PortName: ...
+    TargetNodeGuid: dce16b8b-efd6-4640-a031-e4666112305e
+  - BaseNodeGuid: f7344f78-7e52-4233-bb46-2457dc5b1683
+    PortName: Good riddance.
+    TargetNodeGuid: dce16b8b-efd6-4640-a031-e4666112305e
+  - BaseNodeGuid: f7344f78-7e52-4233-bb46-2457dc5b1683
+    PortName: Goodbye.
+    TargetNodeGuid: dce16b8b-efd6-4640-a031-e4666112305e
+  - BaseNodeGuid: f7344f78-7e52-4233-bb46-2457dc5b1683
+    PortName: ...
+    TargetNodeGuid: dce16b8b-efd6-4640-a031-e4666112305e
+  DialogueNodeData:
+  - Guid: 4598d44e-53b6-46c7-8cb3-8b4554fb0a44
+    DialogueText: Hello great citizen of Arkham! My name is Chad McBurnsen, reporter
+      for Maxwell News. Do you have some time for a brief interview?
+    Position: {x: 195, y: 200}
+  - Guid: e360f3a0-9335-44eb-8ab8-818e41ddc1f7
+    DialogueText: Great! Maxwell News is the most reliable source of information
+      in all of Arkham! It is co-owned by Arkham's biggest businesses, to make sure
+      we report only the positive-truths!
+    Position: {x: 1094, y: 136}
+  - Guid: 97d696df-ce48-4cbb-b939-d2b3ec7b4522
+    DialogueText: Maxwell News is the most reliable source of information in all
+      of Arkham! It is co-owned by Arkham's biggest businesses, to make sure we report
+      only the positive-truths!
+    Position: {x: 1094, y: 292}
+  - Guid: a85e7329-218f-4426-91a8-82c6418b3db3
+    DialogueText: Fantastic! So, what is your favorite thing about Arkham? It's many
+      businesses? It's beautiful scenery? Or it's political forwardness?
+    Position: {x: 2256, y: 217}
+  - Guid: d7c0ad4b-12d6-4e70-96d3-e79fde3e32dd
+    DialogueText: Hey, now, positive-truths only! So, what's your favorite thing
+      about Arkham? It's many businesses? It's political forwardness? It's wildlife?
+    Position: {x: 2258, y: 61}
+  - Guid: 386b9e20-1409-4de6-9037-421f2e13a2d0
+    DialogueText: ...ahem...I'll just begin then. What is your favorite thing about
+      Arkham? It's many businesses? It's beautiful scenery? Or it's political forwardness?
+    Position: {x: 2255, y: 371}
+  - Guid: f50e6787-4508-4dc2-a1cd-cebdcbf65cb8
+    DialogueText: 'Hey, perk up. Let''s try not to put my viewers to sleep. Next
+      question: What is your least favorite thing about Arkham''s activism, or terrorism,
+      as we''re supposed to call it?'
+    Position: {x: 3286, y: 232}
+  - Guid: c8458c97-d2f2-4982-8abe-f5456c8c143b
+    DialogueText: 'Boooooooorinnnggg! Let''s try not to put my viewers to sleep.
+      Next question: What is your least favorite thing about Arkham''s activism,
+      or terrorism, as we''re supposed to call it?'
+    Position: {x: 3280, y: 81}
+  - Guid: 19bf59d1-c5d2-4ece-b385-2dac2773f657
+    DialogueText: Hey! I said positive-truths only, and what you just said was not
+      very positive! You're making my job very difficult, you know?
+    Position: {x: 4488, y: 79}
+  - Guid: b31d6f63-b1b2-4e9d-9724-39f6abaca187
+    DialogueText: Hey! I said positive-truths only, and what you just said was not
+      very positive! Activism is a threat to our business interests. You're making
+      my job very difficult, you know?
+    Position: {x: 4488, y: 240}
+  - Guid: 61520c0e-9427-4b57-8836-6499e3b0a924
+    DialogueText: Look, at least give me something here. You're making my job very
+      difficult, you know? Just tell me how much you love what Maxwell has done and
+      this can be over.
+    Position: {x: 4490, y: 399}
+  - Guid: d03c4eca-39a8-488e-8d7b-2841c709788b
+    DialogueText: Perhaps I should. My name is Chad McBurnsen, and this has been
+      the worst interview of my career. Thanks for nothing.
+    Position: {x: 5662, y: 114}
+  - Guid: f7344f78-7e52-4233-bb46-2457dc5b1683
+    DialogueText: Hmph. I can see this isn't going to be a very productive or positive
+      interview. My name is Chad McBurnsen, and this has been the worst interview
+      of my career.
+    Position: {x: 5667, y: 430}
+  - Guid: b8135382-d713-448d-a044-85be9cd240fb
+    DialogueText: You're right, there will be no more questions. I can see this isn't
+      going to be a very positive interview. My name is Chad McBurnsen, and this
+      has been the worst interview of my career.
+    Position: {x: 5670, y: 273}
+  - Guid: dce16b8b-efd6-4640-a031-e4666112305e
+    DialogueText: +0
+    Position: {x: 6913, y: 290}
+  ExposedProperties: []
+  CommentBlockData: []
