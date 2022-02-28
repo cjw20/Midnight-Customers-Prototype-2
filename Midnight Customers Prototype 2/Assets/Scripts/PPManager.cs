@@ -3,30 +3,32 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Experimental.Rendering.Universal;
 using UnityEngine.Rendering;
+using UnityEngine.Rendering.Universal;
 
 public class PPManager : MonoBehaviour
 {
     public Volume volume;
-    
+    DepthOfField dof;
 
     void Start()
     {
-        JustWork();
+       
         
-    }
-    
+    } 
 
-
-
-    private void JustWork()
+    public void EnableDepthOfFieldEffect()
     {
-        
+        if (volume.profile.TryGet<DepthOfField>(out dof))
+        {
+            dof.active = true;
+        }
     }
-    
 
-    // Update is called once per frame
-    void Update()
+    public void DisableDepthOfFieldEffect()
     {
-        
+        if (volume.profile.TryGet<DepthOfField>(out dof))
+        {
+            dof.active = false;
+        }
     }
 }
