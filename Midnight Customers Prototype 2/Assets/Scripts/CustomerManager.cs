@@ -15,6 +15,7 @@ public class CustomerManager : MonoBehaviour
     public static CustomerManager customerManager;
     [Tooltip("List of customers.")]
     public GameObject[] customers;
+    public GameObject[] customerList; //each customer in array for save load purposes
     [Tooltip("Point of exit for the customers.")]
     [SerializeField] Transform exit;
     [Tooltip("List of the customers currently in the store.")]
