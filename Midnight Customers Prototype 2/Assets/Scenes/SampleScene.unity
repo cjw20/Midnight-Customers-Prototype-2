@@ -2546,11 +2546,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14a5c57363f828c4f8114df1b226bc1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioMixer: {fileID: 24100000, guid: b50e88a6829d0c645a05ba17996fcbc1, type: 2}
   resolutionDropdown: {fileID: 1318412267}
   anti_dyslexia_font: {fileID: 11400000, guid: df6eedf7fe648d840aa51508b8988036, type: 2}
   default_font: {fileID: 11400000, guid: 635ed795edb1a9b438a800583fd69ffd, type: 2}
   text: {fileID: 1570906848}
+  audioMixer: {fileID: 24100000, guid: b50e88a6829d0c645a05ba17996fcbc1, type: 2}
 --- !u!114 &250542601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9879,8 +9879,8 @@ MonoBehaviour:
   hours_hand: {fileID: 1183424977}
   blackScreen: {fileID: 1151140294}
   toBlack: {fileID: 1151140295}
-  playerStartingLoc: {fileID: 1405583354}
   journalDisplay: {fileID: 350225329}
+  playerStartingLoc: {fileID: 1405583354}
 --- !u!1 &848104265
 GameObject:
   m_ObjectHideFlags: 0
@@ -11651,9 +11651,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bb6865c3525cdf40b000677500ec181, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wiggleTarget: {fileID: 1013319164}
   wiggling: 1
   switchTime: 0.1
+  wiggleTarget: {fileID: 1013319164}
 --- !u!1 &1018944912
 GameObject:
   m_ObjectHideFlags: 0
@@ -16424,6 +16424,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 886850ccb5a802a48a6c9d807bfcd81d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buttonOffset: 90
+  slideSpeed: 6
   dialogue: {fileID: 11400000, guid: 333de47e1bd93664da311b74d39f3d86, type: 2}
   dialogueText: {fileID: 211056937}
   choicePrefab: {fileID: 2179707956389947301, guid: 611cc085f76f95647ba2846b11682128, type: 3}
@@ -16431,13 +16433,11 @@ MonoBehaviour:
   buttonPositions:
   - {fileID: 1919787332}
   - {fileID: 481052228}
+  openDyslexic: {fileID: 12800000, guid: 6eb01d115bc84fc488a113fb9bc23679, type: 3}
   countdownSlider: {fileID: 505964449}
-  buttonOffset: 90
   checkoutManager: {fileID: 10691447}
   playerDialoguePanel: {fileID: 1976128150}
   countdownBar: {fileID: 505964447}
-  slideSpeed: 6
-  openDyslexic: {fileID: 12800000, guid: 6eb01d115bc84fc488a113fb9bc23679, type: 3}
 --- !u!1 &1335903331
 GameObject:
   m_ObjectHideFlags: 0
@@ -30976,7 +30976,7 @@ PrefabInstance:
     - target: {fileID: 8396762688156681504, guid: b2dd033b1b039cd468d20d6509b308d7, type: 3}
       propertyPath: dialogueFont
       value: 
-      objectReference: {fileID: 12800000, guid: 1b65f1fdfb628a84d91278cecf98d841, type: 3}
+      objectReference: {fileID: 12800000, guid: 4f344465beb15594fb239a74136f93c9, type: 3}
     - target: {fileID: 8396762688156681504, guid: b2dd033b1b039cd468d20d6509b308d7, type: 3}
       propertyPath: moodMilestones.Array.size
       value: 4

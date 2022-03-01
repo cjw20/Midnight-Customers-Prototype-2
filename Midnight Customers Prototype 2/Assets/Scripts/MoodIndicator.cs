@@ -18,7 +18,7 @@ public class MoodIndicator : MonoBehaviour
     [Tooltip("Sprite for the pissed mood.")]
     [SerializeField] Sprite pissedSprite;
 
-    private void Start()
+    private void Awake()
     {
         spriteRenderer = this.gameObject.GetComponent<SpriteRenderer>();
     }
