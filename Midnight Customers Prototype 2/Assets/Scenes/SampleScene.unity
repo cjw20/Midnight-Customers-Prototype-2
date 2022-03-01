@@ -705,15 +705,8 @@ MonoBehaviour:
   - {fileID: 2666151172327968761, guid: c6751cfb41abea84bbcf95e23a908c5e, type: 3}
   nextConversation: {fileID: 0}
   conversations:
-  - {fileID: 11400000, guid: fb7c52bd71066004da6307bedad1f3d5, type: 2}
-  - {fileID: 11400000, guid: 948591fb641a9914ea314a0f7e88098c, type: 2}
-  - {fileID: 11400000, guid: 1187793a551ab1544aaf5e3c8fb67eab, type: 2}
-  - {fileID: 11400000, guid: 94373bee1fe14b44397b66becbbf40e2, type: 2}
-  - {fileID: 11400000, guid: 7c3829e946b5d5f4cb13eadf2fa5a776, type: 2}
-  - {fileID: 11400000, guid: 4caa649a60e463449a14dca7d6a61cb2, type: 2}
-  - {fileID: 11400000, guid: 9690f172a6c255649bc92d01cec2bc95, type: 2}
-  - {fileID: 11400000, guid: 54294a0904d5ba645b9325e553588776, type: 2}
   - {fileID: 11400000, guid: 75fc4f7cad34a8e4da8d8ea187d134cc, type: 2}
+  - {fileID: 11400000, guid: 7c3829e946b5d5f4cb13eadf2fa5a776, type: 2}
 --- !u!114 &69480678
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3689,15 +3682,8 @@ MonoBehaviour:
   - {fileID: 2666151172327968761, guid: c6751cfb41abea84bbcf95e23a908c5e, type: 3}
   nextConversation: {fileID: 0}
   conversations:
-  - {fileID: 11400000, guid: fb7c52bd71066004da6307bedad1f3d5, type: 2}
-  - {fileID: 11400000, guid: 948591fb641a9914ea314a0f7e88098c, type: 2}
-  - {fileID: 11400000, guid: 1187793a551ab1544aaf5e3c8fb67eab, type: 2}
-  - {fileID: 11400000, guid: 94373bee1fe14b44397b66becbbf40e2, type: 2}
-  - {fileID: 11400000, guid: 7c3829e946b5d5f4cb13eadf2fa5a776, type: 2}
-  - {fileID: 11400000, guid: 4caa649a60e463449a14dca7d6a61cb2, type: 2}
-  - {fileID: 11400000, guid: 9690f172a6c255649bc92d01cec2bc95, type: 2}
   - {fileID: 11400000, guid: 54294a0904d5ba645b9325e553588776, type: 2}
-  - {fileID: 11400000, guid: 75fc4f7cad34a8e4da8d8ea187d134cc, type: 2}
+  - {fileID: 0}
 --- !u!114 &319647679
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6708,15 +6694,9 @@ MonoBehaviour:
   - {fileID: 2666151172327968761, guid: c6751cfb41abea84bbcf95e23a908c5e, type: 3}
   nextConversation: {fileID: 0}
   conversations:
-  - {fileID: 11400000, guid: fb7c52bd71066004da6307bedad1f3d5, type: 2}
-  - {fileID: 11400000, guid: 948591fb641a9914ea314a0f7e88098c, type: 2}
-  - {fileID: 11400000, guid: 1187793a551ab1544aaf5e3c8fb67eab, type: 2}
-  - {fileID: 11400000, guid: 94373bee1fe14b44397b66becbbf40e2, type: 2}
-  - {fileID: 11400000, guid: 7c3829e946b5d5f4cb13eadf2fa5a776, type: 2}
-  - {fileID: 11400000, guid: 4caa649a60e463449a14dca7d6a61cb2, type: 2}
-  - {fileID: 11400000, guid: 9690f172a6c255649bc92d01cec2bc95, type: 2}
-  - {fileID: 11400000, guid: 54294a0904d5ba645b9325e553588776, type: 2}
-  - {fileID: 11400000, guid: 75fc4f7cad34a8e4da8d8ea187d134cc, type: 2}
+  - {fileID: 11400000, guid: f30a418d1dd058948998d32f1011f194, type: 2}
+  - {fileID: 11400000, guid: 27c9c19fffbdd2d47a379ff45592eda0, type: 2}
+  - {fileID: 11400000, guid: 33396469fe8d35c4885760c936e84750, type: 2}
 --- !u!114 &560489335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16227,15 +16207,9 @@ MonoBehaviour:
   - {fileID: 2666151172327968761, guid: c6751cfb41abea84bbcf95e23a908c5e, type: 3}
   nextConversation: {fileID: 0}
   conversations:
-  - {fileID: 11400000, guid: fb7c52bd71066004da6307bedad1f3d5, type: 2}
-  - {fileID: 11400000, guid: 948591fb641a9914ea314a0f7e88098c, type: 2}
-  - {fileID: 11400000, guid: 1187793a551ab1544aaf5e3c8fb67eab, type: 2}
-  - {fileID: 11400000, guid: 94373bee1fe14b44397b66becbbf40e2, type: 2}
-  - {fileID: 11400000, guid: 7c3829e946b5d5f4cb13eadf2fa5a776, type: 2}
-  - {fileID: 11400000, guid: 4caa649a60e463449a14dca7d6a61cb2, type: 2}
-  - {fileID: 11400000, guid: 9690f172a6c255649bc92d01cec2bc95, type: 2}
-  - {fileID: 11400000, guid: 54294a0904d5ba645b9325e553588776, type: 2}
-  - {fileID: 11400000, guid: 75fc4f7cad34a8e4da8d8ea187d134cc, type: 2}
+  - {fileID: 11400000, guid: 2e456343f77180644bd89d100aa60142, type: 2}
+  - {fileID: 11400000, guid: 1e7328a5147b21b4f9594d171b0d1b09, type: 2}
+  - {fileID: 11400000, guid: 1524ed568e328c9479ce93301d9bdcb1, type: 2}
 --- !u!114 &1332406903
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22248,15 +22222,8 @@ MonoBehaviour:
   - {fileID: 2666151172327968761, guid: c6751cfb41abea84bbcf95e23a908c5e, type: 3}
   nextConversation: {fileID: 0}
   conversations:
-  - {fileID: 11400000, guid: fb7c52bd71066004da6307bedad1f3d5, type: 2}
-  - {fileID: 11400000, guid: 948591fb641a9914ea314a0f7e88098c, type: 2}
-  - {fileID: 11400000, guid: 1187793a551ab1544aaf5e3c8fb67eab, type: 2}
-  - {fileID: 11400000, guid: 94373bee1fe14b44397b66becbbf40e2, type: 2}
-  - {fileID: 11400000, guid: 7c3829e946b5d5f4cb13eadf2fa5a776, type: 2}
-  - {fileID: 11400000, guid: 4caa649a60e463449a14dca7d6a61cb2, type: 2}
-  - {fileID: 11400000, guid: 9690f172a6c255649bc92d01cec2bc95, type: 2}
-  - {fileID: 11400000, guid: 54294a0904d5ba645b9325e553588776, type: 2}
-  - {fileID: 11400000, guid: 75fc4f7cad34a8e4da8d8ea187d134cc, type: 2}
+  - {fileID: 11400000, guid: 295aa326659cb9543930aa9e79a22a08, type: 2}
+  - {fileID: 0}
 --- !u!114 &1826431519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28997,12 +28964,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 668096973}
     m_Modifications:
     - target: {fileID: 6010064553094314888, guid: c208794e7e4da754bade06a8d0248f4b, type: 3}
+      propertyPath: essential
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6010064553094314888, guid: c208794e7e4da754bade06a8d0248f4b, type: 3}
       propertyPath: dialogueFont
       value: 
       objectReference: {fileID: 12800000, guid: e86f06ea0a36a0e42970c16855b93423, type: 3}
     - target: {fileID: 6010064553094314888, guid: c208794e7e4da754bade06a8d0248f4b, type: 3}
       propertyPath: conversations.Array.size
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6010064553094314888, guid: c208794e7e4da754bade06a8d0248f4b, type: 3}
       propertyPath: moodMilestones.Array.size
@@ -29019,11 +28990,19 @@ PrefabInstance:
     - target: {fileID: 6010064553094314888, guid: c208794e7e4da754bade06a8d0248f4b, type: 3}
       propertyPath: conversations.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: a0187018c58744d48896acc3547df0d2, type: 2}
+      objectReference: {fileID: 11400000, guid: 9f690b773118b69428a91ec551c70630, type: 2}
     - target: {fileID: 6010064553094314888, guid: c208794e7e4da754bade06a8d0248f4b, type: 3}
       propertyPath: conversations.Array.data[2]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: f13e0c64d458a404c8c07a14050ce7a4, type: 2}
+    - target: {fileID: 6010064553094314888, guid: c208794e7e4da754bade06a8d0248f4b, type: 3}
+      propertyPath: conversations.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: 4eeef756325b63945ae781f00adf31c6, type: 2}
+    - target: {fileID: 6010064553094314888, guid: c208794e7e4da754bade06a8d0248f4b, type: 3}
+      propertyPath: conversations.Array.data[4]
+      value: 
+      objectReference: {fileID: 11400000, guid: ada3a8f9880e0aa42a2e4ffc8b0317a7, type: 2}
     - target: {fileID: 6010064553094314888, guid: c208794e7e4da754bade06a8d0248f4b, type: 3}
       propertyPath: moodMilestones.Array.data[1]
       value: 25
@@ -29821,15 +29800,9 @@ MonoBehaviour:
   - {fileID: 2666151172327968761, guid: c6751cfb41abea84bbcf95e23a908c5e, type: 3}
   nextConversation: {fileID: 0}
   conversations:
-  - {fileID: 11400000, guid: fb7c52bd71066004da6307bedad1f3d5, type: 2}
-  - {fileID: 11400000, guid: 948591fb641a9914ea314a0f7e88098c, type: 2}
-  - {fileID: 11400000, guid: 1187793a551ab1544aaf5e3c8fb67eab, type: 2}
-  - {fileID: 11400000, guid: 94373bee1fe14b44397b66becbbf40e2, type: 2}
-  - {fileID: 11400000, guid: 7c3829e946b5d5f4cb13eadf2fa5a776, type: 2}
-  - {fileID: 11400000, guid: 4caa649a60e463449a14dca7d6a61cb2, type: 2}
-  - {fileID: 11400000, guid: 9690f172a6c255649bc92d01cec2bc95, type: 2}
-  - {fileID: 11400000, guid: 54294a0904d5ba645b9325e553588776, type: 2}
-  - {fileID: 11400000, guid: 75fc4f7cad34a8e4da8d8ea187d134cc, type: 2}
+  - {fileID: 11400000, guid: 3209b647a16c1464ea999b7920fcb036, type: 2}
+  - {fileID: 11400000, guid: 1e7328a5147b21b4f9594d171b0d1b09, type: 2}
+  - {fileID: 11400000, guid: 90ce14695fa688246a0007ad4d5eb123, type: 2}
 --- !u!50 &1914665180030188435
 Rigidbody2D:
   serializedVersion: 4
@@ -30227,6 +30200,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 694592631186955932, guid: 57b0baff431f6ff4285709247c7e3789, type: 3}
+      propertyPath: essential
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 694592631186955932, guid: 57b0baff431f6ff4285709247c7e3789, type: 3}
       propertyPath: dialogueFont
       value: 
       objectReference: {fileID: 12800000, guid: 41f0b41479f9f004bbb8c0e97b7fb179, type: 3}
@@ -30588,11 +30565,11 @@ PrefabInstance:
     - target: {fileID: 5642382787059048421, guid: 0c385362111dbf04cbbe979bb5f2d605, type: 3}
       propertyPath: conversations.Array.data[7]
       value: 
-      objectReference: {fileID: 11400000, guid: 54294a0904d5ba645b9325e553588776, type: 2}
+      objectReference: {fileID: 11400000, guid: 1181b0beb0c5711488083eb0899e342f, type: 2}
     - target: {fileID: 5642382787059048421, guid: 0c385362111dbf04cbbe979bb5f2d605, type: 3}
       propertyPath: conversations.Array.data[8]
       value: 
-      objectReference: {fileID: 11400000, guid: 75fc4f7cad34a8e4da8d8ea187d134cc, type: 2}
+      objectReference: {fileID: 11400000, guid: 27ba699b65f822a45856ec742f119cb6, type: 2}
     - target: {fileID: 5642382787059048421, guid: 0c385362111dbf04cbbe979bb5f2d605, type: 3}
       propertyPath: moodMilestones.Array.data[1]
       value: 25
@@ -30773,7 +30750,7 @@ PrefabInstance:
     - target: {fileID: 2086022073797734984, guid: d52477f69afa3d04ba8c39de28ca629d, type: 3}
       propertyPath: conversations.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: 9690f172a6c255649bc92d01cec2bc95, type: 2}
+      objectReference: {fileID: 11400000, guid: 58264da1041f8c84d85e124678ef0c9a, type: 2}
     - target: {fileID: 2086022073797734984, guid: d52477f69afa3d04ba8c39de28ca629d, type: 3}
       propertyPath: conversations.Array.data[1]
       value: 
@@ -30974,9 +30951,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 668096973}
     m_Modifications:
     - target: {fileID: 8396762688156681504, guid: b2dd033b1b039cd468d20d6509b308d7, type: 3}
+      propertyPath: essential
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8396762688156681504, guid: b2dd033b1b039cd468d20d6509b308d7, type: 3}
       propertyPath: dialogueFont
       value: 
       objectReference: {fileID: 12800000, guid: 4f344465beb15594fb239a74136f93c9, type: 3}
+    - target: {fileID: 8396762688156681504, guid: b2dd033b1b039cd468d20d6509b308d7, type: 3}
+      propertyPath: conversations.Array.size
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8396762688156681504, guid: b2dd033b1b039cd468d20d6509b308d7, type: 3}
       propertyPath: moodMilestones.Array.size
       value: 4
@@ -30984,11 +30969,23 @@ PrefabInstance:
     - target: {fileID: 8396762688156681504, guid: b2dd033b1b039cd468d20d6509b308d7, type: 3}
       propertyPath: conversations.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: 7fd248fce7e016e4a846ef8d13700ada, type: 2}
+      objectReference: {fileID: 11400000, guid: 1595e3e5dac4ffb4eb8b900481a697be, type: 2}
     - target: {fileID: 8396762688156681504, guid: b2dd033b1b039cd468d20d6509b308d7, type: 3}
       propertyPath: conversations.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: 7fd248fce7e016e4a846ef8d13700ada, type: 2}
+      objectReference: {fileID: 11400000, guid: 5e14b83338f3dd44d890c05703cb250c, type: 2}
+    - target: {fileID: 8396762688156681504, guid: b2dd033b1b039cd468d20d6509b308d7, type: 3}
+      propertyPath: conversations.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: b27ec9924ec5afd4cbff8ef30f095510, type: 2}
+    - target: {fileID: 8396762688156681504, guid: b2dd033b1b039cd468d20d6509b308d7, type: 3}
+      propertyPath: conversations.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: 542a33fbcb9d3d94989feebba6052dda, type: 2}
+    - target: {fileID: 8396762688156681504, guid: b2dd033b1b039cd468d20d6509b308d7, type: 3}
+      propertyPath: conversations.Array.data[4]
+      value: 
+      objectReference: {fileID: 11400000, guid: 03ace1271998d14409c717830be5077f, type: 2}
     - target: {fileID: 8396762688156681504, guid: b2dd033b1b039cd468d20d6509b308d7, type: 3}
       propertyPath: moodMilestones.Array.data[1]
       value: 25
