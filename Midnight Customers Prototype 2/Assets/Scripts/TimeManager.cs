@@ -63,6 +63,10 @@ public class TimeManager : MonoBehaviour
         UpdateClock();
     }
 
+    void Start(){
+        if(day==1){review.NewMessage("Welcome to the team.\n\nToday, you will only checkout customers.\n\nDon't leave them waiting, we'll be watching.");}
+    }
+
     public void OnLoadGame(int dayProgress)
     {
         day = dayProgress;
