@@ -33,6 +33,7 @@ public class CheckoutManager : MonoBehaviour
     List<Rule> activeRules = new List<Rule>();
     CheckoutItem currentItem;
     CheckoutItem lastItem;
+    bool firstCheckout = true;
     [Header("Misc References")]
     [Tooltip("Reference to a SoundManager class instance.")]
     [SerializeField] SoundManager soundManager;
@@ -76,6 +77,10 @@ public class CheckoutManager : MonoBehaviour
         foreach(Rule rule in phase0Rules)
         {
             activeRules.Add(rule);
+        }
+        if (firstCheckout){
+            firstCheckout = false;
+            review.NewMessage("Scan items and put them in the plastic bag.\n\nClick on the red manual for more detailed instructions.");
         }
     }
 

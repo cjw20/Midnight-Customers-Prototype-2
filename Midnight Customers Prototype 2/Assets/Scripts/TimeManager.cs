@@ -63,8 +63,9 @@ public class TimeManager : MonoBehaviour
         UpdateClock();
     }
 
-    void Start(){
-        if(day==1){review.NewMessage("Welcome to the team.\n\nToday, you will only checkout customers.\n\nDon't leave them waiting, we'll be watching.");}
+    void Start()
+    {
+        if(day==1){review.NewMessage("Welcome to the team.\n\nToday, you will only checkout customers.\n\nDon't leave them waiting, we'll be watching.\n\n[Click on the bottom of the phone to close]");}
     }
 
     public void OnLoadGame(int dayProgress)
@@ -146,19 +147,19 @@ public class TimeManager : MonoBehaviour
         day++;
 
         GameControl.control.SaveGame("Day " + day.ToString()); //may not be best place to do this
-        toBlack.FadeOut(fadeDuration);
-        NewDay();
-        ResetClock();
         journalDisplay.OpenJournal();
         while (journalDisplay.inJournal)
         {
             yield return null; //waits until journal is closed
         }
+        toBlack.FadeOut(fadeDuration);
+        review.ReviewMessage();
+        NewDay();
+        ResetClock();
 
-        yield return new WaitForSeconds(fadeDuration + 2);
+        //Faster day transition yield return new WaitForSeconds(fadeDuration + 2);
         blackScreen.SetActive(false);
         customerManager.StartSpawns();
-        review.ReviewMessage();
         
         //check for story events for this night/next day and load them
         timerRunning = true;
@@ -167,7 +168,7 @@ public class TimeManager : MonoBehaviour
     }
 
     void NewDay()
-    {        
+    {    
         taskSpawner.NewDayTasks();
         storyEvent.DayEvents(day); //loads any events for coming day
 
@@ -175,5 +176,7 @@ public class TimeManager : MonoBehaviour
         {
             checkoutManager.LoadPhase1();
         }
+        //Overrides review message
+        if(day==2){review.NewMessage("Expectations are being raised.\n\nComplete tasks before the day ends\n\nPress 'E' when ! appears above your head");}
     }
 }
