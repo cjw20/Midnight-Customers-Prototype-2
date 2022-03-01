@@ -43,6 +43,12 @@ public class SoundManager : MonoBehaviour
     [Tooltip("Phone lock sound.")]
     [SerializeField] AudioSource lockPhoneSound;
 
+    [Header("Journal Sounds")]
+    [Tooltip("Page turning sounds.")]
+    [SerializeField] AudioSource[] pageTurnSound;
+    [Tooltip("Book closing sound.")]
+    [SerializeField] AudioSource bookClosingSound;
+
     [Header("UI Button Sounds")]
     [Tooltip("Button sounds.")]
     [SerializeField] AudioSource[] buttonSounds;
@@ -184,5 +190,16 @@ public class SoundManager : MonoBehaviour
     public void PlayButtonSound(int index)
     {
         buttonSounds[index].Play();
+    }
+
+    public void PlayPageTurnSound()
+    {
+        int rand = Random.Range(0, 2);
+        pageTurnSound[rand].Play();
+    }
+
+    public void PlayBookCloseSound()
+    {
+        bookClosingSound.Play();
     }
 }
