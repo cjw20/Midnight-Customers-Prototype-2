@@ -11,7 +11,7 @@ public class CheckoutManager : MonoBehaviour
     bool customerPayed;
     //bool passedIDCheck;
     bool finishedBag; //true when all items have been scanned
-    int lastWeight = 3;
+    //editor says its unused (it is only ever set to 3, never accessed) int lastWeight = 3;
     float totalPrice;
     bool dialogueFinished; //set true by dialogue player when finished
     [Header("Checkout Information")]
@@ -240,7 +240,7 @@ public class CheckoutManager : MonoBehaviour
             dialogueFinished = false;
             customerPayed = false;
             
-            lastWeight = 3; //resets for next bagging
+            //lastWeight = 3; //resets for next bagging
             totalPrice = 0;
             
             if (needsIDCheck)
@@ -270,7 +270,7 @@ public class CheckoutManager : MonoBehaviour
         dialogueFinished = false;
         customerPayed = false;
 
-        lastWeight = 3; //resets for next bagging
+        //lastWeight = 3; //resets for next bagging
         totalPrice = 0;
 
         if (needsIDCheck)
