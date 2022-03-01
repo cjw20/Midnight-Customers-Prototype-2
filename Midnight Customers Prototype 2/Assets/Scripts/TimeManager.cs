@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class TimeManager : MonoBehaviour
 {
     // Fields
+    float minutes_last = 0f;
     [Header("Time Controls")]
     [Tooltip("Current day.")]
     public int day;
@@ -31,6 +32,8 @@ public class TimeManager : MonoBehaviour
     public GameObject blackScreen; 
     [Tooltip("Reference to a Fade class instance.")]
     public Fade toBlack;
+    [Tooltip("Reference to JournalDisplay.")]
+    [SerializeField] JournalDisplay journalDisplay;
 
     [Header("Player References")]
     [Tooltip("Player start location.")]
@@ -44,11 +47,7 @@ public class TimeManager : MonoBehaviour
     StoryEventHandler storyEvent;
     RandomEventManager randomEvent;
     CheckoutManager checkoutManager;
-    float minutes_last = 0f;
-
-    [SerializeField] JournalDisplay journalDisplay;
-
-    // Start is called before the first frame update
+    
     void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player");
@@ -70,7 +69,6 @@ public class TimeManager : MonoBehaviour
         NewDay();
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
         if (timerRunning)
@@ -163,8 +161,6 @@ public class TimeManager : MonoBehaviour
 
         yield break;
     }
-
-
 
     void NewDay()
     {        

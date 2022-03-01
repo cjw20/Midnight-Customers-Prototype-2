@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class DrawerTrigger : MonoBehaviour
 {
+    // Fields
+
+    // References
     SpriteRenderer sr; 
     
     void Start(){

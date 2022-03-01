@@ -5,8 +5,12 @@ using UnityEngine;
 [System.Serializable]
 public class GlobalSave
 {
-    public List<string> saveFileNames;  //list of existing saves
+    // Fields
+    [Tooltip("List of existing saves.")]
+    public List<string> saveFileNames;
     //make sure it is okay to save as list instead of array
+
+    // References
 
     public void AddSave(string name)
     {
@@ -15,6 +19,4 @@ public class GlobalSave
             saveFileNames.Add(name);
         }
     }
-
-
 }

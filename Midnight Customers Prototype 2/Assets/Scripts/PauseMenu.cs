@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class PauseMenu : MonoBehaviour
 {
+    // Fields
+    [Tooltip("Whether the game is paused or not.")]
     public static bool GameIsPaused = false;
 
+    // References
+    [Tooltip("Reference to the pause menu UI object.")]
     public GameObject pauseMenuUI;
 
     void Update()

@@ -5,10 +5,16 @@ using UnityEngine;
 [System.Serializable]
 public class SaveData
 {
-    public int customerProgress; //how far into customer array player is
-    public int day; //beginning of what day the save was made
+    // Fields
+    [Tooltip("How far into custmer array the player is.")]
+    public int customerProgress;
+    [Tooltip("Beginning of what day the save was made.")]
+    public int day;
 
     //more variables will be needed eventually
+
+    // References
+
     public void GetData()
     {
         customerProgress = GameObject.FindObjectOfType<CustomerManager>().arrayPos;

@@ -15,6 +15,7 @@ public class Pause : MonoBehaviour
     [Header("Object References")]
     [Tooltip("Reference to the pause screen prefab.")]
     [SerializeField] GameObject pauseScreen;
+    [Tooltip("Reference to the PPManager.")]
     [SerializeField] PPManager ppManager;
     
     private void Awake()
@@ -62,7 +63,6 @@ public class Pause : MonoBehaviour
             ppManager.DisableDepthOfFieldEffect();
         }
     }
-
 
     public void LoadScene(string sceneName)
     {

@@ -8,8 +8,8 @@ using System.Linq;
 
 public class DialogueGraphView : GraphView
 {
-
     public readonly Vector2 defaultNodeSize = new Vector2(150, 200);
+
     public DialogueGraphView()
     {
         SetupZoom(ContentZoomer.DefaultMinScale, ContentZoomer.DefaultMaxScale);
@@ -78,7 +78,6 @@ public class DialogueGraphView : GraphView
             title = nodeName,
             dialogueText = nodeName,
             GUID = Guid.NewGuid().ToString()
-
         };
 
         var inputPort = GeneratePort(dialogueNode, Direction.Input, Port.Capacity.Multi);
@@ -136,7 +135,6 @@ public class DialogueGraphView : GraphView
         dialogueNode.outputContainer.Add(generatedPort);
         dialogueNode.RefreshPorts();
         dialogueNode.RefreshExpandedState();
-
     }
 
     private void RemovePort(DialogueNode dialogueNode, Port generatedPort)
@@ -149,8 +147,6 @@ public class DialogueGraphView : GraphView
             edge.input.Disconnect(edge);
             RemoveElement(targetEdge.First());
         }
-
-        
 
         dialogueNode.outputContainer.Remove(generatedPort);
         dialogueNode.RefreshPorts();

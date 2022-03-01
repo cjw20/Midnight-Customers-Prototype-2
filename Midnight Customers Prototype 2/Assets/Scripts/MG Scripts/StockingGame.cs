@@ -12,15 +12,13 @@ public class StockingGame : MonoBehaviour
     [Header("Game Object References")]
     [Tooltip("The currently held item.")]
     public GameObject heldItem;
-
+    [Tooltip("Array of sprites.")]
     public Sprite[] sprites;
-
+    [Tooltip("Array of SpriteRenderers of prestocked items.")]
+    public SpriteRenderer[] prestocked;
     Sprite selected;
-
     ItemBox childBox;
-    public 
-
-    SpriteRenderer[] prestocked;
+    
 
     void Start()
     {

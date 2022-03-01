@@ -7,14 +7,11 @@ using UnityEngine.Rendering.Universal;
 
 public class PPManager : MonoBehaviour
 {
+    // Fields
     public Volume volume;
     DepthOfField dof;
 
-    void Start()
-    {
-       
-        
-    } 
+    // References
 
     public void EnableDepthOfFieldEffect()
     {
