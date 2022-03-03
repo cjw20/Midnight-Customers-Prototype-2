@@ -7,16 +7,16 @@ using UnityEngine.UI;
 
 public class SaveUtility : MonoBehaviour
 {
-    [SerializeField] GameObject loadWindowPrefab;
-    [SerializeField] GameObject loadFileButtonPrefab;
+    // Fields
 
+    // References
+    [Header("References")]
+    [Tooltip("Reference to the loading window prefab.")]
+    [SerializeField] GameObject loadWindowPrefab;
+    [Tooltip("Reference to the load file button prefab.")]
+    [SerializeField] GameObject loadFileButtonPrefab;
     GlobalSave globalSave;
 
-
-    private void Start()
-    {
-       
-    }
     public void SaveGame(string saveName)
     {
         BinaryFormatter formatter = new BinaryFormatter();
@@ -30,7 +30,6 @@ public class SaveUtility : MonoBehaviour
         globalSave = GetGlobalSave();
         UpdateGlobalSave(saveName);
     }
-
 
     public SaveData LoadGame(string saveName)
     {
@@ -109,10 +108,7 @@ public class SaveUtility : MonoBehaviour
             button.GetComponentInChildren<Text>().text = saveName; //maybe change what gets displayed 
         }
         //get saves from file and display them all as buttons
-        
     }
-
-
 
     public void DeleteAllSaves()
     {

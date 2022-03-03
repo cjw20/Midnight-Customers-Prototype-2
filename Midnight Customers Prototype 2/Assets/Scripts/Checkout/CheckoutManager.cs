@@ -11,7 +11,7 @@ public class CheckoutManager : MonoBehaviour
     bool customerPayed;
     //bool passedIDCheck;
     bool finishedBag; //true when all items have been scanned
-    int lastWeight = 3;
+    //editor says its unused (it is only ever set to 3, never accessed) int lastWeight = 3;
     float totalPrice;
     bool dialogueFinished; //set true by dialogue player when finished
     [Header("Checkout Information")]
@@ -33,6 +33,7 @@ public class CheckoutManager : MonoBehaviour
     List<Rule> activeRules = new List<Rule>();
     CheckoutItem currentItem;
     CheckoutItem lastItem;
+    bool firstCheckout = true;
     [Header("Misc References")]
     [Tooltip("Reference to a SoundManager class instance.")]
     [SerializeField] SoundManager soundManager;
@@ -76,6 +77,10 @@ public class CheckoutManager : MonoBehaviour
         foreach(Rule rule in phase0Rules)
         {
             activeRules.Add(rule);
+        }
+        if (firstCheckout){
+            firstCheckout = false;
+            review.NewMessage("Scan items and put them in the plastic bag.\n\nClick on the red manual for more detailed instructions.");
         }
     }
 
@@ -240,7 +245,7 @@ public class CheckoutManager : MonoBehaviour
             dialogueFinished = false;
             customerPayed = false;
             
-            lastWeight = 3; //resets for next bagging
+            //lastWeight = 3; //resets for next bagging
             totalPrice = 0;
             
             if (needsIDCheck)
@@ -270,7 +275,7 @@ public class CheckoutManager : MonoBehaviour
         dialogueFinished = false;
         customerPayed = false;
 
-        lastWeight = 3; //resets for next bagging
+        //lastWeight = 3; //resets for next bagging
         totalPrice = 0;
 
         if (needsIDCheck)

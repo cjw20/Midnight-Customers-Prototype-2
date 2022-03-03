@@ -4,20 +4,23 @@ using UnityEngine;
 
 public class Wiggle : MonoBehaviour
 {
-    [SerializeField] RectTransform wiggleTarget;
+    // Fields
+    [Tooltip("Whether object is wiggling or not.")]
     public bool wiggling;
+    [Tooltip("How long to wiggle before switching wiggle vector.")]
     public float switchTime;
-
-    Vector3 wiggleVector;
-
     float timePassed;
-    // Start is called before the first frame update
+
+    // Refernces
+    Vector3 wiggleVector;
+    [Tooltip("Reference to the RectTransform to wiggle.")]
+    [SerializeField] RectTransform wiggleTarget;
+
     void Start()
     {
         wiggleVector = Vector3.forward;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (wiggling)

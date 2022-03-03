@@ -19,6 +19,7 @@ public class LightFlicker : MonoBehaviour
     public float onIntensity;
 
     // References
+    [Tooltip("Reference to a 2D light.")]
     Light2D thisLight; //light this script is referencing
 
     void Start()

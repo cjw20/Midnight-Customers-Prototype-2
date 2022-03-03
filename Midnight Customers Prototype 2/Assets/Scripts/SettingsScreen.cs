@@ -4,21 +4,24 @@ using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
 
-
 public class SettingsScreen : MonoBehaviour
 {
-    [SerializeField]
-    AudioMixer audioMixer;
-    Resolution[] resolutions;
+    // Fields
     
+    // References
     //Sloppy implementation, nested GetComponent might work better or Find
-    [SerializeField] 
-    TMPro.TMP_Dropdown resolutionDropdown;
-
+    [Header("References")]
+    [Tooltip("Reference to a TMP Dropdown for the resolution options.")]
+    [SerializeField] TMPro.TMP_Dropdown resolutionDropdown;
+    [Tooltip("Reference to the TMP font for the anti-dyslexia font.")]
     public TMPro.TMP_FontAsset anti_dyslexia_font;
+    [Tooltip("Reference to the default TMP font.")]
     public TMPro.TMP_FontAsset default_font;
-
+    [Tooltip("Reference to a TMP text object.")]
     public TMPro.TMP_Text text;
+    [Tooltip("Reference to an AudioMixer.")]
+    [SerializeField] AudioMixer audioMixer;
+    Resolution[] resolutions;
 
     void Start(){
         resolutions = Screen.resolutions;
@@ -64,6 +67,5 @@ public class SettingsScreen : MonoBehaviour
         //Will add toggle for all text present (harder to change fonts back though)
         if (is_on) text.font = anti_dyslexia_font;
         else text.font = default_font;
-
     }
 }

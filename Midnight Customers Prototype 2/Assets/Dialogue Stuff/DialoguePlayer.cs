@@ -6,38 +6,49 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-
 public class DialoguePlayer : MonoBehaviour
 {
-    [SerializeField] private DialogueContainer dialogue;
-    [SerializeField] private Text dialogueText;
-    [SerializeField] private Button choicePrefab;
-    [SerializeField] private RectTransform buttonContainer;
-    [SerializeField] RectTransform[] buttonPositions;
-
-    public CountdownSlider countdownSlider;
-
-    public float buttonOffset; //how much space between option buttons
+    // Fields
+    bool charDelay;
+    float charDelaySpeed = 0.03f; // Determines typing speed for dialogue
     int buttonNumber; //number of buttons currently instantiated
+    bool dyslexicToggle;
+    [Tooltip("How much space between option buttons.")]
+    public float buttonOffset;
+    [Tooltip("Countdown slider speed.")]
+    public int slideSpeed = 6;
 
+    // References
+    private PlayerInput playerInput; //asset that has player controls
+    [Header("UI References")]
+    [Tooltip("Reference to a DialogueContainer class instance.")]
+    [SerializeField] private DialogueContainer dialogue;
+    [Tooltip("Reference to a Text object for the dialogue text.")]
+    [SerializeField] private Text dialogueText;
+    [Tooltip("Reference to a Button object for choices.")]
+    [SerializeField] private Button choicePrefab;
+    [Tooltip("Reference to a RectTransform for the button container.")]
+    [SerializeField] private RectTransform buttonContainer;
+    [Tooltip("Reference to a list of RectTransforms for the button positions.")]
+    [SerializeField] RectTransform[] buttonPositions;
+    [Tooltip("Reference to the open dyslexic Font object.")]
+    [SerializeField] Font openDyslexic;
+    [Tooltip("Reference to the CountdownSlider.")]
+    public CountdownSlider countdownSlider;
+    [Tooltip("Reference to the CheckoutManager.")]
     public CheckoutManager checkoutManager;
     Coroutine lastCourutine;
     //Dependent on editor references being set to children
+    [Tooltip("Reference to the player dialogue panel object.")]
     public GameObject playerDialoguePanel;
+    [Tooltip("Reference to the countdown bar object.")]
     public GameObject countdownBar;
-    bool charDelay;
-    float charDelaySpeed = 0.03f; // Determines typing speed for dialogue
-    public int slideSpeed = 6; // Determines Countdown slider speed
-
-    private PlayerInput playerInput; //asset that has player controls
-    [SerializeField]
-    Font openDyslexic;
-    bool dyslexicToggle;
-
+    
     private void Awake()
     {
         playerInput = new PlayerInput();
     }
+
     private void OnEnable()
     {
         playerInput.Enable();
@@ -59,7 +70,6 @@ public class DialoguePlayer : MonoBehaviour
         ProceedToNarrative(narrativeData.TargetNodeGuid);
         if(!dyslexicToggle) dialogueText.font = dialogueFont;
         else dialogueText.font = openDyslexic;
-
     }
 
     public void SetConversation(DialogueContainer convo)
@@ -67,6 +77,7 @@ public class DialoguePlayer : MonoBehaviour
         //call this from checkout trigger to set up right conversation
         dialogue = convo;
     }
+
     private void ProceedToNarrative(string narrativeDataGUID)
     {
         if(lastCourutine != null)
@@ -96,8 +107,6 @@ public class DialoguePlayer : MonoBehaviour
             text = text.Replace($"[{exposedProperty.PropertyName}]", exposedProperty.PropertyValue);
         }
         return text;
-
-        
     }
 
     IEnumerator WaitForNewChoices(string narrativeDataGUID)
@@ -107,13 +116,10 @@ public class DialoguePlayer : MonoBehaviour
         yield break;
     }
 
-
     void DisplayNewOptions(string narrativeDataGUID)
     {
-
         var text = dialogue.DialogueNodeData.Find(x => x.Guid == narrativeDataGUID).DialogueText;
         var choices = dialogue.NodeLinks.Where(x => x.BaseNodeGuid == narrativeDataGUID);
-        
         
         var buttons = buttonContainer.GetComponentsInChildren<Button>();
         for (int i = 0; i < buttons.Length; i++)
@@ -124,7 +130,6 @@ public class DialoguePlayer : MonoBehaviour
 
         foreach (var choice in choices)
         {
-            
             if(ProcessProperties(choice.PortName) != "...")
             {
                 var button = Instantiate(choicePrefab, buttonContainer);
@@ -140,7 +145,6 @@ public class DialoguePlayer : MonoBehaviour
             if (ProcessProperties(choice.PortName) == "...")
             {                
                 lastCourutine = StartCoroutine(WaitForSelection(choice.TargetNodeGuid));
-                
             }
         }
 
@@ -160,7 +164,6 @@ public class DialoguePlayer : MonoBehaviour
         countdownSlider.Reset();
         yield break;
     }
-
 
     IEnumerator TypeSentence(string sentence, string narrativeDataGUID) 
     {
@@ -193,8 +196,8 @@ public class DialoguePlayer : MonoBehaviour
             StartCoroutine(WaitForNewChoices(narrativeDataGUID));
             yield break;
         }
-        
     }
+
     void Update(){
         if (playerInput.Checkout.Skip.triggered){
             charDelay = false;

@@ -5,6 +5,7 @@ using UnityEngine;
 public class MopGame : MonoBehaviour
 {
     // Fields
+    //[Tooltip("Number of objects.")]
     //public int numObjects = Random.Range(2,6)
     //instantiate number of Objects at start
     //include two different prefab references

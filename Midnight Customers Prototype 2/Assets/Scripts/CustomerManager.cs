@@ -6,6 +6,7 @@ public class CustomerManager : MonoBehaviour
 {
     // Fields
     bool spawning;
+    [Tooltip("Position in the array.")]
     public int arrayPos;
 
     // References
@@ -15,6 +16,8 @@ public class CustomerManager : MonoBehaviour
     public static CustomerManager customerManager;
     [Tooltip("List of customers.")]
     public GameObject[] customers;
+    [Tooltip("Each customer in array for save and load purposes.")]
+    public GameObject[] customerList;
     [Tooltip("Point of exit for the customers.")]
     [SerializeField] Transform exit;
     [Tooltip("List of the customers currently in the store.")]

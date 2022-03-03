@@ -28,6 +28,13 @@ public class ItemBox : MonoBehaviour
         }
     }
 
+    public void UpdateItems(Sprite item){
+        foreach(GameObject i in itemsInBox){
+            i.TryGetComponent<SpriteRenderer>(out SpriteRenderer spriteRenderer);
+            spriteRenderer.sprite = item;
+        }
+    }
+
 
     private void OnMouseDown()
     {
@@ -69,6 +76,8 @@ public class ItemBox : MonoBehaviour
         int i = 0;
         foreach(GameObject item in itemsInBox)
         {
+            //item.TryGetComponent(SpriteRenderer)
+            //set sprite to random image (static file references?) <- random image needs to be set in start
             GameObject newItem = Instantiate(item, boxSpawns[i]);
             spawnedItems.Add(newItem);
             i++;

@@ -9,9 +9,9 @@ using UnityEngine.UIElements;
 
 public class GraphSaveUtility
 {
+    // Fields
     private DialogueGraphView _targetGraphView;
     private DialogueContainer _containerCache;
-
     private List<Edge> Edges => _targetGraphView.edges.ToList();
     private List<DialogueNode> Nodes => _targetGraphView.nodes.ToList().Cast<DialogueNode>().ToList();
 
@@ -71,7 +71,6 @@ public class GraphSaveUtility
         ClearGraph();
         CreateNodes();
         ConnectNodes();
-
     }
 
     private void ConnectNodes()
@@ -86,10 +85,7 @@ public class GraphSaveUtility
                 LinkNodes(Nodes[i].outputContainer[j].Q<Port>(), (Port)targetNode.inputContainer[0]);
 
                 targetNode.SetPosition(new Rect(_containerCache.DialogueNodeData.First(x => x.Guid == targetNodeGuid).Position,
-                    _targetGraphView.defaultNodeSize
-
-                    
-                ));
+                    _targetGraphView.defaultNodeSize));
             }
         }
     }

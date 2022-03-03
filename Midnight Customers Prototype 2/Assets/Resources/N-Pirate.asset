@@ -1,0 +1,143 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
+  m_Name: N-Pirate
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: d6a13235-11c5-4e83-80f5-25338805b3b2
+    PortName: Next
+    TargetNodeGuid: d53ad75e-3aba-49aa-a9f5-52598b2a0e39
+  - BaseNodeGuid: d53ad75e-3aba-49aa-a9f5-52598b2a0e39
+    PortName: Find everything okay?
+    TargetNodeGuid: aaa09ae5-7129-4e90-93a5-7d7c03dba585
+  - BaseNodeGuid: d53ad75e-3aba-49aa-a9f5-52598b2a0e39
+    PortName: What?
+    TargetNodeGuid: 5fefd371-95b9-47e6-b74e-4142e340d511
+  - BaseNodeGuid: d53ad75e-3aba-49aa-a9f5-52598b2a0e39
+    PortName: ...
+    TargetNodeGuid: 5fefd371-95b9-47e6-b74e-4142e340d511
+  - BaseNodeGuid: 5fefd371-95b9-47e6-b74e-4142e340d511
+    PortName: Monsters?
+    TargetNodeGuid: abaff3dc-59fc-477c-9368-ee89799ad36a
+  - BaseNodeGuid: aaa09ae5-7129-4e90-93a5-7d7c03dba585
+    PortName: Monsters?
+    TargetNodeGuid: abaff3dc-59fc-477c-9368-ee89799ad36a
+  - BaseNodeGuid: aaa09ae5-7129-4e90-93a5-7d7c03dba585
+    PortName: Was there a problem?
+    TargetNodeGuid: 32549e14-02a4-4863-a3f1-90bdace3a7b7
+  - BaseNodeGuid: 5fefd371-95b9-47e6-b74e-4142e340d511
+    PortName: Was there a problem?
+    TargetNodeGuid: 32549e14-02a4-4863-a3f1-90bdace3a7b7
+  - BaseNodeGuid: 5fefd371-95b9-47e6-b74e-4142e340d511
+    PortName: ...
+    TargetNodeGuid: abaff3dc-59fc-477c-9368-ee89799ad36a
+  - BaseNodeGuid: aaa09ae5-7129-4e90-93a5-7d7c03dba585
+    PortName: ...
+    TargetNodeGuid: abaff3dc-59fc-477c-9368-ee89799ad36a
+  - BaseNodeGuid: 32549e14-02a4-4863-a3f1-90bdace3a7b7
+    PortName: Would you like a complaint form?
+    TargetNodeGuid: cde36035-d4a7-4d9a-ba86-7dc83010c94f
+  - BaseNodeGuid: 32549e14-02a4-4863-a3f1-90bdace3a7b7
+    PortName: And who's under the waters?
+    TargetNodeGuid: f6f78caf-8b7f-4778-b65d-e2d7aded6bff
+  - BaseNodeGuid: abaff3dc-59fc-477c-9368-ee89799ad36a
+    PortName: And who's under the waters?
+    TargetNodeGuid: f6f78caf-8b7f-4778-b65d-e2d7aded6bff
+  - BaseNodeGuid: abaff3dc-59fc-477c-9368-ee89799ad36a
+    PortName: Would you like a complaint form?
+    TargetNodeGuid: cde36035-d4a7-4d9a-ba86-7dc83010c94f
+  - BaseNodeGuid: cde36035-d4a7-4d9a-ba86-7dc83010c94f
+    PortName: ...
+    TargetNodeGuid: f6f78caf-8b7f-4778-b65d-e2d7aded6bff
+  - BaseNodeGuid: cde36035-d4a7-4d9a-ba86-7dc83010c94f
+    PortName: So, why the worry?
+    TargetNodeGuid: f6f78caf-8b7f-4778-b65d-e2d7aded6bff
+  - BaseNodeGuid: cde36035-d4a7-4d9a-ba86-7dc83010c94f
+    PortName: Can I help you then?
+    TargetNodeGuid: f6f78caf-8b7f-4778-b65d-e2d7aded6bff
+  - BaseNodeGuid: f6f78caf-8b7f-4778-b65d-e2d7aded6bff
+    PortName: If there's nothing else...
+    TargetNodeGuid: 6ab791b7-148e-4e5c-9d3b-1bd80852829a
+  - BaseNodeGuid: f6f78caf-8b7f-4778-b65d-e2d7aded6bff
+    PortName: I don't get paid much, true.
+    TargetNodeGuid: 6ab791b7-148e-4e5c-9d3b-1bd80852829a
+  - BaseNodeGuid: f6f78caf-8b7f-4778-b65d-e2d7aded6bff
+    PortName: ...
+    TargetNodeGuid: 6ab791b7-148e-4e5c-9d3b-1bd80852829a
+  - BaseNodeGuid: 6ab791b7-148e-4e5c-9d3b-1bd80852829a
+    PortName: Sure. Cash or credit?
+    TargetNodeGuid: 4a796835-02ba-4621-a64e-50003814bdbf
+  - BaseNodeGuid: 6ab791b7-148e-4e5c-9d3b-1bd80852829a
+    PortName: Are you paying in doubloons?
+    TargetNodeGuid: fe78c91c-a18b-4ebd-aec2-d810c48d382a
+  - BaseNodeGuid: 4a796835-02ba-4621-a64e-50003814bdbf
+    PortName: Thanks. Have a good one!
+    TargetNodeGuid: 343e7245-c20f-4f32-9429-13d9346ca3ea
+  - BaseNodeGuid: 4a796835-02ba-4621-a64e-50003814bdbf
+    PortName: Oh, okay...bye then.
+    TargetNodeGuid: 343e7245-c20f-4f32-9429-13d9346ca3ea
+  - BaseNodeGuid: 4a796835-02ba-4621-a64e-50003814bdbf
+    PortName: ...
+    TargetNodeGuid: 343e7245-c20f-4f32-9429-13d9346ca3ea
+  - BaseNodeGuid: fe78c91c-a18b-4ebd-aec2-d810c48d382a
+    PortName: Thanks. Have a good one!
+    TargetNodeGuid: 343e7245-c20f-4f32-9429-13d9346ca3ea
+  - BaseNodeGuid: fe78c91c-a18b-4ebd-aec2-d810c48d382a
+    PortName: Oh, okay...bye then.
+    TargetNodeGuid: 343e7245-c20f-4f32-9429-13d9346ca3ea
+  - BaseNodeGuid: fe78c91c-a18b-4ebd-aec2-d810c48d382a
+    PortName: ...
+    TargetNodeGuid: 343e7245-c20f-4f32-9429-13d9346ca3ea
+  - BaseNodeGuid: 6ab791b7-148e-4e5c-9d3b-1bd80852829a
+    PortName: ...
+    TargetNodeGuid: 4a796835-02ba-4621-a64e-50003814bdbf
+  DialogueNodeData:
+  - Guid: d53ad75e-3aba-49aa-a9f5-52598b2a0e39
+    DialogueText: Ahoy!
+    Position: {x: 204, y: 201}
+  - Guid: aaa09ae5-7129-4e90-93a5-7d7c03dba585
+    DialogueText: Aye, but there be monsters about.
+    Position: {x: 487, y: 133}
+  - Guid: 5fefd371-95b9-47e6-b74e-4142e340d511
+    DialogueText: Ye should batten down the hatches of this vessel! There be monsters
+      about.
+    Position: {x: 486, y: 293}
+  - Guid: abaff3dc-59fc-477c-9368-ee89799ad36a
+    DialogueText: These be troubled waters, and you best steer clear of what lies
+      beneath them.
+    Position: {x: 1091, y: 305}
+  - Guid: 32549e14-02a4-4863-a3f1-90bdace3a7b7
+    DialogueText: Aye. These be troubled waters, and you best steer clear of what
+      lies beneath them.
+    Position: {x: 1090, y: 155}
+  - Guid: cde36035-d4a7-4d9a-ba86-7dc83010c94f
+    DialogueText: Dead men tell no tales.
+    Position: {x: 1747, y: 156}
+  - Guid: f6f78caf-8b7f-4778-b65d-e2d7aded6bff
+    DialogueText: Ye be sailing these waters with no sign of loot. No prey, no pay.
+      No share of loot from the captain.
+    Position: {x: 2091, y: 278}
+  - Guid: 6ab791b7-148e-4e5c-9d3b-1bd80852829a
+    DialogueText: Heed me warning. There be plentiful treasure, none ye shall see.
+      Savvy?
+    Position: {x: 2816, y: 285}
+  - Guid: fe78c91c-a18b-4ebd-aec2-d810c48d382a
+    DialogueText: Are ye squiffy? Here be some cash.
+    Position: {x: 3376, y: 395}
+  - Guid: 4a796835-02ba-4621-a64e-50003814bdbf
+    DialogueText: Here be some cash for ye.
+    Position: {x: 3379, y: 238}
+  - Guid: 343e7245-c20f-4f32-9429-13d9346ca3ea
+    DialogueText: +0
+    Position: {x: 3765, y: 330}
+  ExposedProperties: []
+  CommentBlockData: []

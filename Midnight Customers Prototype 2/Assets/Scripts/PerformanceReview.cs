@@ -35,6 +35,19 @@ public class PerformanceReview : MonoBehaviour
     public GameObject phoneNotification;
     [Tooltip("Reference to the Sound Manager.")]
     [SerializeField] SoundManager soundManager;
+
+    // Triggers Phone to pop up with provided string
+    public void NewMessage(string input = "") {
+        soundManager.PlayTextMessageSound();
+        phoneNotification.SetActive(true);
+        if(phoneMessage == null)
+        {
+            phoneMessage = phoneNotification.GetComponent<PhoneMessage>();
+        }
+
+        phoneMessage.message = input;
+    }
+
     
     void Start()
     {

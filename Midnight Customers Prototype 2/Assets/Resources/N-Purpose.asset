@@ -1,0 +1,157 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
+  m_Name: N-Purpose
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: ba13ab7f-e6f6-4e27-8667-a5d1c91cdc29
+    PortName: Next
+    TargetNodeGuid: 553a66e3-d457-41f7-92d1-db6d0a057d23
+  - BaseNodeGuid: 553a66e3-d457-41f7-92d1-db6d0a057d23
+    PortName: Sure! How can I help?
+    TargetNodeGuid: 728e9aa0-da81-4031-8e25-eddf68fcaa63
+  - BaseNodeGuid: 553a66e3-d457-41f7-92d1-db6d0a057d23
+    PortName: What's the matter?
+    TargetNodeGuid: 728e9aa0-da81-4031-8e25-eddf68fcaa63
+  - BaseNodeGuid: 553a66e3-d457-41f7-92d1-db6d0a057d23
+    PortName: ...
+    TargetNodeGuid: 728e9aa0-da81-4031-8e25-eddf68fcaa63
+  - BaseNodeGuid: 728e9aa0-da81-4031-8e25-eddf68fcaa63
+    PortName: We can be friends.
+    TargetNodeGuid: bafb69ed-f3c1-46aa-8f2d-1aec3649457f
+  - BaseNodeGuid: 728e9aa0-da81-4031-8e25-eddf68fcaa63
+    PortName: I'm not a therapist.
+    TargetNodeGuid: bafb69ed-f3c1-46aa-8f2d-1aec3649457f
+  - BaseNodeGuid: 728e9aa0-da81-4031-8e25-eddf68fcaa63
+    PortName: ...
+    TargetNodeGuid: dd804631-fdcb-4240-bee2-a679251bc6c9
+  - BaseNodeGuid: dd804631-fdcb-4240-bee2-a679251bc6c9
+    PortName: Find an activist group.
+    TargetNodeGuid: e3d5223f-f3fe-4edb-8ec6-95a90189c116
+  - BaseNodeGuid: bafb69ed-f3c1-46aa-8f2d-1aec3649457f
+    PortName: Find an activist group.
+    TargetNodeGuid: e3d5223f-f3fe-4edb-8ec6-95a90189c116
+  - BaseNodeGuid: e3d5223f-f3fe-4edb-8ec6-95a90189c116
+    PortName: Happy to help!
+    TargetNodeGuid: 841bc2db-4ef8-435d-9283-aaf76bbc3a11
+  - BaseNodeGuid: e3d5223f-f3fe-4edb-8ec6-95a90189c116
+    PortName: ...
+    TargetNodeGuid: 841bc2db-4ef8-435d-9283-aaf76bbc3a11
+  - BaseNodeGuid: e3d5223f-f3fe-4edb-8ec6-95a90189c116
+    PortName: Good for you. Is that all?
+    TargetNodeGuid: 19c7ac29-eb36-48a0-8764-3397b348c1ae
+  - BaseNodeGuid: c55df684-100f-4e53-a7e1-4fddd68345f1
+    PortName: Avoid them.
+    TargetNodeGuid: 632162ff-214c-41a3-8eca-263b29eec017
+  - BaseNodeGuid: c55df684-100f-4e53-a7e1-4fddd68345f1
+    PortName: A dumb idea, but whatever.
+    TargetNodeGuid: 632162ff-214c-41a3-8eca-263b29eec017
+  - BaseNodeGuid: c55df684-100f-4e53-a7e1-4fddd68345f1
+    PortName: ...
+    TargetNodeGuid: b7c4cb1f-b6bd-4494-8a62-6c505aaba78f
+  - BaseNodeGuid: 632162ff-214c-41a3-8eca-263b29eec017
+    PortName: ...
+    TargetNodeGuid: adb16cf5-429e-482c-b95e-e9aa5d1bb972
+  - BaseNodeGuid: 632162ff-214c-41a3-8eca-263b29eec017
+    PortName: It's your choice.
+    TargetNodeGuid: adb16cf5-429e-482c-b95e-e9aa5d1bb972
+  - BaseNodeGuid: 632162ff-214c-41a3-8eca-263b29eec017
+    PortName: You'll regret it.
+    TargetNodeGuid: adb16cf5-429e-482c-b95e-e9aa5d1bb972
+  - BaseNodeGuid: b7c4cb1f-b6bd-4494-8a62-6c505aaba78f
+    PortName: ...
+    TargetNodeGuid: adb16cf5-429e-482c-b95e-e9aa5d1bb972
+  - BaseNodeGuid: b7c4cb1f-b6bd-4494-8a62-6c505aaba78f
+    PortName: It's your choice.
+    TargetNodeGuid: adb16cf5-429e-482c-b95e-e9aa5d1bb972
+  - BaseNodeGuid: b7c4cb1f-b6bd-4494-8a62-6c505aaba78f
+    PortName: You'll regret it.
+    TargetNodeGuid: adb16cf5-429e-482c-b95e-e9aa5d1bb972
+  - BaseNodeGuid: 19c7ac29-eb36-48a0-8764-3397b348c1ae
+    PortName: ...
+    TargetNodeGuid: adb16cf5-429e-482c-b95e-e9aa5d1bb972
+  - BaseNodeGuid: 19c7ac29-eb36-48a0-8764-3397b348c1ae
+    PortName: See you later.
+    TargetNodeGuid: adb16cf5-429e-482c-b95e-e9aa5d1bb972
+  - BaseNodeGuid: 19c7ac29-eb36-48a0-8764-3397b348c1ae
+    PortName: Have a good one!
+    TargetNodeGuid: adb16cf5-429e-482c-b95e-e9aa5d1bb972
+  - BaseNodeGuid: 841bc2db-4ef8-435d-9283-aaf76bbc3a11
+    PortName: ...
+    TargetNodeGuid: adb16cf5-429e-482c-b95e-e9aa5d1bb972
+  - BaseNodeGuid: 841bc2db-4ef8-435d-9283-aaf76bbc3a11
+    PortName: See you later.
+    TargetNodeGuid: adb16cf5-429e-482c-b95e-e9aa5d1bb972
+  - BaseNodeGuid: 841bc2db-4ef8-435d-9283-aaf76bbc3a11
+    PortName: Have a good one!
+    TargetNodeGuid: adb16cf5-429e-482c-b95e-e9aa5d1bb972
+  - BaseNodeGuid: bafb69ed-f3c1-46aa-8f2d-1aec3649457f
+    PortName: I can't help you there.
+    TargetNodeGuid: c55df684-100f-4e53-a7e1-4fddd68345f1
+  - BaseNodeGuid: bafb69ed-f3c1-46aa-8f2d-1aec3649457f
+    PortName: ...
+    TargetNodeGuid: c55df684-100f-4e53-a7e1-4fddd68345f1
+  - BaseNodeGuid: dd804631-fdcb-4240-bee2-a679251bc6c9
+    PortName: ...
+    TargetNodeGuid: c55df684-100f-4e53-a7e1-4fddd68345f1
+  - BaseNodeGuid: dd804631-fdcb-4240-bee2-a679251bc6c9
+    PortName: I can't help you there.
+    TargetNodeGuid: c55df684-100f-4e53-a7e1-4fddd68345f1
+  DialogueNodeData:
+  - Guid: 553a66e3-d457-41f7-92d1-db6d0a057d23
+    DialogueText: Hey there, could I trouble you for a moment? There's something
+      you might be able to help me with.
+    Position: {x: 193, y: 202}
+  - Guid: 728e9aa0-da81-4031-8e25-eddf68fcaa63
+    DialogueText: I feel so lonely, and honestly just lost. I've seen you are with
+      other customers, and thought maybe you could help.
+    Position: {x: 916, y: 227}
+  - Guid: dd804631-fdcb-4240-bee2-a679251bc6c9
+    DialogueText: I want to be part of something more. I just don't know where to
+      start. I want to meet like-minded people who care about Arkham.
+    Position: {x: 1699, y: 311}
+  - Guid: bafb69ed-f3c1-46aa-8f2d-1aec3649457f
+    DialogueText: You've got it all wrong. I want to be part of something more. I
+      just don't know where to start. I want to meet like-minded people who care
+      about Arkham.
+    Position: {x: 1699, y: 158}
+  - Guid: e3d5223f-f3fe-4edb-8ec6-95a90189c116
+    DialogueText: Activists? I never thought of activism as particuarlly social,
+      but I guess you're right. It would at least help me bring change, right? I
+      could actually make a difference.
+    Position: {x: 2767, y: 161}
+  - Guid: 632162ff-214c-41a3-8eca-263b29eec017
+    DialogueText: Why's that? They still care about each other, right? Sure they're
+      aggressive, but they get things done. Thanks for your input, but I've made
+      up my mind.
+    Position: {x: 3840, y: 326}
+  - Guid: b7c4cb1f-b6bd-4494-8a62-6c505aaba78f
+    DialogueText: They seem to really care about eachother, like a brotherhood or
+      something. Sure they're aggressive, but they get things done. Thanks for your
+      input, but I've made up my mind.
+    Position: {x: 3841, y: 485}
+  - Guid: 19c7ac29-eb36-48a0-8764-3397b348c1ae
+    DialogueText: Yep and you helped a ton! You take it easy and thanks again!
+    Position: {x: 3840, y: 176}
+  - Guid: 841bc2db-4ef8-435d-9283-aaf76bbc3a11
+    DialogueText: You helped a ton! You take it easy and thanks again!
+    Position: {x: 3837, y: 31}
+  - Guid: adb16cf5-429e-482c-b95e-e9aa5d1bb972
+    DialogueText: +0
+    Position: {x: 4903, y: 167}
+  - Guid: c55df684-100f-4e53-a7e1-4fddd68345f1
+    DialogueText: Maybe I should just reach back out to that person I saw earlier.
+      They talked about this group. Some religious stuff I never heard of, but I
+      guess it's a big thing here.
+    Position: {x: 2768, y: 347}
+  ExposedProperties: []
+  CommentBlockData: []

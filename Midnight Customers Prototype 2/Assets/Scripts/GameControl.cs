@@ -9,16 +9,21 @@ using System.IO;
 public class GameControl : MonoBehaviour
 {
     // Fields
+    [Tooltip("Day progression.")]
+    public int dayProg;
+    [Tooltip("Customer progression.")]
+    public int customerProg;
+    [Tooltip("Whether the game has been loaded from a previous save or not. (True when NOT a new game.)")]
+    public bool loadingGame;
 
     // References
     [Header("References")]
     [Tooltip("Reference to a GameControl class instance.")]
     public static GameControl control;
+    [Tooltip("Reference to a SaveUtility class instance.")]
     [SerializeField] SaveUtility saveUtility;
+    [Tooltip("Reference to SaveData to be loaded.")]
     public SaveData dataToLoad;
-    public int dayProg;
-    public int customerProg;
-    public bool loadingGame; //true when not new game
     
     void Awake()
     {
