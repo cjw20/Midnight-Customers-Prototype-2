@@ -1,0 +1,165 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
+  m_Name: N-Gas Station Sim
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: b678c041-6dbe-4af7-8c78-74f0315b7a69
+    PortName: Next
+    TargetNodeGuid: 6d139e9a-dcc1-45f7-9d19-e9ed9c266c02
+  - BaseNodeGuid: 6d139e9a-dcc1-45f7-9d19-e9ed9c266c02
+    PortName: I'm sorry, I'll pick up the pace.
+    TargetNodeGuid: 1281d269-c11f-48a1-8183-91f0875a904d
+  - BaseNodeGuid: 6d139e9a-dcc1-45f7-9d19-e9ed9c266c02
+    PortName: Got somewhere important to be?
+    TargetNodeGuid: 650dc299-cb60-4f79-8a06-72233177f086
+  - BaseNodeGuid: 6d139e9a-dcc1-45f7-9d19-e9ed9c266c02
+    PortName: ...
+    TargetNodeGuid: 3d40753c-64da-4357-8c83-93f5344c57da
+  - BaseNodeGuid: 1281d269-c11f-48a1-8183-91f0875a904d
+    PortName: What's happening tongight?
+    TargetNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+  - BaseNodeGuid: 1281d269-c11f-48a1-8183-91f0875a904d
+    PortName: If you keep rushing me, I'm gonna go even slower.
+    TargetNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+  - BaseNodeGuid: 1281d269-c11f-48a1-8183-91f0875a904d
+    PortName: ...
+    TargetNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+  - BaseNodeGuid: 650dc299-cb60-4f79-8a06-72233177f086
+    PortName: What's happening tongight?
+    TargetNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+  - BaseNodeGuid: 650dc299-cb60-4f79-8a06-72233177f086
+    PortName: If you keep rushing me, I'm gonna go even slower.
+    TargetNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+  - BaseNodeGuid: 650dc299-cb60-4f79-8a06-72233177f086
+    PortName: ...
+    TargetNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+  - BaseNodeGuid: 3d40753c-64da-4357-8c83-93f5344c57da
+    PortName: What's happening tongight?
+    TargetNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+  - BaseNodeGuid: 3d40753c-64da-4357-8c83-93f5344c57da
+    PortName: If you keep rushing me, I'm gonna go even slower.
+    TargetNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+  - BaseNodeGuid: 3d40753c-64da-4357-8c83-93f5344c57da
+    PortName: ...
+    TargetNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+  - BaseNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+    PortName: What's Gas Station Simulator?
+    TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+  - BaseNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+    PortName: Is that what all these energy drinks are for?
+    TargetNodeGuid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
+  - BaseNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+    PortName: ...
+    TargetNodeGuid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
+  - BaseNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+    PortName: What's Gas Station Simulator?
+    TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+  - BaseNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+    PortName: Is that what all these energy drinks are for?
+    TargetNodeGuid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
+  - BaseNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+    PortName: ...
+    TargetNodeGuid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
+  - BaseNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+    PortName: That sounds fun.
+    TargetNodeGuid: af93f235-b8f3-472c-bb2e-e406e04328c8
+  - BaseNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+    PortName: That sounds... familiar.
+    TargetNodeGuid: 51d1be4c-03cd-4c57-9b0e-b028c1d6887d
+  - BaseNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+    PortName: ...
+    TargetNodeGuid: ed6c6f38-4f65-4e43-8166-16f525b9d881
+  - BaseNodeGuid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
+    PortName: That sounds fun.
+    TargetNodeGuid: af93f235-b8f3-472c-bb2e-e406e04328c8
+  - BaseNodeGuid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
+    PortName: That sounds... familiar.
+    TargetNodeGuid: 51d1be4c-03cd-4c57-9b0e-b028c1d6887d
+  - BaseNodeGuid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
+    PortName: ...
+    TargetNodeGuid: ed6c6f38-4f65-4e43-8166-16f525b9d881
+  - BaseNodeGuid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
+    PortName: That sounds fun.
+    TargetNodeGuid: af93f235-b8f3-472c-bb2e-e406e04328c8
+  - BaseNodeGuid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
+    PortName: That sounds... familiar.
+    TargetNodeGuid: 51d1be4c-03cd-4c57-9b0e-b028c1d6887d
+  - BaseNodeGuid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
+    PortName: ...
+    TargetNodeGuid: ed6c6f38-4f65-4e43-8166-16f525b9d881
+  - BaseNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+    PortName: What's Gas Station Simulator?
+    TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+  - BaseNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+    PortName: Is that what all these energy drinks are for?
+    TargetNodeGuid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
+  - BaseNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+    PortName: ...
+    TargetNodeGuid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
+  DialogueNodeData:
+  - Guid: 6d139e9a-dcc1-45f7-9d19-e9ed9c266c02
+    DialogueText: Not to rush you or anything, but can you hurry it up?
+    Position: {x: 187.2, y: 200}
+  - Guid: af93f235-b8f3-472c-bb2e-e406e04328c8
+    DialogueText: Doesn't it? I gotta go before all the copies sell out. See ya round,
+      dude.
+    Position: {x: 3844, y: 73.600006}
+  - Guid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+    DialogueText: Gas Station Simulator is coming out tonight! Haven't you heard
+      of it?
+    Position: {x: 1428, y: 60.000004}
+  - Guid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+    DialogueText: Come on, dude, don't be a dick. If I'm late to the release of Gas
+      Station Simulator, it'll be your fault.
+    Position: {x: 1427.2, y: 225.59999}
+  - Guid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+    DialogueText: I've been waiting so long for Gas Station Simulator to come out,
+      and now I'll finally own a copy!
+    Position: {x: 1429.6, y: 388}
+  - Guid: 1281d269-c11f-48a1-8183-91f0875a904d
+    DialogueText: Thanks, dude, I really appreciate it. I do NOT wanna be late tonight,
+      so like, hurry.
+    Position: {x: 644, y: 49.600002}
+  - Guid: 650dc299-cb60-4f79-8a06-72233177f086
+    DialogueText: Yeah, I do. Tonight's the big night afterall. So like... hurry.
+    Position: {x: 644, y: 206.4}
+  - Guid: 3d40753c-64da-4357-8c83-93f5344c57da
+    DialogueText: I really can't be late tonight, so like, really dude, you gotta
+      go faster than that.
+    Position: {x: 616.8, y: 371.2}
+  - Guid: c6d5da48-58f5-455b-95d2-29176a75c75d
+    DialogueText: Only the best game of all time! You play as a gas station clerk
+      who works the graveyard shift and these weirdos keep coming in. I hear the
+      writing is supposed to be amazing.
+    Position: {x: 2184.8, y: 61.600002}
+  - Guid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
+    DialogueText: Yeah, dude. I gotta stay up and play it when I get home. So you
+      play as a gas station clerk who works the graveyard shift and these weirdos
+      keep coming in. I hear the writing is supposed to be amazing.
+    Position: {x: 2228, y: 224}
+  - Guid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
+    DialogueText: Sorry, I'm gonna nerd out about this for a bit because I'm so excited.
+      But like, you play as a gas station clerk who is working the graveyard shift,
+      and apparently all these weirdos keep coming in. I hear the writing is crazy
+      good!
+    Position: {x: 2183.2, y: 396}
+  - Guid: 51d1be4c-03cd-4c57-9b0e-b028c1d6887d
+    DialogueText: You should give it a try sometime. See how it compares to actually
+      working at a gas station.
+    Position: {x: 3871.2, y: 240.8}
+  - Guid: ed6c6f38-4f65-4e43-8166-16f525b9d881
+    DialogueText: Do you game? You should try it out if you do. I feel like you might
+      like it.
+    Position: {x: 3878.4, y: 424}
+  ExposedProperties: []
+  CommentBlockData: []

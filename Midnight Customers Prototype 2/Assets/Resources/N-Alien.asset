@@ -1,0 +1,207 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
+  m_Name: N-Alien
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: b678c041-6dbe-4af7-8c78-74f0315b7a69
+    PortName: Next
+    TargetNodeGuid: 6d139e9a-dcc1-45f7-9d19-e9ed9c266c02
+  - BaseNodeGuid: 6d139e9a-dcc1-45f7-9d19-e9ed9c266c02
+    PortName: Do you need something?
+    TargetNodeGuid: 1281d269-c11f-48a1-8183-91f0875a904d
+  - BaseNodeGuid: 6d139e9a-dcc1-45f7-9d19-e9ed9c266c02
+    PortName: Are you talking to me?
+    TargetNodeGuid: 650dc299-cb60-4f79-8a06-72233177f086
+  - BaseNodeGuid: 6d139e9a-dcc1-45f7-9d19-e9ed9c266c02
+    PortName: ...
+    TargetNodeGuid: 3d40753c-64da-4357-8c83-93f5344c57da
+  - BaseNodeGuid: 1281d269-c11f-48a1-8183-91f0875a904d
+    PortName: I'm sorry, did you say aliens?
+    TargetNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+  - BaseNodeGuid: 1281d269-c11f-48a1-8183-91f0875a904d
+    PortName: Uh no... Aliens aren't real.
+    TargetNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+  - BaseNodeGuid: 1281d269-c11f-48a1-8183-91f0875a904d
+    PortName: ...
+    TargetNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+  - BaseNodeGuid: 650dc299-cb60-4f79-8a06-72233177f086
+    PortName: I'm sorry, did you say aliens?
+    TargetNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+  - BaseNodeGuid: 650dc299-cb60-4f79-8a06-72233177f086
+    PortName: Uh no... Aliens aren't real.
+    TargetNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+  - BaseNodeGuid: 650dc299-cb60-4f79-8a06-72233177f086
+    PortName: ...
+    TargetNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+  - BaseNodeGuid: 3d40753c-64da-4357-8c83-93f5344c57da
+    PortName: I'm sorry, did you say aliens?
+    TargetNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+  - BaseNodeGuid: 3d40753c-64da-4357-8c83-93f5344c57da
+    PortName: Uh no... Aliens aren't real.
+    TargetNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+  - BaseNodeGuid: 3d40753c-64da-4357-8c83-93f5344c57da
+    PortName: ...
+    TargetNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+  - BaseNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+    PortName: What's your proof?
+    TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+  - BaseNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+    PortName: And I have proof that they don't exist.
+    TargetNodeGuid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
+  - BaseNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+    PortName: ...
+    TargetNodeGuid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
+  - BaseNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+    PortName: What's your proof?
+    TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+  - BaseNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+    PortName: And I have proof that they don't exist.
+    TargetNodeGuid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
+  - BaseNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+    PortName: ...
+    TargetNodeGuid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
+  - BaseNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+    PortName: What was it doing in your trash?
+    TargetNodeGuid: af93f235-b8f3-472c-bb2e-e406e04328c8
+  - BaseNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+    PortName: You're describing a raccoon...
+    TargetNodeGuid: 51d1be4c-03cd-4c57-9b0e-b028c1d6887d
+  - BaseNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+    PortName: ...
+    TargetNodeGuid: ed6c6f38-4f65-4e43-8166-16f525b9d881
+  - BaseNodeGuid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
+    PortName: What was it doing in your trash?
+    TargetNodeGuid: af93f235-b8f3-472c-bb2e-e406e04328c8
+  - BaseNodeGuid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
+    PortName: You're describing a raccoon...
+    TargetNodeGuid: 51d1be4c-03cd-4c57-9b0e-b028c1d6887d
+  - BaseNodeGuid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
+    PortName: ...
+    TargetNodeGuid: ed6c6f38-4f65-4e43-8166-16f525b9d881
+  - BaseNodeGuid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
+    PortName: What was it doing in your trash?
+    TargetNodeGuid: af93f235-b8f3-472c-bb2e-e406e04328c8
+  - BaseNodeGuid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
+    PortName: You're describing a raccoon...
+    TargetNodeGuid: 51d1be4c-03cd-4c57-9b0e-b028c1d6887d
+  - BaseNodeGuid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
+    PortName: ...
+    TargetNodeGuid: ed6c6f38-4f65-4e43-8166-16f525b9d881
+  - BaseNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+    PortName: What's your proof?
+    TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+  - BaseNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+    PortName: And I have proof that they don't exist.
+    TargetNodeGuid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
+  - BaseNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+    PortName: ...
+    TargetNodeGuid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
+  - BaseNodeGuid: af93f235-b8f3-472c-bb2e-e406e04328c8
+    PortName: What do the aliens want?
+    TargetNodeGuid: 301c581f-4662-4457-9959-b5f6686b82b2
+  - BaseNodeGuid: af93f235-b8f3-472c-bb2e-e406e04328c8
+    PortName: You really believe all this, don't you?
+    TargetNodeGuid: 445d820a-059d-4bf9-8c8f-435d12a08ef0
+  - BaseNodeGuid: af93f235-b8f3-472c-bb2e-e406e04328c8
+    PortName: ...
+    TargetNodeGuid: 7ce00f99-aefb-473e-9e19-97f311d6521d
+  - BaseNodeGuid: 51d1be4c-03cd-4c57-9b0e-b028c1d6887d
+    PortName: What do the aliens want?
+    TargetNodeGuid: 301c581f-4662-4457-9959-b5f6686b82b2
+  - BaseNodeGuid: 51d1be4c-03cd-4c57-9b0e-b028c1d6887d
+    PortName: You really believe all this, don't you?
+    TargetNodeGuid: 445d820a-059d-4bf9-8c8f-435d12a08ef0
+  - BaseNodeGuid: 51d1be4c-03cd-4c57-9b0e-b028c1d6887d
+    PortName: ...
+    TargetNodeGuid: 7ce00f99-aefb-473e-9e19-97f311d6521d
+  - BaseNodeGuid: ed6c6f38-4f65-4e43-8166-16f525b9d881
+    PortName: What do the aliens want?
+    TargetNodeGuid: 301c581f-4662-4457-9959-b5f6686b82b2
+  - BaseNodeGuid: ed6c6f38-4f65-4e43-8166-16f525b9d881
+    PortName: You really believe all this, don't you?
+    TargetNodeGuid: 445d820a-059d-4bf9-8c8f-435d12a08ef0
+  - BaseNodeGuid: ed6c6f38-4f65-4e43-8166-16f525b9d881
+    PortName: ...
+    TargetNodeGuid: 7ce00f99-aefb-473e-9e19-97f311d6521d
+  DialogueNodeData:
+  - Guid: 6d139e9a-dcc1-45f7-9d19-e9ed9c266c02
+    DialogueText: Psst... Hey kid... Psst...
+    Position: {x: 187.2, y: 200}
+  - Guid: 1281d269-c11f-48a1-8183-91f0875a904d
+    DialogueText: Yeah, I need your help. Have you seen any aliens around here lately?
+    Position: {x: 504, y: 52.000004}
+  - Guid: 650dc299-cb60-4f79-8a06-72233177f086
+    DialogueText: Yes, you! Have you seen any aliens around here?
+    Position: {x: 504, y: 208.8}
+  - Guid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+    DialogueText: That's right! Real life extraterrestrails. And they're here on
+      Earth! I have evidence that they're here too!
+    Position: {x: 1108.8, y: 48.8}
+  - Guid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+    DialogueText: Well I'm about to blow your mind. Get this, THEY ARE. And I have
+      proof to back up my claim too.
+    Position: {x: 1108, y: 214.4}
+  - Guid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+    DialogueText: What? Don't believe me? I have proof that extraterrestrials are
+      here walking among us.
+    Position: {x: 1110.4, y: 376.80002}
+  - Guid: 3d40753c-64da-4357-8c83-93f5344c57da
+    DialogueText: Have you seen any aliens around here lately? I'm so close to making
+      first contact.
+    Position: {x: 476.8, y: 373.6}
+  - Guid: c6d5da48-58f5-455b-95d2-29176a75c75d
+    DialogueText: This is an actual picture I took last night of a real life alien!
+      It was scittering around in my trash can last night and making a whole bunch
+      of weird chittering noises! See, you can even see it's glowing eyes!
+    Position: {x: 1924, y: 50.399998}
+  - Guid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
+    DialogueText: Oh yeah? Then how do you explain this photo I got of one last night?
+      It was skittering around in my trash late last night and it was making a whole
+      bunch of weird chittering noises. See, you can even see it's glowing eyes!
+    Position: {x: 1916, y: 220.8}
+  - Guid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
+    DialogueText: I took this picture last night! An alien was in my trash can skittering
+      around, and it was making a whole bunch of chittering noises. See, look! You
+      can even see the glowing eyes in the picture.
+    Position: {x: 1918.4, y: 398.40002}
+  - Guid: af93f235-b8f3-472c-bb2e-e406e04328c8
+    DialogueText: I think it was trying to understand the humans a bit better. Seeing
+      who best to assimilate into human culture without being detected. But I'm already
+      one step ahead of them.
+    Position: {x: 3312, y: 57.600002}
+  - Guid: 51d1be4c-03cd-4c57-9b0e-b028c1d6887d
+    DialogueText: No it's not! It's an ALIEN! It was studying my trash to learn how
+      to assimilate better into human culture, but I'm already one step ahead of
+      them!
+    Position: {x: 3339.2, y: 224.8}
+  - Guid: ed6c6f38-4f65-4e43-8166-16f525b9d881
+    DialogueText: My hunch is that it was trying to learn about us humans by looking
+      in my trash. That way it knows how best to assimilate into human culture. It's
+      a tricky little bastard, but I'm one step ahead of it.
+    Position: {x: 3346.4, y: 408}
+  - Guid: 445d820a-059d-4bf9-8c8f-435d12a08ef0
+    DialogueText: The proof is in the pudding my friend. I'll find out what this
+      alien has planned for us, and if it means us any harm, I'll put an end to it
+      and save the human race.
+    Position: {x: 4740.8, y: 205.59999}
+  - Guid: 7ce00f99-aefb-473e-9e19-97f311d6521d
+    DialogueText: The hour of reckoning will soon be upon us. I will find out what
+      this alien has planned for us, and if it means us harm, I will put an end to
+      it and save the human race.
+    Position: {x: 4685.6, y: 392}
+  - Guid: 301c581f-4662-4457-9959-b5f6686b82b2
+    DialogueText: I don't know, but I intend to find out. And rest assured, if it
+      means any harm to us, I'll put an end to it and save the human race.
+    Position: {x: 4781.6, y: 39.2}
+  ExposedProperties: []
+  CommentBlockData: []
