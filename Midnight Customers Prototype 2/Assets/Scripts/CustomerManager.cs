@@ -56,7 +56,7 @@ public class CustomerManager : MonoBehaviour
         if(arrayPos >= customers.Length)
         {
             spawning = false; //so spawning stops happening only for gdex build
-           // arrayPos = 0;
+            endingManager.StartEnding();
         }
     }
 

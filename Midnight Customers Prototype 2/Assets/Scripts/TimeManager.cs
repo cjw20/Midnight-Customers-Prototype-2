@@ -179,4 +179,11 @@ public class TimeManager : MonoBehaviour
         //Overrides review message
         if(day==2){review.NewMessage("Expectations are being raised.\n\nComplete tasks before the day ends\n\nPress 'E' when ! appears above your head");}
     }
+
+
+    public void EndGame()
+    {
+        timerRunning = false;
+        //stop anything else that is happening
+    }
 }
