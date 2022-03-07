@@ -12,8 +12,8 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
-  productName: Midnight Customers Prototype 2
+  companyName: Spooky Seas Studios
+  productName: Midnight Customers
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -127,7 +127,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 1.0
+  bundleVersion: 4.20
   preloadedAssets:
   - {fileID: 0}
   metroInputSource: 0
@@ -147,7 +147,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Standalone: com.DefaultCompany.MidnightCustomersPrototype2
+    Standalone: com.SpookySeasStudios.MidnightCustomers
   buildNumber:
     Standalone: 0
     iPhone: 0
