@@ -34,7 +34,7 @@ public class RandomEventManager : MonoBehaviour
         ongoingLightEvent = true;
         int roll = Random.Range(0, 100);
 
-        if (roll >= 80)
+        if (roll >= 95)
         {
             lightManager.PowerOutage(15f); //logic to decide which event would go here
             lightManager.CallLightning();

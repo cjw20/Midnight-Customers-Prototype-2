@@ -10829,7 +10829,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ongoingLightEvent: 0
-  eventChance: 15
+  eventChance: 10
   lightManager: {fileID: 507476519}
   timeManager: {fileID: 844012051}
 --- !u!1 &885160248
