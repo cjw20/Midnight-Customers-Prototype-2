@@ -145,8 +145,11 @@ public class TimeManager : MonoBehaviour
         player.transform.position = playerStartingLoc.position;
         hours = 0;
         day++;
-
-        GameControl.control.SaveGame("Day " + day.ToString()); //may not be best place to do this
+        if(day % 5 == 0) //autosave every 5 days instead
+        {
+            GameControl.control.SaveGame("Day " + day.ToString()); //may not be best place to do this
+        }
+        
         journalDisplay.OpenJournal();
         while (journalDisplay.inJournal)
         {
