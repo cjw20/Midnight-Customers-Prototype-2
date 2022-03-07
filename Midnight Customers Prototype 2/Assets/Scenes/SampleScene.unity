@@ -23263,7 +23263,7 @@ MonoBehaviour:
   - {fileID: 2666151172327968761, guid: c6751cfb41abea84bbcf95e23a908c5e, type: 3}
   nextConversation: {fileID: 0}
   conversations:
-  - {fileID: 11400000, guid: 295aa326659cb9543930aa9e79a22a08, type: 2}
+  - {fileID: 11400000, guid: 905a0fcb184df7e41af958394cd480a5, type: 2}
   - {fileID: 11400000, guid: 7872fc423c2966b47b6fae1145823161, type: 2}
 --- !u!114 &1826431519
 MonoBehaviour:
