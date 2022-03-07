@@ -10,6 +10,7 @@ public class EndingManager : MonoBehaviour
     [SerializeField] GameObject deepEnd;
     [SerializeField] GameObject investigatorEnd;
     [SerializeField] GameObject endingPhone;
+
     
     public void StartEnding()
     {
@@ -20,16 +21,20 @@ public class EndingManager : MonoBehaviour
 
     public void CultEnding()
     {
-
+        timeManager.toBlack.FadeIn(3f);
+        cultEnd.GetComponent<EndingText>().PlayText();
+        
     }
 
     public void DeepOneEnding()
     {
-
+        timeManager.toBlack.FadeIn(3f);
+        deepEnd.GetComponent<EndingText>().PlayText();
     }
 
     public void InvestigatorEnding()
     {
-
+        timeManager.toBlack.FadeIn(3f);
+        investigatorEnd.GetComponent<EndingText>().PlayText();
     }
 }

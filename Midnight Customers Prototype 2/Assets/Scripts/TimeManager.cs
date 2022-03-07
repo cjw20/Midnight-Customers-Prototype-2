@@ -184,6 +184,7 @@ public class TimeManager : MonoBehaviour
     public void EndGame()
     {
         timerRunning = false;
+        
         //stop anything else that is happening
     }
 }
