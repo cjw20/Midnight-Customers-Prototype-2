@@ -15,11 +15,12 @@ public class RandomEventManager : MonoBehaviour
     [Header("Event Management")]
     [Tooltip("Reference to a LightManager class instance.")]
     [SerializeField] LightManager lightManager;
+    [SerializeField] TimeManager timeManager;
     
     public void CallRandomEvent()
     {
         int roll = Random.Range(0, 100);
-        if(roll >= eventChance)
+        if(roll <= eventChance)
         {
             CallLightEvent();
         }
@@ -27,13 +28,13 @@ public class RandomEventManager : MonoBehaviour
 
     void CallLightEvent()
     {
-        if (ongoingLightEvent)
+        if (ongoingLightEvent || timeManager.day == 1)
             return;
 
         ongoingLightEvent = true;
         int roll = Random.Range(0, 100);
 
-        if (roll >= 80)
+        if (roll >= 95)
         {
             lightManager.PowerOutage(15f); //logic to decide which event would go here
             lightManager.CallLightning();
