@@ -8415,7 +8415,7 @@ MonoBehaviour:
   cultEnd: {fileID: 1263875414}
   deepEnd: {fileID: 1901838773}
   investigatorEnd: {fileID: 2072790340}
-  endingPhone: {fileID: 0}
+  endingPhone: {fileID: 1424213947}
 --- !u!4 &658873448
 Transform:
   m_ObjectHideFlags: 0
