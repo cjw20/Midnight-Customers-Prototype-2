@@ -11,7 +11,8 @@ public class EndingManager : MonoBehaviour
     [SerializeField] GameObject investigatorEnd;
     [SerializeField] GameObject endingPhone;
 
-    
+    EndingText activeEnding;
+
     public void StartEnding()
     {
         timeManager.EndGame();
@@ -22,19 +23,28 @@ public class EndingManager : MonoBehaviour
     public void CultEnding()
     {
         timeManager.toBlack.FadeIn(3f);
-        cultEnd.GetComponent<EndingText>().PlayText();
+        activeEnding = cultEnd.GetComponent<EndingText>();
+        activeEnding.PlayText();
         
     }
 
     public void DeepOneEnding()
     {
         timeManager.toBlack.FadeIn(3f);
-        deepEnd.GetComponent<EndingText>().PlayText();
+        activeEnding = deepEnd.GetComponent<EndingText>();
+        activeEnding.PlayText();
     }
 
     public void InvestigatorEnding()
     {
         timeManager.toBlack.FadeIn(3f);
-        investigatorEnd.GetComponent<EndingText>().PlayText();
+        activeEnding = investigatorEnd.GetComponent<EndingText>();
+        activeEnding.PlayText();
+    }
+
+    public void OnContinueButton()
+    {
+        activeEnding.waitingForConfirm = false;
+        //this function here so button function does not have to be set separately for each ending
     }
 }

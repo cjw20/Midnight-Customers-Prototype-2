@@ -9,7 +9,7 @@ public class EndingText : MonoBehaviour
     public string[] endingContents;
     public int showArtTiming; //how far into array to switch from black screen to full art
 
-    bool waitingForConfirm = true;
+    public bool waitingForConfirm = true;
 
     [SerializeField] GameObject endingWindow;
     [SerializeField] Text endingTextDisplay;
@@ -48,6 +48,11 @@ public class EndingText : MonoBehaviour
             }
             waitingForConfirm = true; //resets confirmation
         }
+
+        timeManager.toBlack.FadeIn(5f);
+        //play credits
         yield break;
     }
+
+    
 }
