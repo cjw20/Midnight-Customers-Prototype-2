@@ -4713,9 +4713,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Helen Maxwell
-
-'
+  m_Text: "Alexander Meg\xE1los\n"
 --- !u!222 &409266303
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14072,7 +14070,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Acxaotho
+  m_Text: Daniel Mirkwood
 --- !u!222 &1156891319
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15708,6 +15706,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1263875416}
   - component: {fileID: 1263875415}
+  - component: {fileID: 1263875417}
   m_Layer: 0
   m_Name: Cult End
   m_TagString: Untagged
@@ -15781,6 +15780,49 @@ Transform:
   m_Father: {fileID: 658873448}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1263875417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263875414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6c8efe6bf9c99c449c965b708f880ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  endingContents:
+  - "I met them outside, just like they had asked when I called them. They smiled
+    at me and bent down, grasping the handle of the storm cellar door. Without a
+    word, they threw open the door and stood up. \u201CCome,\u201D they said beckoning
+    me to follow them into the cellar."
+  - "A light from below illuminated the steps as Alexander and I slowly descended
+    into the cellar. When we reached the bottom, a burst of colored light filled
+    the room. I shielded my eyes and heard shouting. \u201CYOU CAN NOT STOP WHAT
+    HAS ALREADY BEGUN!\u201D The voice was familiar. It was Helen. I knew it had
+    to be her. \u201CYOUR EFFORTS ARE-\u201D Then there was a thud, followed by silence.
+    What had happened? I slowly lowered my arms and as my eyes adjusted, I couldn\u2019t
+    believe what I saw."
+  - "\u201CAh,\u201D Helen was in front of me taking a deep breath and looking down
+    at her body, running her hands down her sides. My eyes began darting around.
+    Where did Alexander go? Eventually, I saw them slumped in the corner, lifeless. 
+    \u201CThis body is older,\u201D Helen said looking back at me, \u201CBut no matter.
+    It shall have to do.\u201D"
+  - "\u201CYou seem surprised, my friend. What did Helen call you? Dear. The term
+    feels so endearing for someone whose body feels so cold.\u201D A smile crept
+    onto Helen\u2019s face and reached from ear to ear.  What happened? Why does
+    Helen sound like Alexander? \r"
+  - "\u201CThanks to you, I now wield power I\u2019ve yearned for. I have observed
+    Helen dominate this town for so long until now. Now I have inherited her body,
+    and her stature.\u201D Helen raised her arms outward as shadows crept from the
+    rippling wall of light behind them. \u201CI am Helen Maxwell, and this is my
+    domain!\u201D \r\n"
+  - Helen grabbed my shoulders and lifted me up without effort. I was too frozen
+    to fight. Besides, what was the point? Where would I run? Helen owns the town,
+    Helen owns me. With a hard shove, I was engulfed by the swirling light, then
+    there was darkness. I was cold. I was alone. All that was left were the looming
+    body of despair in front of me, taking my body to feed its hunger.
 --- !u!1 &1276704604
 GameObject:
   m_ObjectHideFlags: 0
@@ -24139,6 +24181,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1901838775}
   - component: {fileID: 1901838774}
+  - component: {fileID: 1901838776}
   m_Layer: 0
   m_Name: Deep End
   m_TagString: Untagged
@@ -24212,6 +24255,46 @@ Transform:
   m_Father: {fileID: 658873448}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1901838776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1901838773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6c8efe6bf9c99c449c965b708f880ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  endingContents:
+  - " I met him outside, just like he had asked when I called him. He bent down and
+    grasped the handle of the storm cellar door. \u201CIt is time,\u201D hee said
+    turning to me. He smiled and nodded to reassure me. I let my shoulders sag. I
+    trust him. He bent down and opened the cellar door. \u201CLet\u2019s go,\u201D
+    he said gesturing for me to follow him into the cellar."
+  - "A light from below illuminated the steps as Daniel and I slowly descended into
+    the cellar. When we reached the bottom, a burst of colored light filled the room.
+    I shielded my eyes and heard shouting. \u201CYOU CAN NOT STOP WHAT HAS ALREADY
+    BEGUN!\u201D The voice was familiar. It was Helen. I knew it had to be her. \u201CYOUR
+    EFFORTS ARE-\u201D She was interrupted by a loud thud. Then she spoke again,
+    but this time her voice trembled. \u201CWhat are you doing with that? You don\u2019t
+    know what you\u2019re messing with!\u201D"
+  - "I lowered my hands and saw Daniel before me, but he looked different. He had
+    gills and claws. He was laughing maniacally as he said, \u201COh, but I do, Helen.
+    Your reign is at an end. I have the power now.\u201D A book floated in front
+    of him and began to glow as he mumbled some language I had never heard before.
+    It sounded like he was hissing as something began to grow behind him."
+  - "The roof of the cellar tore from the walls and disappeared into the wind. I
+    chielded my head and screamed but heard no sound leave my mouth. However, I heard
+    him laughing. \u201CBEHOLD!\u201D He yelled and raised his arms as a creature
+    beyond my wildest imagination towered over all of us. \u201COUR SAVIOR! OUR FATHER!
+    DAGON!\u201D The creature lumbered towards me, shaking the Earth as it did."
+  - "\u201CCLEANSE ARKHAM OF THOSE WHO HAVE HARMED US FOR TOO LONG!\u201D Did he
+    command it? It responded by looking down at me and smiling. It smiled and bared
+    it\u2019s teeth. Drool dripped onto my forehead and I realized there was nothing
+    but doom that awaited me. I couldn\u2019t stop Daniel, he was too far gone. I
+    closed my eyes and let the darkness and despair take me. At least it was quick."
 --- !u!1 &1902081337
 GameObject:
   m_ObjectHideFlags: 0
@@ -29815,6 +29898,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2072790342}
   - component: {fileID: 2072790341}
+  - component: {fileID: 2072790343}
   m_Layer: 0
   m_Name: Investigator End
   m_TagString: Untagged
@@ -29888,6 +29972,45 @@ Transform:
   m_Father: {fileID: 658873448}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2072790343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2072790340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6c8efe6bf9c99c449c965b708f880ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  endingContents:
+  - "I met her outside, just like she had asked when I called her. She bent down
+    and grasped the handle of the storm cellar door. \u201CReady?\u201D She said
+    turning to me. She was trying to look calm, but she pressed her lips together
+    as a bead of sweat dribbled down her cheek. I nodded and she turned her gaze
+    back to the door, took a deep breath, and opened the door. \r\n"
+  - "A light from below illuminated the steps as Vanessa and I slowly descended into
+    the cellar. When we reached the bottom, a burst of colored light filled the room.
+    I shielded my eyes and heard shouting. \u201CYOU CAN NOT STOP WHAT HAS ALREADY
+    BEGUN!\u201D The voice was familiar. It was Helen. I knew it had to be her. \u201CYOUR
+    EFFORTS ARE-\u201D She was interrupted with a loud bang. After that, all I could
+    hear was a high-pitched ringing. I slowly lowered my hand from my eyes, and I
+    couldn\u2019t believe what I saw next.\r\n"
+  - "Smoke drifted in the wind from the barrel of the gun pointed directly at me.
+    My eyes drifted to her feet where Helen lay crumpled on the floor. \u201CThis
+    is for the best!\u201D Vanessa cocked the hammer back. Her hand shook but she
+    kept her weapon trained on me"
+  - "Behind her was a bright light moving and rippling like water. It didn\u2019t
+    look real yet there it was, in front of me. \u201CThe world is evil,\u201D Vanessa
+    continued. \u201CIt deserves to reset. All the people up top that spit on those
+    of us below them. This way they can\u2019t hurt us anymore.\u201D"
+  - "I shook my head. We could\u2019ve changed something. She wanted the world to
+    end. She wanted us all to die, but did we really have to? \u201CI\u2019m sorry,\u201D
+    her voice trembled. Then, something slithered from the light. A shadowy figure
+    that made my heart stop. The light soon disappeared, giving way to the horror
+    in front of me. It crept closer, destroying everything in its path. \u201CIt\u2019s
+    finally over,\u201D She said."
 --- !u!1 &2102159241
 GameObject:
   m_ObjectHideFlags: 0
