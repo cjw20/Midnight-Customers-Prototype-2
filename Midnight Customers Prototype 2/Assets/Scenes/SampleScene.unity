@@ -10831,6 +10831,7 @@ MonoBehaviour:
   ongoingLightEvent: 0
   eventChance: 15
   lightManager: {fileID: 507476519}
+  timeManager: {fileID: 844012051}
 --- !u!1 &885160248
 GameObject:
   m_ObjectHideFlags: 0

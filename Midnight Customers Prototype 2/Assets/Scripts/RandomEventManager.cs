@@ -15,6 +15,7 @@ public class RandomEventManager : MonoBehaviour
     [Header("Event Management")]
     [Tooltip("Reference to a LightManager class instance.")]
     [SerializeField] LightManager lightManager;
+    [SerializeField] TimeManager timeManager;
     
     public void CallRandomEvent()
     {
@@ -27,7 +28,7 @@ public class RandomEventManager : MonoBehaviour
 
     void CallLightEvent()
     {
-        if (ongoingLightEvent)
+        if (ongoingLightEvent || timeManager.day == 1)
             return;
 
         ongoingLightEvent = true;
