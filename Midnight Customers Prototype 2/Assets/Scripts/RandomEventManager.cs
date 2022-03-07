@@ -20,7 +20,7 @@ public class RandomEventManager : MonoBehaviour
     public void CallRandomEvent()
     {
         int roll = Random.Range(0, 100);
-        if(roll >= eventChance)
+        if(roll <= eventChance)
         {
             CallLightEvent();
         }
