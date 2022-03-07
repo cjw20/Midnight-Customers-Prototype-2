@@ -23,6 +23,8 @@ public class CustomerManager : MonoBehaviour
     [Tooltip("List of the customers currently in the store.")]
     List<GameObject> customersInStore = new List<GameObject>();
 
+    [SerializeField] EndingManager endingManager;
+
     void Awake()
     {
         if(GameControl.control.loadingGame == false)
