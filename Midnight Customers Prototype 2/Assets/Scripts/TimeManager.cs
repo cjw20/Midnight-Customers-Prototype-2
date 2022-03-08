@@ -65,7 +65,7 @@ public class TimeManager : MonoBehaviour
 
     void Start()
     {
-        if(day==1){review.NewMessage("Welcome to the team.\n\nToday, you will only checkout customers.\n\nDon't leave them waiting, we'll be watching.\n\n[Click on the bottom of the phone to close]");}
+        if(day==1){review.NewMessage("Welcome to the team.\n\nToday, you will only checkout customers.\n\nStart the checkout by pressing 'E' when ! appears above your head.\n\n[Click on the bottom of the phone to close]");}
     }
 
     public void OnLoadGame(int dayProgress)
@@ -180,7 +180,7 @@ public class TimeManager : MonoBehaviour
             checkoutManager.LoadPhase1();
         }
         //Overrides review message
-        if(day==2){review.NewMessage("Expectations are being raised.\n\nComplete tasks before the day ends\n\nPress 'E' when ! appears above your head");}
+        if(day==2){review.NewMessage("Expectations are being raised.\n\nComplete tasks before the day ends\n\nIf the power shorts out, press 'F' to use your flashlight");}
     }
 
 
