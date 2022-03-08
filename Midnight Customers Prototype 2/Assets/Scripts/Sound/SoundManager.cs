@@ -34,6 +34,18 @@ public class SoundManager : MonoBehaviour
     [SerializeField] AudioSource chipsPickUpSound;
     [Tooltip("Sound for setting down a bag of chips.")]
     [SerializeField] AudioSource chipsPutDownSound;
+    [Tooltip("Sounds of aluminum cans being picked up.")]
+    [SerializeField] AudioSource[] aluminumCanPickUpSound;
+    [Tooltip("Sounds of aluminum cans being set down.")]
+    [SerializeField] AudioSource[] aluminumCanPutDownSound;
+    [Tooltip("Sounds of glass bottles being picked up.")]
+    [SerializeField] AudioSource[] glassBottlePickUpSound;
+    [Tooltip("Sounds of glass bottles being put down.")]
+    [SerializeField] AudioSource[] glassBottlePutDownSound;
+    [Tooltip("Sounds of water bottles being picked up.")]
+    [SerializeField] AudioSource[] waterBottlePickUpSound;
+    [Tooltip("Sounds of water bottles being put down.")]
+    [SerializeField] AudioSource[] waterBottlePutDownSound;
 
     [Header("Phone Sounds")]
     [Tooltip("Text message sound.")]
@@ -170,6 +182,42 @@ public class SoundManager : MonoBehaviour
     public void PlayChipsDownSound()
     {
         chipsPutDownSound.Play();
+    }
+
+    public void PlayAluminumCanUpSound()
+    {
+        int rand = Random.Range(0, 2);
+        aluminumCanPickUpSound[rand].Play();
+    }
+
+    public void PlayAluminumCanDownSound()
+    {
+        int rand = Random.Range(0, 3);
+        aluminumCanPutDownSound[rand].Play();
+    }
+
+    public void PlayGlassBottleUpSound()
+    {
+        int rand = Random.Range(0, 2);
+        glassBottlePickUpSound[rand].Play();
+    }
+
+    public void PlayGlassBottleDownSound()
+    {
+        int rand = Random.Range(0, 2);
+        glassBottlePutDownSound[rand].Play();
+    }
+
+    public void PlayWaterBottleUpSound()
+    {
+        int rand = Random.Range(0, 2);
+        waterBottlePickUpSound[rand].Play();
+    }
+
+    public void PlayWaterBottleDownSound()
+    {
+        int rand = Random.Range(0, 2);
+        waterBottlePutDownSound[rand].Play();
     }
 
     public void PlayTextMessageSound()
