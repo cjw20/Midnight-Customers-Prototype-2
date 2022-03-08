@@ -37,18 +37,8 @@ public class Interactable : MonoBehaviour
         playerInput.Disable();
     }
 
-    void Update()
-    {
-        //if (playerInput.Store.Interact.triggered)
-        //{
-            /*
-            if (inRange && !interacting)
-            {
-                interacting = true;
-                StartCoroutine(DisplayMessage(messages[progress]));
-            }
-            */
-        //}
+    public void SetMessage(string[] input){
+        messages = input;
     }
 
     public void TriggerInteractable()
@@ -87,7 +77,7 @@ public class Interactable : MonoBehaviour
         progress++;
         if(progress > messages.Length - 1)
         {
-            progress--;
+            progress = 0;
         }
         interacting = false;
     }

@@ -47,6 +47,7 @@ public class TimeManager : MonoBehaviour
     StoryEventHandler storyEvent;
     RandomEventManager randomEvent;
     CheckoutManager checkoutManager;
+    InteractableManager interactableManager;
     
     void Awake()
     {
@@ -58,6 +59,7 @@ public class TimeManager : MonoBehaviour
         storyEvent = FindObjectOfType<StoryEventHandler>();
         randomEvent = FindObjectOfType<RandomEventManager>();
         checkoutManager = FindObjectOfType<CheckoutManager>();
+        interactableManager = FindObjectOfType<InteractableManager>();
         //if ^ is too slow, do different way later
         timerRunning = true;
         UpdateClock();
@@ -180,7 +182,9 @@ public class TimeManager : MonoBehaviour
             checkoutManager.LoadPhase1();
         }
         //Overrides review message
-        if(day==2){review.NewMessage("Expectations are being raised.\n\nComplete tasks before the day ends\n\nIf the power shorts out, press 'F' to use your flashlight");}
+        if (day == 2) { review.NewMessage("Expectations are being raised.\n\nComplete tasks before the day ends\n\nIf the power shorts out, press 'F' to use your flashlight"); }
+        if (day == 3) { interactableManager.UpdateInteractables(day); }
+        if (day == 6) { interactableManager.UpdateInteractables(day); }
     }
 
 
