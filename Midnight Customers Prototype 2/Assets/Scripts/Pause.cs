@@ -73,6 +73,6 @@ public class Pause : MonoBehaviour
     public void SaveAndQuit()
     {
         GameControl.control.SaveGame("Manual Save");
-        Application.Quit();
+        LoadScene("MainMenu");
     }
 }

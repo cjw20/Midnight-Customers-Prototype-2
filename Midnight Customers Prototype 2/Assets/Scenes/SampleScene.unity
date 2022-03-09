@@ -14008,7 +14008,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Main Menu
+  m_text: Save And Exit
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 635ed795edb1a9b438a800583fd69ffd, type: 2}
   m_sharedMaterial: {fileID: 3539071425150051025, guid: 635ed795edb1a9b438a800583fd69ffd, type: 2}
@@ -14035,8 +14035,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 28
+  m_fontSizeBase: 28
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -23679,8 +23679,8 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1682110719}
         m_TargetAssemblyTypeName: Pause, Assembly-CSharp
-        m_MethodName: LoadScene
-        m_Mode: 5
+        m_MethodName: SaveAndQuit
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -24869,6 +24869,32 @@ MonoBehaviour:
   waterBottlePutDownSound:
   - {fileID: 1904453434}
   - {fileID: 1904453433}
+  moneyPickUpSound: {fileID: 0}
+  moneyPutDownSound: {fileID: 0}
+  candybarPickUpSound: []
+  candybarPutDownSound: []
+  cardPickUpSound: []
+  cardPutDownSound: []
+  carFluidPickUpSound: []
+  carFluidPutDownSound: []
+  chargerPickUpSound: []
+  chargerPutDownSound: []
+  cigsPickUpSound: []
+  cigsPutDownSound: []
+  fruitPickUpSound: []
+  fruitPutDownSound: []
+  gasCanPickUpSound: []
+  gasCanPutDownSound: []
+  hotDogPickUpSound: []
+  hotDogPutDownSound: []
+  iceCreamPickUpSound: []
+  iceCreamPutDownSound: []
+  nachosPickUpSound: []
+  nachosPutDownSound: []
+  saladPickUpSound: []
+  saladPutDownSound: []
+  sodaCupPickUpSound: []
+  sodaCupPutDownSound: []
   textMessageSound: {fileID: 1904453424}
   unlockPhoneSound: {fileID: 1904453423}
   lockPhoneSound: {fileID: 1904453422}
@@ -30208,7 +30234,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2008976100
 MonoBehaviour:
   m_ObjectHideFlags: 0
