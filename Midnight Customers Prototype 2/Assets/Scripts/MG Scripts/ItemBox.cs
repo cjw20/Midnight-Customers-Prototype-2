@@ -28,13 +28,13 @@ public class ItemBox : MonoBehaviour
         }
     }
 
-    public void UpdateItems(Sprite item){
+    public void UpdateItems(Sprite item, int index){
         foreach(GameObject i in itemsInBox){
             i.TryGetComponent<SpriteRenderer>(out SpriteRenderer spriteRenderer);
             spriteRenderer.sprite = item;
+            i.GetComponent<StockingItem>().itemType = index;
         }
     }
-
 
     private void OnMouseDown()
     {

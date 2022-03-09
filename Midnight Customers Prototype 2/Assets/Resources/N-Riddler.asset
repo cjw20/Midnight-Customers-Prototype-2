@@ -1,0 +1,121 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
+  m_Name: N-Riddler
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: a63ecf7b-6d71-4742-9427-262a9b2726df
+    PortName: Next
+    TargetNodeGuid: bffbe02d-f72c-4ce8-9c46-e76ab41fac81
+  - BaseNodeGuid: bffbe02d-f72c-4ce8-9c46-e76ab41fac81
+    PortName: Pardon?
+    TargetNodeGuid: 951b6d43-d485-46cf-83b1-e22e59c352bf
+  - BaseNodeGuid: bffbe02d-f72c-4ce8-9c46-e76ab41fac81
+    PortName: ...
+    TargetNodeGuid: 951b6d43-d485-46cf-83b1-e22e59c352bf
+  - BaseNodeGuid: bffbe02d-f72c-4ce8-9c46-e76ab41fac81
+    PortName: I'm the clerk.
+    TargetNodeGuid: 681d0f87-c3d9-49d3-92c4-7587f1e7aa1c
+  - BaseNodeGuid: 951b6d43-d485-46cf-83b1-e22e59c352bf
+    PortName: A riddler?
+    TargetNodeGuid: 8f313759-fb7f-4306-8f69-d0b5dcfdd4a2
+  - BaseNodeGuid: 681d0f87-c3d9-49d3-92c4-7587f1e7aa1c
+    PortName: A riddler?
+    TargetNodeGuid: 8f313759-fb7f-4306-8f69-d0b5dcfdd4a2
+  - BaseNodeGuid: 951b6d43-d485-46cf-83b1-e22e59c352bf
+    PortName: ...
+    TargetNodeGuid: 8f313759-fb7f-4306-8f69-d0b5dcfdd4a2
+  - BaseNodeGuid: 681d0f87-c3d9-49d3-92c4-7587f1e7aa1c
+    PortName: ...
+    TargetNodeGuid: 8f313759-fb7f-4306-8f69-d0b5dcfdd4a2
+  - BaseNodeGuid: 951b6d43-d485-46cf-83b1-e22e59c352bf
+    PortName: A politician?
+    TargetNodeGuid: c6154840-f302-4cce-9cf7-3fe4285a63b3
+  - BaseNodeGuid: 681d0f87-c3d9-49d3-92c4-7587f1e7aa1c
+    PortName: A politician?
+    TargetNodeGuid: c6154840-f302-4cce-9cf7-3fe4285a63b3
+  - BaseNodeGuid: c6154840-f302-4cce-9cf7-3fe4285a63b3
+    PortName: ...
+    TargetNodeGuid: 163a6660-55f2-42c2-9173-c6bd67110869
+  - BaseNodeGuid: c6154840-f302-4cce-9cf7-3fe4285a63b3
+    PortName: A clock?
+    TargetNodeGuid: 163a6660-55f2-42c2-9173-c6bd67110869
+  - BaseNodeGuid: 8f313759-fb7f-4306-8f69-d0b5dcfdd4a2
+    PortName: ...
+    TargetNodeGuid: 163a6660-55f2-42c2-9173-c6bd67110869
+  - BaseNodeGuid: 8f313759-fb7f-4306-8f69-d0b5dcfdd4a2
+    PortName: A clock?
+    TargetNodeGuid: 163a6660-55f2-42c2-9173-c6bd67110869
+  - BaseNodeGuid: 8f313759-fb7f-4306-8f69-d0b5dcfdd4a2
+    PortName: Are you talking about me?
+    TargetNodeGuid: b87ace82-3b63-4f6a-9465-154a2567511b
+  - BaseNodeGuid: c6154840-f302-4cce-9cf7-3fe4285a63b3
+    PortName: Are you talking about me?
+    TargetNodeGuid: b87ace82-3b63-4f6a-9465-154a2567511b
+  - BaseNodeGuid: b87ace82-3b63-4f6a-9465-154a2567511b
+    PortName: Thanks?
+    TargetNodeGuid: f506724d-2008-4da8-a192-d65b1e05b332
+  - BaseNodeGuid: b87ace82-3b63-4f6a-9465-154a2567511b
+    PortName: Be well, too, riddler.
+    TargetNodeGuid: f506724d-2008-4da8-a192-d65b1e05b332
+  - BaseNodeGuid: b87ace82-3b63-4f6a-9465-154a2567511b
+    PortName: ...
+    TargetNodeGuid: f506724d-2008-4da8-a192-d65b1e05b332
+  - BaseNodeGuid: 163a6660-55f2-42c2-9173-c6bd67110869
+    PortName: Thanks?
+    TargetNodeGuid: f506724d-2008-4da8-a192-d65b1e05b332
+  - BaseNodeGuid: 163a6660-55f2-42c2-9173-c6bd67110869
+    PortName: Be well, too, riddler.
+    TargetNodeGuid: f506724d-2008-4da8-a192-d65b1e05b332
+  - BaseNodeGuid: 163a6660-55f2-42c2-9173-c6bd67110869
+    PortName: ...
+    TargetNodeGuid: f506724d-2008-4da8-a192-d65b1e05b332
+  DialogueNodeData:
+  - Guid: bffbe02d-f72c-4ce8-9c46-e76ab41fac81
+    DialogueText: Riddle-dee, riddle-dee, riddle-dee-doo! I'm Arkham's best riddler,
+      and who might be you?
+    Position: {x: 193, y: 202}
+  - Guid: 951b6d43-d485-46cf-83b1-e22e59c352bf
+    DialogueText: 'Incorrect! You are the clerk! The diligent clerk, always moping
+      at work. Now answer me this: I''m the master of words; I''m a slippery eel;
+      I speak all the time, but the truth I conceal. Who am I?'
+    Position: {x: 886, y: 111}
+  - Guid: 681d0f87-c3d9-49d3-92c4-7587f1e7aa1c
+    DialogueText: 'Correct, correct! You are the clerk! The diligent clerk, always
+      working at work. Now answer me this: I''m the master of words; I''m a slippery
+      eel; I speak all the time, but the truth I conceal. Who am I?'
+    Position: {x: 886, y: 271}
+  - Guid: c6154840-f302-4cce-9cf7-3fe4285a63b3
+    DialogueText: 'Correct, correct, so says the riddler! ''Twas a politician, or
+      a policy-fiddler. Now answer me this: I toil and toil, while the world stays
+      the same; I''m stuck in a loop, an unending refrain. Who am I?'
+    Position: {x: 2129, y: 237}
+  - Guid: 8f313759-fb7f-4306-8f69-d0b5dcfdd4a2
+    DialogueText: 'Incorrect, incorrect, so says the riddler! ''Tis any politician,
+      any policy-fiddler. Now answer me this: I toil and toil, while the world stays
+      the same; I''m stuck in a loop, an unending refrain. Who am I?'
+    Position: {x: 2130, y: 51}
+  - Guid: 163a6660-55f2-42c2-9173-c6bd67110869
+    DialogueText: Incorrect, incorrect! 'Twas again the clerk! The dissatisfied clerk,
+      stuck moping at work. I have spoken to you my riddles three, now it's high
+      time for myself to leave. Be well, sweet clerk! Do well your work!
+    Position: {x: 3365, y: 239}
+  - Guid: b87ace82-3b63-4f6a-9465-154a2567511b
+    DialogueText: Correct, correct! 'Twas again the clerk! The dissatisfied clerk,
+      stuck moping at work. I have spoken to you my riddles three, now it's high
+      time for myself to leave. Be well, sweet clerk! Do well your work!
+    Position: {x: 3374, y: 43}
+  - Guid: f506724d-2008-4da8-a192-d65b1e05b332
+    DialogueText: +0
+    Position: {x: 4682, y: 144}
+  ExposedProperties: []
+  CommentBlockData: []

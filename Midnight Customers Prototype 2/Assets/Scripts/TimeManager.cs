@@ -47,6 +47,7 @@ public class TimeManager : MonoBehaviour
     StoryEventHandler storyEvent;
     RandomEventManager randomEvent;
     CheckoutManager checkoutManager;
+    InteractableManager interactableManager;
     
     void Awake()
     {
@@ -58,6 +59,7 @@ public class TimeManager : MonoBehaviour
         storyEvent = FindObjectOfType<StoryEventHandler>();
         randomEvent = FindObjectOfType<RandomEventManager>();
         checkoutManager = FindObjectOfType<CheckoutManager>();
+        interactableManager = FindObjectOfType<InteractableManager>();
         //if ^ is too slow, do different way later
         timerRunning = true;
         UpdateClock();
@@ -65,7 +67,7 @@ public class TimeManager : MonoBehaviour
 
     void Start()
     {
-        if(day==1){review.NewMessage("Welcome to the team.\n\nToday, you will only checkout customers.\n\nDon't leave them waiting, we'll be watching.\n\n[Click on the bottom of the phone to close]");}
+        if(day==1){review.NewMessage("Welcome to the team.\n\nToday, you will only checkout customers.\n\nStart the checkout by pressing 'E' when ! appears above your head.\n\n[Click on the bottom of the phone to close]");}
     }
 
     public void OnLoadGame(int dayProgress)
@@ -145,8 +147,11 @@ public class TimeManager : MonoBehaviour
         player.transform.position = playerStartingLoc.position;
         hours = 0;
         day++;
-
-        GameControl.control.SaveGame("Day " + day.ToString()); //may not be best place to do this
+        if(day % 5 == 0) //autosave every 5 days instead
+        {
+            GameControl.control.SaveGame("Day " + day.ToString()); //may not be best place to do this
+        }
+        
         journalDisplay.OpenJournal();
         while (journalDisplay.inJournal)
         {
@@ -177,6 +182,16 @@ public class TimeManager : MonoBehaviour
             checkoutManager.LoadPhase1();
         }
         //Overrides review message
-        if(day==2){review.NewMessage("Expectations are being raised.\n\nComplete tasks before the day ends\n\nPress 'E' when ! appears above your head");}
+        if (day == 2) { review.NewMessage("Expectations are being raised.\n\nComplete tasks before the day ends\n\nIf the power shorts out, press 'F' to use your flashlight"); }
+        if (day == 3) { interactableManager.UpdateInteractables(day); }
+        if (day == 6) { interactableManager.UpdateInteractables(day); }
+    }
+
+
+    public void EndGame()
+    {
+        timerRunning = false;
+        
+        //stop anything else that is happening
     }
 }

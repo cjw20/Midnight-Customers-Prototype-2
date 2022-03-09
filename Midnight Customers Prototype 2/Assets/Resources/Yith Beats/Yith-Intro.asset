@@ -1,0 +1,118 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
+  m_Name: Yith-Intro
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: d3b11bdf-e5b1-46a7-ab48-d987f12debc2
+    PortName: Next
+    TargetNodeGuid: 5172c5ac-29ff-499c-b562-5254a562677b
+  - BaseNodeGuid: 5172c5ac-29ff-499c-b562-5254a562677b
+    PortName: Was that supposed to be an insult?
+    TargetNodeGuid: b0d1ff6b-2688-4e91-8623-6d60ffd9cfb5
+  - BaseNodeGuid: 5172c5ac-29ff-499c-b562-5254a562677b
+    PortName: How am I peculiar?
+    TargetNodeGuid: 81ca7c71-5d9c-401b-af49-c4c8ff1bd030
+  - BaseNodeGuid: b25fe226-363b-4d60-a947-38a82ca92147
+    PortName: I don't really care about other people's business.
+    TargetNodeGuid: 191d97cc-9040-4727-a778-f44d64f49981
+  - BaseNodeGuid: b25fe226-363b-4d60-a947-38a82ca92147
+    PortName: Well, I just started working here.
+    TargetNodeGuid: 470d1287-8c12-4b61-940e-6a932efb1120
+  - BaseNodeGuid: 15f2577b-36ba-47a1-aeb7-aea6f3e2e743
+    PortName: I don't really care about other people's business.
+    TargetNodeGuid: 191d97cc-9040-4727-a778-f44d64f49981
+  - BaseNodeGuid: 15f2577b-36ba-47a1-aeb7-aea6f3e2e743
+    PortName: Huh, I never thought of it that way.
+    TargetNodeGuid: 470d1287-8c12-4b61-940e-6a932efb1120
+  - BaseNodeGuid: 470d1287-8c12-4b61-940e-6a932efb1120
+    PortName: If you say so. I'll just keep to myself.
+    TargetNodeGuid: 9457ee8c-4351-4b3a-8896-ad7dffb7f331
+  - BaseNodeGuid: 470d1287-8c12-4b61-940e-6a932efb1120
+    PortName: If you mean meeting new people, sure. I'm excited.
+    TargetNodeGuid: 8233a11b-4121-4bee-8e51-f3b4c71374e1
+  - BaseNodeGuid: 9457ee8c-4351-4b3a-8896-ad7dffb7f331
+    PortName: Okay then. Bye.
+    TargetNodeGuid: 65a84b93-1023-4970-895d-ef070830e39d
+  - BaseNodeGuid: 9457ee8c-4351-4b3a-8896-ad7dffb7f331
+    PortName: Have a good night!
+    TargetNodeGuid: 65a84b93-1023-4970-895d-ef070830e39d
+  - BaseNodeGuid: 191d97cc-9040-4727-a778-f44d64f49981
+    PortName: If you say so. I'll just keep to myself.
+    TargetNodeGuid: 9457ee8c-4351-4b3a-8896-ad7dffb7f331
+  - BaseNodeGuid: 191d97cc-9040-4727-a778-f44d64f49981
+    PortName: If you mean meeting new people, sure. I'm excited.
+    TargetNodeGuid: 8233a11b-4121-4bee-8e51-f3b4c71374e1
+  - BaseNodeGuid: 8233a11b-4121-4bee-8e51-f3b4c71374e1
+    PortName: Okay then. Bye.
+    TargetNodeGuid: 65a84b93-1023-4970-895d-ef070830e39d
+  - BaseNodeGuid: 8233a11b-4121-4bee-8e51-f3b4c71374e1
+    PortName: Have a good night!
+    TargetNodeGuid: 65a84b93-1023-4970-895d-ef070830e39d
+  - BaseNodeGuid: b0d1ff6b-2688-4e91-8623-6d60ffd9cfb5
+    PortName: I'm just doing my job.
+    TargetNodeGuid: d3c4fee3-8a04-4511-aaaa-6fa96e333753
+  - BaseNodeGuid: 81ca7c71-5d9c-401b-af49-c4c8ff1bd030
+    PortName: I'm just doing my job.
+    TargetNodeGuid: d3c4fee3-8a04-4511-aaaa-6fa96e333753
+  - BaseNodeGuid: b0d1ff6b-2688-4e91-8623-6d60ffd9cfb5
+    PortName: What's so compelling about it?
+    TargetNodeGuid: b25fe226-363b-4d60-a947-38a82ca92147
+  - BaseNodeGuid: 81ca7c71-5d9c-401b-af49-c4c8ff1bd030
+    PortName: What's so compelling about it?
+    TargetNodeGuid: b25fe226-363b-4d60-a947-38a82ca92147
+  - BaseNodeGuid: d3c4fee3-8a04-4511-aaaa-6fa96e333753
+    PortName: My story?
+    TargetNodeGuid: b25fe226-363b-4d60-a947-38a82ca92147
+  - BaseNodeGuid: d3c4fee3-8a04-4511-aaaa-6fa96e333753
+    PortName: Well, I just moved here.
+    TargetNodeGuid: 15f2577b-36ba-47a1-aeb7-aea6f3e2e743
+  DialogueNodeData:
+  - Guid: 81ca7c71-5d9c-401b-af49-c4c8ff1bd030
+    DialogueText: This is just quite a compelling interaction.
+    Position: {x: 772, y: 245}
+  - Guid: 5172c5ac-29ff-499c-b562-5254a562677b
+    DialogueText: Well, aren't you quite peculiar.
+    Position: {x: 330, y: 181}
+  - Guid: d3c4fee3-8a04-4511-aaaa-6fa96e333753
+    DialogueText: Hmmm...what is your story?
+    Position: {x: 1473, y: 24}
+  - Guid: 9457ee8c-4351-4b3a-8896-ad7dffb7f331
+    DialogueText: So you say. Until we meet again.
+    Position: {x: 3737, y: 63}
+  - Guid: 191d97cc-9040-4727-a778-f44d64f49981
+    DialogueText: That is a shame. It makes the world so much more...enthralling.
+      As if we live in a human epic.
+    Position: {x: 2817, y: 12}
+  - Guid: 8233a11b-4121-4bee-8e51-f3b4c71374e1
+    DialogueText: Well, I look forward to hearing more about those you meet. Until
+      next time.
+    Position: {x: 3674, y: 275}
+  - Guid: 65a84b93-1023-4970-895d-ef070830e39d
+    DialogueText: +0
+    Position: {x: 4416, y: 194}
+  - Guid: b0d1ff6b-2688-4e91-8623-6d60ffd9cfb5
+    DialogueText: Not at all. This is just quite a compelling interaction.
+    Position: {x: 785, y: 51}
+  - Guid: 15f2577b-36ba-47a1-aeb7-aea6f3e2e743
+    DialogueText: There is more than that, is there not? You must have seen and heard
+      so much.
+    Position: {x: 1887, y: 27}
+  - Guid: b25fe226-363b-4d60-a947-38a82ca92147
+    DialogueText: I always relish in meeting your people, those in the service industry
+      of course. You must have seen and heard so much.
+    Position: {x: 1889, y: 251}
+  - Guid: 470d1287-8c12-4b61-940e-6a932efb1120
+    DialogueText: Ah well that is even more exciting. Is it not?
+    Position: {x: 2917, y: 236}
+  ExposedProperties: []
+  CommentBlockData: []

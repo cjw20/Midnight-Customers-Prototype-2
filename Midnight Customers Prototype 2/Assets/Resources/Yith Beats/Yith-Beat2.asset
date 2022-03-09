@@ -1,0 +1,188 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
+  m_Name: Yith-Beat2
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: 6deb90f8-d5eb-472d-886a-257022672e5c
+    PortName: Next
+    TargetNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
+  - BaseNodeGuid: 83f4d27a-b837-4c5b-a957-f12a642bfa0a
+    PortName: People have come in to buy stuff, yeah.
+    TargetNodeGuid: 7b68be2f-a626-47b8-9b7d-30216e5c9ab3
+  - BaseNodeGuid: 83f4d27a-b837-4c5b-a957-f12a642bfa0a
+    PortName: I've gotten to know the regulars.
+    TargetNodeGuid: cae9db46-d03d-42a1-9bab-8e21dda6bd37
+  - BaseNodeGuid: 204f0ef3-507e-452d-a21c-d4b6b7092d75
+    PortName: People have come in to buy stuff, yeah.
+    TargetNodeGuid: 7b68be2f-a626-47b8-9b7d-30216e5c9ab3
+  - BaseNodeGuid: 204f0ef3-507e-452d-a21c-d4b6b7092d75
+    PortName: I've gotten to know the regulars.
+    TargetNodeGuid: cae9db46-d03d-42a1-9bab-8e21dda6bd37
+  - BaseNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
+    PortName: If you say so.
+    TargetNodeGuid: 83f4d27a-b837-4c5b-a957-f12a642bfa0a
+  - BaseNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
+    PortName: What makes you say that?
+    TargetNodeGuid: 204f0ef3-507e-452d-a21c-d4b6b7092d75
+  - BaseNodeGuid: cae9db46-d03d-42a1-9bab-8e21dda6bd37
+    PortName: She's been in here a few times, why?
+    TargetNodeGuid: ca6b2415-c49f-4675-a8bb-ae002e3cbe28
+  - BaseNodeGuid: cae9db46-d03d-42a1-9bab-8e21dda6bd37
+    PortName: Yeah. What about her?
+    TargetNodeGuid: c389187e-9acf-4be6-ad2c-287c0b977639
+  - BaseNodeGuid: 7b68be2f-a626-47b8-9b7d-30216e5c9ab3
+    PortName: She's been in here a few times, why?
+    TargetNodeGuid: ca6b2415-c49f-4675-a8bb-ae002e3cbe28
+  - BaseNodeGuid: 7b68be2f-a626-47b8-9b7d-30216e5c9ab3
+    PortName: Yeah. What about her?
+    TargetNodeGuid: c389187e-9acf-4be6-ad2c-287c0b977639
+  - BaseNodeGuid: ca6b2415-c49f-4675-a8bb-ae002e3cbe28
+    PortName: No, not at all. She's fine.
+    TargetNodeGuid: 3bcbd005-1e22-43c5-a78c-54242a3f4a78
+  - BaseNodeGuid: ca6b2415-c49f-4675-a8bb-ae002e3cbe28
+    PortName: She's just another customer.
+    TargetNodeGuid: 5d3f3b91-3918-4f33-9bec-92f82701601b
+  - BaseNodeGuid: c389187e-9acf-4be6-ad2c-287c0b977639
+    PortName: No, not at all. She's fine.
+    TargetNodeGuid: 3bcbd005-1e22-43c5-a78c-54242a3f4a78
+  - BaseNodeGuid: c389187e-9acf-4be6-ad2c-287c0b977639
+    PortName: She's just another customer.
+    TargetNodeGuid: 5d3f3b91-3918-4f33-9bec-92f82701601b
+  - BaseNodeGuid: 5d3f3b91-3918-4f33-9bec-92f82701601b
+    PortName: How do you know she was asking me stuff?
+    TargetNodeGuid: ff82e96e-4c07-4069-98f4-cf4ed840e4ec
+  - BaseNodeGuid: 5d3f3b91-3918-4f33-9bec-92f82701601b
+    PortName: Why the concern?
+    TargetNodeGuid: 61f856b6-5d2d-4d8c-b0d5-75bb3265dfc5
+  - BaseNodeGuid: 3bcbd005-1e22-43c5-a78c-54242a3f4a78
+    PortName: How do you know she was asking me stuff?
+    TargetNodeGuid: ff82e96e-4c07-4069-98f4-cf4ed840e4ec
+  - BaseNodeGuid: 3bcbd005-1e22-43c5-a78c-54242a3f4a78
+    PortName: Why the concern?
+    TargetNodeGuid: 61f856b6-5d2d-4d8c-b0d5-75bb3265dfc5
+  - BaseNodeGuid: ff82e96e-4c07-4069-98f4-cf4ed840e4ec
+    PortName: So, what's the problem?
+    TargetNodeGuid: 3baee4a2-98da-4da7-9d00-69befc700ee1
+  - BaseNodeGuid: ff82e96e-4c07-4069-98f4-cf4ed840e4ec
+    PortName: Is there something wrong with her?
+    TargetNodeGuid: 2d196935-3186-4501-ad07-e6d02fc053cc
+  - BaseNodeGuid: 61f856b6-5d2d-4d8c-b0d5-75bb3265dfc5
+    PortName: I'll be fine.
+    TargetNodeGuid: 1f7b85b3-3800-425e-b137-7cc9c163d613
+  - BaseNodeGuid: 61f856b6-5d2d-4d8c-b0d5-75bb3265dfc5
+    PortName: Nah, she just asked about the area.
+    TargetNodeGuid: c7f8ea91-4adc-48bd-bbc8-6e1734bfd7ab
+  - BaseNodeGuid: 3baee4a2-98da-4da7-9d00-69befc700ee1
+    PortName: I'll be fine.
+    TargetNodeGuid: 1f7b85b3-3800-425e-b137-7cc9c163d613
+  - BaseNodeGuid: 3baee4a2-98da-4da7-9d00-69befc700ee1
+    PortName: Nah, she just asked about the area.
+    TargetNodeGuid: c7f8ea91-4adc-48bd-bbc8-6e1734bfd7ab
+  - BaseNodeGuid: 2d196935-3186-4501-ad07-e6d02fc053cc
+    PortName: I'll be fine.
+    TargetNodeGuid: 1f7b85b3-3800-425e-b137-7cc9c163d613
+  - BaseNodeGuid: 2d196935-3186-4501-ad07-e6d02fc053cc
+    PortName: Nah, she just asked about the area.
+    TargetNodeGuid: c7f8ea91-4adc-48bd-bbc8-6e1734bfd7ab
+  - BaseNodeGuid: 1f7b85b3-3800-425e-b137-7cc9c163d613
+    PortName: Good to know.
+    TargetNodeGuid: b282278c-042a-4175-bdc9-a2e529791301
+  - BaseNodeGuid: 1f7b85b3-3800-425e-b137-7cc9c163d613
+    PortName: Nice to meet you.
+    TargetNodeGuid: 17018861-55db-45c1-bc1c-0ffc4e293ddf
+  - BaseNodeGuid: c7f8ea91-4adc-48bd-bbc8-6e1734bfd7ab
+    PortName: Good to know.
+    TargetNodeGuid: b282278c-042a-4175-bdc9-a2e529791301
+  - BaseNodeGuid: c7f8ea91-4adc-48bd-bbc8-6e1734bfd7ab
+    PortName: Nice to meet you.
+    TargetNodeGuid: 17018861-55db-45c1-bc1c-0ffc4e293ddf
+  - BaseNodeGuid: b282278c-042a-4175-bdc9-a2e529791301
+    PortName: Goodbye.
+    TargetNodeGuid: e78381f6-357c-4ea8-80c6-3b5afb3b60da
+  - BaseNodeGuid: b282278c-042a-4175-bdc9-a2e529791301
+    PortName: Have a good one.
+    TargetNodeGuid: e78381f6-357c-4ea8-80c6-3b5afb3b60da
+  - BaseNodeGuid: 17018861-55db-45c1-bc1c-0ffc4e293ddf
+    PortName: Goodbye.
+    TargetNodeGuid: e78381f6-357c-4ea8-80c6-3b5afb3b60da
+  - BaseNodeGuid: 17018861-55db-45c1-bc1c-0ffc4e293ddf
+    PortName: Have a good one.
+    TargetNodeGuid: e78381f6-357c-4ea8-80c6-3b5afb3b60da
+  DialogueNodeData:
+  - Guid: 83f4d27a-b837-4c5b-a957-f12a642bfa0a
+    DialogueText: I assume you have met some of the inhabitants of the area.
+    Position: {x: 805, y: 63}
+  - Guid: 204f0ef3-507e-452d-a21c-d4b6b7092d75
+    DialogueText: You just seem so...comfortable. I assume you have met some of the
+      inhabitants of the area.
+    Position: {x: 803, y: 265}
+  - Guid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
+    DialogueText: You seem to be performing well in your new position.
+    Position: {x: 221, y: 187}
+  - Guid: cae9db46-d03d-42a1-9bab-8e21dda6bd37
+    DialogueText: Ah. Including the one in the hat and jacket?
+    Position: {x: 1589, y: 296}
+  - Guid: 7b68be2f-a626-47b8-9b7d-30216e5c9ab3
+    DialogueText: Ah. Including the one in the hat and jacket?
+    Position: {x: 1586, y: 40}
+  - Guid: ca6b2415-c49f-4675-a8bb-ae002e3cbe28
+    DialogueText: She seems to always be asking a lot of questions. I hope she does
+      not make you uncomfortable
+    Position: {x: 2104, y: 318}
+  - Guid: c389187e-9acf-4be6-ad2c-287c0b977639
+    DialogueText: She seemed to be asking a lot of questions. I hope she did not
+      make you uncomfortable.
+    Position: {x: 2107, y: 72}
+  - Guid: 5d3f3b91-3918-4f33-9bec-92f82701601b
+    DialogueText: That may be, but if she made you leave this position, I would be
+      quite sad.
+    Position: {x: 3025, y: 104}
+  - Guid: 3bcbd005-1e22-43c5-a78c-54242a3f4a78
+    DialogueText: Ah, yes. Very good. I would hate to see you leave this position.
+    Position: {x: 3031, y: 327}
+  - Guid: ff82e96e-4c07-4069-98f4-cf4ed840e4ec
+    DialogueText: I live very close by and know many of those who visit this place.
+    Position: {x: 3916, y: 108}
+  - Guid: 61f856b6-5d2d-4d8c-b0d5-75bb3265dfc5
+    DialogueText: She is known to intrude on others' privacy. I understand that can
+      be an insult here.
+    Position: {x: 3921, y: 356}
+  - Guid: 3baee4a2-98da-4da7-9d00-69befc700ee1
+    DialogueText: I do not mean to offend you. She is just known to intrude on others'
+      privacy and many in this area do not like that.
+    Position: {x: 4725, y: 35}
+  - Guid: 2d196935-3186-4501-ad07-e6d02fc053cc
+    DialogueText: She is known to intrude on others' privacy. I understand that can
+      be an insult here.
+    Position: {x: 4744, y: 197}
+  - Guid: 1f7b85b3-3800-425e-b137-7cc9c163d613
+    DialogueText: "I admire your confidence. It has occured to me that I have never
+      given you my name. You may call me Alexander Meg\xE1los."
+    Position: {x: 5781, y: 215}
+  - Guid: c7f8ea91-4adc-48bd-bbc8-6e1734bfd7ab
+    DialogueText: "I wonder if that is all she wanted to know. It has occured to
+      me that I have never given you my name. You may call me Alexander Meg\xE1los."
+    Position: {x: 5779, y: 416}
+  - Guid: b282278c-042a-4175-bdc9-a2e529791301
+    DialogueText: Thank you for this productive meeting. I look forward to our next
+      one.
+    Position: {x: 6843, y: 231}
+  - Guid: e78381f6-357c-4ea8-80c6-3b5afb3b60da
+    DialogueText: +0
+    Position: {x: 7492, y: 374}
+  - Guid: 17018861-55db-45c1-bc1c-0ffc4e293ddf
+    DialogueText: Thank you for this productive meeting. I look forward to our next
+      one.
+    Position: {x: 6846, y: 422}
+  ExposedProperties: []
+  CommentBlockData: []

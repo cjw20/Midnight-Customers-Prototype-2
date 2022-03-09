@@ -23,20 +23,32 @@ public class CustomerManager : MonoBehaviour
     [Tooltip("List of the customers currently in the store.")]
     List<GameObject> customersInStore = new List<GameObject>();
 
+    [SerializeField] EndingManager endingManager;
+
     void Awake()
     {
         if(GameControl.control.loadingGame == false)
         {
-            OnLoadGame(0); //call this from game control later, only here to keep game from breaking while loading is implemented
+            OnLoadGame(0, new List<int>(0)); //call this from game control later, only here to keep game from breaking while loading is implemented
         }
         
     }
 
-    public void OnLoadGame(int progress)
+    public void OnLoadGame(int progress, List<int> individualProg)
     {
         arrayPos = progress;
+        if (GameControl.control.loadingGame)
+        {
+            int i = 0;
+            foreach (GameObject customer in customerList)
+            {
+                customer.GetComponent<CustomerInfo>().conversationProgress = individualProg[i];
+                i++;
+            }
+        }
         spawning = true;
         LoadCustomer(customers[arrayPos]);
+        
     }
     public void LoadCustomer(GameObject customer)
     {
@@ -54,7 +66,7 @@ public class CustomerManager : MonoBehaviour
         if(arrayPos >= customers.Length)
         {
             spawning = false; //so spawning stops happening only for gdex build
-           // arrayPos = 0;
+            endingManager.StartEnding();
         }
     }
 

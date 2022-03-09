@@ -1,0 +1,136 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
+  m_Name: N-Qanon
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: 2982015f-baaa-4b61-a626-dc06b9d75e5d
+    PortName: Next
+    TargetNodeGuid: 1164aa3e-04a7-4f2a-a6d4-6419f4b30cf3
+  - BaseNodeGuid: 1164aa3e-04a7-4f2a-a6d4-6419f4b30cf3
+    PortName: Do I seem worried?
+    TargetNodeGuid: 29a55f22-0fa6-434d-b251-9efad93e0de1
+  - BaseNodeGuid: 1164aa3e-04a7-4f2a-a6d4-6419f4b30cf3
+    PortName: Revolution?
+    TargetNodeGuid: d1984a11-9716-4c89-b4d0-c87b5b56fe8d
+  - BaseNodeGuid: 1164aa3e-04a7-4f2a-a6d4-6419f4b30cf3
+    PortName: ...
+    TargetNodeGuid: d1984a11-9716-4c89-b4d0-c87b5b56fe8d
+  - BaseNodeGuid: 29a55f22-0fa6-434d-b251-9efad93e0de1
+    PortName: How do you know?
+    TargetNodeGuid: f22d8c87-dd2f-4c96-868f-944cb77dfd7e
+  - BaseNodeGuid: 29a55f22-0fa6-434d-b251-9efad93e0de1
+    PortName: I doubt that.
+    TargetNodeGuid: f22d8c87-dd2f-4c96-868f-944cb77dfd7e
+  - BaseNodeGuid: 29a55f22-0fa6-434d-b251-9efad93e0de1
+    PortName: ...
+    TargetNodeGuid: f22d8c87-dd2f-4c96-868f-944cb77dfd7e
+  - BaseNodeGuid: d1984a11-9716-4c89-b4d0-c87b5b56fe8d
+    PortName: How do you know?
+    TargetNodeGuid: f22d8c87-dd2f-4c96-868f-944cb77dfd7e
+  - BaseNodeGuid: d1984a11-9716-4c89-b4d0-c87b5b56fe8d
+    PortName: I doubt that.
+    TargetNodeGuid: f22d8c87-dd2f-4c96-868f-944cb77dfd7e
+  - BaseNodeGuid: d1984a11-9716-4c89-b4d0-c87b5b56fe8d
+    PortName: ...
+    TargetNodeGuid: f22d8c87-dd2f-4c96-868f-944cb77dfd7e
+  - BaseNodeGuid: f22d8c87-dd2f-4c96-868f-944cb77dfd7e
+    PortName: That's a dumb conspiracy.
+    TargetNodeGuid: 270dbef3-3d26-4ebe-a855-f7e65dfa7d90
+  - BaseNodeGuid: f22d8c87-dd2f-4c96-868f-944cb77dfd7e
+    PortName: Reports? Who reported this?
+    TargetNodeGuid: abe19b87-c6f0-4036-a7a1-c75095760e65
+  - BaseNodeGuid: f22d8c87-dd2f-4c96-868f-944cb77dfd7e
+    PortName: ...
+    TargetNodeGuid: 270dbef3-3d26-4ebe-a855-f7e65dfa7d90
+  - BaseNodeGuid: 270dbef3-3d26-4ebe-a855-f7e65dfa7d90
+    PortName: What communists?
+    TargetNodeGuid: 807780ed-2bd7-470c-a7e0-6cd48de3bc0c
+  - BaseNodeGuid: 270dbef3-3d26-4ebe-a855-f7e65dfa7d90
+    PortName: Sheep? I'm just a clerk.
+    TargetNodeGuid: 9dade9a1-699c-4b83-9c60-0f271d9f4123
+  - BaseNodeGuid: 270dbef3-3d26-4ebe-a855-f7e65dfa7d90
+    PortName: ...
+    TargetNodeGuid: 807780ed-2bd7-470c-a7e0-6cd48de3bc0c
+  - BaseNodeGuid: abe19b87-c6f0-4036-a7a1-c75095760e65
+    PortName: Sheep? I'm just a clerk.
+    TargetNodeGuid: 9dade9a1-699c-4b83-9c60-0f271d9f4123
+  - BaseNodeGuid: abe19b87-c6f0-4036-a7a1-c75095760e65
+    PortName: What communists?
+    TargetNodeGuid: 807780ed-2bd7-470c-a7e0-6cd48de3bc0c
+  - BaseNodeGuid: abe19b87-c6f0-4036-a7a1-c75095760e65
+    PortName: ...
+    TargetNodeGuid: 807780ed-2bd7-470c-a7e0-6cd48de3bc0c
+  - BaseNodeGuid: 9dade9a1-699c-4b83-9c60-0f271d9f4123
+    PortName: I sure feel protected.
+    TargetNodeGuid: 99e6a910-4a5e-480f-b760-94e716c9a89b
+  - BaseNodeGuid: 9dade9a1-699c-4b83-9c60-0f271d9f4123
+    PortName: You're an upsetting person.
+    TargetNodeGuid: 4560e072-4ec0-4b3a-a7b1-425c3febc4a7
+  - BaseNodeGuid: 9dade9a1-699c-4b83-9c60-0f271d9f4123
+    PortName: ...
+    TargetNodeGuid: 99e6a910-4a5e-480f-b760-94e716c9a89b
+  - BaseNodeGuid: 807780ed-2bd7-470c-a7e0-6cd48de3bc0c
+    PortName: I sure feel protected.
+    TargetNodeGuid: 99e6a910-4a5e-480f-b760-94e716c9a89b
+  - BaseNodeGuid: 807780ed-2bd7-470c-a7e0-6cd48de3bc0c
+    PortName: You're an upsetting person.
+    TargetNodeGuid: 4560e072-4ec0-4b3a-a7b1-425c3febc4a7
+  - BaseNodeGuid: 807780ed-2bd7-470c-a7e0-6cd48de3bc0c
+    PortName: ...
+    TargetNodeGuid: 99e6a910-4a5e-480f-b760-94e716c9a89b
+  DialogueNodeData:
+  - Guid: 1164aa3e-04a7-4f2a-a6d4-6419f4b30cf3
+    DialogueText: Don't worry, the revolution is coming soon.
+    Position: {x: 198, y: 199}
+  - Guid: 29a55f22-0fa6-434d-b251-9efad93e0de1
+    DialogueText: You should be. There's reports that the military is going to rise
+      up and take over the government after the recent election.
+    Position: {x: 614, y: 167}
+  - Guid: d1984a11-9716-4c89-b4d0-c87b5b56fe8d
+    DialogueText: There's reports that the military is going to rise up and take
+      over the government after the recent election.
+    Position: {x: 616, y: 322}
+  - Guid: f22d8c87-dd2f-4c96-868f-944cb77dfd7e
+    DialogueText: There's reports of the navy returning to the coasts and the national
+      guard is on stand by. We'll be living under martial law soon enough. I just
+      hope they spare the good ones like myself.
+    Position: {x: 1447, y: 257}
+  - Guid: 270dbef3-3d26-4ebe-a855-f7e65dfa7d90
+    DialogueText: You can't sit and be a sheep and believe in what the left tells
+      you all you want. I'll be busy preparing to protect my family from the communists.
+    Position: {x: 2625, y: 344}
+  - Guid: abe19b87-c6f0-4036-a7a1-c75095760e65
+    DialogueText: People like myself that want to stand up and fight for this country.
+      Be a sheep all you want, but I'm fully prepared to protect my family from any
+      communist uprising.
+    Position: {x: 2630, y: 188}
+  - Guid: 9dade9a1-699c-4b83-9c60-0f271d9f4123
+    DialogueText: You're letting the left get in your head. All the colored hair
+      and SJW bullshit agenda. This used to be a good country. It's up to the god-fearing
+      people, like myself, to protect good family values.
+    Position: {x: 3704, y: 190}
+  - Guid: 807780ed-2bd7-470c-a7e0-6cd48de3bc0c
+    DialogueText: They're everywhere! They're in the media. They're in the government.
+      Hell, they're our neighbors. It's up to the god-fearing people, like myself,
+      to protect good family values.
+    Position: {x: 3702, y: 353}
+  - Guid: 4560e072-4ec0-4b3a-a7b1-425c3febc4a7
+    DialogueText: What are you gonna do? Cancel me? You and the woke mob are exactly
+      what's wrong with this country.
+    Position: {x: 4949, y: 337}
+  - Guid: 99e6a910-4a5e-480f-b760-94e716c9a89b
+    DialogueText: Judge me me all you want, but don't come crying to me when the
+      woke mob comes for you next.
+    Position: {x: 4949, y: 192}
+  ExposedProperties: []
+  CommentBlockData: []

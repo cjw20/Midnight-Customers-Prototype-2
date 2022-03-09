@@ -18,7 +18,6 @@ public class StockingGame : MonoBehaviour
     public SpriteRenderer[] prestocked;
     Sprite selected;
     ItemBox childBox;
-    
 
     void Start()
     {
@@ -27,7 +26,7 @@ public class StockingGame : MonoBehaviour
         int i = Random.Range(0, sprites.Length - 1);
         selected = sprites[i];
         childBox = GetComponentInChildren<ItemBox>();
-        childBox.UpdateItems(selected);
+        childBox.UpdateItems(selected, i);
         prestocked = transform.GetChild(4).GetComponentsInChildren<SpriteRenderer>();
         foreach(SpriteRenderer sr in prestocked){
             sr.sprite = selected;

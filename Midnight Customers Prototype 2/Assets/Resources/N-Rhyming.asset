@@ -1,0 +1,144 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
+  m_Name: N-Rhyming
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: 6deb90f8-d5eb-472d-886a-257022672e5c
+    PortName: Next
+    TargetNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
+  - BaseNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
+    PortName: 'Did you find everyhting okay?    '
+    TargetNodeGuid: a2909258-7096-44d1-88de-3c6d081630f9
+  - BaseNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
+    PortName: What's up?
+    TargetNodeGuid: a2909258-7096-44d1-88de-3c6d081630f9
+  - BaseNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
+    PortName: ...
+    TargetNodeGuid: a2909258-7096-44d1-88de-3c6d081630f9
+  - BaseNodeGuid: a2909258-7096-44d1-88de-3c6d081630f9
+    PortName: I won't be coy. We have milk, but not soy.
+    TargetNodeGuid: 11f06e51-9cbb-4010-bfae-02cc64731475
+  - BaseNodeGuid: a2909258-7096-44d1-88de-3c6d081630f9
+    PortName: Are you rhyming?
+    TargetNodeGuid: 5744ae72-905d-4e76-a97d-b74d4cb6ad1e
+  - BaseNodeGuid: a2909258-7096-44d1-88de-3c6d081630f9
+    PortName: ...
+    TargetNodeGuid: 3f78f82a-86f8-4ece-88e1-045d5f74bac8
+  - BaseNodeGuid: 5744ae72-905d-4e76-a97d-b74d4cb6ad1e
+    PortName: Would you like coffee? Maybe soda, sugar free?
+    TargetNodeGuid: ef166213-5d5c-4ec9-a34f-96c9829918a2
+  - BaseNodeGuid: 5744ae72-905d-4e76-a97d-b74d4cb6ad1e
+    PortName: I'm just confused
+    TargetNodeGuid: ef166213-5d5c-4ec9-a34f-96c9829918a2
+  - BaseNodeGuid: 5744ae72-905d-4e76-a97d-b74d4cb6ad1e
+    PortName: ...
+    TargetNodeGuid: ef166213-5d5c-4ec9-a34f-96c9829918a2
+  - BaseNodeGuid: 11f06e51-9cbb-4010-bfae-02cc64731475
+    PortName: So, are you a poet?
+    TargetNodeGuid: ef166213-5d5c-4ec9-a34f-96c9829918a2
+  - BaseNodeGuid: 11f06e51-9cbb-4010-bfae-02cc64731475
+    PortName: ...
+    TargetNodeGuid: ef166213-5d5c-4ec9-a34f-96c9829918a2
+  - BaseNodeGuid: 11f06e51-9cbb-4010-bfae-02cc64731475
+    PortName: Would you like coffee? Maybe soda, sugar free?
+    TargetNodeGuid: ef166213-5d5c-4ec9-a34f-96c9829918a2
+  - BaseNodeGuid: 3f78f82a-86f8-4ece-88e1-045d5f74bac8
+    PortName: Would you like coffee? Maybe soda, sugar free?
+    TargetNodeGuid: ef166213-5d5c-4ec9-a34f-96c9829918a2
+  - BaseNodeGuid: 3f78f82a-86f8-4ece-88e1-045d5f74bac8
+    PortName: I'm just confused
+    TargetNodeGuid: ef166213-5d5c-4ec9-a34f-96c9829918a2
+  - BaseNodeGuid: 3f78f82a-86f8-4ece-88e1-045d5f74bac8
+    PortName: ...
+    TargetNodeGuid: ef166213-5d5c-4ec9-a34f-96c9829918a2
+  - BaseNodeGuid: ef166213-5d5c-4ec9-a34f-96c9829918a2
+    PortName: You're crying over milk?
+    TargetNodeGuid: fb94dc00-fe6c-49d4-bb26-d91faa4a12bf
+  - BaseNodeGuid: ef166213-5d5c-4ec9-a34f-96c9829918a2
+    PortName: For that I apologize. It's a dream I can't help you realize.
+    TargetNodeGuid: 0e4c11d3-dbd0-45ff-99b8-f4debcb04911
+  - BaseNodeGuid: ef166213-5d5c-4ec9-a34f-96c9829918a2
+    PortName: ...
+    TargetNodeGuid: e18fcd34-9537-4108-ac13-c0f26c3e3513
+  - BaseNodeGuid: 0e4c11d3-dbd0-45ff-99b8-f4debcb04911
+    PortName: I wish you luck. May your night not suck.
+    TargetNodeGuid: 6e30b178-ef01-472f-a1e5-ea0224e7bd18
+  - BaseNodeGuid: 0e4c11d3-dbd0-45ff-99b8-f4debcb04911
+    PortName: Alrighty then. Goodnight.
+    TargetNodeGuid: 6e30b178-ef01-472f-a1e5-ea0224e7bd18
+  - BaseNodeGuid: 0e4c11d3-dbd0-45ff-99b8-f4debcb04911
+    PortName: ...
+    TargetNodeGuid: 6e30b178-ef01-472f-a1e5-ea0224e7bd18
+  - BaseNodeGuid: e18fcd34-9537-4108-ac13-c0f26c3e3513
+    PortName: I wish you luck. May your night not suck.
+    TargetNodeGuid: 6e30b178-ef01-472f-a1e5-ea0224e7bd18
+  - BaseNodeGuid: e18fcd34-9537-4108-ac13-c0f26c3e3513
+    PortName: Alrighty then. Goodnight.
+    TargetNodeGuid: 6e30b178-ef01-472f-a1e5-ea0224e7bd18
+  - BaseNodeGuid: e18fcd34-9537-4108-ac13-c0f26c3e3513
+    PortName: ...
+    TargetNodeGuid: 6e30b178-ef01-472f-a1e5-ea0224e7bd18
+  - BaseNodeGuid: fb94dc00-fe6c-49d4-bb26-d91faa4a12bf
+    PortName: I wish you luck. May your night not suck.
+    TargetNodeGuid: 6e30b178-ef01-472f-a1e5-ea0224e7bd18
+  - BaseNodeGuid: fb94dc00-fe6c-49d4-bb26-d91faa4a12bf
+    PortName: Alrighty then. Goodnight.
+    TargetNodeGuid: 6e30b178-ef01-472f-a1e5-ea0224e7bd18
+  - BaseNodeGuid: fb94dc00-fe6c-49d4-bb26-d91faa4a12bf
+    PortName: ...
+    TargetNodeGuid: 6e30b178-ef01-472f-a1e5-ea0224e7bd18
+  DialogueNodeData:
+  - Guid: a2909258-7096-44d1-88de-3c6d081630f9
+    DialogueText: I'm experiencing a bought of dairy sobriety. I'd like to purchase
+      milk of the soy variety.
+    Position: {x: 684, y: 179}
+  - Guid: 5744ae72-905d-4e76-a97d-b74d4cb6ad1e
+    DialogueText: I do not know what you mean. My language is clear and clean. But
+      I can't fine the milk anywhere. No soy to be seen and it is not fair.
+    Position: {x: 1356, y: 248}
+  - Guid: 11f06e51-9cbb-4010-bfae-02cc64731475
+    DialogueText: No, no this simply cannot be. I just wish to drink my favorite
+      milk, you see?
+    Position: {x: 1382, y: 85}
+  - Guid: 3f78f82a-86f8-4ece-88e1-045d5f74bac8
+    DialogueText: Your silence is noted for you don't seem very devoted. I can't
+      fine the milk anywhere. No soy to be seen and it is not fair.
+    Position: {x: 1353, y: 414}
+  - Guid: ef166213-5d5c-4ec9-a34f-96c9829918a2
+    DialogueText: For nothing else do I truly yearn. I traveled here when my thirst
+      brought concern. I began searching for one drink. Now, I am afraid my heart
+      has begun to sink
+    Position: {x: 2333, y: 246}
+  - Guid: 0e4c11d3-dbd0-45ff-99b8-f4debcb04911
+    DialogueText: It is another tragic verse in the song of a milkless man. I will
+      just have to check every store I can. To drink milk under the stars, my friend?
+      It's something that will cause my heart to mend.
+    Position: {x: 3428, y: 77}
+  - Guid: e18fcd34-9537-4108-ac13-c0f26c3e3513
+    DialogueText: You silence cuts through the air. Have you nothing to say to my
+      despair? My heart aches, you know this. I will never feel Soy Milk's gentle
+      kiss. I will say farewell. You're nothing but a neerdowell.
+    Position: {x: 3433, y: 463}
+  - Guid: 6e30b178-ef01-472f-a1e5-ea0224e7bd18
+    DialogueText: +0
+    Position: {x: 4932, y: 289}
+  - Guid: fb94dc00-fe6c-49d4-bb26-d91faa4a12bf
+    DialogueText: It is bad enough my heart has been broken. Now I hear all this
+      judgement you have spoken. I only wished to drink under the morning sun. Now
+      I depart empty-handed, I hope it was worth your fun.
+    Position: {x: 3429, y: 273}
+  - Guid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
+    DialogueText: Hello there, dear clerk. I can see you are hard at work.
+    Position: {x: 218, y: 179}
+  ExposedProperties: []
+  CommentBlockData: []
