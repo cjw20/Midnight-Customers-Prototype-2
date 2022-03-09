@@ -35,17 +35,18 @@ public class StockingItem : MonoBehaviour
             {
                 // Play the candybar sound
                 soundManager.PlayChipsUpSound();
-                // REPLACE WITH NEW SOUND
+                // soundManager.PlayCandyUpSound();
             }
             else if (itemType == 5)
             {
                 // Play carfluidbottle sound
                 soundManager.PlayWaterBottleUpSound();
-                // REPLACE WITH NEW SOUND
+                // soundManager.PlayCarFluidUpSound();
             }
             else if (itemType == 6)
             {
                 // Play charger sound
+                // soundManager.PlayChargerUpSound();
             }
             else if (itemType == 7 || itemType == 8 || itemType == 9)
             {
@@ -65,22 +66,27 @@ public class StockingItem : MonoBehaviour
             else if (itemType == 14 || itemType == 15 || itemType == 16)
             {
                 // Play fruit sound
+                // soundManager.PlayFruitUpSound();
             }
             else if (itemType == 17)
             {
                 // Play gasoline sound
+                // soundManager.PlayGasCanUpSound();
             }
             else if (itemType == 18)
             {
                 // Play nacho sound
+                // soundManager.PlayNachosUpSound();
             }
             else if (itemType == 19 || itemType == 20)
             {
                 // Play salad sound
+                // soundManager.PlayNachosUpSound();
             }
             else if (itemType == 21 || itemType == 22)
             {
                 // Play sandwich sound
+                // soundManager.PlaySaladUpSound();
             }
             else if (itemType == 23 || itemType == 24 || itemType == 25)
             {
@@ -90,6 +96,7 @@ public class StockingItem : MonoBehaviour
             else if (itemType == 26)
             {
                 // Play soda cup sound
+                // soundManager.PlaySodaCupUpSound();
             }
             else if (itemType == 27)
             {
@@ -140,17 +147,18 @@ public class StockingItem : MonoBehaviour
             {
                 // Play the candybar sound
                 soundManager.PlayChipsDownSound();
-                // REPLACE WITH NEW SOUND
+                // soundManager.PlayCandyDownSound();
             }
             else if (itemType == 5)
             {
                 // Play carfluidbottle sound
                 soundManager.PlayWaterBottleDownSound();
-                // REPLACE WITH NEW SOUND
+                // soundManager.PlayCarFluidDownSound();
             }
             else if (itemType == 6)
             {
                 // Play charger sound
+                // soundManager.PlayChargerDownSound();
             }
             else if (itemType == 7 || itemType == 8 || itemType == 9)
             {
@@ -170,22 +178,27 @@ public class StockingItem : MonoBehaviour
             else if (itemType == 14 || itemType == 15 || itemType == 16)
             {
                 // Play fruit sound
+                // soundManager.PlayFruitDownSound();
             }
             else if (itemType == 17)
             {
                 // Play gasoline sound
+                // soundManager.PlayGasCanDownSound();
             }
             else if (itemType == 18)
             {
                 // Play nacho sound
+                // soundManager.PlayNachosDownSound();
             }
             else if (itemType == 19 || itemType == 20)
             {
                 // Play salad sound
+                // soundManager.PlaySaladDownSound();
             }
             else if (itemType == 21 || itemType == 22)
             {
                 // Play sandwich sound
+                // soundManager.PlaySaladDownSound();
             }
             else if (itemType == 23 || itemType == 24 || itemType == 25)
             {
@@ -195,6 +208,7 @@ public class StockingItem : MonoBehaviour
             else if (itemType == 26)
             {
                 // Play soda cup sound
+                // soundManager.PlaySodaCupDownSound();
             }
             else if (itemType == 27)
             {
