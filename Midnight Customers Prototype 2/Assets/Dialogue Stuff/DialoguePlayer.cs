@@ -137,10 +137,10 @@ public class DialoguePlayer : MonoBehaviour
                 button.transform.position = buttonPositions[buttonNumber].position;
                 button.GetComponentInChildren<Text>().text = ProcessProperties(choice.PortName);
                 button.onClick.AddListener(() => ProceedToNarrative(choice.TargetNodeGuid));
-                
+                buttonNumber++;  //moved this here in hopes it will stop breaking when ... isnt last option
             }
 
-            buttonNumber++;
+           
 
             if (ProcessProperties(choice.PortName) == "...")
             {                
