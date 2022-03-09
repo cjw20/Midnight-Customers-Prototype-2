@@ -22,17 +22,14 @@ public class JournalDisplay : MonoBehaviour
     [Tooltip("Reference to the SoundManager.")]
     [SerializeField] SoundManager soundManager;
 
-    public void OpenJournal()
+    public void OpenJournal(int day)
     {
+        journalProgress = day-1;
+        if (journalProgress >= 19) return;
         soundManager.PlayPageTurnSound();
         inJournal = true;
         journal.SetActive(true);
         displayText.text = journalText[journalProgress];
-        journalProgress++;
-        if(journalProgress >= journalText.Count)
-        {
-            journalProgress--;
-        }
     }
 
     public void CloseJournal()

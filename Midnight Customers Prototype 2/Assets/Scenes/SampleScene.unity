@@ -140,7 +140,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &10691446
 Transform:
   m_ObjectHideFlags: 0
@@ -1648,7 +1648,7 @@ RectTransform:
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0.45435, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -4126,81 +4126,73 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   journalText:
-  - "I came hither to this new world in pursuit of peace and prosperity. Howevere,
-    the king imposes his will on us, nowe persons hath been going missing on the
-    night fishing travels. God as our witness, we told \u2018em not to go out in
-    as twas too dang\u2019rous, especially aftere we hath kept finding the traps
-    destroyed, howev\u2019r those God fearing folks insisted we needed the food.
-    I hath hope that they are well, and if they hath perished, God hath welcomed
-    \u2018em into heaven."
-  - "We hath found who took our fellow men and destroyed the traps. The strange lyte
-    appearing in the lake, w\u2019re fishfolk. A meeting hath been set, God be willing,
-    our missing men shalt return, and peace shall prosper; "
-  - The meeting concluded and peace shalt flourish I think, the fishfolk gave books
-    that hath be in a language not known to us, they accepted our gift of land crops.
-    For now, we shalt hath peace, I pray to God it lasts and no more life is lost.
-  - "The church hath begun hunting witches and cleansing the village, God rest th\u2019se
-    souls who hath abandoned your guidance for witchcraft. Thy greed for power must
-    be great to indulge in the dark arts gifted from the Devil. Twas said we are
-    going to burne \u2018em in the field out of town in pursuit of riding this world
-    of thy demon spirits.  "
-  - "The church came hither and took her, as I watched. My wyf is no witch, she is
-    a God-loving woman. Twas said she was seene reading one of the books that the
-    fishfolk gave us, and twas done in secrecy. I hath no thoughts, how God bid this
-    to happen, he allowed one of his faithful servants to be burned. My despair flows
-    through me, like the blood in my veins, similar to the pain and anger hath done,
-    while they held me back and forced me to watch my beautiful wyf burn. I stay\u2019d
-    long aftere the flames began to smolder, long enough to see the yellow eyes in
-    the woods. Eyes that seemed to look at me with pity. I did not pray to God tonight
-    and hath no will to for now."
-  - "The town hath been building a church on the spot they burned all of the women
-    who hath been deemed witches. I hath been thinking, w\u2019er any of \u2018em
-    witches? My opinion, tis no use, God hath left us, and allowed us to do terrible
-    things to his creations. It hath been three months since I lost my wyf to the
-    false accusations of the holy man. I hath not prayed to the God who beseeched
-    his servants. I sit hither and watch the men, who allowed thy wyves to burne
-    with no retaliation as they build this church from the blackened ground up. Why
-    do they think God will cherish this place after so much death in his name has
-    happened."
-  - 'A man came to me in the evening, we watched as an older man tooketh two kids
-    into the woods. We saw only he came back. The man offered me a dream I never
-    thought I would hear. He offered my wyf back, all I hath do twas come back to
-    this hither spot when the church was built. '
-  - "A letter came to me the day the church was built, I shall come to the church
-    when the moon was at the highest point in the sky. When I met the man at the
-    church, I seen thy hatch to the cellar twas open. I witnessed the torchlyght
-    from a cave inside the cellar  and heard chanting.  \tTh\u2019re was a sort of
-    ritual happening, and they welcomed me with open arms. I was tolde by the end
-    of the night, my wyf would be in my arms, all I had to do was join \u2018em in
-    the ritual. Tis unknown whether it was hope or spite for God for taking her,
-    I stay\u2019d and learn\u2019d the chant well into the night. "
-  - "My wyf tis in my arms. The body I saw burne was taken into the ritual cave as
-    we chanted, and some spell twas done. Her screams as she came back to me w\u2019re
-    the same ones as she burned. I know not how her body returned to the beautiful
-    one I cherish, but I am glad to feel her in my arms. With thy promise of her
-    protection, I joined the group as I now know thine power they wield. My gratefulness
-    towards them, for what hath been done can never be enough. "
-  - It is said in order to be given my robe and ascend into the followers of Nyarlathotep,
-    I must collect a sacrifice. Tis not known whether twas revenge or my newfound
-    disbelief in God,I hunted down thy priest within town and took him to the cave.
-    High Leader smiled as I took the priest into the cave middle and simply took
-    him from thine hands. Will God hate me and fate me to hell? I hath no care any
-    longer.
-  - 'As the Priest was sacrificed a flame began to consume thy room and spread. We
-    ran out of the church, all except the High Leader. As I looked back to see the
-    burning church I saw a demon-like form that scared me beyond my wits. The next
-    day I received a letter saying that I twas the new High Leader and that I hath
-    been nominated due to the fact, my ritual had caused a great deal of destruction
-    in the name of Nyarlathotep.  I hath much to learn, in order to not displease
-    my new God. '
-  - "This new worker of the gas station may be a problem with our ritual. I have
-    been around for so long and yet have never met someone like this. They are too
-    curious and are investigating too much into it. Why can\u2019t they be like the
-    last one and just be lazy and easy to take when the time is right. If they find
-    out the plans we have for them before we are ready the world will be doomed.
-    Even right now as they work the store, they seem to be contemplating what is
-    happening around them. When the time is right we will strike and our Lord will
-    be appeased. "
+  - "\u2026. Here we are god\u2019s faithful servants in the waters he created, which
+    are supposedly filled with a sea monster that eats ships whole\u2026..heard the
+    place we are going is different from that of the cities and villages we have
+    left in England\u2026.act of God\u2026. "
+  - "\u2026. Thank God we are finally here\u2026.so many people were there to greet
+    us\u2026\u2026John and Susan Williams\u2026..we were immediately told not to
+    wander off too far, especially alone\u2026.. waits for us to be alone\u2026.. "
+  - "\u2026.people here seem to do the same thing every day at the same time\u2026.a
+    fisherman for the village and now that there are more mouths to feed, they have
+    to stay out longer\u2026. God has a plan for me\u2026.house building\u2026...every
+    time we cut down a tree, during the night sounds of crying\u2026.yellow eyes
+    peered out of the dark\u2026. "
+  - "\u2026.The house has been finished\u2026.people have begun to disrupt their
+    routines\u2026.disappearance of some of the fishermen\u2026. traps come back
+    destroyed\u2026.fishermen have begun to refuse to go out at night\u2026.God is
+    punishing us.\u2026 "
+  - "\u2026.Fishermen have continued to disappear\u2026. John has gone missing\u2026.A
+    child has come back to tell of a friend\u2026.fish people came trudging out of
+    the water\u2026.fish people speak our language well\u2026.creating the images
+    of the horrors\u2026.  "
+  - "\u2026.treaty was signed\u2026.the depths of a place closer to Hell than I ever
+    want to be\u2026. no longer allowed fish in the lake\u2026.fish people have brought
+    texts and gifted them\u2026.showing the fish people our religion\u2026. God is
+    not the higher power they wish to worship\u2026. "
+  - "\u2026.Strange lights resembling that of a flame\u2026.luring people in and
+    causing people to disappear\u2026.recognized some of the symbols that are etched
+    onto the victims as runes\u2026.leading me through the darkest\u2026. "
+  - "\u2026.priest has stated that we have a witch coven\u2026.table covered in blood
+    in the center of the runes\u2026.found a witch\u2026.tied to a pyre\u2026.burns
+    then she is innocent, but if she does not burn she is indeed a witch\u2026.screams
+    of agony piercing the now dark woods\u2026. "
+  - "\u2026..half of the women of the village\u2026.they came and took her\u2026.
+    not a witch\u2026.field of pyres continues to grow\u2026.priest sets fire to
+    my wife's pyre\u2026.I watch her burn and her screams\u2026.question whether
+    God really does know the truth.,... "
+  - "\u2026.return to normal\u2026.hate the people of the town who encouraged this
+    act of murder\u2026.priest will be punished\u2026.confused with the reason that
+    God\u2026.How can I trust a higher power\u2026.every one of those women was innocent\u2026.lost
+    all faith in God\u2026. "
+  - "\u2026.cleanse the area\u2026.begun to build a church\u2026.atone for the sins
+    of the village\u2019s past, present, and future \u2026.sounds of mourning\u2026.yellow
+    eyes peer back \u2026.get my revenge\u2026.The priest will pay\u2026."
+  - "\u2026.fell to his death\u2026.some force knows what has been done\u2026.read
+    through the book\u2026.lightning striking\u2026.red light comes from the woods\u2026.church
+    burns\u2026. flames roar\u2026. "
+  - "\u2026.church is rebuilt\u2026.built for the wrong reasons\u2026.found a letter\u2026.a
+    woman is standing in a dimly lit patch\u2026.would do anything to bring my love
+    back to me\u2026. "
+  - "\u2026.list of instructions\u2026.the field\u2026.head towards the church\u2026.church
+    stands there as if mocking me\u2026.hear chanting from within\u2026.decorated
+    with the same runes from the book\u2026. guides me to follow him\u2026. "
+  - "\u2026.flash in time\u2026.glow the red light\u2026.emains of a burned woman
+    are brought and set in the center \u2026.hearing the screams\u2026. God did not
+    do this and nor would he ever\u2026.bring him to us\u2026. "
+  - "\u2026.only person in the entire world\u2026.payment for bringing her back to
+    me\u2026.church for a confession\u2026.his confusion only growing\u2026. the
+    horror on his face\u2026.return the next night\u2026. "
+  - "\u2026.given robes and told to put them on\u2026.sense of pain\u2026.feeling
+    of revenge\u2026.light draining from his eyes\u2026.monstrous growl-like sound\u2026.deepest
+    desire has been fulfilled\u2026. "
+  - "\u2026.quite a few years\u2026.grown close to the high priest\u2026.chosen me
+    to be his heir\u2026. sending the body to the next world\u2026.most important
+    job\u2026. "
+  - "\u2026.annual ritual must take place\u2026.my son comes forward\u2026. hear
+    a voice in my head\u2026.duties I must fulfill\u2026."
+  - "\u2026.notes of my ancestors\u2026.gas station clerk\u2026.dynasty of Maxwell\u2019s\u2026.
+    same voice that my family has been appeasing\u2026."
   journalProgress: 0
   inJournal: 0
   journal: {fileID: 350225325}
@@ -7680,7 +7672,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 1494467281
   m_SortingOrder: 10
   m_TargetDisplay: 0
@@ -13529,6 +13521,140 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1116137517}
   m_CullTransparentMesh: 1
+--- !u!1 &1116680064
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1116680065}
+  - component: {fileID: 1116680067}
+  - component: {fileID: 1116680066}
+  m_Layer: 0
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1116680065
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1116680064}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1699710760}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.00012207031, y: -0.0001449585}
+  m_SizeDelta: {x: 172.491, y: 54.046005}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1116680066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1116680064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Check ID
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 3070230528
+  m_fontColor: {r: 0, g: 0, b: 0, a: 0.7176471}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1116680067
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1116680064}
+  m_CullTransparentMesh: 1
 --- !u!1 &1132417674
 GameObject:
   m_ObjectHideFlags: 0
@@ -18141,85 +18267,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1422496775
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1422496776}
-  - component: {fileID: 1422496778}
-  - component: {fileID: 1422496777}
-  m_Layer: 0
-  m_Name: Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1422496776
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1422496775}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1699710760}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1422496777
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1422496775}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: Check ID
---- !u!222 &1422496778
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1422496775}
-  m_CullTransparentMesh: 1
 --- !u!1 &1424213947
 GameObject:
   m_ObjectHideFlags: 0
@@ -21474,8 +21521,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: b5010ff9d57a839409aeb4ccaeec0d15, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -21503,14 +21550,14 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1422496776}
+  - {fileID: 1116680065}
   m_Father: {fileID: 605432556}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -1732, y: 30}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -702.19995, y: -512.5}
+  m_SizeDelta: {x: 230, y: 100}
   m_Pivot: {x: 1, y: 0}
 --- !u!1 &1705264724
 GameObject:
@@ -29260,7 +29307,7 @@ RectTransform:
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0.45435, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
