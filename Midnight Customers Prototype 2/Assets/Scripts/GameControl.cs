@@ -13,6 +13,7 @@ public class GameControl : MonoBehaviour
     public int dayProg;
     [Tooltip("Customer progression.")]
     public int customerProg;
+    public List<int> individualProg;
     [Tooltip("Whether the game has been loaded from a previous save or not. (True when NOT a new game.)")]
     public bool loadingGame;
 
@@ -49,6 +50,7 @@ public class GameControl : MonoBehaviour
         SaveData dataToLoad = saveUtility.LoadGame(saveName);
         dayProg = dataToLoad.day;
         customerProg = dataToLoad.customerProgress;
+        individualProg = dataToLoad.individualProgress;
         LoadScene("SampleScene"); //load variables from save data once scene has loaded
     }
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
@@ -63,7 +65,7 @@ public class GameControl : MonoBehaviour
     }
     public void ContinueGame()
     {         
-        GameObject.FindObjectOfType<CustomerManager>().OnLoadGame(customerProg);
+        GameObject.FindObjectOfType<CustomerManager>().OnLoadGame(customerProg, individualProg);
         GameObject.FindObjectOfType<TimeManager>().OnLoadGame(dayProg);        
     }
     public void LoadScene(string sceneName)
