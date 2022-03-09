@@ -66,10 +66,10 @@ public class SoundManager : MonoBehaviour
     [SerializeField] AudioSource[] chargerPickUpSound;
     [Tooltip("Sounds of charger being put down.")]
     [SerializeField] AudioSource[] chargerPutDownSound;
-    [Tooltip("Sounds of cigs being picked up.")]
-    [SerializeField] AudioSource[] cigsPickUpSound;
-    [Tooltip("Sounds of cigs being put down.")]
-    [SerializeField] AudioSource[] cigsPutDownSound;
+    //[Tooltip("Sounds of cigs being picked up.")]
+    //[SerializeField] AudioSource[] cigsPickUpSound;
+    //[Tooltip("Sounds of cigs being put down.")]
+    //[SerializeField] AudioSource[] cigsPutDownSound;
     [Tooltip("Sounds of fruit being picked up.")]
     [SerializeField] AudioSource[] fruitPickUpSound;
     [Tooltip("Sounds of fruit being put down.")]
@@ -78,10 +78,10 @@ public class SoundManager : MonoBehaviour
     [SerializeField] AudioSource[] gasCanPickUpSound;
     [Tooltip("Sounds of gas can being put down.")]
     [SerializeField] AudioSource[] gasCanPutDownSound;
-    [Tooltip("Sounds of hot dog being picked up.")]
-    [SerializeField] AudioSource[] hotDogPickUpSound;
-    [Tooltip("Sounds of hot dog being put down.")]
-    [SerializeField] AudioSource[] hotDogPutDownSound;
+    //[Tooltip("Sounds of hot dog being picked up.")]
+    //[SerializeField] AudioSource[] hotDogPickUpSound;
+    //[Tooltip("Sounds of hot dog being put down.")]
+    //[SerializeField] AudioSource[] hotDogPutDownSound;
     [Tooltip("Sounds of ice cream being picked up.")]
     [SerializeField] AudioSource[] iceCreamPickUpSound;
     [Tooltip("Sounds of ice cream being put down.")]
