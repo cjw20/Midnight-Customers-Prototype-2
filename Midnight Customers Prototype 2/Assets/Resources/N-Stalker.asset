@@ -29,7 +29,7 @@ MonoBehaviour:
     PortName: If you two are so close, why don't you already have her number?
     TargetNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
   - BaseNodeGuid: 1281d269-c11f-48a1-8183-91f0875a904d
-    PortName: Sorry, sir, but that's against company policy.
+    PortName: Sorry, but that's against company policy.
     TargetNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
   - BaseNodeGuid: 1281d269-c11f-48a1-8183-91f0875a904d
     PortName: ...
@@ -38,7 +38,7 @@ MonoBehaviour:
     PortName: If you two are so close, why don't you already have her number?
     TargetNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
   - BaseNodeGuid: 650dc299-cb60-4f79-8a06-72233177f086
-    PortName: Sorry, sir, but that's against company policy.
+    PortName: Sorry, but that's against company policy.
     TargetNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
   - BaseNodeGuid: 650dc299-cb60-4f79-8a06-72233177f086
     PortName: ...
@@ -47,7 +47,7 @@ MonoBehaviour:
     PortName: If you two are so close, why don't you already have her number?
     TargetNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
   - BaseNodeGuid: 3d40753c-64da-4357-8c83-93f5344c57da
-    PortName: Sorry, sir, but that's against company policy.
+    PortName: Sorry, but that's against company policy.
     TargetNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
   - BaseNodeGuid: 3d40753c-64da-4357-8c83-93f5344c57da
     PortName: ...

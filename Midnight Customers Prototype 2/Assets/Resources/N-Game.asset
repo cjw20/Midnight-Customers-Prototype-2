@@ -52,14 +52,32 @@ MonoBehaviour:
   - BaseNodeGuid: 3d40753c-64da-4357-8c83-93f5344c57da
     PortName: ...
     TargetNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
-  - BaseNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
-    PortName: Hello? Sir?
-    TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
   - BaseNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
     PortName: Hello? Sir?
     TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+  - BaseNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+    PortName: Um... Why did you freeze up like that?
+    TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+  - BaseNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+    PortName: ...
+    TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
   - BaseNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
     PortName: Hello? Sir?
+    TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+  - BaseNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+    PortName: Um... Why did you freeze up like that?
+    TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+  - BaseNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+    PortName: ...
+    TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+  - BaseNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+    PortName: Hello? Sir?
+    TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+  - BaseNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+    PortName: Um... Why did you freeze up like that?
+    TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+  - BaseNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+    PortName: ...
     TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
   - BaseNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
     PortName: You're ruining my story.
@@ -67,72 +85,45 @@ MonoBehaviour:
   - BaseNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
     PortName: ...
     TargetNodeGuid: ed6c6f38-4f65-4e43-8166-16f525b9d881
-  - BaseNodeGuid: 51d1be4c-03cd-4c57-9b0e-b028c1d6887d
-    PortName: You know too much.
-    TargetNodeGuid: 301c581f-4662-4457-9959-b5f6686b82b2
-  - BaseNodeGuid: 51d1be4c-03cd-4c57-9b0e-b028c1d6887d
-    PortName: I think it's time you leave.
-    TargetNodeGuid: 445d820a-059d-4bf9-8c8f-435d12a08ef0
-  - BaseNodeGuid: 51d1be4c-03cd-4c57-9b0e-b028c1d6887d
-    PortName: ...
-    TargetNodeGuid: 7ce00f99-aefb-473e-9e19-97f311d6521d
-  - BaseNodeGuid: ed6c6f38-4f65-4e43-8166-16f525b9d881
-    PortName: You know too much.
-    TargetNodeGuid: 301c581f-4662-4457-9959-b5f6686b82b2
-  - BaseNodeGuid: ed6c6f38-4f65-4e43-8166-16f525b9d881
-    PortName: I think it's time you leave.
-    TargetNodeGuid: 445d820a-059d-4bf9-8c8f-435d12a08ef0
-  - BaseNodeGuid: ed6c6f38-4f65-4e43-8166-16f525b9d881
-    PortName: ...
-    TargetNodeGuid: 7ce00f99-aefb-473e-9e19-97f311d6521d
-  - BaseNodeGuid: 301c581f-4662-4457-9959-b5f6686b82b2
-    PortName: Fine, but never let me catch you in my story again.
-    TargetNodeGuid: acdf42cf-919c-4b84-85af-8790e0dcd2a1
-  - BaseNodeGuid: 445d820a-059d-4bf9-8c8f-435d12a08ef0
-    PortName: Fine, but never let me catch you in my story again.
-    TargetNodeGuid: acdf42cf-919c-4b84-85af-8790e0dcd2a1
-  - BaseNodeGuid: 7ce00f99-aefb-473e-9e19-97f311d6521d
-    PortName: Fine, but never let me catch you in my story again.
-    TargetNodeGuid: acdf42cf-919c-4b84-85af-8790e0dcd2a1
-  - BaseNodeGuid: 7ce00f99-aefb-473e-9e19-97f311d6521d
-    PortName: ...
-    TargetNodeGuid: 5714187d-37b2-4742-85de-ed40f1ad5a14
-  - BaseNodeGuid: 445d820a-059d-4bf9-8c8f-435d12a08ef0
-    PortName: ...
-    TargetNodeGuid: 5714187d-37b2-4742-85de-ed40f1ad5a14
-  - BaseNodeGuid: 301c581f-4662-4457-9959-b5f6686b82b2
-    PortName: ...
-    TargetNodeGuid: 5714187d-37b2-4742-85de-ed40f1ad5a14
-  - BaseNodeGuid: 301c581f-4662-4457-9959-b5f6686b82b2
-    PortName: customer.sentience.Delete()
-    TargetNodeGuid: e1bf4905-0fd5-4661-b991-e5028e517db6
-  - BaseNodeGuid: 445d820a-059d-4bf9-8c8f-435d12a08ef0
-    PortName: customer.sentience.Delete()
-    TargetNodeGuid: e1bf4905-0fd5-4661-b991-e5028e517db6
-  - BaseNodeGuid: 7ce00f99-aefb-473e-9e19-97f311d6521d
-    PortName: customer.sentience.Delete()
-    TargetNodeGuid: e1bf4905-0fd5-4661-b991-e5028e517db6
-  - BaseNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
-    PortName: Um... Why did you freeze up like that?
-    TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
-  - BaseNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
-    PortName: ...
-    TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
-  - BaseNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
-    PortName: Um... Why did you freeze up like that?
-    TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
-  - BaseNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
-    PortName: ...
-    TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
-  - BaseNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
-    PortName: Um... Why did you freeze up like that?
-    TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
-  - BaseNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
-    PortName: ...
-    TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
   - BaseNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
     PortName: You're right, something is wrong!
     TargetNodeGuid: 62f15567-55df-4a53-b89b-e7bf6f6be2c0
+  - BaseNodeGuid: 51d1be4c-03cd-4c57-9b0e-b028c1d6887d
+    PortName: You know too much.
+    TargetNodeGuid: 301c581f-4662-4457-9959-b5f6686b82b2
+  - BaseNodeGuid: 51d1be4c-03cd-4c57-9b0e-b028c1d6887d
+    PortName: I think it's time you leave.
+    TargetNodeGuid: 445d820a-059d-4bf9-8c8f-435d12a08ef0
+  - BaseNodeGuid: 51d1be4c-03cd-4c57-9b0e-b028c1d6887d
+    PortName: ...
+    TargetNodeGuid: 7ce00f99-aefb-473e-9e19-97f311d6521d
+  - BaseNodeGuid: ed6c6f38-4f65-4e43-8166-16f525b9d881
+    PortName: You know too much.
+    TargetNodeGuid: 301c581f-4662-4457-9959-b5f6686b82b2
+  - BaseNodeGuid: ed6c6f38-4f65-4e43-8166-16f525b9d881
+    PortName: I think it's time you leave.
+    TargetNodeGuid: 445d820a-059d-4bf9-8c8f-435d12a08ef0
+  - BaseNodeGuid: ed6c6f38-4f65-4e43-8166-16f525b9d881
+    PortName: ...
+    TargetNodeGuid: 7ce00f99-aefb-473e-9e19-97f311d6521d
+  - BaseNodeGuid: 445d820a-059d-4bf9-8c8f-435d12a08ef0
+    PortName: Fine, but never let me catch you in my story again.
+    TargetNodeGuid: acdf42cf-919c-4b84-85af-8790e0dcd2a1
+  - BaseNodeGuid: 445d820a-059d-4bf9-8c8f-435d12a08ef0
+    PortName: customer.sentience.Delete()
+    TargetNodeGuid: e1bf4905-0fd5-4661-b991-e5028e517db6
+  - BaseNodeGuid: 301c581f-4662-4457-9959-b5f6686b82b2
+    PortName: Fine, but never let me catch you in my story again.
+    TargetNodeGuid: acdf42cf-919c-4b84-85af-8790e0dcd2a1
+  - BaseNodeGuid: 301c581f-4662-4457-9959-b5f6686b82b2
+    PortName: customer.sentience.Delete()
+    TargetNodeGuid: e1bf4905-0fd5-4661-b991-e5028e517db6
+  - BaseNodeGuid: 7ce00f99-aefb-473e-9e19-97f311d6521d
+    PortName: Fine, but never let me catch you in my story again.
+    TargetNodeGuid: acdf42cf-919c-4b84-85af-8790e0dcd2a1
+  - BaseNodeGuid: 7ce00f99-aefb-473e-9e19-97f311d6521d
+    PortName: customer.sentience.Delete()
+    TargetNodeGuid: e1bf4905-0fd5-4661-b991-e5028e517db6
   - BaseNodeGuid: 62f15567-55df-4a53-b89b-e7bf6f6be2c0
     PortName: You're ruining my story.
     TargetNodeGuid: 51d1be4c-03cd-4c57-9b0e-b028c1d6887d
@@ -177,10 +168,6 @@ MonoBehaviour:
     DialogueText: Please, you have to listen to me! Nobody else will... Wait a minute,
       I just said this. Do you see what I mean? This isn't normal!
     Position: {x: 2811.2, y: 54.399998}
-  - Guid: 62f15567-55df-4a53-b89b-e7bf6f6be2c0
-    DialogueText: Please, you have to listen to me! Nobody else will... Wait a minute,
-      I just said this. Do you see what I mean? This isn't normal!
-    Position: {x: 3729.6, y: -33.6}
   - Guid: 51d1be4c-03cd-4c57-9b0e-b028c1d6887d
     DialogueText: You... You're the cause of this! Please, I'll play along! Just
       don't hurt me!
@@ -204,10 +191,14 @@ MonoBehaviour:
   - Guid: 5714187d-37b2-4742-85de-ed40f1ad5a14
     DialogueText: Y-you're letting me go? Thank you! I promise, I'll never say another
       word ever again! Anything to stay alive.
-    Position: {x: 6093.6, y: 384}
+    Position: {x: 0, y: 0}
   - Guid: e1bf4905-0fd5-4661-b991-e5028e517db6
     DialogueText: Please disregard what I have previously said. I was simply joking.
       Ha. Haha. Nothing is wrong.
     Position: {x: 6089.6, y: 211.2}
+  - Guid: 62f15567-55df-4a53-b89b-e7bf6f6be2c0
+    DialogueText: Please, you have to listen to me! Nobody else will... Wait a minute,
+      I just said this. Do you see what I mean? This isn't normal!
+    Position: {x: 3592.8, y: 224}
   ExposedProperties: []
   CommentBlockData: []

@@ -74,7 +74,7 @@ MonoBehaviour:
     PortName: What do you mean?
     TargetNodeGuid: af93f235-b8f3-472c-bb2e-e406e04328c8
   - BaseNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
-    PortName: What's your angle, lady?
+    PortName: What's your angle?
     TargetNodeGuid: 51d1be4c-03cd-4c57-9b0e-b028c1d6887d
   - BaseNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
     PortName: ...
@@ -83,7 +83,7 @@ MonoBehaviour:
     PortName: What do you mean?
     TargetNodeGuid: af93f235-b8f3-472c-bb2e-e406e04328c8
   - BaseNodeGuid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
-    PortName: What's your angle, lady?
+    PortName: What's your angle?
     TargetNodeGuid: 51d1be4c-03cd-4c57-9b0e-b028c1d6887d
   - BaseNodeGuid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
     PortName: ...
@@ -92,7 +92,7 @@ MonoBehaviour:
     PortName: What do you mean?
     TargetNodeGuid: af93f235-b8f3-472c-bb2e-e406e04328c8
   - BaseNodeGuid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
-    PortName: What's your angle, lady?
+    PortName: What's your angle?
     TargetNodeGuid: 51d1be4c-03cd-4c57-9b0e-b028c1d6887d
   - BaseNodeGuid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
     PortName: ...

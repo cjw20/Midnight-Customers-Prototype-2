@@ -70,47 +70,47 @@ MonoBehaviour:
   - BaseNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
     PortName: ...
     TargetNodeGuid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
-  - BaseNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
-    PortName: Have we met before?
-    TargetNodeGuid: af93f235-b8f3-472c-bb2e-e406e04328c8
-  - BaseNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
-    PortName: What's your problem?
-    TargetNodeGuid: 51d1be4c-03cd-4c57-9b0e-b028c1d6887d
-  - BaseNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
-    PortName: ...
-    TargetNodeGuid: ed6c6f38-4f65-4e43-8166-16f525b9d881
-  - BaseNodeGuid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
-    PortName: Have we met before?
-    TargetNodeGuid: af93f235-b8f3-472c-bb2e-e406e04328c8
-  - BaseNodeGuid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
-    PortName: What's your problem?
-    TargetNodeGuid: 51d1be4c-03cd-4c57-9b0e-b028c1d6887d
-  - BaseNodeGuid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
-    PortName: ...
-    TargetNodeGuid: ed6c6f38-4f65-4e43-8166-16f525b9d881
-  - BaseNodeGuid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
-    PortName: Have we met before?
-    TargetNodeGuid: af93f235-b8f3-472c-bb2e-e406e04328c8
-  - BaseNodeGuid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
-    PortName: What's your problem?
-    TargetNodeGuid: 51d1be4c-03cd-4c57-9b0e-b028c1d6887d
-  - BaseNodeGuid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
-    PortName: ...
-    TargetNodeGuid: ed6c6f38-4f65-4e43-8166-16f525b9d881
   - BaseNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
     PortName: N-no, that's fine. Really, there's no need!
     TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
   - BaseNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
-    PortName: YNo. I'm just fine by myself.ah, just fine.
+    PortName: No. I'm just fine by myself.
     TargetNodeGuid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
   - BaseNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
     PortName: ...
     TargetNodeGuid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
+  - BaseNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+    PortName: Have we met before?
+    TargetNodeGuid: af93f235-b8f3-472c-bb2e-e406e04328c8
+  - BaseNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+    PortName: What's your problem?
+    TargetNodeGuid: 51d1be4c-03cd-4c57-9b0e-b028c1d6887d
+  - BaseNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+    PortName: ...
+    TargetNodeGuid: ed6c6f38-4f65-4e43-8166-16f525b9d881
+  - BaseNodeGuid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
+    PortName: Have we met before?
+    TargetNodeGuid: af93f235-b8f3-472c-bb2e-e406e04328c8
+  - BaseNodeGuid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
+    PortName: What's your problem?
+    TargetNodeGuid: 51d1be4c-03cd-4c57-9b0e-b028c1d6887d
+  - BaseNodeGuid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
+    PortName: ...
+    TargetNodeGuid: ed6c6f38-4f65-4e43-8166-16f525b9d881
+  - BaseNodeGuid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
+    PortName: Have we met before?
+    TargetNodeGuid: af93f235-b8f3-472c-bb2e-e406e04328c8
+  - BaseNodeGuid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
+    PortName: What's your problem?
+    TargetNodeGuid: 51d1be4c-03cd-4c57-9b0e-b028c1d6887d
+  - BaseNodeGuid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
+    PortName: ...
+    TargetNodeGuid: ed6c6f38-4f65-4e43-8166-16f525b9d881
   - BaseNodeGuid: af93f235-b8f3-472c-bb2e-e406e04328c8
     PortName: Please don't hurt me.
     TargetNodeGuid: 301c581f-4662-4457-9959-b5f6686b82b2
   - BaseNodeGuid: af93f235-b8f3-472c-bb2e-e406e04328c8
-    PortName: Look, lady, I'm not interested.
+    PortName: Look, I'm not interested.
     TargetNodeGuid: 445d820a-059d-4bf9-8c8f-435d12a08ef0
   - BaseNodeGuid: af93f235-b8f3-472c-bb2e-e406e04328c8
     PortName: ...
@@ -119,7 +119,7 @@ MonoBehaviour:
     PortName: Please don't hurt me.
     TargetNodeGuid: 301c581f-4662-4457-9959-b5f6686b82b2
   - BaseNodeGuid: 51d1be4c-03cd-4c57-9b0e-b028c1d6887d
-    PortName: Look, lady, I'm not interested.
+    PortName: Look, I'm not interested.
     TargetNodeGuid: 445d820a-059d-4bf9-8c8f-435d12a08ef0
   - BaseNodeGuid: 51d1be4c-03cd-4c57-9b0e-b028c1d6887d
     PortName: ...
@@ -128,7 +128,7 @@ MonoBehaviour:
     PortName: Please don't hurt me.
     TargetNodeGuid: 301c581f-4662-4457-9959-b5f6686b82b2
   - BaseNodeGuid: ed6c6f38-4f65-4e43-8166-16f525b9d881
-    PortName: Look, lady, I'm not interested.
+    PortName: Look, I'm not interested.
     TargetNodeGuid: 445d820a-059d-4bf9-8c8f-435d12a08ef0
   - BaseNodeGuid: ed6c6f38-4f65-4e43-8166-16f525b9d881
     PortName: ...

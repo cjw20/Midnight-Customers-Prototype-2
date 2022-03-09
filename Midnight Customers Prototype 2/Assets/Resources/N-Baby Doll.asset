@@ -28,48 +28,57 @@ MonoBehaviour:
   - BaseNodeGuid: 1281d269-c11f-48a1-8183-91f0875a904d
     PortName: Charlene's a pretty name. What made you pick it?
     TargetNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+  - BaseNodeGuid: 650dc299-cb60-4f79-8a06-72233177f086
+    PortName: Charlene's a pretty name. What made you pick it?
+    TargetNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+  - BaseNodeGuid: 3d40753c-64da-4357-8c83-93f5344c57da
+    PortName: Charlene's a pretty name. What made you pick it?
+    TargetNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+  - BaseNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+    PortName: I... Is Charlene real?
+    TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+  - BaseNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+    PortName: You bought a baby? I'm calling the cops!
+    TargetNodeGuid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
+  - BaseNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+    PortName: ...
+    TargetNodeGuid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
+  - BaseNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+    PortName: I... Is Charlene real?
+    TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+  - BaseNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+    PortName: You bought a baby? I'm calling the cops!
+    TargetNodeGuid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
+  - BaseNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+    PortName: ...
+    TargetNodeGuid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
+  - BaseNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+    PortName: I... Is Charlene real?
+    TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+  - BaseNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+    PortName: You bought a baby? I'm calling the cops!
+    TargetNodeGuid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
+  - BaseNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+    PortName: ...
+    TargetNodeGuid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
+  - BaseNodeGuid: 650dc299-cb60-4f79-8a06-72233177f086
+    PortName: You *GOT* her...? Is she not yours?
+    TargetNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+  - BaseNodeGuid: 650dc299-cb60-4f79-8a06-72233177f086
+    PortName: ...
+    TargetNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+  - BaseNodeGuid: 3d40753c-64da-4357-8c83-93f5344c57da
+    PortName: ...
+    TargetNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
+  - BaseNodeGuid: 3d40753c-64da-4357-8c83-93f5344c57da
+    PortName: You *GOT* her...? Is she not yours?
+    TargetNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
   - BaseNodeGuid: 1281d269-c11f-48a1-8183-91f0875a904d
     PortName: You *GOT* her...? Is she not yours?
-    TargetNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
-  - BaseNodeGuid: 650dc299-cb60-4f79-8a06-72233177f086
-    PortName: Charlene's a pretty name. What made you pick it?
-    TargetNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
-  - BaseNodeGuid: 650dc299-cb60-4f79-8a06-72233177f086
-    PortName: You *GOT* her...? Is she not yours?
-    TargetNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
-  - BaseNodeGuid: 3d40753c-64da-4357-8c83-93f5344c57da
-    PortName: Charlene's a pretty name. What made you pick it?
-    TargetNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
-  - BaseNodeGuid: 3d40753c-64da-4357-8c83-93f5344c57da
-    PortName: You *GOT* her...? Is she not yours?
-    TargetNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
-  - BaseNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
-    PortName: I... Is Charlene real?
-    TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
-  - BaseNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
-    PortName: You bought a baby? I'm calling the cops!
-    TargetNodeGuid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
-  - BaseNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+    TargetNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
+  - BaseNodeGuid: 1281d269-c11f-48a1-8183-91f0875a904d
     PortName: ...
-    TargetNodeGuid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
-  - BaseNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
-    PortName: I... Is Charlene real?
-    TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
-  - BaseNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
-    PortName: You bought a baby? I'm calling the cops!
-    TargetNodeGuid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
-  - BaseNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
-    PortName: ...
-    TargetNodeGuid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
-  - BaseNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
-    PortName: I... Is Charlene real?
-    TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
-  - BaseNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
-    PortName: You bought a baby? I'm calling the cops!
-    TargetNodeGuid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
-  - BaseNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
-    PortName: ...
-    TargetNodeGuid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
+    TargetNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
   DialogueNodeData:
   - Guid: 6d139e9a-dcc1-45f7-9d19-e9ed9c266c02
     DialogueText: '*Wahhhh! Wahhhh!* Oh! Shhh, shhh, it''s okay, honey, we are checking
@@ -79,10 +88,6 @@ MonoBehaviour:
     DialogueText: Charlene? Oh, well, I'm not sure how old she is, but I've had her
       for a 6 months now. *Wahhh! Wahhh!* Sorry, she can be quite fussy.
     Position: {x: 827.2, y: 32.8}
-  - Guid: 650dc299-cb60-4f79-8a06-72233177f086
-    DialogueText: Sorry, Charlene can be quite fussy. *`*Wahhh! Wahhh!*`* I got her
-      not too long ago, so I'm still not sure how to quiet her down.
-    Position: {x: 828.8, y: 194.4}
   - Guid: 3d40753c-64da-4357-8c83-93f5344c57da
     DialogueText: Sorry, Charlene can be quite fussy. *Wahhh! Wahhh!* I got her not
       too long ago, so I'm still not sure how to quiet her down.
@@ -106,10 +111,14 @@ MonoBehaviour:
   - Guid: 94966c1d-d873-40e1-9ae3-07e55d209f90
     DialogueText: Are you trying to imply something?I bought her fair and square.
       She's mine!
-    Position: {x: 1745.6, y: 200}
+    Position: {x: 1752.8, y: 195.2}
+  - Guid: 650dc299-cb60-4f79-8a06-72233177f086
+    DialogueText: Sorry, Charlene can be quite fussy. *`*Wahhh! Wahhh!*`* I got her
+      not too long ago, so I'm still not sure how to quiet her down.
+    Position: {x: 832, y: 194.4}
   - Guid: 1a936d76-6a21-4823-8cea-5f178c0ff189
     DialogueText: '*Wahhh! Wahhh!* Ugh, Charlene! Stop! I think this one is defective,
       maybe I can go buy another one.'
-    Position: {x: 1748, y: 363.2}
+    Position: {x: 1734.4, y: 366.40002}
   ExposedProperties: []
   CommentBlockData: []
