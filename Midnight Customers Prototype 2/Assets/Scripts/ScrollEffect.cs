@@ -20,5 +20,10 @@ public class ScrollEffect : MonoBehaviour
         {
             rect.anchoredPosition += new Vector2(0, scrollRate * Time.deltaTime);
         }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
     }
 }

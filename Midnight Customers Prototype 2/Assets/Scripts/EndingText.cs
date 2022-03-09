@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class EndingText : MonoBehaviour
 {
@@ -50,6 +51,7 @@ public class EndingText : MonoBehaviour
         }
 
         timeManager.toBlack.FadeIn(5f);
+        SceneManager.LoadScene("Credits");
         //play credits
         yield break;
     }
