@@ -16,9 +16,7 @@ public class MainMenuManager : MonoBehaviour
             loadButton.SetActive(false);
             deleteSaveButton.SetActive(false);
         }
-    }
-
-    
+    }   
 
     public void QuitGame()
     {
