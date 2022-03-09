@@ -272,7 +272,6 @@ public class SoundManager : MonoBehaviour
         waterBottlePutDownSound[rand].Play();
     }
 
-    // FINISH EVERYTHING BELOW HERE
     public void PlayMoneyUpSound()
     {
 
@@ -285,42 +284,50 @@ public class SoundManager : MonoBehaviour
 
     public void PlayCandyUpSound()
     {
-
+        int rand = Random.Range(0, 2);
+        candybarPickUpSound[rand].Play();
     }
 
     public void PlayCandyDownSound()
     {
-
+        int rand = Random.Range(0, 2);
+        candybarPutDownSound[rand].Play();
     }
 
     public void PlayCardUpSound()
     {
-
+        int rand = Random.Range(0, 2);
+        cardPickUpSound[rand].Play();
     }
 
     public void PlayCardDownSound()
     {
-
+        int rand = Random.Range(0, 2);
+        cardPutDownSound[rand].Play();
     }
 
     public void PlayCarFluidUpSound()
     {
-
+        int rand = Random.Range(0, 2);
+        carFluidPickUpSound[rand].Play();
     }
 
     public void PlayCarFluidDownSound()
     {
-
+        int rand = Random.Range(0, 2);
+        carFluidPutDownSound[rand].Play();
     }
 
     public void PlayChargerUpSound()
     {
-
+        int rand = Random.Range(0, 2);
+        chargerPickUpSound[rand].Play();
     }
 
     public void PlayChargerDownSound()
     {
-
+        int rand = Random.Range(0, 2);
+        chargerPutDownSound[rand].Play();
     }
 
     public void PlayCigsUpSound()
@@ -335,22 +342,26 @@ public class SoundManager : MonoBehaviour
 
     public void PlayFruitUpSound()
     {
-
+        int rand = Random.Range(0, 2);
+        fruitPickUpSound[rand].Play();
     }
 
     public void PlayFruitDownSound()
     {
-
+        int rand = Random.Range(0, 2);
+        fruitPutDownSound[rand].Play();
     }
 
     public void PlayGasCanUpSound()
     {
-
+        int rand = Random.Range(0, 2);
+        gasCanPickUpSound[rand].Play();
     }
 
     public void PlayGasCanDownSound()
     {
-
+        int rand = Random.Range(0, 2);
+        gasCanPutDownSound[rand].Play();
     }
 
     public void PlayHotdogUpSound()
@@ -365,45 +376,51 @@ public class SoundManager : MonoBehaviour
 
     public void PlayIceCreamUpSound()
     {
-
+        int rand = Random.Range(0, 2);
+        iceCreamPickUpSound[rand].Play();
     }
 
     public void PlayIceCreamDownSound()
     {
-
+        int rand = Random.Range(0, 2);
+        iceCreamPutDownSound[rand].Play();
     }
 
     public void PlayNachosUpSound()
     {
-
+        int rand = Random.Range(0, 2);
+        nachosPickUpSound[rand].Play();
     }
 
     public void PlayNachosDownSound()
     {
-
+        int rand = Random.Range(0, 2);
+        nachosPutDownSound[rand].Play();
     }
 
     public void PlaySaladUpSound()
     {
-
+        int rand = Random.Range(0, 2);
+        saladPickUpSound[rand].Play();
     }
 
     public void PlaySaladDownSound()
     {
-
+        int rand = Random.Range(0, 2);
+        saladPutDownSound[rand].Play();
     }
 
     public void PlaySodaCupUpSound()
     {
-
+        int rand = Random.Range(0, 2);
+        sodaCupPickUpSound[rand].Play(0);
     }
 
     public void PlaySodaCupDownSound()
     {
-
+        int rand = Random.Range(0, 2);
+        sodaCupPutDownSound[rand].Play();
     }
-
-    // FINISH EVERYTHING ABOVE HERE
 
     public void PlayTextMessageSound()
     {

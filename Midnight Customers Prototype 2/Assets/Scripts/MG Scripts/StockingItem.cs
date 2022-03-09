@@ -34,19 +34,17 @@ public class StockingItem : MonoBehaviour
             else if (itemType == 2 || itemType == 3 || itemType == 4)
             {
                 // Play the candybar sound
-                soundManager.PlayChipsUpSound();
-                // soundManager.PlayCandyUpSound();
+                soundManager.PlayCandyUpSound();
             }
             else if (itemType == 5)
             {
                 // Play carfluidbottle sound
-                soundManager.PlayWaterBottleUpSound();
-                // soundManager.PlayCarFluidUpSound();
+                soundManager.PlayCarFluidUpSound();
             }
             else if (itemType == 6)
             {
                 // Play charger sound
-                // soundManager.PlayChargerUpSound();
+                soundManager.PlayChargerUpSound();
             }
             else if (itemType == 7 || itemType == 8 || itemType == 9)
             {
@@ -66,27 +64,27 @@ public class StockingItem : MonoBehaviour
             else if (itemType == 14 || itemType == 15 || itemType == 16)
             {
                 // Play fruit sound
-                // soundManager.PlayFruitUpSound();
+                soundManager.PlayFruitUpSound();
             }
             else if (itemType == 17)
             {
                 // Play gasoline sound
-                // soundManager.PlayGasCanUpSound();
+                soundManager.PlayGasCanUpSound();
             }
             else if (itemType == 18)
             {
                 // Play nacho sound
-                // soundManager.PlayNachosUpSound();
+                soundManager.PlayNachosUpSound();
             }
             else if (itemType == 19 || itemType == 20)
             {
                 // Play salad sound
-                // soundManager.PlayNachosUpSound();
+                soundManager.PlaySaladUpSound();
             }
             else if (itemType == 21 || itemType == 22)
             {
                 // Play sandwich sound
-                // soundManager.PlaySaladUpSound();
+                soundManager.PlaySaladUpSound();
             }
             else if (itemType == 23 || itemType == 24 || itemType == 25)
             {
@@ -96,7 +94,7 @@ public class StockingItem : MonoBehaviour
             else if (itemType == 26)
             {
                 // Play soda cup sound
-                // soundManager.PlaySodaCupUpSound();
+                soundManager.PlaySodaCupUpSound();
             }
             else if (itemType == 27)
             {
@@ -146,19 +144,17 @@ public class StockingItem : MonoBehaviour
             else if (itemType == 2 || itemType == 3 || itemType == 4)
             {
                 // Play the candybar sound
-                soundManager.PlayChipsDownSound();
-                // soundManager.PlayCandyDownSound();
+                soundManager.PlayCandyDownSound();
             }
             else if (itemType == 5)
             {
                 // Play carfluidbottle sound
-                soundManager.PlayWaterBottleDownSound();
-                // soundManager.PlayCarFluidDownSound();
+                soundManager.PlayCarFluidDownSound();
             }
             else if (itemType == 6)
             {
                 // Play charger sound
-                // soundManager.PlayChargerDownSound();
+                soundManager.PlayChargerDownSound();
             }
             else if (itemType == 7 || itemType == 8 || itemType == 9)
             {
@@ -178,27 +174,27 @@ public class StockingItem : MonoBehaviour
             else if (itemType == 14 || itemType == 15 || itemType == 16)
             {
                 // Play fruit sound
-                // soundManager.PlayFruitDownSound();
+                soundManager.PlayFruitDownSound();
             }
             else if (itemType == 17)
             {
                 // Play gasoline sound
-                // soundManager.PlayGasCanDownSound();
+                soundManager.PlayGasCanDownSound();
             }
             else if (itemType == 18)
             {
                 // Play nacho sound
-                // soundManager.PlayNachosDownSound();
+                soundManager.PlayNachosDownSound();
             }
             else if (itemType == 19 || itemType == 20)
             {
                 // Play salad sound
-                // soundManager.PlaySaladDownSound();
+                soundManager.PlaySaladDownSound();
             }
             else if (itemType == 21 || itemType == 22)
             {
                 // Play sandwich sound
-                // soundManager.PlaySaladDownSound();
+                soundManager.PlaySaladDownSound();
             }
             else if (itemType == 23 || itemType == 24 || itemType == 25)
             {
@@ -208,7 +204,7 @@ public class StockingItem : MonoBehaviour
             else if (itemType == 26)
             {
                 // Play soda cup sound
-                // soundManager.PlaySodaCupDownSound();
+                soundManager.PlaySodaCupDownSound();
             }
             else if (itemType == 27)
             {
