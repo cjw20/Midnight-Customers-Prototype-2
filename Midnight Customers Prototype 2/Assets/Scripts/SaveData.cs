@@ -11,7 +11,7 @@ public class SaveData
     [Tooltip("Beginning of what day the save was made.")]
     public int day;
     [Tooltip("Progress for each individual customer")]
-    public List<int> individualProgress;
+    public List<int> individualProgress = new List<int>();
     //more variables will be needed eventually
 
     // References
@@ -23,7 +23,7 @@ public class SaveData
         int i = 0;
         foreach(GameObject customer in customerManager.customerList)
         {
-            individualProgress[i] = customer.GetComponent<CustomerInfo>().conversationProgress;
+            individualProgress.Add(customer.GetComponent<CustomerInfo>().conversationProgress);
             i++;
         }
         day = GameObject.FindObjectOfType<TimeManager>().day;
