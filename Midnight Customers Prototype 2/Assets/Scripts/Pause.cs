@@ -69,4 +69,10 @@ public class Pause : MonoBehaviour
         Destroy(GameControl.control.gameObject); //prevents main menu button bugs
         SceneManager.LoadScene(sceneName);
     }
+
+    public void SaveAndQuit()
+    {
+        GameControl.control.SaveGame("Manual Save");
+        Application.Quit();
+    }
 }

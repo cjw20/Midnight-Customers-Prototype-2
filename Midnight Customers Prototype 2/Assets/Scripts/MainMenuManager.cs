@@ -4,15 +4,26 @@ using UnityEngine;
 
 public class MainMenuManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] SaveUtility saveUtility;
+
+    [SerializeField] GameObject loadButton;
+    [SerializeField] GameObject deleteSaveButton;
+
+
+    void Awake()
     {
-        
+        GlobalSave globalSave = saveUtility.GetGlobalSave();
+        if (globalSave == null)
+        {
+            loadButton.SetActive(false);
+            deleteSaveButton.SetActive(false);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    
+
+    public void QuitGame()
     {
-        
+        Application.Quit();
     }
 }
