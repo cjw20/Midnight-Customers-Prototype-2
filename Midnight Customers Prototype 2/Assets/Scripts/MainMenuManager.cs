@@ -3,16 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class MainMenuManager : MonoBehaviour
-{
-    [SerializeField] SaveUtility saveUtility;
-
+{  
     [SerializeField] GameObject loadButton;
     [SerializeField] GameObject deleteSaveButton;
 
 
     void Awake()
     {
-        GlobalSave globalSave = saveUtility.GetGlobalSave();
+        GlobalSave globalSave = GameControl.control.gameObject.GetComponent<SaveUtility>().GetGlobalSave();
         if (globalSave == null)
         {
             loadButton.SetActive(false);

@@ -1033,9 +1033,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 512ddb31e86389d4794de3634a81d3b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  saveUtility: {fileID: 0}
-  loadButton: {fileID: 0}
-  deleteSaveButton: {fileID: 0}
+  loadButton: {fileID: 524465744}
+  deleteSaveButton: {fileID: 913222903}
 --- !u!1 &1030716196
 GameObject:
   m_ObjectHideFlags: 0
