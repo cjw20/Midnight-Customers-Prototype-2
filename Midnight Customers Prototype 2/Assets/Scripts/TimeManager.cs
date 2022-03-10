@@ -152,7 +152,7 @@ public class TimeManager : MonoBehaviour
             GameControl.control.SaveGame("Day " + day.ToString()); //may not be best place to do this
         }
         
-        journalDisplay.OpenJournal();
+        journalDisplay.OpenJournal(day);
         while (journalDisplay.inJournal)
         {
             yield return null; //waits until journal is closed
