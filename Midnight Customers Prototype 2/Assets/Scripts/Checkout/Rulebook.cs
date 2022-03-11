@@ -28,8 +28,18 @@ public class Rulebook : MonoBehaviour
         openedBook.SetActive(bookStatus);
     }
 
-    private void OnMouseDown()
+    public void OpenBook(){
+        bookStatus = true;
+        openedBook.SetActive(bookStatus);
+    }
+    
+    public void CloseBook(){
+        bookStatus = false;
+        openedBook.SetActive(bookStatus);
+    }
+
+    private void OnMouseUp()
     {
-        ToggleBook();
+        OpenBook();
     }
 }
