@@ -1,10 +1,10 @@
 # **Midnight Customers**
-
+- Link to the [CHANGELOG](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/CHANGELOG.md).
+- Link to the [Modifed Semantic Versioning](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/MSV.md) reference document.
 (Eventually will be full documentation, for now this is just for reference)
 
 
 ## __General Scripts__
-
 
 *ClickDrag*
 * Handles input from mousePosition and OnMouseDown
@@ -126,9 +126,7 @@
 	* TaskSpawner
 	* CustomerManager
 
-
 ## **Checkout**
-
 
 *CheckoutItem*
 * Handles triggers of checkoutManager 
@@ -180,9 +178,7 @@ Referenced by
 *Rulebook*
 * Opens Rulebook
 
-
 ## **MG Scripts**
-
 
 *CleanableObject*
 * Handles triggers for mop tasks
@@ -241,10 +237,7 @@ Referenced by
 	* StockingGame
 	* ItemBox
 
-
-
 ## **Story**
-
 
 *HatchStoryBeat*
 * Handles Hatch Event
