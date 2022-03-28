@@ -6,29 +6,54 @@
 
 ## __General Scripts__
 
-### ClickDrag
+### [ClickDrag](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/ClickDrag.cs)
 #### Description
 Handles input from mousePosition and OnMouseDown
 #### Properties
 | Name | Description |
 |------|-------------|
-| isHeld | Whether the item is being dragged currently |
-| startPosX | The starting position of the item being dragged |
-| startPosY | The starting position of the item being dragged |
-| startPosZ | The starting position of the item being dragged |
+| isHeld | Whether the item is being dragged currently. |
+| startPosX | The starting position of the item being dragged. |
+| startPosY | The starting position of the item being dragged. |
+| startPosZ | The starting position of the item being dragged. |
 * No Dependencies
 * Referenced by:
-	* StockingItem
+	* [StockingItem](#stockingitem)
 
-*CustomerInfo*
-* Handles information about customer (Dialogue, Money, ID, Relationship)
+### [CustomerInfo](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/CustomerInfo.cs)
+#### Description
+Handles information about customer (Dialogue, Money, ID, Relationship)
+#### Properties
+| Name | Description |
+|------|-------------|
+| customerName | Name of the customer. |
+| relationshipScore | The current relationship score the player has with this character. |
+| hasValidID | Whether the character has a valid ID or not. |
+| essential | Set to `true` if the character should NOT leave when the timer runs out. |
+| conversationProgress | How far the player is into the conversations with this character. |
+| moodMilestones[] | Determines how to segment the mood timer. |
+#### References
+| Name | Description |
+|------|-------------|
+| dialogueFont | Font to use for this customer. |
+| portrait | Sprite to use for this customer. |
+| checkoutItems[] | Objects this character will bring to the checkout counter. |
+| carriedMoney[] | The amount of money carried by this character. |
+| nextConversation | Next conversation that this character will have next. |
+| conversations[] | All conversations this character will progress through. |
+#### Public Methods
+| Name | Description |
+|------|-------------|
+| LoadNextConvo | Loads the next conversation. |
+| UpdateRelationship | Adds or subtracts from the relationship score for this customer. |
+| SetStoryConvo | Moves the story conversation progress. |
 * Dependencies
 * Referenced by: 
-	* CheckoutManager
-	* CheckoutTrigger
-	* HatchStoryBeat
+	* [CheckoutManager](#checkoutmanager)
+	* [CheckoutTrigger](#checkouttrigger)
+	* [HatchStoryBeat](#hatchstorybeat)
 	
-*CustomerManager*
+### CustomerManager
 * Handles customer spawning
 * Dependencies
 	* CustomerMovement (customersInStore assumes CustomerMovement component)
@@ -37,44 +62,44 @@ Handles input from mousePosition and OnMouseDown
 	* CustomerMovement
 	* Itself?
 
-*CustomerMovement*
+### CustomerMovement
 * Handles customer movement*
 * Dependencies
     * CustomerManager
     * SoundManager
 
-*Fade*
+### Fade
 * Handles fade to black at day transition
 * Dependencies
 * Referenced by
 	* TimeManager
 
-*GameControl*
+### GameControl
 * Loads scenes
 
-*Hatch*
+### Hatch
 * Handles hatch triggers 
 * Dependencies
 	* HatchStoryBeat
 
-*Interactable*
+### Interactable
 * Kind of confused, but it seems to handles interactable triggers and dialogue windows
 
-*LightFlicker*
+### LightFlicker
 * Handles lighting and turns it off/on (Is this inert?)
 * Referenced by
 	* LightSanityEffect
 
-*LightSanityEffect*
+### LightSanityEffect
 * Generates spooky effects (is this inert?)
 * Referenced by
 	* LightSanityEffect
 
-*Pause*
+### Pause
 * Pauses the game by setting Time.timeScale to 1 or 0
 * Brings up in game pause screen
 
-*PerformanceReview*
+### PerformanceReview
 * Handles which message to send based on the performance score
 * Dependencies
 	* phoneNotification (assumes its a phone)
@@ -86,15 +111,15 @@ Handles input from mousePosition and OnMouseDown
 	* CheckoutManager
 	* TimeManager
 
-*Phone*
+### Phone
 * ClosePhone (inert?)
 
-*PhoneMessage*
+### PhoneMessage
 * Opens messages 
 * Dependencies
 	* PerformanceReview
 
-*PlayerMovement*
+### PlayerMovement
 * Handles Player Movement (duh)
 * Referenced by
 	* CheckoutTrigger
@@ -102,16 +127,16 @@ Handles input from mousePosition and OnMouseDown
 	* TimeManager
 	* moveable bool is also referenced by the scripts above
 
-*SanityEventManager*
+### SanityEventManager
 * Handles Sanity Events and Light Effects (inert?)
 * Dependencies
 	* SanityEventManager
 	* LightSanityEffect
 
-*SanityManager*
+### SanityManager
 * Manages Sanity Values (inert?)
 
-*SoundManager*
+### SoundManager
 * Manages BGM (inert?)
 * Manages all sound effects
 * Referenced by
@@ -119,12 +144,12 @@ Handles input from mousePosition and OnMouseDown
     	* CheckoutManager
 	* PlayerMovement
 
-*TaskSpawner*
+### TaskSpawner
 * Handles randomly spawning new tasks (also happens to murder unity in the process)
 * Referenced By
 	*TaskManager (commented, cuz it breaks the game)
 
-*TimeManager*
+### TimeManager
 * Manages the display and passage of time 
 * Dependencies:
 	* Player
@@ -136,14 +161,14 @@ Handles input from mousePosition and OnMouseDown
 
 ## **Checkout**
 
-*CheckoutItem*
+### CheckoutItem
 * Handles triggers of checkoutManager 
 * Dependencies
 	* CheckoutManager
 * Referenced by:
 	* CheckoutManager
 
-*CheckoutManager*
+### CheckoutManager
 * Manages Checkout Process
 * Dependencies
 	* CheckoutTrigger
@@ -157,7 +182,7 @@ Handles input from mousePosition and OnMouseDown
 	* Money
 	* CheckoutItem
 
-*CheckoutTrigger*
+### CheckoutTrigger
 * Handles the triggers for starting Checkout 
 * Dependencies
 	* CheckoutManager
@@ -166,46 +191,46 @@ Handles input from mousePosition and OnMouseDown
 Referenced by
 	* CheckoutManager
 
-*CountdownSlider*
+### CountdownSlider
 * Manages Slider (?)
 * Dependencies
 * Referenced by
 	* DialoguePlayer
 
-*EmoteController*
+### EmoteController
 * Controls emote sprites
 * Dependencies
 * Referenced by
 	* CheckoutManager
 
-*Money*
+### Money
 * Handles Money colliders
 * Dependencies
 	* CheckoutManager
 
-*Rulebook*
+### Rulebook
 * Opens Rulebook
 
 ## **MG Scripts**
 
-*CleanableObject*
+### CleanableObject
 * Handles triggers for mop tasks
 * Dependencies
 	* CleaningTool
 	* CleanableObject
 	* MopGame
 
-*CleaningTool*
+### CleaningTool
 * Handles position and rigidbody of CleaningTool
 * Referenced by
 	* CleaningObject
 
-*ItemBox*
+### ItemBox
 * Handles item box
 * Referenced by
 	* StockingItem
 
-*MiniGameControl*
+### MiniGameControl
 * Loads and Ends Minigames
 * Dependencies
 	* MiniGameTrigger
@@ -213,7 +238,7 @@ Referenced by
 	* MiniGameTrigger
 	* MopGame
 
-*MiniGameTrigger*
+### MiniGameTrigger
 * Handles triggers for minigames
 * Dependencies
 	* MinigameControl
@@ -221,7 +246,7 @@ Referenced by
 * Referenced by
 	* MinigameControl
 
-*MopGame*
+### MopGame
 * Handles cleanableObjects
 * Dependencies
 	* CleanableObjects
@@ -229,17 +254,17 @@ Referenced by
 * Referenced By
 	* CleanableObjects
 
-*Shelf*
+### Shelf
 * I assume WIP
 * Referenced by
 	* StockingItem
 
-*StockingGame*
+### StockingGame
 * I assume WIP
 * Referenced by
 	* StockingItem
 
-*StockingItem*
+### StockingItem
 * I assume WIP
 * Dependencies
 	* StockingGame
@@ -247,7 +272,7 @@ Referenced by
 
 ## **Story**
 
-*HatchStoryBeat*
+### HatchStoryBeat
 * Handles Hatch Event
 * Dependencies
 	* CustomerInfo
@@ -255,7 +280,7 @@ Referenced by
 	* Hatch
 	* StoryEventHandler
 
-*StoryEventHandler*
+### StoryEventHandler
 * Handles Story Events
 * Dependencies
 	* HatchStoryBeat
