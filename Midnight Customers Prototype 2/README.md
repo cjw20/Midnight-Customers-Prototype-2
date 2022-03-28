@@ -6,8 +6,14 @@
 
 ## __General Scripts__
 
-*ClickDrag*
-* Handles input from mousePosition and OnMouseDown
+### ClickDrag
+#### Description
+Handles input from mousePosition and OnMouseDown
+#### Properties
+| isHeld | Whether the item is being dragged currently |
+| startPosX | The starting position of the item being dragged |
+| startPosY | The starting position of the item being dragged |
+| startPosZ | The starting position of the item being dragged |
 * No Dependencies
 * Referenced by:
 	* StockingItem
