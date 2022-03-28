@@ -12,6 +12,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - Remove categories from a specific version if there is nothing to list under that version update.
 - Please use past tense "added, changed, removed, fixed" etc.
 
+## 1.0.0.0-alpha - 11MAR22
+### Initial public alpha release!
+
 NOTE: Below is a sample changelog entry for version 0.0.0.
 
 ## [0.0.0] - 23MAR22
