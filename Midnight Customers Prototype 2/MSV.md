@@ -1,5 +1,5 @@
 # Modified Semantic Versioning
-This document describes the custom versioning scheme used on all Nocturnus Media projects.
+This document describes the custom versioning scheme used on all Spooky Sea Studios projects.
 This is a variation of the [Semantic Versioning](https://semver.org/) standards.
 The biggest differences relate to the addition of the package version, the different definition of what constitutes a change of the major version, and the pre-release label being limited to only "alpha" and "beta".
 
