@@ -10,6 +10,8 @@
 #### Description
 Handles input from mousePosition and OnMouseDown
 #### Properties
+| Name | Description |
+|------|-------------|
 | isHeld | Whether the item is being dragged currently |
 | startPosX | The starting position of the item being dragged |
 | startPosY | The starting position of the item being dragged |
