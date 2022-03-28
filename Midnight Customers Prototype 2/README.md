@@ -1,6 +1,7 @@
 # **Midnight Customers**
 - Link to the [CHANGELOG](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/CHANGELOG.md).
 - Link to the [Modifed Semantic Versioning](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/MSV.md) reference document.
+- Link to the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) document.
 (Eventually will be full documentation, for now this is just for reference)
 
 
