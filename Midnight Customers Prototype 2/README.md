@@ -1,16 +1,12 @@
-# **Midnight Customers**
+# Midnight Customers Codebase Documentation
 - Link to the [CHANGELOG](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/CHANGELOG.md).
 - Link to the [Modifed Semantic Versioning](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/MSV.md) reference document.
 - Link to the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) document.
-(Eventually will be full documentation, for now this is just for reference)
 
-
-## __General Scripts__
-
-### [ClickDrag](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/ClickDrag.cs)
-#### Description
+## [ClickDrag](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/ClickDrag.cs)
+### Description
 Handles input from mousePosition and OnMouseDown
-#### Properties
+### Properties
 | Name | Description |
 |------|-------------|
 | isHeld | Whether the item is being dragged currently. |
@@ -21,10 +17,10 @@ Handles input from mousePosition and OnMouseDown
 * Referenced by:
 	* [StockingItem](#stockingitem)
 
-### [CustomerInfo](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/CustomerInfo.cs)
-#### Description
+## [CustomerInfo](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/CustomerInfo.cs)
+### Description
 Handles information about customer (Dialogue, Money, ID, Relationship)
-#### Properties
+### Properties
 | Name | Description |
 |------|-------------|
 | customerName | Name of the customer. |
@@ -33,7 +29,7 @@ Handles information about customer (Dialogue, Money, ID, Relationship)
 | essential | Set to `true` if the character should NOT leave when the timer runs out. |
 | conversationProgress | How far the player is into the conversations with this character. |
 | moodMilestones[] | Determines how to segment the mood timer. |
-#### References
+### References
 | Name | Description |
 |------|-------------|
 | dialogueFont | Font to use for this customer. |
@@ -42,7 +38,7 @@ Handles information about customer (Dialogue, Money, ID, Relationship)
 | carriedMoney[] | The amount of money carried by this character. |
 | nextConversation | Next conversation that this character will have next. |
 | conversations[] | All conversations this character will progress through. |
-#### Public Methods
+### Public Methods
 | Name | Description |
 |------|-------------|
 | LoadNextConvo | Loads the next conversation. |
@@ -54,236 +50,358 @@ Handles information about customer (Dialogue, Money, ID, Relationship)
 	* [CheckoutTrigger](#checkouttrigger)
 	* [HatchStoryBeat](#hatchstorybeat)
 	
-### CustomerManager
-* Handles customer spawning
+## CustomerManager
+### Properties
+| Name | Description |
+|------|-------------|
+| spawning | Whether the customer is spawning or not. |
+| arrayPos | The position index in the array. |
+### References
+| Name | Description |
+|------|-------------|
+| lastCoroutine | The last Coroutine ran. |
+| customerManager | Reference to an instance of the CustomerManager class. |
+| customers[] | The list of customers. |
+| customerList[] | Each customer in array for save and loading purposes. |
+| exit | A Transform for the exit point of the customers. |
+| customersInStore[] | List of customers currently in the store. |
+| endingManager | Reference to an instance of the EndingManager class. |
+### Public Methods
+| Name | Description |
+|------|-------------|
+| OnLoadGame | Starts spawning customers when the game starts. |
+| LoadCustomer | Spawns a customer into the store and gets them moving and sets their mood. |
+| CustomerExit | Despawns customers. |
+| StopSpawns | Stops customers spawning. |
+| StartSpawns | Resumes customer spawning. |
+| PauseSpawns | Pauses customer spawning. |
 * Dependencies
-	* CustomerMovement (customersInStore assumes CustomerMovement component)
+	* [CustomerMovement](#customermovement) (customersInStore assumes CustomerMovement component)
 * Referenced by:
-	* TimeManager
-	* CustomerMovement
+	* [TimeManager](#timemanager)
+	* [CustomerMovement](#customermovement)
 	* Itself?
 
-### CustomerMovement
+## CustomerMovement
+### Properties
+### References
+### Public Methods
 * Handles customer movement*
 * Dependencies
-    * CustomerManager
-    * SoundManager
+    * [CustomerManager](#customermanager)
+    * [SoundManager](#soundmanager)
 
-### Fade
+## Fade
+### Properties
+### References
+### Public Methods
 * Handles fade to black at day transition
 * Dependencies
 * Referenced by
-	* TimeManager
+	* [TimeManager](#timemanager)
 
-### GameControl
+## GameControl
+### Properties
+### References
+### Public Methods
 * Loads scenes
 
-### Hatch
+## Hatch
+### Properties
+### References
+### Public Methods
 * Handles hatch triggers 
 * Dependencies
-	* HatchStoryBeat
+	* [HatchStoryBeat](#hatchstorybeat)
 
-### Interactable
+## Interactable
+### Properties
+### References
+### Public Methods
 * Kind of confused, but it seems to handles interactable triggers and dialogue windows
 
-### LightFlicker
+## LightFlicker
+### Properties
+### References
+### Public Methods
 * Handles lighting and turns it off/on (Is this inert?)
 * Referenced by
-	* LightSanityEffect
+	* [LightSanityEffect](#lightsanityeffect)
 
-### LightSanityEffect
+## LightSanityEffect
+### Properties
+### References
+### Public Methods
 * Generates spooky effects (is this inert?)
 * Referenced by
-	* LightSanityEffect
+	* [LightSanityEffect](#lightsanityeffect)
 
-### Pause
+## Pause
+### Properties
+### References
+### Public Methods
 * Pauses the game by setting Time.timeScale to 1 or 0
 * Brings up in game pause screen
 
-### PerformanceReview
+## PerformanceReview
+### Properties
+### References
+### Public Methods
 * Handles which message to send based on the performance score
 * Dependencies
-	* phoneNotification (assumes its a phone)
-	* PhoneMessage
-	* dayPenaltyPoints
-		* CheckoutManager
-		* PerformanceReview
+	* [phoneNotification](#phonenotification) (assumes its a phone)
+	* [PhoneMessage](#phonemessage)
+	* [DayPenaltyPoints](#daypenaltypoints)
+		* [CheckoutManager](#checkoutmanager)
+		* [PerformanceReview](#performancereview)
 * Referenced by
-	* CheckoutManager
-	* TimeManager
+	* [CheckoutManager](#checkoutmanager)
+	* [TimeManager](#timemanger)
 
-### Phone
+## Phone
+### Properties
+### References
+### Public Methods
 * ClosePhone (inert?)
 
-### PhoneMessage
+## PhoneMessage
+### Properties
+### References
+### Public Methods
 * Opens messages 
 * Dependencies
-	* PerformanceReview
+	* [PerformanceReview](#performancereview)
 
-### PlayerMovement
+## PlayerMovement
+### Properties
+### References
+### Public Methods
 * Handles Player Movement (duh)
 * Referenced by
-	* CheckoutTrigger
-	* MiniGameTrigger
-	* TimeManager
+	* [CheckoutTrigger](#checkouttrigger)
+	* [MiniGameTrigger](#minigametrigger)
+	* [TimeManager](#timemanager)
 	* moveable bool is also referenced by the scripts above
 
-### SanityEventManager
+## SanityEventManager
+### Properties
+### References
+### Public Methods
 * Handles Sanity Events and Light Effects (inert?)
 * Dependencies
-	* SanityEventManager
-	* LightSanityEffect
+	* [SanityEventManager](#sanityeventmanager)
+	* [LightSanityEffect](#lightsanityeffect)
 
-### SanityManager
+## SanityManager
+### Properties
+### References
+### Public Methods
 * Manages Sanity Values (inert?)
 
-### SoundManager
+## SoundManager
+### Properties
+### References
+### Public Methods
 * Manages BGM (inert?)
 * Manages all sound effects
 * Referenced by
-	* LightSanityEffect
-    	* CheckoutManager
-	* PlayerMovement
+	* [LightSanityEffect](#lightsanityeffect)
+    	* [CheckoutManager](#checkoutmanager)
+	* [PlayerMovement](#playermovement)
 
-### TaskSpawner
+## TaskSpawner
+### Properties
+### References
+### Public Methods
 * Handles randomly spawning new tasks (also happens to murder unity in the process)
 * Referenced By
-	*TaskManager (commented, cuz it breaks the game)
+	* [TaskManager](#taskmanager)
 
-### TimeManager
+## TimeManager
+### Properties
+### References
+### Public Methods
 * Manages the display and passage of time 
 * Dependencies:
-	* Player
-	* PlayerMovement
-	* PerformanceReview
-	* StoryEventHandler
-	* TaskSpawner
-	* CustomerManager
+	* [Player](#player)
+	* [PlayerMovement](#playermovement)
+	* [PerformanceReview](#performancereview)
+	* [StoryEventHandler](#storyeventhandler)
+	* [TaskSpawner](#taskspawner)
+	* [CustomerManager](#customermanager)
 
-## **Checkout**
-
-### CheckoutItem
+## CheckoutItem
+### Properties
+### References
+### Public Methods
 * Handles triggers of checkoutManager 
 * Dependencies
-	* CheckoutManager
+	* [CheckoutManager](#checkoutmanager)
 * Referenced by:
-	* CheckoutManager
+	* [CheckoutManager](#checkoutmanager)
 
-### CheckoutManager
+## CheckoutManager
+### Properties
+### References
+### Public Methods
 * Manages Checkout Process
 * Dependencies
-	* CheckoutTrigger
-	* EmoteController
-	* Checkout Item
+	* [CheckoutTrigger](#checkouttrigger)
+	* [EmoteController](#emotecontroller)
+	* [CheckoutItem](#checkoutitem)
     * SoundManager
 * Referenced by
-	* DialoguePlayer
-	* CheckoutItem
-	* CheckoutTrigger
-	* Money
-	* CheckoutItem
+	* [DialoguePlayer](#dialogueplayer)
+	* [CheckoutItem](#checkoutitem)
+	* [CheckoutTrigger](#checkouttrigger)
+	* [Money](#money)
+	* [CheckoutItem](#checkoutitem)
 
-### CheckoutTrigger
+## CheckoutTrigger
+### Properties
+### References
+### Public Methods
 * Handles the triggers for starting Checkout 
 * Dependencies
-	* CheckoutManager
-	* CustomerInfo
-	* playerMovement
+	* [CheckoutManager](#checkoutmanager)
+	* [CustomerInfo](#customerinfo)
+	* [PlayerMovement](#playermovement)
 Referenced by
-	* CheckoutManager
+	* [CheckoutManager](#checkoutmanager)
 
-### CountdownSlider
+## CountdownSlider
+### Properties
+### References
+### Public Methods
 * Manages Slider (?)
 * Dependencies
 * Referenced by
-	* DialoguePlayer
+	* [DialoguePlayer](#dialogueplayer)
 
-### EmoteController
+## EmoteController
+### Properties
+### References
+### Public Methods
 * Controls emote sprites
 * Dependencies
 * Referenced by
-	* CheckoutManager
+	* [CheckoutManager](#checkoutmanager)
 
-### Money
+## Money
+### Properties
+### References
+### Public Methods
 * Handles Money colliders
 * Dependencies
-	* CheckoutManager
+	* [CheckoutManager](#checkoutmanager)
 
-### Rulebook
+## Rulebook
+### Properties
+### References
+### Public Methods
 * Opens Rulebook
 
-## **MG Scripts**
-
-### CleanableObject
+## CleanableObject
+### Properties
+### References
+### Public Methods
 * Handles triggers for mop tasks
 * Dependencies
-	* CleaningTool
-	* CleanableObject
-	* MopGame
+	* [CleaningTool](#cleaningtool)
+	* [CleanableObject](#cleanableobject)
+	* [MopGame](#mopgame)
 
-### CleaningTool
+## CleaningTool
+### Properties
+### References
+### Public Methods
 * Handles position and rigidbody of CleaningTool
 * Referenced by
-	* CleaningObject
+	* [CleaningObject](#cleaningobject)
 
-### ItemBox
+## ItemBox
+### Properties
+### References
+### Public Methods
 * Handles item box
 * Referenced by
-	* StockingItem
+	* [StockingItem](#stockingitem)
 
-### MiniGameControl
+## MiniGameControl
+### Properties
+### References
+### Public Methods
 * Loads and Ends Minigames
 * Dependencies
-	* MiniGameTrigger
+	* [MiniGameTrigger](#minigametrigger)
 * Referenced by
-	* MiniGameTrigger
-	* MopGame
+	* [MiniGameTrigger](#minigametrigger)
+	* [MopGame](#mopgame)
 
-### MiniGameTrigger
+## MiniGameTrigger
+### Properties
+### References
+### Public Methods
 * Handles triggers for minigames
 * Dependencies
-	* MinigameControl
-	* PlayerMovement
+	* [MinigameControl](#minigamecontrol)
+	* [PlayerMovement](#playermovement)
 * Referenced by
-	* MinigameControl
+	* [MinigameControl](#minigamecontrol)
 
-### MopGame
+## MopGame
+### Properties
+### References
+### Public Methods
 * Handles cleanableObjects
 * Dependencies
-	* CleanableObjects
-	* MiniGame Control
+	* [CleanableObjects](#cleanableobjects)
+	* [MiniGameControl](#minigamecontrol)
 * Referenced By
-	* CleanableObjects
+	* [CleanableObjects](#cleanableobjects)
 
-### Shelf
+## Shelf
+### Properties
+### References
+### Public Methods
 * I assume WIP
 * Referenced by
-	* StockingItem
+	* [StockingItem](#stockingitem)
 
-### StockingGame
+## StockingGame
+### Properties
+### References
+### Public Methods
 * I assume WIP
 * Referenced by
-	* StockingItem
+	* [StockingItem](#stockingitem)
 
-### StockingItem
+## StockingItem
+### Properties
+### References
+### Public Methods
 * I assume WIP
 * Dependencies
-	* StockingGame
-	* ItemBox
+	* [StockingGame](#stockinggame)
+	* [ItemBox](#itembox)
 
-## **Story**
-
-### HatchStoryBeat
+## HatchStoryBeat
+### Properties
+### References
+### Public Methods
 * Handles Hatch Event
 * Dependencies
-	* CustomerInfo
+	* [CustomerInfo](#customerinfo)
 * Referenced by
-	* Hatch
-	* StoryEventHandler
+	* [Hatch](#hatch)
+	* [StoryEventHandler](#storyeventhandler)
 
-### StoryEventHandler
+## StoryEventHandler
+### Properties
+### References
+### Public Methods
 * Handles Story Events
 * Dependencies
-	* HatchStoryBeat
+	* [HatchStoryBeat](#hatchstorybeat)
 * Referenced by
-	* TimeManager
+	* [TimeManager](#timemanager)
