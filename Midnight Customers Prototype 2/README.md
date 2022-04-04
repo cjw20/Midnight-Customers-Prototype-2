@@ -3,6 +3,80 @@
 - Link to the [Modifed Semantic Versioning](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/MSV.md) reference document.
 - Link to the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) document.
 
+## [AnimControl]()
+### Description
+### Properties
+### References
+### Public Methods
+
+## [CheckoutItem]()
+### Description
+### Properties
+### References
+### Public Methods
+* Handles triggers of checkoutManager 
+* Dependencies
+	* [CheckoutManager](#checkoutmanager)
+* Referenced by:
+	* [CheckoutManager](#checkoutmanager)
+
+## [CheckoutManager]()
+### Description
+### Properties
+### References
+### Public Methods
+* Manages Checkout Process
+* Dependencies
+	* [CheckoutTrigger](#checkouttrigger)
+	* [EmoteController](#emotecontroller)
+	* [CheckoutItem](#checkoutitem)
+    * SoundManager
+* Referenced by
+	* [DialoguePlayer](#dialogueplayer)
+	* [CheckoutItem](#checkoutitem)
+	* [CheckoutTrigger](#checkouttrigger)
+	* [Money](#money)
+	* [CheckoutItem](#checkoutitem)
+
+## [CheckoutTimer]()
+### Description
+### Properties
+### References
+### Public Methods
+
+## [CheckoutTrigger]()
+### Description
+### Properties
+### References
+### Public Methods
+* Handles the triggers for starting Checkout 
+* Dependencies
+	* [CheckoutManager](#checkoutmanager)
+	* [CustomerInfo](#customerinfo)
+	* [PlayerMovement](#playermovement)
+* Referenced by
+	* [CheckoutManager](#checkoutmanager)
+
+## [CleanableObject]()
+### Description
+### Properties
+### References
+### Public Methods
+* Handles triggers for mop tasks
+* Dependencies
+	* [CleaningTool](#cleaningtool)
+	* [CleanableObject](#cleanableobject)
+	* [MopGame](#mopgame)
+
+## [CleaningTool]()
+### Description
+### Properties
+### References
+### Public Methods
+* Handles position and rigidbody of CleaningTool
+* Referenced by
+	* [CleaningObject](#cleaningobject)
+
 ## [ClickDrag](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/ClickDrag.cs)
 ### Description
 Handles input from mousePosition and OnMouseDown
@@ -16,6 +90,16 @@ Handles input from mousePosition and OnMouseDown
 * No Dependencies
 * Referenced by:
 	* [StockingItem](#stockingitem)
+    
+## [CountdownSlider]()
+### Description
+### Properties
+### References
+### Public Methods
+* Manages Slider (?)
+* Dependencies
+* Referenced by
+	* [DialoguePlayer](#dialogueplayer)
 
 ## [CustomerInfo](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/CustomerInfo.cs)
 ### Description
@@ -50,7 +134,7 @@ Handles information about customer (Dialogue, Money, ID, Relationship)
 	* [CheckoutTrigger](#checkouttrigger)
 	* [HatchStoryBeat](#hatchstorybeat)
 	
-## CustomerManager
+## [CustomerManager]()
 ### Properties
 | Name | Description |
 |------|-------------|
@@ -82,7 +166,7 @@ Handles information about customer (Dialogue, Money, ID, Relationship)
 	* [CustomerMovement](#customermovement)
 	* Itself?
 
-## CustomerMovement
+## [CustomerMovement]()
 ### Properties
 ### References
 ### Public Methods
@@ -91,7 +175,53 @@ Handles information about customer (Dialogue, Money, ID, Relationship)
     * [CustomerManager](#customermanager)
     * [SoundManager](#soundmanager)
 
-## Fade
+## [DialogButtonClick]()
+### Description
+### Properties
+### References
+### Public Methods
+
+## [DragBulb]()
+### Description
+### Properties
+### References
+### Public Methods
+
+## [DrawerTrigger]()
+### Description
+### Properties
+### References
+### Public Methods
+
+## [DynamicLayering]()
+### Description
+### Properties
+### References
+### Public Methods
+
+## [EmoteController]()
+### Description
+### Properties
+### References
+### Public Methods
+* Controls emote sprites
+* Dependencies
+* Referenced by
+	* [CheckoutManager](#checkoutmanager)
+
+## [EndingManager]()
+### Description
+### Properties
+### References
+### Public Methods
+
+## [EndingText]()
+### Description
+### Properties
+### References
+### Public Methods
+
+## [Fade]()
 ### Properties
 ### References
 ### Public Methods
@@ -100,13 +230,25 @@ Handles information about customer (Dialogue, Money, ID, Relationship)
 * Referenced by
 	* [TimeManager](#timemanager)
 
-## GameControl
+## [FlashLight]()
+### Description
+### Properties
+### References
+### Public Methods
+
+## [GameControl]()
 ### Properties
 ### References
 ### Public Methods
 * Loads scenes
 
-## Hatch
+## [GlobalSave]()
+### Description
+### Properties
+### References
+### Public Methods
+
+## [Hatch]()
 ### Properties
 ### References
 ### Public Methods
@@ -114,13 +256,58 @@ Handles information about customer (Dialogue, Money, ID, Relationship)
 * Dependencies
 	* [HatchStoryBeat](#hatchstorybeat)
 
-## Interactable
+## [HatchStoryBeat]()
+### Description
+### Properties
+### References
+### Public Methods
+* Handles Hatch Event
+* Dependencies
+	* [CustomerInfo](#customerinfo)
+* Referenced by
+	* [Hatch](#hatch)
+	* [StoryEventHandler](#storyeventhandler)
+
+## [IceGame]()
+### Description
+### Properties
+### References
+### Public Methods
+
+## [Interactable]()
 ### Properties
 ### References
 ### Public Methods
 * Kind of confused, but it seems to handles interactable triggers and dialogue windows
 
-## LightFlicker
+## [InteractableManager]()
+### Description
+### Properties
+### References
+### Public Methods
+
+## [ItemBox]()
+### Description
+### Properties
+### References
+### Public Methods
+* Handles item box
+* Referenced by
+	* [StockingItem](#stockingitem)
+
+## [JournalDisplay]()
+### Description
+### Properties
+### References
+### Public Methods
+
+## [LightChangeGame]()
+### Description
+### Properties
+### References
+### Public Methods
+
+## [LightFlicker]()
 ### Properties
 ### References
 ### Public Methods
@@ -128,7 +315,13 @@ Handles information about customer (Dialogue, Money, ID, Relationship)
 * Referenced by
 	* [LightSanityEffect](#lightsanityeffect)
 
-## LightSanityEffect
+## [LightManager]()
+### Description
+### Properties
+### References
+### Public Methods
+
+## [LightSanityEffect]()
 ### Properties
 ### References
 ### Public Methods
@@ -136,14 +329,83 @@ Handles information about customer (Dialogue, Money, ID, Relationship)
 * Referenced by
 	* [LightSanityEffect](#lightsanityeffect)
 
-## Pause
+## [MainMenuManager]()
+### Description
+### Properties
+### References
+### Public Methods
+
+## [MainMenuSound]()
+### Description
+### Properties
+### References
+### Public Methods
+
+## [MiniGameControl]()
+### Description
+### Properties
+### References
+### Public Methods
+* Loads and Ends Minigames
+* Dependencies
+	* [MiniGameTrigger](#minigametrigger)
+* Referenced by
+	* [MiniGameTrigger](#minigametrigger)
+	* [MopGame](#mopgame)
+
+## [MiniGameTrigger]()
+### Description
+### Properties
+### References
+### Public Methods
+* Handles triggers for minigames
+* Dependencies
+	* [MinigameControl](#minigamecontrol)
+	* [PlayerMovement](#playermovement)
+* Referenced by
+	* [MinigameControl](#minigamecontrol)
+
+## [Money]()
+### Description
+### Properties
+### References
+### Public Methods
+* Handles Money colliders
+* Dependencies
+	* [CheckoutManager](#checkoutmanager)
+
+## [MoodIndicator]()
+### Description
+### Properties
+### References
+### Public Methods
+
+## [MopGame]()
+### Description
+### Properties
+### References
+### Public Methods
+* Handles cleanableObjects
+* Dependencies
+	* [CleanableObjects](#cleanableobjects)
+	* [MiniGameControl](#minigamecontrol)
+* Referenced By
+	* [CleanableObjects](#cleanableobjects)
+
+## [Pause]()
 ### Properties
 ### References
 ### Public Methods
 * Pauses the game by setting Time.timeScale to 1 or 0
 * Brings up in game pause screen
 
-## PerformanceReview
+## [PauseMenu]()
+### Description
+### Properties
+### References
+### Public Methods
+
+## [PerformanceReview]()
 ### Properties
 ### References
 ### Public Methods
@@ -158,13 +420,13 @@ Handles information about customer (Dialogue, Money, ID, Relationship)
 	* [CheckoutManager](#checkoutmanager)
 	* [TimeManager](#timemanger)
 
-## Phone
+## [Phone]()
 ### Properties
 ### References
 ### Public Methods
 * ClosePhone (inert?)
 
-## PhoneMessage
+## [PhoneMessage]()
 ### Properties
 ### References
 ### Public Methods
@@ -172,7 +434,7 @@ Handles information about customer (Dialogue, Money, ID, Relationship)
 * Dependencies
 	* [PerformanceReview](#performancereview)
 
-## PlayerMovement
+## [PlayerMovement]()
 ### Properties
 ### References
 ### Public Methods
@@ -183,7 +445,49 @@ Handles information about customer (Dialogue, Money, ID, Relationship)
 	* [TimeManager](#timemanager)
 	* moveable bool is also referenced by the scripts above
 
-## SanityEventManager
+## [PlayerTrigger]()
+### Description
+### Properties
+### References
+### Public Methods
+
+## [PowerButton]()
+### Description
+### Properties
+### References
+### Public Methods
+
+## [PowerGame]()
+### Description
+### Properties
+### References
+### Public Methods
+
+## [PPManager]()
+### Description
+### Properties
+### References
+### Public Methods
+
+## [RandomEventManager]()
+### Description
+### Properties
+### References
+### Public Methods
+
+## [Rule]()
+### Description
+### Properties
+### References
+### Public Methods
+
+## [RuleBook]()
+### Description
+### Properties
+### References
+### Public Methods
+
+## [SanityEventManager]()
 ### Properties
 ### References
 ### Public Methods
@@ -192,13 +496,52 @@ Handles information about customer (Dialogue, Money, ID, Relationship)
 	* [SanityEventManager](#sanityeventmanager)
 	* [LightSanityEffect](#lightsanityeffect)
 
-## SanityManager
+## [SanityManager]()
 ### Properties
 ### References
 ### Public Methods
 * Manages Sanity Values (inert?)
 
-## SoundManager
+## [SaveData]()
+### Description
+### Properties
+### References
+### Public Methods
+
+## [SaveUtility]()
+### Description
+### Properties
+### References
+### Public Methods
+
+## [ScrewBulb]()
+### Description
+### Properties
+### References
+### Public Methods
+
+## [ScrollEffect]()
+### Description
+### Properties
+### References
+### Public Methods
+
+## [SettingsScreen]()
+### Description
+### Properties
+### References
+### Public Methods
+
+## [Shelf]()
+### Description
+### Properties
+### References
+### Public Methods
+* I assume WIP
+* Referenced by
+	* [StockingItem](#stockingitem)
+
+## [SoundManager]()
 ### Properties
 ### References
 ### Public Methods
@@ -209,7 +552,43 @@ Handles information about customer (Dialogue, Money, ID, Relationship)
     	* [CheckoutManager](#checkoutmanager)
 	* [PlayerMovement](#playermovement)
 
-## TaskSpawner
+## [SpriteFade]()
+### Description
+### Properties
+### References
+### Public Methods
+
+## [StockingGame]()
+### Description
+### Properties
+### References
+### Public Methods
+* I assume WIP
+* Referenced by
+	* [StockingItem](#stockingitem)
+
+## [StockingItem]()
+### Description
+### Properties
+### References
+### Public Methods
+* I assume WIP
+* Dependencies
+	* [StockingGame](#stockinggame)
+	* [ItemBox](#itembox)
+
+## [StoryEventHandler]()
+### Description
+### Properties
+### References
+### Public Methods
+* Handles Story Events
+* Dependencies
+	* [HatchStoryBeat](#hatchstorybeat)
+* Referenced by
+	* [TimeManager](#timemanager)
+
+## [TaskSpawner]()
 ### Properties
 ### References
 ### Public Methods
@@ -217,7 +596,7 @@ Handles information about customer (Dialogue, Money, ID, Relationship)
 * Referenced By
 	* [TaskManager](#taskmanager)
 
-## TimeManager
+## [TimeManager]()
 ### Properties
 ### References
 ### Public Methods
@@ -230,178 +609,8 @@ Handles information about customer (Dialogue, Money, ID, Relationship)
 	* [TaskSpawner](#taskspawner)
 	* [CustomerManager](#customermanager)
 
-## CheckoutItem
+## [Wiggle]()
+### Description
 ### Properties
 ### References
 ### Public Methods
-* Handles triggers of checkoutManager 
-* Dependencies
-	* [CheckoutManager](#checkoutmanager)
-* Referenced by:
-	* [CheckoutManager](#checkoutmanager)
-
-## CheckoutManager
-### Properties
-### References
-### Public Methods
-* Manages Checkout Process
-* Dependencies
-	* [CheckoutTrigger](#checkouttrigger)
-	* [EmoteController](#emotecontroller)
-	* [CheckoutItem](#checkoutitem)
-    * SoundManager
-* Referenced by
-	* [DialoguePlayer](#dialogueplayer)
-	* [CheckoutItem](#checkoutitem)
-	* [CheckoutTrigger](#checkouttrigger)
-	* [Money](#money)
-	* [CheckoutItem](#checkoutitem)
-
-## CheckoutTrigger
-### Properties
-### References
-### Public Methods
-* Handles the triggers for starting Checkout 
-* Dependencies
-	* [CheckoutManager](#checkoutmanager)
-	* [CustomerInfo](#customerinfo)
-	* [PlayerMovement](#playermovement)
-Referenced by
-	* [CheckoutManager](#checkoutmanager)
-
-## CountdownSlider
-### Properties
-### References
-### Public Methods
-* Manages Slider (?)
-* Dependencies
-* Referenced by
-	* [DialoguePlayer](#dialogueplayer)
-
-## EmoteController
-### Properties
-### References
-### Public Methods
-* Controls emote sprites
-* Dependencies
-* Referenced by
-	* [CheckoutManager](#checkoutmanager)
-
-## Money
-### Properties
-### References
-### Public Methods
-* Handles Money colliders
-* Dependencies
-	* [CheckoutManager](#checkoutmanager)
-
-## Rulebook
-### Properties
-### References
-### Public Methods
-* Opens Rulebook
-
-## CleanableObject
-### Properties
-### References
-### Public Methods
-* Handles triggers for mop tasks
-* Dependencies
-	* [CleaningTool](#cleaningtool)
-	* [CleanableObject](#cleanableobject)
-	* [MopGame](#mopgame)
-
-## CleaningTool
-### Properties
-### References
-### Public Methods
-* Handles position and rigidbody of CleaningTool
-* Referenced by
-	* [CleaningObject](#cleaningobject)
-
-## ItemBox
-### Properties
-### References
-### Public Methods
-* Handles item box
-* Referenced by
-	* [StockingItem](#stockingitem)
-
-## MiniGameControl
-### Properties
-### References
-### Public Methods
-* Loads and Ends Minigames
-* Dependencies
-	* [MiniGameTrigger](#minigametrigger)
-* Referenced by
-	* [MiniGameTrigger](#minigametrigger)
-	* [MopGame](#mopgame)
-
-## MiniGameTrigger
-### Properties
-### References
-### Public Methods
-* Handles triggers for minigames
-* Dependencies
-	* [MinigameControl](#minigamecontrol)
-	* [PlayerMovement](#playermovement)
-* Referenced by
-	* [MinigameControl](#minigamecontrol)
-
-## MopGame
-### Properties
-### References
-### Public Methods
-* Handles cleanableObjects
-* Dependencies
-	* [CleanableObjects](#cleanableobjects)
-	* [MiniGameControl](#minigamecontrol)
-* Referenced By
-	* [CleanableObjects](#cleanableobjects)
-
-## Shelf
-### Properties
-### References
-### Public Methods
-* I assume WIP
-* Referenced by
-	* [StockingItem](#stockingitem)
-
-## StockingGame
-### Properties
-### References
-### Public Methods
-* I assume WIP
-* Referenced by
-	* [StockingItem](#stockingitem)
-
-## StockingItem
-### Properties
-### References
-### Public Methods
-* I assume WIP
-* Dependencies
-	* [StockingGame](#stockinggame)
-	* [ItemBox](#itembox)
-
-## HatchStoryBeat
-### Properties
-### References
-### Public Methods
-* Handles Hatch Event
-* Dependencies
-	* [CustomerInfo](#customerinfo)
-* Referenced by
-	* [Hatch](#hatch)
-	* [StoryEventHandler](#storyeventhandler)
-
-## StoryEventHandler
-### Properties
-### References
-### Public Methods
-* Handles Story Events
-* Dependencies
-	* [HatchStoryBeat](#hatchstorybeat)
-* Referenced by
-	* [TimeManager](#timemanager)
