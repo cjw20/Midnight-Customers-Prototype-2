@@ -3,7 +3,7 @@
 - Link to the [Modifed Semantic Versioning](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/MSV.md) reference document.
 - Link to the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) document.
 
-## [AnimControl]()
+## [AnimControl](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/AnimControl.cs)
 ### Description
 DEPRECATED.
 ### Properties
@@ -16,7 +16,7 @@ DEPRECATED.
 | body | Reference to a [RigidBody2D](https://docs.unity3d.com/ScriptReference/Rigidbody2D.html) component. |
 | animator | Reference to an [Animator](https://docs.unity3d.com/ScriptReference/Animator.html). |
 
-## [CheckoutItem]()
+## [CheckoutItem](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/Checkout/CheckoutItem.cs)
 ### Description
 Putting this script on a prefab allows it to be purchased by customers at the register.
 ### Properties
@@ -34,7 +34,7 @@ Putting this script on a prefab allows it to be purchased by customers at the re
 |------|-------------|
 | checkoutManager | Reference to an instance of the [CheckoutManager](#checkoutmanager) class. |
 
-## [CheckoutManager]()
+## [CheckoutManager](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/Checkout/CheckoutManager.cs)
 ### Description
 Manages all aspects of the checkout minigame.
 ### Properties
