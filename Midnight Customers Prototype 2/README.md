@@ -5,38 +5,80 @@
 
 ## [AnimControl]()
 ### Description
+DEPRECATED.
 ### Properties
+| Name | Description |
+|------|-------------|
+| velocity | The [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) velocity of this object. |
 ### References
-### Public Methods
+| Name | Description |
+|------|-------------|
+| body | Reference to a [RigidBody2D](https://docs.unity3d.com/ScriptReference/Rigidbody2D.html) component. |
+| animator | Reference to an [Animator](https://docs.unity3d.com/ScriptReference/Animator.html). |
 
 ## [CheckoutItem]()
 ### Description
+Putting this script on a prefab allows it to be purchased by customers at the register.
 ### Properties
+| Name | Description |
+|------|-------------|
+| price | The price of the item that shows up on the register screen. |
+| itemName | The name of the item. |
+| weight | 1 for light, 2 for medium, and 3 for heavy. |
+| requiresID | Whether the item requires an ID to purchase or not. |
+| isScanned | Whether the item has been scanned or not. |
+| foodItem | Whether the item is a food item or not. |
+| paperItem | Whether the item is made of paper or not. |
 ### References
-### Public Methods
-* Handles triggers of checkoutManager 
-* Dependencies
-	* [CheckoutManager](#checkoutmanager)
-* Referenced by:
-	* [CheckoutManager](#checkoutmanager)
+| Name | Description |
+|------|-------------|
+| checkoutManager | Reference to an instance of the [CheckoutManager](#checkoutmanager) class. |
 
 ## [CheckoutManager]()
 ### Description
+Manages all aspects of the checkout minigame.
 ### Properties
+| Name | Description |
+|------|-------------|
+| itemNumber | The number of items the customer has brought to the checkout counter. |
+| remainingItems | The number of items that still have to be bagged. |
+| customerPayed | Whether the customer has paid yet or not. |
+| passedIDCheck | NOT IN USE |
+| finishedBag | Whether all the items have been scanned or not. |
+| totalPrice | The total price of all scanned items. |
+| dialogueFinished | Whether the dialogue has finished completely or not. |
+| needsIDCheck | Whether an ID check is needed or not. |
+| failedIDCheck | Whether an ID check was failed or not. |
+| penaltyPoints | Sum of errors in current checkout interaction. |
+| activePhase | The current active phase. |
 ### References
+| Name | Description |
+|------|-------------|
+| checkoutTrigger | Reference to an instance of the [CheckoutTrigger](#checkouttrigger) class. |
+| checkoutTimer | Reference to an instance of the [CheckoutTimer](#checkouttimer) class. |
+| items | Array of [GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html) that are items brought to checkout. |
+| spawnedItems | List of [GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html) spawned. |
+| customerInfo | Reference to an instance of the [CustomerInfo](#customerinfo) class. |
+| activeRules | List of [Rule](#rule). |
+| currentItem | Reference to an instance of the [CheckoutItem](#checkoutitem) class that represents the current item being checked out. |
+| lastItem | Reference to an instance of the [CheckoutItem](#checkoutitem) class that represents the last item checked out. |
+| firstCheckout | Whether this is the first checkout of the game or not. |
+| soundManger | Reference to an instance of the [SoundManager](#soundmanager) class. |
+| review | Reference to an instance of the [PerformanceReview](#performancereview) class. |
+| emoter | Reference to an instance of the [EmoteController](#emotecontroller) class. |
+| dialoguePlayer | Reference to an instance of the [DialoguePlayer](#dialogueplayer) class. |
+| itemSpawns | An array of [GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html) to spawn. |
+| portraitLocation | Reference to a [SpriteRenderer](https://docs.unity3d.com/ScriptReference/SpriteRenderer.html) for the portrait location. |
+| phase0Rules | Array of [Rule](#rule) for phase 0. |
+| phase1Rules | Array of [Rule](#rule) for phase 1. |
+| moneySpawn | Reference to a [Transform](https://docs.unity3d.com/ScriptReference/Transform.html) where the money will be placed when spawned. |
+| misbagMessage | Reference to the "Misbag" UI [GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html). |
+| idButton | Reference to the "ID Button" UI [GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html). |
+| hasIDMessage | Reference to the "Has ID" UI [GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html). |
+| noIDMessage | Reference to the "No ID" UI [GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html). |
+| priceText | Reference to the "price text" UI [Text](https://docs.unity3d.com/2017.3/Documentation/ScriptReference/UI.Text.html). |
+| weightText | Reference to the "weight text" UI [Text](https://docs.unity3d.com/2017.3/Documentation/ScriptReference/UI.Text.html). |
 ### Public Methods
-* Manages Checkout Process
-* Dependencies
-	* [CheckoutTrigger](#checkouttrigger)
-	* [EmoteController](#emotecontroller)
-	* [CheckoutItem](#checkoutitem)
-    * SoundManager
-* Referenced by
-	* [DialoguePlayer](#dialogueplayer)
-	* [CheckoutItem](#checkoutitem)
-	* [CheckoutTrigger](#checkouttrigger)
-	* [Money](#money)
-	* [CheckoutItem](#checkoutitem)
 
 ## [CheckoutTimer]()
 ### Description
