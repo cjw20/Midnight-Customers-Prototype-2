@@ -258,17 +258,17 @@ Handles information about customer (Dialogue, Money, ID, Relationship)
 | hasValidID | Whether the character has a valid ID or not. |
 | essential | Set to `true` if the character should NOT leave when the timer runs out. |
 | conversationProgress | How far the player is into the conversations with this character. |
-| moodMilestones[] | Determines how to segment the mood timer. |
+| moodMilestones | Determines how to segment the mood timer. |
 ### References
 | Name | Description |
 |------|-------------|
 | dialogueFont | [Font](https://docs.unity3d.com/Manual/class-Font.html) to use for this customer. |
 | portrait | [Sprite](https://docs.unity3d.com/ScriptReference/Sprite.html) to use for this customer. |
-| checkoutItems[] | Objects this character will bring to the checkout counter. |
-| carriedMoney[] | The amount of money carried by this character. |
-| nextConversation | Next conversation that this character will have next. |
-| conversations[] | All conversations this character will progress through. |
-### Public Methods
+| checkoutItems | Objects this character will bring to the checkout counter. |
+| carriedMoney | The amount of money carried by this character. |
+| nextConversation | Reference to an instance of the [DialogueContainer](#dialoguecontainer) class that represents the conversation that this character will have next. |
+| conversations | Reference to an array of [DialogueContainer](#dialoguecontainer) representing all conversations this character will progress through. |
+### Methods
 | Name | Description |
 |------|-------------|
 | LoadNextConvo | Loads the next conversation. |
@@ -281,6 +281,8 @@ Handles information about customer (Dialogue, Money, ID, Relationship)
 	* [HatchStoryBeat](#hatchstorybeat)
 	
 ## [CustomerManager](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/CustomerManager.cs)
+### Description
+Handles spawning and despawning of customers in the store.
 ### Properties
 | Name | Description |
 |------|-------------|
@@ -289,19 +291,20 @@ Handles information about customer (Dialogue, Money, ID, Relationship)
 ### References
 | Name | Description |
 |------|-------------|
-| lastCoroutine | The last Coroutine ran. |
-| customerManager | Reference to an instance of the CustomerManager class. |
-| customers[] | The list of customers. |
-| customerList[] | Each customer in array for save and loading purposes. |
-| exit | A Transform for the exit point of the customers. |
-| customersInStore[] | List of customers currently in the store. |
-| endingManager | Reference to an instance of the EndingManager class. |
-### Public Methods
+| lastCoroutine | The last [Coroutine](https://docs.unity3d.com/ScriptReference/Coroutine.html) ran. |
+| customerManager | Reference to an instance of the [CustomerManager](#customermanager) class. |
+| customers | The list of customers. |
+| customerList | Each customer in array for save and loading purposes. |
+| exit | A [Transform](https://docs.unity3d.com/ScriptReference/Transform.html) for the exit point of the customers. |
+| customersInStore | List of customers currently in the store. |
+| endingManager | Reference to an instance of the [EndingManager](#endingmanager) class. |
+### Methods
 | Name | Description |
 |------|-------------|
 | OnLoadGame | Starts spawning customers when the game starts. |
 | LoadCustomer | Spawns a customer into the store and gets them moving and sets their mood. |
 | CustomerExit | Despawns customers. |
+| NextCustomer | IEnumerator handles delay between spawning next customer. |
 | StopSpawns | Stops customers spawning. |
 | StartSpawns | Resumes customer spawning. |
 | PauseSpawns | Pauses customer spawning. |
@@ -313,43 +316,95 @@ Handles information about customer (Dialogue, Money, ID, Relationship)
 	* Itself?
 
 ## [CustomerMovement](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/CustomerMovement.cs)
+### Description
+Handles movement of NPC customers.
 ### Properties
+| Name | Description |
+|------|-------------|
+| speed | Movement speed of the customer. |
+| isWaiting | Whether the customer is waiting or not. |
+| velocity | The velocity of the customer. |
+| lastPosition | The last position of the customer. |
+| minDistance | Margin of error to determine if customer has reached a waypoint. |
+| destination | The destination of the customer. |
+| timeToWait | How long the customer will wait at a waypoint before moving to the next one. |
+| hasCheckedOut | Whether the customer has completed checking out or not. |
+| readyForCheckout | Whether the customer is ready for checkout or not. |
 ### References
-### Public Methods
-* Handles customer movement*
+| Name | Description |
+|------|-------------|
+| customerManager | Reference to an instance of the [CustomerManager](#customermanager) class. |
+| soundManager | Reference to an instance of the [SoundManager](#soundmanager) class. |
+| agent | Reference to a [NavMeshAgent2D](https://docs.unity3d.com/ScriptReference/AI.NavMeshAgent.html). |
+| spriteRenderer | Reference to a [SpriteRenderer](https://docs.unity3d.com/ScriptReference/SpriteRenderer.html). |
+| animator | Reference to an [Animator](https://docs.unity3d.com/ScriptReference/Animator.html). |
+| plannedPath | Array of [Transform](https://docs.unity3d.com/ScriptReference/Transform.html) representing the waypoints the customer will travel along. |
+| checkout | A [Transform](https://docs.unity3d.com/ScriptReference/Transform.html) representing the location of the checkout zone. |
+| exit | A [Transform](https://docs.unity3d.com/ScriptReference/Transform.html) representing the location of the exit area. |
+### Methods
+| Name | Description |
+|------|-------------|
+| EnterStore | Called when customer spawns. Plays door sounds and activates the `agent`. |
+| GoToNextPoint | Sends the customer to their next waypoint. |
+| Wait | IEnumerator handling when customer is waiting either near exit or checkout zone. |
+| FinishedCheckout | Finishes checkout minigame and sends customer to next waypoint. |
+| ExitStore | Despawns the customer and triggers door sound. |
 * Dependencies
     * [CustomerManager](#customermanager)
     * [SoundManager](#soundmanager)
 
 ## [DialogButtonClick](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/DialogButtonClick.cs)
 ### Description
-### Properties
+Used to play a sound when a button is clicked.
 ### References
-### Public Methods
+| Name | Description |
+|------|-------------|
+| soundManager | Reference to an instance of the [SoundManager](#soundmanager) class. |
+### Methods
+| Name | Description |
+|------|-------------|
+| TriggerSound | Plays button click sound. |
 
 ## [DragBulb](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/MG%20Scripts/DragBulb.cs)
 ### Description
-### Properties
+Handles dragging of the lightbulb for the lightbulb changing minigame.
 ### References
-### Public Methods
+| Name | Description |
+|------|-------------|
+| newBulb | The prefab for the new lightbulb. |
 
 ## [DrawerTrigger](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/Checkout/DrawerTrigger.cs)
 ### Description
-### Properties
+Handles dropping items into the drawer behind the counter and hides or shows the drawer.
 ### References
-### Public Methods
+| Name | Description |
+|------|-------------|
+| sr | Reference to a [SpriteRenderer](https://docs.unity3d.com/ScriptReference/SpriteRenderer.html). |
 
 ## [DynamicLayering](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/DynamicLayering.cs)
 ### Description
+Handles making sure the customers and player are always on the correct layer.
 ### Properties
-### References
-### Public Methods
+| Name | Description |
+|------|-------------|
+| targetLayer | The target layer for the player and customers. |
 
 ## [EmoteController](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/Checkout/EmoteController.cs)
 ### Description
-### Properties
+Handles the display of the mood sprites for the NPC customers.
 ### References
-### Public Methods
+| Name | Description |
+|------|-------------|
+| lastCoroutine | Reference to the last [Coroutine](https://docs.unity3d.com/ScriptReference/Coroutine.html) ran. |
+| spriteRenderer | Reference to a [SpriteRenderer](https://docs.unity3d.com/ScriptReference/SpriteRenderer.html). |
+| happyEmote | Reference to the happy emote [Sprite](https://docs.unity3d.com/ScriptReference/Sprite.html). |
+| sadEmote | Reference to the sad emote [Sprite](https://docs.unity3d.com/ScriptReference/Sprite.html). |
+| angryEmote | Reference to the angry emote [Sprite](https://docs.unity3d.com/ScriptReference/Sprite.html). |
+### Methods
+| Name | Description |
+|------|-------------|
+| React | Changes the emotion sprites. |
+| HideReaction | IEnumerator handling a dely between changing sprites. |
 * Controls emote sprites
 * Dependencies
 * Referenced by
@@ -357,17 +412,49 @@ Handles information about customer (Dialogue, Money, ID, Relationship)
 
 ## [EndingManager](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/EndingManager.cs)
 ### Description
-### Properties
+Handles the various endings that exist in the game.
 ### References
-### Public Methods
+| Name | Description |
+|------|-------------|
+| timeManager | Reference to an instance of the [TimeManager](#timemanager) class. |
+| cultEnd | Reference to the cult ending prefab. |
+| deepEnd | Reference to the deep one ending prefab. |
+| investigatorEnd | Reference to the investigator ending prefab. |
+| endingPhone | Reference to the ending phone prefab. |
+| activeEnding | Reference to an instance of the [EndingText](#endingtext) class. |
+### Methods
+| Name | Description |
+|------|-------------|
+| StartEnding | Triggers the end of the game. |
+| CultEnding | Triggers the cult ending. |
+| DeepOneEnding | Triggers the deep one ending. |
+| InvestigatorEnding | Triggers the investigator ending. |
+| OnContinueButton | Makes it so the button method does not have to be set separately for each ending. |
 
 ## [EndingText](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/EndingText.cs)
 ### Description
+Handles the text shown at the end of the game.
 ### Properties
+| Name | Description |
+|------|-------------|
+| endingContents | The text to be shown at the end. |
+| showArtTiming | How far into the array to switch from black screen to full art. |
+| waitingForConfirm | Whether the game is waiting for confirmation or not? |
 ### References
-### Public Methods
+| Name | Description |
+|------|-------------|
+| endingWindow | The prefab for the ending window. |
+| endingTextDisplay | The [Text](https://docs.unity3d.com/2017.3/Documentation/ScriptReference/UI.Text.html) to display. |
+| timeManager | Reference to an instance of the [TimeManager](#timemanager) class. |
+| spriteRenderer | Reference to a [SpriteRenderer](https://docs.unity3d.com/ScriptReference/SpriteRenderer.html). |
+### Methods
+| Name | Description |
+|------|-------------|
+| PlayText | Shows ending text and starts the `DisplayEnd()` IEnumerator. |
+| DisplayEnd | IEnumerator handles showing text for the end letter by letter and fading screen. |
 
 ## [Fade](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/Fade.cs)
+### Description
 ### Properties
 ### References
 ### Public Methods
@@ -383,6 +470,7 @@ Handles information about customer (Dialogue, Money, ID, Relationship)
 ### Public Methods
 
 ## [GameControl](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/GameControl.cs)
+### Description
 ### Properties
 ### References
 ### Public Methods
@@ -395,6 +483,7 @@ Handles information about customer (Dialogue, Money, ID, Relationship)
 ### Public Methods
 
 ## [Hatch](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/Hatch.cs)
+### Description
 ### Properties
 ### References
 ### Public Methods
@@ -433,6 +522,7 @@ Handles information about customer (Dialogue, Money, ID, Relationship)
 ### Public Methods
 
 ## [Interactable](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/Interactable.cs)
+### Description
 ### Properties
 ### References
 ### Public Methods
@@ -466,6 +556,7 @@ Handles information about customer (Dialogue, Money, ID, Relationship)
 ### Public Methods
 
 ## [LightFlicker](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/LightFlicker.cs)
+### Description
 ### Properties
 ### References
 ### Public Methods
@@ -480,6 +571,7 @@ Handles information about customer (Dialogue, Money, ID, Relationship)
 ### Public Methods
 
 ## [LightSanityEffect](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/LightSanityEffect.cs)
+### Description
 ### Properties
 ### References
 ### Public Methods
@@ -557,6 +649,7 @@ Handles information about customer (Dialogue, Money, ID, Relationship)
 ### Public Methods
 
 ## [Pause](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/Pause.cs)
+### Description
 ### Properties
 ### References
 ### Public Methods
@@ -570,6 +663,7 @@ Handles information about customer (Dialogue, Money, ID, Relationship)
 ### Public Methods
 
 ## [PerformanceReview](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/PerformanceReview.cs)
+### Description
 ### Properties
 ### References
 ### Public Methods
@@ -585,12 +679,14 @@ Handles information about customer (Dialogue, Money, ID, Relationship)
 	* [TimeManager](#timemanger)
 
 ## [Phone](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/Phone.cs)
+### Description
 ### Properties
 ### References
 ### Public Methods
 * ClosePhone (inert?)
 
 ## [PhoneMessage](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/PhoneMessage.cs)
+### Description
 ### Properties
 ### References
 ### Public Methods
@@ -599,6 +695,7 @@ Handles information about customer (Dialogue, Money, ID, Relationship)
 	* [PerformanceReview](#performancereview)
 
 ## [PlayerMovement](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/PlayerMovement.cs)
+### Description
 ### Properties
 ### References
 ### Public Methods
@@ -652,6 +749,7 @@ Handles information about customer (Dialogue, Money, ID, Relationship)
 ### Public Methods
 
 ## [SanityEventManager](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/SanityEventManager.cs)
+### Description
 ### Properties
 ### References
 ### Public Methods
@@ -661,6 +759,7 @@ Handles information about customer (Dialogue, Money, ID, Relationship)
 	* [LightSanityEffect](#lightsanityeffect)
 
 ## [SanityManager](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/SanityManager.cs)
+### Description
 ### Properties
 ### References
 ### Public Methods
@@ -706,6 +805,7 @@ Handles information about customer (Dialogue, Money, ID, Relationship)
 	* [StockingItem](#stockingitem)
 
 ## [SoundManager](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/Sound/SoundManager.cs)
+### Description
 ### Properties
 ### References
 ### Public Methods
@@ -753,6 +853,7 @@ Handles information about customer (Dialogue, Money, ID, Relationship)
 	* [TimeManager](#timemanager)
 
 ## [TaskSpawner](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/TaskSpawner.cs)
+### Description
 ### Properties
 ### References
 ### Public Methods
@@ -761,6 +862,7 @@ Handles information about customer (Dialogue, Money, ID, Relationship)
 	* [TaskManager](#taskmanager)
 
 ## [TimeManager](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/TimeManager.cs)
+### Description
 ### Properties
 ### References
 ### Public Methods
