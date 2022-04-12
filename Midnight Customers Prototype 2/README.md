@@ -127,9 +127,28 @@ Manages the countdown timer displayed during checkout that influences customer m
 
 ## [CheckoutTrigger](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/Checkout/CheckoutTrigger.cs)
 ### Description
+Handles triggering the checkout minigame.
 ### Properties
+| Name | Description |
+|------|-------------|
+| playerReady | Whether the player is standing behind the register or not. |
+| customerReady | Whether the customer is in front of the register and ready to checkout or not. |
+| inCheckout | Whether the checkout minigame is running or not. |
 ### References
-### Public Methods
+| Name | Description |
+|------|-------------|
+| playerMove | Reference to an instance of the [PlayerMovement](#playermovement) class. |
+| playerInput | Reference to an instance of the [PlayerInput](#playerinput) class. |
+| checkoutManager | Reference to an instance of the [CheckoutManager](#checkoutmanager) class. |
+| checkoutTimer | Reference to an instance of the [CheckoutTimer](#checkouttimer) class. |
+| checkoutGame | Reference to the checkout game object prefab. |
+| customer | Reference to the customer that's ready to checkout. |
+| customerInfo | Reference to an instance of the [CustomerInfo](#customerinfo) class. |
+### Methods
+| Name | Description |
+|------|-------------|
+| TriggerCheckout | Starts the checkout minigame. |
+| EndCheckout | Ends the checkout minigame. |
 * Handles the triggers for starting Checkout 
 * Dependencies
 	* [CheckoutManager](#checkoutmanager)
@@ -140,9 +159,27 @@ Manages the countdown timer displayed during checkout that influences customer m
 
 ## [CleanableObject](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/MG%20Scripts/CleanableObject.cs)
 ### Description
+Used on all objects that the player can clean.
 ### Properties
+| Name | Description |
+|------|-------------|
+| isBeingCleaned | Whether the object is currently being cleaned or not. |
+| passedTime | Time passed since cleaning started. |
+| startingColor | The color before the object is cleaned. |
+| hitpoints | The health of the object that needs cleaned. |
+| cleanTime | The cleaning time. |
+| currentAlpha | The current alpha value for transparency. |
+| newColor | The new color to use after cleaning is finished. |
 ### References
-### Public Methods
+| Name | Description |
+|------|-------------|
+| tool | Reference to an instance of the [CleaningTool](#cleaningtool) class. |
+| mess | Reference to a [SpriteRenderer](https://docs.unity3d.com/ScriptReference/SpriteRenderer.html). |
+| mopGame | Reference to an instance of the [MopGame](#mopgame) class. |
+### Methods
+| Name | Description |
+|------|-------------|
+| setAlpha | Used to change the alpha value. |
 * Handles triggers for mop tasks
 * Dependencies
 	* [CleaningTool](#cleaningtool)
@@ -151,16 +188,27 @@ Manages the countdown timer displayed during checkout that influences customer m
 
 ## [CleaningTool](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/MG%20Scripts/CleaningTool.cs)
 ### Description
+Used on objects that the player can use to clean things.
 ### Properties
+| Name | Description |
+|------|-------------|
+| oldPosition| A [Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html) representing the previous position of the cleaning tool. |
+| newPosition| A [Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html) representing the new position of the cleaning tool. |
+| isCleaning | Whether the tool is currently cleaning or not. |
+| toolName | The name of the tool. |
+| cleaningThreshold | The cleaning threshold for the tool. |
 ### References
-### Public Methods
+| Name | Description |
+|------|-------------|
+| rb | Reference to a [Rigidbody2D](https://docs.unity3d.com/ScriptReference/Rigidbody2D.html) component. |
+| soundmanager | Reference to an instance of the [SoundManager](#soundmanager) class. |
 * Handles position and rigidbody of CleaningTool
 * Referenced by
 	* [CleaningObject](#cleaningobject)
 
 ## [ClickDrag](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/ClickDrag.cs)
 ### Description
-Handles input from mousePosition and OnMouseDown
+Handles input from mousePosition and OnMouseDown and allows the dragging of objects.
 ### Properties
 | Name | Description |
 |------|-------------|
@@ -168,16 +216,33 @@ Handles input from mousePosition and OnMouseDown
 | startPosX | The starting position of the item being dragged. |
 | startPosY | The starting position of the item being dragged. |
 | startPosZ | The starting position of the item being dragged. |
+### References
+| Name | Description |
+|------|-------------|
+| sprite | Reference to a [SpriteRenderer](https://docs.unity3d.com/ScriptReference/SpriteRenderer.html). |
 * No Dependencies
 * Referenced by:
 	* [StockingItem](#stockingitem)
     
 ## [CountdownSlider](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/Checkout/CountdownSlider.cs)
 ### Description
+Controls the countdown slider during checkout minigame.
 ### Properties
+| Name | Description |
+|------|-------------|
+| isCountingDown | Whether the timer is counting currently or not. |
+| timePassed | How much time has passed on the timer. |
 ### References
-### Public Methods
-* Manages Slider (?)
+| Name | Description |
+|------|-------------|
+| slider | Reference to an instance of the [Slider](#slider) class. |
+### Methods
+| Name | Description |
+|------|-------------|
+| SetValue | Sets the `value` of the `slider`. |
+| SetMinMax | Sets the minimum, current, and maximum values for the slider. |
+| StartCount | Starts the countdown of the timer. |
+| Reset | Resets the timer back to its max value. |
 * Dependencies
 * Referenced by
 	* [DialoguePlayer](#dialogueplayer)
@@ -197,8 +262,8 @@ Handles information about customer (Dialogue, Money, ID, Relationship)
 ### References
 | Name | Description |
 |------|-------------|
-| dialogueFont | Font to use for this customer. |
-| portrait | Sprite to use for this customer. |
+| dialogueFont | [Font](https://docs.unity3d.com/Manual/class-Font.html) to use for this customer. |
+| portrait | [Sprite](https://docs.unity3d.com/ScriptReference/Sprite.html) to use for this customer. |
 | checkoutItems[] | Objects this character will bring to the checkout counter. |
 | carriedMoney[] | The amount of money carried by this character. |
 | nextConversation | Next conversation that this character will have next. |
