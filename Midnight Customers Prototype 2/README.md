@@ -78,15 +78,54 @@ Manages all aspects of the checkout minigame.
 | noIDMessage | Reference to the "No ID" UI [GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html). |
 | priceText | Reference to the "price text" UI [Text](https://docs.unity3d.com/2017.3/Documentation/ScriptReference/UI.Text.html). |
 | weightText | Reference to the "weight text" UI [Text](https://docs.unity3d.com/2017.3/Documentation/ScriptReference/UI.Text.html). |
-### Public Methods
+### Methods
+| Name | Description |
+|------|-------------|
+| LoadPhase1 | Adds all [Rule](#rules) from `phase1Rules` to the `activeRules`. |
+| StartCheckout | Triggers a new checkout minigame. |
+| EndDialogue | Ends the current dialogue, updates relationship, loads the next conversation, and ends checkout once dialogue is finished. |
+| UpdateItem | Updates `lastItem` and the `currentItem`. |
+| Bagged | Handles bagging of items. |
+| GiveMoney | Makes customer put their money on the counter. |
+| TakeMoney | Handles putting money into the cash register and ending checkout. |
+| ScanItem | Adds item cost to running total, displays info on register. |
+| PutAwayItem | Handles putting an item into the drawer and refunding the cost if scanned. |
+| EndCheckout | Ends current checkout interaction. |
+| GiveUp | Handles customer leaving early because player didn't attend to them. |
+| DisplayWeight | Displays the weight of the item being scanned. |
+| DisplayMessage | Displays a message for a set duration. |
+| CheckID | Randomly determines if a customer has their ID or not. |
 
-## [CheckoutTimer]()
+## [CheckoutTimer](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/Checkout/CheckoutTimer.cs)
 ### Description
+Manages the countdown timer displayed during checkout that influences customer mood levels as well as if they leave before being checked out.
 ### Properties
+| Name | Description |
+|------|-------------|
+| segments | How many segments make up the timer countdown bar. |
+| maxValue | The value that the timer starts at. |
+| isRunning | Whether the timer is running or not. |
+| inCheckout | Whether the checkout UI is open or not. |
+| timePassed | How much time has passed since timer started. |
+| scale | How quickly the timer counts down. |
+| currentMilestone | Index of the array for the most recently passed milestone. |
 ### References
-### Public Methods
+| Name | Description |
+|------|-------------|
+| currentCustomer | Reference to an instance of the [CustomerInfo](#customerinfo) class. |
+| slider | Reference to a [Slider](https://docs.unity3d.com/2018.3/Documentation/ScriptReference/UI.Slider.html). |
+| slideImage | Reference to an [Image](https://docs.unity3d.com/ScriptReference/UIElements.Image.html). |
+| checkoutManager | Reference to an instance of the [CheckoutManager](#checkoutmanager) class. |
+### Methods
+| Name | Description |
+|------|-------------|
+| SetMood | Manages changing moods of a customer. |
+| StartTimer | Starts the checkout timer. |
+| SetValues | Sets values for the time slider. |
+| UpdateValue | Used to change value up or down if an action makes customer happy/unhappy. |
+| ResetTimer | Resets the countdown timer. |
 
-## [CheckoutTrigger]()
+## [CheckoutTrigger](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/Checkout/CheckoutTrigger.cs)
 ### Description
 ### Properties
 ### References
@@ -99,7 +138,7 @@ Manages all aspects of the checkout minigame.
 * Referenced by
 	* [CheckoutManager](#checkoutmanager)
 
-## [CleanableObject]()
+## [CleanableObject](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/MG%20Scripts/CleanableObject.cs)
 ### Description
 ### Properties
 ### References
@@ -110,7 +149,7 @@ Manages all aspects of the checkout minigame.
 	* [CleanableObject](#cleanableobject)
 	* [MopGame](#mopgame)
 
-## [CleaningTool]()
+## [CleaningTool](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/MG%20Scripts/CleaningTool.cs)
 ### Description
 ### Properties
 ### References
@@ -133,7 +172,7 @@ Handles input from mousePosition and OnMouseDown
 * Referenced by:
 	* [StockingItem](#stockingitem)
     
-## [CountdownSlider]()
+## [CountdownSlider](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/Checkout/CountdownSlider.cs)
 ### Description
 ### Properties
 ### References
@@ -176,7 +215,7 @@ Handles information about customer (Dialogue, Money, ID, Relationship)
 	* [CheckoutTrigger](#checkouttrigger)
 	* [HatchStoryBeat](#hatchstorybeat)
 	
-## [CustomerManager]()
+## [CustomerManager](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/CustomerManager.cs)
 ### Properties
 | Name | Description |
 |------|-------------|
@@ -208,7 +247,7 @@ Handles information about customer (Dialogue, Money, ID, Relationship)
 	* [CustomerMovement](#customermovement)
 	* Itself?
 
-## [CustomerMovement]()
+## [CustomerMovement](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/CustomerMovement.cs)
 ### Properties
 ### References
 ### Public Methods
@@ -217,31 +256,31 @@ Handles information about customer (Dialogue, Money, ID, Relationship)
     * [CustomerManager](#customermanager)
     * [SoundManager](#soundmanager)
 
-## [DialogButtonClick]()
+## [DialogButtonClick](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/DialogButtonClick.cs)
 ### Description
 ### Properties
 ### References
 ### Public Methods
 
-## [DragBulb]()
+## [DragBulb](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/MG%20Scripts/DragBulb.cs)
 ### Description
 ### Properties
 ### References
 ### Public Methods
 
-## [DrawerTrigger]()
+## [DrawerTrigger](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/Checkout/DrawerTrigger.cs)
 ### Description
 ### Properties
 ### References
 ### Public Methods
 
-## [DynamicLayering]()
+## [DynamicLayering](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/DynamicLayering.cs)
 ### Description
 ### Properties
 ### References
 ### Public Methods
 
-## [EmoteController]()
+## [EmoteController](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/Checkout/EmoteController.cs)
 ### Description
 ### Properties
 ### References
@@ -251,19 +290,19 @@ Handles information about customer (Dialogue, Money, ID, Relationship)
 * Referenced by
 	* [CheckoutManager](#checkoutmanager)
 
-## [EndingManager]()
+## [EndingManager](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/EndingManager.cs)
 ### Description
 ### Properties
 ### References
 ### Public Methods
 
-## [EndingText]()
+## [EndingText](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/EndingText.cs)
 ### Description
 ### Properties
 ### References
 ### Public Methods
 
-## [Fade]()
+## [Fade](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/Fade.cs)
 ### Properties
 ### References
 ### Public Methods
@@ -272,25 +311,25 @@ Handles information about customer (Dialogue, Money, ID, Relationship)
 * Referenced by
 	* [TimeManager](#timemanager)
 
-## [FlashLight]()
+## [FlashLight](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/FlashLight.cs)
 ### Description
 ### Properties
 ### References
 ### Public Methods
 
-## [GameControl]()
+## [GameControl](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/GameControl.cs)
 ### Properties
 ### References
 ### Public Methods
 * Loads scenes
 
-## [GlobalSave]()
+## [GlobalSave](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/GlobalSave.cs)
 ### Description
 ### Properties
 ### References
 ### Public Methods
 
-## [Hatch]()
+## [Hatch](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/Hatch.cs)
 ### Properties
 ### References
 ### Public Methods
@@ -298,7 +337,7 @@ Handles information about customer (Dialogue, Money, ID, Relationship)
 * Dependencies
 	* [HatchStoryBeat](#hatchstorybeat)
 
-## [HatchStoryBeat]()
+## [HatchStoryBeat](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/Story/HatchStoryBeat.cs)
 ### Description
 ### Properties
 ### References
@@ -310,25 +349,37 @@ Handles information about customer (Dialogue, Money, ID, Relationship)
 	* [Hatch](#hatch)
 	* [StoryEventHandler](#storyeventhandler)
 
-## [IceGame]()
+## [IDRule](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/Checkout/Rules/IDRule.cs)
 ### Description
 ### Properties
 ### References
 ### Public Methods
 
-## [Interactable]()
+## [IceGame](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/MG%20Scripts/IceGame.cs)
+### Description
+### Properties
+### References
+### Public Methods
+
+## [IceTrigger](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/IceTrigger.cs)
+### Description
+### Properties
+### References
+### Public Methods
+
+## [Interactable](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/Interactable.cs)
 ### Properties
 ### References
 ### Public Methods
 * Kind of confused, but it seems to handles interactable triggers and dialogue windows
 
-## [InteractableManager]()
+## [InteractableManager](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/InteractableManager.cs)
 ### Description
 ### Properties
 ### References
 ### Public Methods
 
-## [ItemBox]()
+## [ItemBox](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/MG%20Scripts/ItemBox.cs)
 ### Description
 ### Properties
 ### References
@@ -337,19 +388,19 @@ Handles information about customer (Dialogue, Money, ID, Relationship)
 * Referenced by
 	* [StockingItem](#stockingitem)
 
-## [JournalDisplay]()
+## [JournalDisplay](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/JournalDisplay.cs)
 ### Description
 ### Properties
 ### References
 ### Public Methods
 
-## [LightChangeGame]()
+## [LightChangeGame](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/MG%20Scripts/LightChangeGame.cs)
 ### Description
 ### Properties
 ### References
 ### Public Methods
 
-## [LightFlicker]()
+## [LightFlicker](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/LightFlicker.cs)
 ### Properties
 ### References
 ### Public Methods
@@ -357,13 +408,13 @@ Handles information about customer (Dialogue, Money, ID, Relationship)
 * Referenced by
 	* [LightSanityEffect](#lightsanityeffect)
 
-## [LightManager]()
+## [LightManager](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/LightManager.cs)
 ### Description
 ### Properties
 ### References
 ### Public Methods
 
-## [LightSanityEffect]()
+## [LightSanityEffect](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/LightSanityEffect.cs)
 ### Properties
 ### References
 ### Public Methods
@@ -371,19 +422,19 @@ Handles information about customer (Dialogue, Money, ID, Relationship)
 * Referenced by
 	* [LightSanityEffect](#lightsanityeffect)
 
-## [MainMenuManager]()
+## [MainMenuManager](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/MainMenuManager.cs)
 ### Description
 ### Properties
 ### References
 ### Public Methods
 
-## [MainMenuSound]()
+## [MainMenuSound](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/Sound/MainMenuSound.cs)
 ### Description
 ### Properties
 ### References
 ### Public Methods
 
-## [MiniGameControl]()
+## [MiniGameControl](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/MG%20Scripts/MiniGameControl.cs)
 ### Description
 ### Properties
 ### References
@@ -395,7 +446,7 @@ Handles information about customer (Dialogue, Money, ID, Relationship)
 	* [MiniGameTrigger](#minigametrigger)
 	* [MopGame](#mopgame)
 
-## [MiniGameTrigger]()
+## [MiniGameTrigger](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/MG%20Scripts/MiniGameTrigger.cs)
 ### Description
 ### Properties
 ### References
@@ -407,7 +458,7 @@ Handles information about customer (Dialogue, Money, ID, Relationship)
 * Referenced by
 	* [MinigameControl](#minigamecontrol)
 
-## [Money]()
+## [Money](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/Checkout/Money.cs)
 ### Description
 ### Properties
 ### References
@@ -416,13 +467,13 @@ Handles information about customer (Dialogue, Money, ID, Relationship)
 * Dependencies
 	* [CheckoutManager](#checkoutmanager)
 
-## [MoodIndicator]()
+## [MoodIndicator](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/MoodIndicator.cs)
 ### Description
 ### Properties
 ### References
 ### Public Methods
 
-## [MopGame]()
+## [MopGame](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/MG%20Scripts/MopGame.cs)
 ### Description
 ### Properties
 ### References
@@ -434,20 +485,26 @@ Handles information about customer (Dialogue, Money, ID, Relationship)
 * Referenced By
 	* [CleanableObjects](#cleanableobjects)
 
-## [Pause]()
+## [PaperRule](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/Checkout/Rules/PaperRule.cs)
+### Description
+### Properties
+### References
+### Public Methods
+
+## [Pause](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/Pause.cs)
 ### Properties
 ### References
 ### Public Methods
 * Pauses the game by setting Time.timeScale to 1 or 0
 * Brings up in game pause screen
 
-## [PauseMenu]()
+## [PauseMenu](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/PauseMenu.cs)
 ### Description
 ### Properties
 ### References
 ### Public Methods
 
-## [PerformanceReview]()
+## [PerformanceReview](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/PerformanceReview.cs)
 ### Properties
 ### References
 ### Public Methods
@@ -462,13 +519,13 @@ Handles information about customer (Dialogue, Money, ID, Relationship)
 	* [CheckoutManager](#checkoutmanager)
 	* [TimeManager](#timemanger)
 
-## [Phone]()
+## [Phone](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/Phone.cs)
 ### Properties
 ### References
 ### Public Methods
 * ClosePhone (inert?)
 
-## [PhoneMessage]()
+## [PhoneMessage](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/PhoneMessage.cs)
 ### Properties
 ### References
 ### Public Methods
@@ -476,7 +533,7 @@ Handles information about customer (Dialogue, Money, ID, Relationship)
 * Dependencies
 	* [PerformanceReview](#performancereview)
 
-## [PlayerMovement]()
+## [PlayerMovement](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/PlayerMovement.cs)
 ### Properties
 ### References
 ### Public Methods
@@ -487,49 +544,49 @@ Handles information about customer (Dialogue, Money, ID, Relationship)
 	* [TimeManager](#timemanager)
 	* moveable bool is also referenced by the scripts above
 
-## [PlayerTrigger]()
+## [PlayerTrigger](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/PlayerTrigger.cs)
 ### Description
 ### Properties
 ### References
 ### Public Methods
 
-## [PowerButton]()
+## [PowerButton](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/MG%20Scripts/PowerButton.cs)
 ### Description
 ### Properties
 ### References
 ### Public Methods
 
-## [PowerGame]()
+## [PowerGame](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/MG%20Scripts/PowerGame.cs)
 ### Description
 ### Properties
 ### References
 ### Public Methods
 
-## [PPManager]()
+## [PPManager](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/PPManager.cs)
 ### Description
 ### Properties
 ### References
 ### Public Methods
 
-## [RandomEventManager]()
+## [RandomEventManager](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/RandomEventManager.cs)
 ### Description
 ### Properties
 ### References
 ### Public Methods
 
-## [Rule]()
+## [Rule](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/Checkout/Rule.cs)
 ### Description
 ### Properties
 ### References
 ### Public Methods
 
-## [RuleBook]()
+## [RuleBook](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/Checkout/Rulebook.cs)
 ### Description
 ### Properties
 ### References
 ### Public Methods
 
-## [SanityEventManager]()
+## [SanityEventManager](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/SanityEventManager.cs)
 ### Properties
 ### References
 ### Public Methods
@@ -538,43 +595,43 @@ Handles information about customer (Dialogue, Money, ID, Relationship)
 	* [SanityEventManager](#sanityeventmanager)
 	* [LightSanityEffect](#lightsanityeffect)
 
-## [SanityManager]()
+## [SanityManager](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/SanityManager.cs)
 ### Properties
 ### References
 ### Public Methods
 * Manages Sanity Values (inert?)
 
-## [SaveData]()
+## [SaveData](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/SaveData.cs)
 ### Description
 ### Properties
 ### References
 ### Public Methods
 
-## [SaveUtility]()
+## [SaveUtility](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/SaveUtility.cs)
 ### Description
 ### Properties
 ### References
 ### Public Methods
 
-## [ScrewBulb]()
+## [ScrewBulb](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/MG%20Scripts/ScrewBulb.cs)
 ### Description
 ### Properties
 ### References
 ### Public Methods
 
-## [ScrollEffect]()
+## [ScrollEffect](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/ScrollEffect.cs)
 ### Description
 ### Properties
 ### References
 ### Public Methods
 
-## [SettingsScreen]()
+## [SettingsScreen](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/SettingsScreen.cs)
 ### Description
 ### Properties
 ### References
 ### Public Methods
 
-## [Shelf]()
+## [Shelf](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/MG%20Scripts/Shelf.cs)
 ### Description
 ### Properties
 ### References
@@ -583,7 +640,7 @@ Handles information about customer (Dialogue, Money, ID, Relationship)
 * Referenced by
 	* [StockingItem](#stockingitem)
 
-## [SoundManager]()
+## [SoundManager](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/Sound/SoundManager.cs)
 ### Properties
 ### References
 ### Public Methods
@@ -594,13 +651,13 @@ Handles information about customer (Dialogue, Money, ID, Relationship)
     	* [CheckoutManager](#checkoutmanager)
 	* [PlayerMovement](#playermovement)
 
-## [SpriteFade]()
+## [SpriteFade](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/SpriteFade.cs)
 ### Description
 ### Properties
 ### References
 ### Public Methods
 
-## [StockingGame]()
+## [StockingGame](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/MG%20Scripts/StockingGame.cs)
 ### Description
 ### Properties
 ### References
@@ -609,7 +666,7 @@ Handles information about customer (Dialogue, Money, ID, Relationship)
 * Referenced by
 	* [StockingItem](#stockingitem)
 
-## [StockingItem]()
+## [StockingItem](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/MG%20Scripts/StockingItem.cs)
 ### Description
 ### Properties
 ### References
@@ -619,7 +676,7 @@ Handles information about customer (Dialogue, Money, ID, Relationship)
 	* [StockingGame](#stockinggame)
 	* [ItemBox](#itembox)
 
-## [StoryEventHandler]()
+## [StoryEventHandler](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/Story/StoryEventHandler.cs)
 ### Description
 ### Properties
 ### References
@@ -630,7 +687,7 @@ Handles information about customer (Dialogue, Money, ID, Relationship)
 * Referenced by
 	* [TimeManager](#timemanager)
 
-## [TaskSpawner]()
+## [TaskSpawner](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/TaskSpawner.cs)
 ### Properties
 ### References
 ### Public Methods
@@ -638,7 +695,7 @@ Handles information about customer (Dialogue, Money, ID, Relationship)
 * Referenced By
 	* [TaskManager](#taskmanager)
 
-## [TimeManager]()
+## [TimeManager](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/TimeManager.cs)
 ### Properties
 ### References
 ### Public Methods
@@ -651,7 +708,13 @@ Handles information about customer (Dialogue, Money, ID, Relationship)
 	* [TaskSpawner](#taskspawner)
 	* [CustomerManager](#customermanager)
 
-## [Wiggle]()
+## [WeightRule](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/Checkout/Rules/WeightRule.cs)
+### Description
+### Properties
+### References
+### Public Methods
+
+## [Wiggle](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/Wiggle.cs)
 ### Description
 ### Properties
 ### References
