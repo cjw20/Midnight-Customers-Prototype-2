@@ -455,32 +455,77 @@ Handles the text shown at the end of the game.
 
 ## [Fade](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/Fade.cs)
 ### Description
+Handles fading in and out of the screen.
 ### Properties
+| Name | Description |
+|------|-------------|
+| fadeIN | Whether the screen is fading in currently or not. |
+| fadeOUT | Whether the screen is fading out currently or not. |
+| currentAlpha | The current alpha value of the screen. |
+| duration | The duration of the fade. |
+| passedTime | The time passed during fading. |
 ### References
-### Public Methods
-* Handles fade to black at day transition
+| Name | Description |
+|------|-------------|
+| thisSprite | The [Sprite](https://docs.unity3d.com/ScriptReference/Sprite.html) object that is being faded. |
+| startingColor | The starting [Color](https://docs.unity3d.com/ScriptReference/Color.html) of `thisSprite`. |
+| newColor | The new [Color](https://docs.unity3d.com/ScriptReference/Color.html) of `thisSprite` updated as fading is happening. |
+### Methods
+| Name | Description |
+|------|-------------|
+| FadeIn | Triggers screen fade in. |
+| FadeOut | Triggers screen fade out. |
 * Dependencies
 * Referenced by
 	* [TimeManager](#timemanager)
 
 ## [FlashLight](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/FlashLight.cs)
 ### Description
+Handles behavior for the player-held flashlight.
 ### Properties
+| Name | Description |
+|------|-------------|
+| on | Whether the flashlight is turned on or not. |
+| rotateSpeed | How quickly the beam of the flashlight rotates. |
 ### References
-### Public Methods
+| Name | Description |
+|------|-------------|
+| playerInput | Reference to an instance of the [PlayerInput](#playerinput) class. |
+| fLight | Reference to a [Light2D](https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@7.0/api/UnityEngine.Experimental.Rendering.Universal.Light2D.html). |
+### Methods
+| Name | Description |
+|------|-------------|
+| ToggleFlashLight | Toggles the flashlight on and off. |
 
 ## [GameControl](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/GameControl.cs)
 ### Description
+Handles loading scenes from normal day progression, or from saved games.
 ### Properties
+| Name | Description |
+|------|-------------|
+| dayProg | The day progression. |
+| customerProg | The customer progression. |
+| individualProg | Individual progression. |
+| loadingGame | Whether the game has been loaded from a previous save or not. |
 ### References
-### Public Methods
-* Loads scenes
+| Name | Description |
+|------|-------------|
+| control | Reference to an instance of the [GameControl](#gamecontrol) class. |
+| saveUtility | Reference to an instance of the [SaveUtility](#saveutility) class. |
+| dataToLoad | Rerence to an instance of the [SaveData](#savedata) class. |
+### Methods
+| Name | Description |
+|------|-------------|
+| SaveGame | Saves the current game. |
+| LoadSave | Loads a previous save. |
+| ContinueGame | Continues the game (moves to next day?) |
+| LoadScene | Loads the given scene. |
 
 ## [GlobalSave](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/GlobalSave.cs)
 ### Description
 ### Properties
 ### References
-### Public Methods
+### Methods
 
 ## [Hatch](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/Hatch.cs)
 ### Description
@@ -517,6 +562,7 @@ Handles the text shown at the end of the game.
 
 ## [IceTrigger](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/IceTrigger.cs)
 ### Description
+
 ### Properties
 ### References
 ### Public Methods
