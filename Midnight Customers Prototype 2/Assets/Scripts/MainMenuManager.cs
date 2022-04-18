@@ -11,6 +11,11 @@ public class MainMenuManager : MonoBehaviour
     void Awake()
     {
         GlobalSave globalSave = GameControl.control.gameObject.GetComponent<SaveUtility>().GetGlobalSave();
+
+        if (globalSave.gameComplete)
+        {
+            //show journal button here!
+        }
         if (globalSave == null)
         {
             loadButton.SetActive(false);

@@ -66,6 +66,10 @@ public class SaveUtility : MonoBehaviour
         }
         FileStream stream = new FileStream(path, FileMode.OpenOrCreate);
         globalSave.AddSave(saveName);
+        if (GameControl.control.gameComplete)
+        {
+            globalSave.SetComplete();
+        }
         formatter.Serialize(stream, globalSave);
         stream.Close();
     }
