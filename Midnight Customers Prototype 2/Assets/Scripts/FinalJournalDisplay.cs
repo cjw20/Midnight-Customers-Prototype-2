@@ -8,7 +8,7 @@ public class FinalJournalDisplay : MonoBehaviour
     // Fields
     [Tooltip("List of text for the journal.")]
 
-    [TextArea (4,10)]
+    // [TextArea (4,50)]
     public List<string> journalText;
     [Tooltip("Amount of progress in the journal.")]
     public int journalProgress; //add this to save system
@@ -34,18 +34,18 @@ public class FinalJournalDisplay : MonoBehaviour
         displayText.text = journalText[journalProgress];
     }
 
-  public void IncrementPage(int day)
+  public void IncrementPage()
   {
     
-    if (day >= 20 || day <= 1) return;
-    journalProgress = day - 1;
+    if (journalProgress >= 19) return;
+    journalProgress += 1;
     soundManager.PlayPageTurnSound();
     displayText.text = journalText[journalProgress];
   }
-  public void DecrementPage(int day)
+  public void DecrementPage()
   {
-    if (day >= 20 || day <= 1) return;
-    journalProgress = day - 1;
+    if (journalProgress <= 0) return;
+    journalProgress -= 1;
     soundManager.PlayPageTurnSound();
     displayText.text = journalText[journalProgress];
   }
@@ -55,5 +55,12 @@ public class FinalJournalDisplay : MonoBehaviour
         soundManager.PlayBookCloseSound();
         journal.SetActive(false);
         inJournal = false;
+    }
+
+    public void OpenJournal()
+    {
+      inJournal = true;
+      journalProgress = 0;
+      displayText.text = journalText[journalProgress];
     }
 }
