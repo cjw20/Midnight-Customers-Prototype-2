@@ -8,6 +8,7 @@ public class InteractableManager : MonoBehaviour
     //Static Lists of Strings
     //Get Text Objects
     //Method called by TimeManager, provides day, sets corresponding interactable texts
+    // Fields
     string[] freezer_m = new string[] { "Why do we sell so much water?", "What kind of brand is this?", "Someone drew the investigator in the frost." };
     string[] freezer_l = new string[] { "Who drinks saltwater?", "Why is everything so sticky?", "Someone drew a fish person in the frost." };
     string[] soda_m = new string[] { "Salt water in a drink machine.", "Who refills the machine?" };
@@ -18,7 +19,8 @@ public class InteractableManager : MonoBehaviour
     string[] shelves_l = new string[] { "Why do we have eel flavored cat food?", "Did that gummy worm move?", "Who buys this stuff..." };
     string[] food_m = new string[] { "This stuff is burnt.", "Is that how those are supposed to look?" };
     string[] food_l = new string[] { "Is that a tentacle...", "Does that say eyeballs as an ingredient?" };
-
+    
+    // References
     Interactable freezer_reference;
     Interactable soda_reference;
     Interactable shelves_reference;
