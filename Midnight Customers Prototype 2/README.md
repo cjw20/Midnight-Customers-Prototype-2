@@ -507,6 +507,7 @@ Handles loading scenes from normal day progression, or from saved games.
 | customerProg | The customer progression. |
 | individualProg | Individual progression. |
 | loadingGame | Whether the game has been loaded from a previous save or not. |
+| gameComplete | Whether the game has been completed or not. |
 ### References
 | Name | Description |
 |------|-------------|
@@ -517,31 +518,57 @@ Handles loading scenes from normal day progression, or from saved games.
 | Name | Description |
 |------|-------------|
 | SaveGame | Saves the current game. |
+| SetComplete | Sets `gameComplete` to true and updates the global save. |
 | LoadSave | Loads a previous save. |
 | ContinueGame | Continues the game (moves to next day?) |
 | LoadScene | Loads the given scene. |
 
 ## [GlobalSave](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/GlobalSave.cs)
 ### Description
+Manages saves.
 ### Properties
-### References
+| Name | Description |
+|------|-------------|
+| saveFileNames | List of existing saves. |
+| gameComplete | Whether the game has been completed or not. |
 ### Methods
+| Name | Description |
+|------|-------------|
+| AddSave | Adds a new save to `saveFileNames`. |
+| SetComplete | Sets `gameComplete` to true so complete journal is unlocked in the main menu. |
 
 ## [Hatch](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/Hatch.cs)
 ### Description
+Manages the secret hatch to the basement.
 ### Properties
+| Name | Description |
+|------|-------------|
+| found | Whether the hatch has been found by the player or not. |
+| inRange | Whether the player is close enough to interact with the hatch or not. |
 ### References
-### Public Methods
-* Handles hatch triggers 
+| Name | Description |
+|------|-------------|
+| playerInput | Reference to an instance of the [PlayerInput](#playerinput) class. |
+| story | Reference to an instance of the [HatchStoryBeat](#hatchstorybeat) class. |
 * Dependencies
 	* [HatchStoryBeat](#hatchstorybeat)
 
 ## [HatchStoryBeat](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/Story/HatchStoryBeat.cs)
 ### Description
-### Properties
+Handles the story surrounding the secret hatch.
 ### References
-### Public Methods
-* Handles Hatch Event
+| Name | Description |
+|------|-------------|
+| hatchFound | Reference to an instance of the [DialogueContainer](#dialoguecontainer) class. |
+| hatchHint | Reference to an instance of the [DialogueContainer](#dialogcontainer) class. |
+| investigator | Reference to the investigator [GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html). |
+| hintCustomer | Reference to the customer [GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html) that gives hints about the hatch. |
+| hatch | Reference to the hatch [GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html). |
+### Methods
+| Name | Description |
+|------|-------------|
+| StartStory | Makes the hatch discoverable. |
+| FoundHatch | Lets the rest of the game know the player has found the hatch for story and dialogue purposes. |
 * Dependencies
 	* [CustomerInfo](#customerinfo)
 * Referenced by
@@ -550,41 +577,93 @@ Handles loading scenes from normal day progression, or from saved games.
 
 ## [IDRule](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/Checkout/Rules/IDRule.cs)
 ### Description
-### Properties
-### References
-### Public Methods
+Handles checking of customer ID for purchases that require an ID.
+### Methods
+| Name | Description |
+|------|-------------|
+| CheckRule | Checks to see if the customer passed the ID check or not. |
 
 ## [IceGame](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/MG%20Scripts/IceGame.cs)
 ### Description
-### Properties
+Manages the ice minigame.
 ### References
-### Public Methods
+| Name | Description |
+|------|-------------|
+| mgControl | Reference to an instance of the [MiniGameControl](#minigamecontrol) class. |
 
 ## [IceTrigger](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/IceTrigger.cs)
 ### Description
-
+Handles filling the ice machine with ice.
 ### Properties
+| Name | Description |
+|------|-------------|
+| halfway | Whether the machine is half full or not. |
+| done | Whether the machine is finished being filled or not. |
 ### References
-### Public Methods
+| Name | Description |
+|------|-------------|
+| mgControl | Reference to an instance of the [MiniGameControl](#minigamecontrol) class. |
+| first | Reference to the first ice [GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html)? |
+| second | Reference to the second ice [GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html)? |
 
 ## [Interactable](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/Interactable.cs)
 ### Description
+Handles things the player can interact with and their associated dialog boxes and interactable indicators.
 ### Properties
+| Name | Description |
+|------|-------------|
+| inRange | Whether the object is close enough to the player to enable interaction or not. |
+| interacting | Whether the player is currently interacting with the object or not. |
+| messages | Array of messages. |
+| progress | The amount of progress. |
 ### References
-### Public Methods
-* Kind of confused, but it seems to handles interactable triggers and dialogue windows
+| Name | Description |
+|------|-------------|
+| playerInput | Reference to an instance of the [PlayerInput](#playerinput) class. |
+| thoughtText | Reference to the thought text [GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html). |
+| thoughtWindow | Reference to the thought window [GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html). |
+### Methods
+| Name | Description |
+|------|-------------|
+| SetMessage | Sets the content of the message to be displayed. |
+| TriggerInteractable | Starts and stops the interaction. |
+| EndInteract | Stops the interaction. |
+| DisplayMessage | Displays the message. |
 
 ## [InteractableManager](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/InteractableManager.cs)
 ### Description
+Handles all interactable messages, objects, etc.
 ### Properties
+| Name | Description |
+|------|-------------|
+| freezer_m | Message to be shown when interacting with the freezer. |
+| freezer_1 | Another message to be shown when interacting with the freezer. |
+| soda_m | Message to be shown when interacting with the soda machine. |
+| soda_1 | Another message to be shown when interacting with the soda machine. |
+| window_m | Message to be shown when interacting with the window. |
+| window_1 | Another message for the window. |
+| shelves_m | Message for the shelves. |
+| shelves_1 | Another message for the shelves. |
+| food_m | Message for the food. |
+| food_1 | Another message for the food. |
 ### References
-### Public Methods
+| Name | Description |
+|------|-------------|
+| freezer_reference | Reference to an instance of the [Interactable](#interactable) class. |
+| soda_reference | Reference to an instance of the [Interactable](#interactable) class. |
+| shelves_reference | Reference to an instance of the [Interactable](#interactable) class. |
+| window_reference | Reference to an instance of the [Interactable](#interactable) class. |
+| food_reference | Reference to an instance of the [Interactable](#interactable) class. |
+### Methods
+| Name | Description |
+|------|-------------|
+| UpdateInteractables | Updates the messages for all the interactables from the original messages to the second alternative ones. |
 
 ## [ItemBox](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/MG%20Scripts/ItemBox.cs)
 ### Description
 ### Properties
 ### References
-### Public Methods
+### Methods
 * Handles item box
 * Referenced by
 	* [StockingItem](#stockingitem)
@@ -593,13 +672,13 @@ Handles loading scenes from normal day progression, or from saved games.
 ### Description
 ### Properties
 ### References
-### Public Methods
+### Methods
 
 ## [LightChangeGame](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/MG%20Scripts/LightChangeGame.cs)
 ### Description
 ### Properties
 ### References
-### Public Methods
+### Methods
 
 ## [LightFlicker](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/LightFlicker.cs)
 ### Description
