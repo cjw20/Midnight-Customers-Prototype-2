@@ -16,7 +16,7 @@ public class GameControl : MonoBehaviour
     public List<int> individualProg;
     [Tooltip("Whether the game has been loaded from a previous save or not. (True when NOT a new game.)")]
     public bool loadingGame;
-
+    [Tooltip("Whether the game has been completed or not.")]
     public bool gameComplete;
 
     // References
