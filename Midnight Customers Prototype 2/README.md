@@ -661,66 +661,170 @@ Handles all interactable messages, objects, etc.
 
 ## [ItemBox](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/MG%20Scripts/ItemBox.cs)
 ### Description
+Handles the items that will be spawned and then placed on shelves during the stocking minigame.
 ### Properties
+| Name | Description |
+|------|-------------|
+| boxOpen | Whether the box is open or not. |
 ### References
+| Name | Description |
+|------|-------------|
+| openedBox | The opened box [GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html). |
+| itemsInBox | Array of [GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html) inside the box. |
+| boxSpawns | Array of [Transform](https://docs.unity3d.com/ScriptReference/Transform.html) representing the locations that the items in the box will be spawned at. |
+| spawnedItems | List of [GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html) items that have already been spawned. |
+| sprite | The [SpriteRenderer](https://docs.unity3d.com/ScriptReference/SpriteRenderer.html) representing the item box itself. |
 ### Methods
-* Handles item box
+| Name | Description |
+|------|-------------|
+| UpdateItems | Updates the items in the item box and displays their images. |
+| SelectItem | Removes item from the box. |
+| OpenBox | Opens the box and displays the items inside. |
+| CloseBox | Closes the box and destroys the items inside. |
+| SpawnItems | Spawns the items in the box when it's opened. |
 * Referenced by
 	* [StockingItem](#stockingitem)
 
 ## [JournalDisplay](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/JournalDisplay.cs)
 ### Description
+Handles displaying information in the journal.
 ### Properties
+| Name | Description |
+|------|-------------|
+| journalText | List of text for the journal. |
+| journalProgress | Amount of progress made in the journal. |
+| inJournal | Whether the journal is currently open or not. |
 ### References
+| Name | Description |
+|------|-------------|
+| journal | The journal [GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html). |
+| displayText | The [Text](https://docs.unity3d.com/2017.3/Documentation/ScriptReference/UI.Text.html) to be displayed. |
+| soundManager | Reference to an instance of the [SoundManager](#soundmanager) class. |
 ### Methods
+| Name | Description |
+|------|-------------|
+| OpenJournal | Opens up the journal for viewing. |
+| CloseJournal | Closes the journal. |
 
 ## [LightChangeGame](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/MG%20Scripts/LightChangeGame.cs)
 ### Description
-### Properties
+Handles the light bulb changing minigame.
 ### References
+| Name | Description |
+|------|-------------|
+| mgControl | Reference to an instance of the [MiniGameControl](#minigamecontrol) class. |
+| lightManager | Reference to an instance of the [LightManager](#lightmanager) class. |
 ### Methods
+| Name | Description |
+|------|-------------|
+| Finish | Ends the minigame. |
+| EndGame | IEnumerator that gives a slight delay before ending the minigame. |
 
 ## [LightFlicker](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/LightFlicker.cs)
 ### Description
+Handles the flickering of lights on and off.
 ### Properties
+| Name | Description |
+|------|-------------|
+| timePassed | The time passed since the light was toggled. |
+| lightOn | Whether the light is on or not. |
+| frequency | How frequently the light will flicker. |
+| offDuration | How long the light stays off during flickering. |
+| offIntensity | How bright the light is when flickering off. |
+| onIntensity | How bright the light is when flickering on. |
 ### References
-### Public Methods
-* Handles lighting and turns it off/on (Is this inert?)
+| Name | Description |
+|------|-------------|
+| thisLight | Reference to the [Light](https://docs.unity3d.com/ScriptReference/Light.html). |
 * Referenced by
 	* [LightSanityEffect](#lightsanityeffect)
 
 ## [LightManager](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/LightManager.cs)
 ### Description
+Manages all the lights.
 ### Properties
+| Name | Description |
+|------|-------------|
+| normalGlobalIntensity | The default intensity for the lights. |
+| normalColor | The default [Color](https://docs.unity3d.com/ScriptReference/Color.html) for the lights. |
 ### References
-### Public Methods
+| Name | Description |
+|------|-------------|
+| randomEventManager | Reference to an instance of the [RandomEventManager](#randomeventmanager) class. |
+| brokenLight | Reference to a broken [Light](https://docs.unity3d.com/ScriptReference/Light.html) that needs replaced in the light minigame. |
+| ceilingLights | Array of [Light](https://docs.unity3d.com/ScriptReference/Light.html) on the ceiling. |
+| miscLights | Array of various [Light](https://docs.unity3d.com/ScriptReference/Light.html) such as the fridge, register, etc. |
+| windowLights | Array of [Light](https://docs.unity3d.com/ScriptReference/Light.html) for the windows. |
+| globalLight | The global [Light](https://docs.unity3d.com/ScriptReference/Light.html). |
+| flashLight | The [Light](https://docs.unity3d.com/ScriptReference/Light.html) for the player's flashlight. |
+| lightingColor | Reference to a [Color](https://docs.unity3d.com/ScriptReference/Color.html) for the lights. |
+| lightningSound | Reference to an [AudioSource](https://docs.unity3d.com/ScriptReference/AudioSource.html) for the sound of lightning. |
+| powerGameTrigger | The [GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html) that triggers the start of the power minigame. |
+| lightBulbTrigger | The [GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html) that triggers the light bulb minigame. |
+### Methods
+| Name | Description |
+|------|-------------|
+| ChangeColor | Changes a given lights color and returns the old one for turning it back. |
+| Strobe | Starts a strobe effect on a given light. |
+| PowerOutage | Turns off all the lights and allows the power minigame to be started. |
+| RestorePower | Turns all the lights back on. |
+| CallLightning | Triggers a lightning strike. |
+| LightningEffect | IEnumerator that creates a lightning strike with sounds and flashing. |
+| ResetLight | Resets a light to the default color. |
+| BreakBulb | Burns out a bulb. |
+| FixBulb | Fixes a bulb so it can turn on again. |
 
 ## [LightSanityEffect](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/LightSanityEffect.cs)
 ### Description
+Handles the light sanity effect. DEPRECATED
 ### Properties
+| Name | Description |
+|------|-------------|
+| normalGlobalIntensity | The default normal intensity for global lights. |
+| normalColor | The default light color. |
+| effectDuration | The duration of the effect. |
 ### References
-### Public Methods
-* Generates spooky effects (is this inert?)
+| Name | Description |
+|------|-------------|
+| targetLights | Array of [Light](https://docs.unity3d.com/ScriptReference/Light.html) that the sanity effect will be played on. |
+| globalLight | The [Light](https://docs.unity3d.com/ScriptReference/Light.html) to be used for global lighting. |
+### Methods
+| Name | Description |
+|------|-------------|
+| RedLightScare | IEnumerator that makes certain lights flash red rapidly. |
 * Referenced by
 	* [LightSanityEffect](#lightsanityeffect)
 
 ## [MainMenuManager](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/MainMenuManager.cs)
 ### Description
+Manages the buttons and features of the main menu.
 ### Properties
-### References
-### Public Methods
+| Name | Description |
+|------|-------------|
+| loadButton | The [GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html) for the load button. |
+| deleteSaveButton | The [GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html) for the delete save button. |
+### Methods
+| Name | Description |
+|------|-------------|
+| QuitGame | Exit the game to the desktop. |
 
 ## [MainMenuSound](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/Sound/MainMenuSound.cs)
 ### Description
-### Properties
+Handles sound effects for the main menu.
 ### References
-### Public Methods
+| Name | Description |
+|------|-------------|
+| onOffButton | Reference to an [AudioSource](https://docs.unity3d.com/ScriptReference/AudioSource.html) for the button click sound. |
+### Methods
+| Name | Description |
+|------|-------------|
+| PlayOnOffClick | Plays the `onOffButton` sound effect. |
 
 ## [MiniGameControl](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/MG%20Scripts/MiniGameControl.cs)
 ### Description
 ### Properties
 ### References
-### Public Methods
+### Methods
 * Loads and Ends Minigames
 * Dependencies
 	* [MiniGameTrigger](#minigametrigger)
@@ -732,7 +836,7 @@ Handles all interactable messages, objects, etc.
 ### Description
 ### Properties
 ### References
-### Public Methods
+### Methods
 * Handles triggers for minigames
 * Dependencies
 	* [MinigameControl](#minigamecontrol)
@@ -744,7 +848,7 @@ Handles all interactable messages, objects, etc.
 ### Description
 ### Properties
 ### References
-### Public Methods
+### Methods
 * Handles Money colliders
 * Dependencies
 	* [CheckoutManager](#checkoutmanager)
@@ -753,13 +857,13 @@ Handles all interactable messages, objects, etc.
 ### Description
 ### Properties
 ### References
-### Public Methods
+### Methods
 
 ## [MopGame](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/MG%20Scripts/MopGame.cs)
 ### Description
 ### Properties
 ### References
-### Public Methods
+### Methods
 * Handles cleanableObjects
 * Dependencies
 	* [CleanableObjects](#cleanableobjects)
@@ -771,13 +875,13 @@ Handles all interactable messages, objects, etc.
 ### Description
 ### Properties
 ### References
-### Public Methods
+### Methods
 
 ## [Pause](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/Pause.cs)
 ### Description
 ### Properties
 ### References
-### Public Methods
+### Methods
 * Pauses the game by setting Time.timeScale to 1 or 0
 * Brings up in game pause screen
 
@@ -785,13 +889,13 @@ Handles all interactable messages, objects, etc.
 ### Description
 ### Properties
 ### References
-### Public Methods
+### Methods
 
 ## [PerformanceReview](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/PerformanceReview.cs)
 ### Description
 ### Properties
 ### References
-### Public Methods
+### Methods
 * Handles which message to send based on the performance score
 * Dependencies
 	* [phoneNotification](#phonenotification) (assumes its a phone)
@@ -814,7 +918,7 @@ Handles all interactable messages, objects, etc.
 ### Description
 ### Properties
 ### References
-### Public Methods
+### Methods
 * Opens messages 
 * Dependencies
 	* [PerformanceReview](#performancereview)
@@ -823,7 +927,7 @@ Handles all interactable messages, objects, etc.
 ### Description
 ### Properties
 ### References
-### Public Methods
+### Methods
 * Handles Player Movement (duh)
 * Referenced by
 	* [CheckoutTrigger](#checkouttrigger)
@@ -835,49 +939,49 @@ Handles all interactable messages, objects, etc.
 ### Description
 ### Properties
 ### References
-### Public Methods
+### Methods
 
 ## [PowerButton](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/MG%20Scripts/PowerButton.cs)
 ### Description
 ### Properties
 ### References
-### Public Methods
+### Methods
 
 ## [PowerGame](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/MG%20Scripts/PowerGame.cs)
 ### Description
 ### Properties
 ### References
-### Public Methods
+### Methods
 
 ## [PPManager](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/PPManager.cs)
 ### Description
 ### Properties
 ### References
-### Public Methods
+### Methods
 
 ## [RandomEventManager](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/RandomEventManager.cs)
 ### Description
 ### Properties
 ### References
-### Public Methods
+### Methods
 
 ## [Rule](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/Checkout/Rule.cs)
 ### Description
 ### Properties
 ### References
-### Public Methods
+### Methods
 
 ## [RuleBook](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/Checkout/Rulebook.cs)
 ### Description
 ### Properties
 ### References
-### Public Methods
+### Methods
 
 ## [SanityEventManager](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/SanityEventManager.cs)
 ### Description
 ### Properties
 ### References
-### Public Methods
+### Methods
 * Handles Sanity Events and Light Effects (inert?)
 * Dependencies
 	* [SanityEventManager](#sanityeventmanager)
@@ -887,44 +991,44 @@ Handles all interactable messages, objects, etc.
 ### Description
 ### Properties
 ### References
-### Public Methods
+### Methods
 * Manages Sanity Values (inert?)
 
 ## [SaveData](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/SaveData.cs)
 ### Description
 ### Properties
 ### References
-### Public Methods
+### Methods
 
 ## [SaveUtility](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/SaveUtility.cs)
 ### Description
 ### Properties
 ### References
-### Public Methods
+### Methods
 
 ## [ScrewBulb](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/MG%20Scripts/ScrewBulb.cs)
 ### Description
 ### Properties
 ### References
-### Public Methods
+### Methods
 
 ## [ScrollEffect](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/ScrollEffect.cs)
 ### Description
 ### Properties
 ### References
-### Public Methods
+### Methods
 
 ## [SettingsScreen](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/SettingsScreen.cs)
 ### Description
 ### Properties
 ### References
-### Public Methods
+### Methods
 
 ## [Shelf](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/MG%20Scripts/Shelf.cs)
 ### Description
 ### Properties
 ### References
-### Public Methods
+### Methods
 * I assume WIP
 * Referenced by
 	* [StockingItem](#stockingitem)
@@ -933,7 +1037,7 @@ Handles all interactable messages, objects, etc.
 ### Description
 ### Properties
 ### References
-### Public Methods
+### Methods
 * Manages BGM (inert?)
 * Manages all sound effects
 * Referenced by
@@ -945,13 +1049,13 @@ Handles all interactable messages, objects, etc.
 ### Description
 ### Properties
 ### References
-### Public Methods
+### Methods
 
 ## [StockingGame](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/MG%20Scripts/StockingGame.cs)
 ### Description
 ### Properties
 ### References
-### Public Methods
+### Methods
 * I assume WIP
 * Referenced by
 	* [StockingItem](#stockingitem)
@@ -960,7 +1064,7 @@ Handles all interactable messages, objects, etc.
 ### Description
 ### Properties
 ### References
-### Public Methods
+### Methods
 * I assume WIP
 * Dependencies
 	* [StockingGame](#stockinggame)
@@ -970,7 +1074,7 @@ Handles all interactable messages, objects, etc.
 ### Description
 ### Properties
 ### References
-### Public Methods
+### Methods
 * Handles Story Events
 * Dependencies
 	* [HatchStoryBeat](#hatchstorybeat)
@@ -981,7 +1085,7 @@ Handles all interactable messages, objects, etc.
 ### Description
 ### Properties
 ### References
-### Public Methods
+### Methods
 * Handles randomly spawning new tasks (also happens to murder unity in the process)
 * Referenced By
 	* [TaskManager](#taskmanager)
@@ -990,7 +1094,7 @@ Handles all interactable messages, objects, etc.
 ### Description
 ### Properties
 ### References
-### Public Methods
+### Methods
 * Manages the display and passage of time 
 * Dependencies:
 	* [Player](#player)
@@ -1004,10 +1108,10 @@ Handles all interactable messages, objects, etc.
 ### Description
 ### Properties
 ### References
-### Public Methods
+### Methods
 
 ## [Wiggle](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/Wiggle.cs)
 ### Description
 ### Properties
 ### References
-### Public Methods
+### Methods
