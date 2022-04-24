@@ -822,10 +822,20 @@ Handles sound effects for the main menu.
 
 ## [MiniGameControl](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/MG%20Scripts/MiniGameControl.cs)
 ### Description
-### Properties
+Manages loading and ending the various minigames.
 ### References
+| Name | Description |
+|------|-------------|
+| camerPosition | Reference to the [Transform](https://docs.unity3d.com/ScriptReference/Transform.html) of the camera. |
+| currentTrigger | Reference to an instance of the [MiniGameTrigger](#minigametrigger) class. |
+| currentGame | Reference to the [GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html) that represents the current minigame. |
+| taskSpawner | Reference to an instance of the [TaskSpawner](#taskspawner) class. |
+| soundManager | Reference to an instance of the [SoundManager](#soundmanager) class. |
 ### Methods
-* Loads and Ends Minigames
+| Name | Description |
+|------|-------------|
+| LoadMiniGame | Instantiates and starts a minigame. |
+| EndMiniGame | Stops the current minigame. |
 * Dependencies
 	* [MiniGameTrigger](#minigametrigger)
 * Referenced by
@@ -834,10 +844,19 @@ Handles sound effects for the main menu.
 
 ## [MiniGameTrigger](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/MG%20Scripts/MiniGameTrigger.cs)
 ### Description
-### Properties
+Handles triggering the start and end of minigames.
 ### References
+| Name | Description |
+|------|-------------|
+| playerInput | Reference to an instance of the [PlayerInput](#playerinput) class. |
+| mgControl | Reference to an instance of the [MiniGameControl](#minigamecontrol) class. |
+| playerMove | Reference to an instance of the [PlayerMovement](#playermovement) class. |
+| minigame | The minigame [GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html) to be loaded. |
 ### Methods
-* Handles triggers for minigames
+| Name | Description |
+|------|-------------|
+| TriggerMiniGame | Freezes player movement and starts the minigame. |
+| EndMiniGame | Allows player movement and ends the minigame. |
 * Dependencies
 	* [MinigameControl](#minigamecontrol)
 	* [PlayerMovement](#playermovement)
@@ -846,25 +865,55 @@ Handles sound effects for the main menu.
 
 ## [Money](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/Checkout/Money.cs)
 ### Description
+Handles money transactions.
 ### Properties
+| Name | Description |
+|------|-------------|
+| value | The value in dollars of the money. |
 ### References
+| Name | Description |
+|------|-------------|
+| checkoutManager | Reference to an instance of the [CheckoutManager](#checkoutmanager) class. |
 ### Methods
-* Handles Money colliders
 * Dependencies
 	* [CheckoutManager](#checkoutmanager)
 
 ## [MoodIndicator](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/MoodIndicator.cs)
 ### Description
-### Properties
+Handles displaying the moods of the customers.
 ### References
+| Name | Description |
+|------|-------------|
+| spriteRenderer | Reference to a [SpriteRenderer](https://docs.unity3d.com/ScriptReference/SpriteRenderer.html). |
+| happySprite | The [Sprite](https://docs.unity3d.com/ScriptReference/Sprite.html) to be used for a happy customer. |
+| sadSprite | The [Sprite](https://docs.unity3d.com/ScriptReference/Sprite.html) to be used for a sad customer. |
+| angrySprite | The [Sprite](https://docs.unity3d.com/ScriptReference/Sprite.html) to be used for an angry customer. |
+| pissedSprite | The [Sprite](https://docs.unity3d.com/ScriptReference/Sprite.html) to be used for a pissed off customer. |
 ### Methods
+| Name | Description |
+|------|-------------|
+| SetMood | Sets and displays the correct sprite for the given mood. |
+| HideEmote | Hides the mood sprite. |
+| Hide | IEnumerator that introduces a delay before hiding the sprite. |
 
 ## [MopGame](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/MG%20Scripts/MopGame.cs)
 ### Description
+Handles the cleaning of dirt spots minigame.
 ### Properties
+| Name | Description |
+|------|-------------|
+| remainingObjects | Number of objects remaining to be cleaned. |
 ### References
+| Name | Description |
+|------|-------------|
+| cleanableObjects | Array of [GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html) that can be cleaned. |
+| mgControl | Reference to an instance of the [MiniGameControl](#minigamecontrol) class. |
+| dirt1 | Reference to a [GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html) representing a cleanable spot of dirt. |
+| dirt2 | Reference to another [GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html) representing another cleanable spot of dirt. |
 ### Methods
-* Handles cleanableObjects
+| Name | Description |
+|------|-------------|
+| CleanedObject | Decreases the number of `remainingObjects` and ends the cleaning minigame when the objects are less than 1. |
 * Dependencies
 	* [CleanableObjects](#cleanableobjects)
 	* [MiniGameControl](#minigamecontrol)
@@ -873,30 +922,79 @@ Handles sound effects for the main menu.
 
 ## [PaperRule](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/Checkout/Rules/PaperRule.cs)
 ### Description
-### Properties
-### References
+Handles bagging rules for paper items.
 ### Methods
+| Name | Description |
+|------|-------------|
+| CheckRule | Makes customer angry if a food item is put on top of a paper item. |
 
 ## [Pause](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/Pause.cs)
 ### Description
+Handles pausing and resuming of the game.
 ### Properties
+| Name | Description |
+|------|-------------|
+| paused | Whether the game is paused or not. |
 ### References
+| Name | Description |
+|------|-------------|
+| playerInput | Reference to an instance of the [PlayerInput](#playerinput) class. |
+| pauseScreen | Reference to the [GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html) prefab representing the pause screen UI. |
+| ppManager | Reference to an instance of the [PPManager](#ppmanager) class. |
 ### Methods
-* Pauses the game by setting Time.timeScale to 1 or 0
-* Brings up in game pause screen
+| Name | Description |
+|------|-------------|
+| TogglePause | Toggles pausing and resuming of the game. |
+| LoadScene | Loads the given scene. |
+| SaveAndQuit | Saves the game and quits to the main menu. |
 
 ## [PauseMenu](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/PauseMenu.cs)
 ### Description
+Controls the pause menu.
 ### Properties
+| Name | Description |
+|------|-------------|
+| GameIsPaused | Whether the game is paused or not. |
 ### References
+| Name | Description |
+|------|-------------|
+| pauseMenuUI | Reference to the [GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html) prefab representing the pause screen UI. |
 ### Methods
+| Name | Description |
+|------|-------------|
+| Pause | Pauses the game. |
+| Resume | Resumes the game. |
 
 ## [PerformanceReview](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/PerformanceReview.cs)
 ### Description
+Handles which messages to send based on the performance score.
 ### Properties
+| Name | Description |
+|------|-------------|
+| lastPenalty | The last penalty received |
+| thisScore | Score on how well the player did from 0-3 with 0 being worse and 3 being best. |
+| lastScore | Score of the last thing the player did. |
+| totalPenaltyPoints | Total penalty points the player has accumulated. |
+| dayPenaltyPoints | Total penalty points accumulated during the current day. |
+| idErrors | The number of ID errors made. |
+| baggingErrors | The number of bagging errors made. |
+| goodMessage | The message displayed when performance is good. |
+| badMessage | The message displayed when performance is bad. |
+| neutralMessage | The message displayed when performance is average. |
+| improvedMessage | The message displayed when performance has improved. |
 ### References
+| Name | Description |
+|------|-------------|
+| phoneMessage | Reference to an instance of the [PhoneMessage](#phonemessage) class. |
+| phoneNotification | Reference to the phone notification [GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html) prefab. |
+| soundManager | Reference to an instance of the [SoundManager](#soundmanager) class. |
 ### Methods
-* Handles which message to send based on the performance score
+| Name | Description |
+|------|-------------|
+| NewMessage | Triggers the phone to pop up with the provided string. |
+| NewDay | Adds the `dayPenaltyPoints` to the `totalPenaltyPoints`, sets `lastPenalty` to what `dayPenaltyPoints` is, then resets `dayPenaltyPoints` to 0. |
+| ReviewMessage | Sends the review text message to the phone. |
+| MessageSelect | Chooses which message needs to be displayed. |
 * Dependencies
 	* [phoneNotification](#phonenotification) (assumes its a phone)
 	* [PhoneMessage](#phonemessage)
@@ -909,26 +1007,27 @@ Handles sound effects for the main menu.
 
 ## [Phone](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/Phone.cs)
 ### Description
+Handles the player phone object.
 ### Properties
 ### References
-### Public Methods
+### Methods
 * ClosePhone (inert?)
 
 ## [PhoneMessage](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/PhoneMessage.cs)
 ### Description
+Opens and displays messages on the phone.
 ### Properties
 ### References
 ### Methods
-* Opens messages 
 * Dependencies
 	* [PerformanceReview](#performancereview)
 
 ## [PlayerMovement](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/PlayerMovement.cs)
 ### Description
+Handles player movement.
 ### Properties
 ### References
 ### Methods
-* Handles Player Movement (duh)
 * Referenced by
 	* [CheckoutTrigger](#checkouttrigger)
 	* [MiniGameTrigger](#minigametrigger)
@@ -979,20 +1078,20 @@ Handles sound effects for the main menu.
 
 ## [SanityEventManager](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/SanityEventManager.cs)
 ### Description
+Handles sanity events and light effects.
 ### Properties
 ### References
 ### Methods
-* Handles Sanity Events and Light Effects (inert?)
 * Dependencies
 	* [SanityEventManager](#sanityeventmanager)
 	* [LightSanityEffect](#lightsanityeffect)
 
 ## [SanityManager](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/SanityManager.cs)
 ### Description
+Manages sanity values.
 ### Properties
 ### References
 ### Methods
-* Manages Sanity Values (inert?)
 
 ## [SaveData](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/SaveData.cs)
 ### Description
@@ -1035,11 +1134,10 @@ Handles sound effects for the main menu.
 
 ## [SoundManager](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/Sound/SoundManager.cs)
 ### Description
+Manages sounds and music.
 ### Properties
 ### References
 ### Methods
-* Manages BGM (inert?)
-* Manages all sound effects
 * Referenced by
 	* [LightSanityEffect](#lightsanityeffect)
     	* [CheckoutManager](#checkoutmanager)
@@ -1072,10 +1170,10 @@ Handles sound effects for the main menu.
 
 ## [StoryEventHandler](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/Story/StoryEventHandler.cs)
 ### Description
+Handles story events.
 ### Properties
 ### References
 ### Methods
-* Handles Story Events
 * Dependencies
 	* [HatchStoryBeat](#hatchstorybeat)
 * Referenced by
@@ -1083,19 +1181,19 @@ Handles sound effects for the main menu.
 
 ## [TaskSpawner](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/TaskSpawner.cs)
 ### Description
+Handles spawning new tasks.
 ### Properties
 ### References
 ### Methods
-* Handles randomly spawning new tasks (also happens to murder unity in the process)
 * Referenced By
 	* [TaskManager](#taskmanager)
 
 ## [TimeManager](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/TimeManager.cs)
 ### Description
+Manages the passage of time and days.
 ### Properties
 ### References
 ### Methods
-* Manages the display and passage of time 
 * Dependencies:
 	* [Player](#player)
 	* [PlayerMovement](#playermovement)
