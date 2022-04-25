@@ -10,8 +10,18 @@ This  changelog will be seen by the end users.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adhears to [Modified Semantic Versioning](https://github.com/Nocturnus-Media/TacRef/blob/main/NMMSV.md).
 
 ## [Unreleased]
+
+### Added
+- Added Journal Window with additional lore as a reward for completing the game
+
+### Removed
+- Removed inert Pause script.
+
 ### Fixed
 - Soda machine interaction messages now show up in the correct order.
+- Updated TMP Fonts to avoid artificing
+- Pause Menu now correctly exits submenus when pressing escape.
+
 
 ## [[1.0.0.0-alpha]](https://github.com/cjw20/Midnight-Customers-Prototype-2/releases/tag/v1.0.0.0-alpha) - 11MAR22
 ### Initial public alpha release!
