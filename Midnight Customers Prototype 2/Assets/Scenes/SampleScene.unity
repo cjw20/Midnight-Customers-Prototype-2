@@ -22487,6 +22487,9 @@ MonoBehaviour:
   paused: 0
   pauseScreen: {fileID: 2008976099}
   ppManager: {fileID: 519420034}
+  journalButton: {fileID: 838324095}
+  journalScreen: {fileID: 2036219955}
+  settingsScreen: {fileID: 250542598}
 --- !u!4 &1682110720
 Transform:
   m_ObjectHideFlags: 0
