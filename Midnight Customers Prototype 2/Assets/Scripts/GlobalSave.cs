@@ -8,8 +8,10 @@ public class GlobalSave
     // Fields
     [Tooltip("List of existing saves.")]
     public List<string> saveFileNames;
-    //make sure it is okay to save as list instead of array
 
+    [Tooltip("Flag created after game completion.")]
+    public bool gameComplete;
+    
     // References
 
     public void AddSave(string name)
@@ -18,5 +20,12 @@ public class GlobalSave
         {
             saveFileNames.Add(name);
         }
+    }
+
+
+    public void SetComplete()
+    {
+        gameComplete = true;
+        //for unlocking complete journal in main menu
     }
 }

@@ -17,6 +17,7 @@ public class EndingManager : MonoBehaviour
     {
         timeManager.EndGame();
         endingPhone.SetActive(true);
+        GameControl.control.SetComplete();
     }
 
 

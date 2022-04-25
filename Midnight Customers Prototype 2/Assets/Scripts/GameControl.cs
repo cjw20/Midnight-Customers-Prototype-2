@@ -16,6 +16,8 @@ public class GameControl : MonoBehaviour
     public List<int> individualProg;
     [Tooltip("Whether the game has been loaded from a previous save or not. (True when NOT a new game.)")]
     public bool loadingGame;
+    [Tooltip("Whether the game has been completed or not.")]
+    public bool gameComplete;
 
     // References
     [Header("References")]
@@ -43,6 +45,11 @@ public class GameControl : MonoBehaviour
     public void SaveGame(string saveName)
     {
         saveUtility.SaveGame(saveName);
+    }
+    public void SetComplete()
+    {
+        gameComplete = true;
+        saveUtility.UpdateGlobalSave("Manual Save");
     }
     public void LoadSave(string saveName)
     {
