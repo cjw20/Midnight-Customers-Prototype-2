@@ -423,6 +423,139 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &26300480
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 26300481}
+  - component: {fileID: 26300484}
+  - component: {fileID: 26300483}
+  - component: {fileID: 26300482}
+  m_Layer: 5
+  m_Name: Back
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &26300481
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26300480}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1257532057}
+  m_Father: {fileID: 2122826938}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -639.85, y: 44}
+  m_SizeDelta: {x: 175.71326, y: 38.72958}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &26300482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26300480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 26300483}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2122826939}
+        m_TargetAssemblyTypeName: FinalJournalDisplay, Assembly-CSharp
+        m_MethodName: DecrementPage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &26300483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26300480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &26300484
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26300480}
+  m_CullTransparentMesh: 1
 --- !u!1 &40828502
 GameObject:
   m_ObjectHideFlags: 0
@@ -580,6 +713,82 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 55179765}
+  m_CullTransparentMesh: 1
+--- !u!1 &66514637
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 66514638}
+  - component: {fileID: 66514640}
+  - component: {fileID: 66514639}
+  m_Layer: 5
+  m_Name: Paper
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &66514638
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 66514637}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1333187559}
+  m_Father: {fileID: 2122826938}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.000010967, y: 34}
+  m_SizeDelta: {x: 651.019, y: 357.2552}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &66514639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 66514637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &66514640
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 66514637}
   m_CullTransparentMesh: 1
 --- !u!1 &69480672
 GameObject:
@@ -5511,6 +5720,7 @@ RectTransform:
   m_Children:
   - {fileID: 2008976102}
   - {fileID: 250542599}
+  - {fileID: 2036219956}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5624,6 +5834,140 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &505970244
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 505970245}
+  - component: {fileID: 505970247}
+  - component: {fileID: 505970246}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &505970245
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 505970244}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 838324096}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &505970246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 505970244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Journal
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 635ed795edb1a9b438a800583fd69ffd, type: 2}
+  m_sharedMaterial: {fileID: 3539071425150051025, guid: 635ed795edb1a9b438a800583fd69ffd, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4285164138
+  m_fontColor: {r: 0.41568628, g: 0.41568628, b: 0.41568628, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 30
+  m_fontSizeBase: 30
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &505970247
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 505970244}
+  m_CullTransparentMesh: 1
 --- !u!1 &507476517
 GameObject:
   m_ObjectHideFlags: 0
@@ -10254,6 +10598,187 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 830804242}
   m_CullTransparentMesh: 1
+--- !u!1 &838324095
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 838324096}
+  - component: {fileID: 838324099}
+  - component: {fileID: 838324098}
+  - component: {fileID: 838324097}
+  m_Layer: 5
+  m_Name: Journal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &838324096
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 838324095}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 505970245}
+  m_Father: {fileID: 2008976102}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -64}
+  m_SizeDelta: {x: 177.1689, y: 42.8519}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &838324097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 838324095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.78039217}
+    m_PressedColor: {r: 1, g: 1, b: 1, a: 0.24705882}
+    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0.50980395}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 838324098}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2008976099}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: MainMenu
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1904453403}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayButtonSound
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 2122826939}
+        m_TargetAssemblyTypeName: FinalJournalDisplay, Assembly-CSharp
+        m_MethodName: OpenJournal
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 2036219955}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 2122826937}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+--- !u!114 &838324098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 838324095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: a5760c0114a75fe469c20ada4654861e, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &838324099
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 838324095}
+  m_CullTransparentMesh: 1
 --- !u!1 &844012049
 GameObject:
   m_ObjectHideFlags: 0
@@ -14876,6 +15401,139 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1165462377}
   m_CullTransparentMesh: 1
+--- !u!1 &1173498447
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1173498448}
+  - component: {fileID: 1173498451}
+  - component: {fileID: 1173498450}
+  - component: {fileID: 1173498449}
+  m_Layer: 5
+  m_Name: Forward
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1173498448
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1173498447}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1492182518}
+  m_Father: {fileID: 2122826938}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -164.55, y: 44}
+  m_SizeDelta: {x: 175.71326, y: 38.72958}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1173498449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1173498447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1173498450}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2122826939}
+        m_TargetAssemblyTypeName: FinalJournalDisplay, Assembly-CSharp
+        m_MethodName: IncrementPage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1173498450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1173498447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1173498451
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1173498447}
+  m_CullTransparentMesh: 1
 --- !u!1 &1183424976
 GameObject:
   m_ObjectHideFlags: 0
@@ -16095,6 +16753,164 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1246277432
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1246277433}
+  - component: {fileID: 1246277435}
+  - component: {fileID: 1246277434}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1246277433
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1246277432}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1977891073}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1246277434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1246277432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 25
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Close
+--- !u!222 &1246277435
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1246277432}
+  m_CullTransparentMesh: 1
+--- !u!1 &1257532056
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1257532057}
+  - component: {fileID: 1257532059}
+  - component: {fileID: 1257532058}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1257532057
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257532056}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 26300481}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1257532058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257532056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 25
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Back
+--- !u!222 &1257532059
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257532056}
+  m_CullTransparentMesh: 1
 --- !u!1 &1258878923 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5642382787059048446, guid: 0c385362111dbf04cbbe979bb5f2d605, type: 3}
@@ -17489,6 +18305,85 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1333187558
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1333187559}
+  - component: {fileID: 1333187561}
+  - component: {fileID: 1333187560}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1333187559
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333187558}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 66514638}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.0901, y: -0.5005}
+  m_SizeDelta: {x: 588.5005, y: 327.3452}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1333187560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333187558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 50
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: New Text
+--- !u!222 &1333187561
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333187558}
+  m_CullTransparentMesh: 1
 --- !u!1 &1335715028
 GameObject:
   m_ObjectHideFlags: 0
@@ -19151,6 +20046,85 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1492182517
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1492182518}
+  - component: {fileID: 1492182520}
+  - component: {fileID: 1492182519}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1492182518
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1492182517}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1173498448}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1492182519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1492182517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 25
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Forward
+--- !u!222 &1492182520
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1492182517}
+  m_CullTransparentMesh: 1
 --- !u!1 &1493718208
 GameObject:
   m_ObjectHideFlags: 0
@@ -21513,6 +22487,9 @@ MonoBehaviour:
   paused: 0
   pauseScreen: {fileID: 2008976099}
   ppManager: {fileID: 519420034}
+  journalButton: {fileID: 838324095}
+  journalScreen: {fileID: 2036219955}
+  settingsScreen: {fileID: 250542598}
 --- !u!4 &1682110720
 Transform:
   m_ObjectHideFlags: 0
@@ -24021,7 +24998,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -85}
+  m_AnchoredPosition: {x: 0, y: -153}
   m_SizeDelta: {x: 254.79, y: 67.8008}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1842439211
@@ -34379,6 +35356,151 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1976128150}
   m_CullTransparentMesh: 1
+--- !u!1 &1977891072
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1977891073}
+  - component: {fileID: 1977891076}
+  - component: {fileID: 1977891075}
+  - component: {fileID: 1977891074}
+  m_Layer: 5
+  m_Name: Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1977891073
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1977891072}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1246277433}
+  m_Father: {fileID: 2122826938}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -402.19998, y: 44}
+  m_SizeDelta: {x: 175.71326, y: 38.72958}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1977891074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1977891072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1977891075}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2122826939}
+        m_TargetAssemblyTypeName: FinalJournalDisplay, Assembly-CSharp
+        m_MethodName: CloseJournal
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2008976099}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+--- !u!114 &1977891075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1977891072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1977891076
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1977891072}
+  m_CullTransparentMesh: 1
 --- !u!1 &1983607961
 GameObject:
   m_ObjectHideFlags: 0
@@ -34606,6 +35728,7 @@ RectTransform:
   - {fileID: 250777359}
   - {fileID: 259318274}
   - {fileID: 1842439210}
+  - {fileID: 838324096}
   m_Father: {fileID: 493703393}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -35079,6 +36202,82 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &2036219955
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2036219956}
+  - component: {fileID: 2036219958}
+  - component: {fileID: 2036219957}
+  m_Layer: 5
+  m_Name: Journal Screen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &2036219956
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2036219955}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2122826938}
+  m_Father: {fileID: 493703393}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2036219957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2036219955}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.509434, g: 0.509434, b: 0.509434, a: 0.7176471}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2036219958
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2036219955}
+  m_CullTransparentMesh: 1
 --- !u!1 &2048399446
 GameObject:
   m_ObjectHideFlags: 0
@@ -36054,6 +37253,370 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &2122826937
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2122826938}
+  - component: {fileID: 2122826940}
+  - component: {fileID: 2122826939}
+  m_Layer: 5
+  m_Name: Journal Window
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2122826938
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2122826937}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 66514638}
+  - {fileID: 1977891073}
+  - {fileID: 26300481}
+  - {fileID: 1173498448}
+  m_Father: {fileID: 2036219956}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2122826939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2122826937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ec2c36a427149741a4b460d90d95e08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  journalText:
+  - "When they said that this journey would be long, I did not know what to expect.
+    Here we are god\u2019s faithful servants in the waters he created, which are
+    supposedly filled with a sea monster that eats ships whole. Thank God we have
+    not seen any signs of it, if we did I do not know what I would do. I guess it
+    would be God who decides. This journey is supposed to be in his name, I hope
+    he has blessed us with a safe journey. The views of this journey are something
+    that I will never forget. During the day we see magnificent creatures that show
+    themselves to us, creatures that I have never laid eyes on before. During the
+    night, the heavens shine brighter than a flame in a dark room.  I have heard
+    the place we are going is different from that of the cities and villages we have
+    left in England. I hope that we arrive soon, as we are running low on supplies.
+    The captain says that this trip has been one of the easiest he has done. The
+    lack of storms must be an act of God due to our prayers. I will continue to pray
+    for the conclusion of our journey, as I can not wait to begin my new life with
+    my wife, in this new world. "
+  - "We arrived to our new home at sunrise. Stepping out onto the deck and seeing
+    the green of the land was a sight for sore eyes. Thank God we are finally here,
+    the sea is starting to take its toll on my wife. The last couple of weeks she
+    has been unable to come above deck for fresh air. The dock seems to be busy with
+    the predecessors of our journey. I can see the cross on top of the church from
+    the harbor. I will head there immediately and give thanks to our lord for a safe
+    journey.  \tAs we stepped off the ship so many people were there to greet us
+    as if they had not seen anyone new for a long, long, time. The family that is
+    taking us in until we are able to get our house built seems nice. They immediately
+    helped my wife with recovering from the trek across the wide ocean. John and
+    Susan Williams are their names, I hope that they are not too troubled keeping
+    us in their home for a short while. The first  thing that we were immediately
+    told was to not wander off too far, especially alone. Supposedly something is
+    out there that waits for us to be alone, to strike. This was said as we walked
+    past the church with fresh graves in the little yard. The mourning family stood
+    around, I decided not to go pray and disrupt them. The attacks are stated to
+    be a result of unhappy previous inhabitants of the land, and they are said to
+    be ruthless, some even say that they are sent by God to punish us for our sins.
+    I wonder why the ones who are attacked, lost the grace of God\u2019s protection.
+    I pray that I will never leave the light of God, and that he will protect me
+    from the horrors that lie in this world. "
+  - "This new home is something I never would have expected. The people here seem
+    to do the same thing every day at the same time. John leaves early in the morning
+    and comes home late at night. He says that he is a fisherman for the village
+    and now that there are more mouths to feed, they have to stay out longer. Soon
+    they will be out all night. The rest of the village seems to follow the same
+    routine and everyone warns against changing it. I wonder what routine I will
+    fall into. Hopefully, it will be one that I enjoy, I know that God has a plan
+    for me.  \tMy wife and I have gotten some help with our house building and it
+    should be completed in no time. The woods are scary though, it seems as though
+    every time we cut down a tree, during the night sounds of crying and falling
+    water come from the woods. It has not rained since we got here and the wind should
+    not make that sound. I swear just last night that a pair of yellow eyes peered
+    out of the dark woods staring directly at me. "
+  - "The house has been finished and my wife and I are fully moved in and settling
+    down. She has made some friends with the neighbor\u2019s wives and seems to be
+    in better health now that we are off the ship. John and Susan live down the road
+    from us, so we easily keep in contact. I have offered my services in order to
+    repay the debt of housing us for the time they did, but they will not receive
+    any form of payment. They truly are respectable people. \tThings seem to be shifting
+    in mood, as people have begun to disrupt their routines. Panic has sparked with
+    the disappearance of some of the fishermen near the lake. Some of the surviving
+    fishermen including John have stated that the traps come back destroyed if at
+    all. The fish stock has started to decline rapidly, and soon we will need to
+    find a new food source. The fishermen have begun to refuse to go out at night,
+    to avoid being taken by whatever they think is taking them. Most suspect the
+    angry inhabitants of the land, while others think that God is punishing us.  "
+  - "Fishermen have continued to disappear, now even during the day when they separate
+    from the main group. John has gone missing and Susan is not taking it well. We
+    pray every day for his safe return, but none of the missing people have returned.
+    A child has come back to tell of a friend that they have made near the lake.
+    He says that they came out of the water. The imagination of children is something
+    mystical. A group of people are going to take a look, just to be safe, but it
+    is probably just a game that the children play.  \tThe child spoke the truth,
+    God is our witness, as fish people came trudging out of the water towards us.
+    The missing fishermen are at their heels as if they are wanting to make a trade
+    for the lives of the village's loved ones. The fishermen seem to have a glaze
+    over their eyes as if they are blind to what is going on. I pray that God heals
+    them and that he allows us to take them home safely. These fish people speak
+    our language well, it is as if they learned it overnight. My mind floods like
+    the imagination of a child, creating the images of the horrors that they must
+    have done to the fishermen to gain this information.  "
+  - "The fishermen were released from the custody of the fish people, thank God.
+    They all regained their sight a few days after the treaty was signed. The fish
+    people now come and visit the town at their own leisure, but we are not able
+    to go to their home as it is under the lake, in the depths of a place closer
+    to Hell than I ever want to be. I pray that God keeps us safe from the horrors
+    that I fear this new friendship will bring.  \tWe are no longer allowed fish
+    in the lake for food, therefore we must turn towards a new food source. The fish
+    people have taught us how to farm some of the food that they eat, however it
+    tastes awful. I do not think that I will survive long on it if it is our only
+    food source. The fish people have brought texts and gifted them to the village.
+    My wife received one, but the priest warns against reading it. He thinks that
+    the fish people are heathens as they do not follow God. We have begun showing
+    the fish people our religion, in hopes that some of the village will welcome
+    them, we have even invited them to Sunday worship at the church. I do not know
+    if they will attend but something tells me that God is not the higher power they
+    wish to worship. "
+  - "Strange lights resembling that of a flame have begun to show up in the woods
+    at night. There are never any flames, what is making these lights is unknown.
+    It is luring people in and causing people to disappear for a stretch of time.
+    Some think that satanic followers are in the woods performing rituals. The people
+    who disappear come back with symbols etched onto their skin. Only God knows what
+    is happening in those woods.  \tThe fish people say that they have nothing to
+    do with these disappearances and that they too have had people going missing.
+    My wife has recognized some of the symbols that are etched onto the victims as
+    runes from the book she was given. The survivors do not remember anything from
+    the time they were gone, only the light of a torch and chanting.  \tThe time
+    that each individual is gone seems to be random. I pray to God that this ends
+    soon, as I am beginning to worry that this journey to this new world, in his
+    name, was the right thing to do. I know that he has a plan for me, but this plan
+    seems to be leading me through the darkest part of his world.  "
+  - "At Sunday worship the priest has stated that we have a witch coven in our midst
+    and that an investigation will be conducted to find those responsible for the
+    rituals in the woods. It is said that the site has been found and that runes
+    have been burned into the grounds and that a stone table covered in blood in
+    the center of the runes contains the remains of a fish person. \tThe priest has
+    found a witch, the one person that I thought would never do anything like this.
+    John brought the news that they took Susan in the morning light and that he knows
+    that she is not a witch. I pray that God provides the truth before something
+    that we can not take back happens and that we find who is responsible quickly.
+    I have my doubts that Susan is a witch, she reads scripture everyday, leads the
+    youth service for the children of the village, and prays more times a day than
+    I can count. However, the town wants justice and it is far too dangerous to speak
+    my mind. The only thing that I can do is console John and pray that the truth
+    is found out soon. \tSusan\u2019s trial is set at dusk in the middle of a field
+    in the woods. As we all arrive we witness as Susan is tied to a pyre and the
+    priest has seemed to have already chosen the verdict of her supposed crime. The
+    priest says that if Susan burns then she is innocent, but if she does not burn
+    she is indeed a witch. I had to hold John back so that he would not charge towards
+    Susan as we watched her burn alive, her screams of agony piercing the now dark
+    woods. The light of the flames resembles that of the so-called rituals."
+  - 'Within the week half of the women of the village who received the gifts from
+    the fish people have been burned. It seems that these gifts deem who is a witch.
+    My wife has hidden her gift in the floorboards, but the priest has begun to search
+    houses and it is only a matter of time. The day they came and took her, without
+    even searching the house I could not act to try and defend her. I can not get
+    the image of her crying face out of my mind. I pray to God that he realizes the
+    truth that she is not a witch and that she will be released.  The journey to
+    the field is one that I will not soon forget. The field of pyres continues to
+    grow as the remains of the so-called witches remain up as a remembrance of what
+    happens to the followers of satan. I watch as the priest sets fire to my wife''s
+    pyre and can only look straight into her eyes as the woman I love is burned for
+    crimes she did not commit. John is not there to console as I watch her burn and
+    her screams pierce every memory of her and shatter them. I stand there long into
+    the night, and it is not until sunrise that I turn and head back towards the
+    village. I question whether God really does know the truth or if he just stands
+    by and lets us do these horrible acts. '
+  - 'In the following days, the rest of the women are burned and life in the village
+    seems to return to normal. The people who did not have a loved one burned to
+    go about their normal routines as if nothing ever happened. Those of us who remember
+    the horrors that have been done to our family begin to segregate from this society.
+    I hate the people of the town who encouraged this act of murder to happen. The
+    priest will be punished when the time comes, I do not have to pray to know that. 
+    I am confused with the reason that God would let all of this happen. John and
+    I have stopped attending church as we can not follow a God who allows innocent
+    people to be punished for the things that they did not do. How can I trust a
+    higher power that allows for these things to happen without any proof, nor punishment
+    for these horrid acts? If the words of the priest are to be thought true, then
+    every one of those women was innocent as they all burned. Yet God takes pity
+    on the priest. I have begun to think that God is not just, that he punishes those
+    that follow him, while others are allowed to roam freely.  '
+  - "The priest feels as though his acts were justified, as the rituals in the woods
+    seem to have stopped, all in the name of God. The priest thinks that it is a
+    good idea to cleanse the area where the burnings took place as if the burning
+    of innocent lives can be cleansed and forgotten. The men of the village who still
+    have wives have begun to build a church in the same field that Susan, my wife,
+    and so many others were burned at the stake. The church is said to be massive
+    as to atone for the sins of the village\u2019s past, present, and future inhabitants.
+    \tThe woods have begun to make the sounds of mourning, and the sound of water
+    falling inside resembles that of the tears that fall on my floor as I imagine
+    my wife standing on the wooded pyre. I look towards the woods and the yellow
+    eyes peer back at me as if trying to tell me something. I pried the floorboards
+    up and peer into the book that got my wife killed. Maybe if I am lucky something
+    in here will help me get my revenge, as I now know that God will not help me
+    get justice for the wrongful murder of my wife. The priest will pay. "
+  - "Storms have begun to cause havoc for the village, the church construction has
+    been halted. One of the men who was working on the church fell to his death after
+    a strong gust of wind blew him from his perch and he fell. It is as if some force
+    knows what has been done on that land and is punishing someone for it. I continue
+    to sit at home and read through the book to see if I have missed something. 
+    \tOne night a horrible storm hits the village as John and I drown our sorrows
+    in some sort of alcohol that the village market had. The loud noise of lightning
+    striking knocks us out of our chairs as we stumble to look through the window.
+    The same red light comes from the woods. This time it is actually fire, as we
+    struggle against the downpour of rain, and the muddy ground we watch as the church
+    burns, the lightning struck the center of the building and sets it aflame. The
+    flame reminds me of the night my wife died as John and I continue to drink from
+    the bottle and watch as the flames roar unaffected by the downpour of rain.  "
+  - "After the storms seem to dissipate, long after the night of the lightning strike,
+    the church is rebuilt and the construction is finally finished. Even if it was
+    built for the wrong reasons I must say that it is a miraculous building. It must
+    be some cruel joke to something this beautiful standing where so much pain and
+    agony took place.  \tAs I return home from the opening of the church, avoiding
+    the service that is taking place I found a letter on the table addressed to me.
+    No name for a sender is written on the letter, as the parchment seems to be sparsely
+    filled. The first words on the letter are \u201CDo you want your wife back.\u201D
+    Thinking it to be a cruel joke, I threw the letter across the house. That night
+    John comes to my door and asks me to follow him.  \tHe leads me into the woods
+    where a woman is standing in a dimly lit patch of grass, peering up at the stars.
+    She turns to me and I can not believe my eyes as Susan stands there as John rushes
+    to her as they embrace. I turned and ran home in order to find the letter, to
+    see what else it had to say. I would do anything to bring my love back to me.  "
+  - "The letter has a list of instructions very easy to follow. It started by saying
+    to \u201Ccome on a day when the moon is clear in the sky.\u201D The clear message
+    for this line is obvious. \u201CTo a place, that great tragedy took place.\u201D
+    Has to be the field. \u201CFind what lies beneath, to find what you truly desire.\u201D
+    As the sun rose I can not wait until the night, it is all I can think about the
+    entire day. I thumb through the book that got her murdered and look at the different
+    runes, and text that I can not read in order to pass the time.  \tAs the sun
+    sets I look to the sky, not a cloud in sight. I head towards the church passing
+    the people that I thought to be friends, who just stood there as they took her
+    from me. The same people that thought the priest's actions to be just and worthy
+    of God\u2019s grace. The church stands there as if mocking me as I approach,
+    the cellar door lying open behind the very building that weeks ago, stood burning
+    in an unrelenting storm. \tI can hear chanting from within, the only thing pushing
+    me on, is the want and need for my wife to be back. The image of John\u2019s
+    face as he saw Susan standing in the dim light, guiding me towards that same
+    feeling. The cellar opens into a giant cavern, as people stand around arms raised
+    and chanting. The ceiling is decorated with the same runes from the book, as
+    the one that I can only assume to be the leader approaches me and guides me to
+    follow him to the center of the room. "
+  - "What I can only describe as a flash in time the ritual takes place, the chanting
+    quickens and the runes on the ceiling begin to glow the red light that I have
+    become all too familiar with. As if something has possessed me I lift my arms
+    to the sky and begin chanting words that I have no idea what they mean. The sweat
+    begins to drip from me, as the heat of the cave intensifies. All of a sudden
+    I watch as I continue to chant as the remains of a burned woman are brought and
+    set in the center of the cavern, at my feet. \tAs the chanting continues my head
+    begins to spin as if the entire cavern is rotating as fast as the chanting occurs.
+    I must have passed out, as when I awoke hearing the screams that I dream every
+    night,  Laying next to my wife in the flesh. She is staring at me confused about
+    what is happening the last thing she remembers is pain and the look on my face.
+    I embrace her, explain why we are in a cave that has emptied since must have
+    passed out. She thanks God that she is back, but I tell her that God did not
+    do this and nor would he ever. I curse God, that my faith will no longer rest
+    in him but in whatever higher power brought her back.  \tA letter rests on the
+    ground near us, all that is written is \u201Cbring him to us.\u201D "
+  - 'Instantly I know who they are talking about, the only person in the entire world
+    that I wish to punish by any means necessary. Seems like this group of people
+    wants him too, and I will help them as payment for bringing her back to me. The
+    trek back home is that of one I only dreamt of, walking with her again hand in
+    hand. Sneaking her in the house I now know what I must do. The house of the priest
+    is not far away and the knocking comes easily. Knowing what I am about to do
+    has no effect on me, as I put on my best pleading face, and ask the priest to
+    come to the church for a confession. The only confession in my mind is that I
+    confess my gratitude for what is about to happen. Leading him to the church around
+    the back, his confusion only growing as I lead him into the cavern, the horror
+    on his face, similar to that of the women he burned, as he tries to turn and
+    run only to be grabbed by men in cloaks. Dragging him to the center where the
+    leader stands nodding to me, as he tells me to return the next night.  '
+  - "The cavern is the same as I enter my wife in my arms, John and Susan, present
+    as many other of the men and women I recognize as the ones who were wronged by
+    the priest that lies tied to a table in the center. We are given robes and told
+    to put them on, the fabric resembling that of everyone else as we blind into
+    the crowd. The precession starts with the leader, known as the high cultist stating
+    that the group has new members to induct, as he calls out each of the names and
+    has them come up and cut the priest as to provide a sense of pain that he brought
+    them. My name is that last to be called and I stare into the eyes of the priest
+    as I cut along his abdomen, the feeling of revenge and justice flooding through
+    me. \tThe rest of the ritual takes place as the chanting begins as I take my
+    place next to my wife, our arms raised to the sky, the words flooding out as
+    if we had said them a million times. I watch as the high priest raises the very
+    knife we used to inflict the pain, towards the sky and plunges it down into the
+    priest, the light draining from his eyes as the life rushes out of him. The cavern
+    shakes as a monstrous growl-like sound erupts from below. The yells of satisfaction
+    from everyone quickly envelop the cavern echoing off the rune-covered walls.
+    All I can think about is how my deepest desire has been fulfilled and the woman
+    I love is in my arms.  "
+  - "It has been a quite a few years since my first ritual my wife and I have become
+    accustomed to the everyday routine that our fellow members have fallen into.
+    It makes more sense now, looking back to the first day we arrived here, and everyone
+    doing the same thing. I have grown close to the high priest as rituals continue
+    to take place. He has taught me what the words of our chants mean as well as
+    what the runes are.  \tAs I sit next to his bed and watch as he is going to the
+    afterlife I am shocked that he has chosen me to be his heir, as he never had
+    a child. The responsibilities that I will be taking are ones that I never thought
+    would be in my plans. That night as we bury the high priest in the tomb in the
+    cave, and perform the ritual of sending the body to the next world, I am given
+    the high priest robes and am now in charge of the entire cult. I must start finding
+    new members as well as inducting them. The most important job is yet to come. "
+  - 'It just so happens that the week that I am made the high priest of the cult
+    is the same week that an annual ritual must take place. I send John to find a
+    sacrifice and as soon as he returns we begin the chanting. I watch as my son
+    comes forward and makes a cut into the sacrifice, inducting him into the cult,
+    following in his parents footsteps. His mother standing over my shoulder in robes
+    of the high priestess.  I hear a voice in my head one that I have never heard
+    before. That of a deep unseen force. Telling me that I must appease his appetite,
+    or the world shall pay. As I plunge the knife down into this sacrifice and the
+    chanting continues and the ground begins to shake, with the growl of this unknown
+    speaker. I feel the weight leave my shoulders and know what it means to be the
+    high priest, and the duties I must fulfill.  '
+  - "As I read the notes of my ancestors it fuels me with pride that I am following
+    in their footsteps. I know my duties and how to fulfill them. I know the chants,
+    the runes. I know of the very knife that has been used for generations, and where
+    lies. I know exactly which dearie I am going to use to appease our God.  This
+    dear gas station clerk; will make for a great first sacrifice. I will plant my
+    name into the dynasty of Maxwell\u2019s who have continued to follow the path
+    that was paved for us. I will take this knife and plant it into them, as they
+    are sent to the next world in order to appease the voice in my head. The same
+    voice that my family has been appeasing for years. It is now my time to lead,
+    and I will not let my dear ancestors down.  "
+  journalProgress: 0
+  inJournal: 0
+  journal: {fileID: 2036219955}
+  displayText: {fileID: 1333187560}
+  soundManager: {fileID: 1904453403}
+--- !u!222 &2122826940
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2122826937}
+  m_CullTransparentMesh: 1
 --- !u!1 &2144736906
 GameObject:
   m_ObjectHideFlags: 0

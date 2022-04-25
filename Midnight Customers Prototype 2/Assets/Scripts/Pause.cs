@@ -17,10 +17,21 @@ public class Pause : MonoBehaviour
     [SerializeField] GameObject pauseScreen;
     [Tooltip("Reference to the PPManager.")]
     [SerializeField] PPManager ppManager;
-    
-    private void Awake()
+
+    [Tooltip("Reference to the Journal Buttn on pause menu UI object")]
+    public GameObject journalButton;
+
+    [Tooltip("Reference to the Journal Buttn on pause menu UI object")]
+    public GameObject journalScreen;
+
+    [Tooltip("Reference to the Journal Buttn on pause menu UI object")]
+    public GameObject settingsScreen;
+
+
+  private void Awake()
     {
         playerInput = new PlayerInput();
+        journalButton.SetActive(false);
     }
 
     private void OnEnable()
@@ -54,12 +65,15 @@ public class Pause : MonoBehaviour
             Time.timeScale = 0;
             pauseScreen.SetActive(true);
             ppManager.EnableDepthOfFieldEffect();
-        }
+            if (GameControl.control.gameComplete) journalButton.SetActive(true);
+    }
         else
         {
             paused = false;
             Time.timeScale = 1;
             pauseScreen.SetActive(false);
+            journalScreen.SetActive(false);
+            settingsScreen.SetActive(false);
             ppManager.DisableDepthOfFieldEffect();
         }
     }
