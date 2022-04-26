@@ -478,6 +478,29 @@ Handles fading in and out of the screen.
 * Dependencies
 * Referenced by
 	* [TimeManager](#timemanager)
+    
+## [FinalJournalDisplay](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/FinalJournalDisplay.cs)
+### Description
+Handles displaying the journal.
+### Properties
+| Name | Description |
+|------|-------------|
+| journalText | Array of strings for journal text. |
+| journalProgress | Amount of progress in the journal. |
+| inJournal | Whether the journal is currently open or not. |
+### References
+| Name | Description |
+|------|-------------|
+| journal | Reference to the journal [GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html). |
+| displayText | Reference to the [Text](https://docs.unity3d.com/2018.3/Documentation/ScriptReference/UI.Text.html) to display. |
+| soundManager | Reference to an instance of the [SoundManager](#soundmanager) class. |
+### Methods
+| Name | Description |
+|------|-------------|
+| OpenJournal | Opens up the `journal` for viewing. |
+| IncrementPage | Turns the page. |
+| DecrementPage | Goes to the previous page. |
+| CloseJournal | Closes the `journal`. |
 
 ## [FlashLight](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/FlashLight.cs)
 ### Description
@@ -941,29 +964,15 @@ Handles pausing and resuming of the game.
 | playerInput | Reference to an instance of the [PlayerInput](#playerinput) class. |
 | pauseScreen | Reference to the [GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html) prefab representing the pause screen UI. |
 | ppManager | Reference to an instance of the [PPManager](#ppmanager) class. |
+| journalButton | Reference to the journal button [GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html) on the pause menu UI. |
+| journalScreen | Reference to the journal screen [GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html). |
+| settingsScreen | Reference to the settings screen [GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html). |
 ### Methods
 | Name | Description |
 |------|-------------|
 | TogglePause | Toggles pausing and resuming of the game. |
 | LoadScene | Loads the given scene. |
 | SaveAndQuit | Saves the game and quits to the main menu. |
-
-## [PauseMenu](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/PauseMenu.cs)
-### Description
-Controls the pause menu.
-### Properties
-| Name | Description |
-|------|-------------|
-| GameIsPaused | Whether the game is paused or not. |
-### References
-| Name | Description |
-|------|-------------|
-| pauseMenuUI | Reference to the [GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html) prefab representing the pause screen UI. |
-### Methods
-| Name | Description |
-|------|-------------|
-| Pause | Pauses the game. |
-| Resume | Resumes the game. |
 
 ## [PerformanceReview](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/PerformanceReview.cs)
 ### Description
