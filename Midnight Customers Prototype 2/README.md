@@ -1016,18 +1016,33 @@ Handles which messages to send based on the performance score.
 
 ## [Phone](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/Phone.cs)
 ### Description
-Handles the player phone object.
-### Properties
+Handles the locking and putting away of the phone.
 ### References
+| Name | Description |
+|------|-------------|
+| soundManager | Reference to an instance of the [SoundManager](#soundmanager) class. |
 ### Methods
-* ClosePhone (inert?)
+| Name | Description |
+|------|-------------|
+| ClosePhone | Puts away the phone and plays screen lock sound. |
 
 ## [PhoneMessage](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/PhoneMessage.cs)
 ### Description
 Opens and displays messages on the phone.
 ### Properties
+| Name | Description |
+|------|-------------|
+| message | The message that will be displayed on the screen. |
 ### References
+| Name | Description |
+|------|-------------|
+| messageText | Reference to the [Text](https://docs.unity3d.com/ScriptReference/Text.html) to be displayed. |
+| openPhone | Reference to the [GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html) prefab that represents the opened phone. |
+| soundManager | Reference to an instance of the [SoundManager](#soundmanager) class. |
 ### Methods
+| Name | Description |
+|------|-------------|
+| OpenMessage | Unlocks and opens phone and displays the message. |
 * Dependencies
 	* [PerformanceReview](#performancereview)
 
@@ -1035,8 +1050,33 @@ Opens and displays messages on the phone.
 ### Description
 Handles player movement.
 ### Properties
+| Name | Description |
+|------|-------------|
+| movementDirection | The direction vector the player is moving in. |
+| playerLastFramePosition | The [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) position of the player on the last frame. |
+| stepTimer | Keeps time for playing of footstep sounds at the right moment. |
+| timerRunning | Whether the `stepTimer` is running or not. |
+| moveSpeed | Movement speed of the player. |
+| moveable | Whether the player is currently moveable or not. |
+| stepDistance | Distance of each step, used to match footstep sounds with walk animation. |
 ### References
+| Name | Description |
+|------|-------------|
+| body | Reference to the [Rigidbody2D](https://docs.unity3d.com/ScriptReference/Rigidbody2D.html) component of the player. |
+| playerInput | Reference to an instance of the [PlayerInput](#playerinput) class. |
+| animator | Reference to an [Animator](https://docs.unity3d.com/ScriptReference/Animator.html) for the player. |
+| spriteRenderer | Reference to the [SpriteRenderer](https://docs.unity3d.com/ScriptReference/SpriteRenderer.html) for the player. |
+| checkoutTrigger | Reference to an instance of the [CheckoutTrigger](#checkouttrigger) class. |
+| nearbyMG | Reference to an instance of the [MiniGameTrigger](#minigametrigger) class. |
+| nearbyInteractable | Reference to an instance of the [Interactable](#interactable) class. |
+| Epopup | Reference to a [GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html) that represents the question mark emote. |
+| Qpopup | Reference to the [GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html) that represents the exclamation point emote. |
+| flashLight | Reference to the [GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html) that is the player's flashlight. |
+| soundManager | Reference to an instance of the [SoundManager](#soundmanager) class. |
 ### Methods
+| Name | Description |
+|------|-------------|
+| Interact | Interacts with the nearest thing that is interactable. |
 * Referenced by
 	* [CheckoutTrigger](#checkouttrigger)
 	* [MiniGameTrigger](#minigametrigger)
@@ -1045,45 +1085,122 @@ Handles player movement.
 
 ## [PlayerTrigger](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/PlayerTrigger.cs)
 ### Description
+Handles triggering of player interaction areas like the checkout counter.
 ### Properties
+| Name | Description |
+|------|-------------|
+| hasPlacedMop | Whether the mop has been placed down or not. |
+| isBehindCounter | Whether the player is behind the counter or not. |
+| poopChance | Currently not in use. |
 ### References
-### Methods
+| Name | Description |
+|------|-------------|
+| mopTriggerPrefab | Reference to the [GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html) for the mop trigger prefab. |
 
 ## [PowerButton](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/MG%20Scripts/PowerButton.cs)
 ### Description
+Handles the buttons to switch power on and off on the breaker box.
 ### Properties
+| Name | Description |
+|------|-------------|
+| onButton | Whether the on button is lit or not. |
+| activated | Whether the button is active or not. |
 ### References
+| Name | Description |
+|------|-------------|
+| thisLight | Reference to a [Light](https://docs.unity3d.com/ScriptReference/Light.html). |
+| powerGame | Reference to an instance of the [PowerGame](#powergame) class. |
+| soundManager | Reference to an instance of the [SoundManager](#soundmanager) class. |
+| targetSwitch | Array of [PowerButton](#powerbutton) that this button affects. |
 ### Methods
+| Name | Description |
+|------|-------------|
+| ToggleButton | Toggles the power button, activates the light, and plays a sound. |
 
 ## [PowerGame](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/MG%20Scripts/PowerGame.cs)
 ### Description
-### Properties
+Handles the power mini game.
 ### References
+| Name | Description |
+|------|-------------|
+| mgControl | Reference to an instance of the [MiniGameControl](#minigamecontrol) class. |
+| lightManager | Reference to an instance of the [LightManager](#lightmanager) class. |
+| offButtons | Array of [PowerButton](#powerbutton) that are off. |
+| onButtons | Array of [PowerButton](#powerbutton) that are on. |
 ### Methods
+| Name | Description |
+|------|-------------|
+| CheckFinish | Checks to see if all off buttons have been switched back to on. |
 
 ## [PPManager](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/PPManager.cs)
 ### Description
-### Properties
+Handles post processing.
 ### References
+| Name | Description |
+|------|-------------|
+| volume | Reference to a [Volume](https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@7.1/manual/Volumes.html). |
+| dof | Reference to a [DepthOfField](https://docs.unity3d.com/2018.1/Documentation/Manual/PostProcessing-DepthOfField.html). |
 ### Methods
+| Name | Description |
+|------|-------------|
+| EnableDepthOfFieldEffect | Turns on the depth of field effect. |
+| DisableDepthOfFieldEffect | Turns off the depth of field effect. |
 
 ## [RandomEventManager](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/RandomEventManager.cs)
 ### Description
+Handles ths spawing of random light based events (power outage, lightning, bulb burnout).
 ### Properties
+| Name | Description |
+|------|-------------|
+| ongoingLightEvent | Whether a light event is ongoing or not. |
+| eventChance | Percent chance that a random event will occur when called. |
 ### References
+| Name | Description |
+|------|-------------|
+| lightManager | Reference to an instance of the [LightManager](#lightmanager) class. |
+| timeManager | Reference to an instance of the [TimeManager](#timemanager) class. |
 ### Methods
+| Name | Description |
+|------|-------------|
+| CallRandomEvent | Uses `eventChance` to determine if an event is spawned or not. |
+| CallLightEvent | Triggers a random light based event. |
 
 ## [Rule](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/Checkout/Rule.cs)
 ### Description
+Handles checkout rules.
 ### Properties
-### References
+| Name | Description |
+|------|-------------|
+| phase | Which phase of rules this rule belongs to, starting with `0`. |
+| passed | Whether the rule was broken or not. True if the rule was NOT broken. |
 ### Methods
+| Name | Description |
+|------|-------------|
+| CheckRule | Checks to see if the rule was passed or not. |
 
 ## [RuleBook](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/Checkout/Rulebook.cs)
 ### Description
+Handles the checkout rulebook.
 ### Properties
+| Name | Description |
+|------|-------------|
+| bookStatus | Whether the book is currently being viewed or not? |
+| index | Integer representing the index. |
 ### References
+| Name | Description |
+|------|-------------|
+| openedBook | Reference to the open book [GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html) prefab. |
+| soundManager | Reference to an instance of the [SoundManager](#soundmanager) class. |
+| image_one | Reference to a [Sprite](https://docs.unity3d.com/ScriptReference/Sprite.html). |
+| image_two | Reference to a [Sprite](https://docs.unity3d.com/ScriptReference/Sprite.html). |
+| image_three | Reference to a [Sprite](https://docs.unity3d.com/ScriptReference/Sprite.html). |
+| image_four | Reference to a [Sprite](https://docs.unity3d.com/ScriptReference/Sprite.html). |
 ### Methods
+| Name | Description |
+|------|-------------|
+| ToggleBook | Toggles opening and closing of the book. |
+| OpenBook | Opens the book. |
+| NextPage | Goes to the next page. |
 
 ## [SanityEventManager](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/SanityEventManager.cs)
 ### Description
@@ -1097,19 +1214,38 @@ Handles sanity events and light effects.
 
 ## [SanityManager](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/SanityManager.cs)
 ### Description
-Manages sanity values.
+Manages the sanity system.
 ### Properties
+| Name | Description |
+|------|-------------|
+| alreadyTriggered | Whether the event has already been triggered or not? |
 ### References
+| Name | Description |
+|------|-------------|
+| sanityEvents | Reference to an instance of the [SanityEventManager](#sanityeventmanager) class. |
+| lightEffects | Reference to an instance of the [LightSanityEffect](#lightsanityeffect) class. |
 ### Methods
+| Name | Description |
+|------|-------------|
+| LightEffect | Chooses and starts a lighting sanity effect. Currently not in use. |
 
 ## [SaveData](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/SaveData.cs)
 ### Description
+Handles gathering up the data that will be saved.
 ### Properties
-### References
+| Name | Description |
+|------|-------------|
+| customerProgress | How far into the customer array the player is. |
+| day | The day the save was made. |
+| individualProgress | The progress for each individual customer. |
 ### Methods
+| Name | Description |
+|------|-------------|
+| GetData | Gathers up all the data to be saved and places them in the variables. |
 
 ## [SaveUtility](https://github.com/cjw20/Midnight-Customers-Prototype-2/blob/main/Midnight%20Customers%20Prototype%202/Assets/Scripts/SaveUtility.cs)
 ### Description
+Handles saving and loading of data.
 ### Properties
 ### References
 ### Methods
