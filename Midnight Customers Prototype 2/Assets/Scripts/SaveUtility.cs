@@ -89,7 +89,7 @@ public class SaveUtility : MonoBehaviour
         }
         else
         {
-            Debug.LogError("Error: Save file not found in " + path);
+            Debug.LogWarning("Error: Save file not found in " + path);
             return null;
         }
     }
