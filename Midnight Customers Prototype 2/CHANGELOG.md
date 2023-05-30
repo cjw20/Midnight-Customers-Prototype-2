@@ -16,6 +16,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ### Removed
 - Removed inert Pause script.
+- Removed Wiggle script and replaced with animation instead.
 
 ### Fixed
 - Soda machine interaction messages now show up in the correct order.
