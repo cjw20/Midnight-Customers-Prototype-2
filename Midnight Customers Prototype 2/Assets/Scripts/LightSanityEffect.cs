@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Experimental.Rendering.Universal;
+
 
 
 public class LightSanityEffect : MonoBehaviour
@@ -18,9 +18,9 @@ public class LightSanityEffect : MonoBehaviour
     // References
     [Header("Lights")]
     [Tooltip("Lights to be used for unique effects.")]
-    public Light2D[] targetLights; //light that effect will be played on. May need to make array if multiple targets for some effects
+    public UnityEngine.Rendering.Universal.Light2D[] targetLights; //light that effect will be played on. May need to make array if multiple targets for some effects
     [Tooltip("Light to be used for global effects.")]
-    public Light2D globalLight;
+    public UnityEngine.Rendering.Universal.Light2D globalLight;
 
     [Header("Sound")]
     [Tooltip("Reference to a SoundManager class instance.")]

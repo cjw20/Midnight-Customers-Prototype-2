@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Experimental.Rendering.Universal;
+
 
 public class LightManager : MonoBehaviour
 {
@@ -11,18 +11,18 @@ public class LightManager : MonoBehaviour
 
     // References
     RandomEventManager randomEventManager;
-    Light2D brokenLight;
+    UnityEngine.Rendering.Universal.Light2D brokenLight;
     [Header("Scene Lights")]
     [Tooltip("Ceiling lights.")]
-    [SerializeField] Light2D[] ceilingLights;
+    [SerializeField] UnityEngine.Rendering.Universal.Light2D[] ceilingLights;
     [Tooltip("Misc lights.")]
-    [SerializeField] Light2D[] miscLights; //fridges, cash register
+    [SerializeField] UnityEngine.Rendering.Universal.Light2D[] miscLights; //fridges, cash register
     [Tooltip("Window lights.")]
-    [SerializeField] Light2D[] windowLights;
+    [SerializeField] UnityEngine.Rendering.Universal.Light2D[] windowLights;
     [Tooltip("Global light.")]
-    [SerializeField] Light2D globalLight;
+    [SerializeField] UnityEngine.Rendering.Universal.Light2D globalLight;
     [Tooltip("Player flashlight light.")]
-    [SerializeField] Light2D flashLight;
+    [SerializeField] UnityEngine.Rendering.Universal.Light2D flashLight;
 
     [Header("Lightning")]
     [Tooltip("Lightning color.")]
@@ -49,7 +49,7 @@ public class LightManager : MonoBehaviour
         // BreakBulb();
     }
 
-    Color ChangeColor(Light2D target, Color newColor)
+    Color ChangeColor(UnityEngine.Rendering.Universal.Light2D target, Color newColor)
     {
         //changes a lights color then returns the old one for changing back
         Color targetColor = target.color;
@@ -59,7 +59,7 @@ public class LightManager : MonoBehaviour
         return oldColor;
     }
 
-    void Strobe(Light2D target, double strobeRate, double offDuration, bool starting)
+    void Strobe(UnityEngine.Rendering.Universal.Light2D target, double strobeRate, double offDuration, bool starting)
     {
         //starting = false when turning off strobe effect
         GameObject lightObject = target.gameObject;
@@ -84,7 +84,7 @@ public class LightManager : MonoBehaviour
 
     public void PowerOutage(float duration)
     {
-        foreach(Light2D light in ceilingLights)
+        foreach(UnityEngine.Rendering.Universal.Light2D light in ceilingLights)
         {
             light.gameObject.SetActive(false);
         }
@@ -96,7 +96,7 @@ public class LightManager : MonoBehaviour
     {
         //flashLight.gameObject.SetActive(true);  //turns on player flashlight after short delay
         
-        foreach (Light2D light in ceilingLights)
+        foreach (UnityEngine.Rendering.Universal.Light2D light in ceilingLights)
         {
             light.gameObject.SetActive(true);
         }
@@ -116,7 +116,7 @@ public class LightManager : MonoBehaviour
         
         yield return new WaitForSeconds(3f); //start delay, probably not neccessary
 
-        foreach (Light2D light in windowLights)
+        foreach (UnityEngine.Rendering.Universal.Light2D light in windowLights)
         {
             light.color = lightningColor; //maybe find more specific color later
             light.intensity = 4;
@@ -125,7 +125,7 @@ public class LightManager : MonoBehaviour
         lightningSound.Play();
         yield return new WaitForSeconds(2f); //duration
 
-        foreach (Light2D light in windowLights)
+        foreach (UnityEngine.Rendering.Universal.Light2D light in windowLights)
         {
             light.color = oldColor; //maybe find more specific color later
             light.intensity = oldIntensity;
@@ -134,7 +134,7 @@ public class LightManager : MonoBehaviour
         yield break;
     }
 
-    void ResetLight(Light2D target)
+    void ResetLight(UnityEngine.Rendering.Universal.Light2D target)
     {
         target.color = normalColor;
         target.intensity = 1;

@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Experimental.Rendering.Universal;
+
 
 public class PowerButton : MonoBehaviour
 {
@@ -13,7 +13,7 @@ public class PowerButton : MonoBehaviour
     public bool activated;
 
     // References
-    Light2D thisLight;
+    UnityEngine.Rendering.Universal.Light2D thisLight;
     PowerGame powerGame;
     SoundManager soundManager;
     [Header("Switches")]
@@ -23,7 +23,7 @@ public class PowerButton : MonoBehaviour
     void Start()
     {
         soundManager = GameObject.Find("Sound Manager").GetComponent<SoundManager>();
-        thisLight = this.gameObject.GetComponent<Light2D>();
+        thisLight = this.gameObject.GetComponent<UnityEngine.Rendering.Universal.Light2D>();
         powerGame = FindObjectOfType<PowerGame>();
     }
 
