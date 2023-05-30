@@ -22,7 +22,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - Updated TMP Fonts to avoid artificing.
 - Pause Menu now correctly exits submenus when pressing escape.
 - Make "Load Game" and "Delete Saves" buttons from the main menu non-interactable when no saved games are detected.
-- 
+- Main menu UI now scales with screen size.
+- Phone wiggle no longer becomes continuous rotation when paused.
+- Main UI now scales with screen size.
 
 
 ## [[1.0.0.0-alpha]](https://github.com/cjw20/Midnight-Customers-Prototype-2/releases/tag/v1.0.0.0-alpha) - 11MAR22
