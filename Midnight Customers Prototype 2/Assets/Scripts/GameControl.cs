@@ -58,11 +58,11 @@ public class GameControl : MonoBehaviour
         dayProg = dataToLoad.day;
         customerProg = dataToLoad.customerProgress;
         individualProg = dataToLoad.individualProgress;
-        LoadScene("SampleScene"); //load variables from save data once scene has loaded
+        LoadScene("MainGameScene"); //load variables from save data once scene has loaded
     }
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if(scene.name == "SampleScene")
+        if(scene.name == "MainGameScene")
         {
             if(dayProg != 0)
             {

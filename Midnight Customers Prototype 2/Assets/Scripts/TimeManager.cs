@@ -46,7 +46,7 @@ public class TimeManager : MonoBehaviour
     PerformanceReview review;
     StoryEventHandler storyEvent;
     RandomEventManager randomEvent;
-    CheckoutManager checkoutManager;
+    [SerializeField] CheckoutManager checkoutManager;
     InteractableManager interactableManager;
     
     void Awake()

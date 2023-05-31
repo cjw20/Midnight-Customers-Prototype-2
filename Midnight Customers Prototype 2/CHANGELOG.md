@@ -26,6 +26,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - Main menu UI now scales with screen size.
 - Phone wiggle no longer becomes continuous rotation when paused.
 - Main UI now scales with screen size.
+- Day fade to black now works correctly.
+- Game can now progress past day 7.
 
 
 ## [[1.0.0.0-alpha]](https://github.com/cjw20/Midnight-Customers-Prototype-2/releases/tag/v1.0.0.0-alpha) - 11MAR22
