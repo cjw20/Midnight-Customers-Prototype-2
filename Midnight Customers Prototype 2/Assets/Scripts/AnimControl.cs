@@ -23,7 +23,7 @@ public class AnimControl : MonoBehaviour
 
     void Update()
     {
-        velocity = body.velocity;
+        velocity = body.linearVelocity;
         animator.SetFloat("Horizontal", velocity.x);
         animator.SetFloat("Vertical", velocity.y);
 

@@ -26,7 +26,7 @@ public class Navigation2D : EditorWindow
     // inside of them
     void MakeUnwalkable(GameObject go)
     {
-        int layer = GameObjectUtility.GetNavMeshAreaFromName("Not Walkable");
+        int layer = NavMesh.GetAreaFromName("Not Walkable");
         GameObjectUtility.SetNavMeshArea(go, layer);
     }
 
