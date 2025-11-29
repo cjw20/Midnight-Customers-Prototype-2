@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Experimental.Rendering.Universal;
+
 
 public class FlashLight : MonoBehaviour
 {
@@ -15,7 +15,7 @@ public class FlashLight : MonoBehaviour
     private PlayerInput playerInput; //asset that has player controls
     [Header("References")]
     [Tooltip("Reference to the flashlight light component.")]
-    [SerializeField] Light2D fLight;
+    [SerializeField] UnityEngine.Rendering.Universal.Light2D fLight;
 
     private void Awake()
     {

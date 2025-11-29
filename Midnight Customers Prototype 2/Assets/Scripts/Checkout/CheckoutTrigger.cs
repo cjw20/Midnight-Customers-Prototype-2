@@ -22,6 +22,7 @@ public class CheckoutTrigger : MonoBehaviour
     [SerializeField] CheckoutTimer checkoutTimer;
     [Tooltip("Reference to the checkout game prefab.")]
     public GameObject checkoutGame;
+    public GameObject checkoutFullUI;
     [Tooltip("Reference to the customer that is ready to checkout.")]
     public GameObject customer; //customer standing in front of checkout
     [Tooltip("Reference to a CustomerInfo class instance.")]
@@ -72,7 +73,7 @@ public class CheckoutTrigger : MonoBehaviour
         {
             playerMove.moveable = false;
             inCheckout = true;
-            checkoutGame.SetActive(true);
+            checkoutFullUI.SetActive(true);
             checkoutManager.StartCheckout(customerInfo);
             checkoutTimer.inCheckout = true; //starts updating timer
             checkoutTimer.UpdateValue(-checkoutTimer.timePassed); //has ui reflect time customer spent waiting before player showed up

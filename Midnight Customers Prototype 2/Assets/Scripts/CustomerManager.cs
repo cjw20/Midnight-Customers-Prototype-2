@@ -27,11 +27,10 @@ public class CustomerManager : MonoBehaviour
 
     void Awake()
     {
-        if(GameControl.control.loadingGame == false)
+        if (GameControl.control.loadingGame == false)
         {
             OnLoadGame(0, new List<int>(0)); //call this from game control later, only here to keep game from breaking while loading is implemented
         }
-        
     }
 
     public void OnLoadGame(int progress, List<int> individualProg)

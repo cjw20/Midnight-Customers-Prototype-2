@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Experimental.Rendering.Universal;
+
 
 public class SanityEventManager : MonoBehaviour
 {
@@ -17,7 +17,7 @@ public class SanityEventManager : MonoBehaviour
     [Tooltip("Reference to a LightSanityEffect class instance.")]
     public LightSanityEffect lightEffects;
     [Tooltip("Lights to be used for sanity effects.")]
-    public Light2D[] targetLights;
+    public UnityEngine.Rendering.Universal.Light2D[] targetLights;
 
     void Awake()
     {

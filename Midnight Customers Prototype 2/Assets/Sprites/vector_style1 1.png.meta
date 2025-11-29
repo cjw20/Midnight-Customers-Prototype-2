@@ -93,7 +93,7 @@ TextureImporter:
       213: 510182983729864944
     second: vector_style1 1_29
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -114,6 +114,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -123,8 +124,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -152,6 +153,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -179,6 +181,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Windows Store Apps
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
@@ -832,6 +846,37 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      vector_style1 1_0: -7692082368100591070
+      vector_style1 1_1: -402012037492642213
+      vector_style1 1_10: 1329716375535943887
+      vector_style1 1_11: -7948681840923967784
+      vector_style1 1_12: -7096400773084366345
+      vector_style1 1_13: -7445080958727744787
+      vector_style1 1_14: 6303487029577340363
+      vector_style1 1_15: 6130833613075151807
+      vector_style1 1_16: -8537905050016085910
+      vector_style1 1_17: 8700808649575092959
+      vector_style1 1_18: -4505554609617026834
+      vector_style1 1_19: 927872202945499874
+      vector_style1 1_2: 3004061397962577690
+      vector_style1 1_20: -923853144791791151
+      vector_style1 1_21: 7785445002530814709
+      vector_style1 1_22: 594172957102372674
+      vector_style1 1_23: 6272849149109181223
+      vector_style1 1_24: -5198761801854136346
+      vector_style1 1_25: -5648870107658258293
+      vector_style1 1_26: 8406472495908835679
+      vector_style1 1_27: -6384584419956024877
+      vector_style1 1_28: 6226236290040735087
+      vector_style1 1_29: 510182983729864944
+      vector_style1 1_3: 7396829296361403629
+      vector_style1 1_4: 6939263270516207461
+      vector_style1 1_5: 3834939004333111175
+      vector_style1 1_6: 1359534639903283790
+      vector_style1 1_7: -5781565909411415074
+      vector_style1 1_8: -3802338099062250318
+      vector_style1 1_9: 7579709059479407395
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

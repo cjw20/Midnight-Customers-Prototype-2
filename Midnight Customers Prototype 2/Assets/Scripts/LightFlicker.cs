@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Experimental.Rendering.Universal;
+
 
 public class LightFlicker : MonoBehaviour
 {
@@ -20,11 +20,11 @@ public class LightFlicker : MonoBehaviour
 
     // References
     [Tooltip("Reference to a 2D light.")]
-    Light2D thisLight; //light this script is referencing
+    UnityEngine.Rendering.Universal.Light2D thisLight; //light this script is referencing
 
     void Start()
     {
-        thisLight = this.GetComponent<Light2D>();
+        thisLight = this.GetComponent<UnityEngine.Rendering.Universal.Light2D>();
         onIntensity = thisLight.intensity;
     }
 

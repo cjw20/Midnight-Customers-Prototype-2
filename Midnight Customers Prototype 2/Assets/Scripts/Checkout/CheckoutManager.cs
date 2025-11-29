@@ -66,6 +66,8 @@ public class CheckoutManager : MonoBehaviour
     public Text priceText;
     [Tooltip("Reference to the Text object for weight text.")]
     public Text weightText;
+    [Tooltip("Reference to the full checkout UI")]
+    public GameObject fullCheckoutUI;
     
     private void Start()
     {
@@ -96,6 +98,7 @@ public class CheckoutManager : MonoBehaviour
     public void StartCheckout(CustomerInfo info)
     {
         customerInfo = info;
+        emoter = FindObjectOfType<EmoteController>();
         priceText.text = "$0.00";
         weightText.text = "-";
         needsIDCheck = false;
@@ -261,7 +264,8 @@ public class CheckoutManager : MonoBehaviour
             currentItem = null;
             lastItem = null;
             //will need to clear other stuff for future checkouts OR reinstantiate whole object?
-            this.gameObject.SetActive(false);
+            // this.gameObject.SetActive(false);
+            fullCheckoutUI.SetActive(false);
         }
     }
 

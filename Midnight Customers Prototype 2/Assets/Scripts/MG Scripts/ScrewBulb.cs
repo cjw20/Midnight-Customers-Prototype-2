@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Experimental.Rendering.Universal;
+
 
 public class ScrewBulb : MonoBehaviour
 {
@@ -15,7 +15,7 @@ public class ScrewBulb : MonoBehaviour
     [SerializeField] bool inPlace;
 
     // References
-    Light2D thisLight;
+    UnityEngine.Rendering.Universal.Light2D thisLight;
     LightChangeGame lightGame;
     SoundManager soundManager;
     [Header("Bulb Reference")]
@@ -25,7 +25,7 @@ public class ScrewBulb : MonoBehaviour
     void Start()
     {
         soundManager = GameObject.Find("Sound Manager").GetComponent<SoundManager>();
-        thisLight = this.gameObject.GetComponent<Light2D>();
+        thisLight = this.gameObject.GetComponent<UnityEngine.Rendering.Universal.Light2D>();
         lightGame = FindObjectOfType<LightChangeGame>();
     }
 

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MainMenuManager : MonoBehaviour
 {  
@@ -11,15 +12,21 @@ public class MainMenuManager : MonoBehaviour
     void Awake()
     {
         GlobalSave globalSave = GameControl.control.gameObject.GetComponent<SaveUtility>().GetGlobalSave();
-
+        /*
         if (globalSave.gameComplete)
         {
             //show journal button here!
         }
+        */
         if (globalSave == null)
         {
-            loadButton.SetActive(false);
-            deleteSaveButton.SetActive(false);
+            loadButton.GetComponent<Button>().interactable = false;
+            deleteSaveButton.GetComponent<Button>().interactable = false;
+        }
+        else if (globalSave.gameComplete)
+        {
+            // TODO
+            // Show journal button here
         }
     }   
 
