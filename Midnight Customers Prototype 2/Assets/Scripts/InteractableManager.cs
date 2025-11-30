@@ -9,7 +9,7 @@ public class InteractableManager : MonoBehaviour
     //Get Text Objects
     //Method called by TimeManager, provides day, sets corresponding interactable texts
     // Fields
-    string[] freezer_m = new string[] { "Why do we sell so much water?", "I've never heard of these brands.", "Is there a distributor monopoly or something? None of these look good." };
+    string[] freezer_m = new string[] { "Why do we sell so much water?", "I've never heard of these brands.", "Is there a distributor monopoly or something?" };
     string[] freezer_l = new string[] { "Who drinks salt water?", "It smells like the sea in there.", "Is that handprint...webbed?" };
     string[] soda_m = new string[] { "There's so much mold...", "There's no way I'm cleaning this." };
     string[] soda_l = new string[] { "Oh good, an option for salt water.", "I'd rather be dehydrated I think." };
@@ -18,7 +18,7 @@ public class InteractableManager : MonoBehaviour
     string[] shelves_m = new string[] { "The packaging is wet... gross.", "I'm going to beg management to sell something normal for once.", "These are some interesting flavors." };
     string[] shelves_l = new string[] { "A whole fish is labeled as cat food...", "Lots of worms... I'm just going to assume it's for fishing.", "I'll throw up right here." };
     string[] food_m = new string[] { "This stuff is so burnt.", "Is that how those are supposed to look?", "It's so dry. It'd probably turn to ash if I touch it." };
-    string[] food_l = new string[] { "Tentacles... on a stick. At this point sure, why not.", "Ingedients... ground eyeballs. Huh?", "1,000 grams feels like more than enough protein." };
+    string[] food_l = new string[] { "Tentacles... on a stick. At this point sure, why not.", "Ingredients... ground eyeballs. Huh?", "1,000 grams feels like more than enough protein." };
     
     // References
     Interactable freezer_reference;
