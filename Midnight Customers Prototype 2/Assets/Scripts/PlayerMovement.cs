@@ -6,17 +6,12 @@ public class PlayerMovement : MonoBehaviour
 {
     // Fields
     Vector2 movementDirection;
-    private Vector2 playerLastFramePosition;
     Rigidbody2D body;
-    private float stepTimer = 0f;
-    private bool timerRunning = false;
     [Header("Movement Data")]
     [Tooltip("Movement speed.")]
     public float moveSpeed;
     [Tooltip("Toggle if player is movable.")]
     public bool moveable = true;
-    [Tooltip("Distance of each step. (Used to match footstep sounds with walking animation)")]
-    [SerializeField] float stepDistance;
 
     // References
     private PlayerInput playerInput; //asset that has player controls
@@ -61,7 +56,6 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         body = this.gameObject.GetComponent<Rigidbody2D>();
-        playerLastFramePosition = transform.position;
         animator = this.gameObject.GetComponent<Animator>();
         spriteRenderer = this.gameObject.GetComponent<SpriteRenderer>();
     }
@@ -69,27 +63,6 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (timerRunning)
-        {
-            stepTimer += Time.deltaTime;
-            if (stepTimer >= stepDistance)
-            {
-                timerRunning = false;
-                stepTimer = 0f;
-            }
-        }
-        if (Vector2.Distance(playerLastFramePosition, transform.position) > 0)
-        {
-            if (!timerRunning)
-            {
-                soundManager.PlayPlayerFootstepSounds();
-                timerRunning = true;
-            }
-        }
-        //movementDirection.x = Input.GetAxisRaw("Horizontal");
-        //movementDirection.y = Input.GetAxisRaw("Vertical"); //movement using wasd or arrow keys 
-        //old input system above
-
         movementDirection = playerInput.Store.Move.ReadValue<Vector2>();
         animator.SetFloat("Horizontal", movementDirection.x);
         animator.SetFloat("Vertical", movementDirection.y);
@@ -111,7 +84,11 @@ public class PlayerMovement : MonoBehaviour
         {
             spriteRenderer.flipX = false;
         }
-        playerLastFramePosition = transform.position;
+    }
+
+    public void PlayFootStep()
+    {
+        soundManager.PlayPlayerFootstepSounds();
     }
 
     public void Interact()
