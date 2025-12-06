@@ -201,7 +201,7 @@ public class CheckoutManager : MonoBehaviour
     public void ScanItem(float price, int weight)
     {
         totalPrice += price;
-        priceText.text = "$" + totalPrice.ToString();
+        priceText.text = "$" + totalPrice.ToString("F2");
         DisplayWeight(weight);
         soundManager.PlayScannerSound();
     }
@@ -213,7 +213,7 @@ public class CheckoutManager : MonoBehaviour
         {
             //refund price
             totalPrice -= price;
-            priceText.text = "$" + totalPrice.ToString();
+            priceText.text = "$" + totalPrice.ToString("F2");
         }
         if(failedIDCheck && needsID)
         {
