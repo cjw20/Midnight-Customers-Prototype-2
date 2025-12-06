@@ -48,25 +48,6 @@ public class CheckoutTrigger : MonoBehaviour
         checkoutManager = checkoutGame.GetComponent<CheckoutManager>(); //may not need this part later
     }
 
-    void Update()
-    {
-        /*
-        if (playerInput.Store.Interact.triggered)
-        {
-            if (playerReady && customerReady && !inCheckout)//and customer ready too later once implemented
-            {
-                playerMove.moveable = false;
-                inCheckout = true;
-                checkoutGame.SetActive(true);
-                checkoutManager.StartCheckout(customerInfo);
-                checkoutTimer.inCheckout = true; //starts updating timer
-                checkoutTimer.UpdateValue(-checkoutTimer.timePassed); //has ui reflect time customer spent waiting before player showed up
-            }
-            
-        // old input method
-        */
-    }
-
     public void TriggerCheckout()
     {
         if (playerReady && customerReady && !inCheckout)//and customer ready too later once implemented
@@ -88,24 +69,37 @@ public class CheckoutTrigger : MonoBehaviour
         checkoutTimer.ResetTimer();
     }
 
+    private void ClearCustomerData()
+    {
+        customerReady = false;
+        customerInfo = null;
+        customer = null;
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player") && collision.transform.position.y < transform.position.y)
         {
             playerReady = true;
             playerMove = collision.gameObject.GetComponent<PlayerMovement>();
-            if(customerReady) playerMove.Epopup.SetActive(true); //Only pops up if waiting on Customer
+            if (customerReady)
+            {
+                playerMove.Epopup.SetActive(true); //Only pops up if waiting on Customer
+            }
             playerMove.checkoutTrigger = this;
         }
 
-        if (collision.CompareTag("Customer"))
+        else if (collision.CompareTag("Customer"))
         {
             if (collision.gameObject.GetComponent<CustomerMovement>().readyForCheckout)
             {
                 customerReady = true;
                 customer = collision.gameObject;
                 customerInfo = customer.GetComponent<CustomerInfo>();
-                if (playerReady) playerMove.Epopup.SetActive(true); //Only pops up if waiting on Customer
+                if (playerReady)
+                {
+                    playerMove.Epopup.SetActive(true); //Only pops up if waiting on Customer
+                }
                 checkoutTimer.StartTimer(customerInfo); //starts global timer for checkout
             }
         }
@@ -120,11 +114,10 @@ public class CheckoutTrigger : MonoBehaviour
             playerMove.checkoutTrigger = null;
         }
 
-        if (collision.CompareTag("Customer"))
+        else if (collision.CompareTag("Customer"))
         {
-             customerReady = false;
-             customer = null;
-             customerInfo = null; //clears out customer data
+            playerMove.Epopup.SetActive(false);
+            ClearCustomerData();
         }
     }
 }
