@@ -29,15 +29,17 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8396762688156681531}
+  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 4.86, y: 0.39, z: 0}
   m_LocalScale: {x: 0.3228, y: 0.3231, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8396762688156681534
 SpriteRenderer:
+  serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -47,11 +49,17 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -73,9 +81,11 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 2a1ebb80074cd3647a7527654387fe4b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -85,7 +95,6 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &8396762688156681533
 MonoBehaviour:
@@ -120,16 +129,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb2cceedcd629b84c8f3b130ce2e9402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  minDistance: 0.5
+  destination: 0
+  timeToWait: 5
+  hasCheckedOut: 0
+  readyForCheckout: 0
   plannedPath:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   checkout: {fileID: 0}
   exit: {fileID: 0}
-  minDistance: 0.5
-  destination: 0
-  timeToWait: 5
-  hasCheckedOut: 0
 --- !u!114 &8396762688156681504
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -143,8 +153,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   customerName: Deep One
-  portrait: {fileID: 21300000, guid: 7acfe5f1a5453c149ae8deb90d875813, type: 3}
   relationshipScore: 0
+  hasValidID: 0
+  essential: 0
+  conversationProgress: 0
+  moodMilestones: 
+  dialogueFont: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 7acfe5f1a5453c149ae8deb90d875813, type: 3}
   checkoutItems:
   - {fileID: 30552192466129110, guid: 6143ebc1358f3df48be354c4cd963dab, type: 3}
   - {fileID: 30552192466129110, guid: 6143ebc1358f3df48be354c4cd963dab, type: 3}
@@ -157,8 +172,6 @@ MonoBehaviour:
   conversations:
   - {fileID: 11400000, guid: c2545efed11a53e4998913832553451e, type: 2}
   - {fileID: 11400000, guid: c2545efed11a53e4998913832553451e, type: 2}
-  conversationProgress: 0
-  hasValidID: 0
 --- !u!70 &8396762688156681505
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -167,17 +180,38 @@ CapsuleCollider2D:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8396762688156681531}
   m_Enabled: 1
+  serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
   m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
   m_Offset: {x: 0.07367599, y: -0.9462443}
   m_Size: {x: 2.2471578, y: 4.2236967}
   m_Direction: 0
 --- !u!50 &8396762688156681506
 Rigidbody2D:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -188,10 +222,16 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
