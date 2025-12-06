@@ -48,25 +48,6 @@ public class CheckoutTrigger : MonoBehaviour
         checkoutManager = checkoutGame.GetComponent<CheckoutManager>(); //may not need this part later
     }
 
-    void Update()
-    {
-        /*
-        if (playerInput.Store.Interact.triggered)
-        {
-            if (playerReady && customerReady && !inCheckout)//and customer ready too later once implemented
-            {
-                playerMove.moveable = false;
-                inCheckout = true;
-                checkoutGame.SetActive(true);
-                checkoutManager.StartCheckout(customerInfo);
-                checkoutTimer.inCheckout = true; //starts updating timer
-                checkoutTimer.UpdateValue(-checkoutTimer.timePassed); //has ui reflect time customer spent waiting before player showed up
-            }
-            
-        // old input method
-        */
-    }
-
     public void TriggerCheckout()
     {
         if (playerReady && customerReady && !inCheckout)//and customer ready too later once implemented
@@ -90,7 +71,7 @@ public class CheckoutTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player") && collision.transform.position.y < transform.position.y)
         {
             playerReady = true;
             playerMove = collision.gameObject.GetComponent<PlayerMovement>();
