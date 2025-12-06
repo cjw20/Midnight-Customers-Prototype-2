@@ -9,16 +9,16 @@ public class InteractableManager : MonoBehaviour
     //Get Text Objects
     //Method called by TimeManager, provides day, sets corresponding interactable texts
     // Fields
-    string[] freezer_m = new string[] { "Why do we sell so much water?", "What kind of brand is this?", "Someone drew the investigator in the frost." };
-    string[] freezer_l = new string[] { "Who drinks saltwater?", "Why is everything so sticky?", "Someone drew a fish person in the frost." };
-    string[] soda_m = new string[] { "I think mold is growing in the ice machine.", "Glad I haven't been asked to clean this." };
-    string[] soda_l = new string[] { "Salt water in a drink machine.", "Who refills the machine?" };
-    string[] window_m = new string[] { "Is that something moving in the woods?", "It is really creepy with no lights out there", "How do people find this place" };
-    string[] window_l = new string[] { "What is that?", "Who is that in the woods?", "Where do these people come from?" };
-    string[] shelves_m = new string[] { "Why do we sell more of the unnatural things?", "We never sell the normal items.", "These are some interesting flavors." };
-    string[] shelves_l = new string[] { "Why do we have eel flavored cat food?", "Did that gummy worm move?", "Who buys this stuff..." };
-    string[] food_m = new string[] { "This stuff is burnt.", "Is that how those are supposed to look?" };
-    string[] food_l = new string[] { "Is that a tentacle...", "Does that say eyeballs as an ingredient?" };
+    string[] freezer_m = new string[] { "Why do we sell so much water?", "I've never heard of these brands.", "Is there a distributor monopoly or something?" };
+    string[] freezer_l = new string[] { "Who drinks salt water?", "It smells like the sea in there.", "Is that handprint...webbed?" };
+    string[] soda_m = new string[] { "There's so much mold...", "There's no way I'm cleaning this." };
+    string[] soda_l = new string[] { "Oh good, an option for salt water.", "I'd rather be dehydrated I think." };
+    string[] window_m = new string[] { "I feel like something's watching me...", "There's not a single streetlight huh...", "How do people find this place?" };
+    string[] window_l = new string[] { "Please be a normal night... for once.", "Someone's hiding out there...", "I swear some of these people wander out of the woods." };
+    string[] shelves_m = new string[] { "The packaging is wet... gross.", "I'm going to beg management to sell something normal for once.", "These are some interesting flavors." };
+    string[] shelves_l = new string[] { "A whole fish is labeled as cat food...", "Lots of worms... I'm just going to assume it's for fishing.", "I'll throw up right here." };
+    string[] food_m = new string[] { "This stuff is so burnt.", "Is that how those are supposed to look?", "It's so dry. It'd probably turn to ash if I touch it." };
+    string[] food_l = new string[] { "Tentacles... on a stick. At this point sure, why not.", "Ingredients... ground eyeballs. Huh?", "1,000 grams feels like more than enough protein." };
     
     // References
     Interactable freezer_reference;

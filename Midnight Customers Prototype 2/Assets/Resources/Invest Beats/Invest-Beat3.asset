@@ -16,34 +16,28 @@ MonoBehaviour:
   - BaseNodeGuid: 2053685a-986d-4b7a-8ad9-01c4ad6f23cc
     PortName: Next
     TargetNodeGuid: 272e114e-8182-4c8d-99ce-426f80790622
-  - BaseNodeGuid: 272e114e-8182-4c8d-99ce-426f80790622
-    PortName: Not much. How about you?
-    TargetNodeGuid: a3fa6bf7-ed6b-411f-b572-f40d7799fc1a
-  - BaseNodeGuid: 272e114e-8182-4c8d-99ce-426f80790622
-    PortName: I think we got a new brand of chips.
-    TargetNodeGuid: d8913299-c96c-46a4-bea2-c8c1e7661603
-  - BaseNodeGuid: a3fa6bf7-ed6b-411f-b572-f40d7799fc1a
+  - BaseNodeGuid: d8913299-c96c-46a4-bea2-c8c1e7661603
     PortName: Nope. Just some nice people!
     TargetNodeGuid: c8a24dd5-ac34-416a-9143-0b2af4e5c320
   - BaseNodeGuid: d8913299-c96c-46a4-bea2-c8c1e7661603
+    PortName: No one noteworthy enough.
+    TargetNodeGuid: 52c765ee-a9bc-4f37-bb22-b3c1e7731bf3
+  - BaseNodeGuid: a3fa6bf7-ed6b-411f-b572-f40d7799fc1a
     PortName: Nope. Just some nice people!
     TargetNodeGuid: c8a24dd5-ac34-416a-9143-0b2af4e5c320
   - BaseNodeGuid: a3fa6bf7-ed6b-411f-b572-f40d7799fc1a
     PortName: No one noteworthy enough.
     TargetNodeGuid: 52c765ee-a9bc-4f37-bb22-b3c1e7731bf3
-  - BaseNodeGuid: d8913299-c96c-46a4-bea2-c8c1e7661603
-    PortName: No one noteworthy enough.
-    TargetNodeGuid: 52c765ee-a9bc-4f37-bb22-b3c1e7731bf3
-  - BaseNodeGuid: c8a24dd5-ac34-416a-9143-0b2af4e5c320
-    PortName: Wait! Someone did talk about you.
-    TargetNodeGuid: 69c0e4a3-f0ba-4a7c-95ea-ce881b6cd5b1
   - BaseNodeGuid: 52c765ee-a9bc-4f37-bb22-b3c1e7731bf3
     PortName: Wait! Someone did talk about you.
     TargetNodeGuid: 69c0e4a3-f0ba-4a7c-95ea-ce881b6cd5b1
-  - BaseNodeGuid: c8a24dd5-ac34-416a-9143-0b2af4e5c320
+  - BaseNodeGuid: 52c765ee-a9bc-4f37-bb22-b3c1e7731bf3
     PortName: You aren't even a real P.I. anyways.
     TargetNodeGuid: 7e99c36c-d061-46d0-b89a-97da3a0cffd1
-  - BaseNodeGuid: 52c765ee-a9bc-4f37-bb22-b3c1e7731bf3
+  - BaseNodeGuid: c8a24dd5-ac34-416a-9143-0b2af4e5c320
+    PortName: Wait! Someone did talk about you.
+    TargetNodeGuid: 69c0e4a3-f0ba-4a7c-95ea-ce881b6cd5b1
+  - BaseNodeGuid: c8a24dd5-ac34-416a-9143-0b2af4e5c320
     PortName: You aren't even a real P.I. anyways.
     TargetNodeGuid: 7e99c36c-d061-46d0-b89a-97da3a0cffd1
   - BaseNodeGuid: 69c0e4a3-f0ba-4a7c-95ea-ce881b6cd5b1
@@ -52,12 +46,6 @@ MonoBehaviour:
   - BaseNodeGuid: 69c0e4a3-f0ba-4a7c-95ea-ce881b6cd5b1
     PortName: I was told you aren't a real P.I.
     TargetNodeGuid: 3c1f26b9-8a97-4f9c-95fd-555ba8c5003f
-  - BaseNodeGuid: 3c1f26b9-8a97-4f9c-95fd-555ba8c5003f
-    PortName: A customer mentioned it.
-    TargetNodeGuid: 32830208-b489-4af1-9a7c-2f70adff7153
-  - BaseNodeGuid: 094a68ea-e50c-4800-9d27-9ebb4256f570
-    PortName: A customer mentioned it.
-    TargetNodeGuid: 32830208-b489-4af1-9a7c-2f70adff7153
   - BaseNodeGuid: 7e99c36c-d061-46d0-b89a-97da3a0cffd1
     PortName: A customer mentioned it.
     TargetNodeGuid: 32830208-b489-4af1-9a7c-2f70adff7153
@@ -65,35 +53,47 @@ MonoBehaviour:
     PortName: Doesn't matter. Is it true?
     TargetNodeGuid: 68e1f1fd-3a82-4f78-8a1d-1627ee144a32
   - BaseNodeGuid: 094a68ea-e50c-4800-9d27-9ebb4256f570
+    PortName: A customer mentioned it.
+    TargetNodeGuid: 32830208-b489-4af1-9a7c-2f70adff7153
+  - BaseNodeGuid: 094a68ea-e50c-4800-9d27-9ebb4256f570
     PortName: Doesn't matter. Is it true?
     TargetNodeGuid: 68e1f1fd-3a82-4f78-8a1d-1627ee144a32
   - BaseNodeGuid: 3c1f26b9-8a97-4f9c-95fd-555ba8c5003f
+    PortName: A customer mentioned it.
+    TargetNodeGuid: 32830208-b489-4af1-9a7c-2f70adff7153
+  - BaseNodeGuid: 3c1f26b9-8a97-4f9c-95fd-555ba8c5003f
     PortName: Doesn't matter. Is it true?
     TargetNodeGuid: 68e1f1fd-3a82-4f78-8a1d-1627ee144a32
-  - BaseNodeGuid: 9f7e83d6-6c30-41a1-8d38-a9261d947d72
-    PortName: Yes ma'am. Again, sorry.
-    TargetNodeGuid: 8d6933de-7804-4c9a-a240-3d7e8bfd1d2e
-  - BaseNodeGuid: ff5a40d5-8017-4f4a-9a0d-c167c303bdba
-    PortName: Yes ma'am. Again, sorry.
-    TargetNodeGuid: 8d6933de-7804-4c9a-a240-3d7e8bfd1d2e
-  - BaseNodeGuid: 9f7e83d6-6c30-41a1-8d38-a9261d947d72
-    PortName: Alright, if you say so.
-    TargetNodeGuid: d187167c-76e5-4bc9-aabd-f34384814f10
-  - BaseNodeGuid: ff5a40d5-8017-4f4a-9a0d-c167c303bdba
-    PortName: Alright, if you say so.
-    TargetNodeGuid: d187167c-76e5-4bc9-aabd-f34384814f10
   - BaseNodeGuid: 32830208-b489-4af1-9a7c-2f70adff7153
-    PortName: I'm sorry. I didn't mean to upset you.
-    TargetNodeGuid: 9f7e83d6-6c30-41a1-8d38-a9261d947d72
-  - BaseNodeGuid: 68e1f1fd-3a82-4f78-8a1d-1627ee144a32
     PortName: I'm sorry. I didn't mean to upset you.
     TargetNodeGuid: 9f7e83d6-6c30-41a1-8d38-a9261d947d72
   - BaseNodeGuid: 32830208-b489-4af1-9a7c-2f70adff7153
     PortName: Why would it be him?
     TargetNodeGuid: ff5a40d5-8017-4f4a-9a0d-c167c303bdba
   - BaseNodeGuid: 68e1f1fd-3a82-4f78-8a1d-1627ee144a32
+    PortName: I'm sorry. I didn't mean to upset you.
+    TargetNodeGuid: 9f7e83d6-6c30-41a1-8d38-a9261d947d72
+  - BaseNodeGuid: 68e1f1fd-3a82-4f78-8a1d-1627ee144a32
     PortName: Why would it be him?
     TargetNodeGuid: ff5a40d5-8017-4f4a-9a0d-c167c303bdba
+  - BaseNodeGuid: 272e114e-8182-4c8d-99ce-426f80790622
+    PortName: Not much. How about you?
+    TargetNodeGuid: a3fa6bf7-ed6b-411f-b572-f40d7799fc1a
+  - BaseNodeGuid: 272e114e-8182-4c8d-99ce-426f80790622
+    PortName: I think we have a new brand of chips.
+    TargetNodeGuid: d8913299-c96c-46a4-bea2-c8c1e7661603
+  - BaseNodeGuid: 9f7e83d6-6c30-41a1-8d38-a9261d947d72
+    PortName: Yes ma'am. Again, sorry.
+    TargetNodeGuid: 8d6933de-7804-4c9a-a240-3d7e8bfd1d2e
+  - BaseNodeGuid: 9f7e83d6-6c30-41a1-8d38-a9261d947d72
+    PortName: Alright, if you say so.
+    TargetNodeGuid: d187167c-76e5-4bc9-aabd-f34384814f10
+  - BaseNodeGuid: ff5a40d5-8017-4f4a-9a0d-c167c303bdba
+    PortName: Yes ma'am. Again, sorry.
+    TargetNodeGuid: 8d6933de-7804-4c9a-a240-3d7e8bfd1d2e
+  - BaseNodeGuid: ff5a40d5-8017-4f4a-9a0d-c167c303bdba
+    PortName: Alright, if you say so.
+    TargetNodeGuid: d187167c-76e5-4bc9-aabd-f34384814f10
   - BaseNodeGuid: 8d6933de-7804-4c9a-a240-3d7e8bfd1d2e
     PortName: Okay, I will. Have a good night.
     TargetNodeGuid: 932722fa-45ac-47bb-9bc2-41617adab4cd
@@ -156,11 +156,11 @@ MonoBehaviour:
     DialogueText: +0
     Position: {x: 5610, y: 163}
   - Guid: 8d6933de-7804-4c9a-a240-3d7e8bfd1d2e
-    DialogueText: I'm serious. Watch yourself, kid. You're treading on some mighty
+    DialogueText: I'm serious. Watch yourself, kid. You're treading on some very
       thin ice.
     Position: {x: 4957, y: 28}
   - Guid: d187167c-76e5-4bc9-aabd-f34384814f10
-    DialogueText: I'm serious. Watch yourself, kid. You're treading on some mighty
+    DialogueText: I'm serious. Watch yourself, kid. You're treading on some very
       thin ice.
     Position: {x: 4961, y: 231}
   ExposedProperties: []

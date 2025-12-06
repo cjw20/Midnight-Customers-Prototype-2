@@ -32,16 +32,10 @@ MonoBehaviour:
     PortName: Oh, I hope you're enjoying the area.
     TargetNodeGuid: 8287fa42-9dbd-459c-93c9-05bcaa9512a5
   - BaseNodeGuid: 7598195b-bf4b-4b53-a7d1-f8a8f3fe9720
-    PortName: A smoke break?
+    PortName: A smoke break I assume?
     TargetNodeGuid: 15cf686b-0a95-4cb5-ae96-9c7f1577fa6a
-  - BaseNodeGuid: 74afbf8c-dbd5-46a2-b197-ce38267db3ea
-    PortName: What do you do?
-    TargetNodeGuid: 41e82912-11bc-44fb-96fc-9d4c4b21da0c
-  - BaseNodeGuid: 74afbf8c-dbd5-46a2-b197-ce38267db3ea
-    PortName: Whatever gets us through the day, right?
-    TargetNodeGuid: 48075ed5-45fc-4488-9243-f3f414dfffc0
   - BaseNodeGuid: 15cf686b-0a95-4cb5-ae96-9c7f1577fa6a
-    PortName: I'm sorry it didn't work out.
+    PortName: I'm sorry to hear.
     TargetNodeGuid: c9930daa-e246-4341-b18e-5574cd5e9c51
   - BaseNodeGuid: 15cf686b-0a95-4cb5-ae96-9c7f1577fa6a
     PortName: Whatever gets us through the day, right?
@@ -52,48 +46,54 @@ MonoBehaviour:
   - BaseNodeGuid: 8287fa42-9dbd-459c-93c9-05bcaa9512a5
     PortName: Whatever gets us through the day, right?
     TargetNodeGuid: 48075ed5-45fc-4488-9243-f3f414dfffc0
-  - BaseNodeGuid: c9930daa-e246-4341-b18e-5574cd5e9c51
+  - BaseNodeGuid: 2d7707b8-6c86-4ba9-af54-b4152fd7bde6
+    PortName: See ya.
+    TargetNodeGuid: 1225c548-6d2b-4876-a9a4-c47aaa3bbf32
+  - BaseNodeGuid: 2d7707b8-6c86-4ba9-af54-b4152fd7bde6
+    PortName: It was nice meeting you.
+    TargetNodeGuid: 1225c548-6d2b-4876-a9a4-c47aaa3bbf32
+  - BaseNodeGuid: 23562f74-a36b-4545-afb5-e625b2212547
+    PortName: It was nice meeting you.
+    TargetNodeGuid: 1225c548-6d2b-4876-a9a4-c47aaa3bbf32
+  - BaseNodeGuid: 23562f74-a36b-4545-afb5-e625b2212547
+    PortName: See ya.
+    TargetNodeGuid: 1225c548-6d2b-4876-a9a4-c47aaa3bbf32
+  - BaseNodeGuid: 74afbf8c-dbd5-46a2-b197-ce38267db3ea
     PortName: What do you do?
     TargetNodeGuid: 41e82912-11bc-44fb-96fc-9d4c4b21da0c
-  - BaseNodeGuid: c9930daa-e246-4341-b18e-5574cd5e9c51
-    PortName: Same. I'm always stressed here.
-    TargetNodeGuid: e361655e-9942-4f51-9333-42a373cb13e9
-  - BaseNodeGuid: 48075ed5-45fc-4488-9243-f3f414dfffc0
-    PortName: Like what? Murder?
-    TargetNodeGuid: 2d7707b8-6c86-4ba9-af54-b4152fd7bde6
-  - BaseNodeGuid: 48075ed5-45fc-4488-9243-f3f414dfffc0
-    PortName: That sounds exciting though!
-    TargetNodeGuid: 23562f74-a36b-4545-afb5-e625b2212547
-  - BaseNodeGuid: 41e82912-11bc-44fb-96fc-9d4c4b21da0c
-    PortName: Like what? Murder?
-    TargetNodeGuid: 2d7707b8-6c86-4ba9-af54-b4152fd7bde6
-  - BaseNodeGuid: 41e82912-11bc-44fb-96fc-9d4c4b21da0c
-    PortName: That sounds exciting though!
-    TargetNodeGuid: 23562f74-a36b-4545-afb5-e625b2212547
-  - BaseNodeGuid: e361655e-9942-4f51-9333-42a373cb13e9
-    PortName: Like what? Murder?
-    TargetNodeGuid: 2d7707b8-6c86-4ba9-af54-b4152fd7bde6
-  - BaseNodeGuid: e361655e-9942-4f51-9333-42a373cb13e9
-    PortName: That sounds exciting though!
-    TargetNodeGuid: 23562f74-a36b-4545-afb5-e625b2212547
-  - BaseNodeGuid: 2d7707b8-6c86-4ba9-af54-b4152fd7bde6
-    PortName: See ya.
-    TargetNodeGuid: 1225c548-6d2b-4876-a9a4-c47aaa3bbf32
-  - BaseNodeGuid: 2d7707b8-6c86-4ba9-af54-b4152fd7bde6
-    PortName: It was nice meeting you.
-    TargetNodeGuid: 1225c548-6d2b-4876-a9a4-c47aaa3bbf32
-  - BaseNodeGuid: 23562f74-a36b-4545-afb5-e625b2212547
-    PortName: It was nice meeting you.
-    TargetNodeGuid: 1225c548-6d2b-4876-a9a4-c47aaa3bbf32
-  - BaseNodeGuid: 23562f74-a36b-4545-afb5-e625b2212547
-    PortName: See ya.
-    TargetNodeGuid: 1225c548-6d2b-4876-a9a4-c47aaa3bbf32
+  - BaseNodeGuid: 74afbf8c-dbd5-46a2-b197-ce38267db3ea
+    PortName: Whatever gets us through the day, right?
+    TargetNodeGuid: 48075ed5-45fc-4488-9243-f3f414dfffc0
   - BaseNodeGuid: db96646a-8405-42e6-b85a-77b99ba81ce1
     PortName: What do you do?
     TargetNodeGuid: 41e82912-11bc-44fb-96fc-9d4c4b21da0c
   - BaseNodeGuid: db96646a-8405-42e6-b85a-77b99ba81ce1
     PortName: Whatever gets us through the day, right?
     TargetNodeGuid: 48075ed5-45fc-4488-9243-f3f414dfffc0
+  - BaseNodeGuid: c9930daa-e246-4341-b18e-5574cd5e9c51
+    PortName: What do you do?
+    TargetNodeGuid: 41e82912-11bc-44fb-96fc-9d4c4b21da0c
+  - BaseNodeGuid: c9930daa-e246-4341-b18e-5574cd5e9c51
+    PortName: I can relate to the stress.
+    TargetNodeGuid: e361655e-9942-4f51-9333-42a373cb13e9
+  - BaseNodeGuid: 41e82912-11bc-44fb-96fc-9d4c4b21da0c
+    PortName: Like what? Murder?
+    TargetNodeGuid: 2d7707b8-6c86-4ba9-af54-b4152fd7bde6
+  - BaseNodeGuid: 41e82912-11bc-44fb-96fc-9d4c4b21da0c
+    PortName: That sounds exciting, though!
+    TargetNodeGuid: 23562f74-a36b-4545-afb5-e625b2212547
+  - BaseNodeGuid: 48075ed5-45fc-4488-9243-f3f414dfffc0
+    PortName: Like what? Murder?
+    TargetNodeGuid: 2d7707b8-6c86-4ba9-af54-b4152fd7bde6
+  - BaseNodeGuid: 48075ed5-45fc-4488-9243-f3f414dfffc0
+    PortName: That sounds exciting, though!
+    TargetNodeGuid: 23562f74-a36b-4545-afb5-e625b2212547
+  - BaseNodeGuid: e361655e-9942-4f51-9333-42a373cb13e9
+    PortName: Like what? Murder?
+    TargetNodeGuid: 2d7707b8-6c86-4ba9-af54-b4152fd7bde6
+  - BaseNodeGuid: e361655e-9942-4f51-9333-42a373cb13e9
+    PortName: That sounds exciting, though!
+    TargetNodeGuid: 23562f74-a36b-4545-afb5-e625b2212547
   DialogueNodeData:
   - Guid: a538a0fc-4b7b-49ed-abf3-79767426e385
     DialogueText: Just this, thanks.
@@ -104,11 +104,9 @@ MonoBehaviour:
   - Guid: 7598195b-bf4b-4b53-a7d1-f8a8f3fe9720
     DialogueText: I'm just in town for work but I needed a bit of a break.
     Position: {x: 774, y: 253}
-  - Guid: 15cf686b-0a95-4cb5-ae96-9c7f1577fa6a
-    DialogueText: Watch it. I tried to quit a while back but it didn't work out.
-    Position: {x: 1293, y: 395}
   - Guid: 8287fa42-9dbd-459c-93c9-05bcaa9512a5
-    DialogueText: It's alright. I'm always working too much though anyways.
+    DialogueText: It's alright. I'm usually too busy to pay much attention to the
+      sights.
     Position: {x: 1293, y: 265}
   - Guid: 2d7707b8-6c86-4ba9-af54-b4152fd7bde6
     DialogueText: Sometimes worse than that. The kinda shit that sticks with you.
@@ -119,17 +117,11 @@ MonoBehaviour:
       safe, alright? See ya around.
     Position: {x: 3605, y: 142}
   - Guid: 74afbf8c-dbd5-46a2-b197-ce38267db3ea
-    DialogueText: I know the feeling. My job isn't what I'd call happy but it's something
-      I gotta do.
+    DialogueText: I know the feeling. My job isn't what I'd call happy but it pays.
     Position: {x: 1291, y: -33}
   - Guid: db96646a-8405-42e6-b85a-77b99ba81ce1
-    DialogueText: I know the feeling. My job isn't what I'd call happy but it's something
-      I gotta do.
+    DialogueText: I know the feeling. My job isn't what I'd call happy but it pays.
     Position: {x: 1297, y: 118}
-  - Guid: c9930daa-e246-4341-b18e-5574cd5e9c51
-    DialogueText: Ah it's fine. My ex was big on not smoking but after the split
-      I went back. The stress of work didn't help.
-    Position: {x: 1793, y: 511}
   - Guid: 41e82912-11bc-44fb-96fc-9d4c4b21da0c
     DialogueText: I do some private investigation work. So, I see a lot of messed
       up shit.
@@ -139,11 +131,18 @@ MonoBehaviour:
       me experience some really heavy stuff.
     Position: {x: 2641, y: 246}
   - Guid: e361655e-9942-4f51-9333-42a373cb13e9
-    DialogueText: It's not quite the same. I'm a private investigator, so I've seen
-      some wild shit.
+    DialogueText: Though, mine probably ain't the same as yours. I'm a private investigator,
+      so I've seen some wild shit.
     Position: {x: 2632, y: 457}
   - Guid: 1225c548-6d2b-4876-a9a4-c47aaa3bbf32
     DialogueText: +0
     Position: {x: 4453, y: 247}
+  - Guid: 15cf686b-0a95-4cb5-ae96-9c7f1577fa6a
+    DialogueText: I tried to quit a while back but ya know. Didn't work out.
+    Position: {x: 1293, y: 395}
+  - Guid: c9930daa-e246-4341-b18e-5574cd5e9c51
+    DialogueText: Ah it's fine. My ex wasn't big on smoking but after the split I
+      went back. It helps with the stress.
+    Position: {x: 1793, y: 511}
   ExposedProperties: []
   CommentBlockData: []
