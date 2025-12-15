@@ -11,50 +11,50 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
   m_Name: DeepOne-Beat5
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueContainer
   NodeLinks:
   - BaseNodeGuid: c1436265-a916-48ff-b6f8-3e56e29e9ce6
     PortName: Next
     TargetNodeGuid: 01550a97-cf9f-45ef-b05e-a5647c2ddce1
-  - BaseNodeGuid: 7ee33d07-2bfb-4b45-a06c-520485ce9d5b
-    PortName: Why?
-    TargetNodeGuid: fa71872d-86b4-4b6a-be46-71570ec67f57
-  - BaseNodeGuid: 72163929-3a6f-4908-9ae2-1814a9ba8e3a
-    PortName: Why?
-    TargetNodeGuid: fa71872d-86b4-4b6a-be46-71570ec67f57
-  - BaseNodeGuid: 72163929-3a6f-4908-9ae2-1814a9ba8e3a
-    PortName: Haven't seen her.
-    TargetNodeGuid: 31b3e536-0c7b-4990-b1b0-7dd06e0cb3ab
-  - BaseNodeGuid: 7ee33d07-2bfb-4b45-a06c-520485ce9d5b
-    PortName: Haven't seen her.
-    TargetNodeGuid: 31b3e536-0c7b-4990-b1b0-7dd06e0cb3ab
   - BaseNodeGuid: 01550a97-cf9f-45ef-b05e-a5647c2ddce1
     PortName: I'd want change too.
     TargetNodeGuid: 72163929-3a6f-4908-9ae2-1814a9ba8e3a
   - BaseNodeGuid: 01550a97-cf9f-45ef-b05e-a5647c2ddce1
     PortName: You're a vigilante.
     TargetNodeGuid: 7ee33d07-2bfb-4b45-a06c-520485ce9d5b
-  - BaseNodeGuid: 31b3e536-0c7b-4990-b1b0-7dd06e0cb3ab
-    PortName: So, it really was her.
-    TargetNodeGuid: 53f44e21-64d7-44b8-8b5e-aeaf53c39445
+  - BaseNodeGuid: 72163929-3a6f-4908-9ae2-1814a9ba8e3a
+    PortName: Why?
+    TargetNodeGuid: fa71872d-86b4-4b6a-be46-71570ec67f57
+  - BaseNodeGuid: 72163929-3a6f-4908-9ae2-1814a9ba8e3a
+    PortName: Haven't seen her.
+    TargetNodeGuid: 31b3e536-0c7b-4990-b1b0-7dd06e0cb3ab
+  - BaseNodeGuid: 7ee33d07-2bfb-4b45-a06c-520485ce9d5b
+    PortName: Why?
+    TargetNodeGuid: fa71872d-86b4-4b6a-be46-71570ec67f57
+  - BaseNodeGuid: 7ee33d07-2bfb-4b45-a06c-520485ce9d5b
+    PortName: Haven't seen her.
+    TargetNodeGuid: 31b3e536-0c7b-4990-b1b0-7dd06e0cb3ab
   - BaseNodeGuid: fa71872d-86b4-4b6a-be46-71570ec67f57
     PortName: So, it really was her.
     TargetNodeGuid: 53f44e21-64d7-44b8-8b5e-aeaf53c39445
-  - BaseNodeGuid: 31b3e536-0c7b-4990-b1b0-7dd06e0cb3ab
+  - BaseNodeGuid: fa71872d-86b4-4b6a-be46-71570ec67f57
     PortName: What should we do?
     TargetNodeGuid: e00ecede-46c3-46ca-8e5a-7b176e28b55c
-  - BaseNodeGuid: fa71872d-86b4-4b6a-be46-71570ec67f57
+  - BaseNodeGuid: 31b3e536-0c7b-4990-b1b0-7dd06e0cb3ab
+    PortName: So, it really was her.
+    TargetNodeGuid: 53f44e21-64d7-44b8-8b5e-aeaf53c39445
+  - BaseNodeGuid: 31b3e536-0c7b-4990-b1b0-7dd06e0cb3ab
     PortName: What should we do?
     TargetNodeGuid: e00ecede-46c3-46ca-8e5a-7b176e28b55c
   - BaseNodeGuid: 53f44e21-64d7-44b8-8b5e-aeaf53c39445
-    PortName: How would I help?
-    TargetNodeGuid: 396043ae-e897-405e-8e31-0f64434ff92c
-  - BaseNodeGuid: e00ecede-46c3-46ca-8e5a-7b176e28b55c
     PortName: How would I help?
     TargetNodeGuid: 396043ae-e897-405e-8e31-0f64434ff92c
   - BaseNodeGuid: 53f44e21-64d7-44b8-8b5e-aeaf53c39445
     PortName: I'm not sure about all this.
     TargetNodeGuid: 05363f69-f528-4c31-aa3c-d428f13eba1f
+  - BaseNodeGuid: e00ecede-46c3-46ca-8e5a-7b176e28b55c
+    PortName: How would I help?
+    TargetNodeGuid: 396043ae-e897-405e-8e31-0f64434ff92c
   - BaseNodeGuid: e00ecede-46c3-46ca-8e5a-7b176e28b55c
     PortName: I'm not sure about all this.
     TargetNodeGuid: 05363f69-f528-4c31-aa3c-d428f13eba1f
@@ -116,12 +116,12 @@ MonoBehaviour:
   - Guid: 396043ae-e897-405e-8e31-0f64434ff92c
     DialogueText: When she comes here, you'll call me. I have organized with other
       victims of Maxwell's greed; now we have a plan to remove the cult from power.
-      It's time to end this era of pain and degredation.
+      It's time to end this era of pain and degradation.
     Position: {x: 5144, y: 148}
   - Guid: 05363f69-f528-4c31-aa3c-d428f13eba1f
     DialogueText: Too many people have died for you to be on the fence. When she
       arrives, you must call me. I have a plan to remove the cult from power. It's
-      time to end this era of degredation, at last.
+      time to end this era of degradation, at last.
     Position: {x: 5143, y: 279}
   - Guid: abb544ac-edb3-4398-8ade-d719c5d3e3c8
     DialogueText: Think of the people who came before you, who were never given this
