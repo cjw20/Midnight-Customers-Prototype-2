@@ -11,19 +11,19 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
   m_Name: Yith-Beat2
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueContainer
   NodeLinks:
   - BaseNodeGuid: 6deb90f8-d5eb-472d-886a-257022672e5c
     PortName: Next
     TargetNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
   - BaseNodeGuid: 83f4d27a-b837-4c5b-a957-f12a642bfa0a
-    PortName: People have come in to buy stuff, yeah.
+    PortName: People have come and gone, sure.
     TargetNodeGuid: 7b68be2f-a626-47b8-9b7d-30216e5c9ab3
   - BaseNodeGuid: 83f4d27a-b837-4c5b-a957-f12a642bfa0a
     PortName: I've gotten to know the regulars.
     TargetNodeGuid: cae9db46-d03d-42a1-9bab-8e21dda6bd37
   - BaseNodeGuid: 204f0ef3-507e-452d-a21c-d4b6b7092d75
-    PortName: People have come in to buy stuff, yeah.
+    PortName: People have come and gone, sure.
     TargetNodeGuid: 7b68be2f-a626-47b8-9b7d-30216e5c9ab3
   - BaseNodeGuid: 204f0ef3-507e-452d-a21c-d4b6b7092d75
     PortName: I've gotten to know the regulars.
@@ -123,8 +123,8 @@ MonoBehaviour:
     DialogueText: I assume you have met some of the inhabitants of the area.
     Position: {x: 805, y: 63}
   - Guid: 204f0ef3-507e-452d-a21c-d4b6b7092d75
-    DialogueText: You just seem so...comfortable. I assume you have met some of the
-      inhabitants of the area.
+    DialogueText: You just seem so... comfortable. I assume you have met some of
+      the inhabitants of the area.
     Position: {x: 803, y: 265}
   - Guid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
     DialogueText: You seem to be performing well in your new position.
@@ -153,10 +153,6 @@ MonoBehaviour:
   - Guid: ff82e96e-4c07-4069-98f4-cf4ed840e4ec
     DialogueText: I live very close by and know many of those who visit this place.
     Position: {x: 3916, y: 108}
-  - Guid: 61f856b6-5d2d-4d8c-b0d5-75bb3265dfc5
-    DialogueText: She is known to intrude on others' privacy. I understand that can
-      be an insult here.
-    Position: {x: 3921, y: 356}
   - Guid: 3baee4a2-98da-4da7-9d00-69befc700ee1
     DialogueText: I do not mean to offend you. She is just known to intrude on others'
       privacy and many in this area do not like that.
@@ -184,5 +180,9 @@ MonoBehaviour:
     DialogueText: Thank you for this productive meeting. I look forward to our next
       one.
     Position: {x: 6846, y: 422}
+  - Guid: 61f856b6-5d2d-4d8c-b0d5-75bb3265dfc5
+    DialogueText: She is known to intrude on others' privacy. I understand that can
+      be an insult here.
+    Position: {x: 4765, y: 342}
   ExposedProperties: []
   CommentBlockData: []

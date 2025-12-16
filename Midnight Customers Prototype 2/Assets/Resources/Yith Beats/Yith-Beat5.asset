@@ -11,47 +11,11 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
   m_Name: Yith-Beat5
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueContainer
   NodeLinks:
   - BaseNodeGuid: 6deb90f8-d5eb-472d-886a-257022672e5c
     PortName: Next
     TargetNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
-  - BaseNodeGuid: 49e04426-15b4-4b73-96e0-f62e3ae027f4
-    PortName: What should I do?
-    TargetNodeGuid: e7ba96de-2bdd-4e08-a91e-d74a2164c5ba
-  - BaseNodeGuid: 49e04426-15b4-4b73-96e0-f62e3ae027f4
-    PortName: Us? There's an us?
-    TargetNodeGuid: 871f3dfe-c2b5-4ccb-ac5c-d18212314320
-  - BaseNodeGuid: db22fbee-5def-445d-9b76-a96847699c12
-    PortName: What should I do?
-    TargetNodeGuid: e7ba96de-2bdd-4e08-a91e-d74a2164c5ba
-  - BaseNodeGuid: db22fbee-5def-445d-9b76-a96847699c12
-    PortName: Us? There's an us?
-    TargetNodeGuid: 871f3dfe-c2b5-4ccb-ac5c-d18212314320
-  - BaseNodeGuid: 871f3dfe-c2b5-4ccb-ac5c-d18212314320
-    PortName: So, you have a plan.
-    TargetNodeGuid: fa9a04dd-0e34-4234-99f7-06686b480803
-  - BaseNodeGuid: 871f3dfe-c2b5-4ccb-ac5c-d18212314320
-    PortName: You're right, this is too much for me.
-    TargetNodeGuid: de160cd7-4f65-42a7-8c2c-b8cd81678b63
-  - BaseNodeGuid: fa9a04dd-0e34-4234-99f7-06686b480803
-    PortName: You're a stalker!
-    TargetNodeGuid: fa99501b-936f-4bf4-b005-8b050e4656cc
-  - BaseNodeGuid: fa9a04dd-0e34-4234-99f7-06686b480803
-    PortName: Why me?
-    TargetNodeGuid: ea6357d0-0722-40b7-b92a-2b8363b1b787
-  - BaseNodeGuid: e7ba96de-2bdd-4e08-a91e-d74a2164c5ba
-    PortName: You're a stalker!
-    TargetNodeGuid: fa99501b-936f-4bf4-b005-8b050e4656cc
-  - BaseNodeGuid: e7ba96de-2bdd-4e08-a91e-d74a2164c5ba
-    PortName: Why me?
-    TargetNodeGuid: ea6357d0-0722-40b7-b92a-2b8363b1b787
-  - BaseNodeGuid: de160cd7-4f65-42a7-8c2c-b8cd81678b63
-    PortName: You're a stalker!
-    TargetNodeGuid: fa99501b-936f-4bf4-b005-8b050e4656cc
-  - BaseNodeGuid: de160cd7-4f65-42a7-8c2c-b8cd81678b63
-    PortName: Why me?
-    TargetNodeGuid: ea6357d0-0722-40b7-b92a-2b8363b1b787
   - BaseNodeGuid: fa99501b-936f-4bf4-b005-8b050e4656cc
     PortName: And? Just get to the point.
     TargetNodeGuid: d8897e50-6550-41aa-96d0-fb0236d2e322
@@ -88,12 +52,48 @@ MonoBehaviour:
   - BaseNodeGuid: 7a65e483-f296-42da-87a6-12116a18b595
     PortName: Thanks. I'll let you know.
     TargetNodeGuid: b116f9a0-d8a1-43b7-868a-3b495b069506
+  - BaseNodeGuid: 49e04426-15b4-4b73-96e0-f62e3ae027f4
+    PortName: What should I do?
+    TargetNodeGuid: e7ba96de-2bdd-4e08-a91e-d74a2164c5ba
+  - BaseNodeGuid: 49e04426-15b4-4b73-96e0-f62e3ae027f4
+    PortName: Us? There's an us?
+    TargetNodeGuid: 871f3dfe-c2b5-4ccb-ac5c-d18212314320
   - BaseNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
     PortName: How much do you know?
     TargetNodeGuid: 49e04426-15b4-4b73-96e0-f62e3ae027f4
   - BaseNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
     PortName: You've been hiding all of this.
     TargetNodeGuid: db22fbee-5def-445d-9b76-a96847699c12
+  - BaseNodeGuid: db22fbee-5def-445d-9b76-a96847699c12
+    PortName: What should I do?
+    TargetNodeGuid: e7ba96de-2bdd-4e08-a91e-d74a2164c5ba
+  - BaseNodeGuid: db22fbee-5def-445d-9b76-a96847699c12
+    PortName: Us? There's an us?
+    TargetNodeGuid: 871f3dfe-c2b5-4ccb-ac5c-d18212314320
+  - BaseNodeGuid: fa9a04dd-0e34-4234-99f7-06686b480803
+    PortName: You're a stalker!
+    TargetNodeGuid: fa99501b-936f-4bf4-b005-8b050e4656cc
+  - BaseNodeGuid: fa9a04dd-0e34-4234-99f7-06686b480803
+    PortName: Why me?
+    TargetNodeGuid: ea6357d0-0722-40b7-b92a-2b8363b1b787
+  - BaseNodeGuid: de160cd7-4f65-42a7-8c2c-b8cd81678b63
+    PortName: You're a stalker!
+    TargetNodeGuid: fa99501b-936f-4bf4-b005-8b050e4656cc
+  - BaseNodeGuid: de160cd7-4f65-42a7-8c2c-b8cd81678b63
+    PortName: Why me?
+    TargetNodeGuid: ea6357d0-0722-40b7-b92a-2b8363b1b787
+  - BaseNodeGuid: e7ba96de-2bdd-4e08-a91e-d74a2164c5ba
+    PortName: You're a stalker!
+    TargetNodeGuid: fa99501b-936f-4bf4-b005-8b050e4656cc
+  - BaseNodeGuid: e7ba96de-2bdd-4e08-a91e-d74a2164c5ba
+    PortName: Why me?
+    TargetNodeGuid: ea6357d0-0722-40b7-b92a-2b8363b1b787
+  - BaseNodeGuid: 871f3dfe-c2b5-4ccb-ac5c-d18212314320
+    PortName: So, you have a plan.
+    TargetNodeGuid: fa9a04dd-0e34-4234-99f7-06686b480803
+  - BaseNodeGuid: 871f3dfe-c2b5-4ccb-ac5c-d18212314320
+    PortName: You're right, this is too much for me.
+    TargetNodeGuid: de160cd7-4f65-42a7-8c2c-b8cd81678b63
   DialogueNodeData:
   - Guid: fa99501b-936f-4bf4-b005-8b050e4656cc
     DialogueText: I assure you I did not do it without reason. I have also been obseverving
@@ -133,19 +133,20 @@ MonoBehaviour:
       direction. You discovered everything for us.
     Position: {x: 932, y: 48}
   - Guid: fa9a04dd-0e34-4234-99f7-06686b480803
-    DialogueText: I do. I admit I have watched you and this station for a long time.
+    DialogueText: I do. I admit that I have watched you and this station for a long
+      time.
     Position: {x: 2836, y: 150}
   - Guid: de160cd7-4f65-42a7-8c2c-b8cd81678b63
-    DialogueText: Do not worry, I have a plan. I admit I have watched you and this
-      station for a long time.
+    DialogueText: Do not worry, I have a plan. I admit that I have watched you and
+      this station for a long time.
     Position: {x: 2833, y: 319}
   - Guid: e7ba96de-2bdd-4e08-a91e-d74a2164c5ba
-    DialogueText: Do not worry, I have a plan. I admit I have watched you and this
-      station for a long time.
+    DialogueText: Do not worry, I have a plan. I admit that I have watched you and
+      this station for a long time.
     Position: {x: 2821, y: -21}
   - Guid: 871f3dfe-c2b5-4ccb-ac5c-d18212314320
     DialogueText: Of course. I do not expect you to solve everything on your own.
-      You are just one human-being going against more than you know.
+      You are just one human-being up against more than you know.
     Position: {x: 1800, y: 260}
   ExposedProperties: []
   CommentBlockData: []

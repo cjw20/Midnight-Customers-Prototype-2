@@ -11,7 +11,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
   m_Name: Yith-Beat4
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueContainer
   NodeLinks:
   - BaseNodeGuid: 6deb90f8-d5eb-472d-886a-257022672e5c
     PortName: Next
@@ -25,12 +25,12 @@ MonoBehaviour:
   - BaseNodeGuid: 04be44d8-7732-42b5-a0a1-2d6fd5edab9d
     PortName: How did you know Vanessa was a cop?
     TargetNodeGuid: da3c6c29-ba6b-4735-a8e5-24b4fdd789ce
-  - BaseNodeGuid: 31cbc37d-01cb-4625-bc2d-30917e02f566
-    PortName: How did you know Vanessa was a cop?
-    TargetNodeGuid: da3c6c29-ba6b-4735-a8e5-24b4fdd789ce
   - BaseNodeGuid: 04be44d8-7732-42b5-a0a1-2d6fd5edab9d
     PortName: An Arkham native doesn't know Vanessa.
     TargetNodeGuid: 83705846-d1bd-4e3d-8425-5a1bbca359e6
+  - BaseNodeGuid: 31cbc37d-01cb-4625-bc2d-30917e02f566
+    PortName: How did you know Vanessa was a cop?
+    TargetNodeGuid: da3c6c29-ba6b-4735-a8e5-24b4fdd789ce
   - BaseNodeGuid: 31cbc37d-01cb-4625-bc2d-30917e02f566
     PortName: An Arkham native doesn't know Vanessa.
     TargetNodeGuid: 83705846-d1bd-4e3d-8425-5a1bbca359e6
@@ -40,72 +40,72 @@ MonoBehaviour:
   - BaseNodeGuid: da3c6c29-ba6b-4735-a8e5-24b4fdd789ce
     PortName: How come Daniel didn't know?
     TargetNodeGuid: 3c01502e-4f0c-4777-b9c5-3c6c0fba29cb
+  - BaseNodeGuid: bbf43fdc-fb63-4c3c-b037-8ba8e807e48a
+    PortName: Does that include you?
+    TargetNodeGuid: ec8d4a7c-d64a-4be9-b028-3d309386174d
+  - BaseNodeGuid: bbf43fdc-fb63-4c3c-b037-8ba8e807e48a
+    PortName: Why would he lie?
+    TargetNodeGuid: 2920659e-fe72-4423-8ca5-426eb96352a7
+  - BaseNodeGuid: 3c01502e-4f0c-4777-b9c5-3c6c0fba29cb
+    PortName: Does that include you?
+    TargetNodeGuid: ec8d4a7c-d64a-4be9-b028-3d309386174d
+  - BaseNodeGuid: 3c01502e-4f0c-4777-b9c5-3c6c0fba29cb
+    PortName: Why would he lie?
+    TargetNodeGuid: 2920659e-fe72-4423-8ca5-426eb96352a7
   - BaseNodeGuid: 83705846-d1bd-4e3d-8425-5a1bbca359e6
     PortName: Well, one of you is lying.
     TargetNodeGuid: 9c97c4bb-fff8-4103-83fc-ef40c739a603
   - BaseNodeGuid: 83705846-d1bd-4e3d-8425-5a1bbca359e6
     PortName: Why should I believe you instead?
     TargetNodeGuid: 215dd742-e4e1-48e5-89f5-e00e69458adb
-  - BaseNodeGuid: bbf43fdc-fb63-4c3c-b037-8ba8e807e48a
-    PortName: Does that include you?
-    TargetNodeGuid: ec8d4a7c-d64a-4be9-b028-3d309386174d
-  - BaseNodeGuid: 3c01502e-4f0c-4777-b9c5-3c6c0fba29cb
-    PortName: Does that include you?
-    TargetNodeGuid: ec8d4a7c-d64a-4be9-b028-3d309386174d
   - BaseNodeGuid: 9c97c4bb-fff8-4103-83fc-ef40c739a603
     PortName: Does that include you?
     TargetNodeGuid: ec8d4a7c-d64a-4be9-b028-3d309386174d
+  - BaseNodeGuid: 9c97c4bb-fff8-4103-83fc-ef40c739a603
+    PortName: Why would he lie?
+    TargetNodeGuid: 2920659e-fe72-4423-8ca5-426eb96352a7
   - BaseNodeGuid: 215dd742-e4e1-48e5-89f5-e00e69458adb
     PortName: Does that include you?
     TargetNodeGuid: ec8d4a7c-d64a-4be9-b028-3d309386174d
   - BaseNodeGuid: 215dd742-e4e1-48e5-89f5-e00e69458adb
     PortName: Why would he lie?
     TargetNodeGuid: 2920659e-fe72-4423-8ca5-426eb96352a7
-  - BaseNodeGuid: 9c97c4bb-fff8-4103-83fc-ef40c739a603
-    PortName: Why would he lie?
-    TargetNodeGuid: 2920659e-fe72-4423-8ca5-426eb96352a7
-  - BaseNodeGuid: 3c01502e-4f0c-4777-b9c5-3c6c0fba29cb
-    PortName: Why would he lie?
-    TargetNodeGuid: 2920659e-fe72-4423-8ca5-426eb96352a7
-  - BaseNodeGuid: bbf43fdc-fb63-4c3c-b037-8ba8e807e48a
-    PortName: Why would he lie?
-    TargetNodeGuid: 2920659e-fe72-4423-8ca5-426eb96352a7
   - BaseNodeGuid: ec8d4a7c-d64a-4be9-b028-3d309386174d
-    PortName: What should I ask him then?
-    TargetNodeGuid: cdd1ba9a-085a-42bc-ad22-087a5cc1aa50
-  - BaseNodeGuid: 2920659e-fe72-4423-8ca5-426eb96352a7
     PortName: What should I ask him then?
     TargetNodeGuid: cdd1ba9a-085a-42bc-ad22-087a5cc1aa50
   - BaseNodeGuid: ec8d4a7c-d64a-4be9-b028-3d309386174d
     PortName: You can't just tell me?
     TargetNodeGuid: 0d72f2ec-0f0c-4511-bac8-6cd2e7def16c
   - BaseNodeGuid: 2920659e-fe72-4423-8ca5-426eb96352a7
+    PortName: What should I ask him then?
+    TargetNodeGuid: cdd1ba9a-085a-42bc-ad22-087a5cc1aa50
+  - BaseNodeGuid: 2920659e-fe72-4423-8ca5-426eb96352a7
     PortName: You can't just tell me?
     TargetNodeGuid: 0d72f2ec-0f0c-4511-bac8-6cd2e7def16c
-  - BaseNodeGuid: 3c07657b-589a-40a3-8f13-8bcfbdaaebe4
-    PortName: Bye.
-    TargetNodeGuid: b5886380-64c8-48f2-80eb-ab84d3547826
-  - BaseNodeGuid: 3c07657b-589a-40a3-8f13-8bcfbdaaebe4
-    PortName: See you later.
-    TargetNodeGuid: b5886380-64c8-48f2-80eb-ab84d3547826
-  - BaseNodeGuid: e67dc796-8319-45e7-9e1c-4907c4c50486
-    PortName: Bye.
-    TargetNodeGuid: b5886380-64c8-48f2-80eb-ab84d3547826
-  - BaseNodeGuid: e67dc796-8319-45e7-9e1c-4907c4c50486
-    PortName: See you later.
-    TargetNodeGuid: b5886380-64c8-48f2-80eb-ab84d3547826
   - BaseNodeGuid: 0d72f2ec-0f0c-4511-bac8-6cd2e7def16c
-    PortName: Fine. Whatever. I'll ask him.
-    TargetNodeGuid: 3c07657b-589a-40a3-8f13-8bcfbdaaebe4
-  - BaseNodeGuid: cdd1ba9a-085a-42bc-ad22-087a5cc1aa50
     PortName: Fine. Whatever. I'll ask him.
     TargetNodeGuid: 3c07657b-589a-40a3-8f13-8bcfbdaaebe4
   - BaseNodeGuid: 0d72f2ec-0f0c-4511-bac8-6cd2e7def16c
     PortName: Okay, sure. Maybe I'll learn something useful.
     TargetNodeGuid: e67dc796-8319-45e7-9e1c-4907c4c50486
   - BaseNodeGuid: cdd1ba9a-085a-42bc-ad22-087a5cc1aa50
+    PortName: Fine. Whatever. I'll ask him.
+    TargetNodeGuid: 3c07657b-589a-40a3-8f13-8bcfbdaaebe4
+  - BaseNodeGuid: cdd1ba9a-085a-42bc-ad22-087a5cc1aa50
     PortName: Okay, sure. Maybe I'll learn something useful.
     TargetNodeGuid: e67dc796-8319-45e7-9e1c-4907c4c50486
+  - BaseNodeGuid: e67dc796-8319-45e7-9e1c-4907c4c50486
+    PortName: Bye.
+    TargetNodeGuid: b5886380-64c8-48f2-80eb-ab84d3547826
+  - BaseNodeGuid: e67dc796-8319-45e7-9e1c-4907c4c50486
+    PortName: See you later.
+    TargetNodeGuid: b5886380-64c8-48f2-80eb-ab84d3547826
+  - BaseNodeGuid: 3c07657b-589a-40a3-8f13-8bcfbdaaebe4
+    PortName: Bye.
+    TargetNodeGuid: b5886380-64c8-48f2-80eb-ab84d3547826
+  - BaseNodeGuid: 3c07657b-589a-40a3-8f13-8bcfbdaaebe4
+    PortName: See you later.
+    TargetNodeGuid: b5886380-64c8-48f2-80eb-ab84d3547826
   DialogueNodeData:
   - Guid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
     DialogueText: You seem to be troubled. I hope I have not made an appearance at

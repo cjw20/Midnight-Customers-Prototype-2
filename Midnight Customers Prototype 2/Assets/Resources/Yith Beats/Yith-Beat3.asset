@@ -11,11 +11,17 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
   m_Name: Yith-Beat3
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueContainer
   NodeLinks:
   - BaseNodeGuid: 6deb90f8-d5eb-472d-886a-257022672e5c
     PortName: Next
     TargetNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
+  - BaseNodeGuid: b4bd8c43-26fb-45d4-8901-ad8c9d6ab453
+    PortName: Oh, you mean Vanessa?
+    TargetNodeGuid: dc06b0af-bab4-4d5c-855d-9162593efcb9
+  - BaseNodeGuid: b4bd8c43-26fb-45d4-8901-ad8c9d6ab453
+    PortName: What about her?
+    TargetNodeGuid: 3c449ca4-7be4-4486-a872-a5c1b450de74
   - BaseNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
     PortName: What are you talking about?
     TargetNodeGuid: b4bd8c43-26fb-45d4-8901-ad8c9d6ab453
@@ -25,12 +31,6 @@ MonoBehaviour:
   - BaseNodeGuid: b7fd2938-526d-4215-a179-cb84dfa4443c
     PortName: Oh, you mean Vanessa?
     TargetNodeGuid: dc06b0af-bab4-4d5c-855d-9162593efcb9
-  - BaseNodeGuid: b4bd8c43-26fb-45d4-8901-ad8c9d6ab453
-    PortName: Oh, you mean Vanessa?
-    TargetNodeGuid: dc06b0af-bab4-4d5c-855d-9162593efcb9
-  - BaseNodeGuid: b4bd8c43-26fb-45d4-8901-ad8c9d6ab453
-    PortName: What about her?
-    TargetNodeGuid: 3c449ca4-7be4-4486-a872-a5c1b450de74
   - BaseNodeGuid: b7fd2938-526d-4215-a179-cb84dfa4443c
     PortName: What about her?
     TargetNodeGuid: 3c449ca4-7be4-4486-a872-a5c1b450de74
@@ -43,43 +43,43 @@ MonoBehaviour:
   - BaseNodeGuid: 66d39f57-650a-4758-a14a-16c5c02ece3c
     PortName: Asking too much about what?
     TargetNodeGuid: 5dbadf25-9f9b-4640-9502-71d15f4fc64c
-  - BaseNodeGuid: 516a6227-7bce-475e-99b6-1d340f6e33ff
-    PortName: Asking too much about what?
-    TargetNodeGuid: 5dbadf25-9f9b-4640-9502-71d15f4fc64c
-  - BaseNodeGuid: 3c449ca4-7be4-4486-a872-a5c1b450de74
-    PortName: Asking too much about what?
-    TargetNodeGuid: 5dbadf25-9f9b-4640-9502-71d15f4fc64c
-  - BaseNodeGuid: 3c449ca4-7be4-4486-a872-a5c1b450de74
-    PortName: So, she was a cop. Who cares?
-    TargetNodeGuid: bbcd677f-fd88-4736-a63a-a11ae8b00d88
   - BaseNodeGuid: 66d39f57-650a-4758-a14a-16c5c02ece3c
     PortName: So, she was a cop. Who cares?
     TargetNodeGuid: bbcd677f-fd88-4736-a63a-a11ae8b00d88
   - BaseNodeGuid: 516a6227-7bce-475e-99b6-1d340f6e33ff
+    PortName: Asking too much about what?
+    TargetNodeGuid: 5dbadf25-9f9b-4640-9502-71d15f4fc64c
+  - BaseNodeGuid: 516a6227-7bce-475e-99b6-1d340f6e33ff
+    PortName: So, she was a cop. Who cares?
+    TargetNodeGuid: bbcd677f-fd88-4736-a63a-a11ae8b00d88
+  - BaseNodeGuid: 3c449ca4-7be4-4486-a872-a5c1b450de74
+    PortName: Asking too much about what?
+    TargetNodeGuid: 5dbadf25-9f9b-4640-9502-71d15f4fc64c
+  - BaseNodeGuid: 3c449ca4-7be4-4486-a872-a5c1b450de74
     PortName: So, she was a cop. Who cares?
     TargetNodeGuid: bbcd677f-fd88-4736-a63a-a11ae8b00d88
   - BaseNodeGuid: bbcd677f-fd88-4736-a63a-a11ae8b00d88
     PortName: That seems far fetched.
     TargetNodeGuid: 77bec7f1-2b43-4604-b0e5-67fa5b75dcb9
-  - BaseNodeGuid: 5dbadf25-9f9b-4640-9502-71d15f4fc64c
-    PortName: That seems far fetched.
-    TargetNodeGuid: 77bec7f1-2b43-4604-b0e5-67fa5b75dcb9
   - BaseNodeGuid: bbcd677f-fd88-4736-a63a-a11ae8b00d88
     PortName: How did she lie?
     TargetNodeGuid: 52961a3d-5419-4796-860e-30211ac0b733
   - BaseNodeGuid: 5dbadf25-9f9b-4640-9502-71d15f4fc64c
+    PortName: That seems far fetched.
+    TargetNodeGuid: 77bec7f1-2b43-4604-b0e5-67fa5b75dcb9
+  - BaseNodeGuid: 5dbadf25-9f9b-4640-9502-71d15f4fc64c
     PortName: How did she lie?
     TargetNodeGuid: 52961a3d-5419-4796-860e-30211ac0b733
-  - BaseNodeGuid: 77bec7f1-2b43-4604-b0e5-67fa5b75dcb9
+  - BaseNodeGuid: 52961a3d-5419-4796-860e-30211ac0b733
     PortName: If you say so. Bye.
     TargetNodeGuid: a46bea4b-6fc5-43fb-9caf-c4bfc63525e3
-  - BaseNodeGuid: 77bec7f1-2b43-4604-b0e5-67fa5b75dcb9
+  - BaseNodeGuid: 52961a3d-5419-4796-860e-30211ac0b733
     PortName: I'll ask her about it. Thanks.
     TargetNodeGuid: a46bea4b-6fc5-43fb-9caf-c4bfc63525e3
-  - BaseNodeGuid: 52961a3d-5419-4796-860e-30211ac0b733
+  - BaseNodeGuid: 77bec7f1-2b43-4604-b0e5-67fa5b75dcb9
     PortName: If you say so. Bye.
     TargetNodeGuid: a46bea4b-6fc5-43fb-9caf-c4bfc63525e3
-  - BaseNodeGuid: 52961a3d-5419-4796-860e-30211ac0b733
+  - BaseNodeGuid: 77bec7f1-2b43-4604-b0e5-67fa5b75dcb9
     PortName: I'll ask her about it. Thanks.
     TargetNodeGuid: a46bea4b-6fc5-43fb-9caf-c4bfc63525e3
   DialogueNodeData:
@@ -121,7 +121,7 @@ MonoBehaviour:
       seek are with her. I look forward to hearing what you learn.
     Position: {x: 4348, y: 399}
   - Guid: 77bec7f1-2b43-4604-b0e5-67fa5b75dcb9
-    DialogueText: Not when no one has ever hired her. She can explain further. You
+    DialogueText: No one has paid for her services. She can explain further. You
       must only ask. I look forward to hearing what you learn.
     Position: {x: 4346, y: 231}
   - Guid: a46bea4b-6fc5-43fb-9caf-c4bfc63525e3
