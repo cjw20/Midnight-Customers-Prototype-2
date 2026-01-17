@@ -11,7 +11,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
   m_Name: N-Fortune
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueContainer
   NodeLinks:
   - BaseNodeGuid: b678c041-6dbe-4af7-8c78-74f0315b7a69
     PortName: Next
@@ -163,71 +163,70 @@ MonoBehaviour:
   DialogueNodeData:
   - Guid: 6d139e9a-dcc1-45f7-9d19-e9ed9c266c02
     DialogueText: '*Gasp* ...'
-    Position: {x: 187.2, y: 200}
+    Position: {x: 187, y: 200}
   - Guid: 1281d269-c11f-48a1-8183-91f0875a904d
     DialogueText: Oh yes, my child. I am fine. The better question is, are you?
-    Position: {x: 504, y: 52.000004}
+    Position: {x: 504, y: 52}
   - Guid: 650dc299-cb60-4f79-8a06-72233177f086
-    DialogueText: Oh... It's nothing my child. Tell me, have you been feeling fine
+    DialogueText: Oh... It's nothing, my child. Tell me, have you been feeling okay
       as of late?
-    Position: {x: 504, y: 208.8}
+    Position: {x: 504, y: 209}
   - Guid: 3d40753c-64da-4357-8c83-93f5344c57da
-    DialogueText: My apologies, child. Tell me... Have you been feeling fine as of
+    DialogueText: My apologies, child. Tell me... Have you been feeling okay as of
       late?
-    Position: {x: 504.8, y: 374.40002}
+    Position: {x: 505, y: 374}
   - Guid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
     DialogueText: Are you sure...?
-    Position: {x: 1108.8, y: 48.8}
+    Position: {x: 1109, y: 49}
   - Guid: 94966c1d-d873-40e1-9ae3-07e55d209f90
-    DialogueText: Very well... But are you sure you're feeling well? Nothing feels
-      wrong?
-    Position: {x: 1108, y: 214.4}
+    DialogueText: Very well... But are you sure that you're feeling well? Nothing
+      feels wrong?
+    Position: {x: 1108, y: 214}
   - Guid: c6d5da48-58f5-455b-95d2-29176a75c75d
-    DialogueText: No, that's not what I was sensing. What I was sensing was much
-      more... sinister.
-    Position: {x: 1668.8, y: 43.2}
+    DialogueText: No, that's not it. I sense something far more... sinister.
+    Position: {x: 1669, y: 43}
   - Guid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
     DialogueText: Hmm... Perhaps it has not yet begun.
-    Position: {x: 1668, y: 210.4}
+    Position: {x: 1668, y: 210}
   - Guid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
     DialogueText: 'I don''t wish to pry, but I would be remiss to not try to intervene
       and save you from your fate. '
-    Position: {x: 1667.2, y: 372}
+    Position: {x: 1667, y: 372}
   - Guid: 1a936d76-6a21-4823-8cea-5f178c0ff189
     DialogueText: Nothing feels... off?
-    Position: {x: 1110.4, y: 376.80002}
+    Position: {x: 1110, y: 377}
   - Guid: af93f235-b8f3-472c-bb2e-e406e04328c8
-    DialogueText: I foresaw a darkness consume your future. Tell me, have you called
-      your parents recently?
-    Position: {x: 2455.2, y: 44.8}
+    DialogueText: A darkness has consumed your future. Tell me, have you called your
+      parents recently?
+    Position: {x: 2455, y: 45}
   - Guid: 51d1be4c-03cd-4c57-9b0e-b028c1d6887d
     DialogueText: Angle? I assure you, I have no angle. I'm only trying to help.
       Tell me, have you called your parents recently?
-    Position: {x: 2482.4, y: 212}
+    Position: {x: 2482, y: 212}
   - Guid: ed6c6f38-4f65-4e43-8166-16f525b9d881
     DialogueText: Tell me... Have you called your parents recently?
-    Position: {x: 2489.6, y: 395.2}
+    Position: {x: 2490, y: 395}
   - Guid: 445d820a-059d-4bf9-8c8f-435d12a08ef0
     DialogueText: How sad. Perhaps you should reach out to them? I'm sure they would
-      appreciate hearing from you one last time?
-    Position: {x: 3305.6, y: 174.4}
+      appreciate hearing from you one last time.
+    Position: {x: 3306, y: 174}
   - Guid: 301c581f-4662-4457-9959-b5f6686b82b2
     DialogueText: I'm sure they would just appreciate hearing from you one last time.
-    Position: {x: 3346.4, y: 8}
+    Position: {x: 3346, y: 8}
   - Guid: acdf42cf-919c-4b84-85af-8790e0dcd2a1
     DialogueText: For the time being. That's the funny thing about the future, it's
       always changing.
-    Position: {x: 4122.4, y: -2.3999996}
+    Position: {x: 4122, y: -2}
   - Guid: 5714187d-37b2-4742-85de-ed40f1ad5a14
     DialogueText: Perhaps I've said too much...
-    Position: {x: 4144, y: 372.80002}
+    Position: {x: 4144, y: 373}
   - Guid: 7ce00f99-aefb-473e-9e19-97f311d6521d
     DialogueText: Well you really should. I'm sure they would appreciate hearing
       from you one last time.
-    Position: {x: 3250.4, y: 360.80002}
+    Position: {x: 3250, y: 361}
   - Guid: e1bf4905-0fd5-4661-b991-e5028e517db6
-    DialogueText: You jest because you worry I am right. When fate calls, I hope
-      you are ready.
-    Position: {x: 4140, y: 200}
+    DialogueText: I'll take your silence as worry that I am right. When fate calls,
+      I hope you are ready.
+    Position: {x: 4148, y: 197}
   ExposedProperties: []
   CommentBlockData: []

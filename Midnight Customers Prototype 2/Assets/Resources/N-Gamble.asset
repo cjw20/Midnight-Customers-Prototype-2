@@ -11,7 +11,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
   m_Name: N-Gamble
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueContainer
   NodeLinks:
   - BaseNodeGuid: b678c041-6dbe-4af7-8c78-74f0315b7a69
     PortName: Next
@@ -25,51 +25,33 @@ MonoBehaviour:
   - BaseNodeGuid: 6d139e9a-dcc1-45f7-9d19-e9ed9c266c02
     PortName: ...
     TargetNodeGuid: 3d40753c-64da-4357-8c83-93f5344c57da
-  - BaseNodeGuid: 1281d269-c11f-48a1-8183-91f0875a904d
-    PortName: Looks like your total comes out to $8.39.
-    TargetNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
-  - BaseNodeGuid: 1281d269-c11f-48a1-8183-91f0875a904d
-    PortName: Anything else tonight, or will this be it?
-    TargetNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
-  - BaseNodeGuid: 1281d269-c11f-48a1-8183-91f0875a904d
+  - BaseNodeGuid: af93f235-b8f3-472c-bb2e-e406e04328c8
+    PortName: What's the game?
+    TargetNodeGuid: 301c581f-4662-4457-9959-b5f6686b82b2
+  - BaseNodeGuid: af93f235-b8f3-472c-bb2e-e406e04328c8
+    PortName: And what if I win?
+    TargetNodeGuid: 445d820a-059d-4bf9-8c8f-435d12a08ef0
+  - BaseNodeGuid: af93f235-b8f3-472c-bb2e-e406e04328c8
     PortName: ...
-    TargetNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
-  - BaseNodeGuid: 650dc299-cb60-4f79-8a06-72233177f086
-    PortName: Looks like your total comes out to $8.39.
-    TargetNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
-  - BaseNodeGuid: 650dc299-cb60-4f79-8a06-72233177f086
-    PortName: Anything else tonight, or will this be it?
-    TargetNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
-  - BaseNodeGuid: 650dc299-cb60-4f79-8a06-72233177f086
+    TargetNodeGuid: 7ce00f99-aefb-473e-9e19-97f311d6521d
+  - BaseNodeGuid: 445d820a-059d-4bf9-8c8f-435d12a08ef0
+    PortName: Sure, I'm game.
+    TargetNodeGuid: acdf42cf-919c-4b84-85af-8790e0dcd2a1
+  - BaseNodeGuid: 445d820a-059d-4bf9-8c8f-435d12a08ef0
     PortName: ...
-    TargetNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
-  - BaseNodeGuid: 3d40753c-64da-4357-8c83-93f5344c57da
-    PortName: Looks like your total comes out to $8.39.
-    TargetNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
-  - BaseNodeGuid: 3d40753c-64da-4357-8c83-93f5344c57da
-    PortName: Anything else tonight, or will this be it?
-    TargetNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
-  - BaseNodeGuid: 3d40753c-64da-4357-8c83-93f5344c57da
+    TargetNodeGuid: e1bf4905-0fd5-4661-b991-e5028e517db6
+  - BaseNodeGuid: 301c581f-4662-4457-9959-b5f6686b82b2
+    PortName: Sure, I'm game.
+    TargetNodeGuid: acdf42cf-919c-4b84-85af-8790e0dcd2a1
+  - BaseNodeGuid: 301c581f-4662-4457-9959-b5f6686b82b2
     PortName: ...
-    TargetNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
-  - BaseNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
-    PortName: I mean... I do have a bit of a cough.
-    TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
-  - BaseNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
-    PortName: Yeah, just fine.
-    TargetNodeGuid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
-  - BaseNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
+    TargetNodeGuid: e1bf4905-0fd5-4661-b991-e5028e517db6
+  - BaseNodeGuid: 7ce00f99-aefb-473e-9e19-97f311d6521d
+    PortName: Sure, I'm game.
+    TargetNodeGuid: acdf42cf-919c-4b84-85af-8790e0dcd2a1
+  - BaseNodeGuid: 7ce00f99-aefb-473e-9e19-97f311d6521d
     PortName: ...
-    TargetNodeGuid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
-  - BaseNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
-    PortName: I mean... I do have a bit of a cough.
-    TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
-  - BaseNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
-    PortName: Yeah, just fine.
-    TargetNodeGuid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
-  - BaseNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
-    PortName: ...
-    TargetNodeGuid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
+    TargetNodeGuid: e1bf4905-0fd5-4661-b991-e5028e517db6
   - BaseNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
     PortName: Then I can't sell you these.
     TargetNodeGuid: af93f235-b8f3-472c-bb2e-e406e04328c8
@@ -97,24 +79,6 @@ MonoBehaviour:
   - BaseNodeGuid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
     PortName: ...
     TargetNodeGuid: ed6c6f38-4f65-4e43-8166-16f525b9d881
-  - BaseNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
-    PortName: I mean... I do have a bit of a cough.
-    TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
-  - BaseNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
-    PortName: Yeah, just fine.
-    TargetNodeGuid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
-  - BaseNodeGuid: 1a936d76-6a21-4823-8cea-5f178c0ff189
-    PortName: ...
-    TargetNodeGuid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
-  - BaseNodeGuid: af93f235-b8f3-472c-bb2e-e406e04328c8
-    PortName: What's the game?
-    TargetNodeGuid: 301c581f-4662-4457-9959-b5f6686b82b2
-  - BaseNodeGuid: af93f235-b8f3-472c-bb2e-e406e04328c8
-    PortName: And what if I win?
-    TargetNodeGuid: 445d820a-059d-4bf9-8c8f-435d12a08ef0
-  - BaseNodeGuid: af93f235-b8f3-472c-bb2e-e406e04328c8
-    PortName: ...
-    TargetNodeGuid: 7ce00f99-aefb-473e-9e19-97f311d6521d
   - BaseNodeGuid: 51d1be4c-03cd-4c57-9b0e-b028c1d6887d
     PortName: What's the game?
     TargetNodeGuid: 301c581f-4662-4457-9959-b5f6686b82b2
@@ -133,33 +97,6 @@ MonoBehaviour:
   - BaseNodeGuid: ed6c6f38-4f65-4e43-8166-16f525b9d881
     PortName: ...
     TargetNodeGuid: 7ce00f99-aefb-473e-9e19-97f311d6521d
-  - BaseNodeGuid: 445d820a-059d-4bf9-8c8f-435d12a08ef0
-    PortName: Sure, I'm game.
-    TargetNodeGuid: acdf42cf-919c-4b84-85af-8790e0dcd2a1
-  - BaseNodeGuid: 445d820a-059d-4bf9-8c8f-435d12a08ef0
-    PortName: No, you need to pay for these.
-    TargetNodeGuid: 5714187d-37b2-4742-85de-ed40f1ad5a14
-  - BaseNodeGuid: 445d820a-059d-4bf9-8c8f-435d12a08ef0
-    PortName: ...
-    TargetNodeGuid: e1bf4905-0fd5-4661-b991-e5028e517db6
-  - BaseNodeGuid: 301c581f-4662-4457-9959-b5f6686b82b2
-    PortName: Sure, I'm game.
-    TargetNodeGuid: acdf42cf-919c-4b84-85af-8790e0dcd2a1
-  - BaseNodeGuid: 301c581f-4662-4457-9959-b5f6686b82b2
-    PortName: No, you need to pay for these.
-    TargetNodeGuid: 5714187d-37b2-4742-85de-ed40f1ad5a14
-  - BaseNodeGuid: 301c581f-4662-4457-9959-b5f6686b82b2
-    PortName: ...
-    TargetNodeGuid: e1bf4905-0fd5-4661-b991-e5028e517db6
-  - BaseNodeGuid: 7ce00f99-aefb-473e-9e19-97f311d6521d
-    PortName: Sure, I'm game.
-    TargetNodeGuid: acdf42cf-919c-4b84-85af-8790e0dcd2a1
-  - BaseNodeGuid: 7ce00f99-aefb-473e-9e19-97f311d6521d
-    PortName: No, you need to pay for these.
-    TargetNodeGuid: 5714187d-37b2-4742-85de-ed40f1ad5a14
-  - BaseNodeGuid: 7ce00f99-aefb-473e-9e19-97f311d6521d
-    PortName: ...
-    TargetNodeGuid: e1bf4905-0fd5-4661-b991-e5028e517db6
   - BaseNodeGuid: acdf42cf-919c-4b84-85af-8790e0dcd2a1
     PortName: It's the first card!
     TargetNodeGuid: 95aa7804-063e-4e55-9977-ae27f0ec9366
@@ -170,125 +107,138 @@ MonoBehaviour:
     PortName: ...
     TargetNodeGuid: fe7db2b4-99ea-41c1-8adb-ffc809ab7d43
   - BaseNodeGuid: f6e674c0-b142-49a8-9331-d0a458f7c114
-    PortName: Wait! No! You still have to pay for those!
-    TargetNodeGuid: 82b40639-95b8-421a-974e-3ccd950aa845
-  - BaseNodeGuid: 95aa7804-063e-4e55-9977-ae27f0ec9366
-    PortName: Wait! No! You still have to pay for those!
-    TargetNodeGuid: 82b40639-95b8-421a-974e-3ccd950aa845
+    PortName: A deal's a deal...
+    TargetNodeGuid: ec199e76-9de0-4894-bcf2-8848a23a9fb0
   - BaseNodeGuid: fe7db2b4-99ea-41c1-8adb-ffc809ab7d43
-    PortName: Wait! No! You still have to pay for those!
-    TargetNodeGuid: 82b40639-95b8-421a-974e-3ccd950aa845
-  - BaseNodeGuid: fe7db2b4-99ea-41c1-8adb-ffc809ab7d43
-    PortName: ...
-    TargetNodeGuid: 71794c58-484f-40c0-b90d-29652e90dc88
-  - BaseNodeGuid: f6e674c0-b142-49a8-9331-d0a458f7c114
-    PortName: ...
-    TargetNodeGuid: 71794c58-484f-40c0-b90d-29652e90dc88
-  - BaseNodeGuid: 95aa7804-063e-4e55-9977-ae27f0ec9366
-    PortName: ...
-    TargetNodeGuid: 71794c58-484f-40c0-b90d-29652e90dc88
+    PortName: A deal's a deal...
+    TargetNodeGuid: ec199e76-9de0-4894-bcf2-8848a23a9fb0
   - BaseNodeGuid: 95aa7804-063e-4e55-9977-ae27f0ec9366
     PortName: A deal's a deal...
+    TargetNodeGuid: ec199e76-9de0-4894-bcf2-8848a23a9fb0
+  - BaseNodeGuid: 1281d269-c11f-48a1-8183-91f0875a904d
+    PortName: Looks like your total comes out to $8.39.
+    TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+  - BaseNodeGuid: 650dc299-cb60-4f79-8a06-72233177f086
+    PortName: Looks like your total comes out to $8.39.
+    TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+  - BaseNodeGuid: 3d40753c-64da-4357-8c83-93f5344c57da
+    PortName: Looks like your total comes out to $8.39.
+    TargetNodeGuid: c6d5da48-58f5-455b-95d2-29176a75c75d
+  - BaseNodeGuid: 1281d269-c11f-48a1-8183-91f0875a904d
+    PortName: ...
+    TargetNodeGuid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
+  - BaseNodeGuid: 650dc299-cb60-4f79-8a06-72233177f086
+    PortName: ...
+    TargetNodeGuid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
+  - BaseNodeGuid: 3d40753c-64da-4357-8c83-93f5344c57da
+    PortName: ...
+    TargetNodeGuid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
+  - BaseNodeGuid: 650dc299-cb60-4f79-8a06-72233177f086
+    PortName: Anything else tonight, or will this be it?
+    TargetNodeGuid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
+  - BaseNodeGuid: 1281d269-c11f-48a1-8183-91f0875a904d
+    PortName: Anything else tonight, or will this be it?
+    TargetNodeGuid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
+  - BaseNodeGuid: 3d40753c-64da-4357-8c83-93f5344c57da
+    PortName: Anything else tonight, or will this be it?
+    TargetNodeGuid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
+  - BaseNodeGuid: 95aa7804-063e-4e55-9977-ae27f0ec9366
+    PortName: These are all the same, you scammed me!
+    TargetNodeGuid: ec199e76-9de0-4894-bcf2-8848a23a9fb0
+  - BaseNodeGuid: 95aa7804-063e-4e55-9977-ae27f0ec9366
+    PortName: ...
     TargetNodeGuid: ec199e76-9de0-4894-bcf2-8848a23a9fb0
   - BaseNodeGuid: f6e674c0-b142-49a8-9331-d0a458f7c114
-    PortName: A deal's a deal...
+    PortName: These are all the same, you scammed me!
+    TargetNodeGuid: ec199e76-9de0-4894-bcf2-8848a23a9fb0
+  - BaseNodeGuid: f6e674c0-b142-49a8-9331-d0a458f7c114
+    PortName: ...
     TargetNodeGuid: ec199e76-9de0-4894-bcf2-8848a23a9fb0
   - BaseNodeGuid: fe7db2b4-99ea-41c1-8adb-ffc809ab7d43
-    PortName: A deal's a deal...
+    PortName: ...
     TargetNodeGuid: ec199e76-9de0-4894-bcf2-8848a23a9fb0
+  - BaseNodeGuid: fe7db2b4-99ea-41c1-8adb-ffc809ab7d43
+    PortName: These are all the same, you scammed me!
+    TargetNodeGuid: ec199e76-9de0-4894-bcf2-8848a23a9fb0
+  - BaseNodeGuid: 445d820a-059d-4bf9-8c8f-435d12a08ef0
+    PortName: No, you need to pay for these.
+    TargetNodeGuid: e1bf4905-0fd5-4661-b991-e5028e517db6
+  - BaseNodeGuid: 7ce00f99-aefb-473e-9e19-97f311d6521d
+    PortName: No, I could get in trouble.
+    TargetNodeGuid: e1bf4905-0fd5-4661-b991-e5028e517db6
+  - BaseNodeGuid: 301c581f-4662-4457-9959-b5f6686b82b2
+    PortName: No, you need to pay for these.
+    TargetNodeGuid: e1bf4905-0fd5-4661-b991-e5028e517db6
   DialogueNodeData:
   - Guid: 6d139e9a-dcc1-45f7-9d19-e9ed9c266c02
     DialogueText: Hey, how's it going tonight?
-    Position: {x: 187.2, y: 200}
-  - Guid: 1281d269-c11f-48a1-8183-91f0875a904d
-    DialogueText: Sometimes slow is nice, but I usually prefer a little more excitement.
-    Position: {x: 504, y: 52.000004}
+    Position: {x: 187, y: 200}
   - Guid: 650dc299-cb60-4f79-8a06-72233177f086
     DialogueText: Yeah, I bet it can get pretty boring out here.
-    Position: {x: 504, y: 208.8}
-  - Guid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
-    DialogueText: Hmm... This is awkward, I don't seem to have enough money on me
-      right now.
-    Position: {x: 1108.8, y: 48.8}
-  - Guid: 94966c1d-d873-40e1-9ae3-07e55d209f90
-    DialogueText: Very well... But are you sure you're feeling well? Nothing feels
-      wrong?
-    Position: {x: 1108, y: 214.4}
-  - Guid: 1a936d76-6a21-4823-8cea-5f178c0ff189
-    DialogueText: Nothing feels... off?
-    Position: {x: 1110.4, y: 376.80002}
-  - Guid: af93f235-b8f3-472c-bb2e-e406e04328c8
-    DialogueText: I've got an idea! Let's play a game, and if I win, you let me have
-      these for $5!
-    Position: {x: 2455.2, y: 44.8}
-  - Guid: 445d820a-059d-4bf9-8c8f-435d12a08ef0
-    DialogueText: How sad. Perhaps you should reach out to them? I'm sure they would
-      appreciate hearing from you one last time?
-    Position: {x: 3305.6, y: 174.4}
+    Position: {x: 504, y: 209}
   - Guid: 301c581f-4662-4457-9959-b5f6686b82b2
     DialogueText: It's just a simple game of chance. So what do you say?
-    Position: {x: 3346.4, y: 8}
-  - Guid: 5714187d-37b2-4742-85de-ed40f1ad5a14
-    DialogueText: Well... You don't seem to be taking the bait. I'll just leave these
-      here since I can't pay for them.
-    Position: {x: 4144, y: 372.80002}
+    Position: {x: 3346, y: 8}
   - Guid: 7ce00f99-aefb-473e-9e19-97f311d6521d
-    DialogueText: Well you really should. I'm sure they would appreciate hearing
-      from you one last time.
-    Position: {x: 3250.4, y: 360.80002}
-  - Guid: e1bf4905-0fd5-4661-b991-e5028e517db6
-    DialogueText: What? Not even interested a little bit? Well, I can't pay for these
-      so I guess I'll just be leaving then.
-    Position: {x: 4140, y: 200}
+    DialogueText: So, is that a yes or...
+    Position: {x: 3250, y: 361}
   - Guid: 3d40753c-64da-4357-8c83-93f5344c57da
-    DialogueText: I'll take your silence as "Wow this shift is so boring." That's
-      what I'd be thinking at least.
-    Position: {x: 427.2, y: 378.40002}
-  - Guid: c6d5da48-58f5-455b-95d2-29176a75c75d
-    DialogueText: Hmm... This is awkward, I don't seem to have enough money on me
-      right now.
-    Position: {x: 1720.8, y: 43.2}
-  - Guid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
-    DialogueText: No, I don't think I can afford anything else. I've only got $5
-      on me right now.
-    Position: {x: 1720, y: 210.4}
-  - Guid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
-    DialogueText: Oh is that the total? Oh no... It looks like I'm short a few dollars.
-    Position: {x: 1719.2, y: 372}
-  - Guid: 51d1be4c-03cd-4c57-9b0e-b028c1d6887d
-    DialogueText: I've got an idea! How about we play a game of chance. If I win,
-      you give me a discount so I can buy these for $5.
-    Position: {x: 2424.8, y: 214.4}
-  - Guid: ed6c6f38-4f65-4e43-8166-16f525b9d881
-    DialogueText: I know what you're thinking, how am I gonna pay for this then?
-      Well I've got an idea! How about a game? If I win, I get these items for $5.
-    Position: {x: 2310.4, y: 396.80002}
+    DialogueText: It seems super boring working here. That's what I'd be thinking
+      at least.
+    Position: {x: 427, y: 378}
   - Guid: acdf42cf-919c-4b84-85af-8790e0dcd2a1
     DialogueText: Sweet! All you need to do is follow the Queen of Hearts while I'm
       shuffling them? Ready? Ok! Where is the Queen? Tell you what, I like you so
       I'll even flip over the last card to help you out.
-    Position: {x: 4189.6, y: -208.8}
+    Position: {x: 4190, y: -209}
   - Guid: f6e674c0-b142-49a8-9331-d0a458f7c114
     DialogueText: Ooh, the Jack of Clubs! That's too bad! Well, a deal's a deal!
       Here's my money, and I'll just be taking those.
-    Position: {x: 5597.6, y: -208}
+    Position: {x: 5598, y: -208}
   - Guid: fe7db2b4-99ea-41c1-8adb-ffc809ab7d43
     DialogueText: Time's up! That means you lose! Well, a deal's a deal! Here's my
       money, and I'll just be taking those.
-    Position: {x: 5600.8, y: -4}
+    Position: {x: 5601, y: -4}
   - Guid: 95aa7804-063e-4e55-9977-ae27f0ec9366
     DialogueText: Ooh, the Jack of Clubs! That's too bad! Well, a deal's a deal!
       Here's my money, and I'll just be taking those.
-    Position: {x: 5602.4, y: -432}
-  - Guid: 82b40639-95b8-421a-974e-3ccd950aa845
-    DialogueText: Oh come on, you can't change the deal after the fact! Ugh, whatever,
-      if you're going to be like that, I'll just leave these here.
-    Position: {x: 6460, y: -184}
-  - Guid: 71794c58-484f-40c0-b90d-29652e90dc88
-    DialogueText: Thanks for playing, sucker.
-    Position: {x: 6460, y: -2.3999996}
+    Position: {x: 5602, y: -432}
   - Guid: ec199e76-9de0-4894-bcf2-8848a23a9fb0
     DialogueText: Thanks for playing, sucker.
-    Position: {x: 6452.8, y: -430.4}
+    Position: {x: 6453, y: -430}
+  - Guid: 1281d269-c11f-48a1-8183-91f0875a904d
+    DialogueText: Sometimes slow is nice, but I usually prefer a little more excitement.
+    Position: {x: 544, y: 51}
+  - Guid: c6d5da48-58f5-455b-95d2-29176a75c75d
+    DialogueText: Hmm... This is awkward, I don't seem to have enough money on me
+      right now.
+    Position: {x: 1322, y: 56}
+  - Guid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
+    DialogueText: No, I don't think I can afford anything else. I've only got $5
+      on me right now.
+    Position: {x: 1321, y: 223}
+  - Guid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
+    DialogueText: Oh is that the total? Oh no... It looks like I'm short a few dollars.
+    Position: {x: 1320, y: 385}
+  - Guid: af93f235-b8f3-472c-bb2e-e406e04328c8
+    DialogueText: I've got an idea! Let's play a game, and if I win, you let me have
+      these for $5!
+    Position: {x: 2279, y: 41}
+  - Guid: 51d1be4c-03cd-4c57-9b0e-b028c1d6887d
+    DialogueText: I've got an idea! How about we play a game of chance. If I win,
+      you give me a discount so I can buy these for $5.
+    Position: {x: 2249, y: 210}
+  - Guid: ed6c6f38-4f65-4e43-8166-16f525b9d881
+    DialogueText: I know what you're thinking, how am I gonna pay for this then?
+      Well I've got an idea! How about a game? If I win, I get these items for $5.
+    Position: {x: 2134, y: 393}
+  - Guid: 445d820a-059d-4bf9-8c8f-435d12a08ef0
+    DialogueText: I'll give you double the total. You'll have some walking around
+      money, which I'm sure you desperately need.
+    Position: {x: 3246, y: 179}
+  - Guid: e1bf4905-0fd5-4661-b991-e5028e517db6
+    DialogueText: 'What? Not even interested a little bit? You know what, keep all
+      of this. So lame... '
+    Position: {x: 4157, y: 228}
   ExposedProperties: []
   CommentBlockData: []

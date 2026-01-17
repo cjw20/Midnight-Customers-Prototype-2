@@ -11,20 +11,11 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
   m_Name: N-EdgarAllenPoe
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueContainer
   NodeLinks:
   - BaseNodeGuid: 026055d1-c771-48bf-8172-a74ff93e1fa5
     PortName: Next
     TargetNodeGuid: bfe35042-3c92-4e8f-b497-9eae0420fcf4
-  - BaseNodeGuid: bfe35042-3c92-4e8f-b497-9eae0420fcf4
-    PortName: Did you find everything okay?
-    TargetNodeGuid: 141769c3-d1d3-416d-9252-bbb78fb96c46
-  - BaseNodeGuid: bfe35042-3c92-4e8f-b497-9eae0420fcf4
-    PortName: Uh...what?
-    TargetNodeGuid: 5485bd7d-edaa-427e-af01-d20503117e41
-  - BaseNodeGuid: bfe35042-3c92-4e8f-b497-9eae0420fcf4
-    PortName: ...
-    TargetNodeGuid: 5485bd7d-edaa-427e-af01-d20503117e41
   - BaseNodeGuid: 5485bd7d-edaa-427e-af01-d20503117e41
     PortName: You're making me uncomfrotable.
     TargetNodeGuid: 880b08c4-25db-4193-9520-7681437c3c0b
@@ -34,6 +25,15 @@ MonoBehaviour:
   - BaseNodeGuid: 5485bd7d-edaa-427e-af01-d20503117e41
     PortName: Thanks. Will this be all?
     TargetNodeGuid: 880b08c4-25db-4193-9520-7681437c3c0b
+  - BaseNodeGuid: bfe35042-3c92-4e8f-b497-9eae0420fcf4
+    PortName: Did you find everything okay?
+    TargetNodeGuid: 141769c3-d1d3-416d-9252-bbb78fb96c46
+  - BaseNodeGuid: bfe35042-3c92-4e8f-b497-9eae0420fcf4
+    PortName: Uh...what?
+    TargetNodeGuid: 5485bd7d-edaa-427e-af01-d20503117e41
+  - BaseNodeGuid: bfe35042-3c92-4e8f-b497-9eae0420fcf4
+    PortName: ...
+    TargetNodeGuid: 5485bd7d-edaa-427e-af01-d20503117e41
   - BaseNodeGuid: 141769c3-d1d3-416d-9252-bbb78fb96c46
     PortName: Thanks. Will this be all?
     TargetNodeGuid: 880b08c4-25db-4193-9520-7681437c3c0b
@@ -55,15 +55,6 @@ MonoBehaviour:
   - BaseNodeGuid: 9a2daf0a-d9d5-4701-84a2-d94b7d77f951
     PortName: You should leave.
     TargetNodeGuid: 72e84ef3-6f54-40f1-9972-4eb99362fa9a
-  - BaseNodeGuid: 72e84ef3-6f54-40f1-9972-4eb99362fa9a
-    PortName: Have a nice night.
-    TargetNodeGuid: 76559ff6-709a-4414-9420-7133dbef9d2d
-  - BaseNodeGuid: 72e84ef3-6f54-40f1-9972-4eb99362fa9a
-    PortName: Okay...good luck?
-    TargetNodeGuid: 76559ff6-709a-4414-9420-7133dbef9d2d
-  - BaseNodeGuid: 72e84ef3-6f54-40f1-9972-4eb99362fa9a
-    PortName: ...
-    TargetNodeGuid: 76559ff6-709a-4414-9420-7133dbef9d2d
   - BaseNodeGuid: 9a2daf0a-d9d5-4701-84a2-d94b7d77f951
     PortName: Are you okay?
     TargetNodeGuid: d27fb80e-d7ac-4579-8aec-8458df61ffa4
@@ -79,6 +70,15 @@ MonoBehaviour:
   - BaseNodeGuid: d27fb80e-d7ac-4579-8aec-8458df61ffa4
     PortName: ...
     TargetNodeGuid: 42296491-ec54-4ea9-a913-ac821fe50d8b
+  - BaseNodeGuid: 72e84ef3-6f54-40f1-9972-4eb99362fa9a
+    PortName: Have a nice night.
+    TargetNodeGuid: 76559ff6-709a-4414-9420-7133dbef9d2d
+  - BaseNodeGuid: 72e84ef3-6f54-40f1-9972-4eb99362fa9a
+    PortName: Okay...good luck?
+    TargetNodeGuid: 76559ff6-709a-4414-9420-7133dbef9d2d
+  - BaseNodeGuid: 72e84ef3-6f54-40f1-9972-4eb99362fa9a
+    PortName: ...
+    TargetNodeGuid: 76559ff6-709a-4414-9420-7133dbef9d2d
   - BaseNodeGuid: 42296491-ec54-4ea9-a913-ac821fe50d8b
     PortName: Have a nice night.
     TargetNodeGuid: 76559ff6-709a-4414-9420-7133dbef9d2d
@@ -91,7 +91,7 @@ MonoBehaviour:
   DialogueNodeData:
   - Guid: 5485bd7d-edaa-427e-af01-d20503117e41
     DialogueText: They do not possess the evil that his did. His vengeful eye. No.
-      Yours have sincerity. They were made to part the darkness.
+      Yours have sincerity. They were made to part the clouds.
     Position: {x: 1039, y: 267}
   - Guid: bfe35042-3c92-4e8f-b497-9eae0420fcf4
     DialogueText: Your eyes. Your beautiful eyes. I dare say I have not seen such

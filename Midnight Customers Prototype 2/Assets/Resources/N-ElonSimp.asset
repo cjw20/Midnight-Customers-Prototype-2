@@ -11,7 +11,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
   m_Name: N-ElonSimp
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueContainer
   NodeLinks:
   - BaseNodeGuid: df19e632-cb4d-4cf5-a4f8-5f192d8e1cd7
     PortName: Next
@@ -52,8 +52,26 @@ MonoBehaviour:
   - BaseNodeGuid: bc4155e8-836c-4ad2-bcd1-da87c4b7be28
     PortName: ...
     TargetNodeGuid: b3027f0d-ccd9-473d-8f61-580e4116b42d
+  - BaseNodeGuid: b3027f0d-ccd9-473d-8f61-580e4116b42d
+    PortName: Enjoy your night!
+    TargetNodeGuid: c4cff9e8-5321-495c-aa7d-2de7fdb9962a
+  - BaseNodeGuid: b3027f0d-ccd9-473d-8f61-580e4116b42d
+    PortName: Whatever, buddy.
+    TargetNodeGuid: c4cff9e8-5321-495c-aa7d-2de7fdb9962a
+  - BaseNodeGuid: b3027f0d-ccd9-473d-8f61-580e4116b42d
+    PortName: ...
+    TargetNodeGuid: c4cff9e8-5321-495c-aa7d-2de7fdb9962a
+  - BaseNodeGuid: 4d403615-4593-4c66-9557-aba40280fbd1
+    PortName: Enjoy your night!
+    TargetNodeGuid: c4cff9e8-5321-495c-aa7d-2de7fdb9962a
+  - BaseNodeGuid: 4d403615-4593-4c66-9557-aba40280fbd1
+    PortName: Whatever, buddy.
+    TargetNodeGuid: c4cff9e8-5321-495c-aa7d-2de7fdb9962a
+  - BaseNodeGuid: 4d403615-4593-4c66-9557-aba40280fbd1
+    PortName: ...
+    TargetNodeGuid: c4cff9e8-5321-495c-aa7d-2de7fdb9962a
   - BaseNodeGuid: ea8851c7-4a72-4dd9-a24f-802a0e217110
-    PortName: Most don't have the money to do that.
+    PortName: So... The car crashed itself.
     TargetNodeGuid: bc4155e8-836c-4ad2-bcd1-da87c4b7be28
   - BaseNodeGuid: ea8851c7-4a72-4dd9-a24f-802a0e217110
     PortName: If you say so. Cash or credit?
@@ -88,67 +106,50 @@ MonoBehaviour:
   - BaseNodeGuid: 774463c5-b7ff-494e-92c6-e9e4d288ac16
     PortName: ...
     TargetNodeGuid: ab18f380-d75f-46cd-9c2a-18368f21d400
-  - BaseNodeGuid: b3027f0d-ccd9-473d-8f61-580e4116b42d
-    PortName: Enjoy your night!
-    TargetNodeGuid: c4cff9e8-5321-495c-aa7d-2de7fdb9962a
-  - BaseNodeGuid: b3027f0d-ccd9-473d-8f61-580e4116b42d
-    PortName: Whatever, buddy.
-    TargetNodeGuid: c4cff9e8-5321-495c-aa7d-2de7fdb9962a
-  - BaseNodeGuid: b3027f0d-ccd9-473d-8f61-580e4116b42d
-    PortName: ...
-    TargetNodeGuid: c4cff9e8-5321-495c-aa7d-2de7fdb9962a
-  - BaseNodeGuid: 4d403615-4593-4c66-9557-aba40280fbd1
-    PortName: Enjoy your night!
-    TargetNodeGuid: c4cff9e8-5321-495c-aa7d-2de7fdb9962a
-  - BaseNodeGuid: 4d403615-4593-4c66-9557-aba40280fbd1
-    PortName: Whatever, buddy.
-    TargetNodeGuid: c4cff9e8-5321-495c-aa7d-2de7fdb9962a
-  - BaseNodeGuid: 4d403615-4593-4c66-9557-aba40280fbd1
-    PortName: ...
-    TargetNodeGuid: c4cff9e8-5321-495c-aa7d-2de7fdb9962a
   DialogueNodeData:
   - Guid: 1c5d41a9-bcb2-4bb8-ac1b-a23eadb419c9
-    DialogueText: Ugh. There's no charging stations around here.
+    DialogueText: Ugh. There are no charging stations around here.
     Position: {x: 270, y: 191}
-  - Guid: b0c659a9-24c4-48e2-a9fd-2451aa8321e7
-    DialogueText: Yeah, for my car. I swear, so many places aren't environmentally
-      friendly and the future is going to pass you all by.
-    Position: {x: 690, y: 284}
   - Guid: 53be6efd-76d8-4f95-97d3-6e338a898625
     DialogueText: Those were edge cases! Do side effects stop you from taking medicine?
       No. These cars are a step forward in helping the planet heal. Plus, I can make
       the horn be a fart hehe.
     Position: {x: 1516, y: 299}
-  - Guid: bc4155e8-836c-4ad2-bcd1-da87c4b7be28
-    DialogueText: That's because most people our age don't invest. Plus, crypto has
-      allowed me and my friends to make so much more money. Do you accept crypto
-      here?
-    Position: {x: 3413, y: 458}
+  - Guid: 774463c5-b7ff-494e-92c6-e9e4d288ac16
+    DialogueText: Unless you can point me to a place to charge my car, this is everything.
+      I just don't know why people hate progress so much.
+    Position: {x: 692, y: 133}
+  - Guid: b0c659a9-24c4-48e2-a9fd-2451aa8321e7
+    DialogueText: Yeah, for my car. I swear, so many people just hate progress and
+      the future is going to pass you all by.
+    Position: {x: 690, y: 284}
   - Guid: b3027f0d-ccd9-473d-8f61-580e4116b42d
-    DialogueText: I should've figured. You all reject the future and that's why you're
-      poor, stuck working here. Take your dumb paper money.
-    Position: {x: 4312, y: 110}
-  - Guid: 4d403615-4593-4c66-9557-aba40280fbd1
-    DialogueText: The technology is still improving! Ugh, next you'll tell me it's
-      a scam. Here, just take stupid paper money. Have fun living in the past.
-    Position: {x: 4438, y: 298}
-  - Guid: ea8851c7-4a72-4dd9-a24f-802a0e217110
-    DialogueText: They are! I've only crashed twice and had to replace it once. Totally
-      worth it. Not a scratch on me, see?
-    Position: {x: 2656, y: 382}
+    DialogueText: I should've figured. Go ahead and stay broke and working here,
+      buddy. Take your dumb paper money.
+    Position: {x: 4636, y: 117}
   - Guid: 9620bf49-d66d-47a9-a5a4-11376a5ea1dc
     DialogueText: I'm sure you are. I'm almost afraid to ask, but do you take cryptocurrency
       here?
-    Position: {x: 3412, y: 138}
+    Position: {x: 3736, y: 145}
   - Guid: ab18f380-d75f-46cd-9c2a-18368f21d400
     DialogueText: I'm almost afraid to ask, but do you take cryptocurrency here?
-    Position: {x: 3412, y: 292}
-  - Guid: 774463c5-b7ff-494e-92c6-e9e4d288ac16
-    DialogueText: Unless you can point me to a place to charge my car, this is everything.
-      These cars are the future and so many people refuse to see it.
-    Position: {x: 692, y: 133}
+    Position: {x: 3736, y: 299}
   - Guid: c4cff9e8-5321-495c-aa7d-2de7fdb9962a
     DialogueText: +0
-    Position: {x: 5331, y: 211}
+    Position: {x: 5655, y: 218}
+  - Guid: ea8851c7-4a72-4dd9-a24f-802a0e217110
+    DialogueText: They are! I've only crashed twice and that wasn't even my fault!
+      It was the self-driving! Plus, not a scratch on me, see? Well, minus the mild
+      concussion.
+    Position: {x: 2656, y: 382}
+  - Guid: bc4155e8-836c-4ad2-bcd1-da87c4b7be28
+    DialogueText: Only twice! Do you know how many DUI's the self-driving got me
+      out of? Came real handy during the Crypto convention in Vegas. Speaking of,
+      do you take Crypto?
+    Position: {x: 3706, y: 466}
+  - Guid: 4d403615-4593-4c66-9557-aba40280fbd1
+    DialogueText: The technology is still improving! Ugh, next you'll tell me it's
+      a scam. Here, just take stupid paper money. Have fun living in the past.
+    Position: {x: 4639, y: 295}
   ExposedProperties: []
   CommentBlockData: []
