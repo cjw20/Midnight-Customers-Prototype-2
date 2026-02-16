@@ -11,7 +11,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
   m_Name: N-Riddler
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueContainer
   NodeLinks:
   - BaseNodeGuid: a63ecf7b-6d71-4742-9427-262a9b2726df
     PortName: Next
@@ -28,18 +28,18 @@ MonoBehaviour:
   - BaseNodeGuid: 951b6d43-d485-46cf-83b1-e22e59c352bf
     PortName: A riddler?
     TargetNodeGuid: 8f313759-fb7f-4306-8f69-d0b5dcfdd4a2
+  - BaseNodeGuid: 951b6d43-d485-46cf-83b1-e22e59c352bf
+    PortName: ...
+    TargetNodeGuid: 8f313759-fb7f-4306-8f69-d0b5dcfdd4a2
+  - BaseNodeGuid: 951b6d43-d485-46cf-83b1-e22e59c352bf
+    PortName: A politician?
+    TargetNodeGuid: c6154840-f302-4cce-9cf7-3fe4285a63b3
   - BaseNodeGuid: 681d0f87-c3d9-49d3-92c4-7587f1e7aa1c
     PortName: A riddler?
     TargetNodeGuid: 8f313759-fb7f-4306-8f69-d0b5dcfdd4a2
-  - BaseNodeGuid: 951b6d43-d485-46cf-83b1-e22e59c352bf
-    PortName: ...
-    TargetNodeGuid: 8f313759-fb7f-4306-8f69-d0b5dcfdd4a2
   - BaseNodeGuid: 681d0f87-c3d9-49d3-92c4-7587f1e7aa1c
     PortName: ...
     TargetNodeGuid: 8f313759-fb7f-4306-8f69-d0b5dcfdd4a2
-  - BaseNodeGuid: 951b6d43-d485-46cf-83b1-e22e59c352bf
-    PortName: A politician?
-    TargetNodeGuid: c6154840-f302-4cce-9cf7-3fe4285a63b3
   - BaseNodeGuid: 681d0f87-c3d9-49d3-92c4-7587f1e7aa1c
     PortName: A politician?
     TargetNodeGuid: c6154840-f302-4cce-9cf7-3fe4285a63b3
@@ -49,6 +49,9 @@ MonoBehaviour:
   - BaseNodeGuid: c6154840-f302-4cce-9cf7-3fe4285a63b3
     PortName: A clock?
     TargetNodeGuid: 163a6660-55f2-42c2-9173-c6bd67110869
+  - BaseNodeGuid: c6154840-f302-4cce-9cf7-3fe4285a63b3
+    PortName: Are you talking about me?
+    TargetNodeGuid: b87ace82-3b63-4f6a-9465-154a2567511b
   - BaseNodeGuid: 8f313759-fb7f-4306-8f69-d0b5dcfdd4a2
     PortName: ...
     TargetNodeGuid: 163a6660-55f2-42c2-9173-c6bd67110869
@@ -58,25 +61,22 @@ MonoBehaviour:
   - BaseNodeGuid: 8f313759-fb7f-4306-8f69-d0b5dcfdd4a2
     PortName: Are you talking about me?
     TargetNodeGuid: b87ace82-3b63-4f6a-9465-154a2567511b
-  - BaseNodeGuid: c6154840-f302-4cce-9cf7-3fe4285a63b3
-    PortName: Are you talking about me?
-    TargetNodeGuid: b87ace82-3b63-4f6a-9465-154a2567511b
-  - BaseNodeGuid: b87ace82-3b63-4f6a-9465-154a2567511b
+  - BaseNodeGuid: 163a6660-55f2-42c2-9173-c6bd67110869
     PortName: Thanks?
     TargetNodeGuid: f506724d-2008-4da8-a192-d65b1e05b332
-  - BaseNodeGuid: b87ace82-3b63-4f6a-9465-154a2567511b
+  - BaseNodeGuid: 163a6660-55f2-42c2-9173-c6bd67110869
     PortName: Be well, too, riddler.
     TargetNodeGuid: f506724d-2008-4da8-a192-d65b1e05b332
-  - BaseNodeGuid: b87ace82-3b63-4f6a-9465-154a2567511b
+  - BaseNodeGuid: 163a6660-55f2-42c2-9173-c6bd67110869
     PortName: ...
     TargetNodeGuid: f506724d-2008-4da8-a192-d65b1e05b332
-  - BaseNodeGuid: 163a6660-55f2-42c2-9173-c6bd67110869
+  - BaseNodeGuid: b87ace82-3b63-4f6a-9465-154a2567511b
     PortName: Thanks?
     TargetNodeGuid: f506724d-2008-4da8-a192-d65b1e05b332
-  - BaseNodeGuid: 163a6660-55f2-42c2-9173-c6bd67110869
+  - BaseNodeGuid: b87ace82-3b63-4f6a-9465-154a2567511b
     PortName: Be well, too, riddler.
     TargetNodeGuid: f506724d-2008-4da8-a192-d65b1e05b332
-  - BaseNodeGuid: 163a6660-55f2-42c2-9173-c6bd67110869
+  - BaseNodeGuid: b87ace82-3b63-4f6a-9465-154a2567511b
     PortName: ...
     TargetNodeGuid: f506724d-2008-4da8-a192-d65b1e05b332
   DialogueNodeData:

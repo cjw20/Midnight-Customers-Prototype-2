@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
-  m_Name: N-Qanon
-  m_EditorClassIdentifier: 
+  m_Name: N-qanon
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueContainer
   NodeLinks:
   - BaseNodeGuid: 2982015f-baaa-4b61-a626-dc06b9d75e5d
     PortName: Next
@@ -74,7 +74,7 @@ MonoBehaviour:
     PortName: I sure feel protected.
     TargetNodeGuid: 99e6a910-4a5e-480f-b760-94e716c9a89b
   - BaseNodeGuid: 9dade9a1-699c-4b83-9c60-0f271d9f4123
-    PortName: You're an upsetting person.
+    PortName: God, you're exhausting.
     TargetNodeGuid: 4560e072-4ec0-4b3a-a7b1-425c3febc4a7
   - BaseNodeGuid: 9dade9a1-699c-4b83-9c60-0f271d9f4123
     PortName: ...
@@ -83,7 +83,7 @@ MonoBehaviour:
     PortName: I sure feel protected.
     TargetNodeGuid: 99e6a910-4a5e-480f-b760-94e716c9a89b
   - BaseNodeGuid: 807780ed-2bd7-470c-a7e0-6cd48de3bc0c
-    PortName: You're an upsetting person.
+    PortName: God, you're exhausting.
     TargetNodeGuid: 4560e072-4ec0-4b3a-a7b1-425c3febc4a7
   - BaseNodeGuid: 807780ed-2bd7-470c-a7e0-6cd48de3bc0c
     PortName: ...
@@ -101,9 +101,9 @@ MonoBehaviour:
       over the government after the recent election.
     Position: {x: 616, y: 322}
   - Guid: f22d8c87-dd2f-4c96-868f-944cb77dfd7e
-    DialogueText: There's reports of the navy returning to the coasts and the national
-      guard is on stand by. We'll be living under martial law soon enough. I just
-      hope they spare the good ones like myself.
+    DialogueText: The navy is returning to the coasts and the national guard is on
+      stand by. We'll be living under martial law soon enough. I just hope they spare
+      the good ones like myself.
     Position: {x: 1447, y: 257}
   - Guid: 270dbef3-3d26-4ebe-a855-f7e65dfa7d90
     DialogueText: You can't sit and be a sheep and believe in what the left tells

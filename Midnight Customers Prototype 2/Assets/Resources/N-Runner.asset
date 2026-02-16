@@ -11,7 +11,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
   m_Name: N-Runner
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueContainer
   NodeLinks:
   - BaseNodeGuid: b678c041-6dbe-4af7-8c78-74f0315b7a69
     PortName: Next
@@ -29,7 +29,7 @@ MonoBehaviour:
     PortName: Who did you think you saw?
     TargetNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
   - BaseNodeGuid: 1281d269-c11f-48a1-8183-91f0875a904d
-    PortName: Why do you seem so scared?
+    PortName: You seem scared.
     TargetNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
   - BaseNodeGuid: 1281d269-c11f-48a1-8183-91f0875a904d
     PortName: ...
@@ -38,7 +38,7 @@ MonoBehaviour:
     PortName: Who did you think you saw?
     TargetNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
   - BaseNodeGuid: 650dc299-cb60-4f79-8a06-72233177f086
-    PortName: Why do you seem so scared?
+    PortName: You seem scared.
     TargetNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
   - BaseNodeGuid: 650dc299-cb60-4f79-8a06-72233177f086
     PortName: ...
@@ -47,7 +47,7 @@ MonoBehaviour:
     PortName: Who did you think you saw?
     TargetNodeGuid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
   - BaseNodeGuid: 3d40753c-64da-4357-8c83-93f5344c57da
-    PortName: Why do you seem so scared?
+    PortName: You seem scared.
     TargetNodeGuid: 94966c1d-d873-40e1-9ae3-07e55d209f90
   - BaseNodeGuid: 3d40753c-64da-4357-8c83-93f5344c57da
     PortName: ...
@@ -109,42 +109,42 @@ MonoBehaviour:
   DialogueNodeData:
   - Guid: 6d139e9a-dcc1-45f7-9d19-e9ed9c266c02
     DialogueText: '*Pant Pant* Sorry, I''m just a little...'
-    Position: {x: 187.2, y: 200}
+    Position: {x: 187, y: 200}
   - Guid: 1281d269-c11f-48a1-8183-91f0875a904d
     DialogueText: No. I mean yeah! I'm fine! It's... It's nothing. Just thought I
       recognized someone is all.
-    Position: {x: 726.4, y: 62.399998}
+    Position: {x: 726, y: 62}
   - Guid: 650dc299-cb60-4f79-8a06-72233177f086
     DialogueText: Nobody. I mean nothing! I mean, sorry, I just thought I recognized
       someone.
-    Position: {x: 727.2, y: 214.4}
+    Position: {x: 727, y: 214}
   - Guid: 3d40753c-64da-4357-8c83-93f5344c57da
     DialogueText: Sorry, I got a bit distracted... Thought I saw someone out there...
-    Position: {x: 724, y: 369.6}
+    Position: {x: 724, y: 370}
   - Guid: e31f0bb2-cf21-4e52-a89d-91dc0d25d9c4
     DialogueText: Nobody important. Sorry, I just need to lay low here for a little
       bit.
-    Position: {x: 1389.6, y: 53.600002}
+    Position: {x: 1390, y: 54}
   - Guid: 94966c1d-d873-40e1-9ae3-07e55d209f90
     DialogueText: I... I just need to lay low for a couple minutes.
-    Position: {x: 1388.8, y: 219.2}
+    Position: {x: 1389, y: 219}
   - Guid: 1a936d76-6a21-4823-8cea-5f178c0ff189
     DialogueText: Sorry, I just need a place to lay low for a couple minutes.
-    Position: {x: 1391.2, y: 381.6}
+    Position: {x: 1391, y: 382}
   - Guid: c6d5da48-58f5-455b-95d2-29176a75c75d
     DialogueText: No! Please! Don't call the police! Look, I got involved with some
-      seriously bad people, and they've got moles working at the police station.
-      If you call the police, I'm screwed.
-    Position: {x: 1929.6, y: 51.2}
+      seriously bad people, and the police are in their pocket. If you call them,
+      I'm screwed.
+    Position: {x: 1930, y: 51}
   - Guid: c4855537-f2a1-4f87-9c7a-cad626b9a2c5
     DialogueText: Look, I got involved with some really bad people. I couldn't pay
       them back, and now... Shit, look they can't find me.
-    Position: {x: 1928.8, y: 218.4}
+    Position: {x: 1929, y: 218}
   - Guid: af93f235-b8f3-472c-bb2e-e406e04328c8
     DialogueText: If anyone comes in looking for me, please, just don't tell them
       I was here. I need to disappear.  They'll kill me if they find me! Shit, I
       need to go. I'm sorry for dragging you into this.
-    Position: {x: 3084.8, y: 47.2}
+    Position: {x: 3085, y: 47}
   - Guid: ac21741c-f8d1-4609-88a8-bfb5dfaa062e
     DialogueText: Shit, please, you've got to help me. I got involved with some really
       bad people, and I can't pay them back the money I borrowed.
@@ -153,11 +153,11 @@ MonoBehaviour:
     DialogueText: No, they shouldn't... Look, if anyone comes in looking for me,
       you can't tell them I was here!  They'll kill me if they catch me! Shit, I
       need to go. I'm sorry for dragging you into this.
-    Position: {x: 3084.8, y: 224}
+    Position: {x: 3085, y: 224}
   - Guid: ed6c6f38-4f65-4e43-8166-16f525b9d881
     DialogueText: Look, if anyone comes in looking for me, please, don't tell them
       anything. They'll kill me if they catch me. Shit! I gotta go! I'm sorry for
       dragging you into this.
-    Position: {x: 3100.8, y: 397.6}
+    Position: {x: 3101, y: 398}
   ExposedProperties: []
   CommentBlockData: []

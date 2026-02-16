@@ -11,20 +11,11 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
   m_Name: N-Rhyming
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueContainer
   NodeLinks:
   - BaseNodeGuid: 6deb90f8-d5eb-472d-886a-257022672e5c
     PortName: Next
     TargetNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
-  - BaseNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
-    PortName: 'Did you find everyhting okay?    '
-    TargetNodeGuid: a2909258-7096-44d1-88de-3c6d081630f9
-  - BaseNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
-    PortName: What's up?
-    TargetNodeGuid: a2909258-7096-44d1-88de-3c6d081630f9
-  - BaseNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
-    PortName: ...
-    TargetNodeGuid: a2909258-7096-44d1-88de-3c6d081630f9
   - BaseNodeGuid: a2909258-7096-44d1-88de-3c6d081630f9
     PortName: I won't be coy. We have milk, but not soy.
     TargetNodeGuid: 11f06e51-9cbb-4010-bfae-02cc64731475
@@ -97,6 +88,15 @@ MonoBehaviour:
   - BaseNodeGuid: fb94dc00-fe6c-49d4-bb26-d91faa4a12bf
     PortName: ...
     TargetNodeGuid: 6e30b178-ef01-472f-a1e5-ea0224e7bd18
+  - BaseNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
+    PortName: 'Did you find everyhting okay?    '
+    TargetNodeGuid: a2909258-7096-44d1-88de-3c6d081630f9
+  - BaseNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
+    PortName: What's up?
+    TargetNodeGuid: a2909258-7096-44d1-88de-3c6d081630f9
+  - BaseNodeGuid: 8a0c097e-7de0-4ba4-a824-fdb6f94fc1c2
+    PortName: ...
+    TargetNodeGuid: a2909258-7096-44d1-88de-3c6d081630f9
   DialogueNodeData:
   - Guid: a2909258-7096-44d1-88de-3c6d081630f9
     DialogueText: I'm experiencing a bought of dairy sobriety. I'd like to purchase
@@ -104,7 +104,7 @@ MonoBehaviour:
     Position: {x: 684, y: 179}
   - Guid: 5744ae72-905d-4e76-a97d-b74d4cb6ad1e
     DialogueText: I do not know what you mean. My language is clear and clean. But
-      I can't fine the milk anywhere. No soy to be seen and it is not fair.
+      I can't find the milk anywhere. No soy to be seen and it is not fair.
     Position: {x: 1356, y: 248}
   - Guid: 11f06e51-9cbb-4010-bfae-02cc64731475
     DialogueText: No, no this simply cannot be. I just wish to drink my favorite
@@ -112,11 +112,11 @@ MonoBehaviour:
     Position: {x: 1382, y: 85}
   - Guid: 3f78f82a-86f8-4ece-88e1-045d5f74bac8
     DialogueText: Your silence is noted for you don't seem very devoted. I can't
-      fine the milk anywhere. No soy to be seen and it is not fair.
+      find the milk anywhere. No soy to be seen and it is not fair.
     Position: {x: 1353, y: 414}
   - Guid: ef166213-5d5c-4ec9-a34f-96c9829918a2
-    DialogueText: For nothing else do I truly yearn. I traveled here when my thirst
-      brought concern. I began searching for one drink. Now, I am afraid my heart
+    DialogueText: For nothing else, do I truly yearn. I traveled here when my thirst
+      brought concern. I began searching for this one drink. Now, I'm afraid my heart
       has begun to sink
     Position: {x: 2333, y: 246}
   - Guid: 0e4c11d3-dbd0-45ff-99b8-f4debcb04911
