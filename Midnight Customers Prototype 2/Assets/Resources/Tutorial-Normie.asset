@@ -11,7 +11,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 70fa30090473fb4458d5be8e9f4afa65, type: 3}
   m_Name: Tutorial-Normie
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueContainer
   NodeLinks:
   - BaseNodeGuid: fbf35b82-af25-4880-bff1-0b02fa60cd9b
     PortName: Next
@@ -43,6 +43,33 @@ MonoBehaviour:
   - BaseNodeGuid: c740520f-5b04-4498-b1c6-f8e98e2bff98
     PortName: ...
     TargetNodeGuid: d4dcea0f-1bbf-421c-8565-c57be824a5cf
+  - BaseNodeGuid: d4dcea0f-1bbf-421c-8565-c57be824a5cf
+    PortName: Have a good night!
+    TargetNodeGuid: f317b1ec-5dea-4b4c-a510-9814d750609e
+  - BaseNodeGuid: d4dcea0f-1bbf-421c-8565-c57be824a5cf
+    PortName: Uh...Okay then. Bye.
+    TargetNodeGuid: f317b1ec-5dea-4b4c-a510-9814d750609e
+  - BaseNodeGuid: d4dcea0f-1bbf-421c-8565-c57be824a5cf
+    PortName: ...
+    TargetNodeGuid: f317b1ec-5dea-4b4c-a510-9814d750609e
+  - BaseNodeGuid: 73eedaf4-ed0b-4eae-a08c-a5daff9f2e54
+    PortName: Have a good night!
+    TargetNodeGuid: f317b1ec-5dea-4b4c-a510-9814d750609e
+  - BaseNodeGuid: 73eedaf4-ed0b-4eae-a08c-a5daff9f2e54
+    PortName: Uh...Okay then. Bye.
+    TargetNodeGuid: f317b1ec-5dea-4b4c-a510-9814d750609e
+  - BaseNodeGuid: 73eedaf4-ed0b-4eae-a08c-a5daff9f2e54
+    PortName: ...
+    TargetNodeGuid: f317b1ec-5dea-4b4c-a510-9814d750609e
+  - BaseNodeGuid: c42625dd-e414-44cf-8eb2-5f40722d7ab7
+    PortName: Have a good night!
+    TargetNodeGuid: f317b1ec-5dea-4b4c-a510-9814d750609e
+  - BaseNodeGuid: c42625dd-e414-44cf-8eb2-5f40722d7ab7
+    PortName: Uh...Okay then. Bye.
+    TargetNodeGuid: f317b1ec-5dea-4b4c-a510-9814d750609e
+  - BaseNodeGuid: c42625dd-e414-44cf-8eb2-5f40722d7ab7
+    PortName: ...
+    TargetNodeGuid: f317b1ec-5dea-4b4c-a510-9814d750609e
   - BaseNodeGuid: a3e727b1-1ad3-4f1b-a657-f45979a92cc5
     PortName: I can definitely tell.
     TargetNodeGuid: c740520f-5b04-4498-b1c6-f8e98e2bff98
@@ -52,40 +79,10 @@ MonoBehaviour:
   - BaseNodeGuid: a3e727b1-1ad3-4f1b-a657-f45979a92cc5
     PortName: ...
     TargetNodeGuid: d4dcea0f-1bbf-421c-8565-c57be824a5cf
-  - BaseNodeGuid: 73eedaf4-ed0b-4eae-a08c-a5daff9f2e54
-    PortName: Have a good night!
-    TargetNodeGuid: f317b1ec-5dea-4b4c-a510-9814d750609e
-  - BaseNodeGuid: d4dcea0f-1bbf-421c-8565-c57be824a5cf
-    PortName: Have a good night!
-    TargetNodeGuid: f317b1ec-5dea-4b4c-a510-9814d750609e
-  - BaseNodeGuid: c42625dd-e414-44cf-8eb2-5f40722d7ab7
-    PortName: Have a good night!
-    TargetNodeGuid: f317b1ec-5dea-4b4c-a510-9814d750609e
-  - BaseNodeGuid: c42625dd-e414-44cf-8eb2-5f40722d7ab7
-    PortName: Uh...Okay then. Bye.
-    TargetNodeGuid: f317b1ec-5dea-4b4c-a510-9814d750609e
-  - BaseNodeGuid: c42625dd-e414-44cf-8eb2-5f40722d7ab7
-    PortName: ...
-    TargetNodeGuid: f317b1ec-5dea-4b4c-a510-9814d750609e
-  - BaseNodeGuid: d4dcea0f-1bbf-421c-8565-c57be824a5cf
-    PortName: Uh...Okay then. Bye.
-    TargetNodeGuid: f317b1ec-5dea-4b4c-a510-9814d750609e
-  - BaseNodeGuid: d4dcea0f-1bbf-421c-8565-c57be824a5cf
-    PortName: ...
-    TargetNodeGuid: f317b1ec-5dea-4b4c-a510-9814d750609e
-  - BaseNodeGuid: 73eedaf4-ed0b-4eae-a08c-a5daff9f2e54
-    PortName: Uh...Okay then. Bye.
-    TargetNodeGuid: f317b1ec-5dea-4b4c-a510-9814d750609e
-  - BaseNodeGuid: 73eedaf4-ed0b-4eae-a08c-a5daff9f2e54
-    PortName: ...
-    TargetNodeGuid: f317b1ec-5dea-4b4c-a510-9814d750609e
   DialogueNodeData:
   - Guid: 297ba504-f28e-4f74-89dd-5e7493582e08
     DialogueText: I had no idea this place was still here.
     Position: {x: 259, y: 285}
-  - Guid: f19b1491-ac71-4724-b1c7-1db2c03b47a2
-    DialogueText: Ah it's not important. I appreciate you comin' into work.
-    Position: {x: 824, y: 489}
   - Guid: c740520f-5b04-4498-b1c6-f8e98e2bff98
     DialogueText: It's a good thing they finally found someone to keep this place
       in shape again.
@@ -102,8 +99,11 @@ MonoBehaviour:
   - Guid: c42625dd-e414-44cf-8eb2-5f40722d7ab7
     DialogueText: I gotta run. Take care!
     Position: {x: 2469, y: -223}
+  - Guid: f19b1491-ac71-4724-b1c7-1db2c03b47a2
+    DialogueText: Ah it's not important. I appreciate you comin' into work.
+    Position: {x: 864, y: 338}
   - Guid: a3e727b1-1ad3-4f1b-a657-f45979a92cc5
     DialogueText: Haha. You got that right. This place has been through a lot.
-    Position: {x: 864, y: 110}
+    Position: {x: 864, y: 143}
   ExposedProperties: []
   CommentBlockData: []
