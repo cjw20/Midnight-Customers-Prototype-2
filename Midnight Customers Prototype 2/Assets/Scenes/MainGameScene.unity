@@ -7547,7 +7547,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.02014184, y: -0.825824}
+  m_Offset: {x: -0.02014184, y: -1.0765531}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -7557,7 +7557,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.100625, y: 3.0435224}
+  m_Size: {x: 1.100625, y: 2.5420642}
   m_EdgeRadius: 0
 --- !u!114 &558794629
 MonoBehaviour:
@@ -13208,7 +13208,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.4837811, y: -0.8259679}
+  m_Offset: {x: 0.4837811, y: -1.0371083}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -13218,7 +13218,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.104465, y: 3.0953085}
+  m_Size: {x: 1.104465, y: 2.6730278}
   m_EdgeRadius: 0
 --- !u!50 &1050122173
 Rigidbody2D:
@@ -22033,7 +22033,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 3
   moveable: 1
-  stepDistance: 0.32
   checkoutTrigger: {fileID: 0}
   nearbyMG: {fileID: 0}
   nearbyInteractable: {fileID: 0}
